@@ -1,0 +1,10 @@
+{
+    "main_topic": {
+        "author": "Rich Olson",
+        "title": "Deberta -> LGBM [1.30 LB]",
+        "content": "Just shared my Deberta-feature-extraction -> LGBM notebook here:\n\n[https://www.kaggle.com/code/richolson/deberta](https://www.kaggle.com/code/richolson/deberta)\n\nScore is 1.030 on the LB.\n\nI train / submit on the same run.  Runtime is about 3 hours on P100.  Most of that is Deberta doing feature extraction (LGBM train / inference is comparatively fast).\n\nSubmission is probably about 90 minutes longer (since feature extraction needs to be done on test also).\n\nI'm using deberta-base (presumably this would run faster with a smaller model).\n\nOne note - I'll typically do quick-test-runs with 1-5k prompts to see if things are generally working.  That was enough for TF-IDF to show some results.  For whatever reason - this produced zero results with Deberta.\n\nOnce I started training on 10k+ samples - then things started to converge for me.\n\nSo - if your Deberta model isn't doing anything - maybe try more data…\n\nI also have a related kitchen-sink notebook that's currently scoring:\n\n[https://www.kaggle.com/code/richolson/deberta-tf-idf-word2vec](https://www.kaggle.com/code/richolson/deberta-tf-idf-word2vec)\n\n",
+        "date": "Sat May 11 2024 10:04:01 GMT+0900 (日本標準時)",
+        "votes": "3"
+    },
+    "comments": []
+}

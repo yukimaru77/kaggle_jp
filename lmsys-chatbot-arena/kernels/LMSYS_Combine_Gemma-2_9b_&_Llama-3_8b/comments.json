@@ -1,0 +1,26 @@
+{
+    "comments": [
+        {
+            "author": "Nikita Glazunov",
+            "content": "Hi! Good notebook. When trying to load llama 3 model I got this error >OSError: Incorrect path_or_model_id: '/kaggle/input/llama-3/transformers/8b-chat-hf/1'. Please provide either the path to a local folder or the repo_id of a model on the Hub. How can I fix that? I didn't change any bit of code.\n\n",
+            "date": "Posted 5 days ago  ·  Posted on Version 2 of \n        2",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "YEI0907",
+            "content": "how much time did you take for interference?\n\n",
+            "date": "Posted 9 days ago  ·  Posted on Version 2 of \n        2",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "G John RaoTopic Author",
+                    "content": "It takes around 9 hours\n\n",
+                    "date": "Posted 9 days ago  ·  Posted on Version 2 of \n        2",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "main_topic": {
+        "author": "eigenquant",
+        "title": "Question about rule(fine tuning the LLM)",
+        "content": "\n- Is it okay to do fine tuning the LLM with personal gpu(outside from kaggle) and use it for this competition?\n\n",
+        "date": "Sat Jun 08 2024 19:37:15 GMT+0900 (日本標準時)",
+        "votes": "3"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "Yes, as long as the LLM and Data you are using is Open source (e.g., MIT, Apache 2.0). You can also rent GPUs and train there, its all fair play.\n\n",
+            "date": "Posted 2 months ago  ·  38th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "eigenquantTopic Author",
+                    "content": "thanks for your confirm\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "yulonghui",
+            "content": "I want to know What kind of data we can use for fine-tuning?\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "Marília Prata",
+        "title": "Load 7b Gemma Keras without any memory issue and FAST.",
+        "content": "# A tip  to avoid memory issues while running your 1.1 -7b_instruct_en Gemma/Keras Model:\n\n[Gemma 1.1 7B Int8 Load](https://www.kaggle.com/code/awsaf49/gemma-1-1-7b-int8-load) By Awsaf.\n\nOn the last topic (2 days ago ), I asked \"How to work with Gemma Keras 1.1- 7b instruct-en WITHOUT your Kaggle Notebook being restarted cause you've allocated more memory than is avaiable. Then we should opt to Google Cloud or dismiss our work.\n\nSome answers that I got to that previous topic:  I read/learned  that reducing batches and max_length could help me to load the model and face the memory issue.  Not always, it's a 7b (7 billion parameters model).\n\nBut, what if we don't have max_lenght and batches written on our Kaggle Notebook script? Sometimes it happens. Therefore, it's great to have a Plan B:\n\nFortunately, I found Awsaf's code and published my 1st Gemma 1.1-7b-instruct-en.  \n\nSo, take a look and check Awsaf's amazing, cristal clear code:\n\n[Gemma 1.1 7B Int8 Load](https://www.kaggle.com/code/awsaf49/gemma-1-1-7b-int8-load) By Awsaf.\n\nFor the record, there aren't many 7b Gemma Keras  Kaggle Notebooks. Though we can find plenty of 2b Models.\n\n",
+        "date": "Sun May 12 2024 07:28:29 GMT+0900 (日本標準時)",
+        "votes": "27"
+    },
+    "comments": [
+        {
+            "author": "Adnan Alaref",
+            "content": "Good news for find solution, thanks for sharing  [@mpwolke](https://www.kaggle.com/mpwolke) \n\n",
+            "date": "Posted 3 months ago",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Marília PrataTopic Author",
+                    "content": "Indeed Alaref,\n\nI was so happy that I was able to work with Gemma/Keras 1.1-7b_instruct-en without any memory issue that I felt that I should share this topic because very few showed appreciation to Awsaf's code (till yesterday he had only 6 votes for such a remarkable and useful code and  his 2 datasets.  \n\nMaybe, kagglers didn't realize the importance of that code.\n\nFor the record, the Notebook ran in only GPU 15 minutes!  Isn't that great?\n\nBesides, I was able to deliver the last Model that the hosts had pinned on this competition.\n\nNot many users are working with 1.1_7b_instruct. In fact, I didn't read any other, except Awsaf's code.\n\nIt was almost my \"Moby Dick\" of models.\n\nThank you Alaref.\n\n",
+                    "date": "Posted 3 months ago",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "Squirrel",
+        "title": "Data Understanding: Some response is NULL",
+        "content": "I find some response is Null. Seems that they are deleted for some reason.\n\n",
+        "date": "Fri May 10 2024 13:10:21 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "Austin Paxton",
+            "content": "Based on the following discussion, it appears that it can be caused by platform error and possibly erratic user behavior.\n\n[https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/502303](https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/502303)\n\n",
+            "date": "Posted 3 months ago  ·  823rd in this Competition",
+            "votes": "1",
+            "reply": []
+        }
+    ]
+}

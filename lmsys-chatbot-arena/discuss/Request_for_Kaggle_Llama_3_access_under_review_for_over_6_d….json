@@ -1,0 +1,97 @@
+{
+    "main_topic": {
+        "author": "Allie K.",
+        "title": "Request for Kaggle Llama 3 access under review for over 6 days [Solved]",
+        "content": "On Friday early morning MDT I submitted request for Llama 3 and Llama 2 access first via Meta website (of course with the same email address as I have on Kaggle) and I was granted the access in a minute.\n\nImmediately I successfully submitted request to access Llama 3 model via Kaggle. \n\nNow, after more than 6 days, the request is still \"pending a review from the authors\".\n\nAs it can be seen from the discussion under the model, I am not alone in this desperate situation.\n\n[@addisonhoward](https://www.kaggle.com/addisonhoward) is the access to the model on Kaggle somehow restricted? \n\nIn this case all the competition wouldn't be fair at all. It isn't fair even now, because I couldn't make submission with Llama 3 for 3 days due to problems on Kaggle side.  \n\nEdited:\n\nAnd suddenly, after \"only\" 6 days a magic happened and the access is granted.\n\nThe magic seems to be triggered by another discussion thread.\n\n",
+        "date": "Mon Jul 08 2024 20:18:16 GMT+0900 (日本標準時)",
+        "votes": "5"
+    },
+    "comments": [
+        {
+            "author": "CPMP",
+            "content": "Reading this only now. It is wrong that your post did not have effect until mine. \n\n",
+            "date": "Posted 16 days ago  ·  27th in this Competition",
+            "votes": "2",
+            "reply": []
+        },
+        {
+            "author": "RB",
+            "content": "I downloaded Transformer weights for Gemma (since they are not [yet available on Kaggle](https://www.kaggle.com/models/google/gemma-2/discussion/516164)) You can do the same for Llama as well \n\nFollowing code will save weights in /kaggle/working directory of your kernel. You do need read access token from Huggingface and your request must be approved there.\n\nTypically I found process is much faster when the models are released, so apply even if you are not planning to use it. \n\n```\nimport os\nos.environ[\"HF_HUB_ENABLE_HF_TRANSFER\"] = \"1\"\n\nfrom kaggle_secrets import UserSecretsClient\nuser_secrets = UserSecretsClient()\nsecret_value_0 = user_secrets.get_secret(\"HF_TOKEN\")\n\nfrom huggingface_hub import  snapshot_download, login\nlogin(token=secret_value_0, add_to_git_credential=False)\n\n## Download model from HuggingfaceHub\n## https://huggingface.co/google/gemma-2-9b-it/tree/main\n\nsnapshot_download(repo_id=\"google/gemma-2-9b-it\", \n                  revision=\"main\", \n                  repo_type=\"model\",\n                  allow_patterns=\"*\",\n                  local_dir = \"/kaggle/working/\", \n                  ignore_patterns=\"consolidated.safetensors\")\n\n```\n\n",
+            "date": "Posted a month ago  ·  18th in this Competition",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "BladeRunner",
+                    "content": "This approach seems to only support models with weight files under 20GB, because of the capacity cap of /kaggle/working/, I wonder how it should be handled for models 13b and above?😀\n\n",
+                    "date": "Posted 16 days ago  ·  158th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "RB",
+                            "content": "You can download in /tmp directory - I think there's 50+ GB space available there. \n\nFrom /tmp you can upload to a Kaggle Dataset with [Kaggle API  ](https://github.com/Kaggle/kaggle-api/blob/main/docs/README.md#datasets)\n\n",
+                            "date": "Posted 16 days ago  ·  18th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "sayoulala",
+            "content": "[https://www.kaggle.com/datasets/junglebeastds/llama3instruct](https://www.kaggle.com/datasets/junglebeastds/llama3instruct) .Someone upload the model here\n\n",
+            "date": "Posted a month ago  ·  3rd in this Competition",
+            "votes": "4",
+            "reply": []
+        },
+        {
+            "author": "Allie K.Topic Author",
+            "content": "Big thanks to everybody who suggested me (and hopefully not only to me) a solution how to solve the unpleasant situation. I could start submitting.\n\nAnyway I hope that Kaggle team will restore the broken Llama 3 access pipeline in a reasonable time, not only after the competition ends. \n\n",
+            "date": "Posted a month ago  ·  35th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Pamin",
+            "content": "Same, 3 days ago.\n\n",
+            "date": "Posted a month ago  ·  491st in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "hn",
+            "content": "Same here actually. \n\n",
+            "date": "Posted a month ago  ·  17th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Valentin Werner",
+            "content": "This is wild, it has been approved for me within 10 minutes on a weekend\n\n",
+            "date": "Posted a month ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Xinyuan Qiao",
+            "content": "Just do it again, I got same situation before.\n\n",
+            "date": "Posted a month ago  ·  62nd in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Arindam Roy",
+            "content": "Same here \n\n",
+            "date": "Posted a month ago",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "samson",
+            "content": "You can get an access via [meta's webpage](https://llama.meta.com/) or directly on [huggingface](https://huggingface.co/meta-llama/Meta-Llama-3-8B), then download the weights and upload all the stuff as a private dataset on Kaggle. Its much faster! Basically minutes (I have submitted a request for model access via Kaggle 4 days ago and still waiting)\n\n",
+            "date": "Posted a month ago  ·  159th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

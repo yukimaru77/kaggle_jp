@@ -1,0 +1,86 @@
+{
+    "main_topic": {
+        "author": "Lorry Zou",
+        "title": "CUDA OOM when ensemble Gemma2 and Llama3",
+        "content": "Hi everyone, I'm trying to ensemble gemma2 and llama3. My strategy is load data -> load gemma2 model -> gemma2 inference -> load llama3 model -> llama3 inference -> ensemble. I use T4*2 and my code is mainly based on [@kishanvavdara](https://www.kaggle.com/kishanvavdara) 's inference notebook.\n\nMy issue is: When I try to load llama3 model after gemma2 inference, I encounter CUDA OOM. I try to clear memory by removing gemmas from the two GPUs (I load one gemma model on each GPU) using gemma_model.cpu(); del gemma_model; torch.cuda.empty_cache(), but it doesn't help. Only GPU 0 is freed and GPU 1 is still using 8.9GB memory. \n\nIs there any way to release all the memory from both GPUs? Or perhaps reduce of size of the models?\n\n",
+        "date": "Tue Jul 16 2024 00:39:47 GMT+0900 (日本標準時)",
+        "votes": "6"
+    },
+    "comments": [
+        {
+            "author": "no fit just luck",
+            "content": "I would like to share a simple method. You can use '%%writefile' to create a '.py' file and then run this file by \"!python file_name.py\" to generate your submission. Specifically, you can create two py files for gemma and llama. In each of the file, you can save the model output as a csv file. At last, you can load them and do your ensemble. \n\nThe key point is that by using  \"!python file_name.py\", the memory will be clean. Hope this can solve your problem.\n\n",
+            "date": "Posted 19 days ago  ·  12th in this Competition",
+            "votes": "15",
+            "reply": [
+                {
+                    "author": "Lorry ZouTopic Author",
+                    "content": "Yeah I just converted the whole notebook to python script and it works well with releasing memory. I didn't know we can even directly submit a python script LOL.\n\n",
+                    "date": "Posted 19 days ago  ·  153rd in this Competition",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Priyanshu Joshi",
+            "content": "Make sure you are correctly clearing all references to the model and intermediate tensors.\n\n```\nimport gc\n\ngemma_model.cpu()\ndel gemma_model\ntorch.cuda.empty_cache()\ngc.collect()\n\n```\n\nEnsure your inference environment has no other processes using the GPUs. Sometimes background processes can consume significant memory. Use gradient checkpointing to trade computational cost for memory usage. This saves memory by recomputing some parts of the model during the backward pass. Experiment with batch size and max_length as Veletin mentioned in his comment. You can try [model parallelism](https://huggingface.co/docs/transformers/v4.15.0/parallelism).\n\n",
+            "date": "Posted 20 days ago  ·  573rd in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Lorry ZouTopic Author",
+            "content": "I'm wondering why only GPU 0's memory can be released after inference. Maybe only one of the model is actually used during inference? The code:\n\n`@torch.no_grad()\n\n[@torch.cuda.amp.autocast](https://www.kaggle.com/torch.cuda.amp.autocast)()\n\ndef gemma_inference(df, model, device, batch_size=cfg.batch_size, max_length=cfg.max_length):\n\n    a_win, b_win, tie = [], [], []\n\n```\nfor start_idx in range(0, len(df), batch_size):\n    end_idx = min(start_idx + batch_size, len(df))\n    tmp = df.iloc[start_idx:end_idx]\n    input_ids = tmp[\"input_ids\"].to_list()\n    attention_mask = tmp[\"attention_mask\"].to_list()\n    inputs = pad_without_fast_tokenizer_warning(\n        gemma_tokenizer,\n        {\"input_ids\": input_ids, \"attention_mask\": attention_mask},\n        padding=True,\n        max_length=max_length,\n        pad_to_multiple_of=None,\n        return_tensors=\"pt\",\n    )\n    outputs = model(**inputs.to(device))\n    proba = outputs.logits.softmax(-1).cpu()\n\n    a_win.extend(proba[:, 0].tolist())\n    b_win.extend(proba[:, 1].tolist())\n    tie.extend(proba[:, 2].tolist())\n\n    df[\"winner_model_a\"] = a_win\n    df[\"winner_model_b\"] = b_win\n    df[\"winner_tie\"] = tie\n    return df` and\n\n```\n\nwith ThreadPoolExecutor(max_workers=2) as executor:\n    gemma_results = executor.map(gemma_inference, (gemma_sub_1, gemma_sub_2), (gemma_model_0, gemma_model_1), (device_0, device_1))\n\nI also tried batch_size=4 and 2, there's no difference.\n\n",
+            "date": "Posted 20 days ago  ·  153rd in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Valentin Werner",
+                    "content": "are you actually using gc.collect() - i had it before where it wouldnt be released until gc.collect() was done. exatly like ShelterW described in their comment.\n\n",
+                    "date": "Posted 20 days ago  ·  38th in this Competition",
+                    "votes": "-1",
+                    "reply": [
+                        {
+                            "author": "Lorry ZouTopic Author",
+                            "content": "Yes I'm suing gc.collect(), but it doesn't work: \n\ngemma_model_0.to('cpu')\ndel gemma_model_0\ngc.collect()\ngemma_model_1.to('cpu')\ndel gemma_model_1\ngc.collect()\nwith torch.no_grad():\n    torch.cuda.set_device('cuda:0')\n    torch.cuda.empty_cache()\n    torch.cuda.set_device('cuda:1')\n    torch.cuda.empty_cache()\n\n",
+                            "date": "Posted 20 days ago  ·  153rd in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "ShelterW",
+            "content": "When I used the Gemma2 and Llama3 ensemble, it was even worse.\n\n```\nimport torch\nimport gc\ndel proba, model_0, model_1, test, data, aug_data\ngc.collect()\ntorch.cuda.empty_cache()\n\n```\n\n",
+            "date": "Posted 20 days ago  ·  185th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Lorry ZouTopic Author",
+                    "content": "I believe there's something remaining in the memory and we forgot to delete it…😆\n\n",
+                    "date": "Posted 20 days ago  ·  153rd in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Valentin Werner",
+                            "content": "This gets both GPUs down to below 300 MB. Else turn down max_length and / or batch size\n\n",
+                            "date": "Posted 20 days ago  ·  38th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                },
+                {
+                    "author": "Allen Wang",
+                    "content": "Yes, I have the same problem as you. Is there any way to solve it\n\n",
+                    "date": "Posted 19 days ago  ·  199th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "main_topic": {
+        "author": "RomanZubarev",
+        "title": "Submission Scoring Error",
+        "content": "Hi! I'm a newbie and it's my first time participating in a competition here. Can anyone tell me why I get \"Submission Scoring Error\"? Everything seems to be under the rules and expectations of the result.\n\n[2024-06-12 14-44-23.png](https://storage.googleapis.com/kaggle-forum-message-attachments/2868474/20808/2024-06-12 14-44-23.png)",
+        "date": "Wed Jun 12 2024 20:49:41 GMT+0900 (日本標準時)",
+        "votes": "2"
+    },
+    "comments": [
+        {
+            "author": "Ahmad Al-Husainy",
+            "content": "Was the notebook execution successful, or did it fail? If it succeeded, the only other possible reason I can think of, aside from what other Kagglers mentioned about probabilities summing up to more than one, could be the data format in the columns . If the notebook failed, you should check the execution logs, which will show you where it failed. \n\n",
+            "date": "Posted 2 months ago  ·  1266th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Valentin Werner",
+            "content": "You can try setting index=False during saving the csv, that caused problems for me before I think.\n\nIs it because (winner_model_a + winner_model_b + winner_tie) > 1?\n\nI don't think this should matter, as the log loss implementation is a wrapper for sklearn, where this is not an issue from my experiments\n\n",
+            "date": "Posted 2 months ago  ·  38th in this Competition",
+            "votes": "2",
+            "reply": []
+        },
+        {
+            "author": "Masayuki Takahashi",
+            "content": "Is it because (winner_model_a + winner_model_b + winner_tie) > 1?\n\n",
+            "date": "Posted 2 months ago  ·  876th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Anya",
+                    "content": "Good remind! I found my submission data has this problem.\n\n",
+                    "date": "Posted a month ago  ·  487th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

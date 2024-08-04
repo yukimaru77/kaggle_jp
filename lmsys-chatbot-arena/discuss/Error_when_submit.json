@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "Nguyễn Anh Tú",
+        "title": "Error when submit",
+        "content": "I got the error \"Submission Scoring Error\" when I submitted  my notebook, I thought that I set the wrong format for my submission.csv. Then, I read the sample_submission.csv and change the the value of ['winner_model_a', 'winner_model_b', 'winner_tie'] columns with my y_predict. The worst thing is my notebook ran successful but when I submitted again I got the error \"Notebook Threw Exception\", please help me!\n\n",
+        "date": "Mon Jul 15 2024 16:23:48 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "### Submission scoring error -> make sure that you include id\n\nAn example way to get a working submission:\n\n```\n# Submit\nsub = pd.DataFrame(sm, index = test.id, columns = [\"winner_model_a\",\"winner_model_b\",\"winner_tie\"]).reset_index()\nsub.to_csv('submission.csv', index=False)\nsub.head()\n\n```\n\nwhere sm is an array like np.array([0.123,0.567,0.234],…,[0.999,0.000,0.001])\n\n### Notebook threw exception\n\nYou managed to make a working notebook not work anymore 😀 This could have some reasons: GPU goes OOM (this does not trigger an OOM Error); There are some \"null\" responses in the responses which need to be handled (e.g., replace null with 'null' before loading the string representation of the list as real list); There is actually an error raised during runtime.\n\nWhat you can do to evaluate the errors is try to run your inference code on the half the train set (which is basically the size of test) and see what happens.\n\n",
+            "date": "Posted 20 days ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Nguyễn Anh TúTopic Author",
+                    "content": "It's very helpful for me. Thanks a lot.\n\n",
+                    "date": "Posted 20 days ago  ·  1656th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

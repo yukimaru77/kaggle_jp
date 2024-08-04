@@ -1,0 +1,10 @@
+{
+    "main_topic": {
+        "author": "Nazim Cherpanov",
+        "title": "Easily Visualize and Compare Prompt, Response and Winner",
+        "content": "## Introduction:\n\nWhen dealing with conversational AI datasets, it's crucial to grasp the quality of the responses produced by various models. In this conversation, I will introduce a useful function that enables you to easily visualize and compare the responses for a specific prompt, as well as the top-performing model.\n\n## Function Overview:\n\nThe function get_info_by_id(index) takes an index as input and retrieves the corresponding prompt, responses from two models (Model A and Model B), and the winner from the Kaggle dataset. It then displays the information in an easy-to-read format.\n\n## Code Snippet:\n\n```\ntrain_path = '/kaggle/input/lmsys-chatbot-arena/train.csv'\ntrain = pd.read_csv(train_path, index_col='id').reset_index(drop=True)\n\nef get_info_by_id(index):\n     if index not in list(train.index):\n         display(\"index not in train\")\n     else:\n        print(f\"\\n{'*'*10} Prompt {'*'*10}\\n\")\n        display(train.iloc[index]['prompt'])\n\n        print(f\"\\n\\n{'*'*10} response A {'*'*10}\\n\")\n        display(train.iloc[index]['response_a'])\n\n        print(f\"\\n\\n{'*'*10} response B {'*'*10}\\n\")\n        display(train.iloc[index]['response_b'])\n\n        print(f\"\\n\\n{'*'*10} Winner {'*'*10}\\n\")\n        if train.iloc[index]['winner_model_a'] == 1:\n            display('Model A')\n        elif train.iloc[index]['winner_model_b'] == 1:\n            display('Model B')\n        else:\n            display('Tie')`\n\nget_info_by_id(3)\n\n```\n\n## Usage:\n\nTo use the function, simply call get_info_by_id() with the desired index from the train dataset. For example, get_info_by_id(3) will display the prompt, responses, and the winner for the row with index 3.\n\n## Happy Kaggling!\n\n",
+        "date": "Mon May 27 2024 18:42:02 GMT+0900 (日本標準時)",
+        "votes": "2"
+    },
+    "comments": []
+}

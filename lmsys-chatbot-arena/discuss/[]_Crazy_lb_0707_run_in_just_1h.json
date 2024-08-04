@@ -1,0 +1,69 @@
+{
+    "main_topic": {
+        "author": "justin1357",
+        "title": "[???] Crazy lb 0.707 run in just 1h",
+        "content": "It's impossible to get this score by modeling, is it leak?\n\n",
+        "date": "Sun Aug 04 2024 04:34:19 GMT+0900 (日本標準時)",
+        "votes": "8"
+    },
+    "comments": [
+        {
+            "author": "heartkilla",
+            "content": "It is either a leak or a huge breakthrough in preference modeling and the guy is one step away from creating GPT-6\n\n",
+            "date": "Posted 7 hours ago  ·  15th in this Competition",
+            "votes": "3",
+            "reply": []
+        },
+        {
+            "author": "sayoulala",
+            "content": "I believe it's very likely. My training set loss couldn't even reach that score. As of now, his score has risen to 0.6 again… I hope Kaggle officials can handle this fairly.\n\n",
+            "date": "Posted 8 hours ago  ·  3rd in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "sayoulala",
+            "content": "This is incredibly hard to accept.I think there might have been a data leak. Kaggle officials should address this issue; otherwise, it wouldn't be fair.   [@sohier](https://www.kaggle.com/sohier) [@addisonhoward](https://www.kaggle.com/addisonhoward)\n\n",
+            "date": "Posted 10 hours ago  ·  3rd in this Competition",
+            "votes": "4",
+            "reply": []
+        },
+        {
+            "author": "Psi",
+            "content": "very likely a leak given the score, he had short subs for weeks, now revealing the full leak apparently\n\n",
+            "date": "Posted 13 hours ago  ·  5th in this Competition",
+            "votes": "12",
+            "reply": [
+                {
+                    "author": "NguyenThanhNhan",
+                    "content": "i felt pretty demotivated now, after burning so much computes for this comp\n\n",
+                    "date": "Posted 13 hours ago  ·  7th in this Competition",
+                    "votes": "3",
+                    "reply": [
+                        {
+                            "author": "Psi",
+                            "content": "I feel particularly bad because we reported a leak early in this competition which is why the scoring changed.\n\nAnd now the top scores were all very close approaching similar limits, so an exciting finish was ahead of us.\n\nAnd now this… hope Kaggle can find some way to salvage this somehow. [@sohier](https://www.kaggle.com/sohier) [@addisonhoward](https://www.kaggle.com/addisonhoward) \n\n",
+                            "date": "Posted 13 hours ago  ·  5th in this Competition",
+                            "votes": "13",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Ashwani",
+            "content": "I honestly hope its not a leak but some brilliant out of the mind solution. Fingers crossed \n\n",
+            "date": "Posted 12 hours ago  ·  136th in this Competition",
+            "votes": "3",
+            "reply": []
+        },
+        {
+            "author": "Anh Pham",
+            "content": "hilarious :D \n\n",
+            "date": "Posted 13 hours ago  ·  7th in this Competition",
+            "votes": "4",
+            "reply": []
+        }
+    ]
+}

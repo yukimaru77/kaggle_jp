@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "Weiren",
+        "title": "Using template for instruct model?",
+        "content": "I heard that using instruct model would perform slightly better. But when I was using Llama-8b and Llama-8b-instruct without template,  they got the same LB score.\n\nDoes the template matters? I had tried using template but the score was even worse. Also, I found that using a template causes the logloss stuck…\n\nSome details:\n\n1 epoch\n\n4 batch size * 2 accumulation_steps\n\nand just trying different lora params 🤡\n\nAny thoughts or insights on this?\n\n",
+        "date": "Thu Jul 11 2024 15:42:49 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "hn",
+            "content": "Actually anecdotally I use the Llama3 template as well for instruct and I think it’s worse off than no template for some reason. \n\n",
+            "date": "Posted 22 days ago  ·  17th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

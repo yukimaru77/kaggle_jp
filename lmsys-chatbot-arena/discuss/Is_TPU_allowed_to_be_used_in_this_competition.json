@@ -1,0 +1,33 @@
+{
+    "main_topic": {
+        "author": "kheder yazgi",
+        "title": "Is TPU allowed to be used in this competition ",
+        "content": "Considering the huge data; we have, is allowed to train models on TPU?\n\n",
+        "date": "Fri May 17 2024 09:27:55 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "Muhammad Tariq Pervez",
+            "content": "Generally yes. But please read rules carefully\n\n",
+            "date": "Posted 3 months ago",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Valentin Werner",
+            "content": "yes, you have TPU quota available, so you could use it to train.\n\n",
+            "date": "Posted 3 months ago  ·  38th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "kheder yazgiTopic Author",
+                    "content": "Thanks really \n\n",
+                    "date": "Posted 3 months ago  ·  1100th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

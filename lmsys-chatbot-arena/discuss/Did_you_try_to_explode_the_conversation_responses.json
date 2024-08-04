@@ -1,0 +1,33 @@
+{
+    "main_topic": {
+        "author": "Mattia Vanzetto",
+        "title": "Did you try to explode the conversation responses?",
+        "content": "Hello guys,\n\nI saw that the ~86% of the training conversations is composed by just a single prompt + response, but 14% is not. I saw also that, at least in the public notebooks, the fine-tuned models usually have a maximum sequence lenght of 2000/2400 characters, and often the prompt assembled for the models are just prompt_list + response_a_list + response_b_list, which surely lead to cases where the response_b is completely truncated, or anyway to a loss of information.\n\nDid you try to explode the responses, fine-tune a model and then aggregate the predictions on the single piece of the conversation?\n\nThe mean/median length of the single piece of conversation \"prompt_i + response_a_i + response_b_i\" is between 2000 and 2400 characters, which seems perfect for this expirement.\n\nI would like to try myself, but I have no fine-tuning experience, no computing power, and no time 😂\n\nFor what it's worth, I tried with a simple xgboost, same features preparation, same optimization procedure, the exploding+aggregating approach got 1.03 on the leaderboard vs 1.04 of the standard approach.\n\nAnother expirement I would have liked to do is to build a binary classifier considering just prompt + response_X, with target the relative winner_model_X, basically duplicating the number of rows, without considering the \"opponent's response\", and then aggregate all back.\n\nI am really looking forward to see the solutions after the competitions ends. \n\nGood luck for the last days of the competition 🍀\n\n",
+        "date": "Thu Aug 01 2024 04:42:15 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "JM",
+            "content": "I tried, it increase the inference time and did not see any improvement to public LB myself\n\n",
+            "date": "Posted 3 days ago  ·  355th in this Competition",
+            "votes": "4",
+            "reply": []
+        },
+        {
+            "author": "Yi-Fu Chen",
+            "content": "\nAnother expirement I would have liked to do is to build a binary classifier considering just prompt + response_X, with target the relative winner_model_X, basically duplicating the number of rows, without considering the \"opponent's response\", and then aggregate all back.\n\nI have thought about a similar concept, but the intuition seems unreasonable because winning and losing are compared.\n\n",
+            "date": "Posted 3 days ago  ·  149th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Mattia VanzettoTopic Author",
+                    "content": "Do you mean loosing and tie? These two would be \"compared\" doing so.\n\n",
+                    "date": "Posted 3 days ago  ·  775th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

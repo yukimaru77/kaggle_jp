@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "Stanislav9801",
+        "title": "Question about submission",
+        "content": "When creating submission, do my notebook should take as input test.csv file and produce output.csv file?\n\nI mean, when I submit notebook, does test data will be loaded there dynamically, and through notebook inference submission.csv file should be produced? And this test.csv will not be the same as test.csv in the data provided?\n\nSo in this case my notebook should behave as a function, which takes test.csv as input, and submission.csv as output? Am I right?\n\nThis is my first time submission, so I don't understand this process a bit.\n\nThanks.\n\n",
+        "date": "Thu Jul 18 2024 05:44:16 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Cristóbal Mackenzie",
+            "content": "Yes, you are right. On submission, the test.csv file will contain all test data, not just the three samples you see when editing a notebook.\n\n",
+            "date": "Posted 17 days ago  ·  215th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Stanislav9801Topic Author",
+                    "content": "Thank you!\n\n",
+                    "date": "Posted 17 days ago  ·  1631st in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

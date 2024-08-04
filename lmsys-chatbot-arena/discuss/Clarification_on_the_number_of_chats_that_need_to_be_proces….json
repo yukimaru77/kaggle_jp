@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "Gabriel Mirea",
+        "title": "Clarification on the number of chats that need to be processed",
+        "content": "Hi,\n\nThe dataset description says \n\nWhen your submission is scored, this example test data will be replaced with the full test set. There are 55K rows in the training data, and you can expect roughly 25,000 rows in the test set.\n\nand the leaderboard says\n\nThis leaderboard is calculated with approximately 26% of the test data. The final results will be based on the other 74%,\n\nSo should we expect that the final submission on the private leaderboard will need to process ~75.000 rows?\n\n",
+        "date": "Thu Jul 04 2024 21:04:10 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "RB",
+            "content": "\nSo should we expect that the final submission on the private leaderboard will need to process ~75.000 rows?\n\nNo, total 25000 samples \n\nPublic LB - 26% => 6500 Samples\n\nPrivate LB - 74% => 18500 Samples\n\nTotal Test Set = 25000\n\nWhen you make a submission, your code is doing inference for all 25000 samples, we only see public LB with 6500 samples, remaining after competition ends\n\n",
+            "date": "Posted a month ago  ·  18th in this Competition",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "Gabriel MireaTopic Author",
+                    "content": "Thanks! That makes sense, so if the submission scores on the LB it got through all the samples. And the final score is hidden so that people don't probe, I guess?\n\nMy main concern was if the notebook will have to deal with more samples later. That's clear now, thank you again.\n\n",
+                    "date": "Posted a month ago",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

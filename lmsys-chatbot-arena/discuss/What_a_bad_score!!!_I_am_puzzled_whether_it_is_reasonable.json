@@ -1,0 +1,56 @@
+{
+    "main_topic": {
+        "author": "Turbo",
+        "title": "What a bad score!!! I am puzzled whether it is reasonable?",
+        "content": "I encountered inference score bad problem.\n\nI used gemma-2 to classify and got local cv(20% data) = 0.9366, lb=0.968.\n\nAlso, I used llama-3 to regression and got local cv(20% data) = 0.916, lb=0.934.\n\nWhat a bad result!!!.\n\nInspired by [@jsday96](https://www.kaggle.com/jsday96), so I tried to both inference on kaggle and local. The results are shown below. The results are train data head 10. The difference is very small. I am puzzled whether it is reasonable?\n\n",
+        "date": "Tue Jul 30 2024 13:28:30 GMT+0900 (日本標準時)",
+        "votes": "4"
+    },
+    "comments": [
+        {
+            "author": "KeShuang Liu",
+            "content": "After reading your discussion, I tested my model, which was very useful to me. I don't know why my local prediction is so different from the prediction on Kaggle, which leads to a big difference between cv and lb. I think this is the reason. This gave me new ideas. Thank you very much for your discussion.\n\n",
+            "date": "Posted 5 days ago  ·  312th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "TurboTopic Author",
+                    "content": "Hey, the results have big difference. Maybe some bugs in the code which you need to check.\n\n",
+                    "date": "Posted 4 days ago  ·  172nd in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Helmut12",
+            "content": "I think that may be normal in kaggle competition. Is this related to overfitting of the data? Like there is a significant pattern in our test set. I heard that there is a huge discrepancy between LB and the final result in a previous competition because of overfitting.\n\n",
+            "date": "Posted a day ago  ·  102nd in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "justin1357",
+            "content": "cv is lower than lb, that's normal.\n\n",
+            "date": "Posted 5 days ago  ·  19th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "TurboTopic Author",
+                    "content": "low 0.02. Others said the results of cv and lb are very small.\n\n",
+                    "date": "Posted 5 days ago  ·  172nd in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "justin1357",
+                            "content": "In my exp, cv low 0.02 too\n\n",
+                            "date": "Posted 5 days ago  ·  19th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

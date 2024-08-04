@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "Anya",
+        "title": "What is the calculation of the loss & log_loss?",
+        "content": "I happened to meet a situation that loss & log_loss was NaN. \n\nI know in programming it would happen when 0 is taken as the dividend or something like that. \n\nNow I need to know the calculation of the loss & log_loss so I could find out the cause.\n\nI appreciate every answer.🙏\n\n",
+        "date": "Sun Jun 30 2024 16:14:27 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "Kaggle uses the sklearn implementation, which is quite well documented: [https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html)\n\nThe log loss does not use any division, but it uses the logarithm. This technically could produce nan values if your predictions are < 0, but this is not happening in the sklearn logloss.\n\nAnyways, I think you should always softmax your predictions before calculating the log loss.\n\nHope this helps!\n\n",
+            "date": "Posted a month ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "AnyaTopic Author",
+                    "content": "Thanks a lot. I switched to another GPU with larger memory, and the error got solved.\n\nMaybe the data overflow cause a value out of logarithm's definition domain.\n\n",
+                    "date": "Posted a month ago  ·  487th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

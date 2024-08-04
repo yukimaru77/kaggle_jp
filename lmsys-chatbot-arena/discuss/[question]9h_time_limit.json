@@ -1,0 +1,25 @@
+{
+    "main_topic": {
+        "author": "Roschild.Rui",
+        "title": "[question]9h time limit ",
+        "content": "Will the organizers rerun our submission on the test set, or will we receive a PV score as long as we successfully submit and have an LB score? \n\nI saw some situations that when the running time was out of 9 hours the notebook was still running and got a lb score\n\n",
+        "date": "Thu Jul 25 2024 17:26:58 GMT+0900 (日本標準時)",
+        "votes": "6"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "Private scores are already calculated during your submission. So if you got a LB score, your submission is fine.\n\n",
+            "date": "Posted 10 days ago  ·  38th in this Competition",
+            "votes": "4",
+            "reply": []
+        },
+        {
+            "author": "Rise_Hand",
+            "content": "Yes, thus we should be very careful to ensemble our models or make any post processing\n\n",
+            "date": "Posted 9 days ago  ·  28th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

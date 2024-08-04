@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "Rikesh Prajapati",
+        "title": "how to submit my predictions",
+        "content": "can anyone tell me how to submit my predictions?\n\n",
+        "date": "Thu May 23 2024 12:11:21 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "This is a simple step-by-step guide:\n\n1) Create your notebook, do your modelling and predictions. Get the predictions in the right format, you want a csv file called \"submission.csv\" with the columns \"id\", \"winner_model_a\", \"winner_model_b\", \"winner_tie\". If you are using pandas, you want to save the csv file WITHOUT index, such as sub.to_csv('submission.csv', index=False).\n\n2) The notebook needs to have Internet Access disabled\n\n3) Actually submit your notebook by clicking on \"Submit\" in the sidebar.\n\nNote that there are also other ways to submit your predictions, which do not require you to go into the editor of a notebook.\n\nOption 2) After making sure step 1 & 2 of the above guide are still fulfilled, you can click on the \"Submit Prediction\" top right of this page (or any other page of the competition). There you can select a notebook and a notebook version you want to submit. There you can also specify the output file, but you can only submit files called \"submission.csv\". If you DID NOT save your predictions as csv, you cannot submit them.\n\nOption 3) You can go to the notebook you want to submit and click on \"Output\". There you will also find a submit button, which leads you to the same selection as Option 2.\n\n",
+            "date": "Posted 2 months ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": []
+        }
+    ]
+}

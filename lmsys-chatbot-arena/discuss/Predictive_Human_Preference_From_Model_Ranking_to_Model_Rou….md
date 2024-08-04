@@ -1,0 +1,28 @@
+# Predictive Human Preference: From Model Ranking to Model Routing (Idea for build a baseline)
+
+**KhanhVD** *Fri May 03 2024 17:28:13 GMT+0900 (日本標準時)* (6 votes)
+
+This is [cool blog](https://huyenchip.com/2024/02/28/predictive-human-preference.html) from Chip Huyen about Predictive Human Preference I think it can help for this competition and give some idea to build baseline model
+
+# Bradley-Terry algorithm
+
+Given a history of match outcomes, the Bradley-Terry algorithm finds the model scores that maximize the likelihood of these match outcomes, turning model scoring into a maximum likelihood estimation problem. The input, for each training example, is the models that participate in the match. The output is the outcome of the match. Assuming there’s no draw, the outcome of a match is either 0 (a wins) or 1 (b wins).
+
+[https://huyenchip.com/assets/pics/predictive-preference/3-bradley-terry.png](https://huyenchip.com/assets/pics/predictive-preference/3-bradley-terry.png)
+
+# Predicting Human Preference For Each Prompt
+
+If a ranking algorithm is about figuring out which model is better overall, predictive human preference is about figuring out which model is better for each prompt. If we know in advance that for a particular prompt, GPT-3.5 works just as well as GPT-4, and GPT-3.5 is cheaper, we can route that prompt to GPT-3.5 instead. Or if we know that Mistral-7B works just as well as GPT-4 and Mistral-7B is faster, we can route our query to Mistral-7B instead.
+
+## Experiment setup
+
+We can treat predictive human preference as a binary classification task. Given a match between 2 models, predict which one wins. If the probability of model_a winning is around 0.5, it can be considered a tie. If a Bradley-Terry model takes only (model_a, model_b) as the input, a preference predictor takes (prompt, model_a, model_b) as the input.
+
+[https://huyenchip.com/assets/pics/predictive-preference/4-preference-predictor.png](https://huyenchip.com/assets/pics/predictive-preference/4-preference-predictor.png)
+
+The architecture of my preference predictor looks like this. The model encoder and preference predictor are neural networks that can be trained independently or together. We can use BERT, Roberta, Deberta,.. or other encoder model as my prompt encoder.
+
+[imagehttps://huyenchip.com/assets/pics/predictive-preference/5-predictive-preference-architecture.png](https://huyenchip.com/assets/pics/predictive-preference/5-predictive-preference-architecture.png)
+
+
+

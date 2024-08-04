@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "Shahik15",
+        "title": "Notebook issue",
+        "content": "Hello, \n\n           I have developed a notebook but it's not added to the code section? Can somebody help here?\n\nGreetings\n\n",
+        "date": "Sun Jun 09 2024 04:35:45 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "Have you made sure that it is public in the settings section?\n\n",
+            "date": "Posted 2 months ago  ·  38th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Shahik15Topic Author",
+                    "content": "yes here's the notebook link [https://www.kaggle.com/code/shahik15/gemma-rag-chatbot-arena](https://www.kaggle.com/code/shahik15/gemma-rag-chatbot-arena)\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

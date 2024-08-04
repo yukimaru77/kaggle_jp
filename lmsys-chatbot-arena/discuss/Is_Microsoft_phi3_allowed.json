@@ -1,0 +1,48 @@
+{
+    "main_topic": {
+        "author": "Kishan Vavdara",
+        "title": "Is Microsoft phi3 allowed?",
+        "content": "I noticed in some competitions that the host specifies certain dates after which models released are not allowed. This competition was launched on May 2nd, and phi3 was released on April 23rd under the MIT license. So, could you [@sohier](https://www.kaggle.com/sohier) [@paultimothymooney](https://www.kaggle.com/paultimothymooney) please confirm if we can use that model? \n\n",
+        "date": "Thu May 30 2024 22:56:48 GMT+0900 (日本標準時)",
+        "votes": "4"
+    },
+    "comments": [
+        {
+            "author": "Kishan VavdaraTopic Author",
+            "content": "Hello, [@mylesoneill](https://www.kaggle.com/mylesoneill) [@addisonhoward](https://www.kaggle.com/addisonhoward) Could you please confirm? I can't find that anywhere on competition page.  \n\n",
+            "date": "Posted 2 months ago  ·  38th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Addison Howard",
+                    "content": "Hi Kishan,\n\nThe Kaggle team cannot make license or rule interpretations for you or our hosts. I will note, however, that the only competition with a specified date relating to model releases is the AIMO competition, and that rule does not apply to other competitions.\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "2",
+                    "reply": [
+                        {
+                            "author": "Kishan VavdaraTopic Author",
+                            "content": "Thank you so much for clarifying. Indeed, I read that somewhere in the AIMO competition rules.\n\n",
+                            "date": "Posted 2 months ago  ·  38th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Valentin Werner",
+                            "content": "If you dont mind me asking, did you find phi to perform similarly well to llama3?\n\n",
+                            "date": "Posted 2 months ago  ·  38th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Kishan VavdaraTopic Author",
+                            "content": "I haven't done extensive experiments with phi3 yet, but I've found it to be much better than other models of similar size. So far, it hasn't performed on par with llama-3. The best score I've achieved with till now is 0.994 and i think can still push further.    \n\n",
+                            "date": "Posted 2 months ago  ·  38th in this Competition",
+                            "votes": "3",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

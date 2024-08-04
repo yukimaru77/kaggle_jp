@@ -1,0 +1,63 @@
+{
+    "main_topic": {
+        "author": "SeshuRaju 🧘‍♂️",
+        "title": "Llama 3.1 7b vs Gemma 9b (sft)?",
+        "content": "Local cv for Gemma is better than Llama 3.1 -> is it same for you too?\n\n- same settings as sft, qlora, 4bit, same batch size.\n\nGemma 9b:  \n\n  Step 10: loss = 2.3923\n\n  Step 20: loss = 2.0361\n\n  Step 30: loss = 1.4534\n\n  Step 40: loss = 1.6852\n\n  Step 50: loss = 1.3092\n\nLLama 3.1 7b:\n\n  Step 10: loss = 2.6542\n\n  Step 20: loss = 3.2993\n\n  Step 30: loss = 2.4278\n\n  Step 40: loss = 2.0152\n\n  Step 50: loss = 2.3515\n\n",
+        "date": "Sun Jul 28 2024 02:44:32 GMT+0900 (日本標準時)",
+        "votes": "5"
+    },
+    "comments": [
+        {
+            "author": "Helmut12",
+            "content": "By looking through the Code page, I think Gemma should be better for this competition.\n\n",
+            "date": "Posted 2 days ago  ·  102nd in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "sayoulala",
+            "content": "The training loss alone is not enough to determine which is not performing well.\n\n",
+            "date": "Posted 7 days ago  ·  3rd in this Competition",
+            "votes": "5",
+            "reply": []
+        },
+        {
+            "author": "Ashwani",
+            "content": "In my limited experiments, gemma9b is performing better than llama3.1 and llama3. \n\nBoth llama3.1 & llama3 are giving similar performance with llama3.1 marginally better. \n\n",
+            "date": "Posted 7 days ago  ·  136th in this Competition",
+            "votes": "4",
+            "reply": [
+                {
+                    "author": "Merlyn Wang",
+                    "content": "Same here.\n\n",
+                    "date": "Posted 4 days ago  ·  117th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "CPMP",
+            "content": "This is train loss or validation loss?\n\n",
+            "date": "Posted 8 days ago  ·  27th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "SeshuRaju 🧘‍♂️Topic Author",
+                    "content": "it's training loss in the post [@cpmpml](https://www.kaggle.com/cpmpml) \n\nvalidation loss per epoch wise.\n\n  for local cv - Llama 3.1 - 1.097 and Gemma - 0.981\n\n",
+                    "date": "Posted 8 days ago  ·  323rd in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "CPMP",
+                            "content": "1.09 is a model that did not learn. Something is wrong here IMHO.\n\n",
+                            "date": "Posted 8 days ago  ·  27th in this Competition",
+                            "votes": "6",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

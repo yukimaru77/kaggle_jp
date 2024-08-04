@@ -1,0 +1,48 @@
+{
+    "main_topic": {
+        "author": "sayoulala",
+        "title": "CV vs LB，Will there be significant fluctuations？",
+        "content": "Hello everyone, what do you think about the trends of CV (Cross-Validation) and LB (Leaderboard) in this competition's challenge? Will there be significant fluctuations, similar to recent competitions?\n\n",
+        "date": "Sun Jul 14 2024 12:02:54 GMT+0900 (日本標準時)",
+        "votes": "5"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "The obligatory post towards the end of each competition. \n\nI cannot really answer your question, but I can say that we definetly managed to overfit models on CV before. However, in a lot of cases we have pretty good LB and CV correlation. This is something I often did not have in competitions with large shakeup.\n\n",
+            "date": "Posted 21 days ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "sayoulalaTopic Author",
+                    "content": "Then you probably haven't participated in the competitions hosted by THE LEARNING AGENCY LAB on Kaggle, haha.\"\n\n",
+                    "date": "Posted 21 days ago  ·  3rd in this Competition",
+                    "votes": "2",
+                    "reply": [
+                        {
+                            "author": "Valentin Werner",
+                            "content": "DAIGT was wild, but I do not recall people feeling good about their CV - LB correlation in it. \n\nAfter a quick search, I found this, which agrees with what I remember [https://www.kaggle.com/competitions/llm-detect-ai-generated-text/discussion/458477](https://www.kaggle.com/competitions/llm-detect-ai-generated-text/discussion/458477)\n\nBut I also remember this gem which aged like fine milk: [https://www.kaggle.com/competitions/llm-detect-ai-generated-text/discussion/462235](https://www.kaggle.com/competitions/llm-detect-ai-generated-text/discussion/462235)\n\n",
+                            "date": "Posted 21 days ago  ·  38th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "xiaotingting",
+            "content": "It depends on the difference in the distribution of the training set and the test set. I can only say that there may be a big difference between the leaderboard score and the cross-validation score.\n\n",
+            "date": "Posted 6 days ago  ·  19th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Dlond Mike",
+            "content": "don't worry my friend,u are the first in LB:)\n\n",
+            "date": "Posted 7 days ago  ·  173rd in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

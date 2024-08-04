@@ -1,0 +1,41 @@
+{
+    "main_topic": {
+        "author": "godmysalary",
+        "title": "How to get the vector representation of sentences using Llama3?",
+        "content": "Hi everyone! Now most public noteboks directly use \"LlamaForSequenceClassification\" for fine-tuning and getting the predicted probability. I was wondering how I can get the learned embeddings of response_a and response_b besides the predictions since I think the embeddings can be fed into other different classifiers. I don't want to employ another LLM due to the time constraint. So could anybody tell me how I can getting the embeddings of responses as a byproduct of the fine-tuned Llama3? Thanks.\n\n",
+        "date": "Fri Jun 28 2024 17:22:14 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "RB",
+            "content": "You can pass output_hidden_states=True when initializing model , something like this \n\n```\nmodel  = AutoModelForCausalLM.from_pretrained(model_path, quantization_config=quantization_config, output_hidden_states=True)\n\nout = model(input_ids = tokenized['input_ids'], attention_mask = tokenized['attention_mask'])\n\nout.hidden_states\n\n```\n\n",
+            "date": "Posted a month ago  ·  18th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "godmysalaryTopic Author",
+                    "content": "thank you!\n\n",
+                    "date": "Posted a month ago  ·  335th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Enter your display name",
+            "content": "I think what you want is the last hidden state of the model's output?\n\n",
+            "date": "Posted a month ago  ·  12th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "godmysalaryTopic Author",
+                    "content": "exactly. So is there one way to obtain this? thanks\n\n",
+                    "date": "Posted a month ago  ·  335th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

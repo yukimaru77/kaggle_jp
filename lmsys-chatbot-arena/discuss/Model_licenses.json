@@ -1,0 +1,34 @@
+{
+    "main_topic": {
+        "author": "gromml",
+        "title": "Model licenses",
+        "content": "Hi all,\n\nI am new to HF. I can see that different models come with different licenses: [https://huggingface.co/docs/hub/repositories-licenses](https://huggingface.co/docs/hub/repositories-licenses). How can I find out which licenses conform to the competition rules?\n\nThanks.\n\n",
+        "date": "Fri Jul 05 2024 06:27:37 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "You need to have available commercial use.\n\nThe common licenses that work are including (but others probably too): MIT, Apache 2.0, CC-BY4.0, Llama License, Gemma License.\n\nAlways make sure that you further read the licenses if you plan to distribute information (e.g., for Llama and Gemma).\n\n",
+            "date": "Posted a month ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "grommlTopic Author",
+                    "content": "For example, if I want to use this model:\n\n[https://huggingface.co/vennify/t5-base-grammar-correction](https://huggingface.co/vennify/t5-base-grammar-correction)\n\nI can see that it has Creative Commons Attribution Non Commercial Share Alike 4.0. Does using this model conform to this competition?\n\n",
+                    "date": "Posted a month ago  ·  484th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Valentin Werner",
+                            "content": "This sounds weird but you can try it out locally or in kaggle. From my understanding (not a lawyer) you should not submit this to the competition (because then it becomes an attempt to win money). However, as long as you dont go for a gold medal, it probably hardly matters.\n\n",
+                            "date": "Posted a month ago  ·  38th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

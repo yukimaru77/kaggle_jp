@@ -1,0 +1,56 @@
+{
+    "main_topic": {
+        "author": "ivan_c2004",
+        "title": "training loss doesnt converge",
+        "content": "Hello guys, i am using deberta xsmall with peft for training. the batch size is 8 and the learning rate is 1e-4, data for training is the range 40k to 56k , everytime i train the model the loss keeps at about 1.01, doesnt decrease after 6-7 epoches. my gpu is rtx 3060 only and training for ten or more epoches would take me more than a day and that i read from online websites lora finertuning llm should take only a few epoches so i didnt try for more epoches. Does anyone know how to solve this issue, or just try training for more epoches until the loss reaches a certain number like 0.2 0.3? thank you so much\n\nMy codes for training can be found below. Thank you \n\n```\nfrom peft import get_peft_config, PeftModel, PeftConfig, get_peft_model, LoraConfig, TaskType\nimport torch\nimport sklearn\nimport numpy as np\nimport pandas as pd\nimport time\nfrom tqdm import tqdm\nfrom torch.nn import CrossEntropyLoss\nfrom torch.utils.data import DataLoader, Dataset\nfrom sklearn.model_selection import train_test_split\nimport matplotlib.pyplot as plt\n\nfrom transformers import AutoTokenizer, LlamaModel, LlamaForSequenceClassification, BitsAndBytesConfig,get_linear_schedule_with_warmup,AutoModelForSequenceClassification,DebertaTokenizerFast\nfrom torch.cuda.amp import autocast\n\ntorch.backends.cuda.enable_mem_efficient_sdp(False)\ntorch.backends.cuda.enable_flash_sdp(False)\n\nif (not torch.cuda.is_available()): print(\"Sorry - GPU required!\")\nprint(torch.__version__)\nif torch.cuda.is_available(): print('gpu available')\nfrom huggingface_hub import login\nlogin(token=\"\")\n\nclass CustomDataset(Dataset):\n    def __init__(self, df, tokenizer):\n        self.df = df\n        self.tokenizer = tokenizer\n\n    def __len__(self):\n        return len(self.df)\n\n    def __getitem__(self, idx):\n        text = self.df.loc[idx, 'text']\n        labels_a = self.df.loc[idx, 'winner_model_a']\n        labels_b = self.df.loc[idx, 'winner_model_b']\n        labels_tie = self.df.loc[idx, 'winner_tie']\n\n        max_length = 1024\n\n        inputs = self.tokenizer(\n            text,\n            max_length=max_length,\n            truncation=True,\n            padding=\"max_length\",\n            return_tensors=\"pt\"\n        )\n        input_ids = inputs['input_ids'].squeeze()\n        attention_mask = inputs['attention_mask'].squeeze()\n\n        labels = torch.tensor([labels_a, labels_b, labels_tie]) \n\n        return {\n            'input_ids': input_ids,\n            'attention_mask': attention_mask,\n            'labels': labels  \n        }\n\nbnb_config = BitsAndBytesConfig(\n    load_in_4bit=True,\n    bnb_4bit_use_double_quant=True,\n    bnb_4bit_quant_type=\"nf4\",\n    bnb_4bit_compute_dtype=torch.float16\n)\nprint(torch.cuda.get_device_name(0))\n\nmodel_id = \"microsoft/deberta-v3-xsmall\"\ntokenizer_id = \"microsoft/deberta-v3-xsmall\"\n\ntokenizer = AutoTokenizer.from_pretrained(tokenizer_id)\nmodel = AutoModelForSequenceClassification.from_pretrained(\n    model_id,\n    num_labels=3,\n    torch_dtype=torch.float16,\n    quantization_config=bnb_config,\n    device_map='cuda:0')\nmodel.config.pad_token_id = tokenizer.pad_token_id\ntokenizer.pad_token = tokenizer.eos_token\n\npeft_config = LoraConfig(\n    r=16,\n    lora_alpha=32,\n    lora_dropout=0.10,\n    bias='none',\n    task_type=TaskType.SEQ_CLS,\n    )\ndevice = torch.device('cuda:0')\nbaseline_model = get_peft_model(model, peft_config).to(device)\nbaseline_model.print_trainable_parameters()\nbaseline_model.eval()\n\nlr = 1e-4\nnum_epochs = 16\nbatch_size = 8\nkaggle = False\n\ntrain_df = pd.read_csv('./lmsys-chatbot-arena/train.csv')\nprint('number of training data: ',len(train_df))\ntrain_df = train_df.iloc[:]\ndef process(input_str):\n    stripped_str = input_str.strip('[]')\n    sentences = [s.strip('\"') for s in stripped_str.split('\",\"')]\n    return ' '.join(sentences)\n\ntrain_df.loc[:, 'prompt'] = train_df['prompt'].apply(process)\ntrain_df.loc[:, 'response_a'] = train_df['response_a'].apply(process)\ntrain_df.loc[:, 'response_b'] = train_df['response_b'].apply(process)\ntrain_df['text'] = 'User prompt: ' + train_df['prompt'] + '\\n\\nModel A :\\n' + train_df['response_a'] + '\\n\\n--------\\n\\nModel B:\\n' + train_df['response_b']\ntrain_df = train_df.reset_index(drop=True)\n\nif kaggle:\n    print(f'number of training data {len(train_df)}')\nelse:\n    train_df, val_df = train_test_split(train_df, test_size=0.2, random_state=42)\n    train_df = train_df.reset_index(drop=True)\n    val_df = val_df.reset_index(drop=True)\n    print(f'number of training data after spliting: {len(train_df)} number of testing data: {len(val_df)}')\n    val_dataset = CustomDataset(val_df, tokenizer)\n    val_dataloader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)\n\ntrain_dataset = CustomDataset(train_df, tokenizer)\ntrain_dataloader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)\n\nimport gc\n\ngc.collect()\n\ntorch.cuda.empty_cache()\n\ncriterion = CrossEntropyLoss()\n\noptimizer = torch.optim.AdamW(baseline_model.parameters(), lr=lr)\n\nlr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.1)\n\ntraining_losses = []  \nvalidation_losses = []  \n\nfor epoch in range(num_epochs):\n    baseline_model.train()\n    epoch_training_loss = 0  \n\n    for step, batch in enumerate(tqdm(train_dataloader)):\n        batch = {k: v.to(device) for k, v in batch.items()} \n\n        inputs = {\n            'input_ids': batch['input_ids'],\n            'attention_mask': batch['attention_mask'],\n        }\n        outputs = baseline_model(**inputs)\n        labels = batch['labels'].float()\n        loss = criterion(outputs.logits, labels)\n        loss.backward()\n        optimizer.zero_grad()\n\n        epoch_training_loss += loss.item() \n\n    epoch_training_loss /= len(train_dataloader)  \n    training_losses.append(epoch_training_loss) \n    baseline_model.eval()\n    if not kaggle:\n        total_validation_loss = 0\n        total_samples = 0\n        correct_predictions = 0\n\n        with torch.no_grad():\n            for step, batch in enumerate(tqdm(val_dataloader)):\n                batch = {k: v.to(device) for k, v in batch.items()}  \n\n                inputs = {\n                    'input_ids': batch['input_ids'],\n                    'attention_mask': batch['attention_mask'],\n                }\n                outputs = baseline_model(**inputs)\n                predictions = outputs.logits.argmax(dim=-1)\n                labels = batch['labels'].float().argmax(dim=1)\n\n                loss = criterion(outputs.logits, labels)\n                total_validation_loss += loss.item()\n                total_samples += len(labels)\n                correct_predictions += (predictions == labels).sum().item()\n\n        epoch_validation_loss = total_validation_loss / len(val_dataloader)\n        validation_losses.append(epoch_validation_loss)  \n\n        accuracy = correct_predictions / total_samples\n        print(f\"Validation Loss: {epoch_validation_loss:.4f}, Accuracy: {accuracy:.4f}\")\n    print(f\"Epoch {epoch+1}: Training Loss: {epoch_training_loss:.4f}\")\n\nplt.plot(training_losses, label='Training Loss')\nplt.plot(validation_losses, label='Validation Loss')\nplt.xlabel('Epoch')\nplt.ylabel('Loss')\nplt.legend()\nplt.show()\n\ntorch.save(baseline_model.state_dict(), 'model.pt')\n\n```\n\n",
+        "date": "Sat Jun 08 2024 22:15:28 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "yechenzhi1",
+            "content": "larger batch size helped for me( I just increased gradient_accumulation_steps to 100)\n\n",
+            "date": "Posted 2 months ago  ·  25th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "ivan_c2004Topic Author",
+                    "content": "yah gradient accumulation can help! thx. \n\nhow long does the training take? what is the suggested epoch and batch size?\n\n",
+                    "date": "Posted 2 months ago  ·  1697th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "yechenzhi1",
+                            "content": "Training time is up to your GPUs and model size. And I simply tried 1 epoch and 400 batch size( I didn't do much experiments, this is just my personal choice)\n\n",
+                            "date": "Posted 2 months ago  ·  25th in this Competition",
+                            "votes": "2",
+                            "reply": []
+                        },
+                        {
+                            "author": "ivan_c2004Topic Author",
+                            "content": "I see. Thank you so much!\n\n",
+                            "date": "Posted 2 months ago  ·  1697th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Valentin Werner",
+            "content": "model might be too small. took me Base model, Higher effective batch size and lower lr with all data for some epochs to her ANY convergence\n\nUsing PEFT with XSmall model might not be preferrable either, training on kaggle GPU can easily handle full finetune of the small models.\n\nAlso you leaked your huggingface token, I recommend to remove that.\n\n",
+            "date": "Posted 2 months ago  ·  38th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "ivan_c2004Topic Author",
+                    "content": "i see. \n\nthank you so much for reminding me the leak \n\n",
+                    "date": "Posted 2 months ago  ·  1697th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

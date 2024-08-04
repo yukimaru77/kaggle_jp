@@ -1,0 +1,49 @@
+{
+    "main_topic": {
+        "author": "bao",
+        "title": "How to finetune LLM? ",
+        "content": "I am a beginner in LLM and would like to get started. Could you please explain how to fine-tune the model for this scenario? Is it done using methods like DPO with LLama-Factory?\n\n",
+        "date": "Tue Jun 25 2024 18:26:28 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Staru09",
+            "content": "You can check this [https://dassum.medium.com/fine-tune-large-language-model-llm-on-a-custom-dataset-with-qlora-fb60abdeba07](https://dassum.medium.com/fine-tune-large-language-model-llm-on-a-custom-dataset-with-qlora-fb60abdeba07)\n\n",
+            "date": "Posted a month ago",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "Nikhil Narayan",
+                    "content": "Well do you have resources about any other way to do this\n\n",
+                    "date": "Posted a month ago",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Staru09",
+                            "content": "Resources as in computation or something else. If computation is an issue then you can try using tools like llamaedge or wasmedge. They are very good frameworks to work with but you should know Rust otherwise you can use PEFT, or converting into lower bit like 8 or 16 to fine-tune along with LORA, QLORA etc.\n\n",
+                            "date": "Posted a month ago",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Lorry Zou",
+            "content": "There are plenty of great videos on YouTube teaching you how to fine-tune LLM and Llama 3 specifically.\n\n",
+            "date": "Posted a month ago  ·  153rd in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "YingxiZhang",
+                    "content": "Indeed, there are a lot of resources on YouTube and I've learned a lot.😀\n\n",
+                    "date": "Posted 24 days ago  ·  161st in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

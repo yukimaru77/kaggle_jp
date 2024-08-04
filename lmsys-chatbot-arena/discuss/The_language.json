@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "Dlond Mike",
+        "title": "The language",
+        "content": "train.csv are all english but how about the Public Datasets and private?\n\n",
+        "date": "Sun Jul 21 2024 22:03:48 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "train.csv is not all english. The data definetly involves a few multi-lingual samples. It is save to assume there could be some samples in the test data too\n\n",
+            "date": "Posted 14 days ago  ·  38th in this Competition",
+            "votes": "2",
+            "reply": []
+        }
+    ]
+}

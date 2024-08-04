@@ -1,0 +1,34 @@
+{
+    "main_topic": {
+        "author": "Pranshu Bahadur",
+        "title": "[Need Help] Running Gemma 2 9b in Keras on 2xT4s",
+        "content": "Hey guys!\n\nI made this notebook to train Gemma 2 9b on TPUs.\n\nBut the competition doesn't allow TPUs for submission….which is a bit awkward haha\n\nSo I'm enlisting your help to figure this out!\n\nWould really appreciate any feedback, I am looking to learn!\n\nTraining nb (~3 hrs for 1 epoch):\n\n[https://www.kaggle.com/code/pranshubahadur/tf-gemma-2-9b-lmsys-training-tpu](https://www.kaggle.com/code/pranshubahadur/tf-gemma-2-9b-lmsys-training-tpu)\n\nUnsolved inference nb:\n\n[https://www.kaggle.com/code/pranshubahadur/unsolved-inference-tf-gemma-2-9b-lmsys](https://www.kaggle.com/code/pranshubahadur/unsolved-inference-tf-gemma-2-9b-lmsys)\n\n",
+        "date": "Mon Jul 22 2024 12:28:59 GMT+0900 (日本標準時)",
+        "votes": "3"
+    },
+    "comments": [
+        {
+            "author": "Pranshu BahadurTopic Author",
+            "content": "Update: Inference works now, out of tpu quota will update on saturday\n\n",
+            "date": "Posted 12 days ago  ·  366th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Somesh88",
+                    "content": "what did you do to make inference run?\n\n",
+                    "date": "Posted 12 days ago  ·  627th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Pranshu BahadurTopic Author",
+                            "content": "mainly device allocation followed by a custom prediction loop and set_floatx('float16')\n\nno quantization was needed \n\nyou can check out my inference nb linked above\n\n",
+                            "date": "Posted 12 days ago  ·  366th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

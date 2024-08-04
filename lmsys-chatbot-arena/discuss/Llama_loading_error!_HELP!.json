@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "박민욱peterminpark",
+        "title": "Llama loading error! HELP!",
+        "content": "\n\nWhen i try to load \n\n[https://www.kaggle.com/models/metaresearch/llama-3/Transformers/8b-chat-hf/1](https://www.kaggle.com/models/metaresearch/llama-3/Transformers/8b-chat-hf/1)\n\nwith llamaforsequenceclassification i get the above error.\n\n",
+        "date": "Sat Jul 27 2024 14:33:00 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "Make sure you apply for access to the model first. Access is usually granted within 10minutes to 24hours.\n\n",
+            "date": "Posted 8 days ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": []
+        }
+    ]
+}

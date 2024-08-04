@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "KeShuang Liu",
+        "title": "How to run a model on two cards",
+        "content": "I loaded my model on the CPU and it took up 19g, while the GPU p100 only had 16g. However, I found that if I use two t4 blocks for a total of 30g, can I deploy my model to two t4 blocks? What should I do?\n\n",
+        "date": "Mon Jun 17 2024 17:22:30 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Minato Ryan",
+            "content": "If you are using transformers library, use device_map=\"auto\".\n\nlike this,\n\n```\nAutoModelForCausalLM.from_pretrained(\"google-bert/bert-base-cased\", device_map=\"auto\")\n\n```\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "KeShuang LiuTopic Author",
+                    "content": "Thank you very much for your reply. I succeeded using your method\n\n",
+                    "date": "Posted 2 months ago  ·  312th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

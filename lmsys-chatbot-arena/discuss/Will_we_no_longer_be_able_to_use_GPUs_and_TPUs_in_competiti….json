@@ -1,0 +1,32 @@
+{
+    "main_topic": {
+        "author": "Hıdır Demir",
+        "title": "Will we no longer be able to use GPUs and TPUs in competitions?",
+        "content": "Will we no longer be able to use GPUs and TPUs in competitions?ns?  \n\n",
+        "date": "Sat Jul 20 2024 05:11:45 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Lorry Zou",
+            "content": "L UI change \n\n",
+            "date": "Posted 15 days ago  ·  153rd in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Nicholas Broad",
+            "content": "Check the Settings > Accelerator from the top menu bar\n\n",
+            "date": "Posted 15 days ago  ·  18th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Akeryu Ryuu",
+            "content": "I don't know if they are experimenting with new UI but you can find the accelerator option in session options on the right side where you turn off internet for the notebook. \n\n",
+            "date": "Posted 15 days ago  ·  331st in this Competition",
+            "votes": "1",
+            "reply": []
+        }
+    ]
+}

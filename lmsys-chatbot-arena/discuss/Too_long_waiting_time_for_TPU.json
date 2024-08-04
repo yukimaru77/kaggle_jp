@@ -1,0 +1,49 @@
+{
+    "main_topic": {
+        "author": "Saiyan Warrior",
+        "title": "Too long waiting time for TPU",
+        "content": "Hi Kaggler, \n\nAre you also facing too long waiting time/queue( sometimes more than 1 hour) for TPU usage? \nTo whom should we raise this issue? \nWhat other options are you trying for TPU besides colab?\n",
+        "date": "Thu Jul 04 2024 19:11:11 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "Not sure about many other options. With the rise of LLMs, these resources have been used a lot more. You can raise feature requests and complain about stuff like this in Product Feedback: [https://www.kaggle.com/discussions/product-feedback?sort=published](https://www.kaggle.com/discussions/product-feedback?sort=published)\n\nHowever, Kaggle provides these resources for free so you dont have to provide them yourself and to even out the playing field for these competitions a bit. I think its important to either be grateful for what Kaggle provides (of course you can still raise it in product feedback), or adapt & overcome and find a solution that works for you. There are many alternatives for the goold old GPU - which still works well 😉\n\n",
+            "date": "Posted a month ago  ·  38th in this Competition",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "Saiyan WarriorTopic Author",
+                    "content": "[@valentinwerner](https://www.kaggle.com/valentinwerner) \n\nI am not only grateful for computing but also for the kaggle platform itself I have learned a lot from this platform.\nI just wanted to check whether this happening to me only or in general and what option others are using.\n",
+                    "date": "Posted a month ago  ·  201st in this Competition",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "Sparsh Tewatia",
+                            "content": "Try applying for TRC google program , they give I think 1 month of free access to TPUs\n\n",
+                            "date": "Posted a month ago  ·  512th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "madarshbb",
+            "content": "1) Yes, it is an issue for quite some time now.\n\n2) You can raise this in kaggle's product feedback\n\n3) I tried GCS and azure sagemaker. But they have quite a cumbersome setup process. Would much rather wait for kaggle's TPU for a few hours, but less TPU waiting time would be a blessing.\n\n",
+            "date": "Posted a month ago  ·  343rd in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Saiyan WarriorTopic Author",
+                    "content": "Thanks [@madarshbb](https://www.kaggle.com/madarshbb) \n\n",
+                    "date": "Posted a month ago  ·  201st in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

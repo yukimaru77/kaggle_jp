@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "Lorry Zou",
+        "title": "Does the order of the submission file matter?",
+        "content": "Title. Is it OK if I change the order of the original submission file?\n\nFor example, the original id's are: 01, 02, 03.\n\nIs it OK if I submit in this order: 02|prediction, 01|prediction, 03|prediction ?\n\n",
+        "date": "Sat Jul 13 2024 04:05:31 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "No it won't matter. I submitted submission.csv files with reversed IDs before.\n\n",
+            "date": "Posted 23 days ago  ·  38th in this Competition",
+            "votes": "4",
+            "reply": []
+        }
+    ]
+}

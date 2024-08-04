@@ -1,0 +1,48 @@
+{
+    "main_topic": {
+        "author": "Roschild.Rui",
+        "title": "1h -> .707! Is the dataset leaked?",
+        "content": "Unbelievable! I have great desire to know what’s really help and how could the master achieve this after the competition ending\n\n",
+        "date": "Sun Aug 04 2024 04:36:14 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "sayoulala",
+            "content": "I believe it's very likely. My training set loss couldn't even reach that score. As of now, his score has risen to 0.6 again… I hope Kaggle officials can handle this matter fairly.\n\n",
+            "date": "Posted 8 hours ago  ·  3rd in this Competition",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "Valentin Werner",
+                    "content": "Training loss doesn't even get close to it. Even ignoring all remarks on speed of submission, I dont think a model that could run inference in an hour (likely the size of deberta Base or smaller), is even  able to overfit this hard on a problem this complex. \n\nNot going to lie, I would love him to have come up with some insane solution.\n\n",
+                    "date": "Posted 5 hours ago  ·  38th in this Competition",
+                    "votes": "2",
+                    "reply": [
+                        {
+                            "author": "Cody_Null",
+                            "content": "I feel the same way but I would be completely shocked haha\n\n",
+                            "date": "Posted 5 hours ago  ·  30th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "sayoulala",
+                            "content": "If he can come up with a better solution, the whole world will thank him. But if he's exploiting some loopholes, that would be truly disappointing.\n\n",
+                            "date": "Posted 39 minutes ago  ·  3rd in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Cody_Null",
+            "content": "I hope he doesn’t share before competition end. Because if he does the comp is ruined lol \n\n",
+            "date": "Posted 13 hours ago  ·  30th in this Competition",
+            "votes": "5",
+            "reply": []
+        }
+    ]
+}

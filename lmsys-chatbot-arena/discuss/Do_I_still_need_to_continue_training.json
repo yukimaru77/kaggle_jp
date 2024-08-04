@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "KeShuang Liu",
+        "title": "Do I still need to continue training?",
+        "content": "I have fine tuned many models, but the losses have remained almost unchanged. Is it necessary for me to continue training because I haven't trained enough? I find it difficult to make a decision at this point.This is my current validation set loss curve, which I verify every 2000 steps\n\n",
+        "date": "Fri Jul 26 2024 14:05:04 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "S J Moudry",
+            "content": "Are you testing on a validation set? I'd be more worried about performance there.  I'd also check my warmup steps and set them around 5-20%, having too few can cause a big drop right away but then you never really improve.\n\n",
+            "date": "Posted 9 days ago  ·  433rd in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

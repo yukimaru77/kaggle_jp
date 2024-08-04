@@ -1,0 +1,68 @@
+{
+    "main_topic": {
+        "author": "Addison Howard",
+        "title": "Get started here!",
+        "content": "New to machine learning and data science? No question is too basic or too simple. Feel free to start your own thread, or use this thread as a place to post any first-timer clarifying questions for the Kaggle community to help you with!\n\nNew to Kaggle? Take a look at a few videos to learn a bit more about [site etiquette](https://www.youtube.com/watch?v=aIus8si_Et0), [Kaggle lingo](https://www.youtube.com/watch?v=sEJHyuWKd-s), and [how to enter a competition using Kaggle Notebooks](https://www.youtube.com/watch?&v=GJBOMWpLpTQ). Publish and share your [models on Kaggle Models](https://www.kaggle.com/docs/models#publishing-a-model)!\n\nLooking for a team? Express your interest in joining a team through our [Team Up](https://www.kaggle.com/discussions/product-feedback/341195) feature .\n\nRemember: Kaggle is for everyone. Whether you're teaming up or sharing tips in the competition forum, we expect everyone to follow our Kaggle community guidelines.\n\n",
+        "date": "Tue Apr 09 2024 05:28:18 GMT+0900 (日本標準時)",
+        "votes": "15"
+    },
+    "comments": [
+        {
+            "author": "Roschild.Rui",
+            "content": "Hi i am at a loss -> Why was it possible to submit almost identical inference weights and inference logic without any issues a few days ago, but recently there have been constant submission errors? It seems that the imbalance in Kaggle's computational resource load significantly affects the competition submissions. I would greatly appreciate it if you could answer my question.@Addison Howard\n\n",
+            "date": "Posted 5 days ago  ·  30th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Cody_Null",
+                    "content": "Yes, we have much better submissions we aren’t able to get working that were working only a few days ago. An idea of what is going on with the back end of things would be great!\n\n",
+                    "date": "Posted 3 days ago  ·  30th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Yuliana Setianingrum",
+            "content": "HAY EVERYONE !! Let's Enjoy Our journey in the exciting world of machine learning and data science!\n\n",
+            "date": "Posted a month ago",
+            "votes": "2",
+            "reply": []
+        },
+        {
+            "author": "Riad",
+            "content": "hi all 😄\n\nis there anyone want to make a group with me we can help each other to make better models\n\nmy linkdin :- [https://www.linkedin.com/in/riad-almadani-a735a01bb/](https://www.linkedin.com/in/riad-almadani-a735a01bb/)\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "3",
+            "reply": []
+        },
+        {
+            "author": "ascender1729.eth",
+            "content": "Excited for my first competition, any beginner tips?\n\n",
+            "date": "Posted 7 days ago",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Eetu Rantala",
+            "content": "Hi everyone! I'm enjoying Fast.ai practical course which led me to try out kaggle competitions. I hope I can get ok result on this competition with my skills! :) \n\n",
+            "date": "Posted a month ago  ·  1623rd in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Kumar Deblin",
+            "content": "Hi Every one!\n\n",
+            "date": "Posted a month ago  ·  1479th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Vishal Maurya",
+            "content": "Kaggle provides CPU and GPU while submission and scoring of notebooks. Just want to know, can we use TPUs? \n\n",
+            "date": "Posted a month ago  ·  1313th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

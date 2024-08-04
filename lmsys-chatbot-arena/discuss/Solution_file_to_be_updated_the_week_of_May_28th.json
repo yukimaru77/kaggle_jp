@@ -1,0 +1,99 @@
+{
+    "main_topic": {
+        "author": "Sohier Dane",
+        "title": "Solution file to be updated the week of May 28th",
+        "content": "A Kaggle community member informed us that the hidden test set for this competition contains values that have already been published. We were aware of some existing public data, but not that there are actually different versions of the public data using one name. We will update the solution file to ignore the affected rows next week and then rescore all existing submissions. You are welcome to continue to make submissions in the meantime.\n\nThank you very much to the Kaggler that disclosed this issue.\n\nTo everyone else, apologies for the disruption and thank you in advance for your patience. \n\n",
+        "date": "Tue May 21 2024 01:30:43 GMT+0900 (日本標準時)",
+        "votes": "31"
+    },
+    "comments": [
+        {
+            "author": "Psi",
+            "content": "Given the top score, high probability there is another leak…\n\n",
+            "date": "Posted 13 hours ago  ·  5th in this Competition",
+            "votes": "7",
+            "reply": [
+                {
+                    "author": "Chris Deotte",
+                    "content": "If it is a leak, this is frustrating. Many teams spent a lot of money and time on compute. \n\nIf it is a leak in the form of released test data, doesn't the host know where they published their test data? Couldn't this have been discovered day one?\n\n",
+                    "date": "Posted 13 hours ago  ·  11th in this Competition",
+                    "votes": "4",
+                    "reply": [
+                        {
+                            "author": "Psi",
+                            "content": "as you can see in this thread, it already happened once…\n\nI hope it is not an explicit data leak, or no leak at all (which seems unlikely though), but rather some clever data exploitation\n\n",
+                            "date": "Posted 13 hours ago  ·  5th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        },
+                        {
+                            "author": "CPMP",
+                            "content": "I miss the days where people had to disclose every external data they used in competition forums.\n\n",
+                            "date": "Posted 6 hours ago  ·  27th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        },
+                        {
+                            "author": "Fae Gaze",
+                            "content": "Hi, I also miss that part. I would appreciate any help on that\n\n",
+                            "date": "Posted 4 hours ago  ·  823rd in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Paul Mooney",
+            "content": "Following up to note that we updated the solution file and rescored the submissions. The leaderboard page now shows the updated scores. Thanks again to the community members that disclosed this issue!\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "3",
+            "reply": []
+        },
+        {
+            "author": "heartkilla",
+            "content": "A link to the data would be appreciated \n\n",
+            "date": "Posted 2 months ago  ·  15th in this Competition",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "heartkilla",
+                    "content": "I will clarify. If this data is public and someone has access to it, they can still use it for analysis, even if it’s removed from the test set. \n\n",
+                    "date": "Posted 2 months ago  ·  15th in this Competition",
+                    "votes": "4",
+                    "reply": []
+                },
+                {
+                    "author": "dott",
+                    "content": "It is the 33k LMSYS dataset published on HF [https://huggingface.co/datasets/lmsys/chatbot_arena_conversations](https://huggingface.co/datasets/lmsys/chatbot_arena_conversations) and preprocessed by one of the Kagglers [https://www.kaggle.com/code/abdullahmeda/33k-lmsys-chatbot-arena-conversations](https://www.kaggle.com/code/abdullahmeda/33k-lmsys-chatbot-arena-conversations) into the competition format. We used the latter to detect the leak.\n\n",
+                    "date": "Posted 2 months ago  ·  5th in this Competition",
+                    "votes": "25",
+                    "reply": [
+                        {
+                            "author": "heartkilla",
+                            "content": "That's the spirit. Thanks.\n\n",
+                            "date": "Posted 2 months ago  ·  15th in this Competition",
+                            "votes": "3",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Fae Gaze",
+            "content": "Thank you for the update and for handling this issue. Looking forward to the revised scores next week!\n\n",
+            "date": "Posted 2 months ago  ·  823rd in this Competition",
+            "votes": "-1",
+            "reply": []
+        },
+        {
+            "author": "Wasiu Olaitan Garuba ",
+            "content": "That's a lovely idea \n\n",
+            "date": "Posted 2 months ago",
+            "votes": "-4",
+            "reply": []
+        }
+    ]
+}

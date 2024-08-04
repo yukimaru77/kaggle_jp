@@ -1,0 +1,92 @@
+{
+    "main_topic": {
+        "author": "Valentin Werner",
+        "title": "DeBERTa is not learning patterns?",
+        "content": "Hello everybody - I am currently facing the issue that my starter notebook always predicts label 0 (which is most prevalent in the subset of the dataset that I am using).\n\nI did not have this experience in the past, where even though labels are balanced, the model is not learning.\n\nDid you experience the same and were you able to solve it?\n\n",
+        "date": "Mon May 06 2024 18:08:22 GMT+0900 (日本標準時)",
+        "votes": "6"
+    },
+    "comments": [
+        {
+            "author": "Rich Olson",
+            "content": "I had the same experience with deberta:\n\n[https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/501848](https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/501848)\n\nShort version: Things didn't converge for me until I started training with more data.  \n\nDefinitely had that \"huh - this isn't work\" feeling training on a small subset.  Got LB 1.030 after training on all the data.\n\nNotebook here:\n\n[https://www.kaggle.com/code/richolson/deberta](https://www.kaggle.com/code/richolson/deberta) (copy and paste as you please)\n\n",
+            "date": "Posted 3 months ago  ·  1199th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Valentin WernerTopic Author",
+                    "content": "Interesting! 1.030 is definetly an improvement, did you also evaluate accuracy? wondering whether it is still in the 30s/40s..\n\n",
+                    "date": "Posted 3 months ago  ·  38th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Rich Olson",
+                            "content": "Well - my validation on 20% of train is:\n\nLog Loss: 1.0217662463425792\n\nAccuracy: 0.48329853862212946\n\nConsidering my LB score is a little lower - I'd guess mid 40s at best.\n\nSince the amount of train data seems to be a factor - wondering if tossing a bunch more train at it might help. (there are some datasets…)\n\nConsidering run-time is about 3 hours - could maybe double the train data.  I haven't really looked at if I can do anything to speed things up yet though.\n\n",
+                            "date": "Posted 3 months ago  ·  1199th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Gaurav Rawat",
+                            "content": "Nice how do the loss curves look they seems to be like fluctuating with no end . Also the accuracy you got at what step earlier or later epochs . As I see that also fluctuates \n\n",
+                            "date": "Posted 3 months ago",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Rich Olson",
+                            "content": "so - in another notebook that uses deberta - I've gone up to 1000 LGBM iterators - and it still seems like loss is slowly falling… (and LB score improving…)\n\n[https://www.kaggle.com/code/richolson/deberta-tf-idf-word2vec-length](https://www.kaggle.com/code/richolson/deberta-tf-idf-word2vec-length) (LB 1.011 on last run)\n\nI've added tf-idf, word2vec and length features in that one - so hard to say what's going on…  taking it as a suggestion I may need to use something more than LGBM to fully use the deberta embeddings…\n\n",
+                            "date": "Posted 3 months ago  ·  1199th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Huang Jing Stark",
+            "content": "Facing same issue here, my eval_loss is not decreasing \n\n",
+            "date": "Posted 3 months ago  ·  113th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Valentin WernerTopic Author",
+            "content": "Code in case you care\n\nConfig:\n\n```\nclass CFG:\n    model = \"microsoft/deberta-v3-small\"\n    add_tokens = [\"<[PROMPT]>\",\"<[RESP_A]>\",\"<[RESP_B]>\",\"<[...]>\",\"\\n\"]\n    output_dir=\".\"\n    learning_rate=2e-5\n    per_device_train_batch_size=2\n    per_device_eval_batch_size=2\n    num_train_epochs=2\n    weight_decay=0.01\n    evaluation_strategy=\"epoch\"\n    save_strategy=\"epoch\"\n    max_length=2048\n    warmup_ratio=0.1\n    fp16=True\n\n```\n\nTokenizer (note that I also tried without new tokens and got same result)\n\n```\n# Prepare Tokenizer\ntokenizer = AutoTokenizer.from_pretrained(CFG.model)\n\nnew_tokens = set(CFG.add_tokens) - set(tokenizer.vocab.keys())\ntokenizer.add_tokens(list(new_tokens))\n\ndef tokenize(examples):\n    \"\"\"use with huggingface datasets\"\"\"\n    return tokenizer(\n        examples[\"train_input\"], \n        truncation=True,\n        max_length=CFG.max_length\n    )\n\ndata_collator = DataCollatorWithPadding(tokenizer=tokenizer)\n\n[... dataset preparation ...]\n\n```\n\nModel loading (note that I also tried without num_labels and got same result):\n\n```\n# Initialize model\nmodel = AutoModelForSequenceClassification.from_pretrained(\n    CFG.model,\n    num_labels=3\n)\nmodel.resize_token_embeddings(len(tokenizer))\n\n```\n\nMetric used:\n\n```\naccuracy = evaluate.load(\"accuracy\")\n\ndef compute_metrics(eval_pred):\n    predictions, labels = eval_pred\n    predictions = np.argmax(predictions, axis=1)\n    return accuracy.compute(predictions=predictions, references=labels)\n\n```\n\nTraining:\n\n```\ntraining_args = TrainingArguments(\n    output_dir=CFG.output_dir,\n    learning_rate=CFG.learning_rate,\n    per_device_train_batch_size=CFG.per_device_train_batch_size,\n    per_device_eval_batch_size=CFG.per_device_eval_batch_size,\n    num_train_epochs=CFG.num_train_epochs,\n    weight_decay=CFG.weight_decay,\n    evaluation_strategy=CFG.evaluation_strategy,\n    save_strategy=CFG.save_strategy,\n    fp16=CFG.fp16\n)\n\ntrainer = Trainer(\n    model=model,\n    args=training_args,\n    train_dataset=ds[\"train\"],\n    eval_dataset=ds[\"test\"],\n    tokenizer=tokenizer,\n    data_collator=data_collator,\n    compute_metrics=compute_metrics,\n)\n\ntrainer.train()\n\n```\n\n",
+            "date": "Posted 3 months ago  ·  38th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Ho Dinh Trieu",
+                    "content": "hi [@valentinwerner](https://www.kaggle.com/valentinwerner),does the train takes long? \n\n",
+                    "date": "Posted 3 months ago  ·  1048th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Valentin WernerTopic Author",
+                            "content": "No, I sample 10% of the training data and only train 2 epochs. Takes about 35 min on kaggle GPU.\n\nI also noticed that other notebooks have the same issue.\n\n",
+                            "date": "Posted 3 months ago  ·  38th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Gaurav Rawat",
+                            "content": "What was the best loss you got from the baseline not getting it past 1 right now and seems not converging at this moment for me . 😀 \n\n",
+                            "date": "Posted 3 months ago",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Valentin WernerTopic Author",
+                            "content": "Same for me, I also tried rephrasing the task but cannot make it lear at all.\n\nLoss is stuck at 1.07 or so; which is what you get when you just predict the distribution\n\n",
+                            "date": "Posted 3 months ago  ·  38th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

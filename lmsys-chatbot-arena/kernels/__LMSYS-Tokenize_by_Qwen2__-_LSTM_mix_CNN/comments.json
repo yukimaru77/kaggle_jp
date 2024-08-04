@@ -1,0 +1,19 @@
+{
+    "comments": [
+        {
+            "author": "carvingfate",
+            "content": "Can qwen2 be better than gemma2？\n\n",
+            "date": "Posted 17 days ago  ·  Posted on Version 8 of \n        14",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Nguyễn Anh TúTopic Author",
+                    "content": "I use Qwen 2 because I couldn't access to Gemma :(( So I cann't give u a review. Let try different tokenizers and keep the hyperparameters of the model the same to judge. This is the paper I refer to build the structure of my model: [https://www.researchgate.net/publication/321259272_Multi-channel_LSTM-CNN_model_for_Vietnamese_sentiment_analysis](https://www.researchgate.net/publication/321259272_Multi-channel_LSTM-CNN_model_for_Vietnamese_sentiment_analysis)\n\n",
+                    "date": "Posted 17 days ago  ·  Posted on Version 9 of \n        14",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

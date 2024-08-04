@@ -1,0 +1,154 @@
+{
+    "comments": [
+        {
+            "author": "Lorry Zou",
+            "content": "Anyone managed to get LB score <0.92 with Gemma2 by tuning hyperparams? The best score I can get is 0.926.\n\n",
+            "date": "Posted 4 days ago  ·  Posted on Version 36 of \n        36",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Pranshu BahadurTopic Author",
+                    "content": "Wait you were able to do inference?\n\n",
+                    "date": "Posted 3 days ago  ·  Posted on Version 36 of \n        36",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "Lorry Zou",
+                            "content": "I used Pytorch, not TF\n\n",
+                            "date": "Posted 2 days ago  ·  Posted on Version 36 of \n        36",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                },
+                {
+                    "author": "cm391",
+                    "content": "if you pre-process the data easy 0.89 val, with aug I'm getting 0.87… Why do Keras make such nice training code and no distributed inference code??\n\n",
+                    "date": "Posted 2 days ago  ·  Posted on Version 36 of \n        36",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Pranshu BahadurTopic Author",
+                            "content": "I wish I knew haha, there is a way to figure it out by quantization but I've been a bit busy\n\n",
+                            "date": "Posted 2 days ago  ·  Posted on Version 36 of \n        36",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "ano",
+            "content": "Thank you for your great work! I'm not encouraging you to implement further, but maybe we can also save optimizer to resume training?\n\n",
+            "date": "Posted 7 days ago  ·  Posted on Version 34 of \n        36",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Pranshu BahadurTopic Author",
+                    "content": "I don't think you need a optimizer state since I didn't use any schedulers. Same optimizer config can work for further finetuning\n\n",
+                    "date": "Posted 7 days ago  ·  Posted on Version 36 of \n        36",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "ano",
+                            "content": "My bad. You're right. No need to save for this optimizer. \n\n",
+                            "date": "Posted 7 days ago  ·  Posted on Version 36 of \n        36",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "lightsource<3",
+            "content": "If you need to save only LoRA weights, then you can use the following code:\n\n```\nmodel.get_layer(\"gemma_backbone\").save_lora_weights(\"model.lora.h5\")\n\n```\n\n",
+            "date": "Posted 15 days ago  ·  Posted on Version 15 of \n        36",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Pranshu BahadurTopic Author",
+                    "content": "Thanks - I'll try this out -\n\n",
+                    "date": "Posted 15 days ago  ·  Posted on Version 15 of \n        36",
+                    "votes": "0",
+                    "reply": []
+                },
+                {
+                    "author": "Pranshu BahadurTopic Author",
+                    "content": "Hey can you link the docs for this?\n\n",
+                    "date": "Posted 13 days ago  ·  Posted on Version 16 of \n        36",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "lightsource<3",
+                            "content": "[https://keras.io/api/keras_nlp/base_classes/backbone/](https://keras.io/api/keras_nlp/base_classes/backbone/)\n\nuntil I managed to properly save and quantize the trained model for inference on the GPU, it turned out to be not so easy :(\n\n",
+                            "date": "Posted 13 days ago  ·  Posted on Version 19 of \n        36",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Dai LinLing",
+            "content": "Thank you for sharing. That's a good note!\n\n",
+            "date": "Posted a day ago  ·  Posted on Version 36 of \n        36",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "kaggk",
+            "content": "Good Work!\n\n",
+            "date": "Posted 7 days ago  ·  Posted on Version 34 of \n        36",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "RobsonDSP",
+            "content": "Could someone share some info about the performance of the model? What is the log_loss after 1 or more epochs? \n\n",
+            "date": "Posted 9 days ago  ·  Posted on Version 32 of \n        36",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Pranshu BahadurTopic Author",
+                    "content": "Training loss: ~1.08; Val loss: 0.9286\n\n",
+                    "date": "Posted 8 days ago  ·  Posted on Version 33 of \n        36",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Turbo",
+            "content": "Nice work!\n\nHow to inference?\n\n",
+            "date": "Posted 13 days ago  ·  Posted on Version 15 of \n        36",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Pranshu BahadurTopic Author",
+                    "content": "[https://www.kaggle.com/code/pranshubahadur/inference-tf-gemma-2-9b-lmsys?scriptVersionId=189454678](https://www.kaggle.com/code/pranshubahadur/inference-tf-gemma-2-9b-lmsys?scriptVersionId=189454678)\n\njust save lora weights in training and load them here!\n\n",
+                    "date": "Posted 12 days ago  ·  Posted on Version 22 of \n        36",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Sparsh Tewatia",
+            "content": "How much training , validation loss , after whole epoch ? \n\n",
+            "date": "Posted 15 days ago  ·  Posted on Version 15 of \n        36",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Pranshu BahadurTopic Author",
+                    "content": "You can check this out in version 13 \n\n",
+                    "date": "Posted 15 days ago  ·  Posted on Version 15 of \n        36",
+                    "votes": "-1",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

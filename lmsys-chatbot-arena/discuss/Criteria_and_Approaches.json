@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "PierreSylvain",
+        "title": "Criteria and Approaches",
+        "content": "Choosing the right answer from two options can be tricky. A study found that when people have to choose between two equally good options, they usually pick the one that’s easier to explain and defend (Slovic, P. (1975). Choice between equally valued alternatives. Journal of Experimental Psychology: Human Perception and Performance, 1(3), 280–287. [https://doi.org/10.1037/0096-1523.1.3.280](https://psycnet.apa.org/doi/10.1037/0096-1523.1.3.280)).\n\nIn real life, figuring out the best answer means checking off a few key boxes:\n\nAccuracy\n\n- Is the answer correct? This can be tough if you don’t know the answer yourself.\n\nClarity\n\n- Is the answer easy to understand?\n\nCoherence\n\n- Is the answer well-structured and makes sense?\n\nDetail\n\n- Is the answer thorough? Do you need a detailed answer or just a brief one?\n\nSources\n\n- Does the answer have references or sources? Are they reliable and up-to-date?\n\nObjectivity\n\n- Is the answer unbiased and neutral?\n\nPracticality\n\n- Is the answer useful and easy to apply?\n\nOf course, it’s rare to find an answer that ticks all these boxes perfectly. Usually, it’s a mix of these factors that help you decide. For example, one answer might be super detailed but hard to understand, while another might be clear but not very deep.\n\nHere are some tips for evaluating answers:\n\n- How long is the text?\n\n- How varied is the vocabulary?\n\n- How is the sentence structure?\n\n- What’s the cosine similarity score?\n\n- What’s the sentiment analysis?\n\n- Use a model to check text quality.\n\n- Use a multi-criteria model to judge the text (accuracy, clarity, relevance, etc.)\n\nThere are plenty of other ways to evaluate, but for now, I need to code what I just wrote.\n\n",
+        "date": "Sun Jun 16 2024 01:53:09 GMT+0900 (日本標準時)",
+        "votes": "3"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "I tried a lot (almost exactly the features you describe) what you just wrote, my XGB model came out at 1.024 for the CV and 1.032 on LB. I hope your Code will yield better results!\n\n",
+            "date": "Posted 2 months ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": []
+        }
+    ]
+}

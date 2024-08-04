@@ -1,0 +1,34 @@
+{
+    "main_topic": {
+        "author": "AlphaTT30",
+        "title": "Getting error in sumbission.",
+        "content": "Notebook successfully rans but then getting error like this \n\n[no idea what's going no or why happening this ] \n\nWhat to do now ? \n\nYou're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the __call__ method is faster than using a method to encode the text followed by a call to the pad method to get a padded encoding.\n\n89.2s    2   /opt/conda/lib/python3.10/site-packages/traitlets/traitlets.py:2930: FutureWarning: --Exporter.preprocessors=[\"remove_papermill_header.RemovePapermillHeader\"] for containers is deprecated in traitlets 5.0. You can pass --Exporter.preprocessors item … multiple times to add items to a list.\n\n89.2s    3     warn(\n\n89.2s    4   [NbConvertApp] WARNING | Config option kernel_spec_manager_class not recognized by NbConvertApp.\n\n89.3s    5   [NbConvertApp] Converting notebook notebook.ipynb to notebook\n\n89.7s    6   [NbConvertApp] Writing 32587 bytes to notebook.ipynb\n\n91.3s    7   /opt/conda/lib/python3.10/site-packages/traitlets/traitlets.py:2930: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass --Exporter.preprocessors item … multiple times to add items to a list.\n\n91.3s    8     warn(\n\n91.3s    9   [NbConvertApp] WARNING | Config option kernel_spec_manager_class not recognized by NbConvertApp.\n\n91.3s    10  [NbConvertApp] Converting notebook notebook.ipynb to html\n\n92.2s    11  [NbConvertApp] Writing 319012 bytes to results.html\n\n",
+        "date": "Sun Jun 30 2024 21:56:50 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "Anya",
+            "content": "Same situation. Waiting for resolution🤷‍♂️\n\n",
+            "date": "Posted a month ago  ·  487th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Anya",
+                    "content": "[https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/511861](https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/511861)\n\nThere is a similar tag, you can check if it helps.\n\n",
+                    "date": "Posted a month ago  ·  487th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "AlphaTT30Topic Author",
+                            "content": "I solved my problem. Do you need a solution? \n\n",
+                            "date": "Posted a month ago  ·  854th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

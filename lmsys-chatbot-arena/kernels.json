@@ -1,0 +1,681 @@
+[
+    {
+        "ref": "mohamedkhamis/faster-training-llama3-1-8b-4-bit-qlora",
+        "title": "[Faster Training] Llama3.1 8b 4-bit QLoRA",
+        "author": "5amessi",
+        "lastRunTime": "2024-07-29 15:20:25",
+        "totalVotes  ": 8
+    },
+    {
+        "ref": "wajahat1064/finally-got-it-through-tfbertmodel",
+        "title": "Finally got it through TFBertModel!",
+        "author": "Wajahat Waheed",
+        "lastRunTime": "2024-08-03 18:34:04",
+        "totalVotes  ": 6
+    },
+    {
+        "ref": "buihifdty/inference-gemma-2-9b-4-bit-qlora",
+        "title": "[Inference] Gemma-2 9b 4-bit QLoRA",
+        "author": "buihifdty",
+        "lastRunTime": "2024-07-28 16:31:17",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "quochungchiem/lstmxcnn",
+        "title": "LSTMxCNN",
+        "author": "Big City Bear",
+        "lastRunTime": "2024-08-03 08:12:32",
+        "totalVotes  ": 2
+    },
+    {
+        "ref": "b'tonnguynkhc/deeplearning-llama3-8b-4-bit-qlora",
+        "title": "  [DeepLearning] Llama3-8b 4-bit QLoRA",
+        "author": "  To\\xc3\\xa0n Nguy\\xe1\\x",
+        "lastRunTime": "2024-07-28 16:08:05",
+        "totalVotes  ": 2
+    },
+    {
+        "ref": "stpeteishii/lmsys-keywords-torch-roberta-for-submission",
+        "title": "LMSYS Keywords torch RoBERTa for Submission",
+        "author": "stpete_ishii",
+        "lastRunTime": "2024-07-29 23:41:19",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "stpeteishii/lmsys-keywords-torch-roberta",
+        "title": "LMSYS Keywords torch RoBERTa",
+        "author": "stpete_ishii",
+        "lastRunTime": "2024-07-29 13:59:59",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "stpeteishii/lmsys-prompt-response-words-keybert",
+        "title": "LMSYS Prompt/Response Words KeyBERT",
+        "author": "stpete_ishii",
+        "lastRunTime": "2024-07-29 00:58:03",
+        "totalVotes  ": 3
+    },
+    {
+        "ref": "argozero01/inference-phi-3-mini-4k-instruct",
+        "title": "[Inference] Phi-3-mini-4k-instruct",
+        "author": "dongseon-jeong",
+        "lastRunTime": "2024-07-30 11:25:57",
+        "totalVotes  ": 5
+    },
+    {
+        "ref": "mehyarmlaweh/lmsys-testing-bert",
+        "title": "LMSYS_Testing bert",
+        "author": "MehyarMlaweh",
+        "lastRunTime": "2024-07-29 17:01:41",
+        "totalVotes  ": 2
+    },
+    {
+        "ref": "hung1047/nhom12-hhlt",
+        "title": "Nhom12-HHLT",
+        "author": "NTHungIT",
+        "lastRunTime": "2024-07-29 07:40:40",
+        "totalVotes  ": 5
+    },
+    {
+        "ref": "argozero01/parallel-train-phi-3-mini-4k-instruct",
+        "title": "[Parallel Train] Phi-3-mini-4k-instruct",
+        "author": "dongseon-jeong",
+        "lastRunTime": "2024-07-28 12:46:27",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "leetolo/lmsys-luck-simulator-random-output-submission",
+        "title": "LMSYS - Luck simulator: Random output submission",
+        "author": "Lee Tolo",
+        "lastRunTime": "2024-07-26 20:38:57",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "leetolo/random-binary-output-submission",
+        "title": "Random binary output submission",
+        "author": "Lee Tolo",
+        "lastRunTime": "2024-07-26 20:27:51",
+        "totalVotes  ": 2
+    },
+    {
+        "ref": "jaejohn/lmsys-combine-gemma-2-9b-llama-3-8b",
+        "title": "LMSYS: Combine Gemma-2 9b & Llama-3 8b",
+        "author": "G John Rao",
+        "lastRunTime": "2024-07-26 08:23:19",
+        "totalVotes  ": 16
+    },
+    {
+        "ref": "zhoumichael/sft-llama-31-8b-inference",
+        "title": "SFT Llama-31-8B Inference",
+        "author": "Turbo",
+        "lastRunTime": "2024-07-28 16:08:56",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "b'achievement/llama-3-8b-38-faster-inference",
+        "title": "  \\xf0\\x9f\\xa6\\x99Llama-3 8B 38% faster inference",
+        "author": "                 Fae Gaz",
+        "lastRunTime": "2024-07-25 22:40:38",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "huangshibao/internlm2-reward",
+        "title": "internLM2-reward",
+        "author": "bao",
+        "lastRunTime": "2024-07-26 06:31:50",
+        "totalVotes  ": 6
+    },
+    {
+        "ref": "mr0106/lcahpp",
+        "title": "LCAHPP",
+        "author": "Mohammad Ragab",
+        "lastRunTime": "2024-07-28 22:29:58",
+        "totalVotes  ": 2
+    },
+    {
+        "ref": "dinhconghuyhoang/lmsys",
+        "title": "LMSYS",
+        "author": "Dinh Cong Huy Hoang",
+        "lastRunTime": "2024-08-02 10:03:26",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "embeddedravi/gemma-instruct-2b-lmsys-training-tpu",
+        "title": "Gemma instruct 2B LMSYS [Training TPU]",
+        "author": "Embeddedravi",
+        "lastRunTime": "2024-07-29 07:11:01",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "b'bhanupratapbiswas/lmsys-chatbot",
+        "title": "  LMSYS - Chatbot",
+        "author": "  Bhanupratap Biswas\\xe2",
+        "lastRunTime": "2024-07-23 10:39:14",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "b'bhanupratapbiswas/lmsys",
+        "title": "  LMSYS",
+        "author": "  Bhanupratap Biswas\\xe2",
+        "lastRunTime": "2024-07-23 09:17:28",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "quochungchiem/dl-final",
+        "title": "DL-Final",
+        "author": "Big City Bear",
+        "lastRunTime": "2024-07-27 07:25:23",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "cosheimil/deberta-train-classification",
+        "title": "DeBerta train classification",
+        "author": "Cosheimil",
+        "lastRunTime": "2024-07-29 13:07:39",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "b'tonnguynkhc/training-llama3-8b-4-bit-qlora-sft",
+        "title": "  [Training] Llama3-8b 4-bit QLoRA SFT",
+        "author": "  To\\xc3\\xa0n Nguy\\xe1\\x",
+        "lastRunTime": "2024-07-23 04:30:23",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "somesh88/training-nvidia-mistral-nemo-4-bit-qlora-sft",
+        "title": "[Training] nvidia-mistral-nemo 4-bit QLoRA SFT",
+        "author": "Somesh88",
+        "lastRunTime": "2024-07-23 14:02:17",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "anushkacodergirl/lmsys-chatbotarenahumanpreferencepredictions",
+        "title": "LMSYS-ChatbotArenaHumanPreferencePredictions",
+        "author": "Anushka Raj",
+        "lastRunTime": "2024-07-22 13:19:32",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "qamarmath/neural-networks-for-chatbot-preference-prediction",
+        "title": "\"Neural Networks for Chatbot Preference Prediction",
+        "author": "Qamar math",
+        "lastRunTime": "2024-07-21 17:40:41",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "shelterw/training-llama3-8b-4-bit-qlora-sft",
+        "title": "[Training] Llama3-8b 4-bit QLoRA SFT",
+        "author": "ShelterW",
+        "lastRunTime": "2024-07-20 19:22:58",
+        "totalVotes  ": 58
+    },
+    {
+        "ref": "cosheimil/text-stat",
+        "title": "Text Stat",
+        "author": "Cosheimil",
+        "lastRunTime": "2024-08-03 11:12:58",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "b'shelterw/sft-llama-3-1-8b-instruct-inference",
+        "title": "  \\xf0\\x9f\\xa6\\x99SFT Llama-3.1-8B-Instruct Inferenc",
+        "author": "e                Shelter",
+        "lastRunTime": "2024-08-01 19:17:50",
+        "totalVotes  ": 60
+    },
+    {
+        "ref": "pranshubahadur/inference-tf-gemma-2-9b-lmsys",
+        "title": "Inference TF Gemma 2 9B LMSYS",
+        "author": "Pranshu Bahadur",
+        "lastRunTime": "2024-08-02 10:08:41",
+        "totalVotes  ": 12
+    },
+    {
+        "ref": "pauloand/lmsys-modelsboost",
+        "title": "LMSYS_ModelsBoost",
+        "author": "Paulo_And",
+        "lastRunTime": "2024-07-29 14:45:54",
+        "totalVotes  ": 4
+    },
+    {
+        "ref": "b'bhanupratapbiswas/chatbot-arena-human-preference-predictions-01",
+        "title": "  Chatbot Arena Human Preference Predictions-01",
+        "author": "  Bhanupratap Biswas\\xe2",
+        "lastRunTime": "2024-07-18 18:19:14",
+        "totalVotes  ": 4
+    },
+    {
+        "ref": "xiaoa1sy/gemma-2",
+        "title": "Gemma-2",
+        "author": "XiaoA1sy",
+        "lastRunTime": "2024-07-20 16:04:47",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "venkyvishnudas/llm-response-predict",
+        "title": "LLM Response Predict",
+        "author": "VenkyVishnudas",
+        "lastRunTime": "2024-07-19 02:30:58",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "b'bhanupratapbiswas/chatbot-arena-human-preference-predictions",
+        "title": "  Chatbot Arena Human Preference Predictions",
+        "author": "  Bhanupratap Biswas\\xe2",
+        "lastRunTime": "2024-07-18 13:18:28",
+        "totalVotes  ": 3
+    },
+    {
+        "ref": "pranshubahadur/tf-gemma-2-9b-lmsys-training-tpu",
+        "title": "TF Gemma 2 9B LMSYS [Training TPU]",
+        "author": "Pranshu Bahadur",
+        "lastRunTime": "2024-07-28 05:22:35",
+        "totalVotes  ": 48
+    },
+    {
+        "ref": "ggjhkjgd/inference-gemma-2-9b-4-bit-qlora",
+        "title": "[Inference] Gemma-2 9b 4-bit QLoRA",
+        "author": "ggjhkjgd",
+        "lastRunTime": "2024-07-18 06:30:56",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "achievement/llama-3-8b-tpu-train",
+        "title": "Llama-3 8b [TPU Train]¶",
+        "author": "Fae Gaze",
+        "lastRunTime": "2024-07-18 00:10:20",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "sudhanvahg/chatbot-arena",
+        "title": "chatbot_arena",
+        "author": "SudhanvaHG",
+        "lastRunTime": "2024-07-24 05:09:46",
+        "totalVotes  ": 5
+    },
+    {
+        "ref": "cdeotte/infer-34b-with-vllm",
+        "title": "Infer 34B with vLLM",
+        "author": "Chris Deotte",
+        "lastRunTime": "2024-07-18 10:08:30",
+        "totalVotes  ": 97
+    },
+    {
+        "ref": "leaonwang/pet-infer",
+        "title": "pet_infer",
+        "author": "doge",
+        "lastRunTime": "2024-07-17 06:32:07",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "takamichitoda/lmsys-zeroshot-prediction",
+        "title": "LMSYS ZeroShot Prediction",
+        "author": "Takamichi Toda",
+        "lastRunTime": "2024-07-16 05:45:37",
+        "totalVotes  ": 33
+    },
+    {
+        "ref": "hugowjd/lmsys-qwen-2-qlora-inference-baseline",
+        "title": "LMSYS Qwen-2 QLoRA Inference baseline",
+        "author": "Jiadi Wang",
+        "lastRunTime": "2024-07-20 00:21:51",
+        "totalVotes  ": 9
+    },
+    {
+        "ref": "nithinreddy90/fantasy-battle-simulator-data-processing-and-model",
+        "title": "Fantasy Battle Simulator Data Processing and Model",
+        "author": "Ranamalla Nithin Reddy",
+        "lastRunTime": "2024-07-16 04:06:35",
+        "totalVotes  ": 3
+    },
+    {
+        "ref": "architsinghai/lmsys-gemma2-lgb",
+        "title": "lmsys-gemma2+lgb",
+        "author": "dumball",
+        "lastRunTime": "2024-07-15 06:58:26",
+        "totalVotes  ": 25
+    },
+    {
+        "ref": "chrisjm80/lmsys-xgb-baseline",
+        "title": "LMSYS | XGB Baseline",
+        "author": "Chris J Mears",
+        "lastRunTime": "2024-07-14 21:19:58",
+        "totalVotes  ": 15
+    },
+    {
+        "ref": "sheilamarass/llm-textstat-vadersentiment-bert-sample",
+        "title": "LLM-textstat-vaderSentiment-BERT-sample",
+        "author": "Sheila Amaral",
+        "lastRunTime": "2024-07-15 11:08:37",
+        "totalVotes  ": 2
+    },
+    {
+        "ref": "cosheimil/qa-bert",
+        "title": "QA Bert",
+        "author": "Cosheimil",
+        "lastRunTime": "2024-07-21 14:10:19",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "b'palash97/gemma-2-9b-part1-prompt-engineering",
+        "title": "  Gemma-2-9b | [Part1: prompt-engineering] | \\xf0\\x9",
+        "author": "f\\x94\\xa5\\xf0\\x9f\\x94\\xa",
+        "lastRunTime": "2024-07-15 08:39:31",
+        "totalVotes  ": 3
+    },
+    {
+        "ref": "b'natu2003/lmsys-tokenize-by-qwen2-lstm-mix-cnn",
+        "title": "  LMSYS-Tokenize by Qwen2  - LSTM mix CNN",
+        "author": "  Nguy\\xe1\\xbb\\x85n Anh",
+        "lastRunTime": "2024-07-21 16:08:53",
+        "totalVotes  ": 4
+    },
+    {
+        "ref": "mohamedkhamis/distributed-training-deberta-lora-keras-nlp",
+        "title": "Distributed_Training+Deberta+LORA+Keras_NLP",
+        "author": "5amessi",
+        "lastRunTime": "2024-07-15 04:44:55",
+        "totalVotes  ": 5
+    },
+    {
+        "ref": "b'natu2003/lmsys-lstm-mix-cnn-gpu-train",
+        "title": "  LMSYS - LSTM mix CNN - [GPU train]",
+        "author": "  Nguy\\xe1\\xbb\\x85n Anh",
+        "lastRunTime": "2024-07-14 01:32:00",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "b'raja6242/lmsys-ai-chat-evaluator-enhancing-human-ai",
+        "title": "  \\xf0\\x9f\\xa7\\xa0 LMSYS - AI Chat Evaluator: Enhanc",
+        "author": "ing Human-AI     Raja Ba",
+        "lastRunTime": "2024-07-26 04:25:11",
+        "totalVotes  ": 3
+    },
+    {
+        "ref": "qinhaoyang/training-gemma-2-9b-4-bit-qlora-72k-data",
+        "title": "[Training] Gemma-2 9b 4-bit QLoRA_72k data",
+        "author": "QinhaoYang",
+        "lastRunTime": "2024-07-21 00:30:17",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "dlondmike/gemma-2-9b-train",
+        "title": " Gemma-2 9b  TRAIN",
+        "author": "Dlond Mike",
+        "lastRunTime": "2024-07-13 12:40:18",
+        "totalVotes  ": 2
+    },
+    {
+        "ref": "muranokodai/lmsys-1",
+        "title": "LMSYS-1",
+        "author": "Murano Kodai",
+        "lastRunTime": "2024-07-12 06:59:38",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "siddhvr/lmsys-llama3-8b-chat-gemma2-4b-ensemble-infer",
+        "title": "LMSYS- LLama3 8b chat + Gemma2 4b Ensemble [Infer]",
+        "author": "SiddhVR",
+        "lastRunTime": "2024-07-26 08:20:19",
+        "totalVotes  ": 13
+    },
+    {
+        "ref": "ankur246/chatbotresponseanalysissoln",
+        "title": "ChatbotResponseAnalysisSoln",
+        "author": "Ankur Shrivastava",
+        "lastRunTime": "2024-07-19 15:49:54",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "fumihirotoko/kaggle0",
+        "title": "Kaggle0１",
+        "author": "Fumihiro Toko",
+        "lastRunTime": "2024-07-18 10:06:45",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "emiz6413/inference-gemma-2-9b-4-bit-qlora",
+        "title": "[Inference] Gemma-2 9b 4-bit QLoRA",
+        "author": "Eisuke Mizutani",
+        "lastRunTime": "2024-07-11 07:12:33",
+        "totalVotes  ": 211
+    },
+    {
+        "ref": "tragulragul/notebookf6b0f99721",
+        "title": "notebookf6b0f99721",
+        "author": "Tragul Ragul",
+        "lastRunTime": "2024-07-10 13:02:11",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "emiz6413/training-gemma-2-9b-4-bit-qlora-fine-tuning",
+        "title": "[Training] Gemma-2 9b 4-bit QLoRA fine-tuning",
+        "author": "Eisuke Mizutani",
+        "lastRunTime": "2024-07-11 07:22:03",
+        "totalVotes  ": 165
+    },
+    {
+        "ref": "b'emre21/human-ai-model-choises-eda",
+        "title": "  Human AI  Model Choises EDA \\xf0\\x9f\\x93\\x8a",
+        "author": "                 C. Emre",
+        "lastRunTime": "2024-07-10 00:32:50",
+        "totalVotes  ": 3
+    },
+    {
+        "ref": "susanketsarkar/gemma-2-train-on-tpu",
+        "title": "Gemma 2 train on tpu",
+        "author": "Susanket Sarkar",
+        "lastRunTime": "2024-07-09 18:38:46",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "twinklewill/infer-lmsys-240706-first",
+        "title": "[Infer] LMSYS 240706 First",
+        "author": "Twinkle Will",
+        "lastRunTime": "2024-07-10 01:01:37",
+        "totalVotes  ": 4
+    },
+    {
+        "ref": "b'nabojyotipandey/lmsys-catboost-the-ultimate-champion",
+        "title": "  LMSYS | CatBoost: The Ultimate Champion \\xf0\\x9f\\x",
+        "author": "a5\\x87\\xf0\\x9f\\x90\\xb1",
+        "lastRunTime": "2024-07-23 03:24:36",
+        "totalVotes  ": 15
+    },
+    {
+        "ref": "bisili/text-stats-with-optuna",
+        "title": "Text_stats_with_Optuna",
+        "author": "Boris Ilin",
+        "lastRunTime": "2024-07-09 12:18:33",
+        "totalVotes  ": 2
+    },
+    {
+        "ref": "nehalroy/using-xgboost-and-gb-using-nltk",
+        "title": "Using XGBoost and GB using NLTK",
+        "author": "Royy",
+        "lastRunTime": "2024-07-08 03:49:02",
+        "totalVotes  ": 4
+    },
+    {
+        "ref": "tonymarkchris/train-lmsys-deberta-v3-starter-code",
+        "title": "[Train] LMSYS / Deberta-v3 starter code",
+        "author": "Erik",
+        "lastRunTime": "2024-07-09 12:09:27",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "b'sercanyesiloz/lmsys-xgb-baseline",
+        "title": "  LMSYS | XGB Baseline",
+        "author": "  Sercan Ye\\xc5\\x9fil\\xc",
+        "lastRunTime": "2024-07-15 09:26:37",
+        "totalVotes  ": 19
+    },
+    {
+        "ref": "jatinsinghsagoi/lmsys-inference",
+        "title": "LMSYS Inference",
+        "author": "Jatin Singh Sagoi",
+        "lastRunTime": "2024-07-06 12:52:06",
+        "totalVotes  ": 6
+    },
+    {
+        "ref": "twinklewill/train-lmsys-240706-first",
+        "title": "【Train】LMSYS 240706 First",
+        "author": "Twinkle Will",
+        "lastRunTime": "2024-07-06 06:28:00",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "lucasoceanbreeze/finetune-llama3-using-qlora",
+        "title": "Finetune Llama3 using QLoRA",
+        "author": "Lucas",
+        "lastRunTime": "2024-07-06 03:01:06",
+        "totalVotes  ": 3
+    },
+    {
+        "ref": "vjagannath786/faster-training-with-unsloth",
+        "title": "Faster Training with unsloth",
+        "author": "Varun Jagannath",
+        "lastRunTime": "2024-07-10 17:37:53",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "roschildrui/deberta-train-plus-infer",
+        "title": "Deberta_train_plus_infer",
+        "author": "Roschild.Rui",
+        "lastRunTime": "2024-07-17 15:09:54",
+        "totalVotes  ": 19
+    },
+    {
+        "ref": "xiaocao123/lmsys-lb0-978",
+        "title": "[LMSYS]LB0.978",
+        "author": "qianc",
+        "lastRunTime": "2024-07-08 07:36:38",
+        "totalVotes  ": 29
+    },
+    {
+        "ref": "dakunextdoor/fork-of-lmsys-chatbot-arena-tf-idf",
+        "title": "Fork of LMSYS - Chatbot Arena & TF-IDF",
+        "author": "Ujjwal Tiwari",
+        "lastRunTime": "2024-07-03 15:07:41",
+        "totalVotes  ": 2
+    },
+    {
+        "ref": "taikimori/lmsys-length-based-no-model-inference",
+        "title": "LMSYS| Length-Based No Model Inference",
+        "author": "Taimo",
+        "lastRunTime": "2024-07-03 13:56:00",
+        "totalVotes  ": 5
+    },
+    {
+        "ref": "richengxuan/lmsys-cahpp-inference-baseline",
+        "title": "LMSYS-CAHPP Inference Baseline",
+        "author": "richeng xuan",
+        "lastRunTime": "2024-07-04 02:13:15",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "vedkulkarni17/llama-3-8b-fast",
+        "title": "llama-3-8B-fast",
+        "author": "Ved Kulkarni",
+        "lastRunTime": "2024-07-03 06:00:20",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "virajkadam/lmsys-eda-and-topic-modelling",
+        "title": "LMSYS - EDA and topic modelling",
+        "author": "viraj kadam",
+        "lastRunTime": "2024-07-17 12:54:55",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "miinjaekim/mjk-lmsys-kerasnlp-starter",
+        "title": "MJK LMSYS: KerasNLP Starter",
+        "author": "Minjae Kim",
+        "lastRunTime": "2024-07-03 06:17:47",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "fulgrimthe/i-m-super-looser",
+        "title": "i'm super looser",
+        "author": "flying knife/大ナダレ",
+        "lastRunTime": "2024-08-04 04:32:35",
+        "totalVotes  ": 22
+    },
+    {
+        "ref": "mingky11/lmsys-cahpp-llama3-8b-inference-baseline",
+        "title": "LMSYS-CAHPP Llama3 8b Inference Baseline",
+        "author": "mingky11",
+        "lastRunTime": "2024-07-02 15:36:42",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "bmezgebu/oneworkflow",
+        "title": "oneWorkflow",
+        "author": "Bereket Mezgebu",
+        "lastRunTime": "2024-07-05 03:33:50",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "bmezgebu/lmsys-llama-3-tpu-train",
+        "title": "LMSYS - Llama-3 [TPU train]",
+        "author": "Bereket Mezgebu",
+        "lastRunTime": "2024-07-05 03:20:42",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "b'emiz6413/llama-3-8b-38-faster-inference",
+        "title": "  \\xf0\\x9f\\xa6\\x99Llama-3 8B 38% faster inference",
+        "author": "                 Eisuke",
+        "lastRunTime": "2024-07-09 04:26:57",
+        "totalVotes  ": 116
+    },
+    {
+        "ref": "guillaumegeorges/chatbot-arena-human-preference-predictions",
+        "title": "Chatbot Arena Human Preference Predictions",
+        "author": "Guillaume Georges",
+        "lastRunTime": "2024-07-06 03:34:13",
+        "totalVotes  ": 2
+    },
+    {
+        "ref": "kishanvavdara/gemma-2-9b-part-2",
+        "title": "Gemma 2 - 9b [Part-2]",
+        "author": "Kishan Vavdara",
+        "lastRunTime": "2024-06-30 20:00:14",
+        "totalVotes  ": 21
+    },
+    {
+        "ref": "barirahzainal/my-project-lmsys-submission-8",
+        "title": "My Project LMSYS - Submission 8",
+        "author": "Barirah Zainal Abidin",
+        "lastRunTime": "2024-07-04 00:46:20",
+        "totalVotes  ": 4
+    },
+    {
+        "ref": "aneeshkb/mistral-k-bit",
+        "title": "mistral_k_bit",
+        "author": "Aneesh K.B",
+        "lastRunTime": "2024-06-30 11:06:55",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "shelterw/new-good-feature-ifd-length-tf-idf",
+        "title": "New Good Feature: IFD + Length + TF-IDF",
+        "author": "ShelterW",
+        "lastRunTime": "2024-07-02 15:23:05",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "mingky11/lmsys-deberta-length",
+        "title": "lmsys-deberta-length",
+        "author": "mingky11",
+        "lastRunTime": "2024-07-06 11:06:23",
+        "totalVotes  ": 2
+    },
+    {
+        "ref": "johnsonhk88/lmsys-chatbot-arena-llm",
+        "title": "LMSYS-Chatbot-ARENA-LLM",
+        "author": "Johnson chong",
+        "lastRunTime": "2024-07-23 12:09:18",
+        "totalVotes  ": 2
+    }
+]

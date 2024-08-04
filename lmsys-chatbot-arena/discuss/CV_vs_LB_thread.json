@@ -1,0 +1,48 @@
+{
+    "main_topic": {
+        "author": "Stochoshi G",
+        "title": "CV vs LB thread",
+        "content": "Deberta-v3-xsmall: ~1.02 cv / 1.03 lb\n\nTfidf: ~1.02 cv / ~1.03 lb\n\nCombined: ~1.00 cv / tbd\n\nSiamese Deberta: [https://www.kaggle.com/code/stochoshi/deberta-starter-lmsys](https://www.kaggle.com/code/stochoshi/deberta-starter-lmsys)\n\n",
+        "date": "Sat May 04 2024 12:56:33 GMT+0900 (日本標準時)",
+        "votes": "13"
+    },
+    "comments": [
+        {
+            "author": "Kishan Vavdara",
+            "content": "My CV :\n\n 1.02 Lb -> LB - 0.996\n\n 0.98 Lb -> LB - 0.971\n\n 0.96 Lb -> LB - 0.955\n\n 0.95 Lb -> LB - 0.959\n\n",
+            "date": "Posted 2 months ago  ·  38th in this Competition",
+            "votes": "5",
+            "reply": []
+        },
+        {
+            "author": "Takamichi Toda",
+            "content": "My CV strategy is one hold-out, with a validation rate of 20%.\n\nAt present, it correlates well with the Public LB.\n\nBest: Local=1.034074/Public LB1.036\n\n",
+            "date": "Posted 3 months ago  ·  146th in this Competition",
+            "votes": "4",
+            "reply": [
+                {
+                    "author": "heartkilla",
+                    "content": "hi, you use random or stratified split?\n\n",
+                    "date": "Posted 3 months ago  ·  15th in this Competition",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "Takamichi Toda",
+                            "content": "random split\n\n",
+                            "date": "Posted 2 months ago  ·  146th in this Competition",
+                            "votes": "3",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "heartkilla",
+            "content": "Any updates on this?\n\n",
+            "date": "Posted 3 months ago  ·  15th in this Competition",
+            "votes": "1",
+            "reply": []
+        }
+    ]
+}

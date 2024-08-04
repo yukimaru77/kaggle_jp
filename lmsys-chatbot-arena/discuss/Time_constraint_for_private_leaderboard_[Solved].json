@@ -1,0 +1,34 @@
+{
+    "main_topic": {
+        "author": "raconion",
+        "title": "Time constraint for private leaderboard [Solved]",
+        "content": "There are roughly 25,000 rows in the test set. Among them, 26% are used for public lb while the rest 74% are used for private lb. \n\nSince in Overview section, the time constraint is 9 hrs, does this mean that our notebook has to finish the inference for 74%*25,000 =18,500 rows in the test set? Or this time constraint is for public lb and will be scaled according to the number of rows when it comes to private lb?\n\n[@addisonhoward](https://www.kaggle.com/addisonhoward) [@mylesoneill](https://www.kaggle.com/mylesoneill) Would really appreciate if you can clarify this!\n\nUpdate:\n\nOur notebook will be run for all 25k rows but only 26% shown on public lb. Thanks for the comment [@lizhecheng](https://www.kaggle.com/lizhecheng) \n\nThis comment also clarify this issue: [link](https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/516995#2904512)\n\n",
+        "date": "Fri Jul 05 2024 11:15:47 GMT+0900 (日本標準時)",
+        "votes": "2"
+    },
+    "comments": [
+        {
+            "author": "Enter your display name",
+            "content": "As long as you can see your public score, your private score has also been calculated, but you just can't see it for now. Thus you don't need to worry about that.\n\n",
+            "date": "Posted a month ago  ·  12th in this Competition",
+            "votes": "4",
+            "reply": [
+                {
+                    "author": "jiangli59",
+                    "content": "I vote for that. Is it possible to extend the time budget over 9 hrs? Or, Do we have other opinions to solve that? My code is extremely overwhelmed for the inference budget.  \n\n",
+                    "date": "Posted a month ago  ·  1807th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "raconionTopic Author",
+                            "content": "I don't think the time constraint can be extended unless the competition host decides so. There are way arounds though such as all kinds of efficient inference techniques.\n\n",
+                            "date": "Posted a month ago  ·  38th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "AlphaTT30",
+        "title": "Can we use external data that contain other model's responses excluding  those in  the competition data? ",
+        "content": "Is there any restriction to use the other model's responses that are not in the competition data? Or can we use any model's responses?\n\n",
+        "date": "Sun Jul 14 2024 18:39:39 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "Just need to make sure data is available open source. Good luck!\n\n",
+            "date": "Posted 21 days ago  ·  38th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "AlphaTT30Topic Author",
+                    "content": "I have another question, can the test data set contain multiple languages or just English? \n\n",
+                    "date": "Posted 21 days ago  ·  854th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

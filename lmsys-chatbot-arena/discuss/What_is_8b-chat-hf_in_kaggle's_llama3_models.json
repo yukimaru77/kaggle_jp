@@ -1,0 +1,34 @@
+{
+    "main_topic": {
+        "author": "Dylan Liu",
+        "title": "What is 8b-chat-hf in kaggle's llama3 models? ",
+        "content": "If I'm right, Llama 3 has a normal version and an instruct version. \n\nIn [https://www.kaggle.com/models/metaresearch/llama-3/Transformers/8b-chat-hf/1](https://www.kaggle.com/models/metaresearch/llama-3/Transformers/8b-chat-hf/1), I see 8b-chat-hf, what's that? And where is the instruct version?\n\n",
+        "date": "Thu Jul 11 2024 18:38:03 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Weiren",
+            "content": "I think the 8b-chat-hf one is fine-tuned for dialogue use cases and in huggingface format. \n\nThe instruct model I think you can download from hugging face then upload to kaggle.\n\n",
+            "date": "Posted 24 days ago  ·  172nd in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Cristóbal Mackenzie",
+                    "content": "I actually think the 8b-chat-hf is the same as the instruct model in huggingface.\n\n",
+                    "date": "Posted 24 days ago  ·  215th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Weiren",
+                            "content": "Yea, should be the same. thanks~\n\n",
+                            "date": "Posted 24 days ago  ·  172nd in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

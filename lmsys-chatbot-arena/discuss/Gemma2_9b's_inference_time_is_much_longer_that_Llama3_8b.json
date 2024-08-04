@@ -1,0 +1,70 @@
+{
+    "main_topic": {
+        "author": "Dylan Liu",
+        "title": "Gemma2 9b's inference time is much longer that Llama3 8b?",
+        "content": "With same submission code, my Llama3 8b model takes ~4h to finish the inference, but my Gemma2 9b takes ~8h. Are you experiencing the same?\n\n",
+        "date": "Wed Jul 17 2024 15:55:30 GMT+0900 (日本標準時)",
+        "votes": "2"
+    },
+    "comments": [
+        {
+            "author": "Ashwani",
+            "content": "I haven't seen such difference. For me its 25% more time in gemma than lamma. \n\nIf you want to further reduce inference time, check dynamic padding for each batch. 😀\n\n",
+            "date": "Posted 18 days ago  ·  136th in this Competition",
+            "votes": "3",
+            "reply": []
+        },
+        {
+            "author": "Sparsh Tewatia",
+            "content": "2 billion parameters more at work my friend.\n\n",
+            "date": "Posted 18 days ago  ·  512th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Dylan LiuTopic Author",
+                    "content": "2 billion parameters? I thought it was 1b different. But even so, double inference time is still not much explainable.\n\n",
+                    "date": "Posted 18 days ago  ·  39th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Sparsh Tewatia",
+                            "content": "gemma always claims less parameter if you count it shows 10.2 billion parameters , also LLAMA 3 uses grouped query attention , and has around 120 K tokens in tokenizer while Gemma uses self attention and has 250 K tokens in tokenizer which can explain the difference in speed.\n\n",
+                            "date": "Posted 18 days ago  ·  512th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Yichuan Gao",
+            "content": "I would check the data type for both weights and compute_dtype. If you are using bfloat16 in compute, it will be MUCH slower since T4 does not support bfloat16, and need to emulate it by other methods. In my experience, Gemma2 9b and Mistral 7b inference time does not have much a difference (3~4h range), provides using 4bit weights and float16 dtype.\n\n",
+            "date": "Posted 18 days ago  ·  166th in this Competition",
+            "votes": "2",
+            "reply": []
+        },
+        {
+            "author": "Valentin Werner",
+            "content": "For me, also training time with same parameters is 50% slower than Llama3-8b which seems insane. But its all in the architecture, as Sparsh pointed out.\n\n",
+            "date": "Posted 18 days ago  ·  38th in this Competition",
+            "votes": "-1",
+            "reply": [
+                {
+                    "author": "Robert0921",
+                    "content": "For LoRa, even though Gemma2 is more accurate than Llama3, I was unable to achieve better results due to the 9-hour time limit.\n\n",
+                    "date": "Posted 18 days ago  ·  234th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Robert0921",
+            "content": "Not only inference, but also training takes longer, because 9b>8b？\n\n",
+            "date": "Posted 18 days ago  ·  234th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

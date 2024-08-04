@@ -1,0 +1,54 @@
+{
+    "main_topic": {
+        "author": "Dlond Mike",
+        "title": "question about the quota of GPU",
+        "content": "Does submission take the quota of GPU?if so,how much quota it will take?\n\n",
+        "date": "Mon Jul 29 2024 20:57:34 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "CPMP",
+            "content": "saving your notebook runs it again using your quota. Once this is done, submitting does not use your quota anymore.\n\n",
+            "date": "Posted 5 days ago  ·  27th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Yi-Fu Chen",
+            "content": "```\nimport os\nif os.getenv('KAGGLE_IS_COMPETITION_RERUN'):\n    pass\nelse:\n    raise SystemExit\n\n```\n\nAdding the above code at the front of the submitted notebook will quickly close the trial run notebook and retain the scored run.\n\n",
+            "date": "Posted 5 days ago  ·  149th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Ravi Ramakrishnan",
+            "content": "I usually submit to code competitions in a script. I use the below to ensure I don't use up my GPU quotas during my dummy LB submission- \n\n```\nimport pandas as pd\nsub_fl = pd.read_csv(.......submission.csv)\n\nif len(sub_fl) <=10:\n    print(f\"Submitting the dummy file\")\n    sub_fl.to_csv(\"submission.csv\", index = None)\n\nelse:\n    ....... (your script)\n\n```\n\n[@dlondmike](https://www.kaggle.com/dlondmike) best of luck!\n\n",
+            "date": "Posted 5 days ago  ·  528th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "SeshuRaju 🧘‍♂️",
+            "content": "[@dlondmike](https://www.kaggle.com/dlondmike) for scorning won't take GPU quota, but for generating the submitted notebook version ( even after submit, you can cancel the notebook, so GPU quota can be saved )\n\n",
+            "date": "Posted 6 days ago  ·  323rd in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Valentin Werner",
+                    "content": "From what I know (and experienes last week), the \"save\" notebook (not submit) also doesnt crash if it goes above quota. I think I ended last week on 32/30 hrs by accident 😃\n\n",
+                    "date": "Posted 6 days ago  ·  38th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "bao",
+            "content": "There are two notebooks running when submitted. The scoring notebook does not use GPU quota, while the other one does.\n\n",
+            "date": "Posted 6 days ago  ·  311th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

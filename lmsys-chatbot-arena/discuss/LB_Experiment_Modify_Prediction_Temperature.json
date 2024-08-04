@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "Rich Olson",
+        "title": "LB Experiment: Modify Prediction Temperature",
+        "content": "I just put together a new notebook to see if adjusting the confidence of my predictions can improve LB performance:\n\n[https://www.kaggle.com/code/richolson/lb-experiment-modify-prediction-temperature](https://www.kaggle.com/code/richolson/lb-experiment-modify-prediction-temperature)\n\nThe answer seems to be yes (a little).\n\nThe model for this notebook is identical to TF-IDF approach I used here:\n\n[https://www.kaggle.com/code/richolson/lmsys-tf-idf-boosted-trees](https://www.kaggle.com/code/richolson/lmsys-tf-idf-boosted-trees) (LB 1.038)\n\nThe notebook works by adjusting the \"temperature\" of predictions.  Raw scores are divided by the temperature factor before being converted to probabilities.\n\nIn this case - increasing the temperature moves predictions closer to .33 (decreasing confidence).\n\nDecreasing the temperature moves scores out towards 0 or 1 (increasing confidence).\n\nI did a bunch of submissions.  Here are the resulting LB scores:\n\n| Temp. Adjustment | LB |\n| --- | --- |\n| 1.3 | 1.044 |\n| 1.0 | 1.038 (unchanged - as expected) |\n| 0.85 | 1.036 (improved!) |\n| 0.7 | 1.036 (improved!) |\n| 0.5 | 1.052 |\n\nSo - it seems like the existing confidence of my model was close-to-optimal - but not quite.  Based on the clustering of scores - I doubt there is a lot more improvement to be made.\n\nAdjusting the temperature of your predictions is quite easy:\n\n```\n#1. get raw logits\ny_pred_raw = model.predict(combined_test_tfidf[-test.shape[0]:], raw_score = True)\n\n#2. adjust temperature\nadjusted_logits = y_pred_raw / temperature_factor\n\n#3. convert to probs using softmax (from scipy.special)\npreds_test = softmax(adjusted_logits, 1)\n\n```\n\nIf this is interesting - you should also check out [@valentinwerner](https://www.kaggle.com/valentinwerner)'s notebook on this topic:\n\n[https://www.kaggle.com/code/valentinwerner/log-loss-what-are-good-scores](https://www.kaggle.com/code/valentinwerner/log-loss-what-are-good-scores)\n\n-Rich\n\n",
+        "date": "Wed May 08 2024 10:31:30 GMT+0900 (日本標準時)",
+        "votes": "10"
+    },
+    "comments": [
+        {
+            "author": "Takamichi Toda",
+            "content": "Thank you for suggesting this useful post-processing.\n\nI also tried this post-processing, and the results were very good!!\n\nWhen I looked at the relationship between temperature and score in the validation data, I found that it matched well with the LB results.\n\n| Temp. Adjustment | LB |\n| --- | --- |\n| 0.8 | 1.036 |\n| 0.9 | 1.028 |\n| 1.0 | 1.025 |\n| 1.2 | 1.022 |\n| 1.4 | 1.024 |\n\n(The vertical axis is logloss)\n\nThe temperature of 1.2, which had the highest score on the LB, was also close to the best in validation.\n\n",
+            "date": "Posted 2 months ago  ·  146th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

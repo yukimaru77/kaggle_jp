@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "Valentin Werner",
+        "title": "Download Llama3 Models from Kaggle?",
+        "content": "Is there a way for me to download the Llama3 Models that were trained by others from Kaggle? I am talking about the model that is used in all the top scoring public notebooks. When I click on the dataset, I only see a placeholder file with about 30 MB of data.\n\n",
+        "date": "Mon Jun 17 2024 12:41:39 GMT+0900 (日本標準時)",
+        "votes": "2"
+    },
+    "comments": [
+        {
+            "author": "Kishan Vavdara",
+            "content": "They are lora weights, you can take llama-3 model from kaggle and add lora weights for further training/inference. \n\n",
+            "date": "Posted 2 months ago  ·  38th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Valentin WernerTopic Author",
+                    "content": "Ah, I have never used lora weights before like this. Thank you for the clarification!\n\n",
+                    "date": "Posted 2 months ago  ·  38th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "main_topic": {
+        "author": "Simon Veitner",
+        "title": "Train LLMs efficently in multi chip environment [GPU/TPU]",
+        "content": "Hello guys,\n\nI shared a customizable notebook that let's you train LLMs with FSDP and potentially TP technique on multiple GPU/TPU chips.\n\nThe architecture was inspired by [first place solution in LLM science exam.](https://www.kaggle.com/competitions/kaggle-llm-science-exam/discussion/446422)\n\nNote that the score of the notebook is rather bad but can be easily improved by adjusting preproccesing/modelling etc etc.\n\n[See the notebook here](https://www.kaggle.com/code/simonveitner/fsdp-with-scalax)\n\n",
+        "date": "Wed May 29 2024 16:24:01 GMT+0900 (日本標準時)",
+        "votes": "4"
+    },
+    "comments": []
+}

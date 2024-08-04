@@ -1,0 +1,25 @@
+{
+    "main_topic": {
+        "author": "Dr. Gopalashivabalasubramanium Chandrashekaran",
+        "title": "Trying to understand the strength of the models with the highest ties",
+        "content": "Good evening everyone,\n\nI had a go at this data and made myself a list of the models with the highest tie rate. It made sense that the non-winner models will be the ones tie-ing. It was interesting to see the models that were subpar tie-ing with each other. \n\nMy question here is: How do I assess the strength of the model based on the count of its ties? It is easy to judge it based on its number of wins. \n\nAnyone have any findings on this?\n\nAlso, if you have time, see my notebook. Would appreciate any feedback.\n\n",
+        "date": "Sat Jun 08 2024 09:37:46 GMT+0900 (日本標準時)",
+        "votes": "-1"
+    },
+    "comments": [
+        {
+            "author": "tanaka",
+            "content": "lmsys's elo rating is calculated something like following.\n\nIt means, when ties, higher rank player's score may decrease slightly, while lower-ranked player's score may increase slightly.\n\n```\ndef compute_online_elo(battles, K=4, SCALE=400, BASE=10, INIT_RATING=1000):\n    rating = defaultdict(lambda: INIT_RATING)\n\n    for rd, model_a, model_b, winner in battles[['model_a', 'model_b', 'winner']].itertuples():\n        ra = rating[model_a]\n        rb = rating[model_b]\n        ea = 1 / (1 + BASE ** ((rb - ra) / SCALE))\n        eb = 1 / (1 + BASE ** ((ra - rb) / SCALE))\n        if winner == \"model_a\":\n            sa = 1\n        elif winner == \"model_b\":\n            sa = 0\n        elif winner == \"tie\" or winner == \"tie (bothbad)\":\n            sa = 0.5\n        else:\n            raise Exception(f\"unexpected vote {winner}\")\n        rating[model_a] += K * (sa - ea)\n        rating[model_b] += K * (1 - sa - eb)\n\n    # calibrate llama-13b to 800\n    delta = (800-rating[\"llama-13b\"])\n    for model in battles[\"model_a\"].unique():\n        rating[model] += delta\n\n    return rating\n\n```\n\nRefs\n\n- [https://colab.research.google.com/drive/1KdwokPjirkTmpO_P1WByFNFiqxWQquwH#scrollTo=hytEb0aXfcwm](https://colab.research.google.com/drive/1KdwokPjirkTmpO_P1WByFNFiqxWQquwH#scrollTo=hytEb0aXfcwm)\n\n",
+            "date": "Posted 2 months ago  ·  1053rd in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Valentin Werner",
+            "content": "\nIt was interesting to see the models that were subpar tie-ing with each other.\n\nIt is important to acknowledge that the prompt matters a lot. When presenting prompting in my company, I show a tool a bit like the lmsys arena to raise understanding for when you need the \"big guns\". On a simple questions, llama2-7B can easily tie gpt4-turbo, such as \"what is 2+2?\" - you will not need that many parameters to answer this. Now, one model may say \"4\" and the other one says \"Adding 2+2 results in 4.\" and you may prefer one of the answers. Oops, suddenly Llama2-7B \"outperformed\" GPT-4?\n\nFurther, we always expect models of the same category to tie more often - not sure if I fully understood your point.\n\nHow do I assess the strength of the model based on the count of its ties? It is easy to judge it based on its number of wins.\n\nThis is what LMSYS is doing on the website. For this competition, we are also predicting ties - so knowing that a model ties a lot should be as good as winning a lot.\n\n",
+            "date": "Posted 2 months ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": []
+        }
+    ]
+}

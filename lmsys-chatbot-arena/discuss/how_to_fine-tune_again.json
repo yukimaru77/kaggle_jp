@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "Mukatai",
+        "title": "how to fine-tune again?",
+        "content": "In the public notebook, there is information about fine-tuning the Gemma2 model. Do you know how to fine-tune a model that has already been fine-tuned again?\n\n`@dataclass\n\nclass Config:\n\n    gemma_dir = '/kaggle/input/gemma-2/transformers/gemma-2-9b-it-4bit/1/gemma-2-9b-it-4bit'\n\n    lora_dir = '/kaggle/input/73zap2gx/checkpoint-5600'\n\n    max_length = 2048\n\n    batch_size = 4\n\n    device = torch.device(\"cuda\")    \n\n    tta = False  # test time augmentation. --\n\n    spread_max_length = False  # whether to apply max_length//3 on each input or max_length on the concatenated input\n\ncfg = Config()`\n\nI am trying to load a pre-trained model with lora_dir = '/kaggle/input/73zap2gx/checkpoint-5600', but the final results suggest that it has only trained on the additional data.\n\n",
+        "date": "Tue Jul 16 2024 01:09:47 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Darshan Patel",
+            "content": "[@mukatai](https://www.kaggle.com/mukatai) You load the pre-trained model Gemma-2-9b-it-4bit and apply the LoRA adapter from /kaggle/input/73zap2gx/checkpoint-5600. This combined model becomes your new base model, which you then fine-tune using your own dataset and hyperparameters.\n\n",
+            "date": "Posted 3 days ago  ·  771st in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

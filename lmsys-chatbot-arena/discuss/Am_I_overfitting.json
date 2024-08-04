@@ -1,0 +1,86 @@
+{
+    "main_topic": {
+        "author": "KeShuang Liu",
+        "title": "Am I overfitting?",
+        "content": "\n\n",
+        "date": "Sat Jul 27 2024 12:07:19 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "Overfitting is best analyzed in combination with validation loss. If you validation loss has a similar drop to your training loss (which I guess would win the competition at these scores), you are not overfitting. In general, if training loss goes down while validation loss is either plateauing or going back up, you are likely overfitting.\n\nAnother way of estimating overfitting is to look at what performance you expect and what you see on the train loss. We would not expect the model to go to .800 or even below it - therefore, it is likely to overfit. However, this does not mean that the model was best before this downward shift at steps 550 - you should use a validation score to evaluate how well the model predicts on unseen data\n\n",
+            "date": "Posted 8 days ago  ·  38th in this Competition",
+            "votes": "6",
+            "reply": [
+                {
+                    "author": "KeShuang LiuTopic Author",
+                    "content": "Yes, but my validation set can only be calculated after this epoch is completed, and it takes a long time, so I am considering whether to stop it directly\n\n",
+                    "date": "Posted 8 days ago  ·  312th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Valentin Werner",
+                            "content": "You can set how often you want to evaluate. It does indeed take a lot of time, so I think evaluating 2-4 times is feasible.\n\n",
+                            "date": "Posted 8 days ago  ·  38th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "KeShuang LiuTopic Author",
+                            "content": "Yes, my model should be overfitting. Its loss on the validation set is 0.99\n\n",
+                            "date": "Posted 8 days ago  ·  312th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "xiaotingting",
+            "content": "It has to be combined with the indicators of the validation set. If the loss on the validation set is large, but very low on the training set, it is overfitting, and you can consider adding regularization such as weight decay. If the loss on both the validation set and the training set is low, it means the model is effective.\n\n",
+            "date": "Posted 8 days ago  ·  19th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "KeShuang LiuTopic Author",
+                    "content": "The next validation metric will be calculated in a few hours, and I am considering whether to abandon this training directly\n\n",
+                    "date": "Posted 8 days ago  ·  312th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Rise_Hand",
+            "content": "Wow so Crazy! 600 epochs !!! Which kind of model you are using \n\n",
+            "date": "Posted 8 days ago  ·  28th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "KeShuang LiuTopic Author",
+                    "content": "steps,haha\n\n",
+                    "date": "Posted 8 days ago  ·  312th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "AYUSH KHAIRE",
+            "content": "[@liukeshuang](https://www.kaggle.com/liukeshuang) yes about 580 to 600 you are overfitting. \n\n",
+            "date": "Posted 8 days ago",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "KeShuang LiuTopic Author",
+                    "content": "Then I probably don't need to continue training now\n\n",
+                    "date": "Posted 8 days ago  ·  312th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

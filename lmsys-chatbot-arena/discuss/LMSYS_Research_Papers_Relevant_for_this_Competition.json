@@ -1,0 +1,25 @@
+{
+    "main_topic": {
+        "author": "C R Suthikshn Kumar",
+        "title": "LMSYS: Research Papers Relevant for this Competition",
+        "content": "Refer to the LMSYS - Chatbot Arena Human Preferences Predictions Competition:\n\n[https://www.kaggle.com/competitions/lmsys-chatbot-arena/](https://www.kaggle.com/competitions/lmsys-chatbot-arena/)\n\nWishing all the best for participants in this competition. I am sharing useful reference papers, articles :\n\nW Chiang et al., Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference, [https://arxiv.org/abs/2403.04132](https://arxiv.org/abs/2403.04132)\nChatbot Arena: Benchmarking LLMs in the Wild with Elo Ratings\n\nby: Lianmin Zheng*, [https://lmsys.org/blog/2023-05-03-arena/](https://lmsys.org/blog/2023-05-03-arena/)\nIntroducing Hard Prompts Category in Chatbot Arena\n\nby: Tianle Li, [https://lmsys.org/blog/2024-05-17-category-hard/](https://lmsys.org/blog/2024-05-17-category-hard/)\nMSYS-Chat-1M: A Large-Scale Real-World LLM Conversation Dataset, [https://huggingface.co/datasets/lmsys/lmsys-chat-1m](https://huggingface.co/datasets/lmsys/lmsys-chat-1m)\nA Survey on Human Preference Learning for Large Language Models\n\nRuili Jiang, et al, [https://arxiv.org/html/2406.11191v2](https://arxiv.org/html/2406.11191v2)\nAlign LLMs with Reinforcement Learning from Human Feedback: AI Learns Best with Rewards\n\nby Maddie Lupu, [https://medium.com/@madalina.lupu.d/align-llms-with-reinforcement-learning-from-human-feedback-595d61f160d5](https://medium.com/@madalina.lupu.d/align-llms-with-reinforcement-learning-from-human-feedback-595d61f160d5)\n",
+        "date": "Fri Jul 26 2024 13:21:46 GMT+0900 (日本標準時)",
+        "votes": "2"
+    },
+    "comments": [
+        {
+            "author": "Aadit Shukla",
+            "content": "Thank you for sharing these valuable resources [@crsuthikshnkumar](https://www.kaggle.com/crsuthikshnkumar) and best of luck to all participants in the LMSYS competition!\n\n",
+            "date": "Posted 9 days ago",
+            "votes": "-1",
+            "reply": []
+        },
+        {
+            "author": "Muhammad Ehsan",
+            "content": "Great resources, [@crsuthikshnkumar](https://www.kaggle.com/crsuthikshnkumar) ! \n\nYour post provides valuable references for those diving into human preference predictions in chatbots. The papers and articles listed offer deep insights into evaluating and aligning LLMs with human preferences. Best of luck to everyone participating in the competition.\n\n",
+            "date": "Posted 5 days ago",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

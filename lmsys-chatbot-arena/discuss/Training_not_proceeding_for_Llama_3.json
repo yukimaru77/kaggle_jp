@@ -1,0 +1,34 @@
+{
+    "main_topic": {
+        "author": "JamshaidSohail",
+        "title": "Training not proceeding for Llama 3",
+        "content": "Hi. I am trying to train the Llama 2 model from the [notebook](https://www.kaggle.com/code/kishanvavdara/lmsys-llama-3-tpu-train/notebook) shared by [@kishanvavdara](https://www.kaggle.com/kishanvavdara). But my training is not proceeding as shown in the figure. Any help would be appreciated.  \n\n",
+        "date": "Sun Jul 14 2024 20:29:44 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "If you have the tqdm per epoch, I recommend changing it to the inner loop (steps within the epoch) to see if it actually does something:\n\n```\nfor epoch in range(CFG.NUM_EPOCHS):\n    ste = time()\n    for step in tqdm(range(STEPS_PER_EPOCH)):\n        # Zero Out Gradients\n        OPTIMIZER.zero_grad()\n\n```\n\nAlso, the first samples sometimes take multiple minutes (I once had 300 seconds for the first batch) but then it will speed up afterwards. The notebook shared works well technically, so if you havent changed anything, I would just recommend factory reset and try again.\n\n",
+            "date": "Posted 21 days ago  ·  38th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "JamshaidSohailTopic Author",
+                    "content": "The only changes I need to do is the addition of HF_TOKEN for my own account in the tokenizer as well as in the model loading area as below. \n\n```\nmodel_id = \"meta-llama/Meta-Llama-3-8B-Instruct\"\ntokenizer = AutoTokenizer.from_pretrained(model_id,use_auth_token=HF_TOKEN)\n\nbase_model = LlamaForSequenceClassification.from_pretrained(model_id,\n                                                            use_auth_token=HF_TOKEN,\n                                                            torch_dtype=torch.bfloat16,\n                                                            num_labels=3)    \n\n```\n\nNow i followed your advice and added the tqdm to the STEPS_PER_EPOCH line as well and watching the training goes inside. \n\n",
+                    "date": "Posted 21 days ago  ·  359th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "JamshaidSohailTopic Author",
+                            "content": "It is working now. Thank you for your comment and help 😀\n\n",
+                            "date": "Posted 21 days ago  ·  359th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

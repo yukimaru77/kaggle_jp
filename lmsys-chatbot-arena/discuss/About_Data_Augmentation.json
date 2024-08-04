@@ -1,0 +1,40 @@
+{
+    "main_topic": {
+        "author": "KeShuang Liu",
+        "title": "About Data Augmentation",
+        "content": "The competition is coming to an end. As a novice, this is my first time playing Kaggle. I encountered many problems and learned a lot. I was constantly fine-tuning the model before, but I had never enhanced the data. Today, I have realized all my ideas about fine-tuning the model. I have started a new exploration on how to get a higher score. I have learned some knowledge about data enhancement, including back-translation method and EDA method, and I am ready to use EDA for the next attempt. At the same time, I wonder if you have other methods you are willing to share.\n\n[https://www.cnblogs.com/IllidanStormrage/p/16347433.html](https://www.cnblogs.com/IllidanStormrage/p/16347433.html)\n\n",
+        "date": "Sun Aug 04 2024 03:34:53 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Garvin Bhati",
+            "content": "At this point in the competition, I don't think adding any additional data is going to improve the score, training set is already enough, and training hours are quite long. Using external data didn't improve the score for anyone as far as I can remember from the discussions, but I'll be curious to see if it works. \n\n",
+            "date": "Posted 14 hours ago  ·  445th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Garvin Bhati",
+                    "content": "I was trying to find ways to sample the data properly so that we could do more trials with different parameters.\n\n",
+                    "date": "Posted 14 hours ago  ·  445th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                },
+                {
+                    "author": "Xinyuan Qiao",
+                    "content": "extra data works, but not in a simple way, we will find out in 48 hours\n\n",
+                    "date": "Posted 12 hours ago  ·  62nd in this Competition",
+                    "votes": "2",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "KeShuang LiuTopic Author",
+            "content": "For synonym replacement, what are some good ways to find its synonyms?\n\n",
+            "date": "Posted 14 hours ago  ·  312th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

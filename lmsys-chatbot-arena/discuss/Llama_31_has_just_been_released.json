@@ -1,0 +1,136 @@
+{
+    "main_topic": {
+        "author": "lightsource<3",
+        "title": "Llama 3.1 has just been released",
+        "content": "There is 8b version weights: [https://llama.meta.com](https://llama.meta.com)\n\nHF: [https://huggingface.co/collections/meta-llama/llama-31-669fc079a0c406a149a5738f](https://huggingface.co/collections/meta-llama/llama-31-669fc079a0c406a149a5738f)\n\nLink to a technical article describing the development process: \n\n[https://scontent.fdxb2-1.fna.fbcdn.net/v/t39.2365-6/452256780_3788187148167392_9020150332553839453_n.pdf?_nc_cat=103&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=XG3_BvYG0wwQ7kNvgEI9-4V&_nc_ht=scontent.fdxb2-1.fna&oh=00_AYAmG3EQLSTDlGlgdUqlvT6Z0uNBXoQcm_bCMhlFzDJ96A&oe=66A5A0DC](url)\n\n",
+        "date": "Wed Jul 24 2024 00:08:21 GMT+0900 (日本標準時)",
+        "votes": "21"
+    },
+    "comments": [
+        {
+            "author": "Nicholas Broad",
+            "content": "If anyone wants to use it in kaggle offline, it requires a newer transformers, and it is already a part of my [offline dataset for hugging face libraries](https://www.kaggle.com/datasets/nbroad/hf-libraries)\n\n```\n!pip install --no-deps --no-index /kaggle/input/hf-libraries/transformers/transformers-4.43.1-py3-none-any.whl\n\n```\n\n",
+            "date": "Posted 11 days ago  ·  18th in this Competition",
+            "votes": "14",
+            "reply": [
+                {
+                    "author": "SAY WHAT",
+                    "content": "Thank you.\n\nwhat is the version of torch?\n\n",
+                    "date": "Posted 11 days ago  ·  71st in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Nicholas Broad",
+                            "content": "you can use default in notebook\n\n",
+                            "date": "Posted 11 days ago  ·  18th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                },
+                {
+                    "author": "YingxiZhang",
+                    "content": "Thanks for the reminder.\n\n",
+                    "date": "Posted 6 days ago  ·  161st in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Valentin Werner",
+            "content": "\n\nCan't stop, won't stop.\n\n",
+            "date": "Posted 12 days ago  ·  38th in this Competition",
+            "votes": "11",
+            "reply": [
+                {
+                    "author": "Valentin Werner",
+                    "content": "Thank god Mistral-Large 2 is closed source\n\n",
+                    "date": "Posted 11 days ago  ·  38th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "aadiAR",
+            "content": "Thankyou for informing !\n\n",
+            "date": "Posted 10 days ago",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Kishan Vavdara",
+            "content": "\n\n",
+            "date": "Posted 12 days ago  ·  38th in this Competition",
+            "votes": "3",
+            "reply": []
+        },
+        {
+            "author": "Taimo",
+            "content": "4bit 8B model has been uploaded by unsloth!\n\nBase model:\n\n[https://huggingface.co/unsloth/Meta-Llama-3.1-8B-bnb-4bit](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-bnb-4bit)\n\nInstruct model:\n\n[https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)\n\n",
+            "date": "Posted 11 days ago  ·  193rd in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Rishit Jakharia",
+                    "content": "Thanks ! For the information \n\n",
+                    "date": "Posted 10 days ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Weiren",
+            "content": "Currently training. Looking at the loss plot for a few steps, doesn't seem to outperform Gemma-2…. Maybe just my hyper params isn't good enough.🤡\n\n",
+            "date": "Posted 11 days ago  ·  172nd in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Rishit Jakharia",
+                    "content": "Please keep us updated if you plan to tune llama 3.1, also what quantization and config are you using, if I may know\n\n",
+                    "date": "Posted 11 days ago",
+                    "votes": "0",
+                    "reply": []
+                },
+                {
+                    "author": "Ivan Vybornov",
+                    "content": "I've attempted to train it 3 times by now and it does not even seem to outperform llama3 or at least it is not better by a margin.\n\n",
+                    "date": "Posted 11 days ago  ·  159th in this Competition",
+                    "votes": "2",
+                    "reply": [
+                        {
+                            "author": "justin1357",
+                            "content": "same, worse than llama3\n\n",
+                            "date": "Posted 8 days ago  ·  19th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Robert0921",
+            "content": "training, and testing\n\n",
+            "date": "Posted 11 days ago  ·  234th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Muhammad Anas",
+            "content": "Sounds great\n\n",
+            "date": "Posted 11 days ago",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "SAY WHAT",
+            "content": "There seems to be some problems with loading.\n\nAnyway, let the bullets fly.\n\n",
+            "date": "Posted 12 days ago  ·  71st in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

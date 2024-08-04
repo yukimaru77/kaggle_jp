@@ -1,0 +1,79 @@
+{
+    "main_topic": {
+        "author": "Robert0921",
+        "title": "Why are there suddenly so many new accounts with very similar scores?",
+        "content": "Looking at PB, nearly 100 new accounts suddenly appeared in the past day, and their scores were all 0.941. Is there any problem?\n\n",
+        "date": "Fri Jul 12 2024 11:58:20 GMT+0900 (日本標準時)",
+        "votes": "-1"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "Dropping silver solutions for free!\n\n",
+            "date": "Posted 23 days ago  ·  38th in this Competition",
+            "votes": "4",
+            "reply": [
+                {
+                    "author": "Cody_Null",
+                    "content": "Thankfully I think it will be outside of the medal range at competition end but always wild to see a medal winning notebook in the last month of every competition haha\n\n",
+                    "date": "Posted 22 days ago  ·  30th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Valentin Werner",
+                            "content": "I think the most wild thing is just the copy & submit. I understand it If you joined early and never did another submission. However, what will happen next is 5 Notebooks that Ensemble these to get .940, .939, … without any novel ideas\n\nThis is not the kaggle way in my opinion.\n\nI think it is great that this approach was shared because I read a lot of people are struggling with GPU resources to get something to work, the notebook that was shared just \"works a little too well\"\n\n",
+                            "date": "Posted 22 days ago  ·  38th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Xinyuan Qiao",
+            "content": "there is a new notebook provide Gemma 2 inference code with 0.941 on PB, my original score was 0.942😂\n\n",
+            "date": "Posted 23 days ago  ·  62nd in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "yechenzhi1",
+                    "content": "try to ensemble it😂\n\n",
+                    "date": "Posted 23 days ago  ·  25th in this Competition",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "Lorry Zou",
+                            "content": "I tried to ensemble it with my 0.957 Llama3 inference, and I got 0.959😅😅\n\n",
+                            "date": "Posted 23 days ago  ·  153rd in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Allen Wang",
+                            "content": "[@lorryzouzelun](https://www.kaggle.com/lorryzouzelun) Is the integration of gemma and llama3 effective? I tried it and the lb dropped a lot\n\n",
+                            "date": "Posted 19 days ago  ·  199th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                },
+                {
+                    "author": "Robert0921Topic Author",
+                    "content": "\nthere is a new notebook provide Gemma 2 inference code with 0.941 on PB, my original score was 0.942😂\n\nUnder the same conditions, which one is better？Gemma 2 and Llama3\n\n",
+                    "date": "Posted 23 days ago  ·  234th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Xinyuan Qiao",
+                            "content": "Not sure, the gemma notebook provider use A6000 for training and I don't know his hyper-parameters. I will use same parameters to train both and reply you later.\n\n",
+                            "date": "Posted 23 days ago  ·  62nd in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

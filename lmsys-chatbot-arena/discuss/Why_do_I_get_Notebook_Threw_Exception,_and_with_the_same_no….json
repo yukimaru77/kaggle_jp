@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "Kilaru Vasudeva",
+        "title": "Why do I get \"Notebook Threw Exception\", and with the same notebook, sometimes, I get a successful submission?",
+        "content": "I find it wierd. Is it any wrong code specification on myside or it is something on the kaggle backend?\n\n",
+        "date": "Sat Jun 15 2024 21:32:39 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "OminousDude",
+            "content": "Can I get some more info about this problem? It could be if you don't set a random seed something like a division by zero could occur.\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

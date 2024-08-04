@@ -1,0 +1,49 @@
+{
+    "main_topic": {
+        "author": "Cody_Null",
+        "title": "7b OOM while 8b works fine, is this strange?",
+        "content": "I am trying to compare the performance of different base models, for example we can compare base mistral 7B model quantized to 8bit and compare this to the llama 3 8B model also quantized to 8bit. I am noticing I get OOM errors for the 7B model (and others) but not the llama3 8b? I understand they can have different architectures with different memory requirements and that their size is not fully dependent on the number of parameters but just to be sure does anyone else find this strange? \n\n",
+        "date": "Wed Jun 26 2024 05:48:42 GMT+0900 (日本標準時)",
+        "votes": "7"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "It cannot be due to size - Mistral 7b 8 bit takes 6.87 GB,  Llama 3 8B 8 bit takes 7.05 GB (see: [https://huggingface.co/spaces/hf-accelerate/model-memory-usage)](https://huggingface.co/spaces/hf-accelerate/model-memory-usage)). From what I can see they also have the same hidden sizes and dimensions, so embeddings for Mistral should not take more RAM than for Llama\n\nAre you getting the error while loading? This might be due to kaggle infrastructure. For fair comparisons you should always load from a freshly restarted environment (as torch.cuda.empty_cache has not the same effect from my experience)\n\n",
+            "date": "Posted a month ago  ·  38th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Cody_NullTopic Author",
+                    "content": "Glad I am not crazy, I will circle back and try it again today just to double check I have not made some silly mistake. I will update this if I find anything.\n\n",
+                    "date": "Posted a month ago  ·  30th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Cody_NullTopic Author",
+            "content": "Just now realized I totally put this in the wrong thread: \n\nUpdate: I have found the reason. The top here causes an OOM error while the bottom works fine.\n\n`\n\nBitsAndBytes configuration\n\nbnb_config =  BitsAndBytesConfig(\n\n    load_in_8bit=True,\n\n    bnb_8bit_compute_dtype=torch.float16,\n\n    bnb_8bit_use_double_quant=False)\n\nbnb_config = BitsAndBytesConfig(\n\n    load_in_8bit=True,\n\n    bnb_8bit_quant_type=\"nf8\",\n\n    bnb_8bit_use_double_quant=True,\n\n    bnb_8bit_compute_dtype=torch.bfloat16)\n\n`\n\n",
+            "date": "Posted a month ago  ·  30th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Valentin Werner",
+                    "content": "I was wondering lol \n\nstill got 4 upvotes on the other one 😉\n\n",
+                    "date": "Posted a month ago  ·  38th in this Competition",
+                    "votes": "2",
+                    "reply": [
+                        {
+                            "author": "Cody_NullTopic Author",
+                            "content": "lol as long as it is useful I guess haha figured I might as well let this side be complete. \n\n",
+                            "date": "Posted a month ago  ·  30th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+# ノートブックに関する問題
+
+**Shahik15** *2024年6月9日 日曜日 4:35:45 JST* (0票)
+こんにちは、
+
+ノートブックを作成したのですが、コードセクションに追加されません。誰か助けてくれませんか？
+
+よろしくお願いいたします。
+---
+# 他のユーザーからのコメント
+> ## Valentin Werner
+> 
+> 設定セクションで公開になっていることを確認しましたか？
+> 
+> 
+> 
+> > ## Shahik15 トピック作成者
+> > 
+> > はい、ノートブックのリンクはこちらです。[https://www.kaggle.com/code/shahik15/gemma-rag-chatbot-arena](https://www.kaggle.com/code/shahik15/gemma-rag-chatbot-arena)
+> > 
+> > 
+> > 
+--- 
+

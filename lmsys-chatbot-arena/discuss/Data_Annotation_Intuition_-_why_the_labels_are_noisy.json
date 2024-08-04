@@ -1,0 +1,122 @@
+{
+    "main_topic": {
+        "author": "Valentin Werner",
+        "title": "Data Annotation Intuition - why the labels are noisy",
+        "content": "I see that there are several ongoing discussions regarding label quality. As someone, who has spent a significant amount of time annotating data (and asking other people to annotate data for me), I want to share an opinion and intution of mine too.\n\nIn Data Annotation, you generally want professionals to annotate the data. They are supposed to (but sometimes do not do so) read the data carefully, select the labels carefully etc.; the annotated data is considered the GROUND TRUTH as these experts should be able to objectively decide the correct label (given same understand of the problem and annotation task). \n\nThen you generally compute an Inter-Annotator Agreement (are n people giving the same label on the same text), which was often seen as a ceiling for performance. Although this is not always the case in reality, this makes sense, because that means that your model is able to learn the intersection of knowledge from multiple annotators. \n\nWhy is this important? The data we are training on is annotated by random people who wanted to try LLMs. While LMSYS is a great tool that I often use and recommend, it is for our problem mostly an annotation tool where the annotator can decide what question they want to annotate for and the data to annotate is generated in real time. \n\nHowever, there are several issues with this for our challenge:\n\n- Users are not experts in using or understanding LLMs\n\n- Users are often not experts in the topic they are asking about (and are often not fact-checking the responses)\n\n- Unless users specify the same prompt and receive the same response, there is no way to evaluate Inter-Annotator Agreement\n\n- LMSYS does not allow to undo or redo annotations (e.g., misclicked the wrong side)\n\n- And most importantly: users have different preferences. This annotation task is not objective at all but PURELY subjective\n\nThis means we have NOISY labels and should employ techniques to deal with this; there are techniques such as active learning, ensembling, changing loss etc. which might work to address this issue - all of this needs to be tested (although ensembling is something we will do anyways 😉).\n\n",
+        "date": "Mon May 13 2024 23:10:26 GMT+0900 (日本標準時)",
+        "votes": "32"
+    },
+    "comments": [
+        {
+            "author": "aotiandragon",
+            "content": "Thanks a lot, It helped me to know the datas\n\n",
+            "date": "Posted 20 days ago  ·  576th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Pranav Belhekar",
+            "content": "Thanks for sharing your point. It helped me to analyze the competition.\n\n",
+            "date": "Posted a month ago",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Fae Gaze",
+            "content": "Excellent insights on label noise! You might also explore robust loss functions like focal loss to mitigate noise impact, and consider frameworks like Snorkel to efficiently manage training data through programmable labeling functions\n\n",
+            "date": "Posted 2 months ago  ·  823rd in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Valentin WernerTopic Author",
+                    "content": "Have not heard of Snorkel yet - can you recommend some literature? \n\n",
+                    "date": "Posted 2 months ago  ·  38th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Takamichi Toda",
+            "content": "Thank you for sharing. And I was thinking the same thing just now.\n\nThere are some samples in the training data consisting only of very short prompts (one word). A typical example is when the prompt is just \"hey\". The responses of LLMs to this can generally be divided into two patterns:\n\nSimply respond with \"Hello!\".\nAfter saying \"Hello\", provide a cue to continue the conversation, such as \"How can I assist you today?\".\n\nI think 2 seems to be better, but the training data shows that there were a reasonable number of tie and cases where 1 was winning.\n\n|  | n_sample | id |\n| --- | --- | --- |\n| hello_lose | 5 | 189242591, 211357242, 326037335, 458677274, 3947327386 |\n| tie | 4 | 1329170872, 3422926530, 4197301939, 4265282380 |\n| hello_win | 2 | 1655058446, 2171261721 |\n\nThe \"hay\" pattern trend seems to be more to my liking (2 mostly), but there are many other patterns like this that need to be treated as a NOISY label, as you say.\n\n",
+            "date": "Posted 3 months ago  ·  146th in this Competition",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "Valentin WernerTopic Author",
+                    "content": "And I think is one on the more obvious side, where people just voted a side eventhough both models give the same answer. These people were obviously not thinking of poor ML Developers that need to explain why they did it 😉\n\nI think evaluating how truthful the responses are (if there is a good way to do it) could also be a good feature for training our models\n\n",
+                    "date": "Posted 3 months ago  ·  38th in this Competition",
+                    "votes": "2",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Lisa DunlapCompetition Host",
+            "content": "I think this is an amazing point: one of the big challenges with this challenge (no pun intended) - the data is crowdsourced with very minimal filtering so learning how to deal with label noise is incredibly important!\n\n",
+            "date": "Posted 3 months ago",
+            "votes": "4",
+            "reply": []
+        },
+        {
+            "author": "JunHua Liao",
+            "content": "I have also discovered the issue of labels noise, mainly due to the same prompt and reponses, where there is a winner, which should be winner_tie. The two solutions currently in mind are: (1). Change the label to winner_tie; (2) Delete noise data\n\n",
+            "date": "Posted 3 months ago  ·  1125th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Lisa DunlapCompetition Host",
+                    "content": "It may also be beneficial to look in to prompt deduplication or down weighting overrepresented prompts\n\n",
+                    "date": "Posted 3 months ago",
+                    "votes": "6",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "xiaotingting",
+            "content": "At present, cleaning data and selecting models have the greatest impact on the results. I feel that no matter what field you are in, even if you use a large model, the quality of the data is very important.\n\n",
+            "date": "Posted 21 hours ago  ·  19th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Valentin WernerTopic Author",
+                    "content": "Looking forward to see how you cleaned data, we tried it a bit but were not able to get it to a point where it actually helped\n\n",
+                    "date": "Posted 21 hours ago  ·  38th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Fae Gaze",
+                            "content": "Hi, that is right. Too much cleaning will affect on the score adversely\n\n",
+                            "date": "Posted 4 hours ago  ·  823rd in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "AbChk",
+            "content": "Thanks for sharing your point. It seems like this issue makes us wonder if the test data also has noisy labels?\n\n",
+            "date": "Posted 3 months ago  ·  1240th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Valentin WernerTopic Author",
+                    "content": "very likely so. I (maybe not so) boldly assume that they did not manually check 25k samples for quality. It is like chosen based on label distribution and models.\n\n",
+                    "date": "Posted 3 months ago  ·  38th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                },
+                {
+                    "author": "Fae Gaze",
+                    "content": "the test is also noisy. But, we are not able to clean the noise. Even cleaning the training will affect the score\n\n",
+                    "date": "Posted 4 hours ago  ·  823rd in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

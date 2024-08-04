@@ -1,0 +1,10 @@
+{
+    "main_topic": {
+        "author": "Takamichi Toda",
+        "title": "Converted Ultrafeedback data (External Data)",
+        "content": "I have converted Ultrafeedback data shared by [@thedrcat](https://www.kaggle.com/thedrcat) into competition data.\n\nUnlike competition data, Ultrafeedback data has a rating. This means that the model with the higher rating is the winner and the tie is the \"tie\".\n\nPlease see that:\n\nConvert Code: [https://www.kaggle.com/code/takamichitoda/lmsys-convert-ultrafeedback-to-competition](https://www.kaggle.com/code/takamichitoda/lmsys-convert-ultrafeedback-to-competition)\n\nDataset: [https://www.kaggle.com/datasets/takamichitoda/lmsys-ultrafeedback](https://www.kaggle.com/datasets/takamichitoda/lmsys-ultrafeedback)\n\nI would like to thank [@thedrcat](https://www.kaggle.com/thedrcat) for initially sharing this data.\n\nPlease make sure to upvote the [original discussion](https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/499756).\n\n",
+        "date": "Fri Jun 07 2024 19:14:14 GMT+0900 (日本標準時)",
+        "votes": "25"
+    },
+    "comments": []
+}

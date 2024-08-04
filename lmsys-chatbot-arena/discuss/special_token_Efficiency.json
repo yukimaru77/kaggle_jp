@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "박민욱peterminpark",
+        "title": "special token Efficiency",
+        "content": "many organized their dataset into  +  +  input text form. I tried adding , ,  as special tokens and trained a model but the result was not good does anyone know why this is the case.\n\n",
+        "date": "Fri Jul 19 2024 07:18:04 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "cm391",
+            "content": "have you resized the embedding to take into account that you have added new tokens?\n\nGemma contains some spare special tokens in its tokenizer - you could just repurpose those!\n\n",
+            "date": "Posted 16 days ago  ·  827th in this Competition",
+            "votes": "-1",
+            "reply": [
+                {
+                    "author": "박민욱peterminparkTopic Author",
+                    "content": "thx\n\nI did resize my model.\n\nrecycling unused special token is a good idea. I'll try that out\n\n",
+                    "date": "Posted 15 days ago  ·  176th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

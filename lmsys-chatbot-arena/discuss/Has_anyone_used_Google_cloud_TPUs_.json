@@ -1,0 +1,25 @@
+{
+    "main_topic": {
+        "author": "JamshaidSohail",
+        "title": "Has anyone used Google cloud TPUs ?",
+        "content": "Hi. Guys has anyone used Google Cloud TPUs ? If yes, can someone share some link for using them without any difficulty. \n\n",
+        "date": "Thu Jul 18 2024 19:54:51 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "The-Hai Nguyen",
+            "content": "I could use the two links below to apply to my code without any serious issues:\n\n- [https://www.kaggle.com/code/defdet/llama-2-13b-on-tpu-training/](https://www.kaggle.com/code/defdet/llama-2-13b-on-tpu-training/)\n\n- [https://www.kaggle.com/code/kishanvavdara/lmsys-llama-3-tpu-train/](https://www.kaggle.com/code/kishanvavdara/lmsys-llama-3-tpu-train/)\n\nHope it helps 🤗.\n\n",
+            "date": "Posted 16 days ago  ·  829th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Sparsh Tewatia",
+            "content": "Nothing happens without difficulty bro 😭\n\n",
+            "date": "Posted 17 days ago  ·  512th in this Competition",
+            "votes": "1",
+            "reply": []
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "main_topic": {
+        "author": "Heroseo",
+        "title": "[New Starter] 3 texts + Huggingface",
+        "content": "I shared a new notebook for Huggingface users.\n\nThis notebook uses huggingface and uses all three texts in the tokenizer.\n\n- prompt, response_a, response_b\n\nV3 - add truncate_text - but score got a little worse\n\n- link: [[Train] LMSYS / Deberta-v3 meets Huggingface](https://www.kaggle.com/code/piantic/train-lmsys-deberta-v3-meets-huggingface/notebook)\n\n",
+        "date": "Sun May 05 2024 05:16:42 GMT+0900 (日本標準時)",
+        "votes": "2"
+    },
+    "comments": [
+        {
+            "author": "Nicholas Broad",
+            "content": "your model only predicts label 1?\n\n",
+            "date": "Posted 3 months ago  ·  18th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Valentin Werner",
+                    "content": "I guess you can save some inference time on those predictions 😉\n\n",
+                    "date": "Posted 3 months ago  ·  38th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                },
+                {
+                    "author": "HeroseoTopic Author",
+                    "content": "thank you for telling me. I will check again later and update.\n\np.s. But now I've run out of Kaggle GPU time. 🥲\n\n",
+                    "date": "Posted 3 months ago  ·  1539th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

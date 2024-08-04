@@ -1,0 +1,33 @@
+{
+    "main_topic": {
+        "author": "AlphaTT30",
+        "title": "config.json file missing in Llama model",
+        "content": "I copied other notebooks where the config.json file exists. But when I add the model as input in my notebooks the config.json file is missing so the model does not load. \n\nWhy is that and what to do? \n\n",
+        "date": "Thu Jul 04 2024 16:18:38 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Artyom Lyan",
+            "content": "You should use transformers version, not pytorch\n\n",
+            "date": "Posted a month ago  ·  219th in this Competition",
+            "votes": "2",
+            "reply": []
+        },
+        {
+            "author": "Saiyan Warrior",
+            "content": "HI [@alphatt30](https://www.kaggle.com/alphatt30) there might be 2 reasons that I can think of:\n\nYou might need to get the llama permission [here](https://www.kaggle.com/models/metaresearch/llama-3)\nYou might have given the wrong path.\n\ncan you share the exact error?\n\n",
+            "date": "Posted a month ago  ·  201st in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "AlphaTT30Topic Author",
+                    "content": "I have permission and the path was correct, I even tried other's notebooks where they used the same model. so I removed their model and then loaded the same model in input and config.json was still missing there \n\n",
+                    "date": "Posted a month ago  ·  854th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

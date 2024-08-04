@@ -1,0 +1,98 @@
+{
+    "main_topic": {
+        "author": "Anil Ozturk",
+        "title": "Gemma 2 has been released",
+        "content": "Google has released the v2 for Gemma. It is available in two versions: 9B and 27B. You might want to try the 9B one.\n\nHuggingFace: [https://huggingface.co/collections/google/gemma-2-release-667d6600fd5220e7b967f315](https://huggingface.co/collections/google/gemma-2-release-667d6600fd5220e7b967f315)\n\n",
+        "date": "Fri Jun 28 2024 00:49:26 GMT+0900 (日本標準時)",
+        "votes": "26"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "If they keep making the small models bigger, kaggle should keep making GPUs bigger 😉\n\n",
+            "date": "Posted a month ago  ·  38th in this Competition",
+            "votes": "12",
+            "reply": [
+                {
+                    "author": "Enter your display name",
+                    "content": "Agree, also many packages now no longer support installation on older GPUs like the T4.\n\n",
+                    "date": "Posted a month ago  ·  12th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                },
+                {
+                    "author": "Yashchavn",
+                    "content": "true, lets see what happens\n\n",
+                    "date": "Posted a month ago",
+                    "votes": "1",
+                    "reply": []
+                },
+                {
+                    "author": "SunshineMoment",
+                    "content": "Agree! we need more powerful gpu\n\n",
+                    "date": "Posted a month ago  ·  694th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Cody_Null",
+            "content": "Update: I have found the reason. The top here causes an OOM error while the bottom works fine. \n\n`\n\n# BitsAndBytes configuration\n\n```\nbnb_config =  BitsAndBytesConfig(\n    load_in_8bit=True,\n    bnb_8bit_compute_dtype=torch.float16,\n    bnb_8bit_use_double_quant=False)\n\nbnb_config = BitsAndBytesConfig(\n    load_in_8bit=True,\n    bnb_8bit_quant_type=\"nf8\",\n    bnb_8bit_use_double_quant=True,\n    bnb_8bit_compute_dtype=torch.bfloat16)\n\n```\n\n`\n\n",
+            "date": "Posted a month ago  ·  30th in this Competition",
+            "votes": "7",
+            "reply": [
+                {
+                    "author": "Lucifer_is_back_",
+                    "content": "thanks for that!\n\n",
+                    "date": "Posted a month ago  ·  1024th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Matous Famera",
+                            "content": "[@luciferisback](https://www.kaggle.com/luciferisback) I have read Gemma 2 outperforms Llama 3 8b in several benchmarks. I don't know if Gamma 2 can be implemented in this competition though.\n\n",
+                            "date": "Posted a month ago  ·  513th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                },
+                {
+                    "author": "mbyc_xkyz_2023",
+                    "content": "but , after i strat my code, Unused kwargs: ['bnb_8bit_quant_type', 'bnb_8bit_use_double_quant', 'bnb_8bit_compute_dtype']. These kwargs are not used in , how to understand?\n\n",
+                    "date": "Posted a month ago  ·  335th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "xiaotingting",
+            "content": "Gemma v2 is indeed the most useful one I have tried in this competition.\n\n",
+            "date": "Posted 21 hours ago  ·  19th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Nikhil Tumbde",
+            "content": "Added the 9b base model on kaggle, [here](https://www.kaggle.com/models/nikhiltumbde/gemma-2-9b-hf)\n\n",
+            "date": "Posted 4 days ago  ·  778th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Rishit Jakharia",
+            "content": "### Regarding the GGUF files\n\n- Did anyone manage to use the Gemma 2 GGUF files on Kaggle\n\nI am unable to do so myself, as I'm using llama cpp  and the latest version of llamaCPP seems to not be compatible with Kaggle\n\n",
+            "date": "Posted a month ago",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Guocheng Song",
+            "content": "wow， that's amazing\n\n",
+            "date": "Posted a month ago  ·  98th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

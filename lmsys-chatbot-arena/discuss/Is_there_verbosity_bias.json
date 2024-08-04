@@ -1,0 +1,10 @@
+{
+    "main_topic": {
+        "author": "OHIRA",
+        "title": "Is there verbosity bias?",
+        "content": "I'm using Llama 3 , Is there serious verbosity bias ?\n\nIf there is the bias, I want to know how to prevent it using prompt technique.\n\n",
+        "date": "Tue Jul 30 2024 17:37:18 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": []
+}

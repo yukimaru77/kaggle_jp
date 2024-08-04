@@ -1,0 +1,32 @@
+{
+    "main_topic": {
+        "author": "Dlond Mike",
+        "title": "this requirement <= 9 hours run-time is for public dataset or private ?",
+        "content": "this requirement\n\n<= 9 hours run-time\n\nis for public dataset or private ?\n\n",
+        "date": "Mon Jul 08 2024 22:13:47 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "On submission you are running the whole test set, private and public. Therefore, if your submission finishes in 9 hours, and you see a score on LB, you have nothin to worry about.\n\n",
+            "date": "Posted a month ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "gmin5y",
+            "content": "See this previous post for details: [https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/517142](https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/517142)\n\n",
+            "date": "Posted 25 days ago  ·  878th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Lorry Zou",
+            "content": "It's for the whole(private) test set.\n\n",
+            "date": "Posted a month ago  ·  153rd in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

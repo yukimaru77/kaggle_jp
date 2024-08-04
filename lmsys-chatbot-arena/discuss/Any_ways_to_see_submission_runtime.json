@@ -1,0 +1,33 @@
+{
+    "main_topic": {
+        "author": "gmin5y",
+        "title": "Any ways to see submission runtime?",
+        "content": "Hi, I am new to Kaggle and I am wondering if we can have access to the outputs of the notebooks we submitted for scoring (probably not?) If we couldn't access the submission logs, then how can we know how long our notebooks run? I have seen people discussing about the runtime of the notebook and I would really appreciate someone can explain how you measure the runtime of your solution on test set.\n\nThank you all! Best of luck for everyone in the coming 2 weeks!\n\n",
+        "date": "Thu Jul 25 2024 03:34:25 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "You can hover over the \"3h ago\" to get an exact timestamp of submission. You cannot see exactly how long it runs, so you have to check in regularly, which is quite annoying.\n\nSubmission logs do not exist, as you could just print all the testdata etc.\n\n",
+            "date": "Posted 10 days ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "gmin5yTopic Author",
+                    "content": "\nYou can hover over the \"3h ago\" to get an exact timestamp of submission. You cannot see exactly how long it runs, so you have to check in regularly, which is quite annoying.\n\nSubmission logs do not exist, as you could just print all the testdata etc.\n\nThank you so much!\n\n",
+                    "date": "Posted 10 days ago  ·  878th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                },
+                {
+                    "author": "RB",
+                    "content": "I have used  [this](https://www.kaggle.com/c/riiid-test-answer-prediction/discussion/201047) , its easy and works , you don't have to keep checking forever to measure runtime.\n\n[This](https://www.kaggle.com/code/cpmpml/submission-timing) is another option.\n\n",
+                    "date": "Posted 10 days ago  ·  18th in this Competition",
+                    "votes": "3",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

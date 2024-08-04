@@ -1,0 +1,32 @@
+{
+    "main_topic": {
+        "author": "Owen",
+        "title": "A question about submission",
+        "content": "Will sample_submission.csv be replaced during submission like test.csv files\n\n",
+        "date": "Fri Jul 19 2024 09:52:13 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "CPMP",
+            "content": "Yes. sample submission when you submit has the same number of rows as test.\n\n",
+            "date": "Posted 13 days ago  ·  27th in this Competition",
+            "votes": "2",
+            "reply": []
+        },
+        {
+            "author": "Enter your display name",
+            "content": "The answer should be no.\n\n",
+            "date": "Posted 16 days ago  ·  12th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Yichuan Gao",
+            "content": "It will be replaced with the same row count and ids with input data. Almost all notebooks are using it as a template for output predictions \n\n",
+            "date": "Posted 13 days ago  ·  166th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

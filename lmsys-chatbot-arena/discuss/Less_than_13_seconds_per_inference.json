@@ -1,0 +1,39 @@
+{
+    "main_topic": {
+        "author": "Rishiraj Acharya",
+        "title": "Less than 1.3 seconds per inference?",
+        "content": "There are approximately 25000 rows in test data and 9 hours runtime translates to less than 1.3 seconds per inference. Does this make usage of Large Language Models obsolete for this competition? I might not know of any LLM that runs this fast but I'm open to learning.\n\n",
+        "date": "Fri May 03 2024 14:21:19 GMT+0900 (日本標準時)",
+        "votes": "17"
+    },
+    "comments": [
+        {
+            "author": "Raja Biswas",
+            "content": "For my subs, the inference runtimes were as below (T4 x2):\n\n- deberta-v3-large (~1.5hrs)\n\n- mistral 7b (~4hr)\n\n- llama3 8b (~4hr)\n\nMax sequence length used: 1.8k\n\n",
+            "date": "Posted 3 months ago  ·  4th in this Competition",
+            "votes": "25",
+            "reply": []
+        },
+        {
+            "author": "Siddhantoon",
+            "content": "You can even batch process the data, why run every row sequentially.\n\n",
+            "date": "Posted 3 months ago",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Fritz Cremer",
+            "content": "I published a deberta-v3-base notebook which predicts in under an hour. I think even deberta-v3-large should be no problem:\n\n[https://www.kaggle.com/code/fritzcremer/lmsys-deberta-v3-base-baseline](https://www.kaggle.com/code/fritzcremer/lmsys-deberta-v3-base-baseline)\n\n",
+            "date": "Posted 3 months ago  ·  1594th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Angela",
+            "content": "You are right. It seems that it is unable to utilize prompt engineering for LLM in this competition. \n\n",
+            "date": "Posted 3 months ago  ·  1664th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "main_topic": {
+        "author": "bao",
+        "title": "[need help]How to use DDP to speedup sft ?",
+        "content": "hello，kagglers,\n\nI use [codes ](https://www.kaggle.com/code/shelterw/training-llama3-8b-4-bit-qlora-sft/notebook) and change args like below:\n\n```\n args = TrainingArguments(\n        output_dir='/gemini/output',\n        overwrite_output_dir = True,\n        evaluation_strategy = \"epoch\",\n        save_strategy = \"steps\",\n        save_steps=200,\n        save_total_limit=2,\n        logging_strategy=\"steps\",\n        logging_steps=20,\n        warmup_steps=20,\n        optim=\"adamw_8bit\",\n        learning_rate=2e-4,\n        per_device_train_batch_size=8,\n        per_device_eval_batch_size=8,\n        gradient_accumulation_steps=16,\n        num_train_epochs=1,\n        fp16=True,\n        metric_for_best_model=\"log_loss\",\n        greater_is_better = False,\n        report_to=\"none\",\n        accelerator=\"ddp\"  \n    )\n\n    trainer = Trainer(\n        args=args,\n        model=model,\n        train_dataset=ds.select(train_idx),\n        eval_dataset=ds.select(eval_idx),\n        data_collator=DataCollatorForSeq2Seq(tokenizer=tokenizer),\n        compute_metrics=compute_metrics,\n    )\n    trainer.train()\n\n```\n\nbut GPU0 utility can reach 97%+， GPU1 only got 20%- even 0%。  the total training is slower than one GPU，how to fix it ?\n\n",
+        "date": "Wed Jul 24 2024 18:42:20 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "CPMP",
+            "content": "In order to use ddp you have to spawn two processes. Here are some example from HF documentation: [https://huggingface.co/docs/transformers/v4.43.0/en/perf_train_gpu_many#scalability-strategy](https://huggingface.co/docs/transformers/v4.43.0/en/perf_train_gpu_many#scalability-strategy)\n\n",
+            "date": "Posted 11 days ago  ·  27th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "baoTopic Author",
+                    "content": "Thanks, I will try it.\n\n",
+                    "date": "Posted 11 days ago  ·  311th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "CPMP",
+                            "content": "You can try the accelerate library as well. I never used it myself, but it looks simpler to use than writing your own DDP code.\n\n",
+                            "date": "Posted 11 days ago  ·  27th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Pranshu Bahadur",
+            "content": "Hf trainer already uses ddp try not setting any accelerator\n\nAnd device_map = 'auto' when loading the model\n\nIs your model unsloth?\n\nBecause they mention that 1xT4 is 5x faster at the end\n\n[https://huggingface.co/unsloth/llama-3-8b-bnb-4bit](https://huggingface.co/unsloth/llama-3-8b-bnb-4bit)\n\n[Screenshot_2024-07-24-17-08-15-27_40deb401b9ffe8e1df2f1cc5ba480b12.jpg](https://storage.googleapis.com/kaggle-forum-message-attachments/2934339/20965/Screenshot_2024-07-24-17-08-15-27_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)",
+            "date": "Posted 11 days ago  ·  366th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "baoTopic Author",
+                    "content": "I remove the accelerator setting, and set device_map = 'auto' when loading the model. But got the same \n\n",
+                    "date": "Posted 11 days ago  ·  311th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Pranshu Bahadur",
+                            "content": "Yeah its because of unsloth quantized models training faster on 1xt4\n\nHave you tried just using a P100?\n\nAlso can you share screenshot of memory usage while training?\n\n",
+                            "date": "Posted 11 days ago  ·  366th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "baoTopic Author",
+                            "content": "I use 2x3090. the screenshot was in my last reply message.\n\n",
+                            "date": "Posted 11 days ago  ·  311th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Pranshu Bahadur",
+                            "content": "Oh then you can use way higher batch size that's why only 1 is being used right now\n\n",
+                            "date": "Posted 11 days ago  ·  366th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

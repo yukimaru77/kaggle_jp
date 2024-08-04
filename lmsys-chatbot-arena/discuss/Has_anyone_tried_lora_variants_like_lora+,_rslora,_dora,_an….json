@@ -1,0 +1,48 @@
+{
+    "main_topic": {
+        "author": "ShelterW",
+        "title": "Has anyone tried lora variants like lora+, rslora, dora, and the latest lora-ga, lora-pro, and do they work better ?",
+        "content": "I hear they're closer to full fine-tuning, so has anyone tried it in this competition? I tried dora and it worked just as well.\n\n### Refer:\n\n[1] LoRA: Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., … & Chen, W. (2021). Lora: Low-rank adaptation of large language models. arXiv preprint arXiv:2106.09685.\n\n[2] LoRA+: Hayou, S., Ghosh, N., & Yu, B. (2024). LoRA+: Efficient Low Rank Adaptation of Large Models. arXiv preprint arXiv:2402.12354.\n\n[3] VeRA: Kopiczko, D. J., Blankevoort, T., & Asano, Y. M. (2023). Vera: Vector-based random matrix adaptation. arXiv preprint arXiv:2310.11454.\n\n[4] LoRA-FA: Zhang, L., Zhang, L., Shi, S., Chu, X., & Li, B. (2023). Lora-fa: Memory-efficient low-rank adaptation for large language models fine-tuning. arXiv preprint arXiv:2308.03303.\n\n[5] LoRA-drop: Zhou, H., Lu, X., Xu, W., Zhu, C., & Zhao, T. (2024). LoRA-drop: Efficient LoRA Parameter Pruning based on Output Evaluation. arXiv preprint arXiv:2402.07721.\n\n[6] AdaLoRA: Zhang, Q., Chen, M., Bukharin, A., He, P., Cheng, Y., Chen, W., & Zhao, T. (2023). Adaptive budget allocation for parameter-efficient fine-tuning. arXiv preprint arXiv:2303.10512.\n\n[7] DoRA: Liu, S. Y., Wang, C. Y., Yin, H., Molchanov, P., Wang, Y. C. F., Cheng, K. T., & Chen, M. H. (2024). DoRA: Weight-Decomposed Low-Rank Adaptation. arXiv preprint arXiv:2402.09353.\n\n[8] Delta-LoRA: Zi, B., Qi, X., Wang, L., Wang, J., Wong, K. F., & Zhang, L. (2023). Delta-lora: Fine-tuning high-rank parameters with the delta of low-rank matrices. arXiv preprint arXiv:2309.02411.\n\n[9] LoRA-GA: Wang, S., Yu, L., & Li, J. (2024). LoRA-GA: Low-Rank Adaptation with Gradient Approximation. arXiv preprint arXiv:2407.05000.\n\n[10] LoRA-Pro: Wang, Z., & Liang, J. (2024). LoRA-Pro: Are Low-Rank Adapters Properly Optimized?. arXiv preprint arXiv:2407.18242.\n\n",
+        "date": "Tue Jul 30 2024 04:27:50 GMT+0900 (日本標準時)",
+        "votes": "10"
+    },
+    "comments": [
+        {
+            "author": "James Day",
+            "content": "I tried several of them with marginal success:\n\n- LoRA+ - Seemed to converge faster earlier in training, but didn't make any difference after processing tens of thousands of examples (converged  to equally good model). Might be helpful for small datasets, but doesn't seem too useful for this competition.\n\n- DoRA - Saw slight accuracy improvement vs. LoRA in early experiment back before I was tuning all linear layers, albeit at the expense of a 2x increase in training runtime. After various other changes (tuning all linear layers + some other things that might have a performance impact), the slowdown from using DoRA is even bigger, like 20x. Had to abandon this because my hardware isn't powerful enough to properly train even a single model with DoRA before the end of the competition and the gain would probably be small.\n\n- AdaLoRA - Seemed to converge slower than normal LoRA (worse sample efficiency). Final model was worse than traditional LoRA baseline. Might be possible to get it working well with additional hyperparameter tuning, but continuing to experiment with this didn't seem like a good use of GPU time.\n\n",
+            "date": "Posted 5 days ago  ·  6th in this Competition",
+            "votes": "12",
+            "reply": [
+                {
+                    "author": "CPMP",
+                    "content": "I tried DORA and have similar experience: 2x slowdown for no clear gain.\n\n",
+                    "date": "Posted 5 days ago  ·  27th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Ashwani",
+            "content": "I tried using RSLORA, DORA. \n\nRSLORA gave me performance improvements. \n\nDORA was taking way too much time (8-9x) hence didn't use it. \n\n",
+            "date": "Posted 5 days ago  ·  136th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "justin1357",
+                    "content": "In my exp, rs-lora did not help\n\n",
+                    "date": "Posted 5 days ago  ·  19th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "justin1357",
+            "content": "LoRA-GA is the best in theory, it simulates the grad of finetune. But in the case of large dataset, all the methods are almost the same.\n\n",
+            "date": "Posted 5 days ago  ·  19th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "comments": [
+        {
+            "author": "Crystal Veil",
+            "content": "Great LLM finetuning code\n\n",
+            "date": "Posted 19 days ago  ·  Posted on Version 5 of \n        5",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Zac Wing",
+            "content": "impressive work!\n\n",
+            "date": "Posted 24 days ago  ·  Posted on Version 5 of \n        5",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "toolman",
+            "content": "thx, great work\n\n",
+            "date": "Posted 25 days ago  ·  Posted on Version 5 of \n        5",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Matt McDonagh",
+            "content": "I didn't even know dynamic padding was a thing.\n\nI love learning new tricks. Some are massive. Some are little edges. They all make us better.\n\nThanks for sharing this work.\n\n",
+            "date": "Posted 25 days ago  ·  Posted on Version 5 of \n        5",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Kishan Vavdara",
+            "content": "Great work [@emiz6413](https://www.kaggle.com/emiz6413) ! Thank you, We needed this!\n\n",
+            "date": "Posted a month ago  ·  Posted on Version 2 of \n        5",
+            "votes": "3",
+            "reply": []
+        },
+        {
+            "author": "jiangli59",
+            "content": "Can you provide the instruction about how to  enable Memory-Efficient Attention?\n\n",
+            "date": "Posted a month ago  ·  Posted on Version 4 of \n        5",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Eisuke MizutaniTopic Author",
+                    "content": "What I did was setting global flag to enable memory-efficient attention to true by calling\n\n```\ntorch.backends.cuda.enable_mem_efficient_sdp(True)\n\n```\n\nPlease note that mem_efficient_sdp is enabled by default, so this is redundant.\n\n",
+                    "date": "Posted a month ago  ·  Posted on Version 4 of \n        5",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Lorry Zou",
+            "content": "Nice work [@emiz6413](https://www.kaggle.com/emiz6413) ! Could you share a little bit about how you trained the model? Did you train on Kaggle or another platform? How long did it take and maybe some hyperparameter tricks? Thank you very much!\n\n",
+            "date": "Posted a month ago  ·  Posted on Version 2 of \n        5",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Eisuke MizutaniTopic Author",
+                    "content": "[@lorryzouzelun](https://www.kaggle.com/lorryzouzelun)  The model is trained in [@kishanvavdara](https://www.kaggle.com/kishanvavdara)'s another [notebook](https://www.kaggle.com/code/kishanvavdara/lmsys-llama-3-tpu-train). 50% of the training data is used and takes about 2 hours using kaggle TPU.\n\n",
+                    "date": "Posted a month ago  ·  Posted on Version 2 of \n        5",
+                    "votes": "3",
+                    "reply": [
+                        {
+                            "author": "Lorry Zou",
+                            "content": "Thank you for your reply! So you just used [@kishanvavdara](https://www.kaggle.com/kishanvavdara)'s model weights for inferencing without fine-tuning for yourself? \n\n",
+                            "date": "Posted a month ago  ·  Posted on Version 4 of \n        5",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Eisuke MizutaniTopic Author",
+                            "content": "Yes, that's correct.\n\n",
+                            "date": "Posted a month ago  ·  Posted on Version 4 of \n        5",
+                            "votes": "2",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "bao",
+            "content": "Thanks for your sharing，i have a question is that why don't you do padding when call tokenizer with padding=True ？ but use pad_without_fast_tokenizer_warning to padding？\n\n",
+            "date": "Posted 16 days ago  ·  Posted on Version 5 of \n        5",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Eisuke MizutaniTopic Author",
+                    "content": "That is the very part doing dynamic padding.\n\n",
+                    "date": "Posted 16 days ago  ·  Posted on Version 5 of \n        5",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

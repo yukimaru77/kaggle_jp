@@ -1,0 +1,130 @@
+{
+    "main_topic": {
+        "author": "Abdullah Meda",
+        "title": "Additional 21k Labelled Conversations 🚀",
+        "content": "This dataset was from the authors themselves at [https://huggingface.co/datasets/lmsys/chatbot_arena_conversations](https://huggingface.co/datasets/lmsys/chatbot_arena_conversations)\n\nThe format was quite different to the one being used here for the competition. I have processed it to be in a similar format. Here they are:\n\n- Dataset: [kaggle.com/datasets/abdullahmeda/lmsys-additional-33k-labelled-conversations](https://www.kaggle.com/datasets/abdullahmeda/lmsys-additional-33k-labelled-conversations)\n\n- Processing Script: [kaggle.com/code/abdullahmeda/33k-lmsys-chatbot-arena-conversations/](https://www.kaggle.com/code/abdullahmeda/33k-lmsys-chatbot-arena-conversations/)\n\nAn upvote on the [dataset](https://www.kaggle.com/datasets/abdullahmeda/lmsys-additional-33k-labelled-conversations) would be greatly appreciated. Thank you! 🙏\n\nI'll check if there are any duplicates between the datasets if I do get the time tomorrow. Happy coding!\n\nUPDATE: Using the prompts column as deduplication criteria brings the sample count to around 21k. The dataset and script have been updated.\n\n",
+        "date": "Wed May 08 2024 01:17:13 GMT+0900 (日本標準時)",
+        "votes": "75"
+    },
+    "comments": [
+        {
+            "author": "eli plutchok",
+            "content": "Hi [@abdullahmeda](https://www.kaggle.com/abdullahmeda) , I tested adding in this training data, and for some reason  it makes the submission score a lot worse.\n\n",
+            "date": "Posted 3 months ago  ·  1077th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "eli plutchok",
+            "content": "Hey, I just realized that a lot of the lines are already on the main dataset. Maybe you can make a new cleaned version of this removing all the duplicates. I'm not sure about the percentage.\n\n",
+            "date": "Posted 3 months ago  ·  1077th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "eli plutchok",
+                    "content": "I think about a third are duplicates from the main training set, but there are also many duplicates within the data set, and I think there are additional ones that are very similar but not exact duplicates.\n\n",
+                    "date": "Posted 3 months ago  ·  1077th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Abdullah MedaTopic Author",
+                            "content": "[@eliplutchok](https://www.kaggle.com/eliplutchok) You may be right when you say that. I have dropped all rows that have similar prompts for now. More columns can be used as a subset when dropping rows, but I have noticed that lesser rows were dropped when using multiple columns. Using just the prompts as deduplication criteria brings the number down to just 21k new samples. I have updated the script as well as the dataset to reflect this. I'll update the post in a bit\n\n```\nsuperset = pd.concat([external_data, train]).reset_index(drop=True)\nexternal_data_deduplicated = superset.drop_duplicates(subset=['prompt'], keep='last')\nexternal_data_deduplicated = external_data_deduplicated[external_data_deduplicated.index.isin(external_data.index)]\n\nlen(external_data_deduplicated)\n>>> 21187\n\n```\n\n",
+                            "date": "Posted 3 months ago",
+                            "votes": "3",
+                            "reply": []
+                        },
+                        {
+                            "author": "eli plutchok",
+                            "content": "Btw, I realized another thing. It seems that the lines that had \"tie (both bad)\" as the winner, you just left blank, but these should all be counted as ties, or else you are left with only 10% ties u unlike the main dataset which has 30% ties.\n\n",
+                            "date": "Posted 3 months ago  ·  1077th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        },
+                        {
+                            "author": "Abdullah MedaTopic Author",
+                            "content": "[@eliplutchok](https://www.kaggle.com/eliplutchok) Thank you for pointing this out. I have made the respective changes!\n\n```\n>>> external_data[['winner_model_a', 'winner_model_b', 'winner_tie']].sum(axis=1).all()\nTrue\n\n```\n\n",
+                            "date": "Posted 3 months ago",
+                            "votes": "3",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Rich Olson",
+            "content": "I just submitted a version of my 1.011 LB notebook which adds the de-duped version to train:\n\n[https://www.kaggle.com/code/richolson/deberta-tf-idf-word2vec-length](https://www.kaggle.com/code/richolson/deberta-tf-idf-word2vec-length)\n\nI'll post what I find out.\n\n",
+            "date": "Posted 3 months ago  ·  1199th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Rich Olson",
+                    "content": "I got an identical 1.011 on the LB (see version 6 of above notebook).\n\nSame results with using 50k items from the \"[ultrafeedback](https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/499756)\" dataset.\n\nI take this as indication the data is probably good (or at least not bad) - it's just my notebook isn't able to benefit from the extra data.\n\n",
+                    "date": "Posted 3 months ago  ·  1199th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                },
+                {
+                    "author": "Ivan Vybornov",
+                    "content": "A bulk of data comes from the models that are not present in the actual train set, I doubt this will complement tf-idf approach.\n\n",
+                    "date": "Posted 2 months ago  ·  159th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "xiaotingting",
+            "content": "After adding this dataset, the results are significantly better. The use of additional datasets is indeed useful.\n\n",
+            "date": "Posted 3 days ago  ·  19th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Erik",
+                    "content": "Hi, both cv and lb at the same time improved?\n\n",
+                    "date": "Posted a day ago  ·  100th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "KeShuang Liu",
+                            "content": "Why did I perform better on cv but worse on lb after using the dataset?\n\n",
+                            "date": "Posted 21 hours ago  ·  312th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "eli plutchok",
+            "content": "Have you tried it yet with a submission? I'm scared that taking any external data may unintentionally make my model's predictions on the test data worse.\n\n",
+            "date": "Posted 3 months ago  ·  1077th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Sparsh Tewatia",
+                    "content": "Bro if you try please update the results here too\n\n",
+                    "date": "Posted 3 months ago  ·  512th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "eli plutchok",
+                            "content": "k, will let you know, I hope to try this tomorrow (for me - I'm in NY).\n\n",
+                            "date": "Posted 3 months ago  ·  1077th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        },
+                        {
+                            "author": "go",
+                            "content": "before add data cv is 1.01\n\nafter add data cv is 1.03…\n\nbut I haven't submit this version\n\n",
+                            "date": "Posted 3 months ago  ·  1218th in this Competition",
+                            "votes": "2",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

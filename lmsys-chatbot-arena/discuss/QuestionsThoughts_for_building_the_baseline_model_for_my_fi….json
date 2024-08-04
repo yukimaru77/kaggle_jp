@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "Dr. Gopalashivabalasubramanium Chandrashekaran",
+        "title": "Questions/Thoughts for building the baseline model for my first submission",
+        "content": "I see that there is no model name in the test data.\n\nI've listed my thoughts below. Would love to hear your input. \n\nSo, basically, we have to analyze the response (a/b) of the unknown model and decide which one wins. \nThe user prompt has to be filtered for anything that would cause the model to give a null response or a default reply\nThe model response, we have to categorize it somehow with the model name. Which means there would be features to look for in a model response to attach it to a named model.\nLastly, once the models are identified, we can refer to some type of weight for each model based on its win percentage versus whatever other model it is facing and decide whether it wins or loses or ties.\nSlap all this into a submission file and win.\n",
+        "date": "Sat Jun 08 2024 10:10:08 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "Step 1: Load data\n\nStep 2: ?\n\nStep 3: Slap all into a submission file and win 😉\n\n",
+            "date": "Posted 2 months ago  ·  38th in this Competition",
+            "votes": "2",
+            "reply": []
+        }
+    ]
+}

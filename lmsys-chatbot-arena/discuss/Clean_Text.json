@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "TheStoneMX",
+        "title": "Clean Text",
+        "content": "Hi there all,\n\nI have been trying different text-cleaning techniques, but they do not work… can someone share? or is there no text cleaning on these types of corpus?\n\nOr what other ways to increase the score besides the Ensemble models?\n\nThanks!\n\nLike:\n\n```\nimport pandas as pd\nimport re\nfrom datasets import Dataset\n\ndef load_and_clean_data(filepath):\n    # Load dataset\n    df = pd.read_csv(filepath)\n\n    # Remove duplicates\n    df.drop_duplicates(inplace=True)\n\n    # Handle missing values (replace NaN with empty string)\n    df.fillna(\"\", inplace=True)\n\n    # Clean text function\n    def clean_text(text):\n        # Convert to string in case of any non-string values\n        text = str(text)\n\n        # Remove unwanted characters\n        text = re.sub(r'[\\[\\]\\'\"]', '', text)  # Corrected regular expression\n\n        # Remove punctuation and special characters except periods, commas, apostrophes, and double quotes\n        text = re.sub(r'[^\\w\\s\\.,\\'\\\"]', '', text)       \n        text = text.lower() # Convert to lowercase\n        text.strip()  # strip leading/trailing spaces\n\n        # Remove URLs and Email Addresses\n        text = re.sub(r'\\b(?:https?://|www\\.)\\S+\\b', '', text)\n        text = re.sub(r'\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b', '', text)\n         # Remove numbers\n        text = re.sub(r'\\d+', '', text)\n\n        return text\n\n    # Clean text columns\n    df['prompt'] = df['prompt'].apply(clean_text)\n    df['response_a'] = df['response_a'].apply(clean_text)\n    df['response_b'] = df['response_b'].apply(clean_text)\n\n    return df\n\n# Load and clean the data\ndf_cleaned = load_and_clean_data(\"../input/lmsys-chatbot-arena/train.csv\")\n\n# Convert to Hugging Face Dataset\nds = Dataset.from_pandas(df_cleaned)\n\n# Print the first row \nprint(ds[:1])\n\n```\n\n",
+        "date": "Sun Jul 14 2024 07:21:59 GMT+0900 (日本標準時)",
+        "votes": "3"
+    },
+    "comments": [
+        {
+            "author": "Bharat Raghavan",
+            "content": "It seems to me like your code manages to clean up the text properly, unless you want to clean it further; in that case, what text-cleaning techniques are you talking about?\n\nAs for increasing the score, depending on the approach, hyperparameter tuning can be beneficial. However, I would just recommend that you be wary of overfitting when considering your approach to hyperparameter tuning.\n\n",
+            "date": "Posted 21 days ago",
+            "votes": "-1",
+            "reply": []
+        }
+    ]
+}

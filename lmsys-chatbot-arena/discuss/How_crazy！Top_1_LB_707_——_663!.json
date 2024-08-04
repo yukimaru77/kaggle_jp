@@ -1,0 +1,128 @@
+{
+    "main_topic": {
+        "author": "Sun And Ray",
+        "title": "How crazy！Top 1: LB 707 ——> 663!",
+        "content": "I'm not sure how this guy managed to quickly move from LB: 880 to LB: 707, and then to LB: 663. I suspect his training plan is similar to those of other teams in the gold tier, but the training data might be very different!\n\nAdditionally, in a discussion thread titled “Suspicious Surge of Novice Accounts on the Leaderboard,” I initially thought these \"newcomers\" wouldn’t affect the Top 100, but this morning when I checked the leaderboard, I found myself around 80th place. I admit my guess was wrong.\n\nLastly, my teammates and I are discussing whether to make our training and inference solutions public today or tomorrow in order to counter these \"potentially cheating newcomers.\"\n\n",
+        "date": "Sun Aug 04 2024 09:55:22 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "CPMP",
+            "content": "Don't publish your solution before competition end! \n\n",
+            "date": "Posted 6 hours ago  ·  27th in this Competition",
+            "votes": "12",
+            "reply": []
+        },
+        {
+            "author": "heartkilla",
+            "content": "Please do not publish your solution before the deadline. This will do nothing but create unnecessary turbulence on the leaderboard by giving advantage to those who have enough time to incorporate your ideas. This imbalance will be even more amplified giving the time zone difference across the participants.\n\n",
+            "date": "Posted 8 hours ago  ·  15th in this Competition",
+            "votes": "13",
+            "reply": [
+                {
+                    "author": "Sun And RayTopic Author",
+                    "content": "Our team has spent a lot of money renting GPU resources, but it seems that our investment has yielded unequal returns.\n\n",
+                    "date": "Posted 7 hours ago  ·  84th in this Competition",
+                    "votes": "2",
+                    "reply": [
+                        {
+                            "author": "XXX",
+                            "content": "sorry to heard that🥺\n\n",
+                            "date": "Posted 7 hours ago  ·  387th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "heartkilla",
+                            "content": "That is unfortunate but does not justify publishing high scoring submissions 2 days before the deadline.\n\n",
+                            "date": "Posted 7 hours ago  ·  15th in this Competition",
+                            "votes": "2",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Kamau",
+            "content": "So sad! This leaves me thinking of all the hours, sweat, and tears some of us have put into this. It may not look like it, but this is truly disheartening. It almost explains how I moved from the top 100 to lower ranks on the leaderboard in barely a week. The situation reminds of the quote:\n\n\"What's the point of fighting my way up the mountain when someone else is just going to come up the easy way?\"\n\n~ from The Key of the Titans\n\n",
+            "date": "Posted 5 hours ago  ·  301st in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Ya Xu",
+            "content": "Have faith, I believe Kaggle will deal with cheaters just like they did recently.\n\n",
+            "date": "Posted 7 hours ago  ·  24th in this Competition",
+            "votes": "4",
+            "reply": [
+                {
+                    "author": "Sun And RayTopic Author",
+                    "content": "I hope so!\n\n",
+                    "date": "Posted 7 hours ago  ·  84th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "SeshuRaju 🧘‍♂️",
+            "content": "\nLastly, my teammates and I are discussing whether to make our training and inference solutions public today or tomorrow in order to counter these \"potentially cheating newcomers.\"\n\n-- As per Kaggle policy, top notebooks are not allow to release in last 7 days. I surprise, won't see that message now.\n\n",
+            "date": "Posted 4 hours ago  ·  323rd in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Victor Lu",
+            "content": "This competition is really becoming increasingly unpredictable. I’m very curious to see what changes will occur on the leaderboard after the competition ends. \n\n",
+            "date": "Posted 5 hours ago  ·  62nd in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Dlond Mike",
+            "content": "sadT.T,i thought it woule be my first time i could get a medal….\n\n",
+            "date": "Posted 6 hours ago  ·  173rd in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "XXX",
+            "content": "Hi [@sunandray](https://www.kaggle.com/sunandray), may i ask how many \"newcomers\" do you think in top 100?🤔\n\n",
+            "date": "Posted 7 hours ago  ·  387th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Sun And RayTopic Author",
+                    "content": "I'm not sure how many teams there are in the medal zone, as my focus has primarily been on the silver zone. In the silver zone, I feel there are at least 10 teams that might be cheating. This is because I've noticed some teams were around 938 on the LB a few days ago, and suddenly they are around 900 today.\n\n",
+                    "date": "Posted 7 hours ago  ·  84th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "XXX",
+                            "content": "So, by cheating, do you mean that these teams use the same leaked data as the first one?\n\n",
+                            "date": "Posted 7 hours ago  ·  387th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Enter your display name",
+                            "content": "No, I think he means that they share their solutions privately.\n\n",
+                            "date": "Posted 5 hours ago  ·  12th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "XXX",
+                            "content": "thank you \n\n",
+                            "date": "Posted 5 hours ago  ·  387th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

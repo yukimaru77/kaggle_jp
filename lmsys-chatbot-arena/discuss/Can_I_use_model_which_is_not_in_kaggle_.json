@@ -1,0 +1,63 @@
+{
+    "main_topic": {
+        "author": "AlphaTT30",
+        "title": "Can I use model which is not in kaggle ? ",
+        "content": "In this competition, internet access is not allowed. So I can't use hugging face pre-trained transformer models like this one. The submission gets an error, I think for this one. This needs to be downloaded \n\n```\n# Load model directly\nfrom transformers import AutoTokenizer, AutoModelForMaskedLM\n\ntokenizer = AutoTokenizer.from_pretrained(\"google-bert/bert-base-uncased\")\nmodel = AutoModelForMaskedLM.from_pretrained(\"google-bert/bert-base-uncased\")\n\n```\n\nSo what to do? \n\nAre all the hugging face models in kaggle? \n\nshould I use a model that exists on Kaggle? \n\nor is there another way to use this one? \n\n",
+        "date": "Sat Jun 29 2024 08:42:50 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "tanaka",
+            "content": "You can download these kind of Bert related things and llms before internet ristriction.\n\nMajor topic of these competition is\n\nTraining llm or nlp related model using some techniques and gpus (it is updated to you)\n\nAnd then use these models as inference models without internet.\n\n",
+            "date": "Posted a month ago  ·  1053rd in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Yichuan Gao",
+            "content": "If the model license permits, you can just download the model from huggingface and upload it to kaggle as a model, then add it to your notebook\n\n",
+            "date": "Posted a month ago  ·  166th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "AlphaTT30Topic Author",
+                    "content": "Can I train a model outside kaggle and then upload here and use that model for this competition?  \n\n",
+                    "date": "Posted a month ago  ·  854th in this Competition",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "Ravi Ramakrishnan",
+                            "content": "Yes of course, this is a preferred way to handle these competitions [@alphatt30](https://www.kaggle.com/alphatt30) \n\n",
+                            "date": "Posted a month ago  ·  528th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                },
+                {
+                    "author": "Ivel afred",
+                    "content": "Does this mean that your model needs to be made public on Kaggle? Or is it okay to just make it public on Hugging Face.\n\n",
+                    "date": "Posted a month ago  ·  560th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Yichuan Gao",
+                            "content": "You don't need to upload your model to huggingface, just upload it here on kaggle is ok. Also you can make it private (by default) and use it in your notebooks\n\n",
+                            "date": "Posted a month ago  ·  166th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Ivel afred",
+                            "content": "Code Requirements in LMSYS states: 'Freely&publicly available external data is allowed, including pre trained models.' Does this not require your models to be public? I'm a little confused\n\n",
+                            "date": "Posted a month ago  ·  560th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

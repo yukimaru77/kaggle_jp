@@ -1,0 +1,56 @@
+{
+    "main_topic": {
+        "author": "Marília Prata",
+        "title": "How to work with Gemma Keras 1.1_7b instruct _en WITHOUT Google Cloud? On the 1.1_2b_instruct_en No Memory issue.",
+        "content": "I'm facing some memory issue with Gemma Keras 1.1 -7b- instruct-en.  It appeared that message \"Your notebook tried to allocate more memory than is available. It has restarted\".   Go to Google Cloud or dismiss it.\n\nI even ran:\n\nos.environ[\"XLA_PYTHON_CLIENT_PREALLOCATE\"]=\"false\"\n\n  os.environ[\"XLA_PYTHON_CLIENT_MEM_FRACTION\"]=\".XX\"\n\n  os.environ[\"XLA_PYTHON_CLIENT_ALLOCATOR\"]=\"platform\"\n\nBesides, I reduced the number of rows.\n\nWhen I ran GemmaCausalLM the message that \"The notebook tried to allocate more memory than is available\" popped-up.\n\n# Is there a way to work with Gemma Keras 1.1- 7b instruct -en WITHOUT  Google Cloud?\n\nFor the record, that doesn't occur on the other 7b models (7 billion parameters) that were pinned on this LMSYS competition.\n\nFortunately, I found Awsaf's code and published my 1st (Gemma 1.1-7b-instruct-en just 34 min. ago on May 10, 2024)\n\n[Gemma 1.1 7B Int8 Load](https://www.kaggle.com/code/awsaf49/gemma-1-1-7b-int8-load) By Awsaf.\n\nThanks in advance,\n\nMarília. \n\n",
+        "date": "Fri May 10 2024 10:43:46 GMT+0900 (日本標準時)",
+        "votes": "17"
+    },
+    "comments": [
+        {
+            "author": "Adnan Alaref",
+            "content": "Hi [@mpwolke](https://www.kaggle.com/mpwolke) ,try to reduce batch size,restart the kernel\n\n",
+            "date": "Posted 3 months ago",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Marília PrataTopic Author",
+                    "content": "My  batch_size = 1    Could it be lower? Zero or negative 😆\n\n",
+                    "date": "Posted 3 months ago",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Kaizhao Liang",
+            "content": "I don't think we could load any pretrained model bigger than 1B, since the RAM runs out.\n\n",
+            "date": "Posted 3 months ago",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Marília PrataTopic Author",
+                    "content": "I don't know how the model works on a submission due to its memory. However, I was facing issues even without submitting. Just at the beginning of the code.\n\nFortunately, I found Awsaf's code: [Gemma 1.1 7B Int8 Load](https://www.kaggle.com/code/awsaf49/gemma-1-1-7b-int8-load) and published my 1st (Gemma 1.1-7b-instruct-en just 34 min. ago)\n\nThank you Kaizhao.\n\n",
+                    "date": "Posted 3 months ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Matin Mahmoudi ✨",
+            "content": "Try reducing the batch size, using mixed precision (float16), or lowering the memory fraction to handle Gemma Keras 1.1-7b. If that doesn't work, maybe go for a smaller model or use gradient accumulation [@mpwolke](https://www.kaggle.com/mpwolke).\n\n",
+            "date": "Posted 3 months ago",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Marília PrataTopic Author",
+                    "content": "Hi Matin,\n\nThe batch size is only 1.\n\nI changed to Gemma Keras 1.1_2b_instruct_en to reach at the end of the code (instead of the 7b).\n\nThough the hosts pinned the 7b.\n\nThank you.\n\n",
+                    "date": "Posted 3 months ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

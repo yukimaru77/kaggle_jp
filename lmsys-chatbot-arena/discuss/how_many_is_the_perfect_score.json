@@ -1,0 +1,41 @@
+{
+    "main_topic": {
+        "author": "Anya",
+        "title": "how many is the perfect score?",
+        "content": "Im new to kaggle.\n\nTill now, Ive seen scores range in 0.5 to 1.7\n\nI wonder how many is the perfect score so I can evaluate my score level.\n\nIs it 5, 10 or 100?\n\n",
+        "date": "Sat Jun 22 2024 17:17:35 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "The metric \"log_loss\" allows for a score of 0.0 (e.g., exactly perfect predictions every time). An \"educated guess\" score (predicting the distribution of the train set) gets you a score of about 1.097.\n\nThe problem is that human preferences, which we are trying to predict, are not clearly predictable. This is because if we both write a prompt, we may prefer different responses - so how is our model supposed to learn which responses are better. Because the problem is this hard to predict, the \"ceiling\" of the score is much higher than 0.0 - more along the lines of 0.75 or 0.8 (just a gut feeling)\n\n",
+            "date": "Posted a month ago  ·  38th in this Competition",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "AnyaTopic Author",
+                    "content": "I got it😃. Thanks  for such a detailed reply.\n\n",
+                    "date": "Posted a month ago  ·  487th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "AnyaTopic Author",
+            "content": "After reading the leaderboard I find that the lower one scores, the higher he ranks?\n\n",
+            "date": "Posted a month ago  ·  487th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Yichuan Gao",
+                    "content": "Yes it is, since the score is calculated as log loss, the lower the loss, the better your guesses are\n\n",
+                    "date": "Posted a month ago  ·  166th in this Competition",
+                    "votes": "2",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

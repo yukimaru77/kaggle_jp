@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "Just A game on your lips",
+        "title": "Synthetic Closed source API",
+        "content": "Can I using another API such as: Chatgpt, gemini4o… to generate datasets for training model. \n\n",
+        "date": "Thu Aug 01 2024 09:34:24 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "That profile picture irritated me (Expected Nischay) 😀\n\nOn your question: The rules are quite vague, as there is a section about sharing non-open source data with the whole competition. However, in past competitions there were winning solutions that used self-generated data based on closed source models where data was not shared to my knowledge. Those guys still got a very deserved first place. Therefore, I would assume it to be okay. \n\nHowever, for rule questions it is always best to ask kaggle staff directly. \n\n",
+            "date": "Posted 3 days ago  ·  38th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Just A game on your lipsTopic Author",
+                    "content": "thanks [@valentinwerner](https://www.kaggle.com/valentinwerner).  \n\n",
+                    "date": "Posted 3 days ago  ·  813th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

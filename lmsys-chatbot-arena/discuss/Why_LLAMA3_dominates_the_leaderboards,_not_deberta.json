@@ -1,0 +1,41 @@
+{
+    "main_topic": {
+        "author": "kagglethebest",
+        "title": "Why LLAMA3 dominates the leaderboards, not deberta.",
+        "content": "When I looked at the public notebook, I was surprised to find that LLAMA3 had the highest score, not Deberta. I have the impression that there are competitions about text classification tasks (let's say this competition is also text classification tasks), and basically Deberta is the optimal solution, at least not by a large margin.\n\nI think there could be two reasons for this:\n\nWe haven't found a more suitable categorical loss function for deberta.\nDecoder Only models such as LLAMA are more sensitive to the text output by LLMs.\n\nps: Please let me know if anyone uses Deberta to exceed the score of the best LLAMA notebook.\n\n",
+        "date": "Fri Jul 05 2024 22:41:58 GMT+0900 (日本標準時)",
+        "votes": "6"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "I think your second reason definetly applies. But you should also acknowledge that Llama3-8B has 20x amount of parameters compared to DeBERTa and was pre-trained accordingly. It will be able to represent language much better. Simply adding an classification head will make up the difference between encoding and decoding.\n\nIf I am not mistaken, the architectural differences between encoder-only (DeBERTa) and decoder-only (LLama) for seq classification are marginal, as the decoder are no longer in need to generate the next tokens auto-regressively and instead will generate the classification, just like encoders do.\n\nOften, the amount of parameters only makes a small difference towards a better score, however, as this problem his very nuanced (even a human could not predict the dataset very well), the sheer amount of parameters helps learning these nuances. This problem is simply too complex for DeBERTa, in my opinion.\n\n",
+            "date": "Posted a month ago  ·  38th in this Competition",
+            "votes": "6",
+            "reply": [
+                {
+                    "author": "Cristóbal Mackenzie",
+                    "content": "This makes sense, since I gave a couple of shots using TinyLlama and absolutely failed. Amount of parameters seems to be key for learning anything at all in this problem.\n\n",
+                    "date": "Posted a month ago  ·  215th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Valentin Werner",
+                            "content": "I heard some people had some success with Deberta XS regarding \"anything at all\". But my best DeBERTa (Large) got barely below 1.0, which already included some secret sauce\n\n",
+                            "date": "Posted a month ago  ·  38th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        },
+                        {
+                            "author": "justin1357",
+                            "content": "Could llama be much better?\n\n",
+                            "date": "Posted a month ago  ·  19th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

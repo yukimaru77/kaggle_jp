@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "KeShuang Liu",
+        "title": "I encountered the following problem while training the model, how should I solve it",
+        "content": "wandb: Logging into wandb.ai. (Learn how to deploy a W&B server locally: [https://wandb.me/wandb-server](https://wandb.me/wandb-server))\n\nwandb: You can find your API key in your browser here: [https://wandb.ai/authorize](https://wandb.ai/authorize)\n\nwandb: Paste an API key from your profile and hit enter, or press ctrl+c to quit:\n\n",
+        "date": "Wed May 29 2024 14:06:23 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "tanaka",
+            "content": "try this\n\n[https://www.kaggle.com/code/ayuraj/experiment-tracking-with-weights-and-biases?scriptVersionId=63334832&cellId=3](https://www.kaggle.com/code/ayuraj/experiment-tracking-with-weights-and-biases?scriptVersionId=63334832&cellId=3)\n\n",
+            "date": "Posted 2 months ago  ·  1053rd in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "KeShuang LiuTopic Author",
+                    "content": "Thank you for your reply. I will try it now\n\n",
+                    "date": "Posted 2 months ago  ·  312th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

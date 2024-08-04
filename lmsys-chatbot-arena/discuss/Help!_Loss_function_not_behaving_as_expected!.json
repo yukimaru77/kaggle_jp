@@ -1,0 +1,33 @@
+{
+    "main_topic": {
+        "author": "Shreyansh Murathia",
+        "title": "Help! Loss function not behaving as expected!",
+        "content": "pred = torch.tensor([[1.0, 0.0, 0.0]])\n\ntarget = torch.tensor([0])\n\nloss_fct = nn.CrossEntropyLoss()\n\n​\n\nloss = loss_fct(pred, target)\n\nloss\n\n​\n\ntensor(0.5514)\n\nShould'nt the loss be 0 or a very small value? Why is it returning 0.5514? \n\nI am really sorry if this question is very easy. I am fairly new to this loss. \n\n",
+        "date": "Sat Jul 27 2024 22:43:41 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "sayoulala",
+            "content": "Answer from gpt4:\n\nNo need to apologize! Your question is absolutely valid, and I'm here to help clarify it for you.\n\nIn your scenario, you are using nn.CrossEntropyLoss from PyTorch, which combines nn.LogSoftmax and nn.NLLLoss (negative log likelihood loss). Let me break down your example and explain why you are getting a loss value of 0.5514.\n\nCrossEntropyLoss in PyTorch\n\nnn.CrossEntropyLoss expects:\n\npred (predictions): a 2D tensor of raw, unnormalized scores for each class (often called \"logits\"). Shape: (batch_size, num_classes).\n\ntarget: a 1D tensor of the true class indices. Shape: (batch_size,).\n\nThe CrossEntropyLoss applies a LogSoftmax function to the raw scores first, converting them into log-probabilities. It then uses the NLLLoss to compute the negative log likelihood of the correct class.\n\nIn your example:\n\npython\n\nimport torch\n\nimport torch.nn as nn\n\npred = torch.tensor([[1.0, 0.0, 0.0]])\n\ntarget = torch.tensor([0])\n\nloss_fct = nn.CrossEntropyLoss()\n\nloss = loss_fct(pred, target)\n\nprint(loss)  # Output: tensor(0.5514)\n\nStep-by-Step Explanation\n\nRaw logits (pred):\n\npython\n\n[[1.0, 0.0, 0.0]]\n\nApplying LogSoftmax to logits: The LogSoftmax transformation converts logits to log-probabilities. For pred, the resulting log-probabilities are calculated as:\n\npython\n\nlog_probabilities = torch.log_softmax(pred, dim=1)\n\nThe softmax transformation for your pred would be:\n\npython\n\nsoftmax(pred) = [exp(1.0)/sum(exp(1.0) + exp(0.0) + exp(0.0)),\n\n                 exp(0.0)/sum(exp(1.0) + exp(0.0) + exp(0.0)),\n\n                 exp(0.0)/sum(exp(1.0) + exp(0.0) + exp(0.0))]\n\n             ≈ [0.5761, 0.2119, 0.2119]\n\nApplying log to the softmax probabilities gives us:\n\npython\n\nlog_probabilities = [log(0.5761), log(0.2119), log(0.2119)]\n\n                  ≈ [-0.5514, -1.5514, -1.5514]\n\nNegative Log Likelihood of the target class: Since the target class is 0 (target = [0]), we take the log-probability of the first element:\n\npython\n\nloss = -log_probabilities[0]\n\n     = -(-0.5514)\n\n     = 0.5514\n\nSummary\n\nThe loss value of 0.5514 is not incorrect. It is derived from the log-probability of the correct class (class 0) for your prediction. The fact that the prediction is not perfect (with a raw logit of 1.0 vs. 0.0 for other classes) leads to a non-zero loss.\n\nHad the logit for class 0 been significantly higher (e.g., [10.0, 0.0, 0.0]), the softmax probability for class 0 would be closer to 1, resulting in a loss closer to 0. Here, the logit of 1 is not high enough to give a near-zero softmax probability and thus results in a non-zero loss.\n\nFeel free to ask if you have other questions or need further clarification!\n\n",
+            "date": "Posted 8 days ago  ·  3rd in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "sayoulala",
+                    "content": "The input should not be probabilities; it should be the values before applying softmax.\n\n",
+                    "date": "Posted 8 days ago  ·  3rd in this Competition",
+                    "votes": "3",
+                    "reply": []
+                },
+                {
+                    "author": "Shreyansh MurathiaTopic Author",
+                    "content": "Thanks a lot 😊\n\n",
+                    "date": "Posted 8 days ago  ·  1497th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

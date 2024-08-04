@@ -1,0 +1,41 @@
+{
+    "main_topic": {
+        "author": "Xin",
+        "title": "submission scoreing error",
+        "content": "Has anyone meet this problem when using gemma?  I just changed the inputs.\n\nThanks!!!\n\n",
+        "date": "Fri Aug 02 2024 04:32:13 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Enter your display name",
+            "content": "This could be caused by many reasons, but the most common one is likely that the number of rows in your output submission.csv file does not match test.csv after rerunning on all hidden test data.\n\n",
+            "date": "Posted 2 days ago  ·  12th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "XinTopic Author",
+                    "content": "Thanks!\n\nBy using:\n\n```\n!python /kaggle/usr/lib/lmsys_script/lmsys_script.py\nimport pandas as pd\nlmsys_with_metadata = pd.read_csv(\"/kaggle/working/lmsys_with_metadata.csv\")\n!rm /kaggle/working/lmsys_with_metadata.csv\ntest_df = pd.read_csv(\"/kaggle/input/lmsys-chatbot-arena/test.csv\")\nif len(test_df) != len(lmsys_with_metadata):\n    1/0\n\n```\n\nI got Notebook Throw Exception which proves you must right.\n\nWhy lmsys_script.py (as a utility script) will output different length after submitting submission.csv.\n\nInside the lmsys_script.py:\n\ndf = pd.read_csv(\"/kaggle/input/lmsys-chatbot-arena/test.csv\")\n\n",
+                    "date": "Posted 2 days ago  ·  326th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "XinTopic Author",
+                            "content": "lmsys_script.py (as a utility script) will output same length using train.csv and test.csv before submitting submission.csv.\n\n",
+                            "date": "Posted 2 days ago  ·  326th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "XinTopic Author",
+                            "content": "Finally I abandoned using utility script way to release GPU then the problem solved.\n\n",
+                            "date": "Posted 2 days ago  ·  326th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

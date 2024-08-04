@@ -1,0 +1,32 @@
+{
+    "main_topic": {
+        "author": "Anh Bui",
+        "title": "Do we need the class \"tie\"?",
+        "content": "I have a question about why there is a class 'tie', when based on the probabilities (winner_model_a/winner_model_b) = (0.5, 0.5), it can be determined whether the two models have a 'tie'.\n\n",
+        "date": "Fri May 03 2024 15:50:05 GMT+0900 (日本標準時)",
+        "votes": "4"
+    },
+    "comments": [
+        {
+            "author": "Marília Prata",
+            "content": "Hi Anh Bui (bibanh),\n\nOn the original dataset instead of \"winner_tie\"  they have \"winner\" column (where the Rows are: model_a, model_b, tie AND tie (bothbad)\n\nBattles No ties\n\nbattles_no_ties = battles[~battles[\"winner\"].str.contains(\"tie\")]\n\nBattles without ties\n\nvisualize_battle_count(battles_no_ties, \"Battle Count for Each Combination of Models (without Ties)\")\n\nCounting ties\n\nvisualize_battle_count(battles[battles['winner'].str.contains(\"tie\")], \"Tie Count for Each Combination of Models\")\n\n[https://colab.research.google.com/drive/1KdwokPjirkTmpO_P1WByFNFiqxWQquwH#scrollTo=PbTdhkLQp113](https://colab.research.google.com/drive/1KdwokPjirkTmpO_P1WByFNFiqxWQquwH#scrollTo=PbTdhkLQp113)\n\nThat's what the authors wrote:\n\n\"Statistics\n\n\"The authors allowed the user to declare a tie between the pairs of models. To collect additional data, later in the tournament they also allowed the user to declare a tie in which both models were bad. There were a significant portion of tied outcomes.\"\n\nI hope it could help to clarify. I didn't read anything else about the ties on that Notebook or in their paper too.\n\n",
+            "date": "Posted 3 months ago",
+            "votes": "3",
+            "reply": []
+        },
+        {
+            "author": "bogoconic1",
+            "content": "I would think it is necessary for reason (B)\n\nA tie could mean\n\n(A) The user rates both responses as equally good\n\n(B) The user rates both responses as equally bad. The 2 models can answer in different ways, of which both responses are hallucinated (by making up completely different facts etc) or not answering the question\n\nFor (B) I’m pretty sure the 2 classes will not be predicted as (0.5, 0.5) 🧐\n\n",
+            "date": "Posted 3 months ago",
+            "votes": "3",
+            "reply": []
+        },
+        {
+            "author": "Rich Olson",
+            "content": "For my first submission - I tried filling in \"winner_tie\" with all 0's.\n\nThat got me a score of 11.73 (almost last-place).  At least - I'm assuming \"winner_tie\" being 0's was a factor.\n\nFor my next entry - I'm going to try to fill in winner_tie based on the confidence of A or B winning.  Hopefully this improves things…\n\nIn the train data - it seems ties are very common (about 1 out of 3).\n\n",
+            "date": "Posted 3 months ago  ·  1199th in this Competition",
+            "votes": "2",
+            "reply": []
+        }
+    ]
+}

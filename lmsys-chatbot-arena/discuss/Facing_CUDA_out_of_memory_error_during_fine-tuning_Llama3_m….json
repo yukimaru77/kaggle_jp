@@ -1,0 +1,101 @@
+{
+    "main_topic": {
+        "author": "Tabassum_Nova",
+        "title": "Facing \"CUDA out of memory\" error during fine-tuning Llama3 model",
+        "content": "I tried to fine-tune Llama3 model inspired by [fine-tune-llama-3-for-sentiment-analysis](https://www.kaggle.com/code/lucamassaron/fine-tune-llama-3-for-sentiment-analysis) notebook. But I was facing the following error:\n\ntorch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 224.00 MiB. GPU 0 has a total capacty of 14.75 GiB of which 11.06 MiB is free. Process 3258 has 14.73 GiB memory in use. Of the allocated memory 14.04 GiB is allocated by PyTorch, and 509.85 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF\n\nI have already followed the solution suggested in [this discussion](https://www.kaggle.com/discussions/getting-started/140636). But these did not help. This is the link of [my notebook](https://www.kaggle.com/code/tabassumnova/lmsys-fine-tuning-llama3-8b/notebook)\n\nCan anyone please suggest what I should do to avoid this error?\n\n",
+        "date": "Fri May 31 2024 18:06:44 GMT+0900 (日本標準時)",
+        "votes": "5"
+    },
+    "comments": [
+        {
+            "author": "Ivan Vybornov",
+            "content": "Enable gradient_checkpointing and use paged_adamw_8bit instead of a 32bit version. If does not work, try applying lora to less target_modules, for instance finetuning just [\"q_proj\", \"k_proj\", \"v_proj\", \"o_proj\"] ain't bad.\n\n",
+            "date": "Posted 2 months ago  ·  159th in this Competition",
+            "votes": "5",
+            "reply": [
+                {
+                    "author": "Tabassum_NovaTopic Author",
+                    "content": "Thank you. Enabling gradient _checkpointing works. Training has started 😁\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Valentin Werner",
+            "content": "If you are not using it already, use batch size 1. Maybe use T4 x2 \n\nin general, kaggle GPU might be too slow for the amount and length of training data\n\n",
+            "date": "Posted 2 months ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Tabassum_NovaTopic Author",
+                    "content": "I solved the issue. But it’s taking a long time to train. I am using Kaggle GPU T4x2. Could you please suggest any other option to train the model other than kaggle notebook? I don’t have any personal GPU\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Kishan Vavdara",
+                            "content": "There are many options , you can rent A100, Rtx4090 or any other GPU instances at [Vastai](https://vast.ai/),  [Runpod](https://www.runpod.io/), or other cloud host platforms,  train your model and then delete the instance. You can also start google cloud free trial, it will give you 300$ credits for 3 months. I think colab pro also gives access to A100 and V100 Gpu's. Personally, I found vastai to be more convenient and cheap. \n\n",
+                            "date": "Posted 2 months ago  ·  38th in this Competition",
+                            "votes": "3",
+                            "reply": []
+                        },
+                        {
+                            "author": "Tabassum_NovaTopic Author",
+                            "content": "Thank you for your suggestions\n\n",
+                            "date": "Posted 2 months ago",
+                            "votes": "1",
+                            "reply": []
+                        },
+                        {
+                            "author": "lijiang3859",
+                            "content": "I trained offline in my server, but it still requires memory. How can I solve it? \n\nIf I submit this to notenotebook in the system, will the code still run on the same device I am using for inference? (so sad)\n\n",
+                            "date": "Posted a month ago  ·  1205th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Kishan Vavdara",
+            "content": "Try reducing LoRA config 'rank', it will reduce trainable params, in your notebook i see you're using 64 rank, try 4, 8, or 16.  And you can also try reducing max_length. \n\n",
+            "date": "Posted 2 months ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Tabassum_NovaTopic Author",
+                    "content": "I tried with rank 4, max_seq_length = 512; Still getting the same error\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "kartikey bartwal",
+            "content": "Are you doing your work on some other platform other thank kaggle notebooks or google colab ? I don't think such problem should've arrived with their TPU's\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Tabassum_NovaTopic Author",
+                    "content": "The training issue is solved. But it’s training too slowly. I have not tried with TPU. Could you please suggest any solution too solve this training speed?\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Tabassum_NovaTopic Author",
+                            "content": "Yeah I understand \n\n",
+                            "date": "Posted 2 months ago",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

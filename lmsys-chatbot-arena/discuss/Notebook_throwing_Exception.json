@@ -1,0 +1,33 @@
+{
+    "main_topic": {
+        "author": "Varun Jagannath",
+        "title": "Notebook throwing Exception",
+        "content": "After submitting the notebook. And, after some grueling hours it throws exception and there is no way to find out about it. Is there any other way to check.\n\n",
+        "date": "Wed Jul 10 2024 23:45:51 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "This is just one potential issue, but how are you handling the \"null\" that sometimes occur? Doing this helped for me in the early submissions: response.replace(\"null\",\"'null'\") <-- note the extra ' to make it a string before loading the string representation of the list an actual list (e.g., with ast.literal_eval(response))\n\nI really hope this is doing it for you - because these exceptions can be nasty. If not, maybe try debugging by predicting on training data again.\n\nIf the GPU goes OOM its not an OOM error on kaggle but an Exception, so maybe reduce batch size or max length too. Best of luck!\n\n",
+            "date": "Posted 25 days ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Varun JagannathTopic Author",
+                    "content": "Looks like its an issue with batch size\n\n",
+                    "date": "Posted 21 days ago  ·  1293rd in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Robert Turro",
+            "content": "Try clicking on the notebook then going to the Logs section.\n\n",
+            "date": "Posted 25 days ago  ·  862nd in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

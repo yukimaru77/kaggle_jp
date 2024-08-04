@@ -1,0 +1,33 @@
+{
+    "main_topic": {
+        "author": "Kamil Machalica",
+        "title": "Internet access condition",
+        "content": "Hi Kagglers!\n\nIf there is internet access restrictions can we even use pre-trained models to download them?\n\nThanks\n\nKamil\n\n",
+        "date": "Fri May 17 2024 21:07:02 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "There are several things you can do, and what is often done:\n\n1) You can download the models, save them as kaggle dataset, load them from kaggle dataset instead (same goes for pip installs you might want to do)\n\n2) You can train models in one notebook with internet access, save the model checkpoint at the end and then create a separate notebook without internet access. Then you can simply add the training notebook as input for the inference notebook!\n\nHope this helps, welcome to kaggle and good luck!\n\n",
+            "date": "Posted 3 months ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Kamil MachalicaTopic Author",
+                    "content": "Thank you, it explains a lot!\n\n",
+                    "date": "Posted 3 months ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Muhammad Tariq Pervez",
+            "content": "[@machalx](https://www.kaggle.com/machalx), In Kaggle competitions, \"disabling internet\" means that the code you submit to Kaggle for scoring is executed in an environment that does not have access to the internet. Ensure your submission does not include any code that requires internet access, such as downloading data from external URLs or accessing online APIs.\n\nOtherwise no issue. \n\n",
+            "date": "Posted 3 months ago",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

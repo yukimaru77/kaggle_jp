@@ -1,0 +1,41 @@
+{
+    "main_topic": {
+        "author": "Matous Famera",
+        "title": "More information on test dataset",
+        "content": "Hello, I have a few questions regarding the nature of test dataset.\n\nI already know that 26% of the entire test dataset is used for public leaderboard and 74% is used for private leaderboard.\n\nWhat is the difference between the train dataset and test dataset? Are the same LLMs used? Was the same dataset used for train dataset and test dataset?\nHow long is the test dataset? Or atleast how long compared to the train dataset is the test dataset?\n\nThanks if any of these questions can be answered\n\n",
+        "date": "Thu Jun 13 2024 02:12:49 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "James Day",
+            "content": "\nWhat is the difference between the train dataset and test dataset? Are the same LLMs used? Was the same dataset used for train dataset and test dataset?\n\nI've noticed there aren't any recently released models (e.g. Llama 3) in the training dataset, so I have a suspicion they split their data based on the date on which each comparison occurred and I would expect to receive messages from different LLMs during testing.\n\nHow long is the test dataset? Or atleast how long compared to the train dataset is the test dataset?\n\nThe data tab says \"you can expect roughly 25,000 rows in the test set\"\n\n",
+            "date": "Posted 2 months ago  ·  6th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Matous FameraTopic Author",
+                    "content": "\nThere are 55K rows in the training data, and you can expect roughly 25,000 rows in the test set.\n\nDoes it mean that the entire test dataset has 25k rows or just the public leaderboard part?\n\n",
+                    "date": "Posted 2 months ago  ·  513th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Valentin Werner",
+                            "content": "The entire data has 25k rows, ~26% of them is public leaderboard (so about 6.5k rows).\n\nAs you probably guess, this makes trusting the public leaderboard score similar to trusting a single validation fold in a 4-fold cv setup. Thats why it is often recommended to build a good CV strategy and try to create a correlation between the CV score (which should be reliable) and the public LB score.\n\nAlso note, that the final score is ONLY the private LB, so the other 74% of the data. Meaning the fold, you may overfit on (the public LB) is NOT part of your winning score. This can lead to what we call \"Leaderboard shakeup\". These concepts apply to basically all kaggle competitions.\n\n",
+                            "date": "Posted 2 months ago  ·  38th in this Competition",
+                            "votes": "5",
+                            "reply": []
+                        },
+                        {
+                            "author": "Matous FameraTopic Author",
+                            "content": "Thanks for clarification. I was asking that questions, because the length of the test dataset is related to variance and reliability of the score.\n\nI'm aware of the concept of overfitting for public leaderboard.\n\n",
+                            "date": "Posted 2 months ago  ·  513th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

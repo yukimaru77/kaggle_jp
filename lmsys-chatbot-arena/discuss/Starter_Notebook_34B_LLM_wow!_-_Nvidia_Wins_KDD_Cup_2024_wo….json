@@ -1,0 +1,286 @@
+{
+    "main_topic": {
+        "author": "Chris Deotte",
+        "title": "Starter Notebook 34B LLM wow! - Nvidia Wins KDD Cup 2024 wow!",
+        "content": "Hi everyone. I would like to share a starter notebook showing how to infer a 34B LLM to infer 25k test samples under 9 hours [here](https://www.kaggle.com/code/cdeotte/infer-34b-with-vllm). Since there are only 2.5 weeks left, I won't share too much, but I'll share a few ideas.\n\n# Use Quantization 4bit AWQ\n\nIn this competition we must infer on 2xT4 GPU 16GB VRAM. Therefore we have a total of 32GB VRAM. A 34B LLM in fp16 is 70GB size however when using 4bit it becomes 20GB size (i.e. X billion parameter models become 0.6X GB size in 4bit). Reducing a 34B LLM to 20GB will fit in 32GB VRAM Hooray!\n\n# Infer Using vLLM\n\nThe test data is 25k samples therefore we must infer fast. We need to infer each sample on average 1.3 seconds! The library vLLM [here](https://docs.vllm.ai/en/latest/) is faster than Hugging Face and pure PyTorch code! It will easily infer 1 second per sample or less!\n\n# Starter Notebook\n\nI publish a starter notebook [here](https://www.kaggle.com/code/cdeotte/infer-34b-with-vllm) demonstrating how to infer 34B LLM in Kaggle's LMSYS competition to complete 25k test predictions in under 9 hours! My starter notebook illustrates a few tricks:\n\n- How to install vLLM in Kaggle notebooks\n\n- How to use logits processor to force our model to only output \"A\", \"B\", \"tie\"\n\n- How to extract probabilities from these 3 tokens\n\n- How to optimize input token length and output token length\n\n- How to format LLM prompts\n\n# KDD Cup 2024\n\nThis year I had the opportunity to team up with 5 NVIDIAN coworkers in KDD Cup 2024 [@aerdem4](https://www.kaggle.com/aerdem4) [@titericz](https://www.kaggle.com/titericz) [@sorokin](https://www.kaggle.com/sorokin) [@simjeg](https://www.kaggle.com/simjeg) [@benediktschifferer](https://www.kaggle.com/benediktschifferer) . The challenge was to build an LLM to answer 11k ecommerce questions under 2 hours using 4xT4 for inference. Competition page [here](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms). I learned so much from my fellow NVIDIA Kaggle Grandmasters (KGMON [here](https://www.nvidia.com/en-us/ai-data-science/kaggle-grandmasters/)), Thank you! Our collective ideas earned us 1st place on all 5 tracks of KDD Cup 2024 wow! (LB [here](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms/leaderboards))\n\n# Solution\n\nOur solution involved these 3 key components:\n\n- Generate lots of train data\n\n- Finetune largest model possible with QLoRA\n\n- Infer as fast as possible on limited hardward within time constraint\n\nAt the end of August we will present our KDD Cup solution live in Barcelona, Spain at KDD Cup 2024 conference, and we will publish a paper. Stay tuned to hear all the details!\n\n",
+        "date": "Sat Jul 20 2024 10:19:17 GMT+0900 (日本標準時)",
+        "votes": "151"
+    },
+    "comments": [
+        {
+            "author": "Anish Vijay",
+            "content": "excellent!\n\n",
+            "date": "Posted 4 days ago",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "hwz13",
+            "content": "很清晰！very clear\n\n",
+            "date": "Posted 4 days ago  ·  19th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "kaggk",
+            "content": "Brilliant！\n\n",
+            "date": "Posted 5 days ago  ·  162nd in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Timmy Juicehouse",
+            "content": "Glad to see you here Chris, and congratulation to your Nvidia team. We team also won a good rank but you are much stronger than us. I need to prepare for my wedding next month and cannot leave for Barcelona. I'm looking forward to your solution in Kdd2024. \n\n",
+            "date": "Posted 6 days ago",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Metin Meki Abullrahman",
+            "content": "N!ce Work 😍\n\n",
+            "date": "Posted 6 days ago",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Cindy Y",
+            "content": "Very good! \n\n",
+            "date": "Posted 8 days ago  ·  105th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Kid Liu",
+            "content": "Nice work!\n\n",
+            "date": "Posted 8 days ago  ·  105th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Sanket Pramod Bhure",
+            "content": "wow Great work!\n\n",
+            "date": "Posted 8 days ago",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Liuyanfen166",
+            "content": "Nice work!\n\n",
+            "date": "Posted 8 days ago  ·  105th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Rise_Hand",
+            "content": "Great job always! I have a small question that according to my view, different models have different tricks which based on their structure and hyper-parameters. So what should we do to make less cost from past experience, namely how should we trade off between the cost and best results from new different models based on our past experience?\n\n",
+            "date": "Posted 9 days ago  ·  28th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "YingxiZhang",
+            "content": "wow~~~nice work\n\n",
+            "date": "Posted 10 days ago  ·  161st in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Cody_Null",
+            "content": "I see you talk about generating data. Is that done with something like this/ do you have like a go to template? \n\n```\n%pip install -q -U ipywidgets\n%pip install -q -U transformers\n%pip install -q -U tokenizers\n%pip install -q -U bitsandbytes\n%pip install -q -U torch\n\nimport pandas as pd\nfrom tqdm import tqdm\nimport torch\nfrom huggingface_hub import login\nfrom transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig\nimport random\n\n# Define base prompts and parameters\nbase_prompts = [\n    \"Generate a single response that would likely merit a reply (Score: 8 to 10) and provide a score from 1 to 10 indicating how probable it is that the response would merit a reply. Examples: 'How can I help you today?' - 10, 'What's your name?' - 10, 'Tell me more about that.' - 9. Format: 'response' - score.\",\n    \"Generate a single response that might merit a reply (Score: 6 to 7) and provide a score from 1 to 10 indicating how probable it is that the response would merit a reply. Examples: 'Hello there!' - 6, 'Good morning.' - 7. Format: 'response' - score.\",\n    \"Generate a single response that would likely not merit a reply (Score: 4 to 5) and provide a score from 1 to 10 indicating how probable it is that the response would merit a reply. Examples: 'I don't know.' - 5, 'Maybe you are right, I can look into that.' - 4. Format: 'response' - score.\",\n    \"Generate a single response with a low probability of meriting a reply (Score: 1 to 3) and provide a score from 1 to 10 indicating how probable it is that the response would merit a reply. Examples: 'Yes.' - 3, 'No.' - 2, 'Umm' - 1. Format: 'response' - score.\"\n]\nnum_convos = 10000\nbatch_size = 128  # Adjust based on your GPU memory\nmax_length = 512  # Adjust based on desired response length\n\n# Model and tokenizer configurations\nmodel_name = \"google/gemma-2-9b\"   #\"mistralai/Mistral-7B-Instruct-v0.3\"  #\"meta-llama/Meta-Llama-3-8B-Instruct\"\nbnb_config = BitsAndBytesConfig(\n    load_in_4bit=True,\n    bnb_4bit_compute_dtype=torch.float16\n)\n\n# Log in to Hugging Face\nlogin(token=\"hf_JB\")\n\n# Load model and tokenizer\nmodel = AutoModelForCausalLM.from_pretrained(\n    model_name,\n    quantization_config=bnb_config,\n    device_map=\"auto\",\n    token=\"hf_JB\"\n)\ntokenizer = AutoTokenizer.from_pretrained(model_name, token=\"hf_JB\")\n\n# Set the pad_token to eos_token\ntokenizer.pad_token = tokenizer.eos_token\n\n# Set up the device and check GPU availability\ntorch.backends.cuda.enable_mem_efficient_sdp(False)\ntorch.backends.cuda.enable_flash_sdp(False)\nif not torch.cuda.is_available():\n    raise EnvironmentError(\"Sorry - GPU required!\")\nDEVICE = torch.device(\"cuda\")\n\n# Specify data extraction\ndef extract_data(outputs, base_prompt):\n    convos = []\n    labels = []\n    for output in outputs:\n        response = tokenizer.decode(output, skip_special_tokens=True).strip()\n\n        # Remove the base prompt from the response\n        if response.startswith(base_prompt):\n            response = response[len(base_prompt):].strip()\n\n        # Extract response and score\n        if \" - \" not in response:\n            print('no - in output')\n            continue\n\n        try:\n            response_text = response.split(' - ')[0].strip().strip('\"')\n            score = int(response.split(' - ')[1][:2].strip())\n\n            # Ensure score is within the expected range\n            if score < 1 or score > 10:\n                print('invalid score')\n                continue\n\n        except (IndexError, ValueError):\n            print('broken output')\n            continue\n\n        convos.append(response_text)\n        labels.append(score)\n\n    return convos, labels\n\n# Generate conversation responses in batches\nconvos_df_lst = []\nlabels_df_lst = []\n\nfor i in tqdm(range(0, num_convos, batch_size)):\n    # Randomly select a base prompt to encourage diverse responses\n    base_prompt = random.choice(base_prompts)\n    batch_prompts = [base_prompt] * batch_size\n    encoding = tokenizer(batch_prompts, return_tensors=\"pt\", padding=True, truncation=True, max_length=max_length)\n    input_ids = encoding[\"input_ids\"].to(DEVICE)\n    attention_mask = encoding[\"attention_mask\"].to(DEVICE)\n\n    outputs = model.generate(input_ids, attention_mask=attention_mask, max_length=max_length, pad_token_id=tokenizer.eos_token_id, do_sample=True, temperature=0.7)\n    convos_batch, labels_batch = extract_data(outputs, base_prompt)\n\n    convos_df_lst.extend(convos_batch)\n    labels_df_lst.extend(labels_batch)\n\n# Filter out duplicate responses\nunique_responses = list(set(zip(convos_df_lst, labels_df_lst)))\nconvos_df_lst, labels_df_lst = zip(*unique_responses) if unique_responses else ([], [])\n\n# Save to CSV\ndf = pd.DataFrame({'convo': convos_df_lst, 'label': labels_df_lst})\ndf['label'] = df['label'] >= 7\ndisplay(df)\noutput_path = \"/mnt/batch/tasks/shared/LS_root/mounts/clusters/cn1/code/Users/CN/Output/dataset.csv\"\ndf.to_csv(output_path, index=False)\n\nprint(f\"Dataset generated and saved to {output_path}\")\n\n```\n\n",
+            "date": "Posted 15 days ago  ·  30th in this Competition",
+            "votes": "7",
+            "reply": []
+        },
+        {
+            "author": "Waqar Ali",
+            "content": "Congratulations on your upcoming presentation in Barcelona! I'm also thrilled to share that we won all the tracks in the OAG challenge. Despite your few submissions, your top-ranking performance in this competition is truly impressive. I have great admiration for your achievements. 🎁\n\n",
+            "date": "Posted 11 days ago",
+            "votes": "2",
+            "reply": []
+        },
+        {
+            "author": "WoNiu666",
+            "content": "wow~~~great work\n\n",
+            "date": "Posted 12 days ago  ·  104th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Yixiao Yuan",
+            "content": "Thank you for sharing. I have a question about quantization in training and inference. If we use int4 for inference, is it better to use QLoRA instead of LoRA during training? This might align the training and inference conditions better, but I'm concerned QLoRA may not perform as well as LoRA. What are the trade-offs here?\n\n",
+            "date": "Posted 12 days ago  ·  31st in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "sayoulala",
+            "content": "Congratulations! Looking forward to your presentation in Barcelona. We also won all the tracks in another competition.（ OAG-challenge）.\n\nSeeing that you submitted very few entries in this competition but still ranked among the top, I admire you greatly.\n\n",
+            "date": "Posted 15 days ago  ·  3rd in this Competition",
+            "votes": "6",
+            "reply": [
+                {
+                    "author": "Chris DeotteTopic Author",
+                    "content": "Thanks [@sayoulala](https://www.kaggle.com/sayoulala) Congratulations on your great performance here!\n\nI joined this competition 1 week ago and I'm trying out insights that I learned from KDD Cup 2024. So far the ideas transfer well and are helping me do well here too!\n\n",
+                    "date": "Posted 15 days ago  ·  11th in this Competition",
+                    "votes": "7",
+                    "reply": [
+                        {
+                            "author": "sayoulala",
+                            "content": "Thank you. I would like to ask if using vllm will result in a loss of accuracy?\n\n",
+                            "date": "Posted 15 days ago  ·  3rd in this Competition",
+                            "votes": "2",
+                            "reply": []
+                        },
+                        {
+                            "author": "sayoulala",
+                            "content": "By the way, my friend [@chizhu2018](https://www.kaggle.com/chizhu2018) is a huge fan of yours. Could I get your autograph for him if you're going to the KDD in Barcelona?\n\n",
+                            "date": "Posted 15 days ago  ·  3rd in this Competition",
+                            "votes": "3",
+                            "reply": []
+                        }
+                    ]
+                },
+                {
+                    "author": "yechenzhi1",
+                    "content": "may I ask if you are using models larger than 9B in the lmsys competition?\n\n",
+                    "date": "Posted 15 days ago  ·  25th in this Competition",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "sayoulala",
+                            "content": "Sorry, I won't disclose it before the competition ends.\n\n",
+                            "date": "Posted 15 days ago  ·  3rd in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        },
+                        {
+                            "author": "yechenzhi1",
+                            "content": "That's totally okay! I'll try larger models by myself😁 \n\n",
+                            "date": "Posted 15 days ago  ·  25th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        },
+                        {
+                            "author": "Ilia Zaitsev",
+                            "content": "So far, it looks like the bigger the model, the lower the loss is…\n\n",
+                            "date": "Posted 15 days ago  ·  772nd in this Competition",
+                            "votes": "4",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "HinePo",
+            "content": "Good to see you here, [@cdeotte](https://www.kaggle.com/cdeotte), I'm expecting to learn a lot from you again once the competition ends.\n\nDo you know if vLLM can be used for Sequence Classification rather than Generation?\n\nI've searched a bit but couldn't find anything.\n\n",
+            "date": "Posted 13 days ago  ·  330th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Chris DeotteTopic Author",
+                    "content": "I do not think we can use vLLM for Sequence Classification. So we need to use vLLM with my notebook or with the Llama3-8B starter notebook [here](https://www.kaggle.com/code/shelterw/sft-llama-3-8b-inference) which uses text generation.\n\n",
+                    "date": "Posted 13 days ago  ·  11th in this Competition",
+                    "votes": "3",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Valentin Werner",
+            "content": "Why does this feel like a winning solution post to this challenge, just 2 weeks to early? Congratz on your KDD Cup performance, looking forward to see another of these being posted from you, tailored to this challenge 😉\n\nEDIT: Also - now we have to train 34B models, I guess?\n\n",
+            "date": "Posted 15 days ago  ·  38th in this Competition",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "yechenzhi1",
+                    "content": "\nnow we have to train 34B models, I guess?\n\nI think so😂 just not sure if the leading solutions are currently utilizing larger models.\n\n",
+                    "date": "Posted 15 days ago  ·  25th in this Competition",
+                    "votes": "2",
+                    "reply": [
+                        {
+                            "author": "hn",
+                            "content": "I guess some are…my current LB score is actually based on small LMs so far.\n\n",
+                            "date": "Posted 15 days ago  ·  17th in this Competition",
+                            "votes": "3",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Rishan Hasan Tenis",
+            "content": "Congratulation, Thank You for sharing! [@cdeotte](https://www.kaggle.com/cdeotte) \n\n",
+            "date": "Posted 14 days ago",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "S J Moudry",
+            "content": "Can AWQ be used with qlora?  From what I see SequenceClassification model types are not supported by AutoAWQ/PEFT yet.  Would you be performing full fine tuning and then converting to AWQ?\n\n",
+            "date": "Posted 14 days ago  ·  433rd in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Chris DeotteTopic Author",
+                    "content": "We QLoRA finetune with any type of 4bit quantization. After finetuning, we merge the LoRA adapter, and quantize with AWQ (to prepare for inference).\n\n",
+                    "date": "Posted 13 days ago  ·  11th in this Competition",
+                    "votes": "3",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "dexterxin",
+            "content": "Congratulation on your KDD Cup! \n\nIt looks like that it's possible to finetune and infer 9B+ pretrained model on limited hardward within time constraint. It's a good news for participants without sufficient computing resources.\n\nThanks so much and looking forward to more of your ideas!\n\n",
+            "date": "Posted 15 days ago  ·  642nd in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Ched Martin",
+            "content": "Congratulations!\n\n",
+            "date": "Posted 15 days ago  ·  78th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "superferg",
+            "content": "May I ask if you have tried gemma2 27B?\n\n",
+            "date": "Posted 15 days ago  ·  249th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Yichuan Gao",
+                    "content": "Sadly AutoAWQ does not support Gemma-2 yet, I also wanted to try gemma-2 27b :(\n\n",
+                    "date": "Posted 13 days ago  ·  165th in this Competition",
+                    "votes": "2",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "yechenzhi1",
+            "content": "Impressive! I thought  9b is the largest model we can use in this competition. \n\n",
+            "date": "Posted 15 days ago  ·  25th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Chris DeotteTopic Author",
+                    "content": "No. It is good to know that we can at least infer 34B quickly on Kaggle's 2xT4 GPU. Therefore we can use 34B in all Kaggle competitions. It has also been shown [here](https://www.kaggle.com/competitions/kaggle-llm-science-exam/discussion/440620), that we can use 70B on Kaggle but the customization makes it slower than using vLLM and 34B. (And that notebook is too slow as is for Kaggle's LMSYS comp).\n\n",
+                    "date": "Posted 15 days ago  ·  11th in this Competition",
+                    "votes": "2",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Harshit Sharma",
+            "content": "Congratulations [@cdeotte](https://www.kaggle.com/cdeotte) on the impressive win and for sharing these invaluable insights! Your innovative approach and efficient use of resources are truly inspiring. Can't wait to see your presentation on KDD Cup solution in Barcelona! 🌟🚀\n\n",
+            "date": "Posted 15 days ago",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

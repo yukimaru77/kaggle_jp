@@ -1,0 +1,47 @@
+{
+    "main_topic": {
+        "author": "KeShuang Liu",
+        "title": "How many epochs do people usually choose when fine-tuning?",
+        "content": "As a beginner, I am eager for a score increase, but reality keeps hitting me. If we train for 1 epoch and 2 epochs with the same parameters and configuration respectively, will training for 2 epochs produce the same results as training for 1 epoch at the end of the first epoch, or will it be slower to become proficient?\n\n",
+        "date": "Sat Jul 27 2024 22:40:05 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "There are a bunch of different questions in here. First, lets losely define what an epoch is: An epoch is a Forward and Backward Propogation through your whole Training dataset; this means, that your model saw all your training data once. Two epochs mean it saw all the training data twice.\n\nThis means, that the results of one epoch training and two epochs training will be different. However, the results of epoch 1 in a single epoch training should be around the same as the results of epoch 1 in a two epoch training (assume no learning rate scheduling).\n\nWhat is a go-to number of epochs? The go-to number I see most often when finetuning pretrained models is three. However, for larger models (with peft) this value tends to be lower (for example two) and for larger datasets this value tends to be lower too. This is because the model learns more information within a single epoch.\n\nNow, the last important note on epochs is learning rate scheduling. Often learning rates are scheduled to reduce learning rate in later epochs. Lets assume the learning rate decreased linear from start of the first epoch until the end of the third epoch. This means that the model will overfit less in the second and even less in the third epoch, while still being able to learn nuances about the training data, that can improve your score. This also means that a single epoch training with lr scheduling will have different results than a two epoch training with scheduling, as the learning rate will hit 0 much earlier in the first case. \n\nIn general, transformer trainings are non-deterministic and you need to set a seed if you want to replicate exact results.\n\n",
+            "date": "Posted 8 days ago  ·  38th in this Competition",
+            "votes": "10",
+            "reply": [
+                {
+                    "author": "KeShuang LiuTopic Author",
+                    "content": "Thank you for your reply.I have learned a lot from it, I will keep trying more.\n\n",
+                    "date": "Posted 8 days ago  ·  312th in this Competition",
+                    "votes": "2",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Mr.T",
+            "content": "When I train with two epochs, I experience severe overfitting.\n\n",
+            "date": "Posted 4 days ago  ·  21st in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "xiaotingting",
+            "content": "The more data there is, the smaller the epochs need to be fine-tuned. Otherwise, the larger the epochs need to be fine-tuned.\n\n",
+            "date": "Posted 6 days ago  ·  19th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "KeShuang LiuTopic Author",
+            "content": "Can someone help me clarify my doubts\n\n",
+            "date": "Posted 8 days ago  ·  312th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

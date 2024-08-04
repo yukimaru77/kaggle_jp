@@ -1,0 +1,10 @@
+{
+    "main_topic": {
+        "author": "Heroseo",
+        "title": "[Starter] Deberta-v3 Train & Inference code",
+        "content": "# Intro\n\nHi, I wanted to share good train and inference notebooks. :)\n\n- Pytorch Train & Inference\n\n- Only prompt was used.\n\n- I recommend adjusting token_lengh for your GPU memory.\n\n- There are many things to try.\n\n# Notebooks - v3\n\n- Train : [[Train] LMSYS / Deberta-v3 starter code🔥](https://www.kaggle.com/code/piantic/train-deberta-v3-starter-code)\n\n- Inference : [[Inference] LMSYS / Deberta-v3 starter code🔥](https://www.kaggle.com/code/piantic/inference-deberta-v3-starter-code)\n\n# End\n\nThere is a lot of room for improvement. Please add more cool ideas. :)\n\nThank you!\n\np.s. It feels strange to share notebooks with Kaggle after a long time.\n\n",
+        "date": "Sat May 04 2024 18:55:29 GMT+0900 (日本標準時)",
+        "votes": "4"
+    },
+    "comments": []
+}

@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "alekh",
+        "title": "How are we gonna predict probability with no data?",
+        "content": "How are we gonna predict the probability when we have no training data with probabilities that makes sense. The training data is comprised of 1-hot vectors assigning 100% probability to one of the outcomes. That must clearly be wrong. I don't understand what the training set represents. Does it represent the preference of one particular human? Of a random human? If so, are there multiple rows with the same prompt and responses for different people?\n\n",
+        "date": "Sun May 12 2024 14:13:23 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "alekhTopic Author",
+            "content": "Guess I found the answer:\n\n\"The competition dataset consists of user interactions from the ChatBot Arena. In each user interaction a judge provides one or more prompts to two different large language models, and then indicates which of the models gave the more satisfactory response.\"\n\nSo i guess we have to like do a softmax on the logits to get probabilities.\n\n",
+            "date": "Posted 3 months ago  ·  1451st in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "main_topic": {
+        "author": "Emmanuel Turlay",
+        "title": "LMSYS Dataset Explorer – Cluster, segment, inspect",
+        "content": "Hey folks – Today, we’re releasing a free dataset explorer for the LMSYS challenge.\n\nWith our tool, you can browse through individual rows and inspect their content in great detail. We generated semantic clusters, and you can filter conversations by cluster, model pairs, winner model, and so on.\n\nThe tool is free and no login is required. Be sure to let the community know what you discover.\n\nClick this link to start exploring: [https://app.airtrain.ai/dataset/bb589c26-8f45-4f42-8ba3-07ef51b73a03/null/1/0](https://app.airtrain.ai/dataset/bb589c26-8f45-4f42-8ba3-07ef51b73a03/null/1/0)\n\n",
+        "date": "Thu May 30 2024 02:56:10 GMT+0900 (日本標準時)",
+        "votes": "40"
+    },
+    "comments": [
+        {
+            "author": "Lisa DunlapCompetition Host",
+            "content": "OMG THIS IS SO COOL!!!\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "6",
+            "reply": []
+        },
+        {
+            "author": "Cviko Dukanovic",
+            "content": "Amazing product. The meta clusters and clusters are greatly produced!\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "4",
+            "reply": []
+        },
+        {
+            "author": "Josh Bauer",
+            "content": "One fun cluster I've found: plenty of variations on the \"how much wood could a woodchuck chuck if a woodchuck could chuck wood\" tongue twister. Ex: \"If, IF, a woodchuck could chuck wood, how much wood could a woodchuck chuck before it lost its job as a project manager?\" 😆\n\nUnder \"Riddles and Reasoning\" > \"Woodchuck Tongue Twister\", row 4308\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "4",
+            "reply": [
+                {
+                    "author": "Idriss Chebak",
+                    "content": "one cool prompt i found was \"Construct a rap battle, in the style of Epic Rap Battles of History, with rhyme and meter and personal attacks relevant to each character, between Pikachu and Zeus. Each participant gets 2 verses. There is no announcer and Zeus goes first.\" 😄\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "2",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Felipe Maia Polo",
+            "content": "Thanks for the amazing work! Is there a way to download the cluster assignments? Thanks!\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Josh Bauer",
+                    "content": "Glad you like it! You can't export the clusters right now, but it's on our TODO list.\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "3",
+                    "reply": []
+                },
+                {
+                    "author": "Emmanuel TurlayTopic Author",
+                    "content": "We just shipped an update that includes clusters and token counts in the exported file. Have fun!\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "3",
+                    "reply": [
+                        {
+                            "author": "Felipe Maia Polo",
+                            "content": "thank you!\n\n",
+                            "date": "Posted 2 months ago",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Valentin Werner",
+            "content": "The tool looks amazing!\n\nAs you are the the CEO of the company behind the tool, did you check the licenses? I am not sure if you are allowed to publish data from the competition on your platform, given the cc-by-nc license. I know that there was the recommendation not to do such in previous conpetitions.\n\nMaybe you can instead show us how to use your tool to create such a dashboard instead?\n\nAll the best for your company and product!\n\n(Also quite the PR stunt to have your employees comment on your thread (Josh & Idriss) 😉)\n\n",
+            "date": "Posted 2 months ago  ·  38th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Emmanuel TurlayTopic Author",
+                    "content": "Hi Valentin, thanks for the compliment!\n\nWe did check the [license](https://creativecommons.org/licenses/by-nc/4.0/) and it says we are allowed to share, copy, and redistribute the material in any medium or format; adapt, remix, transform, and build upon the material; as long as we attribute credit and offer it under non-commercial terms.\n\nThe Dataset Explorer is free and requires no sign-up. The Kaggle page is linked to from the description for attribution.\n\nWe certainly want to remain compliant and are offering this work to support the community. Thanks for making us double-check the license 😉\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "4",
+                    "reply": [
+                        {
+                            "author": "Valentin Werner",
+                            "content": "Great stuff!\n\n",
+                            "date": "Posted 2 months ago  ·  38th in this Competition",
+                            "votes": "3",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "YingxiZhang",
+            "content": "The tool is amazing!👍\n\n",
+            "date": "Posted 7 days ago  ·  161st in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

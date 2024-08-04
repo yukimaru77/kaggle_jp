@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "irishu",
+        "title": "How to tokenize prompts and responses efficiently",
+        "content": "# Experiment\n\nI have tried the following three methods so far, and the first has performed the best in LB.\n\n### Methods\n\ntokenize up to the max_tokens by joining strings like prompt + responseA + responseB\nallocate one-third of the max_tokens to each sentence and tokenize up to the limit\nallocate the number of tokens in the appropriate ratio(ex;1:2:2)\n\n### Conditions\n\n- using Gemma-2 9b 4-bit QLoRA\n\n- max_tokens = 1024\n\n- using only the last prompt and responses \n\n- 1 epoch using all train data\n\n- referring to the excellent work [[Training] Gemma-2 9b 4-bit QLoRA fine-tuning](https://www.kaggle.com/code/emiz6413/training-gemma-2-9b-4-bit-qlora-fine-tuning)\n\n# Question\n\n### Don't you think there is a more efficient way than the simple method1?\n\nLooking at the distribution of the number of tokens in the prompt and response (only the last one), it appears that around 10% of them contain more than 1024 tokens in total. That is, in some cases, response B may not contain enough information.\n\n### How much would a larger max_tokens improve the score?\n\nI have not been able to test this yet due to computational resources.\n\n",
+        "date": "Sun Jul 28 2024 13:56:19 GMT+0900 (日本標準時)",
+        "votes": "6"
+    },
+    "comments": [
+        {
+            "author": "irishuTopic Author",
+            "content": "I changed max_tokens to 2048 in learning and inference and the score improved.\n\nNow I am wondering if I should adjust the token length with padding.\n\n",
+            "date": "Posted 3 days ago  ·  345th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

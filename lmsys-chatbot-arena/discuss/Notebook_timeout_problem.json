@@ -1,0 +1,55 @@
+{
+    "main_topic": {
+        "author": "JamshaidSohail",
+        "title": "Notebook timeout problem ",
+        "content": "Hi. The notebook which was working extremely fine in the past few days. Now is timing out on submission. Please, it would be nice to fix this. [@sohier](https://www.kaggle.com/sohier) [@paultimothymooney](https://www.kaggle.com/paultimothymooney) \n\n",
+        "date": "Thu Aug 01 2024 21:47:25 GMT+0900 (日本標準時)",
+        "votes": "6"
+    },
+    "comments": [
+        {
+            "author": "sayoulala",
+            "content": "I have the same problem…\n\n",
+            "date": "Posted 3 days ago  ·  3rd in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "JamshaidSohailTopic Author",
+                    "content": "Glad to see the response from no.1 in this competition. The submissions are getting wasted and no new ideas are being able to be tested out :/\n\n",
+                    "date": "Posted 3 days ago  ·  359th in this Competition",
+                    "votes": "2",
+                    "reply": [
+                        {
+                            "author": "sayoulala",
+                            "content": "Submit a few more times and it should run successfully. It might be that the Kaggle system is not very stable.\n\n",
+                            "date": "Posted 2 days ago  ·  3rd in this Competition",
+                            "votes": "2",
+                            "reply": []
+                        },
+                        {
+                            "author": "Roschild.Rui",
+                            "content": "Tried around 10 times, finally success 1 crazy!\n\n",
+                            "date": "Posted 2 days ago  ·  30th in this Competition",
+                            "votes": "3",
+                            "reply": []
+                        },
+                        {
+                            "author": "JamshaidSohailTopic Author",
+                            "content": "Guys. I am still getting timeouts. Have wasted 15 submissions.\n\n",
+                            "date": "Posted a day ago  ·  359th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Attacker",
+            "content": "These days, kaggle seems to be effectively closed a week before the competition ends…\n\n",
+            "date": "Posted 2 days ago  ·  563rd in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

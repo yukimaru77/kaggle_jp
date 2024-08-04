@@ -1,0 +1,47 @@
+{
+    "main_topic": {
+        "author": "Varun Jagannath",
+        "title": "Finetuned --> Quantized vs Quantized--> Finetuned",
+        "content": "Which approach is performing better in this competition: fine-tuning a model like Llama 3 and then quantizing it, or taking a low-bit quantized model and fine-tuning it on the dataset ?\n\n",
+        "date": "Fri Jul 26 2024 23:22:44 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "I hope somebody who tested it actually answers and knows better than me. My intuition is that Finetune -> Quantize should be better, as the finetuning is more precise. Obviously there is also the argument that this precision is quantized later anyways and maybe training in a quantized way makes sure your val / lb is more consistent\n\n",
+            "date": "Posted 9 days ago  ·  38th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Pranshu Bahadur",
+                    "content": "Ok so I kind of tested this scenario a bit and I agree with your hypothesis, when I trained gemma 2 9b on bfloat16 training loss went down to 0.44 (definitely a sign of overfitting). I think quantization should be done post-training.\n\n",
+                    "date": "Posted 8 days ago  ·  366th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                },
+                {
+                    "author": "Maksim Metelskii",
+                    "content": "LoRa adapters (which are 16 or 32 bit) trained on quantized model may help to fix inaccuracy stemmed from quantization. Like they address both quantization and new specific task inaccuracy. ChatGPT says Quantized--> Finetuned may be more beneficial for accuracy. But really need to be tested though\n\n",
+                    "date": "Posted 8 days ago  ·  327th in this Competition",
+                    "votes": "2",
+                    "reply": []
+                },
+                {
+                    "author": "Varun JagannathTopic Author",
+                    "content": "My observation is that earlier TPU train notebook which was published got nearly around 0.98 LB and the latest 0.94LB of Training and Inference with unsloth gemma 2. So really wanted to understand if the quantized followed fine tuning is performing well in this competition. \n\n",
+                    "date": "Posted 7 days ago  ·  1293rd in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "xiaotingting",
+            "content": "I think fine-tuning after quantization is better because it can make up for the loss caused by quantization. Maybe fine-tuning the quantized model and quantizing after training require different learning rates.\n\n",
+            "date": "Posted 6 days ago  ·  19th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

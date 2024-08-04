@@ -1,0 +1,33 @@
+{
+    "main_topic": {
+        "author": "Dylan Liu",
+        "title": "Larger model, better result?",
+        "content": "I tried to train gemma2-27b but it's valid score is not better than that of 9b. What's your experience?\n\n",
+        "date": "Fri Jul 26 2024 18:25:10 GMT+0900 (日本標準時)",
+        "votes": "2"
+    },
+    "comments": [
+        {
+            "author": "justin1357",
+            "content": "Better is greater.. You can compare them in poe, and then you will find they are totally different. Zero Shot.\n\n",
+            "date": "Posted 8 days ago  ·  19th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "ShelterW",
+            "content": "What method do you use？SEQ_CLS?\n\n",
+            "date": "Posted 9 days ago  ·  185th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Dylan LiuTopic Author",
+                    "content": "yes SEQ_CLS\n\n",
+                    "date": "Posted 9 days ago  ·  39th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "main_topic": {
+        "author": "Dlond Mike",
+        "title": "External datasets",
+        "content": "I want to know whether the additional datasets make sense…anyone tried them?just  someone share in the discussion\n\n",
+        "date": "Tue Jul 23 2024 13:03:53 GMT+0900 (日本標準時)",
+        "votes": "3"
+    },
+    "comments": [
+        {
+            "author": "justin1357",
+            "content": "Not work… I think it's because the source is different, so distribution is not the same\n\n",
+            "date": "Posted 12 days ago  ·  19th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Songling",
+                    "content": "[@justin1357](https://www.kaggle.com/justin1357) Yes, I have also tried external data, and it is the same situation. I am curious about what other methods are there.\n\n",
+                    "date": "Posted 12 days ago  ·  411th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                },
+                {
+                    "author": "Xinyuan Qiao",
+                    "content": "It do works, try not just mix it together\n\n",
+                    "date": "Posted 12 days ago  ·  62nd in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "SAY WHAT",
+                            "content": "Other methods?\n\n",
+                            "date": "Posted 11 days ago  ·  71st in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

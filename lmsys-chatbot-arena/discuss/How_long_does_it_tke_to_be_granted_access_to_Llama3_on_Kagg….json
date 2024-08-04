@@ -1,0 +1,159 @@
+{
+    "main_topic": {
+        "author": "CPMP",
+        "title": "How long does it tke to be granted access to Llama3 on Kaggle? [Solved: 24 hours]",
+        "content": "I got access immediately yesterday on Meta's site, but my request is still pending here.\n\nEdit: I got access after 24 hours, which is reasonable. It is just that I got access on Meta immediately which sets optimistic expectations.\n\n",
+        "date": "Thu Jul 11 2024 19:49:54 GMT+0900 (日本標準時)",
+        "votes": "10"
+    },
+    "comments": [
+        {
+            "author": "samson",
+            "content": "Six days left for me. Access is not granted still. Thats why I got weights on HF\n\n",
+            "date": "Posted 24 days ago  ·  159th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "CPMPTopic Author",
+                    "content": "Did you get access from Meta's site before asking for access here?\n\n",
+                    "date": "Posted 24 days ago  ·  27th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "samson",
+                            "content": "Yes, I did. BTW, I finally go it. It took them 7 days to give me an access\n\n",
+                            "date": "Posted 23 days ago  ·  159th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "william.wu",
+                            "content": "OMG, I just requested the access yesterday… Is there any public llama3.1 models on Kaggle?\n\n",
+                            "date": "Posted 6 days ago  ·  100th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "william.wu",
+                            "content": "Okay, I found one [https://www.kaggle.com/datasets/gmhost/llama31instruct](https://www.kaggle.com/datasets/gmhost/llama31instruct)\n\n",
+                            "date": "Posted 6 days ago  ·  100th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Allie K.",
+            "content": "Good question. \n\nI have been waiting since last Friday morning, constantly updating the number of days of waiting (now it's 6) and repeating my questions to Kaggle team.\n\nPerhaps you, with your authority, will be able to push things forward.🙂 \n\n",
+            "date": "Posted 24 days ago  ·  35th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "CPMPTopic Author",
+                    "content": "I don't think I have more weight than anyone here.\n\n",
+                    "date": "Posted 24 days ago  ·  27th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Allie K.",
+                            "content": "Apparently you do have!😀\n\nAs a magic, the access is here, after \"only\" 6 days.\n\n",
+                            "date": "Posted 24 days ago  ·  35th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "CPMPTopic Author",
+                            "content": "Did you post? If yes then I will agree with you.\n\n",
+                            "date": "Posted 23 days ago  ·  27th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Psi",
+            "content": "you can get it on HF, no need to apply here on kaggle\n\n",
+            "date": "Posted 24 days ago  ·  5th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "CPMPTopic Author",
+                    "content": "I have access on HF and on Meta. I am asking why it is long here.\n\n",
+                    "date": "Posted 24 days ago  ·  27th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "RB",
+            "content": "Hello , similar post here - [https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/518813](https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/518813) \n\nand a workaround  [https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/518813#2913166](https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/518813#2913166)\n\n",
+            "date": "Posted 24 days ago  ·  18th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "CPMPTopic Author",
+                    "content": "I downloaded the model, no worries. I am asking a specific question.\n\n",
+                    "date": "Posted 24 days ago  ·  27th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Valentin Werner",
+            "content": "Welcome to the competition!\n\nI already posted this before, but took 10 minutes for me a weekend.. \n\n",
+            "date": "Posted 24 days ago  ·  38th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Shelton",
+            "content": "Nice work!\n\n",
+            "date": "Posted 22 days ago  ·  549th in this Competition",
+            "votes": "-4",
+            "reply": []
+        },
+        {
+            "author": "Nguyễn Anh Tú",
+            "content": "Why i always get the error \"Incorrect path_or_model_id: '/kaggle/input/llama-3/transformers/8b-hf/1'. Please provide either the path to a local folder or the repo_id of a model on the Hub\" when using \"tokenizer = AutoTokenizer.from_pretrained(\"/kaggle/input/llama-3/transformers/8b-hf/1\")\" ? Please helps me. Thanks.\n\n",
+            "date": "Posted 21 days ago  ·  1656th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Valentin Werner",
+                    "content": "You have not been granted access for llama3 on Kaggle yet. Make sure to apply for access on meta and kaggle.\n\n",
+                    "date": "Posted 21 days ago  ·  38th in this Competition",
+                    "votes": "-1",
+                    "reply": [
+                        {
+                            "author": "Nguyễn Anh Tú",
+                            "content": "To solve that problem, I use another pretrain model from my another notebook. But I got the error \"Submission Scoring Error\" when I submitted my notebook, I thought that I set the wrong format for my submission.csv. Then, I read the sample_submission.csv and change the the value of ['winner_model_a', 'winner_model_b', 'winner_tie'] columns with my y_predict. The worst thing is my notebook ran successful but when I submitted again I got the error \"Notebook Threw Exception\", please help me!\n\n",
+                            "date": "Posted 20 days ago  ·  1656th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "XXX",
+                            "content": "Submission Scoring Error: Your notebook generated a submission file with incorrect format. Some examples causing this are: wrong number of rows or columns, empty values, an incorrect data type for a value, or invalid submission values from what is expected.\n\nabove is from kaggle debugging tips.\n\nI think may be you can check the value of your submission🤔\n\n",
+                            "date": "Posted 19 days ago  ·  387th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Feisx Song",
+            "content": "helpful tips!\n\n",
+            "date": "Posted 22 days ago  ·  52nd in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

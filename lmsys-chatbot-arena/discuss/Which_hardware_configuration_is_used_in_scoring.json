@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "Michael Benton",
+        "title": "Which hardware configuration is used in scoring?",
+        "content": "I'm at a point where I'm making optimizations to get within 9hours. I just launched one that should work in time if on a p100, but won't if on one of the TPM or 2x T4. Does it automatically give you the same hardware configuration as you have set in the notebook? \n\n",
+        "date": "Sat Jul 13 2024 10:56:59 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "Yep, you get what you choose during runtime.\n\n",
+            "date": "Posted 22 days ago  ·  38th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

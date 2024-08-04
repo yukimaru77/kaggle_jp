@@ -1,0 +1,70 @@
+{
+    "main_topic": {
+        "author": "Ahmad Al-Husainy",
+        "title": "Training outside kaggle",
+        "content": "Hello, this is my first competition, and I'm curious to know if it's possible to train large pre-trained models in an external environment and then simply upload the weights for submission. \n\n",
+        "date": "Sun Jun 16 2024 04:30:02 GMT+0900 (日本標準時)",
+        "votes": "3"
+    },
+    "comments": [
+        {
+            "author": "Lorry Zou",
+            "content": "You definitely can do that. It's also what I'm doing. However, since this competition requires internet-off submission, I'm sure I will run into some issues…\n\n",
+            "date": "Posted 2 months ago  ·  153rd in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Valentin Werner",
+                    "content": "Just load it as a kaggle dataset or kaggle model!\n\nYou only have to make sure the models you are using are open source. \n\n",
+                    "date": "Posted 2 months ago  ·  38th in this Competition",
+                    "votes": "2",
+                    "reply": [
+                        {
+                            "author": "Ivel afred",
+                            "content": "Does this mean that your model needs to be public on Kaggle? Or it's okay to just make it public on Hugging Face.\n\n",
+                            "date": "Posted a month ago  ·  560th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Valentin Werner",
+                            "content": "It can be private on kaggle, just available for you. You dont have to make it public on huggingface either. Its just important that the model that you finetune is also available for others. (e.g., DeBERTa or Llama are open source; GPT-4 is not - if you finetune GPT-4 for the competition, that would be not fair and you would have to make your GPT-4 tuned model available for everybody in the competition instead (I think))\n\n",
+                            "date": "Posted a month ago  ·  38th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Ivel afred",
+                            "content": "thanks, that helps me a lot\n\n",
+                            "date": "Posted 25 days ago  ·  560th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                },
+                {
+                    "author": "Ahmad Al-HusainyTopic Author",
+                    "content": "Thank you for your comment. I want to clarify my approach: I'm currently using Google Colab for model development. When I attempt to train the models on Kaggle, I encounter GPU memory issues and other problems related to the Kaggle environment it self, even though the same code runs smoothly on Colab. I'm considering training the model in Colab and then extracting the best model weights. My plan is to rebuild the model on Kaggle, load the weights, predict on the test dataset, and submit my results. Additionally, the environment on Colab is more extensive than on Kaggle, so training on Kaggle could potentially exceed the 9-hour limit.\n\n",
+                    "date": "Posted 2 months ago  ·  1266th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Valentin Werner",
+                            "content": "That is the correct approach\n\n",
+                            "date": "Posted 2 months ago  ·  38th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Marília Prata",
+            "content": "I think it depends on each competition rules. Though I'm not certain. Maybe Paul Mooney, Sohier Dane or Addison Howard could answer that.\n\nBy the way, welcome to your 1st competition.\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "1",
+            "reply": []
+        }
+    ]
+}

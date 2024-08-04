@@ -1,0 +1,75 @@
+{
+    "main_topic": {
+        "author": "Rise_Hand",
+        "title": "Time out always",
+        "content": "why I always met timeout these day with same infer logic\n\n",
+        "date": "Wed Jul 31 2024 18:18:40 GMT+0900 (日本標準時)",
+        "votes": "7"
+    },
+    "comments": [
+        {
+            "author": "Attacker",
+            "content": "People's participation rate rises before the competition closes, and then the server becomes unstable.\n\n",
+            "date": "Posted 3 days ago  ·  563rd in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Cody_Null",
+            "content": "Yep same thing with our solutions\n\n",
+            "date": "Posted 4 days ago  ·  30th in this Competition",
+            "votes": "3",
+            "reply": []
+        },
+        {
+            "author": "JM",
+            "content": "GPUs running hot and slowing down in last few days probably 😅\n\n",
+            "date": "Posted 4 days ago  ·  355th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Krupal Patel",
+            "content": "i also facing same problem with LLMs notebooks.\n\n",
+            "date": "Posted 4 days ago  ·  697th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "justin1357",
+            "content": "Same, a waste of submission times\n\n",
+            "date": "Posted 4 days ago  ·  19th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "justin1357",
+                    "content": "Each GPU's performance is different, which cause this prob\n\n",
+                    "date": "Posted 4 days ago  ·  19th in this Competition",
+                    "votes": "2",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Roschild.Rui",
+            "content": "Hi HAN, our team is also at a loss -> Why was it possible to submit almost identical inference weights and inference logic without any issues a few days ago, but recently there have been constant submission errors? It seems that the imbalance in Kaggle's computational resource load significantly affects the competition submissions.\n\n",
+            "date": "Posted 4 days ago  ·  30th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "JamshaidSohail",
+            "content": "Guys. My 15 submissions wasted. Are you able to figure it out ? How to get out of it ?\n\n",
+            "date": "Posted a day ago  ·  359th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "hwz13",
+            "content": "是的，gpu运行时间太长了\n\n",
+            "date": "Posted a day ago  ·  19th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

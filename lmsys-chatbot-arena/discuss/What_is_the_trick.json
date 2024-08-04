@@ -1,0 +1,33 @@
+{
+    "main_topic": {
+        "author": "TheStoneMX",
+        "title": "What is the trick...",
+        "content": "I find almost impossible to fine-tune with the recurses that we get from Kaggle, and at home not enough GPU memory.\n\nWhat are people using?\n\nExternal providers? Google, Azure, My Pods, etc.\n\nAny suggestions?\n\nWhat are people doing, on these type of competitions, Text cleaning, stop words removal, Stemming and lemmatization, etc.\n\nThanks for any tips guys.\n\n",
+        "date": "Sun Jun 16 2024 01:19:44 GMT+0900 (日本標準時)",
+        "votes": "3"
+    },
+    "comments": [
+        {
+            "author": "Ravi Ramakrishnan",
+            "content": "[@oscarrangel](https://www.kaggle.com/oscarrangel) I recommend you to try out [runpod.io](https://www.runpod.io/)\n\nThey offer excellent GPUs at moderately affordable prices and across various payment plans and options\n\n",
+            "date": "Posted a month ago  ·  528th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "TheStoneMXTopic Author",
+                    "content": "Yes, thanks. That is what I started to use, but they have secure cloud and community cloud. I am using community one. Is that correct?\n\n",
+                    "date": "Posted a month ago  ·  545th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Cody_Null",
+            "content": "I have been in this position before myself. The best option (in my opinion) would be cloud resources. It is up to you how much you are willing to spend and what experiments are worth it and I know there are a lot of platforms to choose from and price may vary based off what you need and your area. Some popular ones are runpod, vast.ai, google cloud, and then depending on your personal situation AWS or Azure may be more accessible but those first 3 are more likely and worth researching. No doubt I have missed some, but a good starting point. \n\n",
+            "date": "Posted 2 months ago  ·  30th in this Competition",
+            "votes": "4",
+            "reply": []
+        }
+    ]
+}

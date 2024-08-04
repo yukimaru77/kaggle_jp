@@ -1,0 +1,77 @@
+{
+    "main_topic": {
+        "author": "Ashwani",
+        "title": "Mistral-NeMo release",
+        "content": "Mistral-NeMo 12B released \n\n- Outperforms Gemma2 9B and Llama3 8B\n\n- 128K context window\n\n- Multilingual in 100+ languages: excels in European, Asian & Indian languages\n\n- Quantization-Aware Training at FP8\n\n- Apache 2.0 license\n\nBlog: [https://mistral.ai/news/mistral-nemo/](https://mistral.ai/news/mistral-nemo/)\n\nHF Weights (Base): [https://huggingface.co/mistralai/Mistral-Nemo-Base-2407](https://huggingface.co/mistralai/Mistral-Nemo-Base-2407)\n\nHF Weights (Instruct): [https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407)\n\n",
+        "date": "Fri Jul 19 2024 01:09:26 GMT+0900 (日本標準時)",
+        "votes": "22"
+    },
+    "comments": [
+        {
+            "author": "James Day",
+            "content": "FYI, it appears finetuning for Mistral-NeMo is currently broken in the transformers library (see [https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407/discussions/6](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407/discussions/6)). A fix should be released soon ([https://github.com/huggingface/transformers/pull/32065](https://github.com/huggingface/transformers/pull/32065)).\n\nAs usual, I'm inclined to wait at least a couple days for bugs to be discovered and fixed before attempting to use any new model 😉.\n\n",
+            "date": "Posted 16 days ago  ·  6th in this Competition",
+            "votes": "11",
+            "reply": []
+        },
+        {
+            "author": "Lorry Zou",
+            "content": "I just fune-tuned the instruct model yesterday, seems like it's not even on par with Gemma2 9b…Weird\n\n",
+            "date": "Posted 13 days ago  ·  153rd in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Valentin Werner",
+                    "content": "Might be the bugs James mentioned. These bugs are not always not always black and white, as in they raise Exceptions. Could also be that a different attention mechanism is used, which the model was not trained on or such (not sure if that is actually a thing and if it would cause an Exception, but you probably get the gist)\n\n",
+                    "date": "Posted 13 days ago  ·  38th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                },
+                {
+                    "author": "Eisuke Mizutani",
+                    "content": "I installed the latest transformers from source and could run training without error.\n\nBut as Lorry Zou mentioned, the result was not so good (even worse than llama3 in my case).\n\n",
+                    "date": "Posted 12 days ago  ·  81st in this Competition",
+                    "votes": "3",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "EISLab_hwlee",
+            "content": "It's very difficult to implement the code…\n\n",
+            "date": "Posted 15 days ago  ·  154th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Valentin Werner",
+            "content": "Release Season going hard in the last 5 weeks of the competition 🚀\n\n",
+            "date": "Posted 17 days ago  ·  38th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Psi",
+                    "content": "Thankfully, only three weeks left :)\n\n",
+                    "date": "Posted 17 days ago  ·  5th in this Competition",
+                    "votes": "4",
+                    "reply": [
+                        {
+                            "author": "Valentin Werner",
+                            "content": "It's quite funny with the GenAI Hype. You may have a breakthrough in the NLP competitions not by modelling techniques, but by sheer coincidence, having companies like H2O, Google or Mistral (& NVIDIA) release some high quality models. Not so long ago, we used to train Mistral-7B for peak performance - now it seems like a 3rd choice model.\n\n",
+                            "date": "Posted 16 days ago  ·  38th in this Competition",
+                            "votes": "4",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "gentle bird",
+            "content": "new model. who is trying this?\n\n",
+            "date": "Posted 16 days ago  ·  145th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

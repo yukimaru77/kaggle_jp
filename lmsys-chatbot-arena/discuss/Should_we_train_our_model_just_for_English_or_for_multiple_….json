@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "AlphaTT30",
+        "title": "Should we train our model just for English or for multiple languages ? ",
+        "content": "Can the test data contain multiple languages or just English? \n\n",
+        "date": "Sun Jul 14 2024 21:51:33 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "The training data does include non-english samples. Even languages with non-latin alphabet (e.g., asian languages and russian). However, the amount of samples seem to be quite low. Keep in mind that many models are able to \"speak\" multile languages inherently, so if you are using LLMs like Llama or Gemma, you are probably wasting time on this filter.\n\n",
+            "date": "Posted 21 days ago  ·  38th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

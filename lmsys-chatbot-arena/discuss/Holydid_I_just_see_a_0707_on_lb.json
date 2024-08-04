@@ -1,0 +1,56 @@
+{
+    "main_topic": {
+        "author": "Ya Xu",
+        "title": "Holy...did I just see a 0.707 on lb?",
+        "content": "And that's his only submission today, which means it's most likely took him less than 2 hours to do the inference. Seems someone just completely broke this competition and did it alone.\n\nGood news: just need 48 hours to see the solution. I can't help my curiosity.\n\n",
+        "date": "Sun Aug 04 2024 04:31:59 GMT+0900 (日本標準時)",
+        "votes": "6"
+    },
+    "comments": [
+        {
+            "author": "Cody_Null",
+            "content": "Yeah super strange, must have found the dataset used in public LB by accident? \n\n",
+            "date": "Posted 13 hours ago  ·  30th in this Competition",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "SeshuRaju 🧘‍♂️",
+                    "content": "\nSimilar to [PetFinder Competition](https://www.kaggle.com/c/petfinder-adoption-prediction/discussion/125436) [@cody11null](https://www.kaggle.com/cody11null) - i feel this 1st solution will be treated similar way or discard his solution by Kaggle \n\nI believe, we only have 50 hours left. Instead of panicking, I'll trust that Kaggle will handle it. It's better to focus on making wise choices and selecting the best two submissions.\n\n",
+                    "date": "Posted 12 hours ago  ·  323rd in this Competition",
+                    "votes": "2",
+                    "reply": []
+                },
+                {
+                    "author": "Kamau",
+                    "content": "\nmust have found the dataset used in public LB by accident?\n\nMy thoughts too. I hope Kaggle addresses this asap\n\n",
+                    "date": "Posted 7 hours ago  ·  301st in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "SeshuRaju 🧘‍♂️",
+            "content": "is it happen in any other competitions, its my first time seeing the last min leak at end of competition.\n\n",
+            "date": "Posted 12 hours ago  ·  323rd in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "flg",
+                    "content": "It is last minute if you hide it. Make some early submissions with only part of the leak used to hide your score, then submit full leak shortly before the end. We probably won't know though until Kaggle checks it ..\n\n",
+                    "date": "Posted 12 hours ago  ·  2nd in this Competition",
+                    "votes": "2",
+                    "reply": [
+                        {
+                            "author": "SeshuRaju 🧘‍♂️",
+                            "content": "Make sense Make some early submissions with only part of the leak used to hide your score [@ferdinandlimburg](https://www.kaggle.com/ferdinandlimburg) \n\n",
+                            "date": "Posted 12 hours ago  ·  323rd in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

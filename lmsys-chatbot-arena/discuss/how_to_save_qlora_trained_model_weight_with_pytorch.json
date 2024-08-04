@@ -1,0 +1,48 @@
+{
+    "main_topic": {
+        "author": "YEI0907",
+        "title": "how to save qlora_trained model weight with pytorch",
+        "content": "because of some problems,I can`t use qlora to train my model  with transformers.Trainer,so,I trained my qlora model with my own pytorch training script and save my weights with torch.save directly,but when i use my weights to inference,i found that when i run my notebook ,my predictions is different in each turns .so,i think my model saving method might be wrong,so, how can i save my trained weights after qlora training with pytorch training script? can i use torch.save directly? or is there any other problems during my inference?Thanks very much for answering my question\n\n",
+        "date": "Sat Jul 13 2024 14:23:51 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "If you load the model with the peft library, you simply also use model.save_pretrained. This will only save the adapter and not the full model. So we are talking < 100 MB instead of multiple GB.\n\nCode snippet as example:\n\n```\nif test_loss < best_val and epoch != 0:\n    model.save_pretrained(\n        f\"my_newest_model_{epoch+1}_{step}\"\n    )\n\n```\n\nYou will later load it by first loading the model itself (e.g., LlamaForSequenceClassification), getting the PEFT model and then loading the QLoRA weights\n\n```\n# Get peft\nmodel_0 = get_peft_model(base_model_0, peft_config).to(device_0) \n# Load weights\nmodel_0.load_state_dict(torch.load(CFG.LORA_PATH), strict=False)\nmodel_0.eval()\n\n```\n\n",
+            "date": "Posted 22 days ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "YEI0907Topic Author",
+                    "content": "thanks!,I use torch.save directly to save my model,code just like this\n\n```\nif score < best_score:\n            best_score = score\n            if int(os.environ[\"RANK\"]) == 0:\n                torch.save({\n                    'epoch': epoch,\n                    'model_state_dict': dict([(k, v) for k, v in model.module.named_parameters() if v.requires_grad]),\n                    'optimizer_state_dict': optimizer.state_dict(),\n                    'scheduler_state_dict': scheduler.state_dict()\n                }, model_path)\n\n```\n\nand my model loading method is same as yours,\n\nso you mean I should use peft_model.save_pretrained() insteat of torch.save?\n\naddtionaly,i test my weights in kaggle by using train_data and my loss is 1.8xxxx,but in my traing, the eval_sets loss is 0.9XX and train_sets loss is also 0.9xx\n\nby the way,i learned a lot from your notebooks, thank you for sharing your notebook!\n\n",
+                    "date": "Posted 22 days ago  ·  243rd in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Valentin Werner",
+                            "content": "Happy to be of help :)\n\nI highly recommend saving adapters separately and loading them separately. I do not see any value in saving full models as long as you are not adding any layers to the model. If you create a custom model with additional layers, you will need to save these weights to, in that case it might make sense to save full models.\n\nHowever, if you load Llama3 like this:\n\n```\nbase_model = LlamaForSequenceClassification.from_pretrained(model_id, token=HF_TOKEN, num_labels=CFG.NUM_LABELS, torch_dtype=CFG.TORCH_DTYPE, trust_remote_code=True)   \n\n```\n\nThe sequence classification head is always initialized in the same way, just random values. Things that can help achieve the same result is setting the seed, so the weights are randomly initialized exactly as they were initialized during training.\n\n```\ndef set_seeds(seed):\n    \"\"\"Set seeds for reproducibility \"\"\"\n    os.environ['PYTHONHASHSEED'] = str(seed)\n    random.seed(seed)\n    np.random.seed(seed)\n    torch.manual_seed(seed)\n    if torch.cuda.is_available():\n        torch.cuda.manual_seed(seed)\n        torch.cuda.manual_seed_all(seed)\n    # Set seed for all TPU cores\n    xm.set_rng_state(seed, device=xm.xla_device())  \n\n```\n\nDoing this helped me to achieve a better LB <-> CV relationship.\n\nFurther, you may want to save the tokenizer or replicate and deterministic changes you did to it during training (e.g., if you changed pad_token_id or such). Make sure you are exactly tokenizing the same way (also input formats etc.) as you did during training. This can easily switch a lot for your score too.\n\n",
+                            "date": "Posted 22 days ago  ·  38th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "YEI0907Topic Author",
+                            "content": "thanks,this provide a new idea for me to ensure consistency between train and test ;for my model , i had added some my custom modules,and i will re-train the model and save the weight with two part,one for llama3 with peft.save_pretrained(),one for my custom module with torch.save directly.T_T，the previous weight resulted in my LB score reaching 3.x\n\n",
+                            "date": "Posted 22 days ago  ·  243rd in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Ilya Turaev",
+                            "content": "All my life I've been thinking that classification heads for decoders were pretrained on some benchmarks or other data. Glad that I've busted this myth and misunderstanding now…\n\n",
+                            "date": "Posted 21 days ago  ·  768th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

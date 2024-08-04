@@ -1,0 +1,48 @@
+{
+    "main_topic": {
+        "author": "Takamichi Toda",
+        "title": "Replacing response A and response B for Data Augmentation",
+        "content": "The current approach in the public code often creates features from responses A and B and uses these to train classifiers. I thought that a simple data augmentation could be achieved by swapping responses A and B and the winner labels.\n\nHowever, it not works.\n\n|  | Local | Public |\n| --- | --- | --- |\n| baseline | 0.997 | 1.012 |\n| Augument by replace A/B | 1.011 | 1.025 |\n\nMy CV strategy is a simple one-holdout, and so far it correlates well with the Public LB ([reference](https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/500031#2824772)).\n\nIt may be that whether the response is A or B is also an important feature. I had seen a thread discussing bias in evaluation depending on whether the response is A or B, but it seems to have disappeared (probably [here](https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/507091)).\n\n",
+        "date": "Wed Jun 05 2024 09:29:20 GMT+0900 (日本標準時)",
+        "votes": "2"
+    },
+    "comments": [
+        {
+            "author": "Lisa DunlapCompetition Host",
+            "content": "Not sure how helpful this is, but position bias is a known phenomenon in both humans and LLMs: both tend to favor the first answer they are presented with. We look at this in the [original LLM as a judge paper ](https://arxiv.org/abs/2306.05685) if you want some concrete numbers of how prevalent this is \n\n",
+            "date": "Posted 2 months ago",
+            "votes": "5",
+            "reply": []
+        },
+        {
+            "author": "Valentin Werner",
+            "content": "My assumption is that by simply swapping, you are not creating new value for the model to learn. You are instead basically training those rows twice.\n\nQuestions:\n\n1) with what percentage of samples are you augmenting? If you only do 10-20% you are just making the model overfit / learn more about those samples. There might be an argument to do 100% of samples to make the model learn that resp A or B literally does not matter! (even though this might not reflect reality)\n\n2) are you also doing the swap with ties (keeping the tie label)? If not, you introduce class imbalance and ties are less likely to be predicted.\n\n",
+            "date": "Posted 2 months ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Takamichi TodaTopic Author",
+                    "content": "Thank you for the comment.\n\n1)\n\nIt's 100%. By the way, I am using DeBERTa, and I conducted experiments to enable the model to know which sentence is A and which is B by adding special tokens, but it was not very effective (only a slight improvement).\n\n2)\n\nThe label for \"tie\" remains \"tie\" even after swapping.\n\n",
+                    "date": "Posted 2 months ago  ·  146th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Valentin Werner",
+                            "content": "So If you do 100%, you basically just train two epochs at the price of one. This will effect lr scheduling etc.\n\nDid you also tune parameters in your experiment (e.g., warm up ratio or epochs)\n\n",
+                            "date": "Posted 2 months ago  ·  38th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        },
+                        {
+                            "author": "Takamichi TodaTopic Author",
+                            "content": "You may be right.\n\nWe tried three different patterns for the learning rate (smaller is better).\n\n",
+                            "date": "Posted 2 months ago  ·  146th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

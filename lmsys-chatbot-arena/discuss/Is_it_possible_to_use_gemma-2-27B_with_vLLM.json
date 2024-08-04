@@ -1,0 +1,71 @@
+{
+    "main_topic": {
+        "author": "yechenzhi1",
+        "title": "Is it possible to use gemma-2-27B with vLLM?",
+        "content": "Inspired by [@cdeotte](https://www.kaggle.com/cdeotte)'s great [work](https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/521294), I'm trying to use gemma-2-27B with vLLM. First I use GPTQmodel to quantinize it to 4-bit, then use vLLM-0.5.2 to do the infer. But we have to use flashinfer as the backend because of gemma-2's logits capping, then the problem comes, it's said flashinfer only supports GPU with compute [capability >= 8.0](https://github.com/vllm-project/vllm/issues/6173#issuecomment-2214759644), and T4 is 7.5. So is gemma-2-27b impossible for this competition?\n\n",
+        "date": "Tue Jul 23 2024 00:34:19 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "Yixiao Yuan",
+            "content": "I think we can't run gemma-2 with vLLM, but we can run it by huggingface. vLLM is much better for generation task due to PagedAttention. However, if we only generate one token or use classification head (we don't need KV cache in such cases), the performance should be similar.\n\n",
+            "date": "Posted 13 days ago  ·  31st in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "yechenzhi1Topic Author",
+                    "content": "bad news here, it seems only vllm/sglang can infer [quantized gemma-2-27b](https://github.com/ModelCloud/GPTQModel/issues/140#issuecomment-2242221690) correctly right now. \n\n",
+                    "date": "Posted 12 days ago  ·  25th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                },
+                {
+                    "author": "yechenzhi1Topic Author",
+                    "content": "But thanks! I'll try it anyway!\n\n",
+                    "date": "Posted 12 days ago  ·  25th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "beanpotato",
+                            "content": "Could you share if you can run gema-2-27b with vLLM?🥰\n\n",
+                            "date": "Posted 9 days ago  ·  341st in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "yechenzhi1Topic Author",
+                            "content": "No, T4 GPU doesn't support FlashInfer. I stopped trying gemma-2-27B after a few days.\n\n",
+                            "date": "Posted 7 days ago  ·  25th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "ShelterW",
+            "content": "Is it possible to use gemma-2-27B with vLLM now?\n\n",
+            "date": "Posted 9 days ago  ·  185th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Somesh88",
+                    "content": "I've been trying to use gemma 2 with vllm the weights over kaggle doesn't contain config file. If I try to load it form transformers then I have to keep internet access enabled which is not allowed in submission. have you found any workround for this? \n\n",
+                    "date": "Posted 8 days ago  ·  627th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Kishan Vavdara",
+                            "content": "you can create kaggle dataset of configs, packages, weights, etc. and add to your inference notebook, then you can use it without enabling internet. \n\n",
+                            "date": "Posted 8 days ago  ·  38th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

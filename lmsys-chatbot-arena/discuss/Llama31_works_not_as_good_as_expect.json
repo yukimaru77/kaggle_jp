@@ -1,0 +1,76 @@
+{
+    "main_topic": {
+        "author": "justin1357",
+        "title": "Llama3.1 works not as good as expect",
+        "content": "After first 1000 steps, i found its performence is worse than gemma-2 slightly.\n\n",
+        "date": "Wed Jul 24 2024 13:44:46 GMT+0900 (日本標準時)",
+        "votes": "10"
+    },
+    "comments": [
+        {
+            "author": "Rise_Hand",
+            "content": "I got a very bad result according to llama3.1 while using the ft method of QLoRA+SFT. CV = 0.914\n\n",
+            "date": "Posted 8 days ago  ·  28th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Nicholas Broad",
+            "content": "Make sure your tokenizer uses the [correct bos token](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct/discussions/29)\n\n",
+            "date": "Posted 9 days ago  ·  18th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "justin1357Topic Author",
+                    "content": "still bad performance\n\n",
+                    "date": "Posted 6 days ago  ·  19th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Xinyuan Qiao",
+            "content": "I tested it in [@emiz6413](https://www.kaggle.com/emiz6413) notebook with exact same parameter, the evaluation log loss is 0.958, the gemma2 version was 0.927.\n\n",
+            "date": "Posted 9 days ago  ·  62nd in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "sayoulala",
+            "content": "Thanks for share it. That's great, it looks like I'll be able to save a lot on my electricity bill, hahaha!\n\n",
+            "date": "Posted 11 days ago  ·  3rd in this Competition",
+            "votes": "4",
+            "reply": [
+                {
+                    "author": "william.wu",
+                    "content": "You're safe for the 1st place. It's tough to make improvements😭\n\n",
+                    "date": "Posted 7 days ago  ·  100th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "justin1357Topic Author",
+            "content": "After 4000 steps, its significantly worse than gemma-2 haha\n\n",
+            "date": "Posted 10 days ago  ·  19th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Lorry Zou",
+            "content": "Thank you for saving our time and TPU quota😁\n\n",
+            "date": "Posted 11 days ago  ·  153rd in this Competition",
+            "votes": "2",
+            "reply": []
+        },
+        {
+            "author": "Yixiao Yuan",
+            "content": "Same here.\n\n",
+            "date": "Posted 11 days ago  ·  31st in this Competition",
+            "votes": "1",
+            "reply": []
+        }
+    ]
+}

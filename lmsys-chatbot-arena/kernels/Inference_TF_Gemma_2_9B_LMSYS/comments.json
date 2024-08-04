@@ -1,0 +1,48 @@
+{
+    "comments": [
+        {
+            "author": "ano",
+            "content": "I submitted version 18 of this notebook twice. Both resulted in error submission due to timeout. We need to improve the code to speed up. Anyways, great work to start with!\n\n",
+            "date": "Posted 7 days ago  ·  Posted on Version 19 of \n        25",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Pranshu BahadurTopic Author",
+                    "content": "Yeah…I'm hoping version 19 doesn't time out. Do you have any suggestions on how we could speed it up?\n\n",
+                    "date": "Posted 7 days ago  ·  Posted on Version 20 of \n        25",
+                    "votes": "2",
+                    "reply": [
+                        {
+                            "author": "ano",
+                            "content": "The first thing that came to my mind is parallel computing like this [this notebook](https://www.kaggle.com/code/emiz6413/inference-gemma-2-9b-4-bit-qlora?scriptVersionId=187740026). You use two models, the one on cuda 0 and the other on cuda 1, and infer at the same time using threadpool. But I'm not 100% for sure. I can try to code, but honestly, I'm new to LLM, keras_nlp, etc…\n\n",
+                            "date": "Posted 7 days ago  ·  Posted on Version 20 of \n        25",
+                            "votes": "1",
+                            "reply": []
+                        },
+                        {
+                            "author": "Pranshu BahadurTopic Author",
+                            "content": "I'll look into the threadpool stuff might work somehow. Tbh I'm also very new to LLMs but trying to learn through implementation!\n\n",
+                            "date": "Posted 7 days ago  ·  Posted on Version 20 of \n        25",
+                            "votes": "2",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "carvingfate",
+            "content": "Nice Work! Gemma-2 needs a recent version of the transformer, which has caused me a lot of problems while training it on my older cloud GPU platforms. Thank you for sharing your code.\n\n",
+            "date": "Posted 9 days ago  ·  Posted on Version 13 of \n        25",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Lorry Zou",
+            "content": "It’s Saturday now. Any luck with submitting?\n\n",
+            "date": "Posted 17 hours ago  ·  Posted on Version 25 of \n        25",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

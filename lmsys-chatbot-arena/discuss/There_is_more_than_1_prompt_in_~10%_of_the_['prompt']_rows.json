@@ -1,0 +1,10 @@
+{
+    "main_topic": {
+        "author": "Matthew Hendricks",
+        "title": "There is more than 1 prompt in ~10% of the ['prompt'] rows",
+        "content": "\n\n```\nimport matplotlib.pyplot as plt\nfrom datasets import load_dataset\nimport ast\n\n# Load the dataset\ndataset = load_dataset(\"lmsys/lmsys-arena-human-preference-55k\", split='train')\n\n# Function to safely evaluate the string as a list\ndef safe_eval(s):\n    try:\n        return ast.literal_eval(s)\n    except:\n        return []\n\n# Count the number of items in each prompt\nitem_counts = [len(safe_eval(prompt)) for prompt in dataset['prompt']]\n\n# Count the frequency of each number of items\ncount_freq = {}\nfor count in item_counts:\n    count_freq[count] = count_freq.get(count, 0) + 1\n\n# Prepare data for plotting\ncounts = list(count_freq.keys())\nfrequencies = list(count_freq.values())\n\n# Create the bar plot\nplt.figure(figsize=(10, 6))\nplt.bar(counts, frequencies)\nplt.xlabel('Number of Items in Prompt')\nplt.ylabel('Frequency')\nplt.title('Distribution of Number of Items in Prompts')\nplt.xticks(range(min(counts), max(counts)+1))\n\n# Add value labels on top of each bar\nfor i, v in enumerate(frequencies):\n    plt.text(counts[i], v, str(v), ha='center', va='bottom')\n\nplt.tight_layout()\nplt.show()\n\n# Print some statistics\ntotal_prompts = len(item_counts)\navg_items = sum(item_counts) / total_prompts\nprint(f\"Total number of prompts: {total_prompts}\")\nprint(f\"Average number of items per prompt: {avg_items:.2f}\")\nprint(f\"Most common number of items: {max(count_freq, key=count_freq.get)}\")\nprint(f\"Maximum number of items in a prompt: {max(counts)}\")\n\n```\n\n",
+        "date": "Fri Jul 12 2024 02:04:16 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": []
+}

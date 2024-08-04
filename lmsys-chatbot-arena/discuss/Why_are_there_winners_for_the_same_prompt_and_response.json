@@ -1,0 +1,70 @@
+{
+    "main_topic": {
+        "author": "JunHua Liao",
+        "title": "Why are there winners for the same prompt and response?",
+        "content": "Why is prompt, response_a, and response_b the same, and there is a situation where model_a wins or model_b wins? Shouldn't it be winner_tie?\n\n",
+        "date": "Mon May 13 2024 22:47:54 GMT+0900 (日本標準時)",
+        "votes": "9"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "Does it make sense? No. Did the user click it? Yes.\n\n",
+            "date": "Posted 3 months ago  ·  38th in this Competition",
+            "votes": "8",
+            "reply": []
+        },
+        {
+            "author": "Sergey Saharovskiy",
+            "content": "[@feattar](https://www.kaggle.com/feattar) thanks for posting your findings, I will leave it here:\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Valentin Werner",
+                    "content": "\n\n",
+                    "date": "Posted 2 months ago  ·  38th in this Competition",
+                    "votes": "6",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Asher B.",
+            "content": "According to the blog [https://huyenchip.com/2024/02/28/predictive-human-preference.html](https://huyenchip.com/2024/02/28/predictive-human-preference.html)\n\nshared in this discussion: [https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/499847](https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/499847)\n\nThese are the noises and we may improve our model by droping these instances. Thanks for sharing!\n\n",
+            "date": "Posted 3 months ago",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "JunHua LiaoTopic Author",
+                    "content": "Thanks for sharing!\n\n",
+                    "date": "Posted 3 months ago  ·  1125th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                },
+                {
+                    "author": "Kishan Vavdara",
+                    "content": "I think dropping them won't help much, test data may contain similar instances. If the model predicts tie for such instances with high prob, then such instances will be penalized more increasing log loss. Solution would be ensembles :)  \n\n",
+                    "date": "Posted 3 months ago  ·  38th in this Competition",
+                    "votes": "4",
+                    "reply": [
+                        {
+                            "author": "Asher B.",
+                            "content": "Thanks for correction. I think dropping should be a good idea in production, but in this competition, that's ture! \n\n",
+                            "date": "Posted 3 months ago",
+                            "votes": "3",
+                            "reply": []
+                        },
+                        {
+                            "author": "Valentin Werner",
+                            "content": "I am not sure if I agree - if we are unsure about the test data (much like we would be in producton), shoud we not strive to create a model that is robust, in the sense of predicting the objective truth?\n\nIt might be worth testing if we should provide more balanced predictions on these labels, like [0.3, 0.2, 0.5] - as first model might be preferred due to position bias - while tie is the objective truth on these labels.\n\n",
+                            "date": "Posted 3 months ago  ·  38th in this Competition",
+                            "votes": "2",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "main_topic": {
+        "author": "Lee",
+        "title": "predict the model of the response to to a classification?",
+        "content": "Hello, I'm new to Kaggle and I've got an idea: What if we shift from simply evaluating responses to a 3-class classification, to a  64-class classification? Here's the plan:\n\nFirst, use our training data to train a classification model. This model will help us predict which among the 64 models a given response belongs to.\n\nThen, during the inference phase, armed with our trained classifier, we'll categorize each response into one of the 64 model types.\n\nWith this information in hand, we can ascertain which two models are in competition. Leveraging the training dataset as our prior knowledge, we'll then proceed to predict the likely winner between these two models.\n\n[Translated from chatGPT] Sorry for your uncomfortable reading, I am not a naive English speaker🙏\n\n",
+        "date": "Sun May 26 2024 18:24:03 GMT+0900 (日本標準時)",
+        "votes": "2"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "I think this can be a valuable proxy or feature for prediction. But you should keep in mind that the best model had ~65% winrate, so even if you know the model, it is difficult to predict whether it will win.\n\nAs such, I can imagine that this is one feature among text embeddings or the length feture. But predicting the model that wrote a response is similar difficult to predicting the win directly. You will have less training data per class etc.\n\nI think a similar strategy was also proposed in the Detect AI Generated Text Competion.\n\n",
+            "date": "Posted 2 months ago  ·  38th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Ivan Vybornov",
+                    "content": "Model of a response is an immensely valueable feature. Tried adding it to the lgbm locally: a few features like length of prompt and responses alongside with model name gives a score of around 0.99 with CV. \n\nThough I am concerned that new models might appear in the private set (not sure if it is a reasonable concern).\n\n",
+                    "date": "Posted 2 months ago  ·  160th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Valentin Werner",
+                            "content": "I dont think it is a reasonable concern. If you are able to reliably predict the model, than a new model will likely fall into the \"next best\" category. It would probably reduce score compared to if you know all models but you would likely still gain. \n\nalso from my knowledge the model distribution seems not immensely imbalanced to the point where only a few responses exist for a model. Therefore, I imagine this would not be the case\n\n",
+                            "date": "Posted 2 months ago  ·  38th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

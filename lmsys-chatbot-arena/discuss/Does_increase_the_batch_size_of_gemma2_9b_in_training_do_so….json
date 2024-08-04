@@ -1,0 +1,49 @@
+{
+    "main_topic": {
+        "author": "Dlond Mike",
+        "title": "Does increase the batch size of gemma2 9b in training do some help?",
+        "content": "i new here and i'm quite confused about this\n\n",
+        "date": "Sun Jul 28 2024 09:06:07 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "xiaotingting",
+            "content": "It seems that we need to use grid search to find a suitable learning rate when the batch size is fixed. If the graphics card has some spare capacity, we can actually scale the batch size and learning rate proportionally. Generally speaking, we can think that scaling the batch size and learning rate proportionally is equivalent.\n\n",
+            "date": "Posted 6 days ago  ·  19th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Z Hello",
+                    "content": "Should the learning rate and batch size be increased or decreased simultaneously?\n\n",
+                    "date": "Posted 4 days ago  ·  108th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "ano",
+            "content": "I also want to know how everyone chooses batch size, learning rate and architecture (like gate_proj, q_proj… when using lora)\n\n",
+            "date": "Posted 7 days ago  ·  240th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Dlond MikeTopic Author",
+                    "content": "🥹some tips?\n\n",
+                    "date": "Posted 7 days ago  ·  173rd in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Valentin Werner",
+                            "content": "All the insights coming in 9 days 😉\n\n",
+                            "date": "Posted 7 days ago  ·  38th in this Competition",
+                            "votes": "3",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

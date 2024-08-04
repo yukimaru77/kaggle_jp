@@ -1,0 +1,25 @@
+{
+    "main_topic": {
+        "author": "cm391",
+        "title": "Damn Ties! ",
+        "content": "The labels used in this competition are assigned by a diverse group of annotators and by its very name preference based. We can see from the following two examples the difficulty with correctly predicting a tie can be tricky.\n\nperhaps Morphalumpaliciousness simply isn't long enough??\n\ntwo sentences too many??\n\nhow you guys dealing with this sort of noise? I cannot seem to get better than random for predicting the draws…\n\n",
+        "date": "Thu Jul 25 2024 05:02:47 GMT+0900 (日本標準時)",
+        "votes": "6"
+    },
+    "comments": [
+        {
+            "author": "Hadi Ai",
+            "content": "I wonder if we could tell something about the annotators from their prompts -- and use that in a smaller model just to predict the tie class; then ensemble that with whatever one is doing… Anyway not much time left for exploration in this competition :-)\n\n",
+            "date": "Posted 2 days ago  ·  186th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "justin1357",
+            "content": "Tie is really hard to predict… As a human, actually I can't tell when it will be tie as well. Everyone's standard is different and this standard will even change as time went by. I prefer to trust model…\n\n",
+            "date": "Posted 8 days ago  ·  19th in this Competition",
+            "votes": "1",
+            "reply": []
+        }
+    ]
+}

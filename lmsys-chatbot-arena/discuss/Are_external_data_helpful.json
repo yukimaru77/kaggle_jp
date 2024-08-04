@@ -1,0 +1,62 @@
+{
+    "main_topic": {
+        "author": "Andreas Bisi",
+        "title": "Are external data helpful? ",
+        "content": "Has anyone used the [LMSYS - Additional 33k Labelled Conversations](https://www.kaggle.com/datasets/abdullahmeda/lmsys-additional-33k-labelled-conversations) dataset? If yes, are the CV and LB results yielded better or worse? Do you have suspicions of overfitting?\n\n",
+        "date": "Sun Jun 23 2024 18:27:18 GMT+0900 (日本標準時)",
+        "votes": "3"
+    },
+    "comments": [
+        {
+            "author": "lllleeeo",
+            "content": "The cv is significantly lower Don't know about the lab yet Worried about overfitting…….\n\n",
+            "date": "Posted 2 days ago  ·  126th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "YingxiZhang",
+            "content": "not work.😭\n\n",
+            "date": "Posted 2 days ago  ·  161st in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "justin1357",
+            "content": "In my experiment, not work…sad\n\n",
+            "date": "Posted a month ago  ·  19th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "sayoulala",
+            "content": "May I ask where did you get this data from?\n\n",
+            "date": "Posted a month ago  ·  3rd in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Andreas BisiTopic Author",
+                    "content": "There' not mine - I found them on an early discussion\n\n",
+                    "date": "Posted a month ago  ·  868th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "sayoulala",
+                            "content": "Thank you for your response. I'll try adding it to the training set and see if it makes a difference.\n\n",
+                            "date": "Posted a month ago  ·  3rd in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "yechenzhi1",
+                            "content": "Hi, did you test the external data? \n\n",
+                            "date": "Posted a month ago  ·  25th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

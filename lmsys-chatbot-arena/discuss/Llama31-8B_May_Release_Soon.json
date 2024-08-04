@@ -1,0 +1,61 @@
+{
+    "main_topic": {
+        "author": "Yixiao Yuan",
+        "title": "Llama3.1-8B May Release Soon",
+        "content": "According to the latest leaks, the upcoming llama3.1 8b model is expected to outperform the current Gemma2, delivering significant improvements over previous versions llama3. The model is anticipated to be released before the competition ends. Given its naming convention, LLama3.1 should seamlessly integrate with the existing LLama3 framework.\n\n",
+        "date": "Tue Jul 23 2024 09:55:14 GMT+0900 (日本標準時)",
+        "votes": "4"
+    },
+    "comments": [
+        {
+            "author": "Valentin Werner",
+            "content": "\n\n",
+            "date": "Posted 12 days ago  ·  38th in this Competition",
+            "votes": "2",
+            "reply": []
+        },
+        {
+            "author": "sayoulala",
+            "content": "Oh,My electricity bill is going to exceed the limit again.\n\n",
+            "date": "Posted 12 days ago  ·  3rd in this Competition",
+            "votes": "2",
+            "reply": []
+        },
+        {
+            "author": "Yixiao YuanTopic Author",
+            "content": "Llama3.1 is released.\n\n[https://huggingface.co/collections/meta-llama/llama-31-669fc079a0c406a149a5738f](https://huggingface.co/collections/meta-llama/llama-31-669fc079a0c406a149a5738f)\n\n",
+            "date": "Posted 12 days ago  ·  31st in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Valentin Werner",
+            "content": "Can you please share the source alongside the screenshot? I am quite interested in the numbers I am seeing, and sources are always extremely important for leaks like this.\n\n",
+            "date": "Posted 12 days ago  ·  38th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Yixiao YuanTopic Author",
+                    "content": "[https://x.com/iScienceLuvr/status/1815519917715730702](https://x.com/iScienceLuvr/status/1815519917715730702)\n\n",
+                    "date": "Posted 12 days ago  ·  31st in this Competition",
+                    "votes": "1",
+                    "reply": []
+                },
+                {
+                    "author": "naturalseeker",
+                    "content": "[https://www.reddit.com/r/LocalLLaMA/comments/1e9qpgt/meta_llama_31_models_available_in_hf_8b_70b_and/](https://www.reddit.com/r/LocalLLaMA/comments/1e9qpgt/meta_llama_31_models_available_in_hf_8b_70b_and/)\n\n",
+                    "date": "Posted 12 days ago  ·  363rd in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Dlond Mike",
+            "content": "….LLMs' game\n\n",
+            "date": "Posted 12 days ago  ·  173rd in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

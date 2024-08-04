@@ -1,0 +1,56 @@
+{
+    "comments": [
+        {
+            "author": "Kareem Abdelhamed",
+            "content": "nice modeling bro \n\n",
+            "date": "Posted 9 days ago  ·  Posted on Version 4 of \n        4",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "SiddhVRTopic Author",
+            "content": "Can anyone help diagnose why the submissions on this notebook keep failing?\n\nThanks\n\n",
+            "date": "Posted 8 days ago  ·  Posted on Version 4 of \n        4",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "XXX",
+                    "content": "hi [@siddhvr](https://www.kaggle.com/siddhvr), the competition will  re-run you code and the hidden dataset can be larger. I think may be your submission ran out of memory and failed to complete. (Of course, this is just my guess 😉)\n\n",
+                    "date": "Posted 8 days ago  ·  Posted on Version 4 of \n        4",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "SiddhVRTopic Author",
+                            "content": "In that case, the prompt usually is, \"Notebook ran out of memory\", but what I see, in my case, it says, \"Notebook threw an exception\".\n\n",
+                            "date": "Posted 8 days ago  ·  Posted on Version 4 of \n        4",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Luciango",
+            "content": "Having gotten oom results when changing gemma2 checkpoint to my own fine-tuned one, if there any advices?\n\n",
+            "date": "Posted 10 days ago  ·  Posted on Version 3 of \n        4",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Vitalii Bozheniuk",
+            "content": "won't it be easier to kick off LLAMA on one GPU and Gemma on another? \n\n",
+            "date": "Posted 10 days ago  ·  Posted on Version 3 of \n        4",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Valentin Werner",
+                    "content": "You are right, there should be some time gain with this approach, as you only load each model once. Other than that, not much difference. This code is probably this way, because the original inference notebook was only for one model type. It is easier to just copy it, than adjust it\n\n",
+                    "date": "Posted 10 days ago  ·  Posted on Version 3 of \n        4",
+                    "votes": "-1",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

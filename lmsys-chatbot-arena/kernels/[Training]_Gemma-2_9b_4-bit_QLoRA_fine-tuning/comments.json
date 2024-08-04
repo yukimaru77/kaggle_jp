@@ -1,0 +1,235 @@
+{
+    "comments": [
+        {
+            "author": "Yichuan Gao",
+            "content": "I'm having a hard time reproduce the results from this notebook. Specifically, I've simply downloaded this notebook, and changed only input path, removed the sample(100) and nothing else.\n\nAfter training on a 4090, train_loss can only lower to ~1.0 and eval_loss is also ~0.98, which is much worse than claimed 0.937 CV loss. I have tried run training on different machines with different GPU configuration and different batch_size, all give similar bad results. \n\nSo I'm really puzzled, what could be the possible reasons here? Any suggestions are welcomed.\n\n",
+            "date": "Posted 18 days ago  ·  Posted on Version 1 of \n        1",
+            "votes": "7",
+            "reply": [
+                {
+                    "author": "skurita",
+                    "content": "I am experiencing the same issue. \n\nI also downloaded the notebook, changed only the input path, and removed sample(100). \n\nHowever, my train/eval loss only decreases as shown in the graph, which is much worse than the claimed 0.937 CV loss. \n\nI trained \"unsloth/gemma-2-9b-it-bnb-4bit\" over 4 epochs, and the validation was calculated after each epoch. \n\nDoes anyone know how to reproduce the results from this train notebook? \n\nAny insights or suggestions would be greatly appreciated.\n\nI will also mention the author. [@emiz6413](https://www.kaggle.com/emiz6413) \n\nThank you.\n\n",
+                    "date": "Posted 18 days ago  ·  Posted on Version 1 of \n        1",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "S J Moudry",
+            "content": "[@emiz6413](https://www.kaggle.com/emiz6413)  thank you so much for sharing your training and inference notebooks, I've learned immensely from them and upvoted all your work.  I have a few questions:\n\nWhat was the accuracy of your model on evaluation after the epoch of training?\nWhat platform do you use for training? Do you have any recommendations?\nDo you have any tips for hyperparameter tuning, or how you arrive at your hyperparameters?  Did you train on the full dataset multiple times or do a few test runs to gauge effectiveness?\n",
+            "date": "Posted 17 days ago  ·  Posted on Version 1 of \n        1",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Eisuke MizutaniTopic Author",
+                    "content": "Thanks for the comment. \n\n- log loss on eval set after one epoch was 0.9371.\n\n- I'm using paperspace. I can recommend that platform if you wanna do many experiments with a reasonable fixed price.\n\n- I haven't spent much time on hyperparameter tuning as it takes very long time to train gemma2. I did a few runs and watched the learning curve and manually aborted the unpromising ones. So, I guess there're plenty of room to tune the hyperparameters.\n\n",
+                    "date": "Posted 16 days ago  ·  Posted on Version 1 of \n        1",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Lorry Zou",
+            "content": "Why didn't you reuse the Llama3 training notebook you publicized before? You can still train on TPU for ~6 hours by just changing the model name/path from llama3 to gemma2. \n\n",
+            "date": "Posted 22 days ago  ·  Posted on Version 1 of \n        1",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Eisuke MizutaniTopic Author",
+                    "content": "I suppose you are talking about kishanvavdara's notebook (I have't publish a a training notebook).\n\nI trained my model on GPU and was not sure how to reproduce it on TPU. Especially quantization is not supported on TPU, although quantization is not necessary if no OOM occurs.\n\nAre you able to train gemma2 on TPU?\n\n",
+                    "date": "Posted 21 days ago  ·  Posted on Version 1 of \n        1",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "Lorry Zou",
+                            "content": "Yes, I was talking about Kishanvavdara's notebook. He posted two Gemma 2 notebooks earlier [https://www.kaggle.com/code/kishanvavdara/gemma-2-9b-part-1](url)\n\nwith \"gemma-2-9b-hf\" as an uploaded dataset. I was able to train it on TPU and it was fast.\n\n",
+                            "date": "Posted 21 days ago  ·  Posted on Version 1 of \n        1",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Eisuke MizutaniTopic Author",
+                            "content": "Did you just train a catboost (or whatever) classifier on top of the frozen gemma's last hidden state?\n\nWhat happened to me was loading gemma2-9b resulted in OOM and quantization is not supported for TPU. So I had no choice but to give up using TPU for finetuning gemma's weight.\n\n",
+                            "date": "Posted 21 days ago  ·  Posted on Version 1 of \n        1",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Muhammad Haroon ul Hasnain",
+            "content": "Nice Notebook with explanation.\n\n",
+            "date": "Posted 24 days ago  ·  Posted on Version 1 of \n        1",
+            "votes": "-1",
+            "reply": []
+        },
+        {
+            "author": "Mohamadreza Momeni",
+            "content": "Excellent work.\n\nGreat job dear [@emiz6413](https://www.kaggle.com/emiz6413) \n\n",
+            "date": "Posted 24 days ago  ·  Posted on Version 1 of \n        1",
+            "votes": "-2",
+            "reply": []
+        },
+        {
+            "author": "floriandev",
+            "content": "First of all [@emiz6413](https://www.kaggle.com/emiz6413) huge thanks for these notebook!!!\n\nUnfortunately I got the following error after finetuning -> pushing resulting MODEL to hugging face -> invoking your inference notebook with the MODEL from hf:\n\n… leads to this error…\n\n",
+            "date": "Posted 4 days ago  ·  Posted on Version 1 of \n        1",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Lorry Zou",
+                    "content": "I think if you do not specify num_classes=3, its default value=2.\n\n",
+                    "date": "Posted 4 days ago  ·  Posted on Version 1 of \n        1",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "floriandev",
+                            "content": "Hi Lorry, thx for your quick reply!!!\n\nThe training / inference notebooks are from the same author and I used his model for the training on the unaltered notebook, it gave back acc and loss etc. just fine, but after saving, loading into inference notebook it gives this error?\n\nI suppose the trained model should match the inference model architecture wise…hmmm\n\nBtw. how would I introduce the number of classes in the inference notebook, as it seems there is one additional parameter in the newly trained model?\n\nLet me know, appreciate your support,\n\nFlorian.   \n\n",
+                            "date": "Posted 3 days ago  ·  Posted on Version 1 of \n        1",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "floriandev",
+                            "content": "ohh, just found (and currently trying) to use the locally generated checkpoint…will report in a bit!\n\n",
+                            "date": "Posted 3 days ago  ·  Posted on Version 1 of \n        1",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "floriandev",
+                            "content": "ok, could be solved by the thread [https://www.kaggle.com/code/emiz6413/training-gemma-2-9b-4-bit-qlora-fine-tuning/comments#2928021](https://www.kaggle.com/code/emiz6413/training-gemma-2-9b-4-bit-qlora-fine-tuning/comments#2928021) answered by [@raconion](https://www.kaggle.com/raconion). All good now ;-)\n\nReal issue: Training output was used for the gemma_dir.\n\nSolution: Used training output for the lora_dir. \n\n",
+                            "date": "Posted 3 days ago  ·  Posted on Version 1 of \n        1",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Nikhil Tumbde",
+            "content": "Hi thanks for the notebooks.\n\nI had a question about the fp16 training argument, what would happen if I use bf16 instead of fp16 for finetuning? I noticed with llama 3 8b (base model) when I used 4 bit quantization with fp16 the gradients became NaNs after few thousand steps. Any thoughts?\n\n",
+            "date": "Posted 5 days ago  ·  Posted on Version 1 of \n        1",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Eisuke MizutaniTopic Author",
+                    "content": "I guess bf16 is generally safer option if it's available on your device.\n\n",
+                    "date": "Posted 4 days ago  ·  Posted on Version 1 of \n        1",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Vavilkin Alexander",
+            "content": "Hello [@emiz6413](https://www.kaggle.com/emiz6413)! Thank you so much for your notebook, it is very usefull for practice in fine-tuning llm. Could you tell me please how you saved the entire model? As far as I understand during fine-tuning with \"Trainer\" only the weights of the adapter are saved, but the weights of classification head are not. Also the model in inference notebook is not an ordinary quantized model, but already with a head for classification. I will be very glad to receive a comment from you about it\n\n",
+            "date": "Posted 11 days ago  ·  Posted on Version 1 of \n        1",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Eisuke MizutaniTopic Author",
+                    "content": "The classification head is wrapped as ModulesToSaveWrapper, so it is automatically saved by Trainer.\n\nWhen loading from the checkpoint, the trained weight is loaded to the classification head.\n\n",
+                    "date": "Posted 10 days ago  ·  Posted on Version 1 of \n        1",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "Vavilkin Alexander",
+                            "content": "I got it thanks!\n\n",
+                            "date": "Posted 10 days ago  ·  Posted on Version 1 of \n        1",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Mattia Vanzetto",
+            "content": "Sorry about the question, I am a newbie to this, but once the notebook is done and you got the output, which are the steps to save the output and reloaded it in the inference notebook?  Thanks!\n\n",
+            "date": "Posted 17 days ago  ·  Posted on Version 1 of \n        1",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "raconion",
+                    "content": "There should be an output folder in the same level of your notebook. Use the subfolder with the largest number (steps) for inference. In this case it should be 5748\n\n",
+                    "date": "Posted 17 days ago  ·  Posted on Version 1 of \n        1",
+                    "votes": "2",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "raconion",
+            "content": "Hi! Thank you for this wonderful notebook. I ran this notebook in H100*2 and it turns out that there are 11495 steps instead of 5748 in your result. Also the cv score is slightly worse: 0.964697.\n\nAfter reading some comments, I felt like it is also the issue with batch size.\n\nMy settings are\n\n```\nclass Config:\n    output_dir: str = \"output\"\n    checkpoint: str = \"unsloth/gemma-2-9b-it-bnb-4bit\"  # 4-bit quantized gemma-2-9b-instruct\n    max_length: int = 1024\n    n_splits: int = 5\n    fold_idx: int = 0\n    optim_type: str = \"adamw_8bit\"\n    per_device_train_batch_size: int = 2\n    gradient_accumulation_steps: int = 2  # global batch size is 8 The effective batch size is per_device_train_batch_size * gradient_accumulation_steps * num_devices.\n    per_device_eval_batch_size: int = 8\n    n_epochs: int = 1\n    freeze_layers: int = 16  # there're 42 layers in total, we don't add adapters to the first 16 layers\n    lr: float = 2e-4\n    warmup_steps: int = 20\n    lora_r: int = 16\n    lora_alpha: float = lora_r * 2\n    lora_dropout: float = 0.05\n    lora_bias: str = \"none\"\n\n```\n\nAnd\n\n```\ntraining_args = TrainingArguments(\n    output_dir=\"output\",\n    overwrite_output_dir=True,\n    report_to=\"none\",\n    num_train_epochs=config.n_epochs,\n    per_device_train_batch_size=config.per_device_train_batch_size,\n    gradient_accumulation_steps=config.gradient_accumulation_steps,\n    per_device_eval_batch_size=config.per_device_eval_batch_size,\n    logging_steps=10,\n    eval_strategy=\"epoch\",\n    save_strategy=\"steps\",\n    save_steps=200,\n    optim=config.optim_type,\n    fp16=True,\n    learning_rate=config.lr,\n    warmup_steps=config.warmup_steps,\n)\n\n```\n\nI would like to know if you actually use different settings when you actually train the model. Thanks!\n\n",
+            "date": "Posted 17 days ago  ·  Posted on Version 1 of \n        1",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Eisuke MizutaniTopic Author",
+                    "content": "Are both GPUs visible in your code? \n\n",
+                    "date": "Posted 17 days ago  ·  Posted on Version 1 of \n        1",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "raconion",
+                            "content": "I directly reused your notebook code. According to device map, it seems like model parallelization is used. nvidia-smi shows that both GPUs are used as well.\n\nDevice map:\n\n```\n{'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 0, 'model.layers.13': 0, 'model.layers.14': 0, 'model.layers.15': 0, 'model.layers.16': 1, 'model.layers.17': 1, 'model.layers.18': 1, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 1, 'model.layers.41': 1, 'model.norm': 1, 'score': 1}\n\n```\n\nI think in this case if we use \n\nper_device_train_batch_size: int = 2\n    gradient_accumulation_steps: int = 2\n\nthe global batch size will be 4. When you are doing training, do you set per_device_train_batch_size and gradient_accumulation_steps differently to ensure global batch size of 8?\n\n",
+                            "date": "Posted 17 days ago  ·  Posted on Version 1 of \n        1",
+                            "votes": "1",
+                            "reply": []
+                        },
+                        {
+                            "author": "Eisuke MizutaniTopic Author",
+                            "content": "[@raconion](https://www.kaggle.com/raconion) \n\nSorry for the delayed response.\n\nI set per_device_train_batch_size and gradient_accumulation_steps in a way global batch size becomes 8. Global batch size 4 resulted in worse score.\n\n",
+                            "date": "Posted 8 days ago  ·  Posted on Version 1 of \n        1",
+                            "votes": "2",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "HZM",
+            "content": "HI Eisuke, have you tried other llm like Llama3, which did not work for me \n\n",
+            "date": "Posted 19 days ago  ·  Posted on Version 1 of \n        1",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Eisuke MizutaniTopic Author",
+                    "content": "I've tried Llama3 and got somewhere around 0.98\n\n",
+                    "date": "Posted 19 days ago  ·  Posted on Version 1 of \n        1",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Kim Kumuha",
+            "content": "How long did the training take?\n\n",
+            "date": "Posted 21 days ago  ·  Posted on Version 1 of \n        1",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "yuanzhe zhou",
+            "content": "hello, may I ask what is your result after 1 epoch running of this notebook?\n\n",
+            "date": "Posted 21 days ago  ·  Posted on Version 1 of \n        1",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Eisuke MizutaniTopic Author",
+                    "content": "Log loss on the eval set (id % 5 == 0) is 0.9371.\n\nYou can reproduce the result using the checkpoint [here](https://www.kaggle.com/datasets/emiz6413/73zap2gx/data).\n\n",
+                    "date": "Posted 21 days ago  ·  Posted on Version 1 of \n        1",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

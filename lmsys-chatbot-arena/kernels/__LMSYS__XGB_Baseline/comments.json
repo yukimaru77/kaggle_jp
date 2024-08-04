@@ -1,0 +1,34 @@
+{
+    "comments": [
+        {
+            "author": "Ilya Turaev",
+            "content": "Hi [@sercanyesiloz](https://www.kaggle.com/sercanyesiloz) ! Outstanding result with only one XGB. It looks like your cosine similarity function is not working properly because of \n\n```\nvectors = vectorizer.toarray()\n\n```\n\nDo you think modifying it would improve the score? Or these other features are totally enough\n\n",
+            "date": "Posted a month ago  ·  Posted on Version 11 of \n        16",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Sercan YeşilözTopic Author",
+                    "content": "Hey there! In that code, vectorizer is the output of the vectorizer that fitted on train and test sets actually. I don't think there is a mistake.\n\n",
+                    "date": "Posted 25 days ago  ·  Posted on Version 11 of \n        16",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "Ilya Turaev",
+                            "content": "It definitely should be, if you overwrite it as:\n\n```\nvectorizer = vectorizer.fit_transform([text1, text2])\n\n```\n\nOtherwise, vectorizer is still a TfIdf object, and you apply toarray() method to it. Or am I getting it wrong?\n\n",
+                            "date": "Posted 25 days ago  ·  Posted on Version 11 of \n        16",
+                            "votes": "1",
+                            "reply": []
+                        },
+                        {
+                            "author": "Sercan YeşilözTopic Author",
+                            "content": "I don't think vectorizer will be a tfidf object after this line of code because when I call the fit_transform function, it returns the transformed values, not tfidf object itself.\n\n",
+                            "date": "Posted 20 days ago  ·  Posted on Version 15 of \n        16",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
