@@ -1,0 +1,40 @@
+{
+    "main_topic": {
+        "author": "Azat Akhtyamov",
+        "title": "#Solved: Cannot submit: Your Notebook cannot use other competitions as a data source in this competition.",
+        "content": "I cannot submit, even though I don't use other competition's data. \n\nHave to use this llama [https://www.kaggle.com/datasets/junglebeastds/llama3instruct](https://www.kaggle.com/datasets/junglebeastds/llama3instruct) because I cannot get access to the official LLAMA3 on Kaggle.\n\n[2024-07-09  22.01.13.png](https://storage.googleapis.com/kaggle-forum-message-attachments/2914042/20911/2024-07-09  22.01.13.png)",
+        "date": "Wed Jul 10 2024 03:03:40 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Sarvesh Gharat",
+            "content": "Hey can you share a reference notebook with this model, will be very helpful, as even I am yet to get access. \n\nPS: I don't mean the notebook that gave you this score\n\n",
+            "date": "Posted 23 days ago",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Chris Deotte",
+            "content": "Isn't \"Digit Recognizer\" another competition, i.e. playground comp?\n\n",
+            "date": "Posted 24 days ago  ·  638th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Azat AkhtyamovTopic Author",
+                    "content": "This is the first thing I tried, but for some reason, I cannot delete it :D \n\nNeed to create a notebook from scratch probably. \n\n",
+                    "date": "Posted 24 days ago  ·  67th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                },
+                {
+                    "author": "Azat AkhtyamovTopic Author",
+                    "content": "yeah, thanks for the help, a clean notebook works\n\n",
+                    "date": "Posted 24 days ago  ·  67th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

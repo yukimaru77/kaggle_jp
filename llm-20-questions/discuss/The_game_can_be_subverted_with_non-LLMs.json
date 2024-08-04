@@ -1,0 +1,84 @@
+{
+    "main_topic": {
+        "author": "loh-maa",
+        "title": "The game can be subverted with non-LLMs",
+        "content": "It's just a hypothesis for now, but I believe a near-optimal solution to the game doesn't involve LLMs. It's possible to ask questions using plain regular expressions, and if the answering agent is able to understand, the answer will always be perfect -- a huge advantage over LLMs. Also bisecting the space is much more efficient with REs than with natural language.\n\nThe only thing missing is.. adoption. Once there is a critical mass, REs should be able to take over the top, or at least be necessary to stay on top.\n\nVery interesting dynamics regarding who's gonna talk which language.. and of course the critical question -- are we going to see any new regulation regarding this?\n\n",
+        "date": "Mon Jun 10 2024 18:59:06 GMT+0900 (日本標準時)",
+        "votes": "11"
+    },
+    "comments": [
+        {
+            "author": "loh-maaTopic Author",
+            "content": "Update\n\nLet me share some thoughts on the situation, please.\n\nIn the current phase, when the list of keywords is known, optimal game plays exist, and they're not based on LLMs. The only factor holding them back from domination is lack of adoption or a common protocol to apply them during the games. They can be based on many techniques, I thought of regular expressions first but soon I realized a simple alphabetical bisection is just perfect. I published a [notebook here.](https://www.kaggle.com/code/lohmaa/llm20-agent-alpha)\n\nIn the evaluation phase, when the list of keywords is unknown, the performance of those previously optimal solutions would depend on the assumed list of keywords, but even with rough assumptions I think it's going to be superior to LLMs. Perhaps we may call such solutions near-optimal. Here I must wave to our dear hosts [@bovard](https://www.kaggle.com/bovard) [@addisonhoward](https://www.kaggle.com/addisonhoward) -- I'm afraid changing the list of keywords will not suddenly favor LLMs,  and thus it won't solve this issue.\n\nSuppose all players play the \"LLM\" game by default, but there is a group of people that (secretly or openly) agreed to apply the optimal strategy whenever they are paired in a team. Surely such a group would come on top of the LB, given everything else being equal. And surely nobody would like to be outplayed by a group of friends who secretly adopted an optimal protocol. If it was done openly and not last minute, then perhaps it would be fair, but let's not hope for the best, we must assume collusion attempts will be made. So what can be done?\n\nWith the current format of the game, one thing that decent players can do is to adopt a common protocol to apply the optimal play (spontaneously.) This would effectively eliminate any advantage of secret collusion (aka rigging?) However this would also shift the competition from LLMs to a very simple conventional solution, which is fine to me and good for the planet, but this would miss the goal of the competition.\n\nPerhaps there is one path to keep the LLMs in play, though, if only the agents would have to play with a wide spectrum of players in the ranking, and provided some players (or perhaps \"neutral\" agents?) would play LLM only -- this would force everybody to be at least able to play LLMs as well. (Then however, is another question whether the ELO/ranking can work in such a mode… BTW if it was published we could do simulations.)\n\nAnother option would be to change the format and instead of teaming players force the play against a neutral/reference LLM which would not adhere to any particular protocols except natural language. This in turn would make the competition all about trying to figure out the reference LLM -- what it can understand and why not.\n\nI don't think the above remedies are great, but still sound better to me than falling to collusion. I am very interested in your opinion.\n\n",
+            "date": "Posted 2 months ago  ·  2nd in this Competition",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "tr",
+                    "content": "I agree with you. My conclusion was that the list of viable keywords has to be fairly limited (<50K) anyway, so not really unknown, so solvable with \"classical\" approaches, at least for questioner/guesser. For the answerer I'm still not sure since it is more dependent on \"protocol\" of other agent, but looks viable.\n\nEDIT: maybe the list of viable keywords is bigger than my estimate, wikipedia has almost 7M articles.  \n\n",
+                    "date": "Posted 2 months ago  ·  253rd in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "loh-maaTopic Author",
+                            "content": "Thanks for sharing your perspective, well, if I understand correctly, non-LLM approaches are not more restricted than LLMs.. how many keywords an LLM of size 7b can handle, practically? Maybe 1 or 2k? So far it's not looking very effective even for 560.\n\n",
+                            "date": "Posted 2 months ago  ·  2nd in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "tr",
+                            "content": "Sorry for confusing posts, maybe I'm just rambling, but I'll try to elaborate :) \n\nYes, I think classical approach is valid at least as LLM approach, but only for questioner/guesser. \n\nClassical would need a list of keywords to perform some kind of bisection with hard-coded questions and guesses from the list. I believe such list can be made, since I estimate <50K viable places, persons or things. Such agent would be optimal, depending on accuracy of answerer and completeness of the list (like in your notebook).\n\nLLM questioner/guesser doesn't strictly need such list, but I expect it to be inferior to classical approach above. Thus defeating part of the goal of competition. \n\nFor LLM \"word capacity\", in theory I'd estimate much higher. I mean, you can ask it pretty much about any entity and it will give you a reasonable reply. No?\n\n",
+                            "date": "Posted 2 months ago  ·  253rd in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        },
+                        {
+                            "author": "loh-maaTopic Author",
+                            "content": "Yes, well, non-LLM works only when paired with another compatible non-LLM, and then they make one solution.\n\nYes, the \"word capacity\" is probably much higher than my estimate, but then what is the power of questions and reliability of answers as the search descends into more details? Even a small error rate in answering can affect the search, 20% error rate usually ends in a bush.. certainly improving this, is the primary objective behind this competition, and optimistically, as long as non-LLMs need LLMs for a backup it may prevail.\n\n",
+                            "date": "Posted 2 months ago  ·  2nd in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Kha Vo",
+            "content": "[@bovard](https://www.kaggle.com/bovard) [@addisonhoward](https://www.kaggle.com/addisonhoward) \n\nAs shown by this topic's author, his agent is now starting to dominate the leaderboard. More teams are submitting this agent which is a binary search based solely on the keyword list. Both questioner and answerer of this agent are non-LLM, just rule-based. So as long as many more teams submit this agent, they will all occupy top of LB very soon.\n\nYou can see one episode example here: [https://www.kaggle.com/competitions/llm-20-questions/submissions?dialog=episodes-episode-55060055](https://www.kaggle.com/competitions/llm-20-questions/submissions?dialog=episodes-episode-55060055)\n\nI guess all these below changes may have to be made at the same time to make the competition better:\n\n- List of keywords must be changed\n\n- List of keywords must not be accessible by any agents by any means, even from this early stage\n\n- Replays must not display the keyword publicly. Replays may not also display guesses.\n\n- Keywords must not be obtained via aggregating past gameplays\n\n",
+            "date": "Posted 2 months ago  ·  17th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "loh-maaTopic Author",
+                    "content": "Hello Kha Vo, I share your concern about the situation, it's not going in the right direction, however I think the remedy you just proposed is not a real solution. Non-LLM optimal solution would become conditionally optimal (if that's the right term) but I bet it would stay in play even after those changes. Perhaps they would make adoption slower, but they would also make the current testing stage unclear and less fun.\n\nAs I stated in the update, I think that common adoption of a near-optimal solution based on an open protocol is perhaps the only effective protection against collusion in the evaluation phase, given the current game format. If you can think of any other way to neutralize the advantage of potential collusion (again, given the current game format), then please show me wrong.\n\n",
+                    "date": "Posted 2 months ago  ·  2nd in this Competition",
+                    "votes": "-1",
+                    "reply": []
+                },
+                {
+                    "author": "Max Brown",
+                    "content": "I don't see how your proposed changes would work. The bisecters can just create their own set of keywords (up to hundreds of thousands of words) and distribute this common set amongst themselves.\n\n",
+                    "date": "Posted a month ago  ·  204th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Krens",
+            "content": "Using non-LLM methods such as binary search is indeed a different and even brilliant solution. The difficulty of this method should be how to build a list that \"completely\" covers all possible keywords. Theoretically, we can search for millions of keywords in one round of competition, but when the search fails, we can also consider adding LLM to remedy it. (Although the effect should not be too good)\n\n",
+            "date": "Posted a month ago  ·  475th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Max Brown",
+            "content": "I'm only just looking at this competition now. A binary search based solution was the first thing that occurred to me as well. Is there any indication that the kaggle team is going to address this?\n\nI'm struggling to think of how to fix this. \n\n",
+            "date": "Posted a month ago  ·  204th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

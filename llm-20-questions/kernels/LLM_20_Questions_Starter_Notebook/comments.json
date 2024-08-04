@@ -1,0 +1,210 @@
+{
+    "comments": [
+        {
+            "author": "Samar Elhissi",
+            "content": "Thank you for the example, how to test it locally?\n\n",
+            "date": "Posted a month ago  ·  Posted on Version 2 of \n        2",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Valentin Baltazar",
+                    "content": "Check if you have the hardware for it…these LLM require a lot of computation and a powerful GPU to train and fine tune. I would use the cloud, much easier too.\n\n",
+                    "date": "Posted 24 days ago  ·  Posted on Version 2 of \n        2",
+                    "votes": "-1",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Michael Kamal 92",
+            "content": "thank you, i want ask about few_shot_examples, i should be make like any one \n\nlike this    ( 'is it place ?', 'yes-or-no')\n\nor this    ('is it place ?', 'yes',)\n\nor this     ('is it place ?', 'yes', 'Now guess the keyword')\n\nor this     ('is it place ?', 'no', 'Now guess the keyword', 'France')\n\nor this     ('is it place ?', 'yes', 'France')\n\nany one correct to make question, answer and guess ?\n\nand another question \n\nGemma train on few_shot_examples ?\n\n",
+            "date": "Posted 2 months ago  ·  Posted on Version 2 of \n        2",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Yukky_2801",
+            "content": "Hello, i am a starter to kaggle, when i run your notebook\n\nI got error below:\n\ntar: gemma/pytorch/7b-it-quant/2: Cannot stat: No such file or directory\n\n1.37MiB 0:00:00 [36.4MiB/s] [<=> ]\n\ntar: Exiting with failure status due to previous errors\n\nI cannot submit submission.tar.gz with error. \n\nI have no idea of this, could you please provide me solution?\n\n",
+            "date": "Posted 2 months ago  ·  Posted on Version 2 of \n        2",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Andres H. Zapke",
+                    "content": "Obviously you are trying to access this path \"gemma/pytorch/7b-it-quant/2\". Make sure you have files in that path (look at the right side of the notebook, if you have the gemma model there, copy the path, do they match?\n\n",
+                    "date": "Posted 2 months ago  ·  Posted on Version 2 of \n        2",
+                    "votes": "0",
+                    "reply": []
+                },
+                {
+                    "author": "Aryan Singh",
+                    "content": "Add the model Gemma 7b-it-quant V2 using the Add Input function. \n\nMake sure to accept the license first from here: [https://www.kaggle.com/models/google/gemma](https://www.kaggle.com/models/google/gemma)\n\n",
+                    "date": "Posted 2 months ago  ·  Posted on Version 2 of \n        2",
+                    "votes": "4",
+                    "reply": [
+                        {
+                            "author": "Talal Mufti",
+                            "content": "after ensuring all files where in the path I still faced issues so I edit the bash commands slightly. personally, this worked better for me:\n\n!tar --use-compress-program='pigz --fast --recursive | pv' -f submission.tar.gz -c /kaggle/working/submission . -c /kaggle/input/gemma/pytorch/7b-it-quant/2\n\n",
+                            "date": "Posted 3 days ago  ·  Posted on Version 2 of \n        2",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Muhammad Hadi13",
+            "content": "I don't know why I am just copying this file and running and it's note generating an output of more than 1.35 MB which is always failing in the validation episode. where as output for Ryan was around 7GB. Need help!!!\n\n",
+            "date": "Posted 2 months ago  ·  Posted on Version 2 of \n        2",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Muhammad Hadi13",
+                    "content": "tar: gemma/pytorch: Cannot stat: No such file or directory\n\n1.37MiB 0:00:00 [36.4MiB/s] [<=>                                               ]\n\ntar: Exiting with failure status due to previous errors\n\nthis error occurs for the submission cell block\n\n",
+                    "date": "Posted 2 months ago  ·  Posted on Version 2 of \n        2",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "Aryan Singh",
+                            "content": "You need to add Gemma 7b-it-quant V2 first before running the code. \n\nUse Add input functionality in the notebook to add a model. \n\nMake sure to accept the license first from here: [https://www.kaggle.com/models/google/gemma](https://www.kaggle.com/models/google/gemma)\n\n",
+                            "date": "Posted 2 months ago  ·  Posted on Version 2 of \n        2",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Ship of Theseus",
+            "content": "Thank Ryan, greate work! Nice code to run on localhost and sharing to Kaggle Community\n\n",
+            "date": "Posted 2 days ago  ·  Posted on Version 2 of \n        2",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "shiv_314",
+            "content": "Hey folks! Need one help. I am facing an import error for gemma package.\n\nI have already added the correct system path for python, however I am still facing the same issue. Kindly help!\n\n",
+            "date": "Posted 6 days ago  ·  Posted on Version 2 of \n        2",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "dedq",
+            "content": "Thank Ryan, greate work! Nice code to run on localhost and sharing to Kaggle Community\n\n",
+            "date": "Posted 8 days ago  ·  Posted on Version 2 of \n        2",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Code Hacker",
+            "content": "I try submit this notebooks output file tar.gz, it failed…\n\n",
+            "date": "Posted a month ago  ·  Posted on Version 2 of \n        2",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Code Hacker",
+                    "content": "I did'n agree model. Click red button as below…\n\n",
+                    "date": "Posted 25 days ago  ·  Posted on Version 2 of \n        2",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "JAPerez",
+            "content": "Great work Ryan!\n\n",
+            "date": "Posted a month ago  ·  Posted on Version 2 of \n        2",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "philipha2",
+            "content": "Hello I am a beginner in this competition. \n\nI was trying to run your notebook and make a submission.\n\nwhere do i have to put submission.tar.gz file? \n\nAfter clicking submit agent button, Should I just submit this file? \n\nIt takes quite a while\n\nMy questions may sound a bit basic but I would thank you alot for replying! \n\n",
+            "date": "Posted a month ago  ·  Posted on Version 2 of \n        2",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Kanchan Maurya",
+                    "content": "Submitting the file after clicking on Submit agents does the work.It takes a while since the initial simulations are working\n\n",
+                    "date": "Posted 4 days ago  ·  Posted on Version 2 of \n        2",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "vj4science",
+            "content": "Thanks Ryan - this is a good head start to the competition! much appreciated!\n\n",
+            "date": "Posted a month ago  ·  Posted on Version 2 of \n        2",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "gb_kwon",
+            "content": "Thank you so much for your COOL guidelines!\n\n",
+            "date": "Posted 2 months ago  ·  Posted on Version 2 of \n        2",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Andres H. Zapke",
+            "content": "In your main.py, you import gemma_pytorch library with: from gemma.config.\n\nThis is not working for me, although import gemma gives no error.\n\nHave tried everything from manually specifying my local gemma module's path or just importing by python library name. Any ideas ?\n\n",
+            "date": "Posted 2 months ago  ·  Posted on Version 2 of \n        2",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Duy Thai",
+            "content": "Hello [@ryanholbrook](https://www.kaggle.com/ryanholbrook), I tried your notebook and got the message \"An attached model requires additional steps to be accessed. See the Models panel for details.\". What should I do about it?\n\nWhen I opened the panel I only see this:\n\n",
+            "date": "Posted 2 months ago  ·  Posted on Version 2 of \n        2",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Andres H. Zapke",
+                    "content": "Go to \"Models\" in Kaggle, search for Gemma, accept the Model's license.\n\n",
+                    "date": "Posted 2 months ago  ·  Posted on Version 2 of \n        2",
+                    "votes": "3",
+                    "reply": [
+                        {
+                            "author": "Duy Thai",
+                            "content": "Thank you!\n\n",
+                            "date": "Posted 2 months ago  ·  Posted on Version 2 of \n        2",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Kai_Huang",
+            "content": "hello, i am a starter to kaggle, when i run your code block of !tar --use-compress-program='pigz --fast --recursive | pv' -cf submission.tar.gz -C /kaggle/working/submission . -C /kaggle/input/ gemma/pytorch/7b-it-quant/2\n\ni got this error:\n\ntar: gemma/pytorch/7b-it-quant/2: Cannot stat: No such file or directory\n\n1.37MiB 0:00:00 [36.4MiB/s] [<=>                                               ]\n\ntar: Exiting with failure status due to previous errors\n\ni have no idea of this, could you please tell me what's wrong with it? thanks!\n\n",
+            "date": "Posted 2 months ago  ·  Posted on Version 2 of \n        2",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Kai_Huang",
+                    "content": "Oh, i got it, i did'n input a model to my notebook😱\n\n",
+                    "date": "Posted 2 months ago  ·  Posted on Version 2 of \n        2",
+                    "votes": "0",
+                    "reply": []
+                },
+                {
+                    "author": "D Prince Armand KOUMI",
+                    "content": "no model surely, try to add one\n\n",
+                    "date": "Posted 2 months ago  ·  Posted on Version 2 of \n        2",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Qusay AL-Btoush",
+            "content": "it`s very good Ryan \n\n",
+            "date": "Posted 3 months ago  ·  Posted on Version 1 of \n        2",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+{
+    "main_topic": {
+        "author": "gguillard",
+        "title": "Is this competition a lottery, or is it not ?",
+        "content": "No offense to the Kaggle team, but I was quite puzzled after watching episodes from my first submission and reading many concerns in discussions, so I had to convince myself of the fairness of the ranking system in order to decide if it was worth investing more time in this competition.\n\nTherefore I made a small toying notebook to play with it :\n\n[https://www.kaggle.com/code/gguillard/llm-20-questions-trueskill-simulator](https://www.kaggle.com/code/gguillard/llm-20-questions-trueskill-simulator)\n\nI was really hoping it would prove my intuition wrong, but it didn't.  On the contrary, assuming there's no serious flaw in my investigation, my finding is that the ranking never converges enough to distinguish between opponents of not-so-similar skills :\n\nHopefully I got some parameter wrong and the organizers will point it out, otherwise it is not too late to amend the ranking system.\n\nAmongst many discussions about this subject, I think [the spectacular example recently shown by ](https://www.kaggle.com/competitions/llm-20-questions/discussion/520928)[@c-number](https://www.kaggle.com/c-number), where the same model posted at the same date is ranked both 1st, 6th and and 60th (!) on the current leaderboard, is quite convincing that there is no point in using the current evaluation system.\n\nIn its current state, the competition is indeed a (biased, but still) lottery.  Not that I have anything against lotteries, but it's good to know when it's one, because it's better not to expect too much of it.\n\nIf they want the competition to be meaningful in terms of rewarding the best submissions, I urge the host to reconsider the ranking options.  It'd be a pity if the competition was despised because of its scoring system, because that's really a fun competition.\n\n[@bovard](https://www.kaggle.com/bovard) [@addisonhoward](https://www.kaggle.com/addisonhoward)\n\nPS : Maybe that changed with the latests improvements of my notebook (I didn't check), but from my firsts tests the TrueSkill system didn't seem very stable whatever the combination of parameters for such a competition.  For what it's worth, I'd just go for a plain n_wins ranking (guesser + answerer), with a fixed number of games per submission.\n\nEdit :\n\nHere are the leaderboards for 4 such experiments with just a different random seed (see the bottom of the last version of the notebook) :\n\n```\nLeaderboard 1\nrank    id  skill   mu\n1        1   0.98    977\n2        4   0.77    985\n3        0   0.98    962\n4        2   0.96    926\n5        20  0.43    978\n\nLeaderboard 2\nrank    id  skill   mu\n1        0   0.98    1021\n2        2   0.96    925\n3        9   0.58    974\n4        4   0.77    854\n5        8   0.59    941\n\nLeaderboard 3\nrank    id  skill   mu\n1        1   0.98    1019\n2        0   0.98    1038\n3        2   0.96    1014\n4        4   0.77    913\n5        5   0.73    988\n\nLeaderboard 4\nrank    id  skill   mu\n1        4   0.77    969\n2        8   0.59    978\n3        1   0.98    912\n4        0   0.98    948\n5        3   0.82    986\n\n```\n\n",
+        "date": "Sat Jul 20 2024 21:47:38 GMT+0900 (日本標準時)",
+        "votes": "11"
+    },
+    "comments": [
+        {
+            "author": "Andrew Tratz",
+            "content": "I think this reflects a few realities of this competition as it currently stands:\n\nThe highest-ranked bots still lose the majority of their games.\nSome of the high-ranking bots are relying on the public keyword list and may not be robust when the private list is released\nPairing two bots together compounds this randomness\nWins seem to be awarded lots of points, losses do not seem to decrease points as rapidly\nWhen a bot errors, all others receive a win\nRelatively slow frequency of games played for \"mature\" bots\n\nThis means a few lucky wins will cause a quick jump on the LB but a fairly slow decay. Using over-reliance on the keyword list may allow bots to remain on top for a while but also expose them to risk when private keywords are released.\n\nI think the organizers should change #5 to have the error bot penalized but give no reward to the other players, since this just adds distortion. It makes sense in other simulation competitions but perhaps not this one. Perhaps some tweaks would help with #4 as well.\n\nI imagine we'll see some healthy shake-up on the private LB, although this shake-up may also be somewhat random unless a few people come up with distinctly better bots.\n\n",
+            "date": "Posted 14 days ago  ·  119th in this Competition",
+            "votes": "5",
+            "reply": [
+                {
+                    "author": "OminousDude",
+                    "content": "I think the shake-up on private will be quite massive too. I am almost fully convinced everyone in the top ~25 uses the public LB keywords list.\n\n",
+                    "date": "Posted 14 days ago  ·  451st in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "VolodymyrBilyachat",
+                            "content": "Nope my agent doesn't know about keywords but it has only categories. But unfortunately this is very much luck based. \n\n",
+                            "date": "Posted 11 days ago  ·  214th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                },
+                {
+                    "author": "gguillardTopic Author",
+                    "content": "Bots relying on the public keyword list is the responsibility of their developers, it's not the matter of the organizers IMO — although I am curious if non-LLM or part-LLM bots may be disqualified, since it's an LLM competition.\n\nPoint #4 is slightly wrong : you're confusing losses with draws.  The relation between a win and a loss is roughly symmetric, although it depends on the different mu and sigma of the players.  Anyway this is by design, due to the TrueSkill settings (see notebook), and I believe it was deliberately chosen by the hosts.\n\n",
+                    "date": "Posted 14 days ago  ·  75th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "loh-maa",
+                            "content": "No disqualifications should/can be applied on a whim, there must be solid grounds to do so. Since there are no specific rules regarding techniques, then presumably all techniques are allowed (except cheating in general of course.) And surely it is way too late to change the rules.\n\n",
+                            "date": "Posted 14 days ago  ·  2nd in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "OminousDude",
+            "content": "I fully agree and believe that this is a massive problem and I sincerely hope that the competition hosts find a way to fix this.\n\nOne way this score deviation could be minimized is by removing agents that have not had a single win in the last ~50 rounds. This will stop them from bringing down agents at the top of the leaderboard as low bots and high bots will sometimes be placed with each other to help overcome the \"pit of dumbness\" that comes between scores ~650 down to zero.\n\nAnother way is to play the game three times instead of one so that each agent will play against each other. For example, if round one is won by team a consisting of agent1 and agent2, in the next round agent1 will go against agent3 and then agent4, this way each agent will play each other model. The second option would fix the problem of one questioner agent getting a \"bad\" answerer. If no one wins any round then the default points will be given. If 2 rounds are won the agent that is included in both of the winning teams will get a boost and the other agents in those rounds that only won one round will get a smaller (but still substantial) reward.\n\nFinally, a third way to fix this could be if one agent constantly loses/does not win the other agent in its team will get a small boost (+10 or so) and the losing bot will lose a bit (-10 or so) this will split bots that win and lose quicker so that the bots that actually can play and win will be playing against higher level bots.\n\nI hope the competition hosts consider at least one of these options (preferably the second and third ones). Such small changes as I have described above will make massive changes to the \"lottery\" aspect of the scoring.\n\n",
+            "date": "Posted 14 days ago  ·  451st in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "gguillardTopic Author",
+                    "content": "The good thing is that all these options are now straightforward to test through the simulator notebook, so they can decide which is best based on facts.\n\n",
+                    "date": "Posted 14 days ago  ·  75th in this Competition",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "OminousDude",
+                            "content": "Oh yes, I just realized that! I suggest that we run a few of the possible strategies on your notebook to find the best.\n\n",
+                            "date": "Posted 14 days ago  ·  451st in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "gguillardTopic Author",
+                            "content": "As far as I'm concerned I will try to focus for a while on making a second submission. :D\n\nBut if the hosts acknowledge that they're open to modifying the evaluation I'll be happy to help if needed.\n\n",
+                            "date": "Posted 14 days ago  ·  75th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "loh-maa",
+            "content": "There is much confusion and good reasons to wonder what's going, on especially for new players. If you notice, any agent reaching the score of around 750, suddenly stops playing frequently and plays only a game or two a day. This obviously affects the LB and I'm pretty sure it's going to be reverted to normal in the final stage. I'm not really sure why this alteration has been introduced but it could be to obscure real performance, it could help in preventing particular solutions from gaining too much of critical mass and thus spoiling the whole thing. So, anyway, I think there's no need to worry, join in with your best ideas!\n\n",
+            "date": "Posted 14 days ago  ·  2nd in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "VolodymyrBilyachat",
+            "content": "Wouldn't answerer mixture of answerers improve this competition? I see the single answer is driving into completely wrong direction :( It wont solve the problem for 100% but still could improve alot\n\n",
+            "date": "Posted 11 days ago  ·  214th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

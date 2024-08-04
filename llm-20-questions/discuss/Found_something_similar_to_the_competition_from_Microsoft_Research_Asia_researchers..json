@@ -1,0 +1,10 @@
+{
+    "main_topic": {
+        "author": "AC",
+        "title": "Found something similar to the competition from Microsoft Research Asia researchers. ",
+        "content": "[GameEval: Evaluating LLMs on Conversational Games](https://github.com/jordddan/GameEval)\n\nAsk-Guess is a cooperative game involving a questioner and an answerer. At the beginning of the game, the answerer receives a word unknown to the questioner. In each round, the questioner may ask the answerer one question, and the answerer has to answer faithfully. The provided word or phrase must not be included in the answerer’s reply. Both participants should collaborate to minimize the number of Q&A rounds needed for the questioner to deduce the given word or phrase accurately. The questioner should ask targeted questions to progressively narrow down the potential scope of the given word based on the answerer’s responses. The answerer must assess whether the questioner has successfully identified the word and respond with ’Gameover’ to conclude the game [Taken from the git-hub repo].\n\nLink to the paper : [GameEval: Evaluating LLMs on Conversational Games](https://arxiv.org/pdf/2308.10032v1)\n\n",
+        "date": "Thu May 16 2024 16:38:55 GMT+0900 (日本標準時)",
+        "votes": "7"
+    },
+    "comments": []
+}

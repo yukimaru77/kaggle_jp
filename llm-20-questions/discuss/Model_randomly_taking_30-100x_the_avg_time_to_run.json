@@ -1,0 +1,33 @@
+{
+    "main_topic": {
+        "author": "OminousDude",
+        "title": "Model randomly taking 30-100x the avg time to run",
+        "content": "I am currently getting a lot of errors like this:\n\nWhy is this happening most of my runs take only about 4 to 6 seconds. Has anyone else had this error? Thanks in advance!\n\n",
+        "date": "Fri Jun 28 2024 22:55:45 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Sumo",
+            "content": "not sure how relevant our experiences are, but we found a couple cases that can lead into this issue\n\n- huggingface model offloading some weights to the CPU instead of putting them all on GPU,there's a flag to disable this behaviour\n\n- model not reaching its stop token:\nthe model is a base model rather than a chat or an instruct model, these model just go on forever\nthe model is used behind some library with its internal retry mechanism (looking at you dspy), these libraries tend to prompt the model over and over until it got the right structure from the model, and this leads to some cryptic time variances\n\nlooking at your times there's a massive jump, which might hint you're making some conditional switching? like switching between hard-coded questions to an actual llm? If that's the case it's probably where to check first\n\n",
+            "date": "Posted a month ago  ·  161st in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "OminousDudeTopic Author",
+                    "content": "Thank you very much!\n\n",
+                    "date": "Posted a month ago  ·  451st in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Matthew S Farmer",
+            "content": "Haven't seen this in mine. \n\n",
+            "date": "Posted a month ago  ·  176th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

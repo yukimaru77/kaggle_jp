@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "Michael Kamal 92",
+        "title": "i want help what i should be do ?",
+        "content": "I understand, make 2 agent, one to make ask, second to make guess.\n\n guess from answer questions from vs agent. \n\nwhat i should be do? train 2 models ? one for asks, second to guess ?\n\n this first time to make thing like this  \n\n",
+        "date": "Tue Jun 11 2024 20:49:10 GMT+0900 (日本標準時)",
+        "votes": "3"
+    },
+    "comments": [
+        {
+            "author": "Matthew S Farmer",
+            "content": "For learning, I would attempt to prompt and constrain a pre-trained agent like Gemma. The starter notebook can help you with that. Even a well-trained LLM has trouble with deterministic thinking and game-like constraints. This is a hard competition. Don't take my word for it, find the best LLM chat you have access to and attempt to play 20 questions with it. \n\n",
+            "date": "Posted 2 months ago  ·  176th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Michael Kamal 92Topic Author",
+                    "content": "Thank you, i will try with Gemma to understand what happened 😁\n\n",
+                    "date": "Posted 2 months ago  ·  401st in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

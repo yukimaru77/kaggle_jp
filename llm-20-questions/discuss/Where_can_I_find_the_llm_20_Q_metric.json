@@ -1,0 +1,34 @@
+{
+    "main_topic": {
+        "author": "OminousDude",
+        "title": "Where can I find the llm 20 Q metric?",
+        "content": "Basically, the title wanted to be able to test my models. 😁\n\n",
+        "date": "Sat Jun 29 2024 07:03:28 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Chris Deotte",
+            "content": "The \"metric\" is how our overall LB increases which uses a formula based on number of games we have previously played. However during validation I do not think we can use this.\n\nFor validation, I think we just want accuracy and speed of win. In other words optimize our models to correctly guess word in 20 questions and guess in the fewest number of guesses (i.e << 20)\n\n",
+            "date": "Posted a month ago  ·  637th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "OminousDudeTopic Author",
+                    "content": "Ok, Thank you!\n\n",
+                    "date": "Posted a month ago  ·  451st in this Competition",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "OminousDudeTopic Author",
+                            "content": "Sorry but this is not what I meant I wanted to know if I could find how the zipped models are played against eachother\n\n",
+                            "date": "Posted a month ago  ·  451st in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

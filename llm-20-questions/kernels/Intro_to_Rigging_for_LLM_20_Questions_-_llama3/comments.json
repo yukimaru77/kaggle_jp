@@ -1,0 +1,108 @@
+{
+    "comments": [
+        {
+            "author": "Bhanu Prakash M",
+            "content": "Hi [@robikscube](https://www.kaggle.com/robikscube),\n\nCan I know how you got the vLLM server to run? because after I set the debugging to true, it gives the following error\n\nINFO 06-18 21:44:58 selector.py:69] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.\n\nINFO 06-18 21:44:58 selector.py:32] Using XFormers backend.\n\nand a long Traceback error with the final statement being\n\nValueError: Bfloat16 is only supported on GPUs with compute capability of at least 8.0. Your Tesla P100-PCIE-16GB GPU has compute capability 6.0. You can use float16 instead by explicitly setting thedtype flag in CLI, for example: --dtype=half\n\n",
+            "date": "Posted a month ago  ·  Posted on Version 15 of \n        15",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Rob MullaTopic Author",
+                    "content": "What model are you trying to run?\n\n",
+                    "date": "Posted a month ago  ·  Posted on Version 15 of \n        15",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Bhanu Prakash M",
+                            "content": "phi-3 model with its weight layers converted to llama format\n\n[https://huggingface.co/rhysjones/Phi-3-mini-mango-1-llamafied](https://huggingface.co/rhysjones/Phi-3-mini-mango-1-llamafied)\n\nthis is the exact model\n\n",
+                            "date": "Posted a month ago  ·  Posted on Version 15 of \n        15",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Bhanu Prakash M",
+                            "content": "[@robikscube](https://www.kaggle.com/robikscube) any update?\n\n",
+                            "date": "Posted a month ago  ·  Posted on Version 15 of \n        15",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Rob MullaTopic Author",
+                            "content": "Got it working here: [https://www.kaggle.com/code/robikscube/phi3-intro-to-rigging-for-llm-20-questions/](https://www.kaggle.com/code/robikscube/phi3-intro-to-rigging-for-llm-20-questions/)\n\n",
+                            "date": "Posted a month ago  ·  Posted on Version 15 of \n        15",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "OminousDude",
+            "content": "Why am I getting the error \"Process did not open port 9999 within 120 seconds\"? [@robikscube](https://www.kaggle.com/robikscube)\n\n",
+            "date": "Posted 2 months ago  ·  Posted on Version 9 of \n        15",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Rob MullaTopic Author",
+                    "content": "Let me take a look! Thanks for the heads up.\n\n",
+                    "date": "Posted 2 months ago  ·  Posted on Version 9 of \n        15",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "OminousDude",
+                            "content": "Thank you very much! I am just experimenting with rigging to speed up my code I use a model that does not fit in the time allocation and this code really helps me!\n\n",
+                            "date": "Posted 2 months ago  ·  Posted on Version 9 of \n        15",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "OminousDude",
+            "content": "Hi I was testing your code but when I ran it the code failed with the exception of \"AttributeError: 'coroutine' object has no attribute 'last'\n\n\". Have you had this error?\n\n",
+            "date": "Posted 2 months ago  ·  Posted on Version 6 of \n        15",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Rob MullaTopic Author",
+                    "content": "Thanks for letting me know. I'm seeing that too. We're actively developing rigging and this appears to be a change made from our latest release. I'm updating the notebook to fix the change, or I may just pin an older version of rigging that should fix the problem.\n\n",
+                    "date": "Posted 2 months ago  ·  Posted on Version 6 of \n        15",
+                    "votes": "2",
+                    "reply": [
+                        {
+                            "author": "OminousDude",
+                            "content": "ok thank you!\n\n",
+                            "date": "Posted 2 months ago  ·  Posted on Version 7 of \n        15",
+                            "votes": "1",
+                            "reply": []
+                        },
+                        {
+                            "author": "OminousDude",
+                            "content": "Does version 7 work?\n\n",
+                            "date": "Posted 2 months ago  ·  Posted on Version 7 of \n        15",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "OminousDude",
+            "content": "I am trying this on my local machine and it is not working do you have any idea why? [@robikscube](https://www.kaggle.com/robikscube) \n\n",
+            "date": "Posted a month ago  ·  Posted on Version 15 of \n        15",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "OminousDude",
+            "content": "Not sure if this is a bug but this code only works with the \"solidrust/Meta-Llama-3-8B-Instruct-hf-AWQ\". I noticed this while experimenting with your code trying to use a larger version of Llama.\n\n",
+            "date": "Posted a month ago  ·  Posted on Version 15 of \n        15",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

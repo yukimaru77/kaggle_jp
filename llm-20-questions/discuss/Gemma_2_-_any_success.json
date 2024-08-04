@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "VassiliPh",
+        "title": "Gemma 2 - any success?",
+        "content": "Has anyone succeeded in using new Gemma 2 (it was just released today) for this competition?\n\n[https://www.kaggle.com/models/google/gemma-2/keras](https://www.kaggle.com/models/google/gemma-2/keras)\n\n",
+        "date": "Fri Jun 28 2024 03:36:25 GMT+0900 (日本標準時)",
+        "votes": "2"
+    },
+    "comments": [
+        {
+            "author": "Kasahara",
+            "content": "I couldn't run it due to a GPU memory error. \n\nSo, I downloaded the LLM locally as shown in [this code](https://www.kaggle.com/code/kasafumi/gemma2-9b-it-llm20-questions), and it worked in my test environment.\n\nHowever, creating the submit file would exceed the capacity of the output directory, so i could not submit.\n\n",
+            "date": "Posted 25 days ago  ·  53rd in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Mitsutani",
+                    "content": "I've been trying to use Gemma 2 as well. I downloaded your notebook's output and compressed it on my computer, then submitted the compressed file but it didn't pass validation (the logs were empty). Do you have any idea why that could be or how to change the code so that main.py runs only on the files in /submission? I'm new to this so any help is appreciated. \n\n",
+                    "date": "Posted 23 days ago  ·  56th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

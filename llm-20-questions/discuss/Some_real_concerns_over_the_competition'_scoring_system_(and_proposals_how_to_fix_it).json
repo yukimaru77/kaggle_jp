@@ -1,0 +1,93 @@
+{
+    "main_topic": {
+        "author": "Kha Vo",
+        "title": "Some real concerns over the competition' scoring system (and proposals how to fix it)",
+        "content": "Hi Kaggle Team,\n\nI am truly interested in competing in this competition, but the concerns raised below also truly made me lose most interest in it. I hope you can review and make comments or adjustment to the game design, to attract more people into the contest.\n\n1. There are no true competitiveness in the match-up\n\nUnlike all of the previous Kaggle simulation competitions (Halite, Rock/Paper/Scissors, Snake, ….) where there are real \"versus\" match, this \"20 Questions Game\" actually does NOT have any aspects for the \"versus\" at all. In specific, how a team (composed of a questioner and an answerer) performs in a match does NOT have any impact to the opponent's team. As a result, pairing to form a match-up makes no sense. Indeed, just forming 1 team for a single \"testing\" and count the number of questions needed to guess the correct keyword should be a much better metric on the LB.\n\n2. Tied games (games resulting a draw) are so populous, devastating to the higher ranked bots, and inexplicably rewarding to the lower ranked bots\n\nSince the match-up is not truly competitive at all (explain in point 1), it is converged to the notion that each bot just needs to care for its own sake, not caring anything else, not even the opponent's team. However, this is still so far to guess the correct keyword. The perfect questioner still depends heavily on the answerer to be able to correctly guess the keyword.\n\nIn short, to actually \"WIN\" a game is so difficult. It needs to have 3 following aspects to form a win: a) The questioner must be very good in playing \"20 questions\". b) The answerer must be at least a valid (and good) LLM. and c) No error formed by any of the 4 bots\n\nI saw one of my bots amazingly guessed out the keyword in 4 steps, got 45 points on the LB, jumped to 1st place. Then, in 3 next consecutive games it acts as the answerer and at least draws all games, but still got heavily deducted until it cancels out that amazing win.\n\nThe ratio between a good win and the tied games is extremely low. Hence, the mechanism of point deduction in tied games for higher ranked bots (and also increasing points for lower bots) need to be rectified, otherwise good bots can never surface on the top of the LB.\n\nHowever, making rectifying on the scoring like that still poses some other weaknesses that we still can't foresee. I still prefer changing the match-up format to the \"testing\" metric, that is: single question-answerer pairing only with no matchup, and LB is based on the average metric such as:\n\n0.8* (average number of questions needed to guess correctly as the questioner) + 0.2 * (average number of questions needed to guess correctly as the answerer)\n\nPlease have a look and my points.\n\n[@bovard](https://www.kaggle.com/bovard) [@addisonhoward](https://www.kaggle.com/addisonhoward) [@mylesoneill](https://www.kaggle.com/mylesoneill) \n\n",
+        "date": "Tue Jun 04 2024 11:42:45 GMT+0900 (日本標準時)",
+        "votes": "8"
+    },
+    "comments": [
+        {
+            "author": "Bovard Doerschuk-Tiberi",
+            "content": "Thanks for your thoughtful post, we are looking into options for getting better ratings signals. Will update when we have something to share!\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "5",
+            "reply": [
+                {
+                    "author": "Bovard Doerschuk-Tiberi",
+                    "content": "We've adjusted the scoring algorithm to increase the rating gain/loss from win/loss and reduce the rating gain/loss from ties. This should be live now but it may take us a bit to dial it in correctly.\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "4",
+                    "reply": [
+                        {
+                            "author": "Bovard Doerschuk-Tiberi",
+                            "content": "You can see the effects of this new scoring paradigm here: [https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-submission-38522755](https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-submission-38522755)\n\nLosing < 5 points for a tie and getting 50+ for a win\n\n",
+                            "date": "Posted 2 months ago",
+                            "votes": "4",
+                            "reply": []
+                        },
+                        {
+                            "author": "Kha VoTopic Author",
+                            "content": "[@bovard](https://www.kaggle.com/bovard) I think losing points in tied games must also be strictly positive although can be small (a good team must be deducted at least 1 point in tied game with lower bots). It can't be 0 otherwise you'll have many local minima on the LB, all will come to luck when a new bot is submitted: who will it be paird to.\n\n",
+                            "date": "Posted 2 months ago  ·  17th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                },
+                {
+                    "author": "Kha VoTopic Author",
+                    "content": "That looks better! Thanks Bovard. \n\n",
+                    "date": "Posted 2 months ago  ·  17th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "tr",
+            "content": "I think pairing just 2 agents (both as questioner and answerer) instead of 4 different engines would solve most problems with scoring system and still keep the original goal of the competition. Probably also a minor change for the hosts, but the scoring should also change, since there is no more competitiveness between pairs.\n\n",
+            "date": "Posted 2 months ago  ·  253rd in this Competition",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "JavaZero",
+                    "content": "This can lead to malicious misdirection and prevent the adversary from guessing the correct key word\n\n",
+                    "date": "Posted 2 months ago  ·  345th in this Competition",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "Kha VoTopic Author",
+                            "content": "[@jimmyisme1](https://www.kaggle.com/jimmyisme1) How?\n\n",
+                            "date": "Posted 2 months ago  ·  17th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Giba",
+            "content": "I posted about it last week but got no reaction at all. LB right now is a periodic random shuffle. Only hosts can fix the scoring system.\n\nTo be fair, agents should simply alternate between questioner and answerer at each game. Guessers agent should be given much more points than answerers. A Draw should give zero (or -1) points to everyone independent of the level/skill.\n\n",
+            "date": "Posted 2 months ago  ·  5th in this Competition",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "Kha VoTopic Author",
+                    "content": "Right Giba. The most annoying part is that a bad answerer will damage the good guesser so much\n\n",
+                    "date": "Posted 2 months ago  ·  17th in this Competition",
+                    "votes": "2",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "RS Turley",
+            "content": "Many of these problems arise from there being very little differentiation across rankings in the early leaderboard—so low quality agents are getting matched in with high quality ones and dragging them down. \n\nEven a small change (like this week’s keyword update?) that creates more differentiation in LB scores might solve these issues as low quality agents drop in score and high quality agents match with each other more frequently. \n\n",
+            "date": "Posted 2 months ago  ·  107th in this Competition",
+            "votes": "2",
+            "reply": []
+        }
+    ]
+}

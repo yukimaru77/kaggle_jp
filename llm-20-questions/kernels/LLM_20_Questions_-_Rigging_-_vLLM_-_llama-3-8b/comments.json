@@ -1,0 +1,27 @@
+{
+    "comments": [
+        {
+            "author": "OminousDude",
+            "content": "Hi I was testing your code but when I ran it the code failed with the exception of \"AttributeError: 'coroutine' object has no attribute 'last'\n\n\". Have you had this error before?\n\n",
+            "date": "Posted 2 months ago  ·  Posted on Version 12 of \n        13",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Rob Mulla",
+                    "content": "[@max1mum](https://www.kaggle.com/max1mum) - this is due to a new release of rigging that has some breaking changes with previous versions.\n\nTry using pinned versions of the packages. Just change the install cell to this and it should work.\n\n```\n# Dependencies (uv for speed)\n!pip install uv==0.1.45\n\n!uv pip install -U \\\n    --python $(which python) \\\n    --target /kaggle/tmp/lib \\\n    rigging==1.1.1 \\\n    kaggle\n\n!uv pip install -U \\\n    --python $(which python) \\\n    --target /kaggle/tmp/srvlib \\\n    vllm==0.4.2\n\n```\n\n",
+                    "date": "Posted 2 months ago  ·  Posted on Version 13 of \n        13",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "OminousDude",
+                            "content": "Thank you very much!!!\n\n",
+                            "date": "Posted 2 months ago  ·  Posted on Version 13 of \n        13",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

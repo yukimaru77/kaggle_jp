@@ -1,0 +1,48 @@
+{
+    "main_topic": {
+        "author": "Naive Experimentalist",
+        "title": "What is \"jane\"?",
+        "content": "As a non-native language speaker, Jane has always been just a name of a person. Checked out in GPT, and it also thinks \"Jane\" is just a name.\n\nUnderstanding that as of now, in the set of secret keywords being used in episodes there are 500 location (from keywords.py), 500 things (from keywords.py), and 1000 new things (the hidden set), I have a real problem to understand where the keyword \"Jane\" came from. \n\nCan someone help?\n\nBTW. My bot trained for persons also was magically able to guess this name 🔥🔥🔥\n\n",
+        "date": "Tue Jul 09 2024 19:44:35 GMT+0900 (日本標準時)",
+        "votes": "5"
+    },
+    "comments": [
+        {
+            "author": "kaoutar",
+            "content": "[@kowjan1](https://www.kaggle.com/kowjan1) does the keywords.py file contain things?? mine contains only locations, i am looking at the wrong file?\n\n",
+            "date": "Posted 21 days ago  ·  175th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Naive ExperimentalistTopic Author",
+                    "content": "Look at GitHub Kaggle environments. There you will find keywords with places and things\n\n",
+                    "date": "Posted 21 days ago  ·  144th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "genesogenesis",
+            "content": "Hello,\n\nSlang. For a girl or woman.\n\nBest,\n\n",
+            "date": "Posted 21 days ago  ·  390th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Krens",
+            "content": "This does confuse me. According to the [previous statement](https://www.kaggle.com/competitions/llm-20-questions/discussion/512955#2884981), peoplecategory has been deleted, maybe given name has been classified as thing?\n\n",
+            "date": "Posted 25 days ago  ·  475th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "OminousDude",
+                    "content": "Might be a typo or something for example \"jane\" is close to \"jade\"\n\n",
+                    "date": "Posted 25 days ago  ·  451st in this Competition",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

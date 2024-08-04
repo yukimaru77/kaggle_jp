@@ -1,0 +1,115 @@
+{
+    "main_topic": {
+        "author": "Khoi Nguyen",
+        "title": "Scope of keywords.py",
+        "content": "A few questions since there is no description (yet):\n\n- Are the keywords there also the ones actually used for the first phase or are they just for debugging?\n\n- Will the second phase (private test) contains categories outside of the 3 in there?\n\n",
+        "date": "Thu May 16 2024 17:49:23 GMT+0900 (日本標準時)",
+        "votes": "20"
+    },
+    "comments": [
+        {
+            "author": "Duke Silver",
+            "content": "It feels like public leaderboard doesn't really represent the private leaderboard very well.\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Chris Deotte",
+                    "content": "True. The solutions which are successful on public LB will be much different than successful models on private LB. (Because we have list of possible keywords for public LB but do not for private LB). None-the-less both offer learning opportunities for the other.\n\n",
+                    "date": "Posted 2 months ago  ·  637th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Duke Silver",
+                            "content": "It seems like it could be better to train models on words outside of the keywords given as well to make the model more adaptive\n\n",
+                            "date": "Posted 2 months ago",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Bovard Doerschuk-Tiberi",
+            "content": "[@suicaokhoailang](https://www.kaggle.com/suicaokhoailang) We are considering a few options here on expanding the word list and giving guidance on categories for the second phase. We will make an announcement when it's decided.\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "4",
+            "reply": []
+        },
+        {
+            "author": "Rob Mulla",
+            "content": "I have similar questions. From what I gather reading the competition description and looking at the keywords used in games on the leaderboard:\n\n- Current games look like they only use the subsection of keywords provided in keywords.py\n\n- After the submission deadline there will be a new set of keywords used.\n\nFrom the [evaluation section](www.kaggle.com/competitions/llm-20-questions/overview/evaluation): \n\n\"At the submission deadline on August 13, 2024, submissions will be locked. From August 13, 2024 to August 27th, 2024 we will continue to run episodes against a new set of unpublished, secret words. At the conclusion of this period, the leaderboard is final.\"\n\nThis might mean that the \"pre-deadline\" leaderboard is going to be overfit to these words unfortunately.\n\n",
+            "date": "Posted 3 months ago  ·  50th in this Competition",
+            "votes": "4",
+            "reply": [
+                {
+                    "author": "G John Rao",
+                    "content": "The keywords will be within those three categories? This is the real question that needs to be answered by the hosts\n\n",
+                    "date": "Posted 2 months ago  ·  168th in this Competition",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "Bovard Doerschuk-Tiberi",
+                            "content": "Stay tuned, we'll make an announcement to address this. Thank you!\n\n",
+                            "date": "Posted 2 months ago",
+                            "votes": "1",
+                            "reply": []
+                        },
+                        {
+                            "author": "Chandresh J Sutariya",
+                            "content": "any update??\n\n",
+                            "date": "Posted 2 months ago  ·  127th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "alekh",
+            "content": "Is the keyword.py file included in the environment? i.e. can i read it and feed it to my agent?\n\n",
+            "date": "Posted 2 months ago  ·  399th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Bovard Doerschuk-Tiberi",
+                    "content": "keyword.py is indeed contained in the kaggle-environment pip package. However I advise against using it, agents will not have access to the final list published after the submission deadline:\n\nFinal Evaluation\n\n  At the submission deadline on August 13, 2024, submissions will be locked. From August 13, 2024 to August 27th, 2024 we will continue to run episodes against a new set of unpublished, secret words. At the conclusion of this period, the leaderboard is final.\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "2",
+                    "reply": [
+                        {
+                            "author": "VolodymyrBilyachat",
+                            "content": "Will it be just new keywords in those categories or new categories too?\n\n",
+                            "date": "Posted 2 months ago  ·  214th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "Gavin Cao",
+                            "content": "\"agents will not have access to the final list published after the submission deadline.\"  does it mean agent could not read keyword.py after August 13? or the final list will be different from the content of  keyword.py?\n\n",
+                            "date": "Posted a month ago  ·  260th in this Competition",
+                            "votes": "2",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Sheema Zain",
+            "content": "Looks like there is just those 3 categories!\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "VolodymyrBilyachat",
+            "content": "Looks like there is just those 3 categories\n\n",
+            "date": "Posted 3 months ago  ·  214th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

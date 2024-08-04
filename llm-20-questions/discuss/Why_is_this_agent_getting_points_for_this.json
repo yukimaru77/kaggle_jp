@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "OminousDude",
+        "title": "Why is this agent getting points for this?",
+        "content": "I am activaly checking the LB and when I saw this I knew something was off. How did hsling get +27 for this? Is there another bug in the loss function or something?\n\n[https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-episode-54945938](https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-episode-54945938)\n\nThis one didn't have a score increase (it was 0) but still what?!?!\n\n[https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-episode-54945203](https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-episode-54945203)\n\n",
+        "date": "Mon Jun 03 2024 11:13:00 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Bovard Doerschuk-Tiberi",
+            "content": "First game:\n\n[1st] hsling 601 (+27)\n\n[1st] Phạm Huỳnh Thiên Phú 599 (+7)\n\n[Err] mhericks 578 (-74)\n\n[1st] Toon 597 (+28)\n\nmhericks agent errored out, so it counts as a loss for that agent and all other agents get 1st place. When they win they compare their collective rating vs mhericks rating which should give them an expected probability of winning. In this case all of the agents are relatively the same rated.\n\nHowever this is also a second component of our scoring system, an uncertainty term that decays as agents play more game. In this case both Toon and hsling have a larger uncertainty term (so they get more rating from the game) than Pham team (who receives less rating)\n\nSecond game:\n\n[1st] hsling 599 (-0)\n\n[1st] ITASps 599 (-0)\n\n[1st] Gauranshu Rathee 596 (+1)\n\n[1st] Guan 600 (-0)\n\nThe game result here was a tie (everyone on 1st place) and everyone is similarly rated so the expected change in rating should be quite small. Besides the -0 here, this looks expected.\n\nLet me know if you have any other questions!\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "OminousDudeTopic Author",
+                    "content": "Thank you very much for this explanation didn't see the error in the first one!\n\n",
+                    "date": "Posted 2 months ago  ·  450th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

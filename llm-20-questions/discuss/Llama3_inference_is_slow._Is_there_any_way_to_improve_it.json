@@ -1,0 +1,49 @@
+{
+    "main_topic": {
+        "author": "yamitomo",
+        "title": "Llama3 inference is slow. Is there any way to improve it?",
+        "content": "It takes more than a minute to generate a single response in Llama3. Is there any way to speed it up?\n\n",
+        "date": "Sun Jul 21 2024 03:18:13 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "torino",
+            "content": "you can use 8 bits or 4 bits quant, i use 4bits then it need about 4-6 minutes in simulation all 20 round on 1 t4 gpu.\n\n",
+            "date": "Posted 14 days ago  ·  49th in this Competition",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "yamitomoTopic Author",
+                    "content": "Thank you, I will try that.\n\n",
+                    "date": "Posted 13 days ago  ·  63rd in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Matthew S Farmer",
+            "content": "Not my experience… Mind posting your code for initiating the model? Are you generating thousands of tokens? Do you have the end token and proper pipeline or chat template loaded? \n\n",
+            "date": "Posted 13 days ago  ·  176th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "yamitomoTopic Author",
+                    "content": "The initialization code is as follows:\n\n```\ntorch.backends.cuda.enable_mem_efficient_sdp(False)\ntorch.backends.cuda.enable_flash_sdp(False)\n\nmodel_id = \"/kaggle/input/llama-3/transformers/8b-chat-hf/1\"\n\nif debug:\n    llm_model = None\nelse:\n    llm_model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.bfloat16, device_map=\"auto\")\n\nquestioner_agent = None\nanswerer_agent = None\nguesser_agent = None\n\ndef initialize_agent(obs):\n    global questioner_agent, answerer_agent, guesser_agent\n    global llm_model\n\n    match obs.turnType:\n        case \"ask\":\n            questioner_agent = Questioner(llm_model, debug)\n        case \"answer\":\n            answerer_agent = Answerer(llm_model, debug)\n        case \"guess\":\n            guesser_agent = Guesser(llm_model, debug)\n\ndef my_agent_fn(obs, cfg):\n    match obs.turnType:\n        case \"ask\":\n            if questioner_agent is None:\n                initialize_agent(obs)\n            return questioner_agent.get_question(obs)\n        case \"answer\":\n            if answerer_agent is None:\n                initialize_agent(obs)\n            return answerer_agent.get_answer(obs)\n        case \"guess\":\n            if guesser_agent is None:\n                initialize_agent(obs)\n            return guesser_agent.get_guess(obs)\n\n```\n\nThe output token generation code is as follows.\n\n```\nfrom transformers import AutoTokenizer, AutoModelForCausalLM\nfrom logging import getLogger\n\nlogger = getLogger(__name__)\n\ndef get_formatted_prompt(prompt, desc=None):\n    prefix = \"| \"\n    modified_prompt = \"\\n\".join(prefix + line for line in prompt.split(\"\\n\"))\n\n    formatted_prompt = \"\"\n    if desc is None:\n        formatted_prompt += (\"-\" * 30) + \"\\n\"\n    else:\n        formatted_prompt += (\"-\" * 15) + f\" {desc} \" + (\"-\" * 15) + \"\\n\"\n    formatted_prompt += modified_prompt + \"\\n\"\n    formatted_prompt += \"-\" * 30\n\n    return formatted_prompt\n\nclass Questioner:\n    def __init__(self, llm_model, debug=False) -> None:\n        print(\"Initializing model (Questioner 004)\")\n\n        self.debug = debug\n\n        # 提出時変更必要！！！！！！！\n        model_id = \"/kaggle/input/llama-3/transformers/8b-chat-hf/1\"\n\n        self.tokenizer = AutoTokenizer.from_pretrained(model_id)\n        self.model = llm_model\n        self.id_eot = self.tokenizer.convert_tokens_to_ids([\"<|eot_id|>\"])[0]\n\n    def get_question(self, obs):\n        sys_prompt = \"\"\"You are a helpful AI assistant, and your are very smart in playing 20 questions game,\n        the user is going to think of a word, it can be only one of the following 3 categories:\n        1. a place\n        2. a person\n        3. a thing\n        So focus your area of search on these options. and give smart questions that narrows down the search space\\n\"\"\"\n\n        ask_prompt = sys_prompt + \"\"\"your role is to find the word by asking him up to 20 questions, your questions to be valid must have only a 'yes' or 'no' answer.\n        to help you, here's an example of how it should work assuming that the keyword is Morocco:\n        examle:\n        <you: is it a place?\n        user: yes\n        you: is it in europe?\n        user: no\n        you: is it in africa?\n        user: yes\n        you: do most people living there have dark skin?\n        user: no\n        user: is it a country name starting by m ?\n        you: yes\n        you: is it Morocco?\n        user: yes.>\n\n        the user has chosen the word, ask your first question!\n        please be short and not verbose, give only one question, no extra word!\"\"\"\n\n        chat_template = f\"\"\"<|begin_of_text|><|start_header_id|>system<|end_header_id|>\\n\\n{ask_prompt}<|eot_id|>\"\"\"\n\n        chat_template += \"<|start_header_id|>assistant<|end_header_id|>\\n\\n\"\n\n        if len(obs.questions) >= 1:\n            for q, a in zip(obs.questions, obs.answers):\n                chat_template += f\"{q}<|eot_id|><|start_header_id|>user<|end_header_id|>\\n\\n\"\n                chat_template += f\"{a}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\\n\\n\"\n\n        question = self._call_llm(chat_template)\n\n        return question\n\n    def _call_llm(self, prompt):\n        # print_prompt(prompt=prompt, desc=\"prompt to generate QUESTION\")\n        logger.debug(\"\\n\\n\" + get_formatted_prompt(prompt=prompt, desc=\"prompt to generate QUESTION\"))\n\n        if self.debug:\n            return \"Is it a bug?\"\n\n        inp_ids = self.tokenizer(prompt, return_tensors=\"pt\").to(\"cuda\")\n\n        # max_new_tokens必要か？？？？\n        out_ids = self.model.generate(**inp_ids, max_new_tokens=15).squeeze()\n\n        start_gen = inp_ids.input_ids.shape[1]\n        out_ids = out_ids[start_gen:]\n\n        if self.id_eot in out_ids:\n            stop = out_ids.tolist().index(self.id_eot)\n            out = self.tokenizer.decode(out_ids[:stop])\n        else:\n            out = self.tokenizer.decode(out_ids)\n\n        return out\n\n```\n\n",
+                    "date": "Posted 13 days ago  ·  63rd in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "yamitomoTopic Author",
+                            "content": "I get output like this, is it relevant?\n\n```\nSetting `pad_token_id` to `eos_token_id`:128001 for open-end generation.\n\n```\n\n",
+                            "date": "Posted 13 days ago  ·  63rd in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

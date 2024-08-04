@@ -1,0 +1,34 @@
+{
+    "main_topic": {
+        "author": "Cody Creed",
+        "title": "Binary Search Strategy",
+        "content": "Is there a team that is pursuing binary search strategy to eliminate half the possibilities each time? It would require a lot of tokens in the question. \n\nI would like to join that team. I’m a teacher, and only a code dabbler but I like that strategy from playing “guess who.”\n\n",
+        "date": "Fri May 24 2024 05:07:53 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Bovard Doerschuk-Tiberi",
+            "content": "The max question length is 2000 characters which would limit this strategy.\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Cody CreedTopic Author",
+                    "content": "I know so little about this that I believe it’s still possible. Now I will have to try. \n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "OminousDude",
+                            "content": "Would something like this be allowed in this competition though?\n\n",
+                            "date": "Posted 2 months ago  ·  450th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

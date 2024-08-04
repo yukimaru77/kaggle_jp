@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "Araik Tamazian",
+        "title": "[SOLVED] Are answers case insensitive?",
+        "content": "Do we count an answer to be correct if it's the same regardless of letters cases, or it needs no be exactly the same?\n\nLike: keyword is \"car\" - LLM answer is \"Car\" - is it the correct answer or not?\n\n",
+        "date": "Fri Jul 05 2024 19:55:09 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "waechter",
+            "content": "Yes answers are case insensitive\n\nIn llm_20_questions.py you will find the function used:\n\n```\ndef keyword_guessed(guess: str) -> bool:\n    def normalize(s: str) -> str:\n      t = str.maketrans(\"\", \"\", string.punctuation)\n      return s.lower().replace(\"the\", \"\").replace(\" \", \"\").translate(t)\n\n    if normalize(guess) == normalize(keyword):\n      return True\n    for s in alts:\n      if normalize(s) == normalize(guess):\n        return True\n\n    return False\n\n```\n\n\"THE CAR\", \"CAR\", \"Car,\" etc.. are correct answers for the keyword \"car\"\n\n",
+            "date": "Posted a month ago  ·  201st in this Competition",
+            "votes": "2",
+            "reply": []
+        }
+    ]
+}

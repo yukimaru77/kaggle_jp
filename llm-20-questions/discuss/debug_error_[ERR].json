@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "Paul Pawletta",
+        "title": "debug error [ERR]",
+        "content": "just joined the competition now and ran the LLama 8B notebook as a test submission. It works fine until one round where the agent gets penalized with -237 in one round.\n\nThe replay works fine until the very end and the agent logs don't show anything 🤷‍♂️ Did anyone encounter this issue too or knows ways to debug this?\n\n",
+        "date": "Wed Jul 31 2024 00:32:11 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "waechter",
+            "content": "To help you debug you can add print to your submission, you will see them in stdout\n\nMake sure your response follows the [rules](https://www.kaggle.com/competitions/llm-20-questions/overview/20-questions-rules)\n\n",
+            "date": "Posted 4 days ago  ·  201st in this Competition",
+            "votes": "2",
+            "reply": []
+        }
+    ]
+}

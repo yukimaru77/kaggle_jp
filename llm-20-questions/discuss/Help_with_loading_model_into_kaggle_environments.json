@@ -1,0 +1,33 @@
+{
+    "main_topic": {
+        "author": "Matthew S Farmer",
+        "title": "Help with loading model into kaggle environments",
+        "content": "Hey all, \n\nI've tried way too many times to save a model locally and get it to be accepted during the validation phase after submission. Any tips?\n\nModel, weights, tokenizer are all part of the submission tarball along with my submission file but I continue to fail validation. I've already been using Gemma as shown in the started notebook but I would like to try other LLMs. I've loaded HF snapshots, cloned git repos, copied steps from public code, but no luck. \n\nIs there documentation about the kaggle game environment that I'm missing? \n\nThanks for any assistance. \n\nCheers!\n\n",
+        "date": "Thu Jun 27 2024 11:22:36 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Chris Deotte",
+            "content": "Hi. I explain the procedure [here](https://www.kaggle.com/competitions/llm-20-questions/discussion/513759)\n\n",
+            "date": "Posted a month ago  ·  637th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Matthew S FarmerTopic Author",
+                    "content": "Thanks, Chris. \n\n",
+                    "date": "Posted a month ago  ·  176th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Gnidnatsuot",
+            "content": "maybe show part of your code for loading?\n\n",
+            "date": "Posted a month ago",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

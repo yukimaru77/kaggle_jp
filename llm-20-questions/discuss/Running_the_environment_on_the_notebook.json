@@ -1,0 +1,47 @@
+{
+    "main_topic": {
+        "author": "EduMI95",
+        "title": "Running the environment on the notebook ",
+        "content": "Has anyone managed to run the kaggle_environments library environment on your notebook (either from kaggle or on your machine)? I have tried to run the notebook code [https://www.kaggle.com/code/jazivxt/llm20q-gemma-2b-it](https://www.kaggle.com/code/jazivxt/llm20q-gemma-2b-it) changing at the end the code to test with various agents:\n\n```\nfrom kaggle_environments import make\nenv = make(\"llm_20_questions\")\n\n#Run Code\n%run submission/main.py\n\nenv.run([get_agent('questioner'), get_agent('answerer'), get_agent('questioner'), get_agent('answerer')])\nenv.render(mode=\"ipython\")\n\n```\n\nAnd I get the following error:\n\n```\nFile /opt/conda/lib/python3.10/site-packages/kaggle_environments/envs/llm_20_questions/llm_20_questions.py:123, in interpreter(state, env)\n    121 active1.observation.category = category\n    122 response = active1.action\n--> 123 if response.lower().__contains__(\"yes\"):\n    124     response = \"yes\"\n    125 elif response.lower().__contains__(\"no\"):\n\nAttributeError: 'NoneType' object has no attribute 'lower'\n\n```\n\n",
+        "date": "Thu May 23 2024 20:07:19 GMT+0900 (日本標準時)",
+        "votes": "4"
+    },
+    "comments": [
+        {
+            "author": "jazivxt",
+            "content": "The environment is working offline if you have enough memory for 4 agents, it errors out on notebooks due to limit of 15Gb memory but runs ok because your only using one agent when submitted.  The issue with responses is in the class GemmaAgent for the raise NotImplementedError at the end.  See changes on my script.\n\n",
+            "date": "Posted 2 months ago  ·  392nd in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "EduMI95Topic Author",
+                    "content": "Perfect! Thanks!\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Lyubomir Klyambarski",
+            "content": "Update your kaggle_environments package.\n\n!pip install 'kaggle_environments>=1.14.8'\n\n",
+            "date": "Posted 2 months ago  ·  321st in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "G John Rao",
+            "content": "I have tried the follow, with some errors yet to fix. Maybe it will help get some ideas\n\n```\nclass Observation:\n    def __init__(self, questions, answers, turnType, keyword=None, category=None):\n        self.questions = questions\n        self.answers = answers\n        self.turnType = turnType\n        self.keyword = keyword\n        self.category = category\n\n```\n\n```\n# Initialize the agents\nquestioner = GemmaQuestionerAgent(\n    device='cpu',  # Use 'cpu'\n    system_prompt=system_prompt,\n    few_shot_examples=few_shot_examples,\n)\n\nanswerer = GemmaAnswererAgent(\n    device='cpu',  # Use 'cpu'\n    system_prompt=system_prompt,\n    few_shot_examples=few_shot_examples,\n)\n\n# Define the initial game state\nquestions = []  # List to hold questions asked\nanswers = []    # List to hold answers given\nturnType = 'ask'  # Initial turn type ('ask' or 'guess' for Questioner, 'answer' for Answerer)\nkeyword = 'France'  # Example keyword for the Answerer\ncategory = 'country'  # Example category for the Answerer\n\n# Simulate the game loop\nfor _ in range(20):  # Play 20 turns or until the keyword is guessed correctly\n    obs = Observation(questions, answers, turnType, keyword, category)\n\n    if obs.turnType == 'ask':\n        # Questioner's turn to ask a question\n        question = questioner(obs)\n        print(f\"Questioner: {question}\")\n        questions.append(question)\n\n        # Answerer's turn to answer the question\n        turnType = 'answer'\n        obs = Observation(questions, answers, turnType, keyword, category)\n        answer = answerer(obs)\n        print(f\"Answerer: {answer}\")\n        answers.append(answer)\n\n        # Switch back to Questioner's turn\n        turnType = 'ask'\n\n    elif obs.turnType == 'guess':\n        # Questioner's turn to guess the keyword\n        guess = questioner(obs)\n        print(f\"Questioner guesses: {guess}\")\n\n        if guess.lower() == keyword.lower():\n            print(\"Questioner guessed the correct keyword!\")\n            break\n        else:\n            print(\"Incorrect guess. Continue playing.\")\n            turnType = 'ask'\n\n    # Simulate ending the game if we want to stop early\n    if len(questions) >= 20:\n        print(\"Reached the maximum number of turns.\")\n        break\n\n```\n\nOutput:\n\n```\nInitializing model\nresponse='Sure, please ask your first question: Is the keyword a food?'\nQuestioner: Sure, please ask your first question: Is the keyword a food?\n\n```\n\nError:\n\n```\nNotImplementedError                       Traceback (most recent call last)\nCell In[16], line 34\n     32 turnType = 'answer'\n     33 obs = Observation(questions, answers, turnType, keyword, category)\n---> 34 answer = answerer(obs)\n     35 print(f\"Answerer: {answer}\")\n     36 answers.append(answer)\n\nCell In[8], line 23, in GemmaAgent.__call__(self, obs, *args)\n     22 def __call__(self, obs, *args):\n---> 23     self._start_session(obs)  # Start a new session with the given observation\n     24     prompt = str(self.formatter)  # Generate the prompt from the formatter\n     25     response = self._call_llm(prompt)  # Get the model's response\n\nCell In[8], line 31, in GemmaAgent._start_session(self, obs)\n     30 def _start_session(self, obs: dict):\n---> 31     raise NotImplementedError\n\nNotImplementedError: \n\n```\n\nI don't understand how the kaggle environment runs the code yet. We have a link to the github repo which I am yet to explore. \n\nhere -> [https://github.com/Kaggle/kaggle-environments](https://github.com/Kaggle/kaggle-environments)\n\n",
+            "date": "Posted 2 months ago  ·  168th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "RS Turley",
+            "content": "Yes, I wrote an example notebook with tips on how to run and debug in the environment. \n\n[https://www.kaggle.com/code/rturley/run-llm-20-questions-in-a-notebook](https://www.kaggle.com/code/rturley/run-llm-20-questions-in-a-notebook)\n\n",
+            "date": "Posted 2 months ago  ·  107th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "main_topic": {
+        "author": "philipha2",
+        "title": "submission problem(Pls help me) ",
+        "content": "I am a beginner in this competition. \n\nI just tried to submit a notebook but it's keep saying \"Validation Episode failed(Error)\" \n\nWhat is the problem?\n\n",
+        "date": "Wed Jul 03 2024 19:48:30 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "Sumo",
+            "content": "hi, you can download the agent logs and see the failure. You'll see either a traceback of a crash, or something about the model taking way too long to load / respond\n\n",
+            "date": "Posted a month ago  ·  161st in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Dheeraj Bhukya",
+                    "content": "I have tried different LLMs, Gemma 2b-it worked but got “validation episode failed” for Gemma 7b-it-quant and Phi 3-mini. I checked agent logs it’s an empty json file. Idk why?\n\n",
+                    "date": "Posted 24 days ago  ·  120th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                },
+                {
+                    "author": "Mitsutani",
+                    "content": "Any idea of what it could be if the logs are completely empty?\n\n",
+                    "date": "Posted 23 days ago  ·  56th in this Competition",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "Sumo",
+                            "content": "normally those will be in other logs, like there are 3 files, the replay logs, agent1, agent2 (or something, I haven't submitted in a while). But the exception can be in any of those files.\n\n",
+                            "date": "Posted 21 days ago  ·  161st in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "gguillard",
+                            "content": "Check the notebook logs for any clue.  My submission logs were empty, I figured there was an apt error in the notebook logs because I disabled internet while the notebook was trying to install pigz.\n\n",
+                            "date": "Posted 20 days ago  ·  75th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

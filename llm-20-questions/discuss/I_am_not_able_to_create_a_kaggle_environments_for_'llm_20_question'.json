@@ -1,0 +1,41 @@
+{
+    "main_topic": {
+        "author": "Rinku Sahu",
+        "title": "I am not able to create a kaggle environments for 'llm_20_question'",
+        "content": "\n\n",
+        "date": "Sun Jun 02 2024 00:47:24 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Josef Leutgeb",
+            "content": "I had the same Issue. Check \n\nimport kaggle_environments\n\nkaggle_environments.__version__\n\nIf it is below 1.14.11 do \n\npip install kaggle_environments==1.14.11\n\nand restart the kernel.\n\n",
+            "date": "Posted 2 months ago  ·  696th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Rinku SahuTopic Author",
+                    "content": "I tried to install newer version and then did import but still it is showing older version of package.\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Bovard Doerschuk-Tiberi",
+            "content": "What version of kaggle-environments are you using? Make sure it's the latest (>= 1.14.11)\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Rinku SahuTopic Author",
+                    "content": "I tried to install the '1.14.11' version but after importing and checking version, it is still showing the '1.14.11'.  following things I tried\n\nUninstall the package '',  but import kaggle_environments still works and gives 1.14.9 version. \nAfter uninstallation, again installed it but still showing older version 1.14.9.\nAfter Installation, I tried to restart the kernal but still older version\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

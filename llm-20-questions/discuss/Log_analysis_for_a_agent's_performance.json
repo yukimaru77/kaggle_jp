@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "VijayaragavanRamasamy",
+        "title": "Log analysis for a agent's performance ",
+        "content": "How to decipher logs? There are 4 players and multiple guesses as well as answers in json. How do I find the guesses or questions asked by my agent?\n\n",
+        "date": "Mon Jun 03 2024 00:33:46 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "waechter",
+            "content": "I made [https://www.kaggle.com/code/waechter/llm-20-questions-games-dataset](https://www.kaggle.com/code/waechter/llm-20-questions-games-dataset) to download json logs, and format them into an easy to use dataset\n\nIn [https://www.kaggle.com/code/waechter/llm-20-questions-leaderbord-analyze-best-agents](https://www.kaggle.com/code/waechter/llm-20-questions-leaderbord-analyze-best-agents) i use the dataset to analyse games from the current best agents. You can use it to analyze your own games \n\nExample:\n\ndf.loc[df.guesser='your_team_name']\n\nHope this help!\n\n",
+            "date": "Posted 2 months ago  ·  201st in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "VijayaragavanRamasamyTopic Author",
+                    "content": "Thanks. I will try analysing json logs using this approach \n\n",
+                    "date": "Posted 2 months ago  ·  245th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

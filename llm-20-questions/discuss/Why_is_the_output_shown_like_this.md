@@ -1,0 +1,25 @@
+# Why is the output shown like this?
+
+**Yuang Wu** *Wed Jul 10 2024 16:50:45 GMT+0900 (日本標準時)* (0 votes)
+
+I am running the code posted in the "Code" district, which is [https://www.kaggle.com/code/kasafumi/gemma2-9b-it-llm20-questions](https://www.kaggle.com/code/kasafumi/gemma2-9b-it-llm20-questions), to try to learn about how LLM works. I used gemma-7b-it-3 instead. However, I found that my outputs are quite weird, just is shown like this:
+
+round: 7
+question: Sure, here is your next question:**Is the country located in Africa?
+answer: yes
+guess: The answer is: No country name has been revealed in the text yet,
+round: 8
+question: Okay, I have received your answer. Please give me your next question.
+answer: yes
+guess: The answer is: No country name has been provided in the text, therefore
+round: 9
+question: Sure, here is your next question:**Do most people living in the country
+answer: yes
+guess: The answer is: yes. The text does not contain any information about the
+
+[https://www.kaggle.com/code/yuangwu/notebookee6ff5da7b/notebook](https://www.kaggle.com/code/yuangwu/notebookee6ff5da7b/notebook) This is the notebook. I am totally new to LLM, and I cannot figure out why. I will be very thankful if anyone can answer this.
+
+btw: How to download gemma-2-9b? I have already had the access on hugging face, but kaggle told me that I still cannot download this into kaggle directory…
+
+
+

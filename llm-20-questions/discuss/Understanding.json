@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "torahman",
+        "title": "Understanding",
+        "content": "I am still trying to understand the theme of this competetion. How I can get the data and how to submit it. Little bit confusing here. Hope someone can clear me out a bit. \n\n",
+        "date": "Mon May 27 2024 08:00:18 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "JAN",
+            "content": "this competition we not submmit the predict result, but a robot, a submission.tar.gz you can check the starter notebook.\n\nMy understanding is all the agent bot we submmit will play the 20 question game together, and find the winner bot.  On the Leaderboard, there is a button show you how the agent bot play the game.\n\n",
+            "date": "Posted 2 months ago  ·  549th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "torahmanTopic Author",
+                    "content": "Thank. you for your information. I think I will submit to the competition. It will be my first time to do it. But before let me check the starter code. \n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "main_topic": {
+        "author": "fauxsmart",
+        "title": "[Offtopic] What got the LB moving",
+        "content": "If anyone is interested, I think the LB got moving from all 600.0 because of this lucky game where the keyword was \"france\". 😀 It is the only non-tied game I have seen this far.\n\n[https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-episode-54792273](https://www.kaggle.com/competitions/llm-20-questions/leaderboard?dialog=episodes-episode-54792273)\n\nLucky, because the example notebook uses \"france\" in its few_shot_examples, which I guess primed the bot.\n\n",
+        "date": "Sat May 18 2024 20:45:39 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Khoi Nguyen",
+            "content": "Wait so all of our agent's questions and answers are public? Does that spoil the whole strategy?\n\n",
+            "date": "Posted 3 months ago",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "fauxsmartTopic Author",
+                    "content": "We can, yes, but I don't see how that matters much -- the game seems too complex to actually \"game\". \n\nThey wouldn't still know how you came to your answers + the keywords will (hopefully) come from a large pool, so creating a lookup table or something like that would be quite costly; you couldn't do it offline unless people submit totally barebones LLM solutions (you would also have to do that for each of many opponents). \n\nAlso, from what I have seen this far, one might want to query an LLM many times per game turn to fix bad answers etc. (gemma-7b for example does not seem to play the game well out-of-the-box). All of those internal \"moves\" would still be hidden.\n\n",
+                    "date": "Posted 3 months ago  ·  340th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Nicholas Broad",
+                            "content": "[@suicaokhoailang](https://www.kaggle.com/suicaokhoailang) ,\n\nGo to the leaderboard and click the play button next to the scores\n\n",
+                            "date": "Posted 3 months ago",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

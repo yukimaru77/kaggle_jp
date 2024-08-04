@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "Octavio Grau",
+        "title": "Disabled submissions due to limit: anyone can help?",
+        "content": "Hi guys,\n\nI have submitted two additional notebooks in our team with [@risanraja32](https://www.kaggle.com/risanraja32) & [@chandreshjsutariya](https://www.kaggle.com/chandreshjsutariya) but the former submissions have become \"Disabled due to the competition's active submission limit\". I have read again the docs of the competition but I can't find info on this limit.\n\nCan someone explain me how many submissions we can have and how does that work to select the valid ones?\n\nThanks!\n\nBest,\n\nOctavio\n\n",
+        "date": "Sat Jun 15 2024 18:59:54 GMT+0900 (日本標準時)",
+        "votes": "3"
+    },
+    "comments": [
+        {
+            "author": "loh-maa",
+            "content": "That's really not a mystery, it is explained in the competition overview, section \"Evaluation\".\n\n",
+            "date": "Posted 2 months ago  ·  2nd in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Octavio GrauTopic Author",
+                    "content": "Thanks! I just missed it [@lohmaa](https://www.kaggle.com/lohmaa) \n\n",
+                    "date": "Posted 2 months ago  ·  127th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

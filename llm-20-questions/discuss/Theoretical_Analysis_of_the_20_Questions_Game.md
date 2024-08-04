@@ -1,0 +1,113 @@
+# Theoretical Analysis of the 20 Questions Game
+
+**ISAKA Tsuyoshi** *Sun Jul 14 2024 10:32:45 GMT+0900 (日本標準時)* (8 votes)
+
+Hello everyone!
+
+I wanted to share an interesting discussion on the strategy and theoretical winning probability in the 20 Questions game. In this post, I will explain how to calculate the winning probability for each round and present the results plotted for different reduction factors.
+
+### Background
+
+The 20 Questions game involves identifying a keyword through Yes/No questions. To calculate the theoretical winning probability, we assume the following conditions:
+
+The number of candidates decreases by a certain factor after each question.
+The game consists of 20 rounds, and the keyword can be guessed in each round.
+
+### Formulas and Calculation Method
+
+Let N be the initial number of keywords, and reduction_factor be the ratio by which the number of candidates decreases in each round.
+
+The number of candidates Nk in round k is given by:
+
+```
+Nk = N * (reduction_factor ^ k)
+
+```
+
+The winning probability Pk in round k is calculated as:
+
+```
+Pk = (1 - sum(Pi for i in range(1, k))) * (1 / Nk)
+
+```
+
+The cumulative winning probability Ck is:
+
+```
+Ck = sum(Pi for i in range(1, k+1))
+
+```
+
+### Calculation and Plotting with Python Code
+
+The following Python code calculates the cumulative winning probability for each round in the 20 Questions game and plots the results for different reduction factors.
+
+```
+import matplotlib.pyplot as plt
+
+def calculate_win_probabilities(N: int, rounds: int, reduction_factor: float) -> list[float]:
+    cumulative_probabilities = []
+    previous_prob = 0
+
+    for k in range(1, rounds + 1):
+        Nk = N * (reduction_factor ** k)
+        current_prob = (1 - previous_prob) * (1 / Nk)
+        previous_prob += current_prob
+        if previous_prob > 1:
+            previous_prob = 1  # Ensure the winning probability does not exceed 1
+        cumulative_probabilities.append(previous_prob)
+
+    return cumulative_probabilities
+
+def plot_cumulative_probabilities(probabilities_dict: dict[float, list[float]]):
+    plt.figure(figsize=(12, 8))
+
+    for reduction_factor, probabilities in probabilities_dict.items():
+        rounds = range(1, len(probabilities) + 1)
+        plt.plot(rounds, probabilities, marker='o', linestyle='-', label=f'Reduction Factor = {reduction_factor}')
+
+    plt.xlabel('Round')
+    plt.ylabel('Cumulative Probability of Winning')
+    plt.title('Cumulative Probability of Winning per Round for Different Reduction Factors')
+    plt.grid(True)
+    plt.xticks(range(1, 21))
+    plt.yticks([i/10 for i in range(11)])
+    plt.ylim(0, 1)
+    plt.legend()
+    plt.show()
+
+def main():
+    N = 1024
+    rounds = 20
+    reduction_factors = [0.5, 0.6, 0.7, 0.8, 0.9, 1.0]  # Reduction factors ranging from 0.5 to 1.0
+    probabilities_dict = {}
+
+    for reduction_factor in reduction_factors:
+        probabilities = calculate_win_probabilities(N, rounds, reduction_factor)
+        probabilities_dict[reduction_factor] = probabilities
+        for i, prob in enumerate(probabilities, 1):
+            print(f"Reduction Factor {reduction_factor}, Round {i}: Cumulative probability of winning = {prob:.10f}")
+
+    plot_cumulative_probabilities(probabilities_dict)
+
+if __name__ == "__main__":
+    main()
+
+```
+
+The graph is shown below:
+
+The source code is provided below. Feel free to modify the parameters and explore different scenarios!
+
+[https://www.kaggle.com/code/isakatsuyoshi/theoretical-analysis-of-the-20-questions-game](https://www.kaggle.com/code/isakatsuyoshi/theoretical-analysis-of-the-20-questions-game)
+
+### Conclusion
+
+This analysis provides a clear understanding of how the probability of identifying the keyword changes with each round of questions. Notably, the variation in winning probability based on different reduction factors serves as a crucial indicator for building effective questioning strategies.
+
+I hope you find this discussion helpful. Please feel free to share any questions or feedback in the comments!
+
+This concludes my theoretical analysis of winning probability and strategy in the 20 Questions game. Thank you for reading!
+
+
+

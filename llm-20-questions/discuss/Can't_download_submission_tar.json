@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "alekh",
+        "title": "Can't download submission tar",
+        "content": "Nothing happens when I click download on the submission tar file. Smaller main.py downloads fine. But nothing happens when I try to download the big tarball…\n\nWhat gives?\n\n",
+        "date": "Mon May 20 2024 13:34:08 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "alekhTopic Author",
+            "content": "Just had to wait. All of the sudden it started, having being downloaded in the background without any progress bar..  Bad UX\n\n",
+            "date": "Posted 2 months ago  ·  399th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

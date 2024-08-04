@@ -1,0 +1,34 @@
+{
+    "main_topic": {
+        "author": "Matthew S Farmer",
+        "title": "Anyone had luck getting quantized models to load in the game environment?",
+        "content": "installing dependencies\n\n```\nimport os\nos.system(\"pip install -t /tmp/submission/lib auto-gptq optimum > /dev/null 2>&1\")\n\n```\n\nsaving the model to my tmp folder. This works for non-quant models, but does not pass validation. \n\n```\nfrom transformers import BitsAndBytesConfig, AutoTokenizer, AutoModelForCausalLM\n\nmodel_id = 'private/my_quant_model_int4'\n\ntokenizer = AutoTokenizer.from_pretrained(\"model_id\")\nmodel = AutoModelForCausalLM.from_pretrained(\n    \"model_id\",\n    device_map=\"cuda:0\"\n)\n\nmodel.save_pretrained(\"/tmp/submission/\")\ntokenizer.save_pretrained(\"/tmp/submission/\")\n\n```\n\nIn my submission .py file\n\n```\nimport os\nimport sys\n\nKAGGLE_AGENT_PATH = \"/kaggle_simulations/agent/\"\nif not os.path.exists(KAGGLE_AGENT_PATH):\n    KAGGLE_AGENT_PATH = \"/tmp/submission/\"\n\nimport sys\nfrom transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig\n\nmodel = AutoModelForCausalLM.from_pretrained(KAGGLE_AGENT_PATH, device_map=\"cuda:0\", torch_dtype=\"auto\")\ntokenizer = AutoTokenizer.from_pretrained(KAGGLE_AGENT_PATH)\n\n```\n\nAll of this works in the notebook but fails validation. The output is limited in stderr but here's what I can see:\n\n```\n[[{\"duration\": 0.166034, \"stdout\": \"\", \"stderr\": \"Traceback (most recent call last):\\n  File \\\"/opt/conda/lib/python3.10/site-packages/kaggle_environments/agent.py\\\", line 50, in get_last_callable\\n    exec(code_object, env)\\n  File \\\"/kaggle_simulations/agent/main.py\\\", line 13, in <module>\\n    model = AutoModelForCausalLM.from_pretrained(KAGGLE_AGENT_PATH, device_map=\\\"cuda:0\\\", torch_dtype=\\\"auto\\\")\\n  File \\\"/opt/conda/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py\\\", line 563, in from_pretrained\\n    return model_class.from_pretrained(\\n  File \\\"/opt/conda/lib/python3.10/site-packages/transformers/modeling_utils.py\\\", line 3192, in from_pretrained\\n    config.quantization_config = AutoHfQuantizer.merge_quantization_configs(\\n  File \\\"/opt/conda/lib/python3.10/site-packages/transformers/quantizers/auto.py\\\", line 157, in merge_quantization_configs\\n    quantization_config = AutoQuantizationConfig.from_dict(quantization_config)\\n  File \\\"/opt/conda/lib/python3.10/site-packages/transformers/quantizers/auto.py\\\", line 87, in from_dict\\n    return target_cls.fro\"}]]\n\n```\n\n",
+        "date": "Wed Jul 03 2024 01:06:04 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Sumo",
+            "content": "hi, I managed! (saving 4-bits checkpoints, then loading it back into the submission) have you verified that bitsandbytes & accelerate is installed into your lib? These aren't native to the kernel and some errors are thrown during loading time without them\n\n",
+            "date": "Posted a month ago  ·  161st in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Matthew S FarmerTopic Author",
+                    "content": "I did verify that bitsandbytes and accelerate were installed to the /lib directory and added to the tarball… since the stderr is truncated, I think it miight be an issue with loading a GPTQ model? not sure. I'll keep trying different methods. \n\n",
+                    "date": "Posted a month ago  ·  176th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "Sumo",
+                            "content": "uhm, much depends on the actual quantization configs used to quantize your models in the first place. \n\nAnother thing is probably to make sure to insert the lib/ folder to be the first item in sys.path, it might be that the transformers in lib/ and transformers have different versions, which might hide the bug and appears to you that things are loading fine in the notebook. Worth turning off the internet as well in case there's some hidden network calls.. we'll never know with HF\n\n",
+                            "date": "Posted a month ago  ·  161st in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

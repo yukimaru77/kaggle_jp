@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "Ali",
+        "title": "[Solved] 75% valid submission!",
+        "content": "Hi, \n\nIt's my first time in such a competition\n\nI am facing a problem like this: \n\nalso here (another sub) : \n\nAny idea why the error happens? suggestions where to debug? \n\n",
+        "date": "Mon Jun 10 2024 12:34:09 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "OminousDude",
+            "content": "You can check the replay of the submission and then click the download \"Agent Logs\" this should show you any problems your model has!\n\n",
+            "date": "Posted 2 months ago  ·  451st in this Competition",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "AliTopic Author",
+                    "content": "Many Thanks, I didn't notice. \n\n",
+                    "date": "Posted 2 months ago  ·  38th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

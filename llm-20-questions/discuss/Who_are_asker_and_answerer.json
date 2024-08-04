@@ -1,0 +1,48 @@
+{
+    "main_topic": {
+        "author": "torino",
+        "title": "Who are asker and answerer?",
+        "content": "\n\nI was confused as I didn't know who was asking and who was answering. Is torino(me) and no apple answering? Can anyone explain?\n\n",
+        "date": "Fri Jul 12 2024 22:32:49 GMT+0900 (日本標準時)",
+        "votes": "7"
+    },
+    "comments": [
+        {
+            "author": "Chris Deotte",
+            "content": "There are two roles questioner and answerer. The top name is questioner and the bottom name is answerer. The questioner both asks questions and makes guesses. The answerer only responds yes or no. Below is an example:\n\n```\nRound 1\nQuestioner: Is it a country?\nAnswerer: yes\nQuestioner: France?\n\nRound 2\nQuestioner: Is the country in Europe?\nAnswerer: no\nQuestioner: China?\n\n```\n\nNotice how the questioner says two things each round and the answerer says one thing each round.\n\n",
+            "date": "Posted 21 days ago  ·  638th in this Competition",
+            "votes": "2",
+            "reply": []
+        },
+        {
+            "author": "OminousDude",
+            "content": "Questioner is top asker is bottom! Hope this helps you!\n\n",
+            "date": "Posted 22 days ago  ·  451st in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "torinoTopic Author",
+                    "content": "hi [@max1mum](https://www.kaggle.com/max1mum),\n\nthat mean kothiwsk28 was ask Is it the place?, right?\n\n",
+                    "date": "Posted 22 days ago  ·  49th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "OminousDude",
+                            "content": "Yes, the game environment visuals are a bit confusing, but yes in this case kothiwsk28 was the questioner.\n\n",
+                            "date": "Posted 22 days ago  ·  451st in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "torinoTopic Author",
+                            "content": "[@max1mum](https://www.kaggle.com/max1mum) thanks.\n\n",
+                            "date": "Posted 22 days ago  ·  49th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

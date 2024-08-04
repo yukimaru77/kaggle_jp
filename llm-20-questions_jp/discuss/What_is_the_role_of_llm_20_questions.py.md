@@ -1,0 +1,43 @@
+# llm_20_questions.py の役割について
+
+**Matthew S Farmer** *水曜日 6月 12日 2024 05:41:55 GMT+0900 (日本標準時)* (0 票)
+
+このコンペティションの文脈と提出物のフォーマットを考えると、入力 .py ファイルの役割がよくわかりません。
+
+入力ノートブックで定義されたエージェントは、提出物で設定されたプロンプトを上書きしますか？
+
+エージェントを作成する際に、この入力ファイルを参照する必要がありますか？
+
+答えが非常に明らかで申し訳ありませんが、ここで学ぼうとしています。
+
+---
+# 他のユーザーからのコメント
+
+> ## loh-maa
+> 
+> llm_20_questions.py については心配する必要はありません。これはゲームを実行するための環境の一部です。agent_fn 関数を実装する必要があります。例：
+> 
+> ```python
+> def agent_fn(obs, cfg):
+>     if obs.turnType == "ask":
+>         response = "Is it a duck?"
+>     elif obs.turnType == "answer":
+>         response = "no"
+>     elif obs.turnType == "guess":
+>         response = "two ducks"
+>     return response
+> 
+> ```
+> 
+> [このノートブック](https://www.kaggle.com/code/rturley/run-debug-llm-20-questions-in-a-notebook) が理解の助けになるはずです。
+> 
+> 
+> 
+---
+
+**要約:**
+
+* `llm_20_questions.py` は、コンペティションのゲームを実行するための環境の一部であり、ユーザーが直接編集する必要はありません。
+* ユーザーは、`agent_fn` 関数を定義して、質問、回答、推測を行うエージェントの動作を定義する必要があります。
+* 提供されたノートブックは、`agent_fn` 関数の定義方法と、エージェントの動作をデバッグする方法を理解するのに役立ちます。 
+

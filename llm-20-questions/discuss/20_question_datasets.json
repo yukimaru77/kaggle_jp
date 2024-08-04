@@ -1,0 +1,10 @@
+{
+    "main_topic": {
+        "author": "alekh",
+        "title": "20 question datasets",
+        "content": "Thought we could make a thread where we share relevant datasets for 20 questions.\n\nI've found these that might be helpful to some:\n\n- [https://huggingface.co/datasets/jtv199/Entity-deduction-arena-20-questions](https://huggingface.co/datasets/jtv199/Entity-deduction-arena-20-questions)\n\n- [https://huggingface.co/datasets/clips/20Q](https://huggingface.co/datasets/clips/20Q)\n\n",
+        "date": "Wed May 22 2024 01:58:55 GMT+0900 (日本標準時)",
+        "votes": "4"
+    },
+    "comments": []
+}

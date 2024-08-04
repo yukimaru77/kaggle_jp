@@ -1,0 +1,33 @@
+{
+    "main_topic": {
+        "author": "Jainam213",
+        "title": "Is this only limited to places?",
+        "content": "Up till now all interactions seem to be limited to locations. In the private set are we just limited to locations or can the word be anything at all ?  Are the categories provided somehow?\n\n",
+        "date": "Thu May 23 2024 18:04:42 GMT+0900 (日本標準時)",
+        "votes": "1"
+    },
+    "comments": [
+        {
+            "author": "Bovard Doerschuk-Tiberi",
+            "content": "Keywords will be limited to person, place or thing. \n\nThe categories are provided to the answering agent to resolve any ambiguity in the keyword. For example \"orange\" the fruit vs \"orange\" the color (which color is more of a concept than a thing, so it wouldn't be included anyway).\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "Jainam213Topic Author",
+                    "content": "Ok thanks!\n\n",
+                    "date": "Posted 2 months ago  ·  330th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Jainam213Topic Author",
+            "content": "Ok let's wait for the organisers:\n\n```\njohnny\nPosted 4 days ago\n\nThe keywords will be within those three categories? This is the real question that needs to be answered by the hosts\n\nBovard Doerschuk-Tiberi\nKAGGLE STAFF\nPosted 2 days ago\n\nStay tuned, we'll make an announcement to address this. Thank you!\n\n```\n\n",
+            "date": "Posted 2 months ago  ·  330th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

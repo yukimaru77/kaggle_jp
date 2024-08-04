@@ -1,0 +1,26 @@
+{
+    "main_topic": {
+        "author": "padeof",
+        "title": "vllm issues",
+        "content": "Anyone be able to run vllm directly by using the LLM class?\n\nTried to fix this \"/kaggle_simulations/agent/srvlib/vllm/_C.cpython-310-x86_64-linux-gnu.so: undefined symbol\" error for a week but no luck…\n\nRunning vllm as a server suffers from random start failures also.\n\nDebugging a notebook submission is so hard 🤣\n\n",
+        "date": "Sun Jul 28 2024 18:41:08 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Chris Deotte",
+            "content": "Here is a code example using vLLM on Kaggle. Even though vLLM is installed, we need to pip upgrade and change some files to make it work on Kaggle. [https://www.kaggle.com/code/cdeotte/infer-34b-with-vllm](https://www.kaggle.com/code/cdeotte/infer-34b-with-vllm)\n\n",
+            "date": "Posted 6 days ago  ·  638th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "padeofTopic Author",
+                    "content": "Thank you! I have read your post.  However, this method does not work at submission time.  Looks like the torch module is loaded before any change made to sys path in agent script.  Thus the binary of vllm and torch do not match\n\n",
+                    "date": "Posted 6 days ago  ·  141st in this Competition",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

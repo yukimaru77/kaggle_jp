@@ -1,0 +1,48 @@
+{
+    "main_topic": {
+        "author": "vj4science",
+        "title": "Final Evaluation - Question",
+        "content": "Need clarification on the below paragraph please? Does the locked 3 submissions start with a score of 600? or do they carry over previously accumulated scores from runs prior to August 13th? \n\n\"Final Evaluation\n\nAt the submission deadline on August 13, 2024, submissions will be locked. From August 13, 2024 to August 27th, 2024 we will continue to run episodes against a new set of unpublished, secret words. During this period only your three active submissions will be eligible for the leaderboard. At the conclusion of this period, the leaderboard is final.\"\n\n",
+        "date": "Sat Jul 27 2024 11:18:16 GMT+0900 (日本標準時)",
+        "votes": "6"
+    },
+    "comments": [
+        {
+            "author": "Mahmoud Elshahed",
+            "content": "Logically, it shall start from scratch on hidden test set, \n\nbecause if not \n\nwith the current public wordlist, you can write script for iteration instead of model building, this lead to high score, \n\nand low decremental score in the evaluation period will keep the user up and won easily.\n\n\"Just My Opinion\" \n\n",
+            "date": "Posted 7 days ago  ·  339th in this Competition",
+            "votes": "4",
+            "reply": [
+                {
+                    "author": "sayoulala",
+                    "content": "Totally agree with you.\n\n",
+                    "date": "Posted 3 days ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Chris Deotte",
+            "content": "Kaggle admin commented [here](https://www.kaggle.com/competitions/llm-20-questions/discussion/512358#2872495)\n\nYes, the current leaderboard will be the seed of your agent going into the final evaluation period. We will ensure that agents receive enough games for the leaderboard to stabilize under the new set of words, so even if your agent is severly under ranked it should not be an issue.\n\n",
+            "date": "Posted 7 days ago  ·  638th in this Competition",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "gguillard",
+                    "content": "That's crazy.\n\n",
+                    "date": "Posted 7 days ago  ·  75th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                },
+                {
+                    "author": "vj4scienceTopic Author",
+                    "content": "Thank You Chris for pointing out to this. I'm not sure if the admins approach is ideal but helps to be aware. Also explains why some of the top agents are not being updated\n\n",
+                    "date": "Posted 6 days ago  ·  10th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

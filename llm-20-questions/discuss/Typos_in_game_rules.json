@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "Kha Vo",
+        "title": "Typos in game rules?",
+        "content": "If neither questioner guesses correctly, the game continues to the next round. The two answerers will each respond to the question from the opposing team's questioner with either \"yes\" or \"no\". Using this information, the questioners will then submit new questions and guesses in the following round.\n\n--> should we replace \"opposing\" with \"teammate's\"?\n\nAny questioner agent responded with anything other than yes or no will result in the game ending and them losing the match.\n\n--> should we replace \"questioner agent\" with \"answerer agent\"?\n\n",
+        "date": "Thu May 16 2024 13:30:14 GMT+0900 (日本標準時)",
+        "votes": "6"
+    },
+    "comments": [
+        {
+            "author": "Addison Howard",
+            "content": "Hi there,\n\nI've updated the language for clarity. Thanks!\n\n",
+            "date": "Posted 3 months ago",
+            "votes": "2",
+            "reply": []
+        }
+    ]
+}

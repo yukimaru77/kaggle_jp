@@ -1,0 +1,77 @@
+{
+    "main_topic": {
+        "author": "c-number",
+        "title": "Let's share LLM models for making questions and answering!",
+        "content": "What models do you use?\n\nI use google/gemma-7b-it and meta-llama/Meta-Llama-3-8B-Instruct, both 8-bit quantized.\n\n",
+        "date": "Mon Jul 08 2024 10:46:38 GMT+0900 (日本標準時)",
+        "votes": "4"
+    },
+    "comments": [
+        {
+            "author": "Chris Deotte",
+            "content": "The basic 5 models are Llama3, Mistral, Gemma2, Phi3, Qwen2. And two popular upgrades are Smaug and Bagel. All have versions around 7B parameter size which work well in this competition.\n\n",
+            "date": "Posted 18 days ago  ·  638th in this Competition",
+            "votes": "3",
+            "reply": []
+        },
+        {
+            "author": "Iqbal Singh",
+            "content": "Phi3 Mini. No fine tuning!\n\n",
+            "date": "Posted 19 days ago  ·  145th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "TuMinhDang",
+            "content": "i use gemma-9b-it fineturning\n\n",
+            "date": "Posted 19 days ago  ·  40th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Kasahara",
+            "content": "I experimented with llama3-8b-it, gemma2-9b-it, gemma-7b-it, and mistral-7b. In my experiments, llama3-8b-it performed the best.\n\n",
+            "date": "Posted 25 days ago  ·  53rd in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "c-numberTopic Author",
+                    "content": "Same impression here.\n\n",
+                    "date": "Posted 24 days ago  ·  1st in this Competition",
+                    "votes": "2",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "OminousDude",
+            "content": "I also use llama meta-llama/Meta-Llama-3-8B-Instruct as it has a very high IF-Eval score. But I chose 4-bit quantization as it works faster and lets me make my prompts and strategy more lengthy without having to worry about my agent timing out. Also, if you do not intend to keep it a secret how do you use both models is it chosen based on the category of the keyword or what?\n\n",
+            "date": "Posted a month ago  ·  451st in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "c-numberTopic Author",
+                    "content": "I only submit one of the two models for now, but am testing both of them.\n\n",
+                    "date": "Posted 25 days ago  ·  1st in this Competition",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "OminousDude",
+                            "content": "Oh ok! Nice Gemma 2 is pretty promising and has a very good strategy for locations. Might use it later when the actually benchmarks and a working AWQ version come out\n\n",
+                            "date": "Posted 25 days ago  ·  451st in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Matthew S Farmer",
+            "content": "Phi3 mini here. \n\n",
+            "date": "Posted a month ago  ·  176th in this Competition",
+            "votes": "2",
+            "reply": []
+        }
+    ]
+}

@@ -1,0 +1,212 @@
+{
+    "main_topic": {
+        "author": "Bovard Doerschuk-Tiberi",
+        "title": "Competition Update",
+        "content": "Hey all,\n\nHere is an update on what to expect from the final weeks of the competition.\n\n- Active agents reduced from 3 to 2 (starting this week, which will increase the game rate)\n\n- Question character length limit reduced from 2000 to 750 (the extra character limit was unused other than for “binary search” type questions)\n\n- Remove “Locations” from the keyword set. (starting this week, the “locations” problem space it too small)\n\nWhen the competition closes:\n\n- The unseen secret “things” keyword list will be swapped in\n\n- The leaderboard will be reset\n\n- The post-evaluation period will start at 2 weeks, but will likely be extended.\n\nThank you all for participating! This competition is the first of its kind and we appreciate your patience while we learned along the way. We’ll take what we learned in this competition to make future competitions even better!\n\nHappy Kaggling!\n\nBovard\n\nEDIT: \n\nOn the secret \"things\" keyword list\n\n- it is taken from roughly same keyword list as the current list. \n\n- it will not re-use any of the current words in the keyword list\n\n- it will not be accessible in keywords.py\n\n",
+        "date": "Wed Jul 31 2024 05:47:37 GMT+0900 (日本標準時)",
+        "votes": "17"
+    },
+    "comments": [
+        {
+            "author": "torino",
+            "content": "[@Hi](https://www.kaggle.com/Hi) [@bovard](https://www.kaggle.com/bovard) ,\n\nRemove “Locations” from the keyword set. (starting this week, the “locations” problem space it too small)\n\nThat means in private keywords, the keywords will not have locations(place, landmark, mountain, river...) and only thing keywords, right?\n\nThen agents reduced from 3 -> 2, is it keep 2 newest agents or 2 highest score agents?\n\n",
+            "date": "Posted 3 days ago  ·  49th in this Competition",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "Bovard Doerschuk-Tiberi",
+                    "content": "Yes, keep only the \"things\" keywords.\n\nIt will be the 2 newest agents\n\n",
+                    "date": "Posted 2 days ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Ariocx",
+            "content": "So keywords can only be “things”？\n\n",
+            "date": "Posted 3 days ago  ·  360th in this Competition",
+            "votes": "4",
+            "reply": [
+                {
+                    "author": "Bovard Doerschuk-Tiberi",
+                    "content": "yes, that is correct\n\n",
+                    "date": "Posted 3 days ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Nicholas Broad",
+            "content": "Is [this comment](https://www.kaggle.com/competitions/llm-20-questions/discussion/512358#2872495) no longer relevant?\n\nYes, the current leaderboard will be the seed of your agent going into the final evaluation period. We will ensure that agents receive enough games for the leaderboard to stabilize under the new set of words, so even if your agent is severly under ranked it should not be an issue.\n\n",
+            "date": "Posted 3 days ago",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "Bovard Doerschuk-Tiberi",
+                    "content": "Yes, that will no longer be the case.\n\n",
+                    "date": "Posted 2 days ago",
+                    "votes": "3",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Andrew Tratz",
+            "content": "A suggestion, for this or for other simulations in the future: allow participants to permanently inactivate specific bots, reducing their bot quota usage. This way, there's no need to inactivate high-scoring bots in order to continue experimenting, and if they are permanently disabled then there's no risk of anyone sandbagging by temporarily disabling and later re-enabling a strong bot. I think this would create a more robust competition with few downsides.\n\n",
+            "date": "Posted 3 days ago  ·  119th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Fayez Siddiqui",
+                    "content": "Great suggestion, I also think having the freedom of Agent selection would be great.\n\n",
+                    "date": "Posted 3 days ago  ·  37th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "OminousDude",
+                            "content": "Not a good idea as people could just enable a high-scoring old agent\n\n",
+                            "date": "Posted 3 days ago  ·  450th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Tran Anh Quan",
+            "content": "So in the final leaderboard are there only “Things” keywords used for evaluation? Will there be no “Person” or “Place” keywords at all?\n\n",
+            "date": "Posted 3 days ago  ·  58th in this Competition",
+            "votes": "2",
+            "reply": [
+                {
+                    "author": "Bovard Doerschuk-Tiberi",
+                    "content": "yes, only \"things\"\n\n",
+                    "date": "Posted 3 days ago",
+                    "votes": "2",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "BORAHMLEE",
+            "content": "Hi, Do you use purely secret keywords in your final evaluation? Or do you combine them with current keywords to make the evaluation?\n\n",
+            "date": "Posted 20 hours ago  ·  105th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "francesco fiamingo",
+            "content": "Thanks a lot! I think we are building the best community in the world, amazed to be part of it, one technical question , i need to decide to merge with other teams, if i will do, how many agents the team can use? 2 per component of the team or two for whole team? \n\n",
+            "date": "Posted 3 days ago  ·  323rd in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "torino",
+                    "content": "I guess we will have only have 2 agents for whole team.\n\n",
+                    "date": "Posted 3 days ago  ·  49th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "francesco fiamingo",
+                            "content": "Wow…but this means that is better not to merge….\n\n",
+                            "date": "Posted 3 days ago  ·  323rd in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "torino",
+                            "content": "As author said \n\nActive agents reduced from 3 to 2 (starting this week, which will increase the game rate)\n\nassume if we have 10 agents for team 5 members, maybe game rate will divide from 2 agents to 10 agents, It also means less opportunity for each agent.\n\n",
+                            "date": "Posted 3 days ago  ·  49th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                },
+                {
+                    "author": "Bovard Doerschuk-Tiberi",
+                    "content": "Only 2 agents per team. Once you merge together two teams they only count as a single team so they would only have 2 active agents\n\n",
+                    "date": "Posted 2 days ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Duc-Vu Nguyen",
+            "content": "Dear [@bovard](https://www.kaggle.com/bovard),\n\nI have a question about \"It will not be accessible in keywords.py\". Does this mean that we cannot know secret words by reading keywords.py or any other sources provided by the organizer?\n\nBest regards,\n\n",
+            "date": "Posted 3 days ago  ·  8th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "mxmm2123",
+                    "content": "yes, keyword.py in final lb can't access.\n\n",
+                    "date": "Posted 3 days ago",
+                    "votes": "0",
+                    "reply": []
+                },
+                {
+                    "author": "Bovard Doerschuk-Tiberi",
+                    "content": "\nDoes this mean that we cannot know secret words by reading keywords.py or any other sources provided by the organizer?\n\nThat is correct. You will not be able to see the keyword list by any means.\n\n",
+                    "date": "Posted 2 days ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "FullEmpty",
+            "content": "Thank you for your update. I've walked through discussions, but this doesn't seem to be discussed.\n\nQuestions are limited to 2000  750 characters\n\n  Guesses are limited to 100 characters\n\nIs the limit applied per round or for total questions throughout the rounds?\n\nAgents are given 60 seconds per round to answer\n\n  Agents have an additional 300 overage seconds to use throughout the game\n\nI think this means each of the questioning/guessing agent and the answering agent has 60 seconds. But when does the 60 seconds for the questioning/guessing agent start — at the point when the round begins, when the agent asks a question, or right after the answering agent responds for guessing?\n\n",
+            "date": "Posted 3 days ago  ·  449th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "FullEmpty",
+                    "content": "Can anyone help???\n\n",
+                    "date": "Posted 2 days ago  ·  449th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "torino",
+                            "content": "Hi [@gowillgo](https://www.kaggle.com/gowillgo) ,\n\n```\nQuestions are limited to 2000 750 characters\nGuesses are limited to 100 characters\n\n```\n\nit apply for each question, and each guess, not cumulative across entire game.\n\nthen game work as below:\n\n60s first - agent 1(ask/guess)\n\n- load model(only in step 1, ~40s for model 8b 8bit)\n\n- return first question\n\n- if > 60s, subtract to budget 300s\n\n-> agent 1 stop\n\nimmediately count 60s of agent 2(answer)\n\n- load model(~40s)\n\n- answer question or anything you want\n\n- if > 60s, subtract to budget 300s\n\n-> agent 2 stop\n\nimmediately count 60s of agent 1(ask/guess)\n\n- return guess(model was load in step 1)\n\n…\n\n",
+                            "date": "Posted 2 days ago  ·  49th in this Competition",
+                            "votes": "3",
+                            "reply": []
+                        },
+                        {
+                            "author": "FullEmpty",
+                            "content": "[@pnmanh2123](https://www.kaggle.com/pnmanh2123) That's so crisp clear to understand - many thanks!!! \n\n",
+                            "date": "Posted 2 days ago  ·  449th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        },
+                        {
+                            "author": "torino",
+                            "content": "You are welcome!\n\n",
+                            "date": "Posted 2 days ago  ·  49th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Bhanu Prakash M",
+            "content": "Are all the items in the things category physical objects?\n\nCan I rule out the possibility of there being virtual or abstract things?\n\n",
+            "date": "Posted 3 days ago  ·  288th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Bovard Doerschuk-Tiberi",
+                    "content": "The current list of words is roughly representative of the final list. \n\n",
+                    "date": "Posted 2 days ago",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

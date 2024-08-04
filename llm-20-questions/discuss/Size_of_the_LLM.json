@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "G R Shanker Sai",
+        "title": "Size of the LLM",
+        "content": "Hello,\n\nI have a question on choosing the model, \n\nIs there any restriction on choosing a model (<=7B parameters)? or can I choose a model which is much larger?\n\n",
+        "date": "Thu Jun 27 2024 02:06:33 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Bovard Doerschuk-Tiberi",
+            "content": "Competitors have to run their model on a NVIDIA T4 (16GB). In practice using the bitsandbyte pip package a 7B param model is about the largest anyone has been able to run. \n\n",
+            "date": "Posted a month ago",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

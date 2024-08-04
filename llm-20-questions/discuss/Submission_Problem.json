@@ -1,0 +1,33 @@
+{
+    "main_topic": {
+        "author": "Naive Experimentalist",
+        "title": "Submission problem",
+        "content": "Hi there.\n\nI was able to submit my very first and very weak agent based on flan t5 large model.\n\nNow I developed a new one (hopefully much smarter) using both Gemma and Flan T5. When submitting I have the validation round error, but logs are empty. I have no idea where to find help with this one. How to debug it? Before when having validation round problems, I saw some errors in the logs.\n\nMy logs look as follows:\n\nlog0: [[{\"duration\": 26.110363, \"stdout\": \"\", \"stderr\": \"\"}]]\n\nlog1: [[{\"duration\": 26.111393, \"stdout\": \"\", \"stderr\": \"\"}]]\n\nAlso no errors in the notebook execution log: Successfully ran in 483.4s\n\nI have absolutely no idea what to do. Maybe someone was in this situation before.\n\nUPDATE (Jun 14, 2024):\n\nAfter a thorough analysis, it turned out that the Kaggle environment, when trying to run an agent and failing to match the appropriate name, calls the last function defined in the file. This may be obvious to everyone else, but it was a surprising discovery for me.\n\nBTW, I still don't know how to name agents correctly so that the Kaggle environment calls them directly. For now, I have worked around this by defining a def proxy(obs) function at the end, which calls the appropriate agent depending on obs.role. \n\n",
+        "date": "Fri Jun 14 2024 04:45:36 GMT+0900 (日本標準時)",
+        "votes": "2"
+    },
+    "comments": [
+        {
+            "author": "waechter",
+            "content": "You can add print in your agent function to help you debug, you will see them in stdout\n\n",
+            "date": "Posted 2 months ago  ·  201st in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Naive ExperimentalistTopic Author",
+                    "content": "You are right. I thought the only problem with validation round can be when raising error from my notebook during the play, therefore didn't make traditional print-based debugging. Will do and try.Thx\n\n",
+                    "date": "Posted 2 months ago  ·  144th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "玛丽·伊丽莎白·马特米斯",
+            "content": "I have absolutely no idea too\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

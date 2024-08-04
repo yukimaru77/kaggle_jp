@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "shiv_314",
+        "title": "How different would be the evaluation in the private leaderboard vs evaluation in the public leaderboard?",
+        "content": "I would be happy to discuss around the parameters that will decide the final position on the private leaderboard. The number of matches, the kind of pairings and anything else that should be kept in mind.\n\n",
+        "date": "Thu Aug 01 2024 07:07:05 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "gguillard",
+            "content": "You may want to play with [this notebook](https://www.kaggle.com/code/gguillard/llm-20-questions-trueskill-simulator) and read comments in [this discussion](https://www.kaggle.com/competitions/llm-20-questions/discussion/521385).\n\n",
+            "date": "Posted 2 days ago  ·  75th in this Competition",
+            "votes": "1",
+            "reply": []
+        }
+    ]
+}

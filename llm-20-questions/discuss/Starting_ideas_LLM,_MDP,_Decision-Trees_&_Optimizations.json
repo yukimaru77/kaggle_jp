@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "Etienne Kaiser (郑翊天）",
+        "title": "Starting ideas: LLM, MDP, Decision-Trees & Optimizations",
+        "content": "Currently I'm more in this domain than ever, unfortunately I have no time to touch this gem, that's why I spread my ideas where I might would start:\n\n## Theoretical Methods\n\n- Decision Tree - as it is binary and helps in systematically narrowing down the possible answers based on yes/no questions.\n\n- Markov Decision Process (MDP) - Provides the framework for making the sequence of decisions to maximize cumulative (even it's not the classical immediate) reward. \n\n- LLM - Using directly LLM from the first questions on (from max 20) could also have disadvantages. It might be to detailed, as LLM tend to go in depth first. My first thought was trying to create a decision trees that categorize roughly (like \"Vehicle\", \"Fruits\", \"Animal\" etc..) to narrow down first, in the first 3 questions for instance.\n\n- Combine them! - I think that a combination over a row of experiments will make up a strong generalized agent for the long run.\n\n## Integration Strategy\n\n- Vocabulary List - List of possible words (historical data) that can be guessed.\n\n- Questions Database - Predefined list of yes/no questions.\n\n- Policy Optimization - Use a reinforcement learning algorithm (e.g. Q-learning) to optimize the question-asking policy based on the rewards. Experiment with greedy (off-policy) or on-policy.\n\n- Exploration - Make use of gamma and alpha over time. Dynamically adjust the exploration-exploitation trade-off based on the confidence in its current policy and the remaining time in the game. (as it is limited). Keep in mind that agents must strike a balance between exploring new possibilities (exploration) and exploiting existing knowledge (exploitation). Early in the game, exploration tends to be more beneficial to gather information about the possibilities. Later, exploitation becomes more important to narrow down the remaining options.\n\n## Extra thought\n\n- Depth vs. Width - Going into depth with specific questions can be effective if it leads to significant reductions in uncertainty. However, being to specific too early may also risk wasting questions on irrelevant details or outliers (Should make sense).\n\nI'm open to any feedback to discuss further thoughts, even it increases the chance to get dragged into this competition even more - the curse of time. ;) \n\nHave fun everyone!\n\n",
+        "date": "Thu May 16 2024 22:05:22 GMT+0900 (日本標準時)",
+        "votes": "15"
+    },
+    "comments": [
+        {
+            "author": "Aditya Anil",
+            "content": "Thanks for this, seems like a very nice place to start :) \n\n",
+            "date": "Posted 2 months ago",
+            "votes": "1",
+            "reply": []
+        }
+    ]
+}

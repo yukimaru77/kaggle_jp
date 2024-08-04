@@ -1,0 +1,443 @@
+[
+    {
+        "ref": "denniswang07/submission-for-llm-20-questions",
+        "title": "Submission For LLM 20 Questions",
+        "author": "DennisWang07",
+        "lastRunTime": "2024-08-02 02:37:40",
+        "totalVotes  ": "0"
+    },
+    {
+        "ref": "blackbun/llm-20q-baseline-llama3-phi3-qwen2-hf",
+        "title": "LLM 20Q Baseline | Llama3, Phi3, Qwen2 | HF",
+        "author": "blackbun",
+        "lastRunTime": "2024-08-01 02:52:23",
+        "totalVotes  ": "8"
+    },
+    {
+        "ref": "makimakiai/jp-theoretical-analysis-of-the-20-questions-game",
+        "title": "【JP】Theoretical Analysis of the 20 Questions Game",
+        "author": "MakiMakiAi",
+        "lastRunTime": "2024-07-26 13:10:01",
+        "totalVotes  ": "3"
+    },
+    {
+        "ref": "krupalpatel07/llm-20-question-agent",
+        "title": "LLM 20 Question Agent",
+        "author": "Krupal Patel",
+        "lastRunTime": "2024-07-22 15:22:54",
+        "totalVotes  ": "0"
+    },
+    {
+        "ref": "fnushashank/llm-20-questions-starter-notebook",
+        "title": "LLM 20 Questions Starter Notebook",
+        "author": "FNU SHASHANK",
+        "lastRunTime": "2024-07-23 21:32:46",
+        "totalVotes  ": "0"
+    },
+    {
+        "ref": "kasafumi/rule-based-questioner-code",
+        "title": "Rule-based questioner code",
+        "author": "Kasahara",
+        "lastRunTime": "2024-07-19 15:05:45",
+        "totalVotes  ": "3"
+    },
+    {
+        "ref": "yoshizakihibiki/notebook414253a011",
+        "title": "notebook414253a011",
+        "author": "yoshizaki hibiki",
+        "lastRunTime": "2024-07-22 18:31:59",
+        "totalVotes  ": "0"
+    },
+    {
+        "ref": "regisvargas/fork-of-obtaining-game-data",
+        "title": "Fork of Obtaining game data",
+        "author": "Regis Vargas",
+        "lastRunTime": "2024-07-17 15:43:34",
+        "totalVotes  ": "1"
+    },
+    {
+        "ref": "matthewsfarmer/llm-20q-starter-notebook-2-0",
+        "title": "LLM 20q : Starter Notebook 2.0",
+        "author": "Matthew S Farmer",
+        "lastRunTime": "2024-07-17 11:13:21",
+        "totalVotes  ": "28"
+    },
+    {
+        "ref": "cdeotte/starter-code-for-llama-8b-llm-lb-0-750",
+        "title": "Starter Code for Llama 8B LLM - [LB 0.750+]",
+        "author": "Chris Deotte",
+        "lastRunTime": "2024-07-16 00:22:10",
+        "totalVotes  ": "64"
+    },
+    {
+        "ref": "pnmanh2123/try-install-torch2-3",
+        "title": "try install torch2.3",
+        "author": "torino",
+        "lastRunTime": "2024-07-15 03:06:41",
+        "totalVotes  ": "7"
+    },
+    {
+        "ref": "gguillard/llm-20-questions-trueskill-simulator",
+        "title": "LLM 20 Questions TrueSkill simulator",
+        "author": "gguillard",
+        "lastRunTime": "2024-07-20 14:05:51",
+        "totalVotes  ": "14"
+    },
+    {
+        "ref": "gavinxgcao/a-different-interaction-between-asker-and-answer",
+        "title": "A different interaction between asker and answer",
+        "author": "Gavin Cao",
+        "lastRunTime": "2024-07-14 07:24:53",
+        "totalVotes  ": "0"
+    },
+    {
+        "ref": "isakatsuyoshi/theoretical-analysis-of-the-20-questions-game",
+        "title": "Theoretical Analysis of the 20 Questions Game",
+        "author": "ISAKA Tsuyoshi",
+        "lastRunTime": "2024-07-14 01:31:58",
+        "totalVotes  ": "10"
+    },
+    {
+        "ref": "chengfg/llama3-8b-llm20-questions-lb-750",
+        "title": "llama3-8b- LLM20 Questions [LB 750]",
+        "author": "Cheng FG",
+        "lastRunTime": "2024-07-15 06:37:39",
+        "totalVotes  ": "0"
+    },
+    {
+        "ref": "kasafumi/llm20q-qwen2-7b-it",
+        "title": "[LLM20Q] Qwen2-7b-it",
+        "author": "Kasahara",
+        "lastRunTime": "2024-07-11 08:47:41",
+        "totalVotes  ": "8"
+    },
+    {
+        "ref": "kasafumi/llm20q-simulate-without-kaggle-environments",
+        "title": "[LLM20Q] Simulate without kaggle_environments",
+        "author": "Kasahara",
+        "lastRunTime": "2024-07-08 03:13:59",
+        "totalVotes  ": "11"
+    },
+    {
+        "ref": "yuangwu/saaaa2",
+        "title": "SAAAA2",
+        "author": "Yuang Wu",
+        "lastRunTime": "2024-07-10 07:46:53",
+        "totalVotes  ": "0"
+    },
+    {
+        "ref": "sonyc5720/llm-20-questions-gemma-tutorial",
+        "title": "LLM 20 Questions - Gemma tutorial",
+        "author": "YoungCheol Son",
+        "lastRunTime": "2024-07-12 06:52:29",
+        "totalVotes  ": "0"
+    },
+    {
+        "ref": "esthercute/llm-20-questions-starter-notebook",
+        "title": "LLM 20 Questions Starter Notebook",
+        "author": "esthercute",
+        "lastRunTime": "2024-07-04 18:56:11",
+        "totalVotes  ": "0"
+    },
+    {
+        "ref": "kasafumi/gemma2-9b-it-llm20-questions",
+        "title": "Gemma2-9b-it_LLM20 Questions",
+        "author": "Kasahara",
+        "lastRunTime": "2024-07-10 15:47:32",
+        "totalVotes  ": "12"
+    },
+    {
+        "ref": "chanchal24/generate-image-from-text",
+        "title": "Generate Image from Text",
+        "author": "Chanchal Alam",
+        "lastRunTime": "2024-07-06 14:23:29",
+        "totalVotes  ": "7"
+    },
+    {
+        "ref": "shreyyyj/llm-20-questions-starter-notebook",
+        "title": "LLM 20 Questions Starter Notebook",
+        "author": "Shrey Jain",
+        "lastRunTime": "2024-07-23 12:09:52",
+        "totalVotes  ": "0"
+    },
+    {
+        "ref": "hafizkhanil/llm-20-questions-starter",
+        "title": "LLM 20 Questions Starter",
+        "author": "Hafiz Khanil",
+        "lastRunTime": "2024-07-01 05:42:22",
+        "totalVotes  ": "1"
+    },
+    {
+        "ref": "wouldyoujustfocus/llama3-8b-llm20-questions-lb-750",
+        "title": "llama3-8b- LLM20 Questions [LB 750]",
+        "author": "kaoutar",
+        "lastRunTime": "2024-06-29 13:07:17",
+        "totalVotes  ": "61"
+    },
+    {
+        "ref": "kasafumi/comparing-questions-generated-by-gemma",
+        "title": "Comparing questions generated by gemma",
+        "author": "Kasahara",
+        "lastRunTime": "2024-06-28 13:58:45",
+        "totalVotes  ": "4"
+    },
+    {
+        "ref": "robikscube/phi3-intro-to-rigging-for-llm-20-questions",
+        "title": "[Phi3] Intro to Rigging for LLM 20 Questions",
+        "author": "Rob Mulla",
+        "lastRunTime": "2024-06-26 15:17:15",
+        "totalVotes  ": "12"
+    },
+    {
+        "ref": "matthewsfarmer/quick-test-agent-without-game-environment",
+        "title": "Quick Test agent without game environment",
+        "author": "Matthew S Farmer",
+        "lastRunTime": "2024-06-24 17:43:46",
+        "totalVotes  ": "3"
+    },
+    {
+        "ref": "waechter/20questions-keywords-things-definitions",
+        "title": "[20Questions] Keywords things definitions",
+        "author": "waechter",
+        "lastRunTime": "2024-07-01 22:28:14",
+        "totalVotes  ": "3"
+    },
+    {
+        "ref": "barirahzainal/my-project-llm-20-questions-submission-1",
+        "title": "My Project LLM 20 Questions - Submission 1",
+        "author": "Barirah Zainal Abidin",
+        "lastRunTime": "2024-06-20 04:33:41",
+        "totalVotes  ": "6"
+    },
+    {
+        "ref": "gopalakrishnankumar/notebook76fbbd67f8",
+        "title": "notebook76fbbd67f8",
+        "author": "Gopalakrishnan Kumar",
+        "lastRunTime": "2024-06-20 02:53:47",
+        "totalVotes  ": "1"
+    },
+    {
+        "ref": "jasperbutcher/simple-random-guessing-beats-gemma-lb-651-4",
+        "title": "Simple Random Guessing (beats Gemma, LB 651.4)",
+        "author": "Jasper Butcher",
+        "lastRunTime": "2024-06-22 15:17:57",
+        "totalVotes  ": "2"
+    },
+    {
+        "ref": "b'tokyoghoulll/twenty-quest-ons-game",
+        "title": "  TWENTY QUEST\\xc4\\xb0ONS GAME",
+        "author": "         Karna Valya",
+        "lastRunTime": "         2024-07-02 1",
+        "totalVotes  ": "1:20:37"
+    },
+    {
+        "ref": "jonathanjamesharker/llm-20-qs-simple-start",
+        "title": "LLM 20 Qs Simple Start",
+        "author": "Jonathan Harker",
+        "lastRunTime": "2024-06-22 15:04:42",
+        "totalVotes  ": "0"
+    },
+    {
+        "ref": "vai15r32/llm-20-questions",
+        "title": "LLM 20 questions",
+        "author": "vaibhav mane",
+        "lastRunTime": "2024-06-14 15:58:01",
+        "totalVotes  ": "4"
+    },
+    {
+        "ref": "lohmaa/llm20-agent-alpha",
+        "title": "llm20-agent-alpha",
+        "author": "loh-maa",
+        "lastRunTime": "2024-07-29 16:34:57",
+        "totalVotes  ": "18"
+    },
+    {
+        "ref": "matthewsfarmer/20q-gemma",
+        "title": "20q Gemma",
+        "author": "Matthew S Farmer",
+        "lastRunTime": "2024-06-21 11:35:43",
+        "totalVotes  ": "6"
+    },
+    {
+        "ref": "grshankersai/sample-submit",
+        "title": "Sample submit",
+        "author": "G R Shanker Sai",
+        "lastRunTime": "2024-06-07 09:42:19",
+        "totalVotes  ": "0"
+    },
+    {
+        "ref": "grshankersai/input-output",
+        "title": "Input-output",
+        "author": "G R Shanker Sai",
+        "lastRunTime": "2024-06-27 16:14:10",
+        "totalVotes  ": "1"
+    },
+    {
+        "ref": "christianwittmann/llm-20-questions-starter-notebook-fully-documented",
+        "title": "LLM 20 Questions Starter Notebook fully documented",
+        "author": "Christian Wittmann",
+        "lastRunTime": "2024-06-06 05:15:28",
+        "totalVotes  ": "5"
+    },
+    {
+        "ref": "matthewsfarmer/llm-20-questions",
+        "title": "LLM 20 Questions",
+        "author": "Matthew S Farmer",
+        "lastRunTime": "2024-06-10 17:46:25",
+        "totalVotes  ": "5"
+    },
+    {
+        "ref": "mzaoualim/quick-keywords-eda",
+        "title": "Quick_keywords_EDA",
+        "author": "Mohamed MZAOUALI",
+        "lastRunTime": "2024-06-02 23:20:00",
+        "totalVotes  ": "14"
+    },
+    {
+        "ref": "regisvargas/trying-to-understand-the-baseline-python-file",
+        "title": "Trying to understand the baseline python file",
+        "author": "Regis Vargas",
+        "lastRunTime": "2024-06-01 17:57:13",
+        "totalVotes  ": "10"
+    },
+    {
+        "ref": "muhammadrameez242/llm-competetion",
+        "title": "llm_Competetion",
+        "author": "Muhammad Rameez242",
+        "lastRunTime": "2024-05-30 03:53:50",
+        "totalVotes  ": "4"
+    },
+    {
+        "ref": "waechter/llm-20-questions-leaderbord-analyze-best-agents",
+        "title": "[LLM 20 Questions] Leaderbord analyze best agents",
+        "author": "waechter",
+        "lastRunTime": "2024-08-02 20:49:43",
+        "totalVotes  ": "23"
+    },
+    {
+        "ref": "pavlobaranchuk/llm-20-questions",
+        "title": "LLM 20 Questions",
+        "author": "Pavlo Baranchuk",
+        "lastRunTime": "2024-05-29 14:46:42",
+        "totalVotes  ": "4"
+    },
+    {
+        "ref": "rturley/run-debug-llm-20-questions-in-a-notebook",
+        "title": "Run/Debug LLM 20 Questions in a Notebook",
+        "author": "RS Turley",
+        "lastRunTime": "2024-06-10 04:40:56",
+        "totalVotes  ": "93"
+    },
+    {
+        "ref": "arlle26/understanding-llm-20-questions-starter-notebook",
+        "title": "Understanding LLM 20 Questions Starter Notebook",
+        "author": "JAN",
+        "lastRunTime": "2024-05-25 16:31:15",
+        "totalVotes  ": "15"
+    },
+    {
+        "ref": "develuse/llm20q-gemma-2b-it-tpu",
+        "title": "LLM20Q - Gemma 2b-it TPU",
+        "author": "Edwin Hauwert M.Sc.",
+        "lastRunTime": "2024-05-24 20:42:52",
+        "totalVotes  ": "6"
+    },
+    {
+        "ref": "dprincearmandkoumi/llm-20-questions-kdpa",
+        "title": "LLM 20 Questions KDPA",
+        "author": "D Prince Armand KOUMI",
+        "lastRunTime": "2024-05-24 01:26:00",
+        "totalVotes  ": "4"
+    },
+    {
+        "ref": "makimakiai/llm-20-questions",
+        "title": "LLM 20 Questions コンペの概要",
+        "author": "MakiMakiAi",
+        "lastRunTime": "2024-05-23 12:05:17",
+        "totalVotes  ": "11"
+    },
+    {
+        "ref": "robikscube/intro-to-rigging-for-llm-20-questions-llama3",
+        "title": "Intro to Rigging for LLM 20 Questions - llama3",
+        "author": "Rob Mulla",
+        "lastRunTime": "2024-06-18 20:08:44",
+        "totalVotes  ": "37"
+    },
+    {
+        "ref": "nicklanders/llm-20-questions-rigging-vllm-llama-3-8b",
+        "title": "LLM 20 Questions - Rigging - vLLM - llama-3-8b",
+        "author": "monoxgas",
+        "lastRunTime": "2024-06-10 17:12:44",
+        "totalVotes  ": "23"
+    },
+    {
+        "ref": "waechter/llm-20-questions-games-dataset",
+        "title": "LLM 20 Questions - Games dataset",
+        "author": "waechter",
+        "lastRunTime": "2024-08-02 20:14:01",
+        "totalVotes  ": "32"
+    },
+    {
+        "ref": "nicklanders/llm-20-questions-rigging-llama-3-8b",
+        "title": "LLM 20 Questions - Rigging - llama-3-8b",
+        "author": "monoxgas",
+        "lastRunTime": "2024-05-21 18:27:04",
+        "totalVotes  ": "8"
+    },
+    {
+        "ref": "regisvargas/llm-20-questions-starter-notebook-chatgpt",
+        "title": "LLM 20 Questions Starter Notebook + chatGPT",
+        "author": "Regis Vargas",
+        "lastRunTime": "2024-05-20 17:05:33",
+        "totalVotes  ": "13"
+    },
+    {
+        "ref": "shadesh/bert-and-nlp",
+        "title": "BERT and NLP",
+        "author": "Naimul Hasan Shadesh",
+        "lastRunTime": "2024-05-19 15:45:28",
+        "totalVotes  ": "10"
+    },
+    {
+        "ref": "pawinchan/phi3-20-questions",
+        "title": "Phi3-20 Questions",
+        "author": "Pawin Chan",
+        "lastRunTime": "2024-05-19 04:23:47",
+        "totalVotes  ": "17"
+    },
+    {
+        "ref": "b'docxian/llm-20-questions-keywords",
+        "title": "  \\xf0\\x9f\\x94\\x91LLM 20 Questions - Keywords",
+        "author": "                 Chris",
+        "lastRunTime": "X                2024",
+        "totalVotes  ": "-05-17 11:44"
+    },
+    {
+        "ref": "waechter/llm-20-questions-eda-map-keywords",
+        "title": "[LLM 20 Questions] EDA Map keywords",
+        "author": "waechter",
+        "lastRunTime": "2024-05-16 20:14:05",
+        "totalVotes  ": "16"
+    },
+    {
+        "ref": "jazivxt/llm20q-gemma-2b-it",
+        "title": "LLM20Q - Gemma 2b-it",
+        "author": "jazivxt",
+        "lastRunTime": "2024-06-08 05:53:12",
+        "totalVotes  ": "35"
+    },
+    {
+        "ref": "b'mpwolke/is-it-a-q20-game-gemma-2b-en",
+        "title": "  Is it a Q20 Game? Gemma 2b_en",
+        "author": "  Mar\\xc3\\xadlia Prata",
+        "lastRunTime": "         2024-05-16 0",
+        "totalVotes  ": "2:17:09"
+    },
+    {
+        "ref": "ryanholbrook/llm-20-questions-starter-notebook",
+        "title": "LLM 20 Questions Starter Notebook",
+        "author": "Ryan Holbrook",
+        "lastRunTime": "2024-05-20 13:05:30",
+        "totalVotes  ": "186"
+    }
+]

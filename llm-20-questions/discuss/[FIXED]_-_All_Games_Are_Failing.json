@@ -1,0 +1,41 @@
+{
+    "main_topic": {
+        "author": "Chris Deotte",
+        "title": "[FIXED] - All Games Are Failing",
+        "content": "I noticed that beginning on May 28th around 23:00 UTC, all games have been failing. When we view games on the LB or inside our personal submissions page, we see all teams received NAN points and if we click to review the game, we get the error message: Unable to load episode replay: 54897616\n\n[@addisonhoward](https://www.kaggle.com/addisonhoward)\n\nUPDATE: Fixed on May 29th around 4:00 UTC\n\n",
+        "date": "Wed May 29 2024 10:23:20 GMT+0900 (日本標準時)",
+        "votes": "12"
+    },
+    "comments": [
+        {
+            "author": "Develra",
+            "content": "Thanks for reporting - we are investigating. \n\n",
+            "date": "Posted 2 months ago",
+            "votes": "5",
+            "reply": []
+        },
+        {
+            "author": "AAElter",
+            "content": "I submitted 3 submissions and they are still \"submitting\", hanging there for about 12 hours, without coming to an end as a succeeded or failed submission.  \n\n",
+            "date": "Posted 2 months ago  ·  589th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Bovard Doerschuk-Tiberi",
+                    "content": "This should be resolved in the next 6 hours or so as the servers work through the backlog of episodes\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "AAElter",
+                            "content": "Thanks!  I appreciate your info.\n\n",
+                            "date": "Posted 2 months ago  ·  589th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
