@@ -1,97 +1,97 @@
-* Vote数:211 @ [[Inference] Gemma-2 9b 4-bit QLoRA](./kernels/[Inference]_Gemma-2_9b_4-bit_QLoRA/inference-gemma-2-9b-4-bit-qlora.ipynb)
-* Vote数:165 @ [[Training] Gemma-2 9b 4-bit QLoRA fine-tuning](./kernels/[Training]_Gemma-2_9b_4-bit_QLoRA_fine-tuning/training-gemma-2-9b-4-bit-qlora-fine-tuning.ipynb)
-* Vote数:116 @ [  \xf0\x9f\xa6\x99Llama-3 8B 38% faster inference](./kernels/__Llama-3_8B_38%_faster_inference/llama-3-8b-38-faster-inference.ipynb)
-* Vote数:97 @ [Infer 34B with vLLM](./kernels/Infer_34B_with_vLLM/infer-34b-with-vllm.ipynb)
-* Vote数:60 @ [  \xf0\x9f\xa6\x99SFT Llama-3.1-8B-Instruct Inferenc](./kernels/__SFT_Llama-31-8B-Instruct_Inferenc/sft-llama-3-1-8b-instruct-inference.ipynb)
-* Vote数:58 @ [[Training] Llama3-8b 4-bit QLoRA SFT](./kernels/[Training]_Llama3-8b_4-bit_QLoRA_SFT/training-llama3-8b-4-bit-qlora-sft.ipynb)
-* Vote数:48 @ [TF Gemma 2 9B LMSYS [Training TPU]](./kernels/TF_Gemma_2_9B_LMSYS_[Training_TPU]/tf-gemma-2-9b-lmsys-training-tpu.ipynb)
-* Vote数:33 @ [LMSYS ZeroShot Prediction](./kernels/LMSYS_ZeroShot_Prediction/lmsys-zeroshot-prediction.ipynb)
-* Vote数:29 @ [[LMSYS]LB0.978](./kernels/[LMSYS]LB0978/lmsys-lb0-978.ipynb)
-* Vote数:25 @ [lmsys-gemma2+lgb](./kernels/lmsys-gemma2+lgb/lmsys-gemma2-lgb.ipynb)
-* Vote数:22 @ [i'm super looser](./kernels/i'm_super_looser/i-m-super-looser.ipynb)
-* Vote数:21 @ [Gemma 2 - 9b [Part-2]](./kernels/Gemma_2_-_9b_[Part-2]/gemma-2-9b-part-2.ipynb)
-* Vote数:19 @ [  LMSYS | XGB Baseline](./kernels/__LMSYS__XGB_Baseline/lmsys-xgb-baseline.ipynb)
-* Vote数:19 @ [Deberta_train_plus_infer](./kernels/Deberta_train_plus_infer/deberta-train-plus-infer.ipynb)
-* Vote数:16 @ [LMSYS: Combine Gemma-2 9b & Llama-3 8b](./kernels/LMSYS_Combine_Gemma-2_9b_&_Llama-3_8b/lmsys-combine-gemma-2-9b-llama-3-8b.ipynb)
-* Vote数:15 @ [LMSYS | XGB Baseline](./kernels/LMSYS__XGB_Baseline/lmsys-xgb-baseline.ipynb)
-* Vote数:15 @ [  LMSYS | CatBoost: The Ultimate Champion \xf0\x9f\x](./kernels/__LMSYS__CatBoost_The_Ultimate_Champion_x/lmsys-catboost-the-ultimate-champion.ipynb)
-* Vote数:13 @ [LMSYS- LLama3 8b chat + Gemma2 4b Ensemble [Infer]](./kernels/LMSYS-_LLama3_8b_chat_+_Gemma2_4b_Ensemble_[Infer]/lmsys-llama3-8b-chat-gemma2-4b-ensemble-infer.ipynb)
-* Vote数:12 @ [Inference TF Gemma 2 9B LMSYS](./kernels/Inference_TF_Gemma_2_9B_LMSYS/inference-tf-gemma-2-9b-lmsys.ipynb)
-* Vote数:9 @ [LMSYS Qwen-2 QLoRA Inference baseline](./kernels/LMSYS_Qwen-2_QLoRA_Inference_baseline/lmsys-qwen-2-qlora-inference-baseline.ipynb)
-* Vote数:8 @ [[Faster Training] Llama3.1 8b 4-bit QLoRA](./kernels/[Faster_Training]_Llama31_8b_4-bit_QLoRA/faster-training-llama3-1-8b-4-bit-qlora.ipynb)
-* Vote数:6 @ [Finally got it through TFBertModel!](./kernels/Finally_got_it_through_TFBertModel!/finally-got-it-through-tfbertmodel.ipynb)
-* Vote数:6 @ [internLM2-reward](./kernels/internLM2-reward/internlm2-reward.ipynb)
-* Vote数:6 @ [LMSYS Inference](./kernels/LMSYS_Inference/lmsys-inference.ipynb)
-* Vote数:5 @ [[Inference] Phi-3-mini-4k-instruct](./kernels/[Inference]_Phi-3-mini-4k-instruct/inference-phi-3-mini-4k-instruct.ipynb)
-* Vote数:5 @ [Nhom12-HHLT](./kernels/Nhom12-HHLT/nhom12-hhlt.ipynb)
-* Vote数:5 @ [chatbot_arena](./kernels/chatbot_arena/chatbot-arena.ipynb)
-* Vote数:5 @ [Distributed_Training+Deberta+LORA+Keras_NLP](./kernels/Distributed_Training+Deberta+LORA+Keras_NLP/distributed-training-deberta-lora-keras-nlp.ipynb)
-* Vote数:5 @ [LMSYS| Length-Based No Model Inference](./kernels/LMSYS_Length-Based_No_Model_Inference/lmsys-length-based-no-model-inference.ipynb)
-* Vote数:4 @ [LMSYS_ModelsBoost](./kernels/LMSYS_ModelsBoost/lmsys-modelsboost.ipynb)
-* Vote数:4 @ [  Chatbot Arena Human Preference Predictions-01](./kernels/__Chatbot_Arena_Human_Preference_Predictions-01/chatbot-arena-human-preference-predictions-01.ipynb)
-* Vote数:4 @ [  LMSYS-Tokenize by Qwen2  - LSTM mix CNN](./kernels/__LMSYS-Tokenize_by_Qwen2__-_LSTM_mix_CNN/lmsys-tokenize-by-qwen2-lstm-mix-cnn.ipynb)
-* Vote数:4 @ [[Infer] LMSYS 240706 First](./kernels/[Infer]_LMSYS_240706_First/infer-lmsys-240706-first.ipynb)
-* Vote数:4 @ [Using XGBoost and GB using NLTK](./kernels/Using_XGBoost_and_GB_using_NLTK/using-xgboost-and-gb-using-nltk.ipynb)
-* Vote数:4 @ [My Project LMSYS - Submission 8](./kernels/My_Project_LMSYS_-_Submission_8/my-project-lmsys-submission-8.ipynb)
-* Vote数:3 @ [LMSYS Prompt/Response Words KeyBERT](./kernels/LMSYS_PromptResponse_Words_KeyBERT/lmsys-prompt-response-words-keybert.ipynb)
-* Vote数:3 @ [  Chatbot Arena Human Preference Predictions](./kernels/__Chatbot_Arena_Human_Preference_Predictions/chatbot-arena-human-preference-predictions.ipynb)
-* Vote数:3 @ [Fantasy Battle Simulator Data Processing and Model](./kernels/Fantasy_Battle_Simulator_Data_Processing_and_Model/fantasy-battle-simulator-data-processing-and-model.ipynb)
-* Vote数:3 @ [  Gemma-2-9b | [Part1: prompt-engineering] | \xf0\x9](./kernels/__Gemma-2-9b__[Part1_prompt-engineering]__x9/gemma-2-9b-part1-prompt-engineering.ipynb)
-* Vote数:3 @ [  \xf0\x9f\xa7\xa0 LMSYS - AI Chat Evaluator: Enhanc](./kernels/___LMSYS_-_AI_Chat_Evaluator_Enhanc/lmsys-ai-chat-evaluator-enhancing-human-ai.ipynb)
-* Vote数:3 @ [  Human AI  Model Choises EDA \xf0\x9f\x93\x8a](./kernels/__Human_AI__Model_Choises_EDA_/human-ai-model-choises-eda.ipynb)
-* Vote数:3 @ [Finetune Llama3 using QLoRA](./kernels/Finetune_Llama3_using_QLoRA/finetune-llama3-using-qlora.ipynb)
-* Vote数:2 @ [LSTMxCNN](./kernels/LSTMxCNN/lstmxcnn.ipynb)
-* Vote数:2 @ [  [DeepLearning] Llama3-8b 4-bit QLoRA](./kernels/__[DeepLearning]_Llama3-8b_4-bit_QLoRA/deeplearning-llama3-8b-4-bit-qlora.ipynb)
-* Vote数:2 @ [LMSYS_Testing bert](./kernels/LMSYS_Testing_bert/lmsys-testing-bert.ipynb)
-* Vote数:2 @ [Random binary output submission](./kernels/Random_binary_output_submission/random-binary-output-submission.ipynb)
-* Vote数:2 @ [LCAHPP](./kernels/LCAHPP/lcahpp.ipynb)
-* Vote数:2 @ [LLM-textstat-vaderSentiment-BERT-sample](./kernels/LLM-textstat-vaderSentiment-BERT-sample/llm-textstat-vadersentiment-bert-sample.ipynb)
-* Vote数:2 @ [ Gemma-2 9b  TRAIN](./kernels/_Gemma-2_9b__TRAIN/gemma-2-9b-train.ipynb)
-* Vote数:2 @ [Text_stats_with_Optuna](./kernels/Text_stats_with_Optuna/text-stats-with-optuna.ipynb)
-* Vote数:2 @ [Fork of LMSYS - Chatbot Arena & TF-IDF](./kernels/Fork_of_LMSYS_-_Chatbot_Arena_&_TF-IDF/fork-of-lmsys-chatbot-arena-tf-idf.ipynb)
-* Vote数:2 @ [Chatbot Arena Human Preference Predictions](./kernels/Chatbot_Arena_Human_Preference_Predictions/chatbot-arena-human-preference-predictions.ipynb)
-* Vote数:2 @ [lmsys-deberta-length](./kernels/lmsys-deberta-length/lmsys-deberta-length.ipynb)
-* Vote数:2 @ [LMSYS-Chatbot-ARENA-LLM](./kernels/LMSYS-Chatbot-ARENA-LLM/lmsys-chatbot-arena-llm.ipynb)
-* Vote数:1 @ [[Inference] Gemma-2 9b 4-bit QLoRA](./kernels/[Inference]_Gemma-2_9b_4-bit_QLoRA/inference-gemma-2-9b-4-bit-qlora.ipynb)
-* Vote数:1 @ [LMSYS Keywords torch RoBERTa for Submission](./kernels/LMSYS_Keywords_torch_RoBERTa_for_Submission/lmsys-keywords-torch-roberta-for-submission.ipynb)
-* Vote数:1 @ [LMSYS Keywords torch RoBERTa](./kernels/LMSYS_Keywords_torch_RoBERTa/lmsys-keywords-torch-roberta.ipynb)
-* Vote数:1 @ [  LMSYS - Chatbot](./kernels/__LMSYS_-_Chatbot/lmsys-chatbot.ipynb)
-* Vote数:1 @ [DeBerta train classification](./kernels/DeBerta_train_classification/deberta-train-classification.ipynb)
-* Vote数:1 @ [[Training] nvidia-mistral-nemo 4-bit QLoRA SFT](./kernels/[Training]_nvidia-mistral-nemo_4-bit_QLoRA_SFT/training-nvidia-mistral-nemo-4-bit-qlora-sft.ipynb)
-* Vote数:1 @ [Text Stat](./kernels/Text_Stat/text-stat.ipynb)
-* Vote数:1 @ [QA Bert](./kernels/QA_Bert/qa-bert.ipynb)
-* Vote数:1 @ [Kaggle0１](./kernels/Kaggle0１/kaggle0.ipynb)
-* Vote数:1 @ [notebookf6b0f99721](./kernels/notebookf6b0f99721/notebookf6b0f99721.ipynb)
-* Vote数:1 @ [【Train】LMSYS 240706 First](./kernels/【Train】LMSYS_240706_First/train-lmsys-240706-first.ipynb)
-* Vote数:1 @ [Faster Training with unsloth](./kernels/Faster_Training_with_unsloth/faster-training-with-unsloth.ipynb)
-* Vote数:1 @ [LMSYS-CAHPP Inference Baseline](./kernels/LMSYS-CAHPP_Inference_Baseline/lmsys-cahpp-inference-baseline.ipynb)
-* Vote数:1 @ [LMSYS-CAHPP Llama3 8b Inference Baseline](./kernels/LMSYS-CAHPP_Llama3_8b_Inference_Baseline/lmsys-cahpp-llama3-8b-inference-baseline.ipynb)
-* Vote数:1 @ [New Good Feature: IFD + Length + TF-IDF](./kernels/New_Good_Feature_IFD_+_Length_+_TF-IDF/new-good-feature-ifd-length-tf-idf.ipynb)
-* Vote数:0 @ [[Parallel Train] Phi-3-mini-4k-instruct](./kernels/[Parallel_Train]_Phi-3-mini-4k-instruct/parallel-train-phi-3-mini-4k-instruct.ipynb)
-* Vote数:0 @ [LMSYS - Luck simulator: Random output submission](./kernels/LMSYS_-_Luck_simulator_Random_output_submission/lmsys-luck-simulator-random-output-submission.ipynb)
-* Vote数:0 @ [SFT Llama-31-8B Inference](./kernels/SFT_Llama-31-8B_Inference/sft-llama-31-8b-inference.ipynb)
-* Vote数:0 @ [  \xf0\x9f\xa6\x99Llama-3 8B 38% faster inference](./kernels/__Llama-3_8B_38%_faster_inference/llama-3-8b-38-faster-inference.ipynb)
-* Vote数:0 @ [LMSYS](./kernels/LMSYS/lmsys.ipynb)
-* Vote数:0 @ [Gemma instruct 2B LMSYS [Training TPU]](./kernels/Gemma_instruct_2B_LMSYS_[Training_TPU]/gemma-instruct-2b-lmsys-training-tpu.ipynb)
-* Vote数:0 @ [  LMSYS](./kernels/__LMSYS/lmsys.ipynb)
-* Vote数:0 @ [DL-Final](./kernels/DL-Final/dl-final.ipynb)
-* Vote数:0 @ [  [Training] Llama3-8b 4-bit QLoRA SFT](./kernels/__[Training]_Llama3-8b_4-bit_QLoRA_SFT/training-llama3-8b-4-bit-qlora-sft.ipynb)
-* Vote数:0 @ [LMSYS-ChatbotArenaHumanPreferencePredictions](./kernels/LMSYS-ChatbotArenaHumanPreferencePredictions/lmsys-chatbotarenahumanpreferencepredictions.ipynb)
-* Vote数:0 @ ["Neural Networks for Chatbot Preference Prediction](./kernels/Neural_Networks_for_Chatbot_Preference_Prediction/neural-networks-for-chatbot-preference-prediction.ipynb)
-* Vote数:0 @ [Gemma-2](./kernels/Gemma-2/gemma-2.ipynb)
-* Vote数:0 @ [LLM Response Predict](./kernels/LLM_Response_Predict/llm-response-predict.ipynb)
-* Vote数:0 @ [[Inference] Gemma-2 9b 4-bit QLoRA](./kernels/[Inference]_Gemma-2_9b_4-bit_QLoRA/inference-gemma-2-9b-4-bit-qlora.ipynb)
-* Vote数:0 @ [Llama-3 8b [TPU Train]¶](./kernels/Llama-3_8b_[TPU_Train]¶/llama-3-8b-tpu-train.ipynb)
-* Vote数:0 @ [pet_infer](./kernels/pet_infer/pet-infer.ipynb)
-* Vote数:0 @ [  LMSYS - LSTM mix CNN - [GPU train]](./kernels/__LMSYS_-_LSTM_mix_CNN_-_[GPU_train]/lmsys-lstm-mix-cnn-gpu-train.ipynb)
-* Vote数:0 @ [[Training] Gemma-2 9b 4-bit QLoRA_72k data](./kernels/[Training]_Gemma-2_9b_4-bit_QLoRA_72k_data/training-gemma-2-9b-4-bit-qlora-72k-data.ipynb)
-* Vote数:0 @ [LMSYS-1](./kernels/LMSYS-1/lmsys-1.ipynb)
-* Vote数:0 @ [ChatbotResponseAnalysisSoln](./kernels/ChatbotResponseAnalysisSoln/chatbotresponseanalysissoln.ipynb)
-* Vote数:0 @ [Gemma 2 train on tpu](./kernels/Gemma_2_train_on_tpu/gemma-2-train-on-tpu.ipynb)
-* Vote数:0 @ [[Train] LMSYS / Deberta-v3 starter code](./kernels/[Train]_LMSYS__Deberta-v3_starter_code/train-lmsys-deberta-v3-starter-code.ipynb)
-* Vote数:0 @ [llama-3-8B-fast](./kernels/llama-3-8B-fast/llama-3-8b-fast.ipynb)
-* Vote数:0 @ [LMSYS - EDA and topic modelling](./kernels/LMSYS_-_EDA_and_topic_modelling/lmsys-eda-and-topic-modelling.ipynb)
-* Vote数:0 @ [MJK LMSYS: KerasNLP Starter](./kernels/MJK_LMSYS_KerasNLP_Starter/mjk-lmsys-kerasnlp-starter.ipynb)
-* Vote数:0 @ [oneWorkflow](./kernels/oneWorkflow/oneworkflow.ipynb)
-* Vote数:0 @ [LMSYS - Llama-3 [TPU train]](./kernels/LMSYS_-_Llama-3_[TPU_train]/lmsys-llama-3-tpu-train.ipynb)
-* Vote数:0 @ [mistral_k_bit](./kernels/mistral_k_bit/mistral-k-bit.ipynb)
+* Vote数:211 @ [[Inference] Gemma-2 9b 4-bit QLoRA](./kernels/[Inference]_Gemma-2_9b_4-bit_QLoRA/inference-gemma-2-9b-4-bit-qlora.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/[Inference]_Gemma-2_9b_4-bit_QLoRA/inference-gemma-2-9b-4-bit-qlora.ipynb)\]
+* Vote数:165 @ [[Training] Gemma-2 9b 4-bit QLoRA fine-tuning](./kernels/[Training]_Gemma-2_9b_4-bit_QLoRA_fine-tuning/training-gemma-2-9b-4-bit-qlora-fine-tuning.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/[Training]_Gemma-2_9b_4-bit_QLoRA_fine-tuning/training-gemma-2-9b-4-bit-qlora-fine-tuning.ipynb)\]
+* Vote数:116 @ [  \xf0\x9f\xa6\x99Llama-3 8B 38% faster inference](./kernels/__Llama-3_8B_38%_faster_inference/llama-3-8b-38-faster-inference.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/__Llama-3_8B_38%_faster_inference/llama-3-8b-38-faster-inference.ipynb)\]
+* Vote数:97 @ [Infer 34B with vLLM](./kernels/Infer_34B_with_vLLM/infer-34b-with-vllm.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Infer_34B_with_vLLM/infer-34b-with-vllm.ipynb)\]
+* Vote数:60 @ [  \xf0\x9f\xa6\x99SFT Llama-3.1-8B-Instruct Inferenc](./kernels/__SFT_Llama-31-8B-Instruct_Inferenc/sft-llama-3-1-8b-instruct-inference.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/__SFT_Llama-31-8B-Instruct_Inferenc/sft-llama-3-1-8b-instruct-inference.ipynb)\]
+* Vote数:58 @ [[Training] Llama3-8b 4-bit QLoRA SFT](./kernels/[Training]_Llama3-8b_4-bit_QLoRA_SFT/training-llama3-8b-4-bit-qlora-sft.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/[Training]_Llama3-8b_4-bit_QLoRA_SFT/training-llama3-8b-4-bit-qlora-sft.ipynb)\]
+* Vote数:48 @ [TF Gemma 2 9B LMSYS [Training TPU]](./kernels/TF_Gemma_2_9B_LMSYS_[Training_TPU]/tf-gemma-2-9b-lmsys-training-tpu.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/TF_Gemma_2_9B_LMSYS_[Training_TPU]/tf-gemma-2-9b-lmsys-training-tpu.ipynb)\]
+* Vote数:33 @ [LMSYS ZeroShot Prediction](./kernels/LMSYS_ZeroShot_Prediction/lmsys-zeroshot-prediction.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS_ZeroShot_Prediction/lmsys-zeroshot-prediction.ipynb)\]
+* Vote数:29 @ [[LMSYS]LB0.978](./kernels/[LMSYS]LB0978/lmsys-lb0-978.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/[LMSYS]LB0978/lmsys-lb0-978.ipynb)\]
+* Vote数:25 @ [lmsys-gemma2+lgb](./kernels/lmsys-gemma2+lgb/lmsys-gemma2-lgb.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/lmsys-gemma2+lgb/lmsys-gemma2-lgb.ipynb)\]
+* Vote数:22 @ [i'm super looser](./kernels/i'm_super_looser/i-m-super-looser.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/i'm_super_looser/i-m-super-looser.ipynb)\]
+* Vote数:21 @ [Gemma 2 - 9b [Part-2]](./kernels/Gemma_2_-_9b_[Part-2]/gemma-2-9b-part-2.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Gemma_2_-_9b_[Part-2]/gemma-2-9b-part-2.ipynb)\]
+* Vote数:19 @ [  LMSYS | XGB Baseline](./kernels/__LMSYS__XGB_Baseline/lmsys-xgb-baseline.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/__LMSYS__XGB_Baseline/lmsys-xgb-baseline.ipynb)\]
+* Vote数:19 @ [Deberta_train_plus_infer](./kernels/Deberta_train_plus_infer/deberta-train-plus-infer.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Deberta_train_plus_infer/deberta-train-plus-infer.ipynb)\]
+* Vote数:16 @ [LMSYS: Combine Gemma-2 9b & Llama-3 8b](./kernels/LMSYS_Combine_Gemma-2_9b_&_Llama-3_8b/lmsys-combine-gemma-2-9b-llama-3-8b.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS_Combine_Gemma-2_9b_&_Llama-3_8b/lmsys-combine-gemma-2-9b-llama-3-8b.ipynb)\]
+* Vote数:15 @ [LMSYS | XGB Baseline](./kernels/LMSYS__XGB_Baseline/lmsys-xgb-baseline.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS__XGB_Baseline/lmsys-xgb-baseline.ipynb)\]
+* Vote数:15 @ [  LMSYS | CatBoost: The Ultimate Champion \xf0\x9f\x](./kernels/__LMSYS__CatBoost_The_Ultimate_Champion_x/lmsys-catboost-the-ultimate-champion.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/__LMSYS__CatBoost_The_Ultimate_Champion_x/lmsys-catboost-the-ultimate-champion.ipynb)\]
+* Vote数:13 @ [LMSYS- LLama3 8b chat + Gemma2 4b Ensemble [Infer]](./kernels/LMSYS-_LLama3_8b_chat_+_Gemma2_4b_Ensemble_[Infer]/lmsys-llama3-8b-chat-gemma2-4b-ensemble-infer.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS-_LLama3_8b_chat_+_Gemma2_4b_Ensemble_[Infer]/lmsys-llama3-8b-chat-gemma2-4b-ensemble-infer.ipynb)\]
+* Vote数:12 @ [Inference TF Gemma 2 9B LMSYS](./kernels/Inference_TF_Gemma_2_9B_LMSYS/inference-tf-gemma-2-9b-lmsys.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Inference_TF_Gemma_2_9B_LMSYS/inference-tf-gemma-2-9b-lmsys.ipynb)\]
+* Vote数:9 @ [LMSYS Qwen-2 QLoRA Inference baseline](./kernels/LMSYS_Qwen-2_QLoRA_Inference_baseline/lmsys-qwen-2-qlora-inference-baseline.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS_Qwen-2_QLoRA_Inference_baseline/lmsys-qwen-2-qlora-inference-baseline.ipynb)\]
+* Vote数:8 @ [[Faster Training] Llama3.1 8b 4-bit QLoRA](./kernels/[Faster_Training]_Llama31_8b_4-bit_QLoRA/faster-training-llama3-1-8b-4-bit-qlora.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/[Faster_Training]_Llama31_8b_4-bit_QLoRA/faster-training-llama3-1-8b-4-bit-qlora.ipynb)\]
+* Vote数:6 @ [Finally got it through TFBertModel!](./kernels/Finally_got_it_through_TFBertModel!/finally-got-it-through-tfbertmodel.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Finally_got_it_through_TFBertModel!/finally-got-it-through-tfbertmodel.ipynb)\]
+* Vote数:6 @ [internLM2-reward](./kernels/internLM2-reward/internlm2-reward.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/internLM2-reward/internlm2-reward.ipynb)\]
+* Vote数:6 @ [LMSYS Inference](./kernels/LMSYS_Inference/lmsys-inference.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS_Inference/lmsys-inference.ipynb)\]
+* Vote数:5 @ [[Inference] Phi-3-mini-4k-instruct](./kernels/[Inference]_Phi-3-mini-4k-instruct/inference-phi-3-mini-4k-instruct.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/[Inference]_Phi-3-mini-4k-instruct/inference-phi-3-mini-4k-instruct.ipynb)\]
+* Vote数:5 @ [Nhom12-HHLT](./kernels/Nhom12-HHLT/nhom12-hhlt.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Nhom12-HHLT/nhom12-hhlt.ipynb)\]
+* Vote数:5 @ [chatbot_arena](./kernels/chatbot_arena/chatbot-arena.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/chatbot_arena/chatbot-arena.ipynb)\]
+* Vote数:5 @ [Distributed_Training+Deberta+LORA+Keras_NLP](./kernels/Distributed_Training+Deberta+LORA+Keras_NLP/distributed-training-deberta-lora-keras-nlp.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Distributed_Training+Deberta+LORA+Keras_NLP/distributed-training-deberta-lora-keras-nlp.ipynb)\]
+* Vote数:5 @ [LMSYS| Length-Based No Model Inference](./kernels/LMSYS_Length-Based_No_Model_Inference/lmsys-length-based-no-model-inference.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS_Length-Based_No_Model_Inference/lmsys-length-based-no-model-inference.ipynb)\]
+* Vote数:4 @ [LMSYS_ModelsBoost](./kernels/LMSYS_ModelsBoost/lmsys-modelsboost.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS_ModelsBoost/lmsys-modelsboost.ipynb)\]
+* Vote数:4 @ [  Chatbot Arena Human Preference Predictions-01](./kernels/__Chatbot_Arena_Human_Preference_Predictions-01/chatbot-arena-human-preference-predictions-01.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/__Chatbot_Arena_Human_Preference_Predictions-01/chatbot-arena-human-preference-predictions-01.ipynb)\]
+* Vote数:4 @ [  LMSYS-Tokenize by Qwen2  - LSTM mix CNN](./kernels/__LMSYS-Tokenize_by_Qwen2__-_LSTM_mix_CNN/lmsys-tokenize-by-qwen2-lstm-mix-cnn.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/__LMSYS-Tokenize_by_Qwen2__-_LSTM_mix_CNN/lmsys-tokenize-by-qwen2-lstm-mix-cnn.ipynb)\]
+* Vote数:4 @ [[Infer] LMSYS 240706 First](./kernels/[Infer]_LMSYS_240706_First/infer-lmsys-240706-first.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/[Infer]_LMSYS_240706_First/infer-lmsys-240706-first.ipynb)\]
+* Vote数:4 @ [Using XGBoost and GB using NLTK](./kernels/Using_XGBoost_and_GB_using_NLTK/using-xgboost-and-gb-using-nltk.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Using_XGBoost_and_GB_using_NLTK/using-xgboost-and-gb-using-nltk.ipynb)\]
+* Vote数:4 @ [My Project LMSYS - Submission 8](./kernels/My_Project_LMSYS_-_Submission_8/my-project-lmsys-submission-8.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/My_Project_LMSYS_-_Submission_8/my-project-lmsys-submission-8.ipynb)\]
+* Vote数:3 @ [LMSYS Prompt/Response Words KeyBERT](./kernels/LMSYS_PromptResponse_Words_KeyBERT/lmsys-prompt-response-words-keybert.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS_PromptResponse_Words_KeyBERT/lmsys-prompt-response-words-keybert.ipynb)\]
+* Vote数:3 @ [  Chatbot Arena Human Preference Predictions](./kernels/__Chatbot_Arena_Human_Preference_Predictions/chatbot-arena-human-preference-predictions.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/__Chatbot_Arena_Human_Preference_Predictions/chatbot-arena-human-preference-predictions.ipynb)\]
+* Vote数:3 @ [Fantasy Battle Simulator Data Processing and Model](./kernels/Fantasy_Battle_Simulator_Data_Processing_and_Model/fantasy-battle-simulator-data-processing-and-model.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Fantasy_Battle_Simulator_Data_Processing_and_Model/fantasy-battle-simulator-data-processing-and-model.ipynb)\]
+* Vote数:3 @ [  Gemma-2-9b | [Part1: prompt-engineering] | \xf0\x9](./kernels/__Gemma-2-9b__[Part1_prompt-engineering]__x9/gemma-2-9b-part1-prompt-engineering.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/__Gemma-2-9b__[Part1_prompt-engineering]__x9/gemma-2-9b-part1-prompt-engineering.ipynb)\]
+* Vote数:3 @ [  \xf0\x9f\xa7\xa0 LMSYS - AI Chat Evaluator: Enhanc](./kernels/___LMSYS_-_AI_Chat_Evaluator_Enhanc/lmsys-ai-chat-evaluator-enhancing-human-ai.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/___LMSYS_-_AI_Chat_Evaluator_Enhanc/lmsys-ai-chat-evaluator-enhancing-human-ai.ipynb)\]
+* Vote数:3 @ [  Human AI  Model Choises EDA \xf0\x9f\x93\x8a](./kernels/__Human_AI__Model_Choises_EDA_/human-ai-model-choises-eda.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/__Human_AI__Model_Choises_EDA_/human-ai-model-choises-eda.ipynb)\]
+* Vote数:3 @ [Finetune Llama3 using QLoRA](./kernels/Finetune_Llama3_using_QLoRA/finetune-llama3-using-qlora.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Finetune_Llama3_using_QLoRA/finetune-llama3-using-qlora.ipynb)\]
+* Vote数:2 @ [LSTMxCNN](./kernels/LSTMxCNN/lstmxcnn.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LSTMxCNN/lstmxcnn.ipynb)\]
+* Vote数:2 @ [  [DeepLearning] Llama3-8b 4-bit QLoRA](./kernels/__[DeepLearning]_Llama3-8b_4-bit_QLoRA/deeplearning-llama3-8b-4-bit-qlora.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/__[DeepLearning]_Llama3-8b_4-bit_QLoRA/deeplearning-llama3-8b-4-bit-qlora.ipynb)\]
+* Vote数:2 @ [LMSYS_Testing bert](./kernels/LMSYS_Testing_bert/lmsys-testing-bert.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS_Testing_bert/lmsys-testing-bert.ipynb)\]
+* Vote数:2 @ [Random binary output submission](./kernels/Random_binary_output_submission/random-binary-output-submission.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Random_binary_output_submission/random-binary-output-submission.ipynb)\]
+* Vote数:2 @ [LCAHPP](./kernels/LCAHPP/lcahpp.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LCAHPP/lcahpp.ipynb)\]
+* Vote数:2 @ [LLM-textstat-vaderSentiment-BERT-sample](./kernels/LLM-textstat-vaderSentiment-BERT-sample/llm-textstat-vadersentiment-bert-sample.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LLM-textstat-vaderSentiment-BERT-sample/llm-textstat-vadersentiment-bert-sample.ipynb)\]
+* Vote数:2 @ [ Gemma-2 9b  TRAIN](./kernels/_Gemma-2_9b__TRAIN/gemma-2-9b-train.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/_Gemma-2_9b__TRAIN/gemma-2-9b-train.ipynb)\]
+* Vote数:2 @ [Text_stats_with_Optuna](./kernels/Text_stats_with_Optuna/text-stats-with-optuna.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Text_stats_with_Optuna/text-stats-with-optuna.ipynb)\]
+* Vote数:2 @ [Fork of LMSYS - Chatbot Arena & TF-IDF](./kernels/Fork_of_LMSYS_-_Chatbot_Arena_&_TF-IDF/fork-of-lmsys-chatbot-arena-tf-idf.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Fork_of_LMSYS_-_Chatbot_Arena_&_TF-IDF/fork-of-lmsys-chatbot-arena-tf-idf.ipynb)\]
+* Vote数:2 @ [Chatbot Arena Human Preference Predictions](./kernels/Chatbot_Arena_Human_Preference_Predictions/chatbot-arena-human-preference-predictions.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Chatbot_Arena_Human_Preference_Predictions/chatbot-arena-human-preference-predictions.ipynb)\]
+* Vote数:2 @ [lmsys-deberta-length](./kernels/lmsys-deberta-length/lmsys-deberta-length.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/lmsys-deberta-length/lmsys-deberta-length.ipynb)\]
+* Vote数:2 @ [LMSYS-Chatbot-ARENA-LLM](./kernels/LMSYS-Chatbot-ARENA-LLM/lmsys-chatbot-arena-llm.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS-Chatbot-ARENA-LLM/lmsys-chatbot-arena-llm.ipynb)\]
+* Vote数:1 @ [[Inference] Gemma-2 9b 4-bit QLoRA](./kernels/[Inference]_Gemma-2_9b_4-bit_QLoRA/inference-gemma-2-9b-4-bit-qlora.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/[Inference]_Gemma-2_9b_4-bit_QLoRA/inference-gemma-2-9b-4-bit-qlora.ipynb)\]
+* Vote数:1 @ [LMSYS Keywords torch RoBERTa for Submission](./kernels/LMSYS_Keywords_torch_RoBERTa_for_Submission/lmsys-keywords-torch-roberta-for-submission.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS_Keywords_torch_RoBERTa_for_Submission/lmsys-keywords-torch-roberta-for-submission.ipynb)\]
+* Vote数:1 @ [LMSYS Keywords torch RoBERTa](./kernels/LMSYS_Keywords_torch_RoBERTa/lmsys-keywords-torch-roberta.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS_Keywords_torch_RoBERTa/lmsys-keywords-torch-roberta.ipynb)\]
+* Vote数:1 @ [  LMSYS - Chatbot](./kernels/__LMSYS_-_Chatbot/lmsys-chatbot.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/__LMSYS_-_Chatbot/lmsys-chatbot.ipynb)\]
+* Vote数:1 @ [DeBerta train classification](./kernels/DeBerta_train_classification/deberta-train-classification.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/DeBerta_train_classification/deberta-train-classification.ipynb)\]
+* Vote数:1 @ [[Training] nvidia-mistral-nemo 4-bit QLoRA SFT](./kernels/[Training]_nvidia-mistral-nemo_4-bit_QLoRA_SFT/training-nvidia-mistral-nemo-4-bit-qlora-sft.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/[Training]_nvidia-mistral-nemo_4-bit_QLoRA_SFT/training-nvidia-mistral-nemo-4-bit-qlora-sft.ipynb)\]
+* Vote数:1 @ [Text Stat](./kernels/Text_Stat/text-stat.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Text_Stat/text-stat.ipynb)\]
+* Vote数:1 @ [QA Bert](./kernels/QA_Bert/qa-bert.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/QA_Bert/qa-bert.ipynb)\]
+* Vote数:1 @ [Kaggle0１](./kernels/Kaggle0１/kaggle0.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Kaggle0１/kaggle0.ipynb)\]
+* Vote数:1 @ [notebookf6b0f99721](./kernels/notebookf6b0f99721/notebookf6b0f99721.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/notebookf6b0f99721/notebookf6b0f99721.ipynb)\]
+* Vote数:1 @ [【Train】LMSYS 240706 First](./kernels/【Train】LMSYS_240706_First/train-lmsys-240706-first.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/【Train】LMSYS_240706_First/train-lmsys-240706-first.ipynb)\]
+* Vote数:1 @ [Faster Training with unsloth](./kernels/Faster_Training_with_unsloth/faster-training-with-unsloth.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Faster_Training_with_unsloth/faster-training-with-unsloth.ipynb)\]
+* Vote数:1 @ [LMSYS-CAHPP Inference Baseline](./kernels/LMSYS-CAHPP_Inference_Baseline/lmsys-cahpp-inference-baseline.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS-CAHPP_Inference_Baseline/lmsys-cahpp-inference-baseline.ipynb)\]
+* Vote数:1 @ [LMSYS-CAHPP Llama3 8b Inference Baseline](./kernels/LMSYS-CAHPP_Llama3_8b_Inference_Baseline/lmsys-cahpp-llama3-8b-inference-baseline.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS-CAHPP_Llama3_8b_Inference_Baseline/lmsys-cahpp-llama3-8b-inference-baseline.ipynb)\]
+* Vote数:1 @ [New Good Feature: IFD + Length + TF-IDF](./kernels/New_Good_Feature_IFD_+_Length_+_TF-IDF/new-good-feature-ifd-length-tf-idf.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/New_Good_Feature_IFD_+_Length_+_TF-IDF/new-good-feature-ifd-length-tf-idf.ipynb)\]
+* Vote数:0 @ [[Parallel Train] Phi-3-mini-4k-instruct](./kernels/[Parallel_Train]_Phi-3-mini-4k-instruct/parallel-train-phi-3-mini-4k-instruct.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/[Parallel_Train]_Phi-3-mini-4k-instruct/parallel-train-phi-3-mini-4k-instruct.ipynb)\]
+* Vote数:0 @ [LMSYS - Luck simulator: Random output submission](./kernels/LMSYS_-_Luck_simulator_Random_output_submission/lmsys-luck-simulator-random-output-submission.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS_-_Luck_simulator_Random_output_submission/lmsys-luck-simulator-random-output-submission.ipynb)\]
+* Vote数:0 @ [SFT Llama-31-8B Inference](./kernels/SFT_Llama-31-8B_Inference/sft-llama-31-8b-inference.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/SFT_Llama-31-8B_Inference/sft-llama-31-8b-inference.ipynb)\]
+* Vote数:0 @ [  \xf0\x9f\xa6\x99Llama-3 8B 38% faster inference](./kernels/__Llama-3_8B_38%_faster_inference/llama-3-8b-38-faster-inference.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/__Llama-3_8B_38%_faster_inference/llama-3-8b-38-faster-inference.ipynb)\]
+* Vote数:0 @ [LMSYS](./kernels/LMSYS/lmsys.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS/lmsys.ipynb)\]
+* Vote数:0 @ [Gemma instruct 2B LMSYS [Training TPU]](./kernels/Gemma_instruct_2B_LMSYS_[Training_TPU]/gemma-instruct-2b-lmsys-training-tpu.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Gemma_instruct_2B_LMSYS_[Training_TPU]/gemma-instruct-2b-lmsys-training-tpu.ipynb)\]
+* Vote数:0 @ [  LMSYS](./kernels/__LMSYS/lmsys.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/__LMSYS/lmsys.ipynb)\]
+* Vote数:0 @ [DL-Final](./kernels/DL-Final/dl-final.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/DL-Final/dl-final.ipynb)\]
+* Vote数:0 @ [  [Training] Llama3-8b 4-bit QLoRA SFT](./kernels/__[Training]_Llama3-8b_4-bit_QLoRA_SFT/training-llama3-8b-4-bit-qlora-sft.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/__[Training]_Llama3-8b_4-bit_QLoRA_SFT/training-llama3-8b-4-bit-qlora-sft.ipynb)\]
+* Vote数:0 @ [LMSYS-ChatbotArenaHumanPreferencePredictions](./kernels/LMSYS-ChatbotArenaHumanPreferencePredictions/lmsys-chatbotarenahumanpreferencepredictions.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS-ChatbotArenaHumanPreferencePredictions/lmsys-chatbotarenahumanpreferencepredictions.ipynb)\]
+* Vote数:0 @ ["Neural Networks for Chatbot Preference Prediction](./kernels/Neural_Networks_for_Chatbot_Preference_Prediction/neural-networks-for-chatbot-preference-prediction.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Neural_Networks_for_Chatbot_Preference_Prediction/neural-networks-for-chatbot-preference-prediction.ipynb)\]
+* Vote数:0 @ [Gemma-2](./kernels/Gemma-2/gemma-2.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Gemma-2/gemma-2.ipynb)\]
+* Vote数:0 @ [LLM Response Predict](./kernels/LLM_Response_Predict/llm-response-predict.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LLM_Response_Predict/llm-response-predict.ipynb)\]
+* Vote数:0 @ [[Inference] Gemma-2 9b 4-bit QLoRA](./kernels/[Inference]_Gemma-2_9b_4-bit_QLoRA/inference-gemma-2-9b-4-bit-qlora.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/[Inference]_Gemma-2_9b_4-bit_QLoRA/inference-gemma-2-9b-4-bit-qlora.ipynb)\]
+* Vote数:0 @ [Llama-3 8b [TPU Train]¶](./kernels/Llama-3_8b_[TPU_Train]¶/llama-3-8b-tpu-train.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Llama-3_8b_[TPU_Train]¶/llama-3-8b-tpu-train.ipynb)\]
+* Vote数:0 @ [pet_infer](./kernels/pet_infer/pet-infer.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/pet_infer/pet-infer.ipynb)\]
+* Vote数:0 @ [  LMSYS - LSTM mix CNN - [GPU train]](./kernels/__LMSYS_-_LSTM_mix_CNN_-_[GPU_train]/lmsys-lstm-mix-cnn-gpu-train.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/__LMSYS_-_LSTM_mix_CNN_-_[GPU_train]/lmsys-lstm-mix-cnn-gpu-train.ipynb)\]
+* Vote数:0 @ [[Training] Gemma-2 9b 4-bit QLoRA_72k data](./kernels/[Training]_Gemma-2_9b_4-bit_QLoRA_72k_data/training-gemma-2-9b-4-bit-qlora-72k-data.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/[Training]_Gemma-2_9b_4-bit_QLoRA_72k_data/training-gemma-2-9b-4-bit-qlora-72k-data.ipynb)\]
+* Vote数:0 @ [LMSYS-1](./kernels/LMSYS-1/lmsys-1.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS-1/lmsys-1.ipynb)\]
+* Vote数:0 @ [ChatbotResponseAnalysisSoln](./kernels/ChatbotResponseAnalysisSoln/chatbotresponseanalysissoln.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/ChatbotResponseAnalysisSoln/chatbotresponseanalysissoln.ipynb)\]
+* Vote数:0 @ [Gemma 2 train on tpu](./kernels/Gemma_2_train_on_tpu/gemma-2-train-on-tpu.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/Gemma_2_train_on_tpu/gemma-2-train-on-tpu.ipynb)\]
+* Vote数:0 @ [[Train] LMSYS / Deberta-v3 starter code](./kernels/[Train]_LMSYS__Deberta-v3_starter_code/train-lmsys-deberta-v3-starter-code.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/[Train]_LMSYS__Deberta-v3_starter_code/train-lmsys-deberta-v3-starter-code.ipynb)\]
+* Vote数:0 @ [llama-3-8B-fast](./kernels/llama-3-8B-fast/llama-3-8b-fast.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/llama-3-8B-fast/llama-3-8b-fast.ipynb)\]
+* Vote数:0 @ [LMSYS - EDA and topic modelling](./kernels/LMSYS_-_EDA_and_topic_modelling/lmsys-eda-and-topic-modelling.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS_-_EDA_and_topic_modelling/lmsys-eda-and-topic-modelling.ipynb)\]
+* Vote数:0 @ [MJK LMSYS: KerasNLP Starter](./kernels/MJK_LMSYS_KerasNLP_Starter/mjk-lmsys-kerasnlp-starter.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/MJK_LMSYS_KerasNLP_Starter/mjk-lmsys-kerasnlp-starter.ipynb)\]
+* Vote数:0 @ [oneWorkflow](./kernels/oneWorkflow/oneworkflow.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/oneWorkflow/oneworkflow.ipynb)\]
+* Vote数:0 @ [LMSYS - Llama-3 [TPU train]](./kernels/LMSYS_-_Llama-3_[TPU_train]/lmsys-llama-3-tpu-train.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/LMSYS_-_Llama-3_[TPU_train]/lmsys-llama-3-tpu-train.ipynb)\]
+* Vote数:0 @ [mistral_k_bit](./kernels/mistral_k_bit/mistral-k-bit.ipynb)  \[[日英比較付きはこちら](./comparison/kernels/mistral_k_bit/mistral-k-bit.ipynb)\]
