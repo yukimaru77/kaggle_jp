@@ -1,4 +1,4 @@
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
 title: Kaggle JP
 description: kaggleのコンペティションの情報を日本語訳したり、日英比較、LLMによる要約やLLMに食わせやすいようにしたデータを提供するサイトです。
 markdown: kramdown
