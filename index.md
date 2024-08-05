@@ -18,8 +18,8 @@ title: Welcome to My Site
 * [ルールの日本語訳](./llm-20-questions_jp/rules.html)　サマリー付きは[こちら](./llm-20-questions_jp/rules_with_summary.html)
 * [全カーネルの日本語訳](./llm-20-questions_jp/kernels_by_votes.html)
 * 全ディスカッションの日本語訳[(投票数順)](./llm-20-questions_jp/discuss_by_votes.html)　[(コメント数順)](./llm-20-questions_jp/discuss_by_comments.html)
-* [全カーネルをプレフィックス付きで結合したもの](./llm-20-questions_jp/kernels_all.html)
-* [全ディスカッションをプレフィックス付きで結合したもの](./llm-20-questions_jp/discuss_all.html)
+* [全カーネルをプレフィックス付きで結合したもの](./llm-20-questions_jp/kernels_all.html)　([mdファイルのダウンロード先はこちら](https://github.com/yukimaru77/kaggle_jp/blob/main/llm-20-questions_jp/kernels_all.md))
+* [全ディスカッションをプレフィックス付きで結合したもの](./llm-20-questions_jp/discuss_all.html)　([mdファイルのダウンロード先はこちら](https://github.com/yukimaru77/kaggle_jp/blob/main/llm-20-questions_jp/discuss_all.md))
 
 ## lmsys-chatbot-arena
 
@@ -27,5 +27,5 @@ title: Welcome to My Site
 * [ルールの日本語訳](./lmsys-chatbot-arena_jp/rules.html)　サマリー付きは[こちら](./lmsys-chatbot-arena_jp/rules_with_summary.html)
 * [全カーネルの日本語訳](./lmsys-chatbot-arena_jp/kernels_by_votes.html)
 * 全ディスカッションの日本語訳[(投票数順)](./lmsys-chatbot-arena_jp/discuss_by_votes.html)　[(コメント数順)](./lmsys-chatbot-arena_jp/discuss_by_comments.html)
-* [全カーネルをプレフィックス付きで結合したもの](./lmsys-chatbot-arena_jp/kernels_all.html)
-* [全ディスカッションをプレフィックス付きで結合したもの](./lmsys-chatbot-arena_jp/discuss_all.html)
+* [全カーネルをプレフィックス付きで結合したもの](./lmsys-chatbot-arena_jp/kernels_all.html)　([mdファイルのダウンロード先はこちら](htpps://github.com/yukimaru77/kaggle_jp/blob/main/lmsys-chatbot-arena_jp/kernels_all.md))
+* [全ディスカッションをプレフィックス付きで結合したもの](./lmsys-chatbot-arena_jp/discuss_all.html)　([mdファイルのダウンロード先はこちら](htpps://github.com/yukimaru77/kaggle_jp/blob/main/lmsys-chatbot-arena_jp/discuss_all.html))
