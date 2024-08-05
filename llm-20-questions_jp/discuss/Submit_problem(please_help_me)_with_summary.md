@@ -1,59 +1,41 @@
 # 要約 
-このディスカッションは、Kaggleの「LLM 20 Questions」コンペティションで、参加者が提出時に「検証エピソードが失敗しました（エラー）」というエラーに遭遇している問題についてです。
+ディスカッションは、コンペティション参加者がノートブックを提出する際に直面する「バリデーションエピソードが失敗しました（エラー）」についての問題を共有しています。参加者の一人である**tiny wood**さんは初心者で、ログが空で原因がわからないと述べています。
 
-**tiny wood**というユーザーが、ノートブックを提出しようとした際にこのエラーが発生し、ログも空であると報告しています。
+他のユーザーは同様の問題に直面しており、**davide**さんはエージェントのログがエラーを示していることを報告。その内容は、無効な構文を示すもので、エージェントのコードに何か問題がある可能性を指摘しています。他にも、**OminousDude**さんがログの二種類（エージェント0とエージェント1）を確認するよう提案し、**Code Hacker**さんも助けを求めています。 
 
-**davide**というユーザーも同様の問題に遭遇しており、自分のコードやエージェントの動作とは関係ないように思えるとコメントしています。彼は、エージェントのログに「SyntaxError: invalid syntax」というエラーが表示されていることを示しています。
-
-**OminousDude**は、ログがエージェント0とエージェント1の2つあることを指摘し、両方を確認するようアドバイスしています。
-
-**Code Hacker**も同様の問題に遭遇しており、助けを求めています。
-
-**Krens**は、以前このエラーに遭遇した経験があり、デバッグ中に「はい」と「いいえ」の回答に対する制限を解除したことが原因だったと説明しています。彼は、実行タイムアウトや文字数制限の超過にも注意する必要があるとアドバイスしています。
-
-このディスカッションから、多くの参加者が「検証エピソードが失敗しました（エラー）」というエラーに遭遇しており、その原因はコードの構文エラーや回答の制限違反など、さまざまな要因が考えられることがわかります。
-
+さらに、**Krens**さんは、エージェントが「はい」または「いいえ」以外の回答を返したことやタイムアウトの注意、文字数制限の確認が重要であるとアドバイスしています。このディスカッションは、ノートブックの提出時に遭遇する問題に対するサポートと情報共有の場となっています。
 
 ---
 # 提出に関する問題（助けてください）
-**tiny wood** *2024年7月5日 金曜日 09:43:09 GMT+0900 (日本標準時)* (1票)
-このコンペティション初心者です。
-ノートブックを提出しようとしましたが、ずっと「検証エピソードが失敗しました（エラー）」と表示されます。
-失敗後のログも確認しようとしましたが、ログは空です。
-何が問題でしょうか？
+**tiny wood** *2024年7月5日 金曜日 09:43:09 GMT+0900（日本標準時）* (1票)
+私はこのコンペティションの初心者です。
+ノートブックを提出しようとしたのですが、「バリデーションエピソードが失敗しました（エラー）」と表示され続けます。
+失敗後のログも読み取ろうとしましたが、ログは空でした。
+問題は何でしょうか？
 ---
-# 他のユーザーからのコメント
+ # 他のユーザーからのコメント
 > ## davide
 > 
-> 私も同じ問題に遭遇しており、私のコードやエージェントの動作とは関係ないように思えます。
+> 私も同じ問題に直面しており、自分のコードやエージェントの動作には関係ないようです。
 > 
-> これは、エージェントの1つから見られるログです。
+> こちらがエージェントの一つからのログです：
 > 
 > [[{"duration": 0.002077, "stdout": "", "stderr": "Traceback (most recent call last):\n  File \"/opt/conda/lib/python3.10/site-packages/kaggle_environments/agent.py\", line 43, in get_last_callable\n    code_object = compile(raw, path, \"exec\")\n  File \"/kaggle_simulations/agent/main.py\", line 1\n    include the main.py code under this for submission\n            ^^^\nSyntaxError: invalid syntax\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/opt/conda/lib/python3.10/site-packages/kaggle_environments/agent.py\", line 159, in act\n    action = self.agent(*args)\n  File \"/opt/conda/lib/python3.10/site-packages/kaggle_environments/agent.py\", line 125, in callable_agent\n    agent = get_last_callable(raw_agent, path=raw) or raw_agent\n  File \"/opt/conda/lib/python3.10/site-packages/kaggle_environments/agent.py\", line 64, in get_last_callable\n    raise InvalidArgument(\"Invalid raw Python: \" + repr(e))\nkaggle_environments.errors.InvalidArgument: Invalid raw Python: SyntaxError('invalid syntax', ('/kaggle_simulatio"}]]
 > 
-> もしかしたら誰かが助けてくれるかもしれません。[@bovard](https://www.kaggle.com/bovard) 
+> 誰か助けてくれませんか？ [@bovard](https://www.kaggle.com/bovard) 
 > 
-> 
-> 
----
+> ---
 > ## OminousDude
 > 
-> ログはエージェント0とエージェント1の2つあります。両方を確認しましたか？
+> エージェントには二つのログがあります：エージェント0とエージェント1。両方を確認しましたか？
 > 
-> 
-> 
----
+> ---
 > ## Code Hacker
 > 
-> 私も… 助けてください…
-> 
-> 
+> 私も同じです…助けてください…
 > 
 > > ## Krens
 > > 
-> > 以前「検証エピソードが失敗しました（エラー）」というエラーに遭遇したのは、デバッグ中に「はい」と「いいえ」の回答に対する制限を解除したため、提出時にエージェントが他の回答をした際にエラーが発生したためです。また、実行タイムアウト、文字数制限の超過などにも注意する必要があります。
+> > 最後に「バリデーションエピソードが失敗しました（エラー）」が発生したのは、デバッグ中に「はい」と「いいえ」の回答制限を取り除いたためで、提出時に他の回答をエージェントがしたときにエラーが発生しました。それに加えて、タイムアウトに注意することや、文字数が制限を超えていないかも確認する必要があります。
 > > 
 > > 
-> > 
----
-

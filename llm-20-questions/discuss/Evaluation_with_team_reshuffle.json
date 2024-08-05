@@ -10,26 +10,26 @@
         {
             "author": "loh-maa",
             "content": "What if model B is also poor at asking questions? Then perhaps A should also play with D against B and C, and C against B and D, and then against E and F, and to make things even more fair, every agent should play against every agent, and this is actually going to happen in the end, except randomly.\n\n",
-            "date": "Posted 23 days ago  ·  2nd in this Competition",
+            "date": "Posted 25 days ago  ·  1st in this Competition",
             "votes": "1",
             "reply": [
                 {
                     "author": "Azat AkhtyamovTopic Author",
                     "content": "While I agree that it would be even better, we are constrained with limited amount of gpu…\n\n",
-                    "date": "Posted 22 days ago  ·  67th in this Competition",
+                    "date": "Posted 24 days ago  ·  95th in this Competition",
                     "votes": "0",
                     "reply": [
                         {
                             "author": "loh-maa",
                             "content": "Hi [@azakhtyamov](https://www.kaggle.com/azakhtyamov), I think the same constraint applies to reshuffling. It doubles the cost of evaluation. And actually it's not just a matter of changing a single parameter -- the format is established, including the ranking algorithm and visualization. Implementing such team reshuffling would complicate things, introducing unclarity, possibly new bugs and likely inviting a new bunch of requests from players. I think people supporting this idea don't take this into account at all.\n\nThe key question though is: does reshuffled evaluation provide significantly more overall \"convergence gain\" than two independent games? I doubt, and I would be seriously impressed If you could demontrate that actually it does.. ,)\n\n",
-                            "date": "Posted 22 days ago  ·  2nd in this Competition",
+                            "date": "Posted 24 days ago  ·  1st in this Competition",
                             "votes": "0",
                             "reply": []
                         },
                         {
                             "author": "Robert Hatch",
                             "content": "Just guessing, but there's probably a ton of statistical benefit from the simple swap and replay. \n\nI'm not certain on the statistics in terms of theoretical proof, but I really think it should be trivial to show that as you increase the relative randomness of \"pairing luck\" and decrease the relative randomness of models AB beating models CD, then of course it will converge faster if swapping pairings. \n\nAt that point, though, there's additional benefit if building a scoring system from scratch. Assuming no ties, every pairing will have a single winner and a single loser, which will either be the questioner models winning/losing, or the answerer models winning/losing. There might be ways to use that in bot ratings to quickly relegate the bad answerer models, or punish those losses higher, or whatever. \n\nNot invested in the competition, and I actually agree they shouldn't change it for this one at this point. But it seems very likely that the suggestion of match pairs (or quad battles) would indeed help (a lot) vs continuous random, statistically. \n\n",
-                            "date": "Posted 21 days ago",
+                            "date": "Posted 22 days ago",
                             "votes": "0",
                             "reply": []
                         }
@@ -40,13 +40,13 @@
         {
             "author": "Neuron Engineer",
             "content": "I also want to question about the evaluation system on similar issue:\n\nIs the following result reasonable?\n\nNewPlayer605 paired with BadPlayer533 who always be a wrong syntax guesser.\n\n vs. BetterPlayer732 & BetterPlayer652\n\nNewPlayer605 unavoidably lost and get the most penalized of the four. (-128 points), and so continue to be paired with other BadPlayers.\n\nIs this pairing and scoring intentional ?\n\nBecause if yes, in order to measure the real ability of NewPlayer605, we have to continuously resubmit the agent  and hope to not pair with the SyntaxErrorPlayers . And so it looks totally difficult to evaluate the NewPlayer capability.\n\nThe shuffle matching mentioned in the OP seems to help this issue to be fairer in my opinion.\n\n[@bovard](https://www.kaggle.com/bovard) [@addisonhoward](https://www.kaggle.com/addisonhoward) [@mylesoneill](https://www.kaggle.com/mylesoneill)\n\n",
-            "date": "Posted 19 days ago  ·  118th in this Competition",
+            "date": "Posted 21 days ago  ·  125th in this Competition",
             "votes": "0",
             "reply": [
                 {
                     "author": "Neuron Engineer",
                     "content": "Illustration of the BadSyntaxErrorPlayer\n\n",
-                    "date": "Posted 19 days ago  ·  118th in this Competition",
+                    "date": "Posted 21 days ago  ·  125th in this Competition",
                     "votes": "0",
                     "reply": []
                 }

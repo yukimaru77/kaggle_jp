@@ -1,0 +1,10 @@
+{
+    "main_topic": {
+        "author": "mayank",
+        "title": "Validation Episode Failed - Need Help Debugging My Notebook",
+        "content": "\"Hi everyone, I'm encountering an issue with my notebook where the validation episode fails during evaluation. I've checked my code and ensured that I am loading the model and tokenizer correctly, but I still can't identify the problem.\n\nI would greatly appreciate it if someone could take a look at my notebook and help me debug this issue. Any insights or suggestions would be incredibly helpful. Thank you!\"\n\nFeel free to modify it to fit your style! \n\nhere is my notebook [https://www.kaggle.com/code/mayankchhavri/notebook8361bc9d6d/edit/run/191183468](url)\n\nHere’s a brief overview of what I have done:\n\nLoaded a large pre-trained model using Hugging Face Transformers.\nGenerated some outputs that I want to include in my submission.\n\nI am new to participating in Kaggle competitions, although I have some experience with coding. I might have made some oversight or silly mistake in my notebook. Any feedback or insights would be greatly appreciated!\n\n",
+        "date": "Mon Aug 05 2024 03:03:07 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": []
+}

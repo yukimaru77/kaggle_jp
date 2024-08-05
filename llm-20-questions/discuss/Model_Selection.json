@@ -10,13 +10,13 @@
         {
             "author": "Azim Sonawalla",
             "content": "\nThe key to performance should be deductive reasoning and the model's ability to follow explicit instructions (to help with parsing).\n\nI'm not sure about this assumption.  The bots need reasoning to the extent that they can find a keyword that satisfies up to 20 simultaneous conditions as the questioner/guesser, but actual knowledge of facts in order to come up with late game questions to narrow down the last few candidates.\n\nI've been toying with the idea that a model trained on a higher token count (e.g. llama3) might do well for this reason, but haven't gotten around to creating an experiment along those lines.\n\n",
-            "date": "Posted a month ago  ·  162nd in this Competition",
+            "date": "Posted a month ago  ·  241st in this Competition",
             "votes": "1",
             "reply": [
                 {
                     "author": "Matthew S FarmerTopic Author",
                     "content": "Interesting objection! Thanks for challenging my assumptions. Following your idea, a multilingual model may be best for this competition since it requires a larger vocabulary training than English only models? \n\n",
-                    "date": "Posted a month ago  ·  176th in this Competition",
+                    "date": "Posted a month ago  ·  69th in this Competition",
                     "votes": "0",
                     "reply": []
                 }

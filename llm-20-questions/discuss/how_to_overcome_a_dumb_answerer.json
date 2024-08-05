@@ -10,13 +10,13 @@
         {
             "author": "Matthew S Farmer",
             "content": "In your guesser prompt, you may want to give it instructions to make a guess even if it has inconsistent or conflicting information. Ultimately, if the answerer isn't 'truthful' the foundation of the 20 questions falls apart. \n\nYou could also prompt your questioner in a way that looks for conflicting answers and clarifies confusion by repeating a question in a different way. \n\n",
-            "date": "Posted 17 days ago  ·  176th in this Competition",
+            "date": "Posted 19 days ago  ·  69th in this Competition",
             "votes": "1",
             "reply": [
                 {
                     "author": "kaoutarTopic Author",
                     "content": "[@matthewsfarmer](https://www.kaggle.com/matthewsfarmer) yeah, i've already tried warning the asker agent about meeting a stupid answerer, it wasn't bad but i noticed that sometimes even when the answerer does fairly well, the asker keeps rephrasing questions which waist time, decreasing the temperature of the asker agent may help, but truly a bad answerer sucks\n\n",
-                    "date": "Posted 17 days ago  ·  175th in this Competition",
+                    "date": "Posted 18 days ago  ·  80th in this Competition",
                     "votes": "0",
                     "reply": []
                 }
@@ -25,13 +25,13 @@
         {
             "author": "Neuron Engineer",
             "content": "First of all, thanks for your public notebook! I just started to build my own based on your code and some others.\n\nAbout this issue, have you tried \"Chain of Thought\" on the keyword? \n\n(Then putting the thought in the prompt before producing the final answer)\n\n",
-            "date": "Posted 19 days ago  ·  118th in this Competition",
+            "date": "Posted 21 days ago  ·  125th in this Competition",
             "votes": "1",
             "reply": [
                 {
                     "author": "kaoutarTopic Author",
                     "content": "[@ratthachat](https://www.kaggle.com/ratthachat) i'm glad to hear this, thank you, about the Chain of Thoughts, i haven't tried it yet. certainly i will.\n\n",
-                    "date": "Posted 18 days ago  ·  175th in this Competition",
+                    "date": "Posted 20 days ago  ·  80th in this Competition",
                     "votes": "1",
                     "reply": []
                 }

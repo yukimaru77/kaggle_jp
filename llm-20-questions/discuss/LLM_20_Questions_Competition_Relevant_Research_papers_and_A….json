@@ -1,0 +1,18 @@
+{
+    "main_topic": {
+        "author": "C R Suthikshn Kumar",
+        "title": "LLM 20 Questions Competition: Relevant Research papers and Articles",
+        "content": "With respect to ML Competition \" LLM 20 Questions\"\n\n[https://www.kaggle.com/competitions/llm-20-questions/](https://www.kaggle.com/competitions/llm-20-questions/)\n\nWishing all best for the participants in this competition. I am sharing relevant research papers and articles:\n\nProbing the Multi-turn Planning Capabilities of LLMs via 20 Question Games\n\nYizhe Zhang, Jiarui Lu, Navdeep Jaitly,   [https://arxiv.org/abs/2310.01468v3](https://arxiv.org/abs/2310.01468v3)\nJie Huang and Kevin Chen-Chuan Chang.Towards reasoning in large language models: A survey.arXiv preprint arXiv:2212.10403, 2022.\nThink you have Solved Question Answering? Try ARC, the AI2 Reasoning Challenge\n\nPeter Clark, et al.,\n\n[https://arxiv.org/abs/1803.05457](https://arxiv.org/abs/1803.05457)\nChain-of-Thought Hub: A Continuous Effort to Measure Large Language Models' Reasoning Performance\n\nYao Fu, et al., [https://arxiv.org/abs/2305.17306](https://arxiv.org/abs/2305.17306)\n20 Questions Wiki: [https://en.wikipedia.org/wiki/Twenty_questions](https://en.wikipedia.org/wiki/Twenty_questions)\n",
+        "date": "Mon Jul 29 2024 15:35:08 GMT+0900 (日本標準時)",
+        "votes": "9"
+    },
+    "comments": [
+        {
+            "author": "Muhammad Ehsan",
+            "content": "Thank you for sharing these valuable resources! [@crsuthikshnkumar](https://www.kaggle.com/crsuthikshnkumar) \n\nThe papers and articles you’ve listed are excellent for gaining deeper insights into the capabilities and challenges of LLMs, especially in the context of multi-turn reasoning and question-answering tasks.\n\nThe links to research and the Wiki page will certainly help participants better understand the underlying concepts and strategies for the LLM 20 Questions competition. \n\nBest of luck to everyone competing!\n\n",
+            "date": "Posted 5 days ago  ·  108th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}

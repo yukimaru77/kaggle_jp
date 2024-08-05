@@ -10,19 +10,19 @@
         {
             "author": "Chris Deotte",
             "content": "It is my understanding that the questioner and answerer are teammates. The questioner asks a yes or not question. Then Kaggle responds with yes or no (and Kaggle will not lie). Then your teammate the answerer guesses a possible word. Then Kaggle responds if your are correct or not (and Kaggle will not lie).\n\nYour team of two bots is competing against another team of two bots to discover the word first.\n\nUPDATE: Read Nicholas' comment below\n\n",
-            "date": "Posted 2 months ago  ·  637th in this Competition",
+            "date": "Posted 3 months ago  ·  625th in this Competition",
             "votes": "1",
             "reply": [
                 {
                     "author": "Nicholas Broad",
                     "content": "[@cdeotte](https://www.kaggle.com/cdeotte) ,\n\nI believe the questioner also is the guesser. The answerer only responds yes/no.\n\nHere is how I think it goes.\n\nKeyword: France\n\n  Questioner turn 1: Is it a place?\n\n  Answerer turn 1: Yes\n\n  Questioner guess 1: USA\n\n  Kaggle guess checker: Incorrect\n\n  Questioner turn 2: Is it in Europe?\n\n  Answerer turn 2: Yes\n\n  Questioner guess 2: France\n\n  Kaggle guess checker: Correct\n\n",
-                    "date": "Posted 2 months ago",
+                    "date": "Posted 3 months ago",
                     "votes": "1",
                     "reply": [
                         {
                             "author": "Chris Deotte",
                             "content": "Yes, i think you are correct\n\n",
-                            "date": "Posted 2 months ago  ·  637th in this Competition",
+                            "date": "Posted 3 months ago  ·  625th in this Competition",
                             "votes": "1",
                             "reply": []
                         }
@@ -39,20 +39,20 @@
                 {
                     "author": "VolodymyrBilyachatTopic Author",
                     "content": "Yes I finally got the idea. Its always 2 teams. If you lie the opponent will get confused and will not get an right answer so you both get lower scores. Thank you\n\n",
-                    "date": "Posted 3 months ago  ·  214th in this Competition",
+                    "date": "Posted 3 months ago  ·  216th in this Competition",
                     "votes": "0",
                     "reply": []
                 },
                 {
                     "author": "Kamal Das",
                     "content": "what if the reverse, the answerer lies and says OK, right answer to any guess?\n\nthat helps the bit pair?\n\n",
-                    "date": "Posted 2 months ago  ·  326th in this Competition",
+                    "date": "Posted 3 months ago  ·  249th in this Competition",
                     "votes": "0",
                     "reply": [
                         {
                             "author": "Rob Mulla",
                             "content": "I don't think the agent is responsible for determining if a guess is right, unless I'm missing something, it looks like it's checked using this function from llm_20_questions.py, I'm assuming by the system?\n\n```\ndef keyword_guessed(guess: str) -> bool:\n    def normalize(s: str) -> str:\n      t = str.maketrans(\"\", \"\", string.punctuation)\n      return s.lower().replace(\"the\", \"\").replace(\" \", \"\").translate(t)\n\n    if normalize(guess) == normalize(keyword):\n      return True\n    for s in alts:\n      if normalize(s) == normalize(guess):\n        return True\n\n    return False\n\n```\n\n",
-                            "date": "Posted 2 months ago  ·  50th in this Competition",
+                            "date": "Posted 3 months ago  ·  40th in this Competition",
                             "votes": "2",
                             "reply": []
                         },

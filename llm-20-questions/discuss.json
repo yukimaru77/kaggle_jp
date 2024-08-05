@@ -1,12 +1,12 @@
 [
     {
-        "comments": 33,
-        "votes": 17,
+        "comments": 41,
+        "votes": 21,
         "user_link": "/bovard",
         "discuss_link": "/competitions/llm-20-questions/discussion/523198",
         "title": "Competition Update",
         "post_ago": null,
-        "comment_ago": "20h"
+        "comment_ago": "1h"
     },
     {
         "comments": 16,
@@ -15,7 +15,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/503040",
         "title": "Get started here!",
         "post_ago": null,
-        "comment_ago": "1d"
+        "comment_ago": "3d"
     },
     {
         "comments": 0,
@@ -28,12 +28,21 @@
     },
     {
         "comments": 2,
-        "votes": 17,
+        "votes": 21,
         "user_link": "/matthewsfarmer",
         "discuss_link": "/competitions/llm-20-questions/discussion/523619",
         "title": "Llama 3.1 Hack - Confirmed to Work in Kaggle Environment (Notebooks and Competition)",
         "post_ago": null,
-        "comment_ago": "1d"
+        "comment_ago": "3d"
+    },
+    {
+        "comments": 10,
+        "votes": 11,
+        "user_link": "/cnumber",
+        "discuss_link": "/competitions/llm-20-questions/discussion/523317",
+        "title": "A proposal for a more reliable LB",
+        "post_ago": null,
+        "comment_ago": "3d"
     },
     {
         "comments": 16,
@@ -42,16 +51,34 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/522888",
         "title": "New Models (7B-14B) Released!",
         "post_ago": null,
-        "comment_ago": "1d"
+        "comment_ago": "3d"
     },
     {
-        "comments": 10,
-        "votes": 10,
-        "user_link": "/cnumber",
-        "discuss_link": "/competitions/llm-20-questions/discussion/523317",
-        "title": "A proposal for a more reliable LB",
+        "comments": 1,
+        "votes": 2,
+        "user_link": "/wolfmedal",
+        "discuss_link": "/competitions/llm-20-questions/discussion/524045",
+        "title": "Is the ranking meaningful?",
         "post_ago": null,
-        "comment_ago": "20h"
+        "comment_ago": "12h"
+    },
+    {
+        "comments": 0,
+        "votes": 0,
+        "user_link": "/mayankchhavri",
+        "discuss_link": "/competitions/llm-20-questions/discussion/524123",
+        "title": "Validation Episode Failed - Need Help Debugging My Notebook",
+        "post_ago": "8h",
+        "comment_ago": null
+    },
+    {
+        "comments": 2,
+        "votes": 0,
+        "user_link": "/jeannkouagou",
+        "discuss_link": "/competitions/llm-20-questions/discussion/524068",
+        "title": "Some competitors still have 3 agents active.",
+        "post_ago": null,
+        "comment_ago": "13h"
     },
     {
         "comments": 0,
@@ -59,7 +86,7 @@
         "user_link": "/shiv314",
         "discuss_link": "/competitions/llm-20-questions/discussion/523858",
         "title": "Why is the answerer being penalised if the other team guesses the right word?",
-        "post_ago": "39m",
+        "post_ago": "2d",
         "comment_ago": null
     },
     {
@@ -69,7 +96,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/523523",
         "title": "I am stuck with llama 3.1",
         "post_ago": null,
-        "comment_ago": "1d"
+        "comment_ago": "3d"
     },
     {
         "comments": 2,
@@ -78,7 +105,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/522925",
         "title": "LLM 20 Questions Competition: Relevant Research papers and Articles",
         "post_ago": null,
-        "comment_ago": "3d"
+        "comment_ago": "5d"
     },
     {
         "comments": 5,
@@ -87,7 +114,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/522612",
         "title": "Final Evaluation - Question",
         "post_ago": null,
-        "comment_ago": "3d"
+        "comment_ago": "5d"
     },
     {
         "comments": 4,
@@ -96,7 +123,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/523352",
         "title": "Weird Error",
         "post_ago": null,
-        "comment_ago": "2d"
+        "comment_ago": "4d"
     },
     {
         "comments": 1,
@@ -105,7 +132,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/522999",
         "title": "An interesting discussion has been deleted?",
         "post_ago": null,
-        "comment_ago": "4d"
+        "comment_ago": "6d"
     },
     {
         "comments": 1,
@@ -114,7 +141,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/523392",
         "title": "How different would be the evaluation in the private leaderboard vs evaluation in the public leaderboard?",
         "post_ago": null,
-        "comment_ago": "2d"
+        "comment_ago": "4d"
     },
     {
         "comments": 11,
@@ -123,7 +150,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/520928",
         "title": "Q. At what percentage does the current 1st place submission earn a bronze medal? A. 33%",
         "post_ago": null,
-        "comment_ago": "3d"
+        "comment_ago": "4d"
     },
     {
         "comments": 1,
@@ -132,16 +159,16 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/523147",
         "title": "debug error [ERR]",
         "post_ago": null,
-        "comment_ago": "4d"
+        "comment_ago": "5d"
     },
     {
         "comments": 3,
-        "votes": 4,
+        "votes": 5,
         "user_link": "/lohmaa",
         "discuss_link": "/competitions/llm-20-questions/discussion/522136",
         "title": "Alpha notebook, maybe the final one [LB 666+]",
         "post_ago": null,
-        "comment_ago": "6d"
+        "comment_ago": "8d"
     },
     {
         "comments": 8,
@@ -150,7 +177,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/522583",
         "title": "how to cancel an agent?",
         "post_ago": null,
-        "comment_ago": "7d"
+        "comment_ago": "8d"
     },
     {
         "comments": 24,
@@ -159,7 +186,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/519297",
         "title": "Absurd Replays [Upload pics of funny/absurd/meme replays here]",
         "post_ago": null,
-        "comment_ago": "6h"
+        "comment_ago": "2d"
     },
     {
         "comments": 2,
@@ -168,7 +195,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/522800",
         "title": "vllm issues",
         "post_ago": null,
-        "comment_ago": "6d"
+        "comment_ago": "7d"
     },
     {
         "comments": 6,
@@ -177,7 +204,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/522052",
         "title": "How to install new transformers version for load llama3.1?",
         "post_ago": null,
-        "comment_ago": "8d"
+        "comment_ago": "10d"
     },
     {
         "comments": 3,
@@ -186,7 +213,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/520207",
         "title": "How to install new torch version in kaggle submit environment?",
         "post_ago": null,
-        "comment_ago": "3d"
+        "comment_ago": "5d"
     },
     {
         "comments": 14,
@@ -195,7 +222,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/520429",
         "title": "Starter Notebook - Llama3-8B - [LB 0.750+] - [Rank 59th]",
         "post_ago": null,
-        "comment_ago": "11d"
+        "comment_ago": "12d"
     },
     {
         "comments": 14,
@@ -204,7 +231,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/521385",
         "title": "Is this competition a lottery, or is it not ?",
         "post_ago": null,
-        "comment_ago": "11d"
+        "comment_ago": "13d"
     },
     {
         "comments": 3,
@@ -213,7 +240,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/521826",
         "title": "Submission Problem",
         "post_ago": null,
-        "comment_ago": "11d"
+        "comment_ago": "12d"
     },
     {
         "comments": 2,
@@ -222,7 +249,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/521802",
         "title": "Keywords list is not fully correct and could use improvement",
         "post_ago": null,
-        "comment_ago": "10d"
+        "comment_ago": "12d"
     },
     {
         "comments": 1,
@@ -231,7 +258,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/521791",
         "title": "Now I am confused. Pelican is the thing or a place?",
         "post_ago": null,
-        "comment_ago": "11d"
+        "comment_ago": "13d"
     },
     {
         "comments": 2,
@@ -240,7 +267,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/521506",
         "title": "How do you guys normally improve or edit the strategy of the model?",
         "post_ago": null,
-        "comment_ago": "11d"
+        "comment_ago": "13d"
     },
     {
         "comments": 0,
@@ -248,7 +275,7 @@
         "user_link": "/max1mum",
         "discuss_link": "/competitions/llm-20-questions/discussion/521945",
         "title": "Are new models useful?",
-        "post_ago": "11d",
+        "post_ago": "12d",
         "comment_ago": null
     },
     {
@@ -258,7 +285,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/515102",
         "title": "New hidden keywords",
         "post_ago": null,
-        "comment_ago": "3d"
+        "comment_ago": "5d"
     },
     {
         "comments": 11,
@@ -267,7 +294,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/521435",
         "title": "Llama3 inference is slow. Is there any way to improve it?",
         "post_ago": null,
-        "comment_ago": "13d"
+        "comment_ago": "15d"
     },
     {
         "comments": 4,
@@ -276,7 +303,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/520520",
         "title": "Submission Failed: Previously Successful File Fails Sporadically",
         "post_ago": null,
-        "comment_ago": "9d"
+        "comment_ago": "11d"
     },
     {
         "comments": 2,
@@ -285,7 +312,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/520650",
         "title": "Another Starter Notebook - Qwen 2 7b Instruct",
         "post_ago": null,
-        "comment_ago": "17d"
+        "comment_ago": "19d"
     },
     {
         "comments": 1,
@@ -294,7 +321,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/520569",
         "title": "Will all agents play with the same frequency on the hidden test set?",
         "post_ago": null,
-        "comment_ago": "15d"
+        "comment_ago": "16d"
     },
     {
         "comments": 4,
@@ -303,7 +330,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/521046",
         "title": "How can I use the latest version of the transformers library in the production environment?",
         "post_ago": null,
-        "comment_ago": "15d"
+        "comment_ago": "17d"
     },
     {
         "comments": 4,
@@ -312,7 +339,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/519988",
         "title": "how to overcome a dumb answerer?",
         "post_ago": null,
-        "comment_ago": "17d"
+        "comment_ago": "18d"
     },
     {
         "comments": 1,
@@ -321,7 +348,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/520912",
         "title": "persona verify",
         "post_ago": null,
-        "comment_ago": "16d"
+        "comment_ago": "18d"
     },
     {
         "comments": 0,
@@ -329,7 +356,7 @@
         "user_link": "/zapfino",
         "discuss_link": "/competitions/llm-20-questions/discussion/521136",
         "title": "Country Name Keywords Listed in Both Categories",
-        "post_ago": "15d",
+        "post_ago": "17d",
         "comment_ago": null
     },
     {
@@ -339,7 +366,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/519400",
         "title": "Evaluation with team reshuffle",
         "post_ago": null,
-        "comment_ago": "19d"
+        "comment_ago": "21d"
     },
     {
         "comments": 6,
@@ -348,7 +375,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/520734",
         "title": "Encountering another problem when submitting",
         "post_ago": null,
-        "comment_ago": "16d"
+        "comment_ago": "18d"
     },
     {
         "comments": 0,
@@ -356,7 +383,7 @@
         "user_link": "/isakatsuyoshi",
         "discuss_link": "/competitions/llm-20-questions/discussion/520021",
         "title": "Theoretical Analysis of the 20 Questions Game",
-        "post_ago": "20d",
+        "post_ago": "22d",
         "comment_ago": null
     },
     {
@@ -366,7 +393,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/520468",
         "title": "Unable to access the new keywords list.",
         "post_ago": null,
-        "comment_ago": "17d"
+        "comment_ago": "19d"
     },
     {
         "comments": 1,
@@ -375,7 +402,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/520014",
         "title": "Will the final keyword set contain any of the current keywords?",
         "post_ago": null,
-        "comment_ago": "18d"
+        "comment_ago": "20d"
     },
     {
         "comments": 9,
@@ -384,7 +411,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/518728",
         "title": "Let's share LLM models for making questions and answering!",
         "post_ago": null,
-        "comment_ago": "18d"
+        "comment_ago": "20d"
     },
     {
         "comments": 0,
@@ -392,7 +419,7 @@
         "user_link": "/wouldyoujustfocus",
         "discuss_link": "/competitions/llm-20-questions/discussion/520630",
         "title": "does \"things\" category contain brand names?",
-        "post_ago": "18d",
+        "post_ago": "19d",
         "comment_ago": null
     },
     {
@@ -402,7 +429,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/519723",
         "title": "Who are asker and answerer?",
         "post_ago": null,
-        "comment_ago": "21d"
+        "comment_ago": "22d"
     },
     {
         "comments": 3,
@@ -411,7 +438,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/520083",
         "title": "How to reduce file size",
         "post_ago": null,
-        "comment_ago": "17d"
+        "comment_ago": "19d"
     },
     {
         "comments": 2,
@@ -420,7 +447,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/520427",
         "title": "Are the locations still in the game?",
         "post_ago": null,
-        "comment_ago": "18d"
+        "comment_ago": "20d"
     },
     {
         "comments": 13,
@@ -429,7 +456,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/519083",
         "title": "Could the final list of keywords be established in a transparent way?",
         "post_ago": null,
-        "comment_ago": "18d"
+        "comment_ago": "20d"
     },
     {
         "comments": 1,
@@ -438,7 +465,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/520259",
         "title": "Open source models from hugging face or Groq",
         "post_ago": null,
-        "comment_ago": "19d"
+        "comment_ago": "21d"
     },
     {
         "comments": 5,
@@ -447,7 +474,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/519393",
         "title": "Why is the oldest agent being deleted and not the agent with the worst results?",
         "post_ago": null,
-        "comment_ago": "21d"
+        "comment_ago": "22d"
     },
     {
         "comments": 0,
@@ -455,7 +482,7 @@
         "user_link": "/yangtzehao",
         "discuss_link": "/competitions/llm-20-questions/discussion/520246",
         "title": "Notebook runs succeccfully but submission error",
-        "post_ago": "19d",
+        "post_ago": "21d",
         "comment_ago": null
     },
     {
@@ -465,7 +492,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/519016",
         "title": "What is \"jane\"?",
         "post_ago": null,
-        "comment_ago": "21d"
+        "comment_ago": "22d"
     },
     {
         "comments": 0,
@@ -473,17 +500,17 @@
         "user_link": "/kothiwsk28",
         "discuss_link": "/competitions/llm-20-questions/discussion/519783",
         "title": "Scoring system seems to be subpar",
-        "post_ago": "21d",
+        "post_ago": "23d",
         "comment_ago": null
     },
     {
         "comments": 5,
-        "votes": 5,
+        "votes": 6,
         "user_link": "/cchristoc",
         "discuss_link": "/competitions/llm-20-questions/discussion/518959",
         "title": "Urgent: Unfair Memory Err Strategy",
         "post_ago": null,
-        "comment_ago": "24d"
+        "comment_ago": "25d"
     },
     {
         "comments": 7,
@@ -492,7 +519,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/518865",
         "title": "Dear Yes/No bot contributors...",
         "post_ago": null,
-        "comment_ago": "24d"
+        "comment_ago": "1mo"
     },
     {
         "comments": 2,
@@ -501,7 +528,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/519639",
         "title": "Disabled due to competitions active submission limit.",
         "post_ago": null,
-        "comment_ago": "22d"
+        "comment_ago": "24d"
     },
     {
         "comments": 9,
@@ -510,7 +537,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/519074",
         "title": "Why 2 vs 2",
         "post_ago": null,
-        "comment_ago": "24d"
+        "comment_ago": "1mo"
     },
     {
         "comments": 5,
@@ -519,7 +546,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/516693",
         "title": "submission problem(Pls help me)",
         "post_ago": null,
-        "comment_ago": "20d"
+        "comment_ago": "21d"
     },
     {
         "comments": 5,
@@ -528,7 +555,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/517263",
         "title": "Scoring Questions",
         "post_ago": null,
-        "comment_ago": "22d"
+        "comment_ago": "24d"
     },
     {
         "comments": 8,
@@ -537,7 +564,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/512955",
         "title": "Update: Changes to keywords.py",
         "post_ago": null,
-        "comment_ago": "17d"
+        "comment_ago": "19d"
     },
     {
         "comments": 4,
@@ -546,7 +573,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/519116",
         "title": "#Solved: Cannot submit: Your Notebook cannot use other competitions as a data source in this competition.",
         "post_ago": null,
-        "comment_ago": "23d"
+        "comment_ago": "25d"
     },
     {
         "comments": 9,
@@ -563,7 +590,7 @@
         "user_link": "/yuangwu",
         "discuss_link": "/competitions/llm-20-questions/discussion/519220",
         "title": "Why is the output shown like this?",
-        "post_ago": "24d",
+        "post_ago": "1mo",
         "comment_ago": null
     },
     {
@@ -573,7 +600,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/518902",
         "title": "Submit selection",
         "post_ago": null,
-        "comment_ago": "24d"
+        "comment_ago": "1mo"
     },
     {
         "comments": 7,
@@ -618,7 +645,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/517130",
         "title": "Submit problem(please help me)",
         "post_ago": null,
-        "comment_ago": "25d"
+        "comment_ago": "1mo"
     },
     {
         "comments": 3,
@@ -627,7 +654,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/518439",
         "title": "How Can I Change an Activated Agent?",
         "post_ago": null,
-        "comment_ago": "25d"
+        "comment_ago": "1mo"
     },
     {
         "comments": 2,
@@ -636,7 +663,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/515337",
         "title": "Gemma 2 - any success?",
         "post_ago": null,
-        "comment_ago": "23d"
+        "comment_ago": "24d"
     },
     {
         "comments": 6,
@@ -645,7 +672,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/515238",
         "title": "How Are Keywords with Typographical Errors Handled?",
         "post_ago": null,
-        "comment_ago": "25d"
+        "comment_ago": "1mo"
     },
     {
         "comments": 0,
@@ -888,7 +915,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/512719",
         "title": "Question for Organizers: Clarification about keyword category definition",
         "post_ago": null,
-        "comment_ago": "1mo"
+        "comment_ago": "2mo"
     },
     {
         "comments": 4,
@@ -942,7 +969,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/513110",
         "title": "kaggle docker",
         "post_ago": null,
-        "comment_ago": "1mo"
+        "comment_ago": "2mo"
     },
     {
         "comments": 2,
@@ -987,7 +1014,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/511060",
         "title": "[SOLVED] Has anyone created a valid submission with llama-cpp-python?",
         "post_ago": null,
-        "comment_ago": "1mo"
+        "comment_ago": "2mo"
     },
     {
         "comments": 2,
@@ -1554,7 +1581,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/503429",
         "title": "Optimal strategy (can LLMs beat binary search?)",
         "post_ago": null,
-        "comment_ago": "2mo"
+        "comment_ago": "3mo"
     },
     {
         "comments": 4,
@@ -1607,7 +1634,7 @@
         "user_link": "/krist0phersmith",
         "discuss_link": "/competitions/llm-20-questions/discussion/505928",
         "title": "Bug in agent assignments[Hosts Please Review]",
-        "post_ago": "2mo",
+        "post_ago": "3mo",
         "comment_ago": null
     },
     {
@@ -1617,7 +1644,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/506079",
         "title": "Is this competition limited to Gemma only?",
         "post_ago": null,
-        "comment_ago": "2mo"
+        "comment_ago": "3mo"
     },
     {
         "comments": 1,
@@ -1626,7 +1653,7 @@
         "discuss_link": "/competitions/llm-20-questions/discussion/505993",
         "title": "Can't download submission tar",
         "post_ago": null,
-        "comment_ago": "2mo"
+        "comment_ago": "3mo"
     },
     {
         "comments": 1,

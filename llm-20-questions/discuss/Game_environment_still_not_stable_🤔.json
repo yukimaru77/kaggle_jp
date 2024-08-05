@@ -10,19 +10,19 @@
         {
             "author": "waechter",
             "content": "The agent from Chris Deotte is in error, see Answer: none and [Err] \n\nProbably due to the keywords/category change.\n\n",
-            "date": "Posted a month ago  ·  201st in this Competition",
+            "date": "Posted a month ago  ·  181st in this Competition",
             "votes": "1",
             "reply": [
                 {
                     "author": "Kuldeep RathoreTopic Author",
                     "content": "Got it but the point is other two opponents got +19 which is fine, but Giba got +5 which shouldn’t be there. Ideally if one of the player of a team is giving error then that person should get negative score but the second team member should get 0 instead of giving +5.\n\n",
-                    "date": "Posted a month ago  ·  248th in this Competition",
+                    "date": "Posted a month ago  ·  394th in this Competition",
                     "votes": "1",
                     "reply": [
                         {
                             "author": "waechter",
                             "content": "I agree, this a been pointed out in the discussion [https://www.kaggle.com/competitions/llm-20-questions/discussion/508415](https://www.kaggle.com/competitions/llm-20-questions/discussion/508415) \n\nThey made a change:\n\nA fix for this should be rolling out tomorrow. The reward when an agent fails after this should be net zero. For example the failing agent might get -21 and the other three get an average of +7 each.\n\nBut i'm not sure it works as intented since here the reward is 19+19+5-13 != zero\n\n",
-                            "date": "Posted a month ago  ·  201st in this Competition",
+                            "date": "Posted a month ago  ·  181st in this Competition",
                             "votes": "1",
                             "reply": []
                         },

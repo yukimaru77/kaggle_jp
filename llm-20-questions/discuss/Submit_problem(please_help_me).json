@@ -10,27 +10,27 @@
         {
             "author": "davide",
             "content": "I am having the same issue, and it does not seem related to my code or to the agent's behavior.\n\nThis is the log I see from one of the agent:\n\n[[{\"duration\": 0.002077, \"stdout\": \"\", \"stderr\": \"Traceback (most recent call last):\\n  File \\\"/opt/conda/lib/python3.10/site-packages/kaggle_environments/agent.py\\\", line 43, in get_last_callable\\n    code_object = compile(raw, path, \\\"exec\\\")\\n  File \\\"/kaggle_simulations/agent/main.py\\\", line 1\\n    include the main.py code under this for submission\\n            ^^^\\nSyntaxError: invalid syntax\\n\\nDuring handling of the above exception, another exception occurred:\\n\\nTraceback (most recent call last):\\n  File \\\"/opt/conda/lib/python3.10/site-packages/kaggle_environments/agent.py\\\", line 159, in act\\n    action = self.agent(*args)\\n  File \\\"/opt/conda/lib/python3.10/site-packages/kaggle_environments/agent.py\\\", line 125, in callable_agent\\n    agent = get_last_callable(raw_agent, path=raw) or raw_agent\\n  File \\\"/opt/conda/lib/python3.10/site-packages/kaggle_environments/agent.py\\\", line 64, in get_last_callable\\n    raise InvalidArgument(\\\"Invalid raw Python: \\\" + repr(e))\\nkaggle_environments.errors.InvalidArgument: Invalid raw Python: SyntaxError('invalid syntax', ('/kaggle_simulatio\"}]]\n\nMaybe anyone can help? [@bovard](https://www.kaggle.com/bovard) \n\n",
-            "date": "Posted 25 days ago  ·  232nd in this Competition",
+            "date": "Posted a month ago  ·  261st in this Competition",
             "votes": "0",
             "reply": []
         },
         {
             "author": "OminousDude",
             "content": "There are two logs: Agent 0 and Agent 1. Are you sure that you check both of them?\n\n",
-            "date": "Posted a month ago  ·  451st in this Competition",
+            "date": "Posted a month ago  ·  503rd in this Competition",
             "votes": "0",
             "reply": []
         },
         {
             "author": "Code Hacker",
             "content": "Me too… Help me…\n\n",
-            "date": "Posted a month ago  ·  173rd in this Competition",
+            "date": "Posted a month ago  ·  192nd in this Competition",
             "votes": "0",
             "reply": [
                 {
                     "author": "Krens",
                     "content": "The last time I encountered \"Validation Episode failed (Error)\" was because I removed the restrictions on the answers \"yes\" and \"no\" during debugging, which resulted in the error being thrown when the agent answered other answers during submission. In addition, you also need to pay attention to whether the run timeout, whether the number of characters exceeds the limit, etc.\n\n",
-                    "date": "Posted 25 days ago  ·  475th in this Competition",
+                    "date": "Posted a month ago  ·  56th in this Competition",
                     "votes": "1",
                     "reply": []
                 }

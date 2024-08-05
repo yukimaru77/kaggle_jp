@@ -1,186 +1,189 @@
-* Vote数:59 @ [Starter Notebook - Llama3-8B - [LB 0.750+] - [Rank 59th]](./discuss/Starter_Notebook_-_Llama3-8B_-_[LB_0.750+]_-_[Rank_59th].md)
-* Vote数:33 @ [what!? there is even paper on this.](./discuss/what!_there_is_even_paper_on_this..md)
-* Vote数:23 @ [Q20 Game with Reinforcement Learning. Markov Decision Process (MDP).](./discuss/Q20_Game_with_Reinforcement_Learning._Markov_Decision_Process_(MDP)..md)
-* Vote数:21 @ [Upcoming changes to keywords.py](./discuss/Upcoming_changes_to_keywords.py.md)
-* Vote数:20 @ [Scope of keywords.py](./discuss/Scope_of_keywords.py.md)
-* Vote数:19 @ [[FIXED] - The Top 9 LB is the result Errors](./discuss/[FIXED]_-_The_Top_9_LB_is_the_result_Errors.md)
-* Vote数:18 @ [Evaluation with team reshuffle](./discuss/Evaluation_with_team_reshuffle.md)
-* Vote数:17 @ [Competition Update](./discuss/Competition_Update.md)
-* Vote数:17 @ [Llama 3.1 Hack - Confirmed to Work in Kaggle Environment (Notebooks and Competition)](./discuss/Llama_3.1_Hack_-_Confirmed_to_Work_in_Kaggle_Environment_(Notebooks_and_Competition).md)
-* Vote数:17 @ [New Models (7B-14B) Released!](./discuss/New_Models_(7B-14B)_Released!.md)
-* Vote数:15 @ [Q. At what percentage does the current 1st place submission earn a bronze medal? A. 33%](./discuss/Q._At_what_percentage_does_the_current_1st_place_submission_earn_a_bronze_medal_A._33%.md)
-* Vote数:15 @ [Starting ideas: LLM, MDP, Decision-Trees & Optimizations](./discuss/Starting_ideas_LLM,_MDP,_Decision-Trees_&_Optimizations.md)
-* Vote数:13 @ [[FIXED] - All Games Are Failing](./discuss/[FIXED]_-_All_Games_Are_Failing.md)
-* Vote数:12 @ [Get started here!](./discuss/Get_started_here!.md)
-* Vote数:12 @ [Another Starter Notebook - Qwen 2 7b Instruct](./discuss/Another_Starter_Notebook_-_Qwen_2_7b_Instruct.md)
-* Vote数:11 @ [Is this competition a lottery, or is it not ?](./discuss/Is_this_competition_a_lottery,_or_is_it_not .md)
-* Vote数:11 @ [Update: Changes to keywords.py](./discuss/Update_Changes_to_keywords.py.md)
-* Vote数:11 @ [The game can be subverted with non-LLMs](./discuss/The_game_can_be_subverted_with_non-LLMs.md)
-* Vote数:11 @ [Should the agent logs be public?](./discuss/Should_the_agent_logs_be_public.md)
-* Vote数:10 @ [A proposal for a more reliable LB](./discuss/A_proposal_for_a_more_reliable_LB.md)
-* Vote数:10 @ [New hidden keywords](./discuss/New_hidden_keywords.md)
-* Vote数:10 @ [Things category is clearly much harder than places](./discuss/Things_category_is_clearly_much_harder_than_places.md)
-* Vote数:9 @ [This Competition has an Official Discord Channel](./discuss/This_Competition_has_an_Official_Discord_Channel.md)
-* Vote数:9 @ [LLM 20 Questions Competition: Relevant Research papers and Articles](./discuss/LLM_20_Questions_Competition_Relevant_Research_papers_and_Articles.md)
-* Vote数:8 @ [Absurd Replays [Upload pics of funny/absurd/meme replays here]](./discuss/Absurd_Replays_[Upload_pics_of_funnyabsurdmeme_replays_here].md)
-* Vote数:8 @ [Theoretical Analysis of the 20 Questions Game](./discuss/Theoretical_Analysis_of_the_20_Questions_Game.md)
-* Vote数:8 @ [Suggestions to avoid being stuck on 600's.](./discuss/Suggestions_to_avoid_being_stuck_on_600's..md)
-* Vote数:8 @ [Some real concerns over the competition' scoring system (and proposals how to fix it)](./discuss/Some_real_concerns_over_the_competition'_scoring_system_(and_proposals_how_to_fix_it).md)
-* Vote数:8 @ [[RESOLVED] Submissions pending and backlog](./discuss/[RESOLVED]_Submissions_pending_and_backlog.md)
-* Vote数:8 @ [Are you able to provide more info about what types of words can be keywords?](./discuss/Are_you_able_to_provide_more_info_about_what_types_of_words_can_be_keywords.md)
-* Vote数:8 @ [Optimal strategy (can LLMs beat binary search?)](./discuss/Optimal_strategy_(can_LLMs_beat_binary_search).md)
-* Vote数:7 @ [Who are asker and answerer?](./discuss/Who_are_asker_and_answerer.md)
-* Vote数:7 @ [Question for Organizers: Clarification about keyword category definition](./discuss/Question_for_Organizers_Clarification_about_keyword_category_definition.md)
-* Vote数:7 @ [Bug: Answerer is not provided the keyword in the first round](./discuss/Bug_Answerer_is_not_provided_the_keyword_in_the_first_round.md)
-* Vote数:7 @ [Found something similar to the competition from Microsoft Research Asia researchers.](./discuss/Found_something_similar_to_the_competition_from_Microsoft_Research_Asia_researchers..md)
-* Vote数:6 @ [Final Evaluation - Question](./discuss/Final_Evaluation_-_Question.md)
-* Vote数:6 @ [How to install new torch version in kaggle submit environment?](./discuss/How_to_install_new_torch_version_in_kaggle_submit_environment.md)
-* Vote数:6 @ [how to overcome a dumb answerer?](./discuss/how_to_overcome_a_dumb_answerer.md)
-* Vote数:6 @ [Dear Yes/No bot contributors...](./discuss/Dear_YesNo_bot_contributors....md)
-* Vote数:6 @ [Model Selection](./discuss/Model_Selection.md)
-* Vote数:6 @ [LLM overview and Llama 3 setup](./discuss/LLM_overview_and_Llama_3_setup.md)
-* Vote数:6 @ [Does It Make Sense To Join The Competition Late?](./discuss/Does_It_Make_Sense_To_Join_The_Competition_Late.md)
-* Vote数:6 @ [Typos in game rules?](./discuss/Typos_in_game_rules.md)
-* Vote数:5 @ [What is "jane"?](./discuss/What_is_jane.md)
-* Vote数:5 @ [Urgent: Unfair Memory Err Strategy](./discuss/Urgent_Unfair_Memory_Err_Strategy.md)
-* Vote数:5 @ [How Are Keywords with Typographical Errors Handled?](./discuss/How_Are_Keywords_with_Typographical_Errors_Handled.md)
-* Vote数:5 @ [List of questions seen on the LB that can be answered with a rule-based algorithm.](./discuss/List_of_questions_seen_on_the_LB_that_can_be_answered_with_a_rule-based_algorithm..md)
-* Vote数:5 @ [When are keywords going to change?](./discuss/When_are_keywords_going_to_change.md)
-* Vote数:5 @ [The Kaggle "LLM 20 Questions Starter Notebook" Fails](./discuss/The_Kaggle_LLM_20_Questions_Starter_Notebook_Fails.md)
-* Vote数:5 @ [Option to activate or deactivate the submitted agent? (Question to host)](./discuss/Option_to_activate_or_deactivate_the_submitted_agent_(Question_to_host).md)
-* Vote数:5 @ [What is "strategic question answering"?](./discuss/What_is_strategic_question_answering.md)
-* Vote数:5 @ [How is the guessed word matched with the target word?](./discuss/How_is_the_guessed_word_matched_with_the_target_word.md)
-* Vote数:4 @ [Alpha notebook, maybe the final one [LB 666+]](./discuss/Alpha_notebook,_maybe_the_final_one_[LB_666+].md)
-* Vote数:4 @ [How to install new transformers version for load llama3.1?](./discuss/How_to_install_new_transformers_version_for_load_llama3.1.md)
-* Vote数:4 @ [Let's share LLM models for making questions and answering!](./discuss/Let's_share_LLM_models_for_making_questions_and_answering!.md)
-* Vote数:4 @ [Why is the oldest agent being deleted and not the agent with the worst results?](./discuss/Why_is_the_oldest_agent_being_deleted_and_not_the_agent_with_the_worst_results.md)
-* Vote数:4 @ [[Interesting findings] LLM are tired of playing 20 Questions😂](./discuss/[Interesting_findings]_LLM_are_tired_of_playing_20_Questions😂.md)
-* Vote数:4 @ [Running the environment on the notebook](./discuss/Running_the_environment_on_the_notebook.md)
-* Vote数:4 @ [20 question datasets](./discuss/20_question_datasets.md)
-* Vote数:3 @ [An interesting discussion has been deleted?](./discuss/An_interesting_discussion_has_been_deleted.md)
-* Vote数:3 @ [how to cancel an agent?](./discuss/how_to_cancel_an_agent.md)
-* Vote数:3 @ [Will all agents play with the same frequency on the hidden test set?](./discuss/Will_all_agents_play_with_the_same_frequency_on_the_hidden_test_set.md)
-* Vote数:3 @ [Will the final keyword set contain any of the current keywords?](./discuss/Will_the_final_keyword_set_contain_any_of_the_current_keywords.md)
-* Vote数:3 @ [A few questions about the private lb keywords.](./discuss/A_few_questions_about_the_private_lb_keywords..md)
-* Vote数:3 @ [With keywords possible to be hardcoded, does the current leaderboard matter for final prize contending eval?](./discuss/With_keywords_possible_to_be_hardcoded,_does_the_current_leaderboard_matter_for_final_prize_contending_eval.md)
-* Vote数:3 @ [The best score of each team on LB is only the best of the most recent 3 submissions](./discuss/The_best_score_of_each_team_on_LB_is_only_the_best_of_the_most_recent_3_submissions.md)
-* Vote数:3 @ [Disabled submissions due to limit: anyone can help?](./discuss/Disabled_submissions_due_to_limit_anyone_can_help.md)
-* Vote数:3 @ [i want help what i should be do ?](./discuss/i_want_help_what_i_should_be_do_.md)
-* Vote数:3 @ [Should questioners gain more points than answerer?](./discuss/Should_questioners_gain_more_points_than_answerer.md)
-* Vote数:3 @ [New Q20LLM dataset with >78k questions](./discuss/New_Q20LLM_dataset_with_78k_questions.md)
-* Vote数:3 @ [Episode game dataset](./discuss/Episode_game_dataset.md)
-* Vote数:3 @ [What if the Answerer halucinates](./discuss/What_if_the_Answerer_halucinates.md)
-* Vote数:3 @ [Bug in agent assignments[Hosts Please Review]](./discuss/Bug_in_agent_assignments[Hosts_Please_Review].md)
-* Vote数:2 @ [How can I use the latest version of the transformers library in the production environment?](./discuss/How_can_I_use_the_latest_version_of_the_transformers_library_in_the_production_environment.md)
-* Vote数:2 @ [persona verify](./discuss/persona_verify.md)
-* Vote数:2 @ [Scoring system seems to be subpar](./discuss/Scoring_system_seems_to_be_subpar.md)
-* Vote数:2 @ [Addressing Prompt Injection: How to ensure fair play in LLM 20 Questions?](./discuss/Addressing_Prompt_Injection_How_to_ensure_fair_play_in_LLM_20_Questions.md)
-* Vote数:2 @ [Gemma 2 - any success?](./discuss/Gemma_2_-_any_success.md)
-* Vote数:2 @ [Identical Agents, but Different Scores! I propose these improvements. What do you think?](./discuss/Identical_Agents,_but_Different_Scores!_I_propose_these_improvements._What_do_you_think.md)
-* Vote数:2 @ [Can we reset the entire leaderboard?](./discuss/Can_we_reset_the_entire_leaderboard.md)
-* Vote数:2 @ [Question for Organizers: are current keywords a random subset of the future keyword set](./discuss/Question_for_Organizers_are_current_keywords_a_random_subset_of_the_future_keyword_set.md)
-* Vote数:2 @ [Submission problem](./discuss/Submission_problem.md)
-* Vote数:2 @ [Maximum context length error](./discuss/Maximum_context_length_error.md)
-* Vote数:2 @ [Don't forget to accept gemma license](./discuss/Don't_forget_to_accept_gemma_license.md)
-* Vote数:2 @ [How to add custom python packages in the submission?](./discuss/How_to_add_custom_python_packages_in_the_submission.md)
-* Vote数:2 @ [Log analysis for a agent's performance](./discuss/Log_analysis_for_a_agent's_performance.md)
-* Vote数:2 @ [InvalidArgument: Unknown Environment Specification](./discuss/InvalidArgument_Unknown_Environment_Specification.md)
-* Vote数:2 @ [Convergence of leaderboard scores](./discuss/Convergence_of_leaderboard_scores.md)
-* Vote数:2 @ [I don't mean to be a snitch but...](./discuss/I_don't_mean_to_be_a_snitch_but....md)
-* Vote数:2 @ [Cannot submit tar.gz file or .py file? [SOLVED]](./discuss/Cannot_submit_tar.gz_file_or_.py_file_[SOLVED].md)
-* Vote数:1 @ [I am stuck with llama 3.1](./discuss/I_am_stuck_with_llama_3.1.md)
-* Vote数:1 @ [Weird Error](./discuss/Weird_Error.md)
-* Vote数:1 @ [Keywords list is not fully correct and could use improvement](./discuss/Keywords_list_is_not_fully_correct_and_could_use_improvement.md)
-* Vote数:1 @ [How do you guys normally improve or edit the strategy of the model?](./discuss/How_do_you_guys_normally_improve_or_edit_the_strategy_of_the_model.md)
-* Vote数:1 @ [Submission Failed: Previously Successful File Fails Sporadically](./discuss/Submission_Failed_Previously_Successful_File_Fails_Sporadically.md)
-* Vote数:1 @ [Encountering another problem when submitting](./discuss/Encountering_another_problem_when_submitting.md)
-* Vote数:1 @ [Unable to access the new keywords list.](./discuss/Unable_to_access_the_new_keywords_list..md)
-* Vote数:1 @ [How to reduce file size](./discuss/How_to_reduce_file_size.md)
-* Vote数:1 @ [Notebook runs succeccfully but submission error](./discuss/Notebook_runs_succeccfully_but_submission_error.md)
-* Vote数:1 @ [submission problem(Pls help me)](./discuss/submission_problem(Pls_help_me).md)
-* Vote数:1 @ [What do you think about Gemma 2b-it?](./discuss/What_do_you_think_about_Gemma_2b-it.md)
-* Vote数:1 @ [Submit problem(please help me)](./discuss/Submit_problem(please_help_me).md)
-* Vote数:1 @ [Request for organisers - Allowed guesses by keyword](./discuss/Request_for_organisers_-_Allowed_guesses_by_keyword.md)
-* Vote数:1 @ [Questions about the data](./discuss/Questions_about_the_data.md)
-* Vote数:1 @ [will agent have access to the question/answer/guess history in each session?](./discuss/will_agent_have_access_to_the_questionanswerguess_history_in_each_session.md)
-* Vote数:1 @ [Can competition hosts make the keywords have more alts?](./discuss/Can_competition_hosts_make_the_keywords_have_more_alts.md)
-* Vote数:1 @ [How to control keyword sampling for testing?](./discuss/How_to_control_keyword_sampling_for_testing.md)
-* Vote数:1 @ [`keyword.py` only contains places, no people, no things](./discuss/`keyword.py`_only_contains_places,_no_people,_no_things.md)
-* Vote数:1 @ [Help! Stuck in Kaggle's file import](./discuss/Help!_Stuck_in_Kaggle's_file_import.md)
-* Vote数:1 @ [Ask on a silly question about the observation](./discuss/Ask_on_a_silly_question_about_the_observation.md)
-* Vote数:1 @ [Submissions pending](./discuss/Submissions_pending.md)
-* Vote数:1 @ [Binary search models are not very useful and LLM Models aiding binary search models is not beneficial](./discuss/Binary_search_models_are_not_very_useful_and_LLM_Models_aiding_binary_search_models_is_not_beneficial.md)
-* Vote数:1 @ [Why not make a sabotage agent?](./discuss/Why_not_make_a_sabotage_agent.md)
-* Vote数:1 @ [Why do scores start at 600?](./discuss/Why_do_scores_start_at_600.md)
-* Vote数:1 @ [Is 3 the max number of agents you can have?](./discuss/Is_3_the_max_number_of_agents_you_can_have.md)
-* Vote数:1 @ [Is this only limited to places?](./discuss/Is_this_only_limited_to_places.md)
-* Vote数:1 @ [Agent interface](./discuss/Agent_interface.md)
-* Vote数:0 @ [Why is the answerer being penalised if the other team guesses the right word?](./discuss/Why_is_the_answerer_being_penalised_if_the_other_team_guesses_the_right_word.md)
-* Vote数:0 @ [How different would be the evaluation in the private leaderboard vs evaluation in the public leaderboard?](./discuss/How_different_would_be_the_evaluation_in_the_private_leaderboard_vs_evaluation_in_the_public_leaderboard.md)
-* Vote数:0 @ [debug error [ERR]](./discuss/debug_error_[ERR].md)
-* Vote数:0 @ [vllm issues](./discuss/vllm_issues.md)
-* Vote数:0 @ [Submission Problem](./discuss/Submission_Problem.md)
-* Vote数:0 @ [Now I am confused. Pelican is the thing or a place?](./discuss/Now_I_am_confused._Pelican_is_the_thing_or_a_place.md)
-* Vote数:0 @ [Are new models useful?](./discuss/Are_new_models_useful.md)
-* Vote数:0 @ [Llama3 inference is slow. Is there any way to improve it?](./discuss/Llama3_inference_is_slow._Is_there_any_way_to_improve_it.md)
-* Vote数:0 @ [Country Name Keywords Listed in Both Categories](./discuss/Country_Name_Keywords_Listed_in_Both_Categories.md)
-* Vote数:0 @ [does "things" category contain brand names?](./discuss/does_things_category_contain_brand_names.md)
-* Vote数:0 @ [Are the locations still in the game?](./discuss/Are_the_locations_still_in_the_game.md)
-* Vote数:0 @ [Open source models from hugging face or Groq](./discuss/Open_source_models_from_hugging_face_or_Groq.md)
-* Vote数:0 @ [Disabled due to competitions active submission limit.](./discuss/Disabled_due_to_competitions_active_submission_limit..md)
-* Vote数:0 @ [Why 2 vs 2](./discuss/Why_2_vs_2.md)
-* Vote数:0 @ [Scoring Questions](./discuss/Scoring_Questions.md)
-* Vote数:0 @ [#Solved: Cannot submit: Your Notebook cannot use other competitions as a data source in this competition.](./discuss/#Solved_Cannot_submit_Your_Notebook_cannot_use_other_competitions_as_a_data_source_in_this_competition..md)
-* Vote数:0 @ [Why is the output shown like this?](./discuss/Why_is_the_output_shown_like_this.md)
-* Vote数:0 @ [Submit selection](./discuss/Submit_selection.md)
-* Vote数:0 @ [Different Baselines](./discuss/Different_Baselines.md)
-* Vote数:0 @ [How Can I Change an Activated Agent?](./discuss/How_Can_I_Change_an_Activated_Agent.md)
-* Vote数:0 @ [[SOLVED] Are answers case insensitive?](./discuss/[SOLVED]_Are_answers_case_insensitive.md)
-* Vote数:0 @ [How do I find the code for the agent testing?](./discuss/How_do_I_find_the_code_for_the_agent_testing.md)
-* Vote数:0 @ [Anyone had luck getting quantized models to load in the game environment?](./discuss/Anyone_had_luck_getting_quantized_models_to_load_in_the_game_environment.md)
-* Vote数:0 @ [Where can I find the llm 20 Q metric?](./discuss/Where_can_I_find_the_llm_20_Q_metric.md)
-* Vote数:0 @ [[SOLVED] Submisson error due to file size when using kaggle CLI in kaggle notebook](./discuss/[SOLVED]_Submisson_error_due_to_file_size_when_using_kaggle_CLI_in_kaggle_notebook.md)
-* Vote数:0 @ [Model randomly taking 30-100x the avg time to run](./discuss/Model_randomly_taking_30-100x_the_avg_time_to_run.md)
-* Vote数:0 @ [Is their anyone in the top or the leaderboard that does not use the current keyword list?](./discuss/Is_their_anyone_in_the_top_or_the_leaderboard_that_does_not_use_the_current_keyword_list.md)
-* Vote数:0 @ [Will keywords ever have people or not?](./discuss/Will_keywords_ever_have_people_or_not.md)
-* Vote数:0 @ [How to use models from huggingface?](./discuss/How_to_use_models_from_huggingface.md)
-* Vote数:0 @ [Clarification on LLM Usage and Constraints](./discuss/Clarification_on_LLM_Usage_and_Constraints.md)
-* Vote数:0 @ [How do you validate](./discuss/How_do_you_validate.md)
-* Vote数:0 @ [Help with loading model into kaggle environments](./discuss/Help_with_loading_model_into_kaggle_environments.md)
-* Vote数:0 @ [Size of the LLM](./discuss/Size_of_the_LLM.md)
-* Vote数:0 @ [Game environment still not stable? 🤔](./discuss/Game_environment_still_not_stable_🤔.md)
-* Vote数:0 @ [Not able to submit](./discuss/Not_able_to_submit.md)
-* Vote数:0 @ [kaggle docker](./discuss/kaggle_docker.md)
-* Vote数:0 @ [Missing episodes/ errors across the board.](./discuss/Missing_episodes_errors_across_the_board..md)
-* Vote数:0 @ [[SOLVED] Has anyone created a valid submission with llama-cpp-python?](./discuss/[SOLVED]_Has_anyone_created_a_valid_submission_with_llama-cpp-python.md)
-* Vote数:0 @ [What is the role of llm_20_questions.py](./discuss/What_is_the_role_of_llm_20_questions.py.md)
-* Vote数:0 @ [Is there any way to locally simulate a 20 questions game to test new ideas?](./discuss/Is_there_any_way_to_locally_simulate_a_20_questions_game_to_test_new_ideas.md)
-* Vote数:0 @ [[Solved] 75% valid submission!](./discuss/[Solved]_75%_valid_submission!.md)
-* Vote数:0 @ [Can I use Langgraph to build and submit agent](./discuss/Can_I_use_Langgraph_to_build_and_submit_agent.md)
-* Vote数:0 @ [Can models be too smart?](./discuss/Can_models_be_too_smart.md)
-* Vote数:0 @ [Question about the game mechanism](./discuss/Question_about_the_game_mechanism.md)
-* Vote数:0 @ [What model(s) do you use?](./discuss/What_model(s)_do_you_use.md)
-* Vote数:0 @ [How to submit use zip file?](./discuss/How_to_submit_use_zip_file.md)
-* Vote数:0 @ [Chris crossed 900 Mark 🤯](./discuss/Chris_crossed_900_Mark_🤯.md)
-* Vote数:0 @ [About the key words involved in this competition](./discuss/About_the_key_words_involved_in_this_competition.md)
-* Vote数:0 @ [keyword list](./discuss/keyword_list.md)
-* Vote数:0 @ [Why is this agent getting points for this?](./discuss/Why_is_this_agent_getting_points_for_this.md)
-* Vote数:0 @ [I am not able to create a kaggle environments for 'llm_20_question'](./discuss/I_am_not_able_to_create_a_kaggle_environments_for_'llm_20_question'.md)
-* Vote数:0 @ [Submissions pending](./discuss/Submissions_pending.md)
-* Vote数:0 @ [updating the model during the tournament](./discuss/updating_the_model_during_the_tournament.md)
-* Vote数:0 @ [Example of successful round](./discuss/Example_of_successful_round.md)
-* Vote数:0 @ [I am still confused about scorring](./discuss/I_am_still_confused_about_scorring.md)
-* Vote数:0 @ [Why am I still getting NaNs?](./discuss/Why_am_I_still_getting_NaNs.md)
-* Vote数:0 @ [Agent produces only -NaN as output](./discuss/Agent_produces_only_-NaN_as_output.md)
-* Vote数:0 @ [60 Sec timeout limit](./discuss/60_Sec_timeout_limit.md)
-* Vote数:0 @ [compressing questions to overcome 2000 character limit](./discuss/compressing_questions_to_overcome_2000_character_limit.md)
-* Vote数:0 @ [Understanding](./discuss/Understanding.md)
-* Vote数:0 @ [How is the score calculated?](./discuss/How_is_the_score_calculated.md)
-* Vote数:0 @ [3-bit cheat](./discuss/3-bit_cheat.md)
-* Vote数:0 @ [Binary Search Strategy](./discuss/Binary_Search_Strategy.md)
-* Vote数:0 @ [What if model lie on your answer?](./discuss/What_if_model_lie_on_your_answer.md)
-* Vote数:0 @ [Is this competition limited to Gemma only?](./discuss/Is_this_competition_limited_to_Gemma_only.md)
-* Vote数:0 @ [Can't download submission tar](./discuss/Can't_download_submission_tar.md)
-* Vote数:0 @ [[Offtopic] What got the LB moving](./discuss/[Offtopic]_What_got_the_LB_moving.md)
-* Vote数:-2 @ [Could the final list of keywords be established in a transparent way?](./discuss/Could_the_final_list_of_keywords_be_established_in_a_transparent_way.md)
-* Vote数:-6 @ [It`s amazing!!!](./discuss/It`s_amazing!!!.md)
+* Vote数:59 @ [Starter Notebook - Llama3-8B - [LB 0.750+] - [Rank 59th]](./discuss/Starter_Notebook_-_Llama3-8B_-_[LB_0750+]_-_[Rank_59th].md)  \[[原文付きはこちら](./comparison/discuss/Starter_Notebook_-_Llama3-8B_-_[LB_0750+]_-_[Rank_59th].md)\]
+* Vote数:33 @ [what!? there is even paper on this.](./discuss/what!_there_is_even_paper_on_this.md)  \[[原文付きはこちら](./comparison/discuss/what!_there_is_even_paper_on_this.md)\]
+* Vote数:23 @ [Q20 Game with Reinforcement Learning. Markov Decision Process (MDP).](./discuss/Q20_Game_with_Reinforcement_Learning_Markov_Decision_Proces….md)  \[[原文付きはこちら](./comparison/discuss/Q20_Game_with_Reinforcement_Learning_Markov_Decision_Proces….md)\]
+* Vote数:21 @ [Competition Update](./discuss/Competition_Update.md)  \[[原文付きはこちら](./comparison/discuss/Competition_Update.md)\]
+* Vote数:21 @ [Llama 3.1 Hack - Confirmed to Work in Kaggle Environment (Notebooks and Competition)](./discuss/Llama_31_Hack_-_Confirmed_to_Work_in_Kaggle_Environment_(No….md)  \[[原文付きはこちら](./comparison/discuss/Llama_31_Hack_-_Confirmed_to_Work_in_Kaggle_Environment_(No….md)\]
+* Vote数:21 @ [Upcoming changes to keywords.py](./discuss/Upcoming_changes_to_keywordspy.md)  \[[原文付きはこちら](./comparison/discuss/Upcoming_changes_to_keywordspy.md)\]
+* Vote数:20 @ [Scope of keywords.py](./discuss/Scope_of_keywordspy.md)  \[[原文付きはこちら](./comparison/discuss/Scope_of_keywordspy.md)\]
+* Vote数:19 @ [[FIXED] - The Top 9 LB is the result Errors](./discuss/[FIXED]_-_The_Top_9_LB_is_the_result_Errors.md)  \[[原文付きはこちら](./comparison/discuss/[FIXED]_-_The_Top_9_LB_is_the_result_Errors.md)\]
+* Vote数:18 @ [Evaluation with team reshuffle](./discuss/Evaluation_with_team_reshuffle.md)  \[[原文付きはこちら](./comparison/discuss/Evaluation_with_team_reshuffle.md)\]
+* Vote数:17 @ [New Models (7B-14B) Released!](./discuss/New_Models_(7B-14B)_Released!.md)  \[[原文付きはこちら](./comparison/discuss/New_Models_(7B-14B)_Released!.md)\]
+* Vote数:15 @ [Q. At what percentage does the current 1st place submission earn a bronze medal? A. 33%](./discuss/Q_At_what_percentage_does_the_current_1st_place_submission_….md)  \[[原文付きはこちら](./comparison/discuss/Q_At_what_percentage_does_the_current_1st_place_submission_….md)\]
+* Vote数:15 @ [Starting ideas: LLM, MDP, Decision-Trees & Optimizations](./discuss/Starting_ideas_LLM,_MDP,_Decision-Trees_&_Optimizations.md)  \[[原文付きはこちら](./comparison/discuss/Starting_ideas_LLM,_MDP,_Decision-Trees_&_Optimizations.md)\]
+* Vote数:13 @ [[FIXED] - All Games Are Failing](./discuss/[FIXED]_-_All_Games_Are_Failing.md)  \[[原文付きはこちら](./comparison/discuss/[FIXED]_-_All_Games_Are_Failing.md)\]
+* Vote数:12 @ [Get started here!](./discuss/Get_started_here!.md)  \[[原文付きはこちら](./comparison/discuss/Get_started_here!.md)\]
+* Vote数:12 @ [Another Starter Notebook - Qwen 2 7b Instruct](./discuss/Another_Starter_Notebook_-_Qwen_2_7b_Instruct.md)  \[[原文付きはこちら](./comparison/discuss/Another_Starter_Notebook_-_Qwen_2_7b_Instruct.md)\]
+* Vote数:11 @ [A proposal for a more reliable LB](./discuss/A_proposal_for_a_more_reliable_LB.md)  \[[原文付きはこちら](./comparison/discuss/A_proposal_for_a_more_reliable_LB.md)\]
+* Vote数:11 @ [Is this competition a lottery, or is it not ?](./discuss/Is_this_competition_a_lottery,_or_is_it_not .md)  \[[原文付きはこちら](./comparison/discuss/Is_this_competition_a_lottery,_or_is_it_not .md)\]
+* Vote数:11 @ [Update: Changes to keywords.py](./discuss/Update_Changes_to_keywordspy.md)  \[[原文付きはこちら](./comparison/discuss/Update_Changes_to_keywordspy.md)\]
+* Vote数:11 @ [The game can be subverted with non-LLMs](./discuss/The_game_can_be_subverted_with_non-LLMs.md)  \[[原文付きはこちら](./comparison/discuss/The_game_can_be_subverted_with_non-LLMs.md)\]
+* Vote数:11 @ [Should the agent logs be public?](./discuss/Should_the_agent_logs_be_public.md)  \[[原文付きはこちら](./comparison/discuss/Should_the_agent_logs_be_public.md)\]
+* Vote数:10 @ [New hidden keywords](./discuss/New_hidden_keywords.md)  \[[原文付きはこちら](./comparison/discuss/New_hidden_keywords.md)\]
+* Vote数:10 @ [Things category is clearly much harder than places](./discuss/Things_category_is_clearly_much_harder_than_places.md)  \[[原文付きはこちら](./comparison/discuss/Things_category_is_clearly_much_harder_than_places.md)\]
+* Vote数:9 @ [This Competition has an Official Discord Channel](./discuss/This_Competition_has_an_Official_Discord_Channel.md)  \[[原文付きはこちら](./comparison/discuss/This_Competition_has_an_Official_Discord_Channel.md)\]
+* Vote数:9 @ [LLM 20 Questions Competition: Relevant Research papers and Articles](./discuss/LLM_20_Questions_Competition_Relevant_Research_papers_and_A….md)  \[[原文付きはこちら](./comparison/discuss/LLM_20_Questions_Competition_Relevant_Research_papers_and_A….md)\]
+* Vote数:8 @ [Absurd Replays [Upload pics of funny/absurd/meme replays here]](./discuss/Absurd_Replays_[Upload_pics_of_funnyabsurdmeme_replays_here].md)  \[[原文付きはこちら](./comparison/discuss/Absurd_Replays_[Upload_pics_of_funnyabsurdmeme_replays_here].md)\]
+* Vote数:8 @ [Theoretical Analysis of the 20 Questions Game](./discuss/Theoretical_Analysis_of_the_20_Questions_Game.md)  \[[原文付きはこちら](./comparison/discuss/Theoretical_Analysis_of_the_20_Questions_Game.md)\]
+* Vote数:8 @ [Suggestions to avoid being stuck on 600's.](./discuss/Suggestions_to_avoid_being_stuck_on_600's.md)  \[[原文付きはこちら](./comparison/discuss/Suggestions_to_avoid_being_stuck_on_600's.md)\]
+* Vote数:8 @ [Some real concerns over the competition' scoring system (and proposals how to fix it)](./discuss/Some_real_concerns_over_the_competition'_scoring_system_(an….md)  \[[原文付きはこちら](./comparison/discuss/Some_real_concerns_over_the_competition'_scoring_system_(an….md)\]
+* Vote数:8 @ [[RESOLVED] Submissions pending and backlog](./discuss/[RESOLVED]_Submissions_pending_and_backlog.md)  \[[原文付きはこちら](./comparison/discuss/[RESOLVED]_Submissions_pending_and_backlog.md)\]
+* Vote数:8 @ [Are you able to provide more info about what types of words can be keywords?](./discuss/Are_you_able_to_provide_more_info_about_what_types_of_words….md)  \[[原文付きはこちら](./comparison/discuss/Are_you_able_to_provide_more_info_about_what_types_of_words….md)\]
+* Vote数:8 @ [Optimal strategy (can LLMs beat binary search?)](./discuss/Optimal_strategy_(can_LLMs_beat_binary_search).md)  \[[原文付きはこちら](./comparison/discuss/Optimal_strategy_(can_LLMs_beat_binary_search).md)\]
+* Vote数:7 @ [Who are asker and answerer?](./discuss/Who_are_asker_and_answerer.md)  \[[原文付きはこちら](./comparison/discuss/Who_are_asker_and_answerer.md)\]
+* Vote数:7 @ [Question for Organizers: Clarification about keyword category definition](./discuss/Question_for_Organizers_Clarification_about_keyword_categor….md)  \[[原文付きはこちら](./comparison/discuss/Question_for_Organizers_Clarification_about_keyword_categor….md)\]
+* Vote数:7 @ [Bug: Answerer is not provided the keyword in the first round](./discuss/Bug_Answerer_is_not_provided_the_keyword_in_the_first_round.md)  \[[原文付きはこちら](./comparison/discuss/Bug_Answerer_is_not_provided_the_keyword_in_the_first_round.md)\]
+* Vote数:7 @ [Found something similar to the competition from Microsoft Research Asia researchers.](./discuss/Found_something_similar_to_the_competition_from_Microsoft_R….md)  \[[原文付きはこちら](./comparison/discuss/Found_something_similar_to_the_competition_from_Microsoft_R….md)\]
+* Vote数:6 @ [Final Evaluation - Question](./discuss/Final_Evaluation_-_Question.md)  \[[原文付きはこちら](./comparison/discuss/Final_Evaluation_-_Question.md)\]
+* Vote数:6 @ [How to install new torch version in kaggle submit environment?](./discuss/How_to_install_new_torch_version_in_kaggle_submit_environme….md)  \[[原文付きはこちら](./comparison/discuss/How_to_install_new_torch_version_in_kaggle_submit_environme….md)\]
+* Vote数:6 @ [how to overcome a dumb answerer?](./discuss/how_to_overcome_a_dumb_answerer.md)  \[[原文付きはこちら](./comparison/discuss/how_to_overcome_a_dumb_answerer.md)\]
+* Vote数:6 @ [Urgent: Unfair Memory Err Strategy](./discuss/Urgent_Unfair_Memory_Err_Strategy.md)  \[[原文付きはこちら](./comparison/discuss/Urgent_Unfair_Memory_Err_Strategy.md)\]
+* Vote数:6 @ [Dear Yes/No bot contributors...](./discuss/Dear_YesNo_bot_contributors.md)  \[[原文付きはこちら](./comparison/discuss/Dear_YesNo_bot_contributors.md)\]
+* Vote数:6 @ [Model Selection](./discuss/Model_Selection.md)  \[[原文付きはこちら](./comparison/discuss/Model_Selection.md)\]
+* Vote数:6 @ [LLM overview and Llama 3 setup](./discuss/LLM_overview_and_Llama_3_setup.md)  \[[原文付きはこちら](./comparison/discuss/LLM_overview_and_Llama_3_setup.md)\]
+* Vote数:6 @ [Does It Make Sense To Join The Competition Late?](./discuss/Does_It_Make_Sense_To_Join_The_Competition_Late.md)  \[[原文付きはこちら](./comparison/discuss/Does_It_Make_Sense_To_Join_The_Competition_Late.md)\]
+* Vote数:6 @ [Typos in game rules?](./discuss/Typos_in_game_rules.md)  \[[原文付きはこちら](./comparison/discuss/Typos_in_game_rules.md)\]
+* Vote数:5 @ [Alpha notebook, maybe the final one [LB 666+]](./discuss/Alpha_notebook,_maybe_the_final_one_[LB_666+].md)  \[[原文付きはこちら](./comparison/discuss/Alpha_notebook,_maybe_the_final_one_[LB_666+].md)\]
+* Vote数:5 @ [What is "jane"?](./discuss/What_is_jane.md)  \[[原文付きはこちら](./comparison/discuss/What_is_jane.md)\]
+* Vote数:5 @ [How Are Keywords with Typographical Errors Handled?](./discuss/How_Are_Keywords_with_Typographical_Errors_Handled.md)  \[[原文付きはこちら](./comparison/discuss/How_Are_Keywords_with_Typographical_Errors_Handled.md)\]
+* Vote数:5 @ [List of questions seen on the LB that can be answered with a rule-based algorithm.](./discuss/List_of_questions_seen_on_the_LB_that_can_be_answered_with_….md)  \[[原文付きはこちら](./comparison/discuss/List_of_questions_seen_on_the_LB_that_can_be_answered_with_….md)\]
+* Vote数:5 @ [When are keywords going to change?](./discuss/When_are_keywords_going_to_change.md)  \[[原文付きはこちら](./comparison/discuss/When_are_keywords_going_to_change.md)\]
+* Vote数:5 @ [The Kaggle "LLM 20 Questions Starter Notebook" Fails](./discuss/The_Kaggle_LLM_20_Questions_Starter_Notebook_Fails.md)  \[[原文付きはこちら](./comparison/discuss/The_Kaggle_LLM_20_Questions_Starter_Notebook_Fails.md)\]
+* Vote数:5 @ [Option to activate or deactivate the submitted agent? (Question to host)](./discuss/Option_to_activate_or_deactivate_the_submitted_agent_(Quest….md)  \[[原文付きはこちら](./comparison/discuss/Option_to_activate_or_deactivate_the_submitted_agent_(Quest….md)\]
+* Vote数:5 @ [What is "strategic question answering"?](./discuss/What_is_strategic_question_answering.md)  \[[原文付きはこちら](./comparison/discuss/What_is_strategic_question_answering.md)\]
+* Vote数:5 @ [How is the guessed word matched with the target word?](./discuss/How_is_the_guessed_word_matched_with_the_target_word.md)  \[[原文付きはこちら](./comparison/discuss/How_is_the_guessed_word_matched_with_the_target_word.md)\]
+* Vote数:4 @ [How to install new transformers version for load llama3.1?](./discuss/How_to_install_new_transformers_version_for_load_llama31.md)  \[[原文付きはこちら](./comparison/discuss/How_to_install_new_transformers_version_for_load_llama31.md)\]
+* Vote数:4 @ [Let's share LLM models for making questions and answering!](./discuss/Let's_share_LLM_models_for_making_questions_and_answering!.md)  \[[原文付きはこちら](./comparison/discuss/Let's_share_LLM_models_for_making_questions_and_answering!.md)\]
+* Vote数:4 @ [Why is the oldest agent being deleted and not the agent with the worst results?](./discuss/Why_is_the_oldest_agent_being_deleted_and_not_the_agent_wit….md)  \[[原文付きはこちら](./comparison/discuss/Why_is_the_oldest_agent_being_deleted_and_not_the_agent_wit….md)\]
+* Vote数:4 @ [[Interesting findings] LLM are tired of playing 20 Questions😂](./discuss/[Interesting_findings]_LLM_are_tired_of_playing_20_Question….md)  \[[原文付きはこちら](./comparison/discuss/[Interesting_findings]_LLM_are_tired_of_playing_20_Question….md)\]
+* Vote数:4 @ [Running the environment on the notebook](./discuss/Running_the_environment_on_the_notebook.md)  \[[原文付きはこちら](./comparison/discuss/Running_the_environment_on_the_notebook.md)\]
+* Vote数:4 @ [20 question datasets](./discuss/20_question_datasets.md)  \[[原文付きはこちら](./comparison/discuss/20_question_datasets.md)\]
+* Vote数:3 @ [An interesting discussion has been deleted?](./discuss/An_interesting_discussion_has_been_deleted.md)  \[[原文付きはこちら](./comparison/discuss/An_interesting_discussion_has_been_deleted.md)\]
+* Vote数:3 @ [how to cancel an agent?](./discuss/how_to_cancel_an_agent.md)  \[[原文付きはこちら](./comparison/discuss/how_to_cancel_an_agent.md)\]
+* Vote数:3 @ [Will all agents play with the same frequency on the hidden test set?](./discuss/Will_all_agents_play_with_the_same_frequency_on_the_hidden_….md)  \[[原文付きはこちら](./comparison/discuss/Will_all_agents_play_with_the_same_frequency_on_the_hidden_….md)\]
+* Vote数:3 @ [Will the final keyword set contain any of the current keywords?](./discuss/Will_the_final_keyword_set_contain_any_of_the_current_keywo….md)  \[[原文付きはこちら](./comparison/discuss/Will_the_final_keyword_set_contain_any_of_the_current_keywo….md)\]
+* Vote数:3 @ [A few questions about the private lb keywords.](./discuss/A_few_questions_about_the_private_lb_keywords.md)  \[[原文付きはこちら](./comparison/discuss/A_few_questions_about_the_private_lb_keywords.md)\]
+* Vote数:3 @ [With keywords possible to be hardcoded, does the current leaderboard matter for final prize contending eval?](./discuss/With_keywords_possible_to_be_hardcoded,_does_the_current_le….md)  \[[原文付きはこちら](./comparison/discuss/With_keywords_possible_to_be_hardcoded,_does_the_current_le….md)\]
+* Vote数:3 @ [The best score of each team on LB is only the best of the most recent 3 submissions](./discuss/The_best_score_of_each_team_on_LB_is_only_the_best_of_the_m….md)  \[[原文付きはこちら](./comparison/discuss/The_best_score_of_each_team_on_LB_is_only_the_best_of_the_m….md)\]
+* Vote数:3 @ [Disabled submissions due to limit: anyone can help?](./discuss/Disabled_submissions_due_to_limit_anyone_can_help.md)  \[[原文付きはこちら](./comparison/discuss/Disabled_submissions_due_to_limit_anyone_can_help.md)\]
+* Vote数:3 @ [i want help what i should be do ?](./discuss/i_want_help_what_i_should_be_do_.md)  \[[原文付きはこちら](./comparison/discuss/i_want_help_what_i_should_be_do_.md)\]
+* Vote数:3 @ [Should questioners gain more points than answerer?](./discuss/Should_questioners_gain_more_points_than_answerer.md)  \[[原文付きはこちら](./comparison/discuss/Should_questioners_gain_more_points_than_answerer.md)\]
+* Vote数:3 @ [New Q20LLM dataset with >78k questions](./discuss/New_Q20LLM_dataset_with_78k_questions.md)  \[[原文付きはこちら](./comparison/discuss/New_Q20LLM_dataset_with_78k_questions.md)\]
+* Vote数:3 @ [Episode game dataset](./discuss/Episode_game_dataset.md)  \[[原文付きはこちら](./comparison/discuss/Episode_game_dataset.md)\]
+* Vote数:3 @ [What if the Answerer halucinates](./discuss/What_if_the_Answerer_halucinates.md)  \[[原文付きはこちら](./comparison/discuss/What_if_the_Answerer_halucinates.md)\]
+* Vote数:3 @ [Bug in agent assignments[Hosts Please Review]](./discuss/Bug_in_agent_assignments[Hosts_Please_Review].md)  \[[原文付きはこちら](./comparison/discuss/Bug_in_agent_assignments[Hosts_Please_Review].md)\]
+* Vote数:2 @ [Is the ranking meaningful?](./discuss/Is_the_ranking_meaningful.md)  \[[原文付きはこちら](./comparison/discuss/Is_the_ranking_meaningful.md)\]
+* Vote数:2 @ [How can I use the latest version of the transformers library in the production environment?](./discuss/How_can_I_use_the_latest_version_of_the_transformers_librar….md)  \[[原文付きはこちら](./comparison/discuss/How_can_I_use_the_latest_version_of_the_transformers_librar….md)\]
+* Vote数:2 @ [persona verify](./discuss/persona_verify.md)  \[[原文付きはこちら](./comparison/discuss/persona_verify.md)\]
+* Vote数:2 @ [Scoring system seems to be subpar](./discuss/Scoring_system_seems_to_be_subpar.md)  \[[原文付きはこちら](./comparison/discuss/Scoring_system_seems_to_be_subpar.md)\]
+* Vote数:2 @ [Addressing Prompt Injection: How to ensure fair play in LLM 20 Questions?](./discuss/Addressing_Prompt_Injection_How_to_ensure_fair_play_in_LLM_….md)  \[[原文付きはこちら](./comparison/discuss/Addressing_Prompt_Injection_How_to_ensure_fair_play_in_LLM_….md)\]
+* Vote数:2 @ [Gemma 2 - any success?](./discuss/Gemma_2_-_any_success.md)  \[[原文付きはこちら](./comparison/discuss/Gemma_2_-_any_success.md)\]
+* Vote数:2 @ [Identical Agents, but Different Scores! I propose these improvements. What do you think?](./discuss/Identical_Agents,_but_Different_Scores!_I_propose_these_imp….md)  \[[原文付きはこちら](./comparison/discuss/Identical_Agents,_but_Different_Scores!_I_propose_these_imp….md)\]
+* Vote数:2 @ [Can we reset the entire leaderboard?](./discuss/Can_we_reset_the_entire_leaderboard.md)  \[[原文付きはこちら](./comparison/discuss/Can_we_reset_the_entire_leaderboard.md)\]
+* Vote数:2 @ [Question for Organizers: are current keywords a random subset of the future keyword set](./discuss/Question_for_Organizers_are_current_keywords_a_random_subse….md)  \[[原文付きはこちら](./comparison/discuss/Question_for_Organizers_are_current_keywords_a_random_subse….md)\]
+* Vote数:2 @ [Submission problem](./discuss/Submission_problem.md)  \[[原文付きはこちら](./comparison/discuss/Submission_problem.md)\]
+* Vote数:2 @ [Maximum context length error](./discuss/Maximum_context_length_error.md)  \[[原文付きはこちら](./comparison/discuss/Maximum_context_length_error.md)\]
+* Vote数:2 @ [Don't forget to accept gemma license](./discuss/Don't_forget_to_accept_gemma_license.md)  \[[原文付きはこちら](./comparison/discuss/Don't_forget_to_accept_gemma_license.md)\]
+* Vote数:2 @ [How to add custom python packages in the submission?](./discuss/How_to_add_custom_python_packages_in_the_submission.md)  \[[原文付きはこちら](./comparison/discuss/How_to_add_custom_python_packages_in_the_submission.md)\]
+* Vote数:2 @ [Log analysis for a agent's performance](./discuss/Log_analysis_for_a_agent's_performance.md)  \[[原文付きはこちら](./comparison/discuss/Log_analysis_for_a_agent's_performance.md)\]
+* Vote数:2 @ [InvalidArgument: Unknown Environment Specification](./discuss/InvalidArgument_Unknown_Environment_Specification.md)  \[[原文付きはこちら](./comparison/discuss/InvalidArgument_Unknown_Environment_Specification.md)\]
+* Vote数:2 @ [Convergence of leaderboard scores](./discuss/Convergence_of_leaderboard_scores.md)  \[[原文付きはこちら](./comparison/discuss/Convergence_of_leaderboard_scores.md)\]
+* Vote数:2 @ [I don't mean to be a snitch but...](./discuss/I_don't_mean_to_be_a_snitch_but.md)  \[[原文付きはこちら](./comparison/discuss/I_don't_mean_to_be_a_snitch_but.md)\]
+* Vote数:2 @ [Cannot submit tar.gz file or .py file? [SOLVED]](./discuss/Cannot_submit_targz_file_or_py_file_[SOLVED].md)  \[[原文付きはこちら](./comparison/discuss/Cannot_submit_targz_file_or_py_file_[SOLVED].md)\]
+* Vote数:1 @ [I am stuck with llama 3.1](./discuss/I_am_stuck_with_llama_31.md)  \[[原文付きはこちら](./comparison/discuss/I_am_stuck_with_llama_31.md)\]
+* Vote数:1 @ [Weird Error](./discuss/Weird_Error.md)  \[[原文付きはこちら](./comparison/discuss/Weird_Error.md)\]
+* Vote数:1 @ [Keywords list is not fully correct and could use improvement](./discuss/Keywords_list_is_not_fully_correct_and_could_use_improvement.md)  \[[原文付きはこちら](./comparison/discuss/Keywords_list_is_not_fully_correct_and_could_use_improvement.md)\]
+* Vote数:1 @ [How do you guys normally improve or edit the strategy of the model?](./discuss/How_do_you_guys_normally_improve_or_edit_the_strategy_of_th….md)  \[[原文付きはこちら](./comparison/discuss/How_do_you_guys_normally_improve_or_edit_the_strategy_of_th….md)\]
+* Vote数:1 @ [Submission Failed: Previously Successful File Fails Sporadically](./discuss/Submission_Failed_Previously_Successful_File_Fails_Sporadic….md)  \[[原文付きはこちら](./comparison/discuss/Submission_Failed_Previously_Successful_File_Fails_Sporadic….md)\]
+* Vote数:1 @ [Encountering another problem when submitting](./discuss/Encountering_another_problem_when_submitting.md)  \[[原文付きはこちら](./comparison/discuss/Encountering_another_problem_when_submitting.md)\]
+* Vote数:1 @ [Unable to access the new keywords list.](./discuss/Unable_to_access_the_new_keywords_list.md)  \[[原文付きはこちら](./comparison/discuss/Unable_to_access_the_new_keywords_list.md)\]
+* Vote数:1 @ [How to reduce file size](./discuss/How_to_reduce_file_size.md)  \[[原文付きはこちら](./comparison/discuss/How_to_reduce_file_size.md)\]
+* Vote数:1 @ [Notebook runs succeccfully but submission error](./discuss/Notebook_runs_succeccfully_but_submission_error.md)  \[[原文付きはこちら](./comparison/discuss/Notebook_runs_succeccfully_but_submission_error.md)\]
+* Vote数:1 @ [submission problem(Pls help me)](./discuss/submission_problem(Pls_help_me).md)  \[[原文付きはこちら](./comparison/discuss/submission_problem(Pls_help_me).md)\]
+* Vote数:1 @ [What do you think about Gemma 2b-it?](./discuss/What_do_you_think_about_Gemma_2b-it.md)  \[[原文付きはこちら](./comparison/discuss/What_do_you_think_about_Gemma_2b-it.md)\]
+* Vote数:1 @ [Submit problem(please help me)](./discuss/Submit_problem(please_help_me).md)  \[[原文付きはこちら](./comparison/discuss/Submit_problem(please_help_me).md)\]
+* Vote数:1 @ [Request for organisers - Allowed guesses by keyword](./discuss/Request_for_organisers_-_Allowed_guesses_by_keyword.md)  \[[原文付きはこちら](./comparison/discuss/Request_for_organisers_-_Allowed_guesses_by_keyword.md)\]
+* Vote数:1 @ [Questions about the data](./discuss/Questions_about_the_data.md)  \[[原文付きはこちら](./comparison/discuss/Questions_about_the_data.md)\]
+* Vote数:1 @ [will agent have access to the question/answer/guess history in each session?](./discuss/will_agent_have_access_to_the_questionanswerguess_history_i….md)  \[[原文付きはこちら](./comparison/discuss/will_agent_have_access_to_the_questionanswerguess_history_i….md)\]
+* Vote数:1 @ [Can competition hosts make the keywords have more alts?](./discuss/Can_competition_hosts_make_the_keywords_have_more_alts.md)  \[[原文付きはこちら](./comparison/discuss/Can_competition_hosts_make_the_keywords_have_more_alts.md)\]
+* Vote数:1 @ [How to control keyword sampling for testing?](./discuss/How_to_control_keyword_sampling_for_testing.md)  \[[原文付きはこちら](./comparison/discuss/How_to_control_keyword_sampling_for_testing.md)\]
+* Vote数:1 @ [`keyword.py` only contains places, no people, no things](./discuss/`keywordpy`_only_contains_places,_no_people,_no_things.md)  \[[原文付きはこちら](./comparison/discuss/`keywordpy`_only_contains_places,_no_people,_no_things.md)\]
+* Vote数:1 @ [Help! Stuck in Kaggle's file import](./discuss/Help!_Stuck_in_Kaggle's_file_import.md)  \[[原文付きはこちら](./comparison/discuss/Help!_Stuck_in_Kaggle's_file_import.md)\]
+* Vote数:1 @ [Ask on a silly question about the observation](./discuss/Ask_on_a_silly_question_about_the_observation.md)  \[[原文付きはこちら](./comparison/discuss/Ask_on_a_silly_question_about_the_observation.md)\]
+* Vote数:1 @ [Submissions pending](./discuss/Submissions_pending.md)  \[[原文付きはこちら](./comparison/discuss/Submissions_pending.md)\]
+* Vote数:1 @ [Binary search models are not very useful and LLM Models aiding binary search models is not beneficial](./discuss/Binary_search_models_are_not_very_useful_and_LLM_Models_aid….md)  \[[原文付きはこちら](./comparison/discuss/Binary_search_models_are_not_very_useful_and_LLM_Models_aid….md)\]
+* Vote数:1 @ [Why not make a sabotage agent?](./discuss/Why_not_make_a_sabotage_agent.md)  \[[原文付きはこちら](./comparison/discuss/Why_not_make_a_sabotage_agent.md)\]
+* Vote数:1 @ [Why do scores start at 600?](./discuss/Why_do_scores_start_at_600.md)  \[[原文付きはこちら](./comparison/discuss/Why_do_scores_start_at_600.md)\]
+* Vote数:1 @ [Is 3 the max number of agents you can have?](./discuss/Is_3_the_max_number_of_agents_you_can_have.md)  \[[原文付きはこちら](./comparison/discuss/Is_3_the_max_number_of_agents_you_can_have.md)\]
+* Vote数:1 @ [Is this only limited to places?](./discuss/Is_this_only_limited_to_places.md)  \[[原文付きはこちら](./comparison/discuss/Is_this_only_limited_to_places.md)\]
+* Vote数:1 @ [Agent interface](./discuss/Agent_interface.md)  \[[原文付きはこちら](./comparison/discuss/Agent_interface.md)\]
+* Vote数:0 @ [Validation Episode Failed - Need Help Debugging My Notebook](./discuss/Validation_Episode_Failed_-_Need_Help_Debugging_My_Notebook.md)  \[[原文付きはこちら](./comparison/discuss/Validation_Episode_Failed_-_Need_Help_Debugging_My_Notebook.md)\]
+* Vote数:0 @ [Some competitors still have 3 agents active.](./discuss/Some_competitors_still_have_3_agents_active.md)  \[[原文付きはこちら](./comparison/discuss/Some_competitors_still_have_3_agents_active.md)\]
+* Vote数:0 @ [Why is the answerer being penalised if the other team guesses the right word?](./discuss/Why_is_the_answerer_being_penalised_if_the_other_team_guess….md)  \[[原文付きはこちら](./comparison/discuss/Why_is_the_answerer_being_penalised_if_the_other_team_guess….md)\]
+* Vote数:0 @ [How different would be the evaluation in the private leaderboard vs evaluation in the public leaderboard?](./discuss/How_different_would_be_the_evaluation_in_the_private_leader….md)  \[[原文付きはこちら](./comparison/discuss/How_different_would_be_the_evaluation_in_the_private_leader….md)\]
+* Vote数:0 @ [debug error [ERR]](./discuss/debug_error_[ERR].md)  \[[原文付きはこちら](./comparison/discuss/debug_error_[ERR].md)\]
+* Vote数:0 @ [vllm issues](./discuss/vllm_issues.md)  \[[原文付きはこちら](./comparison/discuss/vllm_issues.md)\]
+* Vote数:0 @ [Submission Problem](./discuss/Submission_Problem.md)  \[[原文付きはこちら](./comparison/discuss/Submission_Problem.md)\]
+* Vote数:0 @ [Now I am confused. Pelican is the thing or a place?](./discuss/Now_I_am_confused_Pelican_is_the_thing_or_a_place.md)  \[[原文付きはこちら](./comparison/discuss/Now_I_am_confused_Pelican_is_the_thing_or_a_place.md)\]
+* Vote数:0 @ [Are new models useful?](./discuss/Are_new_models_useful.md)  \[[原文付きはこちら](./comparison/discuss/Are_new_models_useful.md)\]
+* Vote数:0 @ [Llama3 inference is slow. Is there any way to improve it?](./discuss/Llama3_inference_is_slow_Is_there_any_way_to_improve_it.md)  \[[原文付きはこちら](./comparison/discuss/Llama3_inference_is_slow_Is_there_any_way_to_improve_it.md)\]
+* Vote数:0 @ [Country Name Keywords Listed in Both Categories](./discuss/Country_Name_Keywords_Listed_in_Both_Categories.md)  \[[原文付きはこちら](./comparison/discuss/Country_Name_Keywords_Listed_in_Both_Categories.md)\]
+* Vote数:0 @ [does "things" category contain brand names?](./discuss/does_things_category_contain_brand_names.md)  \[[原文付きはこちら](./comparison/discuss/does_things_category_contain_brand_names.md)\]
+* Vote数:0 @ [Are the locations still in the game?](./discuss/Are_the_locations_still_in_the_game.md)  \[[原文付きはこちら](./comparison/discuss/Are_the_locations_still_in_the_game.md)\]
+* Vote数:0 @ [Open source models from hugging face or Groq](./discuss/Open_source_models_from_hugging_face_or_Groq.md)  \[[原文付きはこちら](./comparison/discuss/Open_source_models_from_hugging_face_or_Groq.md)\]
+* Vote数:0 @ [Disabled due to competitions active submission limit.](./discuss/Disabled_due_to_competitions_active_submission_limit.md)  \[[原文付きはこちら](./comparison/discuss/Disabled_due_to_competitions_active_submission_limit.md)\]
+* Vote数:0 @ [Why 2 vs 2](./discuss/Why_2_vs_2.md)  \[[原文付きはこちら](./comparison/discuss/Why_2_vs_2.md)\]
+* Vote数:0 @ [Scoring Questions](./discuss/Scoring_Questions.md)  \[[原文付きはこちら](./comparison/discuss/Scoring_Questions.md)\]
+* Vote数:0 @ [#Solved: Cannot submit: Your Notebook cannot use other competitions as a data source in this competition.](./discuss/#Solved_Cannot_submit_Your_Notebook_cannot_use_other_compet….md)  \[[原文付きはこちら](./comparison/discuss/#Solved_Cannot_submit_Your_Notebook_cannot_use_other_compet….md)\]
+* Vote数:0 @ [Why is the output shown like this?](./discuss/Why_is_the_output_shown_like_this.md)  \[[原文付きはこちら](./comparison/discuss/Why_is_the_output_shown_like_this.md)\]
+* Vote数:0 @ [Submit selection](./discuss/Submit_selection.md)  \[[原文付きはこちら](./comparison/discuss/Submit_selection.md)\]
+* Vote数:0 @ [Different Baselines](./discuss/Different_Baselines.md)  \[[原文付きはこちら](./comparison/discuss/Different_Baselines.md)\]
+* Vote数:0 @ [How Can I Change an Activated Agent?](./discuss/How_Can_I_Change_an_Activated_Agent.md)  \[[原文付きはこちら](./comparison/discuss/How_Can_I_Change_an_Activated_Agent.md)\]
+* Vote数:0 @ [[SOLVED] Are answers case insensitive?](./discuss/[SOLVED]_Are_answers_case_insensitive.md)  \[[原文付きはこちら](./comparison/discuss/[SOLVED]_Are_answers_case_insensitive.md)\]
+* Vote数:0 @ [How do I find the code for the agent testing?](./discuss/How_do_I_find_the_code_for_the_agent_testing.md)  \[[原文付きはこちら](./comparison/discuss/How_do_I_find_the_code_for_the_agent_testing.md)\]
+* Vote数:0 @ [Anyone had luck getting quantized models to load in the game environment?](./discuss/Anyone_had_luck_getting_quantized_models_to_load_in_the_gam….md)  \[[原文付きはこちら](./comparison/discuss/Anyone_had_luck_getting_quantized_models_to_load_in_the_gam….md)\]
+* Vote数:0 @ [Where can I find the llm 20 Q metric?](./discuss/Where_can_I_find_the_llm_20_Q_metric.md)  \[[原文付きはこちら](./comparison/discuss/Where_can_I_find_the_llm_20_Q_metric.md)\]
+* Vote数:0 @ [[SOLVED] Submisson error due to file size when using kaggle CLI in kaggle notebook](./discuss/[SOLVED]_Submisson_error_due_to_file_size_when_using_kaggle….md)  \[[原文付きはこちら](./comparison/discuss/[SOLVED]_Submisson_error_due_to_file_size_when_using_kaggle….md)\]
+* Vote数:0 @ [Model randomly taking 30-100x the avg time to run](./discuss/Model_randomly_taking_30-100x_the_avg_time_to_run.md)  \[[原文付きはこちら](./comparison/discuss/Model_randomly_taking_30-100x_the_avg_time_to_run.md)\]
+* Vote数:0 @ [Is their anyone in the top or the leaderboard that does not use the current keyword list?](./discuss/Is_their_anyone_in_the_top_or_the_leaderboard_that_does_not….md)  \[[原文付きはこちら](./comparison/discuss/Is_their_anyone_in_the_top_or_the_leaderboard_that_does_not….md)\]
+* Vote数:0 @ [Will keywords ever have people or not?](./discuss/Will_keywords_ever_have_people_or_not.md)  \[[原文付きはこちら](./comparison/discuss/Will_keywords_ever_have_people_or_not.md)\]
+* Vote数:0 @ [How to use models from huggingface?](./discuss/How_to_use_models_from_huggingface.md)  \[[原文付きはこちら](./comparison/discuss/How_to_use_models_from_huggingface.md)\]
+* Vote数:0 @ [Clarification on LLM Usage and Constraints](./discuss/Clarification_on_LLM_Usage_and_Constraints.md)  \[[原文付きはこちら](./comparison/discuss/Clarification_on_LLM_Usage_and_Constraints.md)\]
+* Vote数:0 @ [How do you validate](./discuss/How_do_you_validate.md)  \[[原文付きはこちら](./comparison/discuss/How_do_you_validate.md)\]
+* Vote数:0 @ [Help with loading model into kaggle environments](./discuss/Help_with_loading_model_into_kaggle_environments.md)  \[[原文付きはこちら](./comparison/discuss/Help_with_loading_model_into_kaggle_environments.md)\]
+* Vote数:0 @ [Size of the LLM](./discuss/Size_of_the_LLM.md)  \[[原文付きはこちら](./comparison/discuss/Size_of_the_LLM.md)\]
+* Vote数:0 @ [Game environment still not stable? 🤔](./discuss/Game_environment_still_not_stable_🤔.md)  \[[原文付きはこちら](./comparison/discuss/Game_environment_still_not_stable_🤔.md)\]
+* Vote数:0 @ [Not able to submit](./discuss/Not_able_to_submit.md)  \[[原文付きはこちら](./comparison/discuss/Not_able_to_submit.md)\]
+* Vote数:0 @ [kaggle docker](./discuss/kaggle_docker.md)  \[[原文付きはこちら](./comparison/discuss/kaggle_docker.md)\]
+* Vote数:0 @ [Missing episodes/ errors across the board.](./discuss/Missing_episodes_errors_across_the_board.md)  \[[原文付きはこちら](./comparison/discuss/Missing_episodes_errors_across_the_board.md)\]
+* Vote数:0 @ [[SOLVED] Has anyone created a valid submission with llama-cpp-python?](./discuss/[SOLVED]_Has_anyone_created_a_valid_submission_with_llama-c….md)  \[[原文付きはこちら](./comparison/discuss/[SOLVED]_Has_anyone_created_a_valid_submission_with_llama-c….md)\]
+* Vote数:0 @ [What is the role of llm_20_questions.py](./discuss/What_is_the_role_of_llm_20_questionspy.md)  \[[原文付きはこちら](./comparison/discuss/What_is_the_role_of_llm_20_questionspy.md)\]
+* Vote数:0 @ [Is there any way to locally simulate a 20 questions game to test new ideas?](./discuss/Is_there_any_way_to_locally_simulate_a_20_questions_game_to….md)  \[[原文付きはこちら](./comparison/discuss/Is_there_any_way_to_locally_simulate_a_20_questions_game_to….md)\]
+* Vote数:0 @ [[Solved] 75% valid submission!](./discuss/[Solved]_75%_valid_submission!.md)  \[[原文付きはこちら](./comparison/discuss/[Solved]_75%_valid_submission!.md)\]
+* Vote数:0 @ [Can I use Langgraph to build and submit agent](./discuss/Can_I_use_Langgraph_to_build_and_submit_agent.md)  \[[原文付きはこちら](./comparison/discuss/Can_I_use_Langgraph_to_build_and_submit_agent.md)\]
+* Vote数:0 @ [Can models be too smart?](./discuss/Can_models_be_too_smart.md)  \[[原文付きはこちら](./comparison/discuss/Can_models_be_too_smart.md)\]
+* Vote数:0 @ [Question about the game mechanism](./discuss/Question_about_the_game_mechanism.md)  \[[原文付きはこちら](./comparison/discuss/Question_about_the_game_mechanism.md)\]
+* Vote数:0 @ [What model(s) do you use?](./discuss/What_model(s)_do_you_use.md)  \[[原文付きはこちら](./comparison/discuss/What_model(s)_do_you_use.md)\]
+* Vote数:0 @ [How to submit use zip file?](./discuss/How_to_submit_use_zip_file.md)  \[[原文付きはこちら](./comparison/discuss/How_to_submit_use_zip_file.md)\]
+* Vote数:0 @ [Chris crossed 900 Mark 🤯](./discuss/Chris_crossed_900_Mark_🤯.md)  \[[原文付きはこちら](./comparison/discuss/Chris_crossed_900_Mark_🤯.md)\]
+* Vote数:0 @ [About the key words involved in this competition](./discuss/About_the_key_words_involved_in_this_competition.md)  \[[原文付きはこちら](./comparison/discuss/About_the_key_words_involved_in_this_competition.md)\]
+* Vote数:0 @ [keyword list](./discuss/keyword_list.md)  \[[原文付きはこちら](./comparison/discuss/keyword_list.md)\]
+* Vote数:0 @ [Why is this agent getting points for this?](./discuss/Why_is_this_agent_getting_points_for_this.md)  \[[原文付きはこちら](./comparison/discuss/Why_is_this_agent_getting_points_for_this.md)\]
+* Vote数:0 @ [I am not able to create a kaggle environments for 'llm_20_question'](./discuss/I_am_not_able_to_create_a_kaggle_environments_for_'llm_20_q….md)  \[[原文付きはこちら](./comparison/discuss/I_am_not_able_to_create_a_kaggle_environments_for_'llm_20_q….md)\]
+* Vote数:0 @ [Submissions pending](./discuss/Submissions_pending.md)  \[[原文付きはこちら](./comparison/discuss/Submissions_pending.md)\]
+* Vote数:0 @ [updating the model during the tournament](./discuss/updating_the_model_during_the_tournament.md)  \[[原文付きはこちら](./comparison/discuss/updating_the_model_during_the_tournament.md)\]
+* Vote数:0 @ [Example of successful round](./discuss/Example_of_successful_round.md)  \[[原文付きはこちら](./comparison/discuss/Example_of_successful_round.md)\]
+* Vote数:0 @ [I am still confused about scorring](./discuss/I_am_still_confused_about_scorring.md)  \[[原文付きはこちら](./comparison/discuss/I_am_still_confused_about_scorring.md)\]
+* Vote数:0 @ [Why am I still getting NaNs?](./discuss/Why_am_I_still_getting_NaNs.md)  \[[原文付きはこちら](./comparison/discuss/Why_am_I_still_getting_NaNs.md)\]
+* Vote数:0 @ [Agent produces only -NaN as output](./discuss/Agent_produces_only_-NaN_as_output.md)  \[[原文付きはこちら](./comparison/discuss/Agent_produces_only_-NaN_as_output.md)\]
+* Vote数:0 @ [60 Sec timeout limit](./discuss/60_Sec_timeout_limit.md)  \[[原文付きはこちら](./comparison/discuss/60_Sec_timeout_limit.md)\]
+* Vote数:0 @ [compressing questions to overcome 2000 character limit](./discuss/compressing_questions_to_overcome_2000_character_limit.md)  \[[原文付きはこちら](./comparison/discuss/compressing_questions_to_overcome_2000_character_limit.md)\]
+* Vote数:0 @ [Understanding](./discuss/Understanding.md)  \[[原文付きはこちら](./comparison/discuss/Understanding.md)\]
+* Vote数:0 @ [How is the score calculated?](./discuss/How_is_the_score_calculated.md)  \[[原文付きはこちら](./comparison/discuss/How_is_the_score_calculated.md)\]
+* Vote数:0 @ [3-bit cheat](./discuss/3-bit_cheat.md)  \[[原文付きはこちら](./comparison/discuss/3-bit_cheat.md)\]
+* Vote数:0 @ [Binary Search Strategy](./discuss/Binary_Search_Strategy.md)  \[[原文付きはこちら](./comparison/discuss/Binary_Search_Strategy.md)\]
+* Vote数:0 @ [What if model lie on your answer?](./discuss/What_if_model_lie_on_your_answer.md)  \[[原文付きはこちら](./comparison/discuss/What_if_model_lie_on_your_answer.md)\]
+* Vote数:0 @ [Is this competition limited to Gemma only?](./discuss/Is_this_competition_limited_to_Gemma_only.md)  \[[原文付きはこちら](./comparison/discuss/Is_this_competition_limited_to_Gemma_only.md)\]
+* Vote数:0 @ [Can't download submission tar](./discuss/Can't_download_submission_tar.md)  \[[原文付きはこちら](./comparison/discuss/Can't_download_submission_tar.md)\]
+* Vote数:0 @ [[Offtopic] What got the LB moving](./discuss/[Offtopic]_What_got_the_LB_moving.md)  \[[原文付きはこちら](./comparison/discuss/[Offtopic]_What_got_the_LB_moving.md)\]
+* Vote数:-2 @ [Could the final list of keywords be established in a transparent way?](./discuss/Could_the_final_list_of_keywords_be_established_in_a_transp….md)  \[[原文付きはこちら](./comparison/discuss/Could_the_final_list_of_keywords_be_established_in_a_transp….md)\]
+* Vote数:-6 @ [It`s amazing!!!](./discuss/It`s_amazing!!!.md)  \[[原文付きはこちら](./comparison/discuss/It`s_amazing!!!.md)\]

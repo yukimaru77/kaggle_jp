@@ -10,7 +10,7 @@
         {
             "author": "Rob Mulla",
             "content": "I think it's intended by the competition designers. Similar to past agent based competitions: [halite](https://www.kaggle.com/competitions/halite), [connect-x](https://www.kaggle.com/competitions/connectx), you can openly see the strategy of each team as the game plays out. We don't know the exact logic and code used to produce the questions, but that can be easily inferred when the solutions are very simple.\n\nFor what it's worth this our current solution is only works because we know the subset of categories and words used in the public/(pre-deadline) leaderboard. Because of this, I don't think ultimately the public leaderboard is going to be a good indication of agents what will perform well on the private/post-deadline leaderboard.\n\nTop teams might choose to not submit their best agents until right before the deadline so that their strategy isn't revealed. But in the end the public leaderboard is pretty useless anyways so 🤷‍♂️\n\n",
-            "date": "Posted 2 months ago  ·  50th in this Competition",
+            "date": "Posted 3 months ago  ·  40th in this Competition",
             "votes": "3",
             "reply": []
         },

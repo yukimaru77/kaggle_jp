@@ -10,20 +10,20 @@
         {
             "author": "RS Turley",
             "content": "In looking through the current matches, most of the submissions seem to be random experiments. I'd guess: \n\n- we will see a lot more convergence as agents with more skill start to consistently win matches\n\n- part of the convergence will be fake as some agents are optimized on the public keywords\n\n- after August 13th, the agents at top of the leaderboard that are optimized on the public keywords will drop off and a new set of agents will converge to the top of the leaderboard\n\n",
-            "date": "Posted 2 months ago  ·  107th in this Competition",
+            "date": "Posted 2 months ago  ·  62nd in this Competition",
             "votes": "1",
             "reply": []
         },
         {
             "author": "Kuldeep Rathore",
             "content": "I also feel the same. Here the luck is dependent on person, place and thing 😂\n\n",
-            "date": "Posted 2 months ago  ·  248th in this Competition",
+            "date": "Posted 2 months ago  ·  394th in this Competition",
             "votes": "1",
             "reply": [
                 {
                     "author": "VolodymyrBilyachat",
                     "content": "Yes and some agents seems to take return default yes or no all the time :D\n\n",
-                    "date": "Posted 2 months ago  ·  214th in this Competition",
+                    "date": "Posted 2 months ago  ·  215th in this Competition",
                     "votes": "1",
                     "reply": []
                 }
@@ -32,13 +32,13 @@
         {
             "author": "Giba",
             "content": "Current LB looks like a periodic random shuffle.  There are many broken agents all around which makes impossible to have a stable LB.\n\n",
-            "date": "Posted 2 months ago  ·  5th in this Competition",
+            "date": "Posted 2 months ago  ·  3rd in this Competition",
             "votes": "2",
             "reply": [
                 {
                     "author": "Giba",
                     "content": "Also watching some replays is possible to get +40 to +100 LB points just because one opponent agent returns error.\n\n",
-                    "date": "Posted 2 months ago  ·  5th in this Competition",
+                    "date": "Posted 2 months ago  ·  3rd in this Competition",
                     "votes": "1",
                     "reply": []
                 }

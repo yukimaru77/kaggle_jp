@@ -1,0 +1,48 @@
+{
+    "main_topic": {
+        "author": "Melinda",
+        "title": "[SOLVED] Has anyone created a valid submission with llama-cpp-python?",
+        "content": "Hello, new friends. I have a version of the competition code using llama-cpp-python running beautifully on my M1 Macbook, but now I have spent quite a while trying to get a version of it working in a valid submission on Kaggle and have not figured out how. I'm wondering if anyone else has gotten this to work, and if anyone has tips to get my llama submission to be successful.\n\nHere is a notebook showing what happens when trying to pip install on the latest environment - [https://www.kaggle.com/code/melindaweathers/error-installing-llama-cpp-python](https://www.kaggle.com/code/melindaweathers/error-installing-llama-cpp-python) . I am considering submitting this as an issue on the kaggle docker github, but I'm not actually sure if it is an issue with kaggle or llama-cpp-python, so I haven't done that.\n\nI am trying to use the gguf file from this [notebook](https://www.kaggle.com/code/raki21/llama-3-gguf-with-llama-cpp/notebook), and I am actually able to install llama-cpp-python on kaggle with the old environment and wheels used in the notebook, but given that it doesn't work for me on the latest docker image, and the agents are probably run on the latest docker image, this approach seems unlikely to work as a submission. (In fact I tried it and it did not work)\n\nI was able to get an old version of llama-cpp-python (0.2.25) to run in kaggle on the latest docker image, but another issue I am having (as mentioned [here](https://www.kaggle.com/competitions/llm-20-questions/discussion/505650#2859210)) is that trying to pip install llama-cpp-python to a target folder with the -t option throws a large number of errors about compatibility. I've tried ignoring these errors and submitting anyways, but so far no dice. (I think it's not properly using the GPU when I ignore the errors)\n\nAny suggestions?\n\n",
+        "date": "Sun Jun 09 2024 06:50:48 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "MelindaTopic Author",
+            "content": "If anyone here is looking for more specifics about how this was solved, I added an example towards the bottom of this notebook - [https://www.kaggle.com/code/melindaweathers/installing-running-llama-cpp-python?scriptVersionId=184413038](https://www.kaggle.com/code/melindaweathers/installing-running-llama-cpp-python?scriptVersionId=184413038)\n\n",
+            "date": "Posted 2 months ago  ·  214th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "omqriko",
+            "content": "Use this\n\n!CMAKE_ARGS=\"-DLLAMA_CUBLAS=on\" pip install llama-cpp-python -U --force-reinstall --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu121\n\n",
+            "date": "Posted 2 months ago  ·  391st in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "MelindaTopic Author",
+                    "content": "Thanks for the suggestion! Unfortunately I'm seeing the same error with that as well -\n\n```\nTarget \"ggml\" links to:\n        CUDA::cuda_driver\n        but the target was not found. \n\n```\n\n[Here](https://www.kaggle.com/code/melindaweathers/error-installing-llama-cpp-python?scriptVersionId=183134477) is a new version of a notebook showing that full error message.\n\n",
+                    "date": "Posted 2 months ago  ·  214th in this Competition",
+                    "votes": "0",
+                    "reply": [
+                        {
+                            "author": "omqriko",
+                            "content": "Okay finally got there with some debugging, here it is:\n\n```\n!CMAKE_ARGS=\"-DLLAMA_CUBLAS=on\" pip install llama-cpp-python==0.2.77 -U --force-reinstall --no-cache-dir --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu121\n\n```\n\n",
+                            "date": "Posted 2 months ago  ·  391st in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        },
+                        {
+                            "author": "MelindaTopic Author",
+                            "content": "Thank you for another suggestion! That didn't work for me for some reason either, but I did find something that seems to have worked.\n\nI added this [input](https://www.kaggle.com/datasets/mikeee8/llama-cpp-python-py310-cuda-4-kaggle/data) and copied the folders to my /kaggle/working/submission/lib and then also did pip install -t /kaggle/working/submission/lib \"diskcache>=5.6.1\" \"jinja2>=2.11.3\" \"numpy>=1.20.0\" \"typing-extensions>=4.5.0\" and ignored the conflicts it listed after ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n\nPreviously I didn't realize that when you install into a target directory, pip always ignores the packages installed in the system, so I guess those errors are safe to ignore in this case.\n\nAnyways the agent passed the validation round at least now using llama-cpp-python!\n\n",
+                            "date": "Posted 2 months ago  ·  214th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

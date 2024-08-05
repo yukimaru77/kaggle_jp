@@ -1,6 +1,6 @@
 # Competition Update
 
-**Bovard Doerschuk-Tiberi** *Wed Jul 31 2024 05:47:37 GMT+0900 (日本標準時)* (17 votes)
+**Bovard Doerschuk-Tiberi** *Wed Jul 31 2024 05:47:37 GMT+0900 (日本標準時)* (21 votes)
 
 Hey all,
 
@@ -42,6 +42,28 @@ On the secret "things" keyword list
 
  # Comments from other users
 
+> ## Chernov Andrey
+> 
+> Hello! I still see in today's simulations locations keyword, namely Norway. Are you going to exclude locations or not?
+> 
+> Thank you for your clarification!
+> 
+> 
+> 
+
+
+---
+
+> ## BORAHMLEE
+> 
+> Hi, Do you use purely secret keywords in your final evaluation? Or do you combine them with current keywords to make the evaluation?
+> 
+> 
+> 
+
+
+---
+
 > ## torino
 > 
 > [@Hi](https://www.kaggle.com/Hi) [@bovard](https://www.kaggle.com/bovard) ,
@@ -78,6 +100,12 @@ On the secret "things" keyword list
 > > 
 > > 
 > > 
+> > > ## Gavin Cao
+> > > 
+> > > Then will obs.category be all "things" or empty or have new subcategories within things?
+> > > 
+> > > 
+> > > 
 
 
 ---
@@ -93,6 +121,24 @@ On the secret "things" keyword list
 > > ## Bovard Doerschuk-Tiberi
 > > 
 > > Yes, that will no longer be the case.
+> > 
+> > 
+> > 
+
+
+---
+
+> ## Bhanu Prakash M
+> 
+> Are all the items in the things category physical objects?
+> 
+> Can I rule out the possibility of there being virtual or abstract things?
+> 
+> 
+> 
+> > ## Bovard Doerschuk-Tiberi
+> > 
+> > The current list of words is roughly representative of the final list. 
 > > 
 > > 
 > > 
@@ -138,12 +184,51 @@ On the secret "things" keyword list
 
 ---
 
-> ## BORAHMLEE
-> 
-> Hi, Do you use purely secret keywords in your final evaluation? Or do you combine them with current keywords to make the evaluation?
+> ## Marcel0.
 > 
 > 
+> Hey all,
 > 
+> Here is an update on what to expect from the final weeks of the competition.
+> 
+> - Active agents reduced from 3 to 2 (starting this week, which will increase the game rate)
+> 
+> - Question character length limit reduced from 2000 to 750 (the extra character limit was unused other than for “binary search” type questions)
+> 
+> - Remove “Locations” from the keyword set. (starting this week, the “locations” problem space it too small)
+> 
+> I noticed that the number of active agents is already 2, but I still see locations appearing in the keywords. Will they still be removed or is it a mistake in the removal?
+> 
+> 
+> 
+> > ## torino
+> > 
+> > Hi [@marceloluizgonalves](https://www.kaggle.com/marceloluizgonalves) ,
+> > 
+> > Remove “Locations” from the keyword set. (starting this week, the “locations” problem space it too small)
+> > 
+> > starting this week means it will be removed from the start of the final 14 days, not the current lb.
+> > 
+> > 
+> > 
+> > > ## Marcel0.
+> > > 
+> > > If that were the case, the number of agents should not have been already reduced.
+> > > 
+> > > 
+> > > 
+> > > ## Fayez Siddiqui
+> > > 
+> > > I agree with [@marceloluizgonalves](https://www.kaggle.com/marceloluizgonalves) here i also launched an agent with specific instructions to not guess place 😭😂
+> > > 
+> > > 
+> > > 
+> > > ## torino
+> > > 
+> > > [@bovard](https://www.kaggle.com/bovard), is a problem will be solved in the final lb?
+> > > 
+> > > 
+> > > 
 
 
 ---
@@ -293,24 +378,6 @@ On the secret "things" keyword list
 > > > 
 > > > 
 > > > 
-
-
----
-
-> ## Bhanu Prakash M
-> 
-> Are all the items in the things category physical objects?
-> 
-> Can I rule out the possibility of there being virtual or abstract things?
-> 
-> 
-> 
-> > ## Bovard Doerschuk-Tiberi
-> > 
-> > The current list of words is roughly representative of the final list. 
-> > 
-> > 
-> > 
 
 
 ---

@@ -10,26 +10,26 @@
         {
             "author": "Rob Mulla",
             "content": "Hey [@khahuras](https://www.kaggle.com/khahuras) - I just noticed this post. Glad to hear you are using our rigging baseline! Did you ever figure out the root cause of this issue?\n\n",
-            "date": "Posted 2 months ago  ·  50th in this Competition",
+            "date": "Posted 2 months ago  ·  40th in this Competition",
             "votes": "1",
             "reply": []
         },
         {
             "author": "waechter",
             "content": "Questions are limited to 2000 characters, and some team use all of it with is the keyword in the list ... type of questions. So if your template contains all the questions asked previously, you run out of tokens when playing with them. (Just a guess)\n\n",
-            "date": "Posted 2 months ago  ·  201st in this Competition",
+            "date": "Posted 2 months ago  ·  181st in this Competition",
             "votes": "1",
             "reply": [
                 {
                     "author": "Kha VoTopic Author",
                     "content": "I don’t allow my bot to have that kind of question though…\n\n",
-                    "date": "Posted 2 months ago  ·  17th in this Competition",
+                    "date": "Posted 2 months ago  ·  71st in this Competition",
                     "votes": "0",
                     "reply": [
                         {
                             "author": "waechter",
                             "content": "What role (guesser or answerer) does your agent play when the error occurs?\n\nI assumed answerer in my previous comment\n\n",
-                            "date": "Posted 2 months ago  ·  201st in this Competition",
+                            "date": "Posted 2 months ago  ·  181st in this Competition",
                             "votes": "0",
                             "reply": []
                         }

@@ -1,50 +1,43 @@
 # 要約 
-このディスカッションは、Kaggle の「LLM 20 Questions」コンペティションに参加しているユーザーが、ローカルマシンで提出したモデルをテストする方法について質問しているものです。
+ディスカッションでは、ユーザーOminousDudeが自分のモデルをローカルマシンでテストするために、Kaggle環境での実行に関する情報を求めています。彼は「submission.tar.gz」ファイルからモデルをロードしたいと考えていますが、テスト用の「model/agent_fn」をどう取得するかに困っています。
 
-OminousDude は、"submission.tar.gz" ファイルからモデルをロードしてテストする方法を尋ねています。Melinda は、Kaggle 環境をローカルマシンで実行する方法を説明し、submission.tar.gz ファイルを適切なフォルダに展開し、`kaggle_environments` ライブラリを使用して環境を作成し、モデルをエージェントとして実行する方法を示しています。
+MelindaはOminousDudeの質問に対して、ローカルマシンでの実行方法を説明し、具体的なサンプルコードを提供しています。彼女は、モデルが特定のパスにあることを前提に、ダミーエージェントの実装とKaggle環境のセットアップ方法を示しました。このコードは、異なるターンタイプに基づいて応答を生成するエージェントの例を含んでおり、ローカル環境での動作確認も可能にしています。
 
-Melinda は、自分の main.py ファイルに環境変数に基づいてマシンで実行されているかどうかを確認するコードがあり、実行されている場合は、正しい相対パスからモデルをロードし、マシンに適したデバイスタイプを設定するコードがあることも説明しています。
-
-OminousDude は、Melinda の回答に感謝し、これでうまくいくと考えています。
-
-要約すると、このディスカッションは、Kaggle の「LLM 20 Questions」コンペティションで提出したモデルをローカルマシンでテストする方法について、具体的なコード例を交えて説明しています。
-
+OminousDudeはMelindaの助けに感謝しており、提供された情報が役立つと感じていることを伝えています。
 
 ---
-# エージェントのテストコードを見つける方法
+# エージェントテストのコードを見つけるには？
 
-**OminousDude** *2024年7月4日 09:07:24 (日本標準時)* (0票)
-
-自分のローカルマシンで "submission.tar.gz" ファイルからモデルをロードしようとしています。モデル/agent_fn を取得してテストするにはどうすればよいですか？ご協力よろしくお願いいたします。
+**OminousDude** *2024年7月4日 Thu 09:07:24 GMT+0900 (日本標準時)* (0票)
+私は「submission.tar.gz」ファイルから自分のモデルをローカルマシンにロードしようとしていますが、テストするための model/agent_fn をどのように取得すればいいのでしょうか？ 何か手助けしていただけると幸いです！
 
 ---
-# 他のユーザーからのコメント
-
+## 他のユーザーからのコメント
 > ## Melinda
 > 
-> Kaggle 環境をローカルマシンで実行したいということですか？それとも何か別のことをしようとしていますか？いずれにしても、これが私のローカルでの実行方法です。もしかしたら、ここで探しているものがあるかもしれません。これは、submission.tar.gz が ./submission/lib に main.py があるフォルダに展開されていることを前提としています（[https://www.kaggle.com/code/rturley/run-debug-llm-20-questions-in-a-notebook](https://www.kaggle.com/code/rturley/run-debug-llm-20-questions-in-a-notebook) から改変）。
+> あなたが言いたいのは、Kaggleの環境をローカルマシンで実行したいということですか？それとも別のことをしようとしているのですか？いずれにしても、私は次のようにローカルで実行しています。これがあなたが探しているものに役立つかもしれません。これは、submission.tar.gz が適切に解凍されていて、main.py が ./submission/lib フォルダにあることを前提としています（[https://www.kaggle.com/code/rturley/run-debug-llm-20-questions-in-a-notebook](https://www.kaggle.com/code/rturley/run-debug-llm-20-questions-in-a-notebook) からの適応版です）。
 > 
-> ```python
-> # これらは単なるダミーエージェントなので、エージェントの 4 つのバージョンを実行していません。
+> ```
+> # これは単なるダミーエージェントで、私のエージェントの4バージョンを実行しないためのものです。
 > def simple_agent1(obs, cfg):
->     # エージェントが推測者で turnType が "ask" の場合
->     if obs.turnType == "ask": response = "Is it a duck?"
->     elif obs.turnType == "guess": response = "duck"
->     elif obs.turnType == "answer": response = "no"
+>     # エージェントが推測者でターンタイプが "ask" の場合
+>     if obs.turnType == "ask": response = "それはアヒルですか？"
+>     elif obs.turnType == "guess": response = "アヒル"
+>     elif obs.turnType == "answer": response = "いいえ"
 >     return response
 > 
 > def simple_agent2(obs, cfg):
->     # エージェントが推測者で turnType が "ask" の場合
->     if obs.turnType == "ask": response = "Is it a bird?"
->     elif obs.turnType == "guess": response = "bird"
->     elif obs.turnType == "answer": response = "no"
+>     # エージェントが推測者でターンタイプが "ask" の場合
+>     if obs.turnType == "ask": response = "それは鳥ですか？"
+>     elif obs.turnType == "guess": response = "鳥"
+>     elif obs.turnType == "answer": response = "いいえ"
 >     return response
 > 
 > from kaggle_environments import make
 > import kaggle_environments
-> keyword = "argentina"
-> alts = ["argentina"]
-> kaggle_environments.envs.llm_20_questions.llm_20_questions.category = "Place"
+> keyword = "アルゼンチン"
+> alts = ["アルゼンチン"]
+> kaggle_environments.envs.llm_20_questions.llm_20_questions.category = "場所"
 > kaggle_environments.envs.llm_20_questions.llm_20_questions.keyword_obj = {'keyword':keyword,'alts':alts}
 > kaggle_environments.envs.llm_20_questions.llm_20_questions.keyword = keyword
 > kaggle_environments.envs.llm_20_questions.llm_20_questions.alts = alts
@@ -54,16 +47,8 @@ OminousDude は、Melinda の回答に感謝し、これでうまくいくと考
 > env.render(mode="ipython", width=800, height=400)
 > 
 > ```
+> 私の main.py の中にも、実行されている環境に基づいて自分のマシンで動いているかどうかを確認し、適切な相対パスからモデルをロードし、マシン用のデバイスタイプを設定するコードがあります。
 > 
-> また、私の main.py には、環境変数に基づいてマシンで実行されているかどうかを確認するコードがあり、実行されている場合は、正しい相対パスからモデルをロードし、マシンに適したデバイスタイプを設定します。
-> 
-> 
-> 
-> > ## OminousDudeTopic Author
+> > ## OminousDude トピック作成者
 > > 
-> > ありがとうございます。これでうまくいくと思います。ありがとうございます！
-> > 
-> > 
-> > 
----
-
+> > ありがとうございます、これでうまくいくと思います！感謝します！

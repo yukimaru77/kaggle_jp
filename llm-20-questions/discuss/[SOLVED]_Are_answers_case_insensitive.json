@@ -10,7 +10,7 @@
         {
             "author": "waechter",
             "content": "Yes answers are case insensitive\n\nIn llm_20_questions.py you will find the function used:\n\n```\ndef keyword_guessed(guess: str) -> bool:\n    def normalize(s: str) -> str:\n      t = str.maketrans(\"\", \"\", string.punctuation)\n      return s.lower().replace(\"the\", \"\").replace(\" \", \"\").translate(t)\n\n    if normalize(guess) == normalize(keyword):\n      return True\n    for s in alts:\n      if normalize(s) == normalize(guess):\n        return True\n\n    return False\n\n```\n\n\"THE CAR\", \"CAR\", \"Car,\" etc.. are correct answers for the keyword \"car\"\n\n",
-            "date": "Posted a month ago  ·  201st in this Competition",
+            "date": "Posted a month ago  ·  181st in this Competition",
             "votes": "2",
             "reply": []
         }

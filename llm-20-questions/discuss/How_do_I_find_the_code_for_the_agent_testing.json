@@ -10,13 +10,13 @@
         {
             "author": "Melinda",
             "content": "Do you mean you want to run the kaggle env locally on your machine? Or are you trying to do something else? At any rate this is how I run it locally.  Maybe something in here is what you're looking for. It assumes your submission.tar.gz is unzipped in a way that main.py is in a folder ./submission/lib (adapted from [https://www.kaggle.com/code/rturley/run-debug-llm-20-questions-in-a-notebook](https://www.kaggle.com/code/rturley/run-debug-llm-20-questions-in-a-notebook))\n\n```\n# These are just dummy agents so that I'm not running 4 versions of my agent.\ndef simple_agent1(obs, cfg):\n    # if agent is guesser and turnType is \"ask\"\n    if obs.turnType == \"ask\": response = \"Is it a duck?\"\n    elif obs.turnType == \"guess\": response = \"duck\"\n    elif obs.turnType == \"answer\": response = \"no\"\n    return response\n\ndef simple_agent2(obs, cfg):\n    # if agent is guesser and turnType is \"ask\"\n    if obs.turnType == \"ask\": response = \"Is it a bird?\"\n    elif obs.turnType == \"guess\": response = \"bird\"\n    elif obs.turnType == \"answer\": response = \"no\"\n    return response\n\nfrom kaggle_environments import make\nimport kaggle_environments\nkeyword = \"argentina\"\nalts = [\"argentina\"]\nkaggle_environments.envs.llm_20_questions.llm_20_questions.category = \"Place\"\nkaggle_environments.envs.llm_20_questions.llm_20_questions.keyword_obj = {'keyword':keyword,'alts':alts}\nkaggle_environments.envs.llm_20_questions.llm_20_questions.keyword = keyword\nkaggle_environments.envs.llm_20_questions.llm_20_questions.alts = alts\n\nenv = make(\"llm_20_questions\", debug=True)\ngame_output = env.run(agents=[simple_agent1, simple_agent2, \"./submission/lib/main.py\", \"./submission/lib/main.py\"])\nenv.render(mode=\"ipython\", width=800, height=400)\n\n```\n\nI also have some code in my main.py that looks to see if it's running on my machine or not, based on environment variables, and if it is, it loads the model from the right relative path and sets the device type appropriately for my machine.\n\n",
-            "date": "Posted a month ago  ·  203rd in this Competition",
+            "date": "Posted a month ago  ·  214th in this Competition",
             "votes": "1",
             "reply": [
                 {
                     "author": "OminousDudeTopic Author",
                     "content": "Ok thank you I think this should work for me thanks!\n\n",
-                    "date": "Posted a month ago  ·  451st in this Competition",
+                    "date": "Posted a month ago  ·  504th in this Competition",
                     "votes": "0",
                     "reply": []
                 }

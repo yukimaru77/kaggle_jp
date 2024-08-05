@@ -10,7 +10,7 @@
         {
             "author": "Bovard Doerschuk-Tiberi",
             "content": "The list of possible words will change after the final submission deadline (meaning you won't be able to update your agent with the new list). I would strongly advise against any strategies that hard code in the list of possible words.\n\nFinal Evaluation\n\n  At the submission deadline on August 13, 2024, submissions will be locked. From August 13, 2024 to August 27th, 2024 we will continue to run episodes against a new set of unpublished, secret words. At the conclusion of this period, the leaderboard is final.\n\n",
-            "date": "Posted 2 months ago",
+            "date": "Posted 3 months ago",
             "votes": "2",
             "reply": []
         },
@@ -47,7 +47,7 @@
         {
             "author": "G John Rao",
             "content": "\"Ask: Is the answer in this list , if answer is no, fallback to freestyle mode and pray to LLM god.\"\n\nI don't think this is exactly what this competition is about. \n\nFrom the overview:\n\nThis competition will evaluate LLMs on key skills like deductive reasoning, efficient information gathering through targeted questioning, and collaboration between paired agents. It also presents a constrained setting requiring creativity and strategy with a limited number of guesses. Success will demonstrate LLMs' capacity for not just answering questions, but also asking insightful questions, performing logical inference, and quickly narrowing down possibilities.\n\nThe keywords.py contains 3 categories: country, city, landmark\n\nI don't think the categories are limited to those 3, if that's the case, the competition is no fun. \n\nThe starter notebook has a system prompt:\n\nsystem_prompt = \"You are an AI assistant designed to play the 20 Questions game. In this game, the Answerer thinks of a keyword and responds to yes-or-no questions by the Questioner. The keyword is a specific person, place, or thing.\"\n\nFor person and place one can make a list, I don't think it's worth it to make a list for \"thing\". Because a \"thing\" can be anything really. It can be a noun, a concept, an object, an idea, a feeling, or even an abstract entity. I think that's where the fun is, and that's where the LLMs come into play. \n\n\"What edge do LLMs offer over this approach? I mean if the answer was chosen by a known LLM then it's prior knowledge that we can exploit, but when its completely random?\"\n\nI think the secret word has to be random. And all the participants work it to eliminate the randomness with each question. \n\nBut my only question remains is: What if the opponent answerer straight up denies and lies or in someway lacks understanding of the questioner LLM? Or starts hallucinating?\n\nIf the answerer LLM is from the hosts, it would have been equal grounds for all questioner LLMs. If not, the power is shifted a lot towards the answerer LLM. \n\nMaybe we will have more clarity later on\n\n",
-            "date": "Posted 3 months ago  ·  168th in this Competition",
+            "date": "Posted 3 months ago  ·  237th in this Competition",
             "votes": "0",
             "reply": [
                 {
@@ -59,7 +59,7 @@
                         {
                             "author": "G John Rao",
                             "content": "And we do that by crafting our first question. After we get answer to our first question, the secret won't be as arbitrary as it began with. \n\n",
-                            "date": "Posted 3 months ago  ·  168th in this Competition",
+                            "date": "Posted 3 months ago  ·  237th in this Competition",
                             "votes": "0",
                             "reply": []
                         }

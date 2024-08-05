@@ -1,6 +1,6 @@
 # Urgent: Unfair Memory Err Strategy
 
-**CchristoC** *Tue Jul 09 2024 13:20:08 GMT+0900 (日本標準時)* (5 votes)
+**CchristoC** *Tue Jul 09 2024 13:20:08 GMT+0900 (日本標準時)* (6 votes)
 
 I found that if someone's agent gets an Err, all the other 3 Agents will get a + Point.
 

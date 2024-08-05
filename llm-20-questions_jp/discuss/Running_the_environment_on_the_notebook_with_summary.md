@@ -1,27 +1,19 @@
 # 要約 
-このディスカッションは、Kaggleの「LLM 20 Questions」コンペティションで、Kaggleノートブックで`kaggle_environments`ライブラリの環境を実行する方法に関するものです。
+コンペのディスカッションでは、参加者がKaggleの「20の質問」競技用に環境をノートブックで実行する際に直面した問題について議論しています。EduMI95は、kaggle_environmentsライブラリを使用してエージェントを実行する際に遭遇したエラーについて説明しました。このエラーは、回答がNoneTypeとして返されることに起因しています。
 
-EduMI95は、ノートブックで環境を実行しようとすると`AttributeError: 'NoneType' object has no attribute 'lower'`というエラーが発生したと報告しました。
+ディスカッションでは、他の参加者から以下のようなアドバイスが提供されました：
+- jazivxtはメモリ制限が原因でエラーが発生すると指摘し、1つのエージェントを使用する場合には問題ないと述べました。また、クラス`GemmaAgent`の実装に関する変更点を共有しました。
+- Lyubomir Klyambarskiは、kaggle_environmentsパッケージのアップデートを提案しました。
+- G John Raoは、エージェントの初期化方法と関連するエラーについて自身の試行を共有しましたが、まだ修正が必要なエラーがあると報告しました。
+- 最後に、RS TurleyはKaggle環境内で実行しデバッグする方法についての例のノートブックを作成したことを発表しました。
 
-jazivxtは、このエラーはノートブックのメモリ制限が原因で、環境がオフラインで動作するために必要なメモリが不足しているため発生すると説明しました。また、`GemmaAgent`クラスの`raise NotImplementedError`がレスポンスの問題の原因であるとも指摘しました。
-
-Lyubomir Klyambarskiは、`kaggle_environments`パッケージを更新することを提案しました。
-
-G John Raoは、`Observation`クラスのコードと、`GemmaQuestionerAgent`と`GemmaAnswererAgent`を初期化してゲームループをシミュレートするコードを共有しました。しかし、このコードでも`NotImplementedError`が発生しました。
-
-RS Turleyは、環境で実行およびデバッグする方法に関するヒントを記載したサンプルノートブックへのリンクを共有しました。
-
-このディスカッションは、Kaggleノートブックで`kaggle_environments`ライブラリの環境を実行する際に発生する可能性のある問題と、それらの問題を解決するための解決策について議論しています。
-
+全体として、参加者間でエラーの詳細、解決策、コードの変更点が活発に共有されており、協力して問題解決に向けた意見交換が行われています。
 
 ---
 # ノートブックで環境を実行する
-
-**EduMI95** *2024年5月23日 20:07:19 (日本標準時)* (4 votes)
-
-Kaggleのノートブック（Kaggleまたは自分のマシン）でkaggle_environmentsライブラリの環境を実行できた人はいますか？私は、ノートブックコード[https://www.kaggle.com/code/jazivxt/llm20q-gemma-2b-it](https://www.kaggle.com/code/jazivxt/llm20q-gemma-2b-it)を実行しようとしましたが、さまざまなエージェントでテストするためにコードの最後を変更しました。
-
-```python
+**EduMI95** *2024年5月23日 20:07:19 GMT+0900 (日本標準時)* (4票)
+kaggle_environmentsライブラリの環境を、ノートブック（kaggleもしくは自分のマシン上）で実行できた方はいらっしゃいますか？ノートブックのコード[https://www.kaggle.com/code/jazivxt/llm20q-gemma-2b-it](https://www.kaggle.com/code/jazivxt/llm20q-gemma-2b-it)を実行し、最後にさまざまなエージェントでテストするためにコードを変更してみたところ、次のようなエラーが出ました：
+```
 from kaggle_environments import make
 env = make("llm_20_questions")
 # コードを実行
@@ -29,10 +21,8 @@ env = make("llm_20_questions")
 env.run([get_agent('questioner'), get_agent('answerer'), get_agent('questioner'), get_agent('answerer')])
 env.render(mode="ipython")
 ```
-
-そして、次のエラーが発生しました。
-
-```python
+以下のエラーが表示されます：
+```
 File /opt/conda/lib/python3.10/site-packages/kaggle_environments/envs/llm_20_questions/llm_20_questions.py:123, in interpreter(state, env)
     121 active1.observation.category = category
     122 response = active1.action
@@ -41,37 +31,31 @@ File /opt/conda/lib/python3.10/site-packages/kaggle_environments/envs/llm_20_que
     125 elif response.lower().__contains__("no"):
 AttributeError: 'NoneType' object has no attribute 'lower'
 ```
-
 ---
 # 他のユーザーからのコメント
-
 > ## jazivxt
 > 
-> 4つのエージェントに必要なメモリがあれば、環境はオフラインで動作します。ノートブックでは15GBのメモリ制限のためエラーが発生しますが、提出時には1つのエージェントしか使用していないため、正常に動作します。レスポンスの問題は、GemmaAgentクラスの最後のraise NotImplementedErrorにあります。私のスクリプトの変更を確認してください。
+> 環境はオフラインで動作しており、4つのエージェントに十分なメモリがあれば正常に動きますが、ノートブックでは15GBのメモリ制限があるためエラーが出ます。ただし、提出時には1つのエージェントしか使用していないため、問題なく動作します。レスポンスに関する問題は、クラス`GemmaAgent`の最後に`raise NotImplementedError`があるため発生しています。私のスクリプトでの変更を確認してください。
 > 
-> 
-> 
-> > ## EduMI95トピック作成者
+> > ## EduMI95 (トピック作成者)
 > > 
-> > 完璧です！ありがとう！
+> > 完璧です！ありがとうございます！
 > > 
-> > 
-> > 
+> > > 
+
 ---
 > ## Lyubomir Klyambarski
 > 
-> kaggle_environmentsパッケージを更新してください。
+> `kaggle_environments`パッケージを更新してください。
 > 
 > !pip install 'kaggle_environments>=1.14.8'
 > 
-> 
-> 
----
+> ---
 > ## G John Rao
 > 
-> 次のコードを試しましたが、まだ修正されていないエラーがあります。アイデアを得るのに役立つかもしれません。
+> 以下を試しましたが、まだ修正すべきエラーがあります。何かアイデアを得られるかもしれません。
 > 
-> ```python
+> ```
 > class Observation:
 >     def __init__(self, questions, answers, turnType, keyword=None, category=None):
 >         self.questions = questions
@@ -82,7 +66,7 @@ AttributeError: 'NoneType' object has no attribute 'lower'
 > 
 > ```
 > 
-> ```python
+> ```
 > # エージェントを初期化
 > questioner = GemmaQuestionerAgent(
 >     device='cpu',  # 'cpu'を使用
@@ -96,24 +80,24 @@ AttributeError: 'NoneType' object has no attribute 'lower'
 >     few_shot_examples=few_shot_examples,
 > )
 > 
-> # 初期のゲーム状態を定義
+> # ゲームの初期状態を定義
 > questions = []  # 質問を保持するリスト
 > answers = []    # 回答を保持するリスト
-> turnType = 'ask'  # 初期のターンタイプ（質問者には'ask'または'guess'、回答者には'answer'）
-> keyword = 'France'  # 回答者のためのキーワードの例
-> category = 'country'  # 回答者のためのカテゴリの例
+> turnType = 'ask'  # 初期ターンタイプ ('ask'または'guess'は質問者、'answer'は回答者)
+> keyword = 'France'  # 回答者用の例のキーワード
+> category = 'country'  # 回答者用の例のカテゴリ
 > 
 > # ゲームループをシミュレート
-> for _ in range(20):  # 20ターンプレイするか、キーワードが正しく推測されるまで
+> for _ in range(20):  # 20ターンまたはキーワードが正しく推測されるまでプレイ
 >     obs = Observation(questions, answers, turnType, keyword, category)
 > 
 >     if obs.turnType == 'ask':
->         # 質問者の質問をするターン
+>         # 質問者のターンで質問を行う
 >         question = questioner(obs)
 >         print(f"質問者: {question}")
 >         questions.append(question)
 > 
->         # 回答者の質問に答えるターン
+>         # 回答者のターンで質問に回答
 >         turnType = 'answer'
 >         obs = Observation(questions, answers, turnType, keyword, category)
 >         answer = answerer(obs)
@@ -124,18 +108,18 @@ AttributeError: 'NoneType' object has no attribute 'lower'
 >         turnType = 'ask'
 > 
 >     elif obs.turnType == 'guess':
->         # 質問者のキーワードを推測するターン
+>         # 質問者のターンでキーワードを予想
 >         guess = questioner(obs)
->         print(f"質問者の推測: {guess}")
+>         print(f"質問者が予想: {guess}")
 > 
 >         if guess.lower() == keyword.lower():
->             print("質問者は正しいキーワードを推測しました！")
+>             print("質問者が正しいキーワードを予想しました！")
 >             break
 >         else:
->             print("推測が間違っています。プレイを続行します。")
+>             print("不正解です。プレイを続けます。")
 >             turnType = 'ask'
 > 
->     # 早めに停止したい場合は、ゲームの終了をシミュレート
+>     # 早期にゲームを終了させるシミュレーション
 >     if len(questions) >= 20:
 >         print("最大ターン数に達しました。")
 >         break
@@ -145,9 +129,9 @@ AttributeError: 'NoneType' object has no attribute 'lower'
 > 出力:
 > 
 > ```
-> モデルを初期化しています
-> response='Sure, please ask your first question: Is the keyword a food?'
-> 質問者: Sure, please ask your first question: Is the keyword a food?
+> モデルの初期化
+> response='はい、最初の質問をどうぞ: キーワードは食べ物ですか？'
+> 質問者: はい、最初の質問をどうぞ: キーワードは食べ物ですか？
 > 
 > ```
 > 
@@ -164,33 +148,23 @@ AttributeError: 'NoneType' object has no attribute 'lower'
 > 
 > Cell In[8], line 23, in GemmaAgent.__call__(self, obs, *args)
 >      22 def __call__(self, obs, *args):
-> ---> 23     self._start_session(obs)  # 与えられた観測値で新しいセッションを開始
+> ---> 23     self._start_session(obs)  # 指定した観測で新しいセッションを開始
 >      24     prompt = str(self.formatter)  # フォーマッターからプロンプトを生成
->      25     response = self._call_llm(prompt)  # モデルの応答を取得
+>      25     response = self._call_llm(prompt)  # モデルのレスポンスを取得
 > 
-> Cell In[8], line 31, in GemmaAgent._start_session(self, obs)
->      30 def _start_session(self, obs: dict):
+> Cell In[8], line 31, line で、GemmaAgent._start_session(self, obs)
 > ---> 31     raise NotImplementedError
 > 
 > NotImplementedError: 
 > 
 > ```
+> kaggleの環境でコードがどのように実行されているのかはまだ理解できていません。探求すべきGitHubリポジトリのリンクもあります。
 > 
-> Kaggle環境がどのようにコードを実行するのか理解できません。まだ調べていないGitHubリポジトリへのリンクがあります。
+> こちら -> [https://github.com/Kaggle/kaggle-environments](https://github.com/Kaggle/kaggle-environments)
 > 
-> ここに -> [https://github.com/Kaggle/kaggle-environments](https://github.com/Kaggle/kaggle-environments)
-> 
-> 
-> 
----
+> ---
 > ## RS Turley
 > 
-> はい、環境で実行およびデバッグする方法に関するヒントを記載したサンプルノートブックを作成しました。
+> はい、環境内で実行しデバッグする方法についての例のノートブックを作成しました。
 > 
 > [https://www.kaggle.com/code/rturley/run-llm-20-questions-in-a-notebook](https://www.kaggle.com/code/rturley/run-llm-20-questions-in-a-notebook)
-> 
-> 
-> 
----
-
-

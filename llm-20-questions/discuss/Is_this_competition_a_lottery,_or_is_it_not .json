@@ -10,19 +10,19 @@
         {
             "author": "Andrew Tratz",
             "content": "I think this reflects a few realities of this competition as it currently stands:\n\nThe highest-ranked bots still lose the majority of their games.\nSome of the high-ranking bots are relying on the public keyword list and may not be robust when the private list is released\nPairing two bots together compounds this randomness\nWins seem to be awarded lots of points, losses do not seem to decrease points as rapidly\nWhen a bot errors, all others receive a win\nRelatively slow frequency of games played for \"mature\" bots\n\nThis means a few lucky wins will cause a quick jump on the LB but a fairly slow decay. Using over-reliance on the keyword list may allow bots to remain on top for a while but also expose them to risk when private keywords are released.\n\nI think the organizers should change #5 to have the error bot penalized but give no reward to the other players, since this just adds distortion. It makes sense in other simulation competitions but perhaps not this one. Perhaps some tweaks would help with #4 as well.\n\nI imagine we'll see some healthy shake-up on the private LB, although this shake-up may also be somewhat random unless a few people come up with distinctly better bots.\n\n",
-            "date": "Posted 14 days ago  ·  119th in this Competition",
+            "date": "Posted 15 days ago  ·  157th in this Competition",
             "votes": "5",
             "reply": [
                 {
                     "author": "OminousDude",
                     "content": "I think the shake-up on private will be quite massive too. I am almost fully convinced everyone in the top ~25 uses the public LB keywords list.\n\n",
-                    "date": "Posted 14 days ago  ·  451st in this Competition",
+                    "date": "Posted 15 days ago  ·  503rd in this Competition",
                     "votes": "0",
                     "reply": [
                         {
                             "author": "VolodymyrBilyachat",
                             "content": "Nope my agent doesn't know about keywords but it has only categories. But unfortunately this is very much luck based. \n\n",
-                            "date": "Posted 11 days ago  ·  214th in this Competition",
+                            "date": "Posted 13 days ago  ·  215th in this Competition",
                             "votes": "0",
                             "reply": []
                         }
@@ -31,13 +31,13 @@
                 {
                     "author": "gguillardTopic Author",
                     "content": "Bots relying on the public keyword list is the responsibility of their developers, it's not the matter of the organizers IMO — although I am curious if non-LLM or part-LLM bots may be disqualified, since it's an LLM competition.\n\nPoint #4 is slightly wrong : you're confusing losses with draws.  The relation between a win and a loss is roughly symmetric, although it depends on the different mu and sigma of the players.  Anyway this is by design, due to the TrueSkill settings (see notebook), and I believe it was deliberately chosen by the hosts.\n\n",
-                    "date": "Posted 14 days ago  ·  75th in this Competition",
+                    "date": "Posted 15 days ago  ·  81st in this Competition",
                     "votes": "0",
                     "reply": [
                         {
                             "author": "loh-maa",
                             "content": "No disqualifications should/can be applied on a whim, there must be solid grounds to do so. Since there are no specific rules regarding techniques, then presumably all techniques are allowed (except cheating in general of course.) And surely it is way too late to change the rules.\n\n",
-                            "date": "Posted 14 days ago  ·  2nd in this Competition",
+                            "date": "Posted 15 days ago  ·  1st in this Competition",
                             "votes": "0",
                             "reply": []
                         }
@@ -48,26 +48,26 @@
         {
             "author": "OminousDude",
             "content": "I fully agree and believe that this is a massive problem and I sincerely hope that the competition hosts find a way to fix this.\n\nOne way this score deviation could be minimized is by removing agents that have not had a single win in the last ~50 rounds. This will stop them from bringing down agents at the top of the leaderboard as low bots and high bots will sometimes be placed with each other to help overcome the \"pit of dumbness\" that comes between scores ~650 down to zero.\n\nAnother way is to play the game three times instead of one so that each agent will play against each other. For example, if round one is won by team a consisting of agent1 and agent2, in the next round agent1 will go against agent3 and then agent4, this way each agent will play each other model. The second option would fix the problem of one questioner agent getting a \"bad\" answerer. If no one wins any round then the default points will be given. If 2 rounds are won the agent that is included in both of the winning teams will get a boost and the other agents in those rounds that only won one round will get a smaller (but still substantial) reward.\n\nFinally, a third way to fix this could be if one agent constantly loses/does not win the other agent in its team will get a small boost (+10 or so) and the losing bot will lose a bit (-10 or so) this will split bots that win and lose quicker so that the bots that actually can play and win will be playing against higher level bots.\n\nI hope the competition hosts consider at least one of these options (preferably the second and third ones). Such small changes as I have described above will make massive changes to the \"lottery\" aspect of the scoring.\n\n",
-            "date": "Posted 14 days ago  ·  451st in this Competition",
+            "date": "Posted 16 days ago  ·  503rd in this Competition",
             "votes": "2",
             "reply": [
                 {
                     "author": "gguillardTopic Author",
                     "content": "The good thing is that all these options are now straightforward to test through the simulator notebook, so they can decide which is best based on facts.\n\n",
-                    "date": "Posted 14 days ago  ·  75th in this Competition",
+                    "date": "Posted 16 days ago  ·  81st in this Competition",
                     "votes": "1",
                     "reply": [
                         {
                             "author": "OminousDude",
                             "content": "Oh yes, I just realized that! I suggest that we run a few of the possible strategies on your notebook to find the best.\n\n",
-                            "date": "Posted 14 days ago  ·  451st in this Competition",
+                            "date": "Posted 15 days ago  ·  503rd in this Competition",
                             "votes": "0",
                             "reply": []
                         },
                         {
                             "author": "gguillardTopic Author",
                             "content": "As far as I'm concerned I will try to focus for a while on making a second submission. :D\n\nBut if the hosts acknowledge that they're open to modifying the evaluation I'll be happy to help if needed.\n\n",
-                            "date": "Posted 14 days ago  ·  75th in this Competition",
+                            "date": "Posted 15 days ago  ·  81st in this Competition",
                             "votes": "0",
                             "reply": []
                         }
@@ -78,14 +78,14 @@
         {
             "author": "loh-maa",
             "content": "There is much confusion and good reasons to wonder what's going, on especially for new players. If you notice, any agent reaching the score of around 750, suddenly stops playing frequently and plays only a game or two a day. This obviously affects the LB and I'm pretty sure it's going to be reverted to normal in the final stage. I'm not really sure why this alteration has been introduced but it could be to obscure real performance, it could help in preventing particular solutions from gaining too much of critical mass and thus spoiling the whole thing. So, anyway, I think there's no need to worry, join in with your best ideas!\n\n",
-            "date": "Posted 14 days ago  ·  2nd in this Competition",
+            "date": "Posted 15 days ago  ·  1st in this Competition",
             "votes": "1",
             "reply": []
         },
         {
             "author": "VolodymyrBilyachat",
             "content": "Wouldn't answerer mixture of answerers improve this competition? I see the single answer is driving into completely wrong direction :( It wont solve the problem for 100% but still could improve alot\n\n",
-            "date": "Posted 11 days ago  ·  214th in this Competition",
+            "date": "Posted 13 days ago  ·  215th in this Competition",
             "votes": "0",
             "reply": []
         }

@@ -10,13 +10,13 @@
         {
             "author": "VolodymyrBilyachat",
             "content": "Have you seen pinned notebook ? [https://www.kaggle.com/code/ryanholbrook/llm-20-questions-starter-notebook](https://www.kaggle.com/code/ryanholbrook/llm-20-questions-starter-notebook)\n\n",
-            "date": "Posted 2 months ago  ·  214th in this Competition",
+            "date": "Posted 3 months ago  ·  216th in this Competition",
             "votes": "0",
             "reply": [
                 {
                     "author": "alekhTopic Author",
                     "content": "Yes, I've seen it, but it's a bit hard to parse what is the minimal requirement and where the entry point is etc. But I found some usefull information hidden away in the submission modal.  Basically the last function of your main.py file should take an observation and return the response. - I think that is important information and shouldn't have been hidden away like that.\n\n",
-                    "date": "Posted 2 months ago  ·  399th in this Competition",
+                    "date": "Posted 3 months ago  ·  410th in this Competition",
                     "votes": "3",
                     "reply": [
                         {

@@ -117,13 +117,13 @@ Awards Points & Medals
 
 ## Participation
 
-6,079 Entrants
+6,146 Entrants
 
-819 Participants
+836 Participants
 
-721 Teams
+735 Teams
 
-1,496 Submissions
+1,482 Submissions
 
 ## Tags
 

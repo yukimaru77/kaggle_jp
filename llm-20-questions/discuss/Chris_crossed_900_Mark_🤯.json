@@ -10,14 +10,14 @@
         {
             "author": "OminousDude",
             "content": "Also one more thing his \"highly secret\" technique is an almost hardcoded LLM mix of which most of the top places use. He starts off by finding if the keyword is country, city, or landmark, then finds the location of the keyword (Europe, Asia, Americas) and then asks for the first letter of keywkeyword. For example, my strategy tarts just like his but instead of first letter searching I hand it to my model to fully decide what to question next.\n\nNo hate to Chris but I highly doubt this is because of some crazy new model or agent change.\n\nThis competition also recently changed the metric and it adds about 130 instead of about 60 prevously.\n\n",
-            "date": "Posted 2 months ago  ·  451st in this Competition",
+            "date": "Posted 2 months ago  ·  488th in this Competition",
             "votes": "0",
             "reply": []
         },
         {
             "author": "OminousDude",
             "content": "Don't mean to be a party pooper but this doesn't mean much if an agent gets 2 or 3 lucky games in a row it will cement itself at the top for a long time. I am not saying he didn't invent a new strategy but from the agent logs his strategy s the exact same. Of course, he could have made his answerer better or something but the games that his score increased in was him as a questioner. So this does not mean much from what I see his strategy s the same he just got lucky.\n\n",
-            "date": "Posted 2 months ago  ·  451st in this Competition",
+            "date": "Posted 2 months ago  ·  488th in this Competition",
             "votes": "0",
             "reply": []
         },

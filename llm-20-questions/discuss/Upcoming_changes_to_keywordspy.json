@@ -1,0 +1,93 @@
+{
+    "main_topic": {
+        "author": "Bovard Doerschuk-Tiberi",
+        "title": "Upcoming changes to keywords.py",
+        "content": "There will be a few changes to keywords.py (this is the list of possible words to guess for the game).\n\nCategories will be simplified into person, place, or thing.\nChange will happen next week (first week of June)\nHalf way through the competition more words will be added\n\nAs stated in the rules, after the FINAL submission deadline, the words will be swapped for a set that is NOT accessible by your agents. This word set will have the same 3 categories\n\nIMPORTANT: Do not rely on knowing the full list of possible words ahead of time!\n\nEDIT: This will now roll out early next week, sorry for the delay!\n\nThis has been implemented, see details here: [https://www.kaggle.com/competitions/llm-20-questions/discussion/512955](https://www.kaggle.com/competitions/llm-20-questions/discussion/512955)\n\n",
+        "date": "Sat Jun 01 2024 08:35:32 GMT+0900 (日本標準時)",
+        "votes": "21"
+    },
+    "comments": [
+        {
+            "author": "Adam Kulik",
+            "content": "I have a question regarding person and place category. Will it always be a specific person or place, or can it be generic, e.g. a doctor, a plumber?\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "3",
+            "reply": [
+                {
+                    "author": "OminousDude",
+                    "content": "I also wanted to know this I used to think it would be specific people's names (celebrities, influencers, etc) but now I believe it will be occupations. On the other hand occupations aren't people but jobs so I am completely dumbfounded on this topic.😂\n\n",
+                    "date": "Posted 2 months ago  ·  488th in this Competition",
+                    "votes": "2",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "David",
+            "content": "Would the formatting of the keywords change after final submission deadline? Like can we always expect it to be no more than 2 words? Can we ever expect things like \"Guinea-Bissau\" with hyphens?\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "RS Turley",
+                    "content": "In the code for the competition, it looks like punctuation and capitalization are ignored when comparing guesses to the keyword, so hyphens shouldn't matter. Here is the code used:\n\n```\ndef keyword_guessed(guess: str) -> bool:\n    def normalize(s: str) -> str:\n      t = str.maketrans(\"\", \"\", string.punctuation)\n      return s.lower().replace(\"the\", \"\").replace(\" \", \"\").translate(t)\n\n    if normalize(guess) == normalize(keyword):\n      return True\n    for s in alts:\n      if normalize(s) == normalize(guess):\n        return True\n\n    return False\n\n```\n\n",
+                    "date": "Posted 2 months ago  ·  62nd in this Competition",
+                    "votes": "3",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "mhericks",
+            "content": "Can we assume that keywords.py and the keywords used for the evaluation of the private leaderboard are a random partition of a \"large\" dataset, i.e. keywords.py contains a random sample of a dataset and the remaining keywords are used for the private evaluation?\n\nEspecially, can we assume that the distribution of keywords among categories is the same between the two subsets?\n\n",
+            "date": "Posted 2 months ago  ·  172nd in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "Lucas Fernandes",
+            "content": "Hi, what do you mean by 'thing' for example would a dog be a 'thing' or is that a word that won't be apart of the dataset.\n\nThank you \n\n",
+            "date": "Posted 2 months ago",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Bovard Doerschuk-Tiberi",
+                    "content": "Yes, a dog would count in the \"thing\" category.\n\nI don't have a precise definition of what will count as a thing, but when you see the released word list you'll have a better idea. Generally a thing should be a physical object or being (like a rock or dog), not an abstract concept (like GDP)\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "5",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Saatvik Pradhan",
+            "content": "Thats great\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "-1",
+            "reply": []
+        },
+        {
+            "author": "Rafael Yakupov",
+            "content": "Hello, thank you very much for the information. I have a question, will the categories remain the same after changing the word set after FINAL submission deadline?\n\n",
+            "date": "Posted 2 months ago  ·  479th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Bovard Doerschuk-Tiberi",
+                    "content": "yes, the categories will always be person, place, or thing going forward\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "4",
+                    "reply": [
+                        {
+                            "author": "AAElter",
+                            "content": "The 20 questions game I played when young was animal, vegetable, or mineral.  With this game, I would think \"thing\" (oh, Thing!) would encompass all animals except humans, vegetables and minerals, and manmade objects made out of those things.\n\n",
+                            "date": "Posted 2 months ago  ·  576th in this Competition",
+                            "votes": "1",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -20,16 +20,6 @@ Flat earth bots!
 
 ---
 
-> ## Matthew S FarmerTopic Author
-> 
-> Downvote if you sit, stand, or lay on your smoke alarm.
-> 
-> 
-> 
-
-
----
-
 > ## loh-maa
 > 
 > 
@@ -50,6 +40,16 @@ Flat earth bots!
 > > 
 > > 
 > > 
+
+
+---
+
+> ## Matthew S FarmerTopic Author
+> 
+> Downvote if you sit, stand, or lay on your smoke alarm.
+> 
+> 
+> 
 
 
 ---

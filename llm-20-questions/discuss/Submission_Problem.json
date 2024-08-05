@@ -10,13 +10,13 @@
         {
             "author": "waechter",
             "content": "You can add print in your agent function to help you debug, you will see them in stdout\n\n",
-            "date": "Posted 2 months ago  ·  201st in this Competition",
+            "date": "Posted 2 months ago  ·  181st in this Competition",
             "votes": "1",
             "reply": [
                 {
                     "author": "Naive ExperimentalistTopic Author",
                     "content": "You are right. I thought the only problem with validation round can be when raising error from my notebook during the play, therefore didn't make traditional print-based debugging. Will do and try.Thx\n\n",
-                    "date": "Posted 2 months ago  ·  144th in this Competition",
+                    "date": "Posted 2 months ago  ·  167th in this Competition",
                     "votes": "0",
                     "reply": []
                 }

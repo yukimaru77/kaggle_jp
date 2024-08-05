@@ -10,7 +10,7 @@
         {
             "author": "Melinda",
             "content": "Hi, and thanks for posting this notebook! I am trying to get llama-cpp-python working in my submission, and if I make a copy of your notebook, I'm able to run the pip install command in it. However, if I try to pip install it into a folder with the \"-t /kaggle/working/submission/lib\" option so that I can package it up, I get all kinds of dependency resolver errors. (\"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts. (etc - a huge list)\")\n\nI'm curious if you have any tips for how to get llama-cpp-python with llama-3-8b-instruct packaged for a submission? \n\n",
-            "date": "Posted 2 months ago  ·  203rd in this Competition",
+            "date": "Posted 2 months ago  ·  214th in this Competition",
             "votes": "0",
             "reply": []
         }

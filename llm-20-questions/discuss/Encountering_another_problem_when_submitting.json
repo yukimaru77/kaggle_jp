@@ -10,26 +10,26 @@
         {
             "author": "gwh666",
             "content": "It seems that AutoConfig can not match Gemma-2 in transformers right now,you can only use AutoModelForCasualLM to load it.\n\n",
-            "date": "Posted 16 days ago  ·  30th in this Competition",
+            "date": "Posted 18 days ago  ·  34th in this Competition",
             "votes": "0",
             "reply": [
                 {
                     "author": "Yuang WuTopic Author",
                     "content": "Wow, good advice, I will try it. Thanks gwh\n\n",
-                    "date": "Posted 16 days ago  ·  208th in this Competition",
+                    "date": "Posted 18 days ago  ·  234th in this Competition",
                     "votes": "0",
                     "reply": []
                 },
                 {
                     "author": "Yuang WuTopic Author",
                     "content": "Seems like AutoModelForCausalLM will also use AutoConfig… Now I have no idea\n\n",
-                    "date": "Posted 16 days ago  ·  208th in this Competition",
+                    "date": "Posted 18 days ago  ·  234th in this Competition",
                     "votes": "0",
                     "reply": [
                         {
                             "author": "gwh666",
                             "content": "model = AutoModelForCausalLM.from_pretrained(\n\n    \"google/gemma-2-9b-it\",\n\n    device_map=\"auto\",\n\n    torch_dtype=torch.bfloat16\n\n)\n\ntry it?\n\n",
-                            "date": "Posted 16 days ago  ·  30th in this Competition",
+                            "date": "Posted 18 days ago  ·  34th in this Competition",
                             "votes": "0",
                             "reply": []
                         }
@@ -40,13 +40,13 @@
         {
             "author": "Chris Deotte",
             "content": "You will need to pip install a more recent version of Transformers that includes code for Gemma2\n\n",
-            "date": "Posted 17 days ago  ·  638th in this Competition",
+            "date": "Posted 19 days ago  ·  625th in this Competition",
             "votes": "0",
             "reply": [
                 {
                     "author": "Yuang WuTopic Author",
                     "content": "Yeah, I saw the advice in Huggingface, but I have already run \"pip install -U transfromers\", but still useless\n\n",
-                    "date": "Posted 17 days ago  ·  208th in this Competition",
+                    "date": "Posted 19 days ago  ·  234th in this Competition",
                     "votes": "0",
                     "reply": []
                 }

@@ -1,21 +1,9 @@
 # 要約 
-このスレッドは、20問ゲームに関連するデータセットを共有するためのものです。投稿者は、Hugging Faceで公開されている2つのデータセットを紹介しています。 
-
-- **Entity-deduction-arena-20-questions**: このデータセットは、20問ゲームの質問と回答のペアを提供します。
-- **clips/20Q**: このデータセットは、20問ゲームの質問と回答のペアに加えて、質問に関連する画像も提供します。
-
-投稿者は、他の参加者も有用なデータセットを共有することを期待しています。 
-
+ディスカッションでは、ユーザー「alekh」が「20の質問」ゲームに関連するデータセットを共有するスレッドを提案しました。彼は役に立つと思われるいくつかのデータセットを見つけたと述べ、具体的に2つのリンクを提供しました。これらのデータセットは、ゲームの推論や質問作成に役立つ可能性があります。
 
 ---
-# 20問ゲーム用データセット
-
-**alekh** *水曜日 5月 22日 2024 01:58:55 GMT+0900 (日本標準時)* (4 votes)
-
-20問ゲームに関連するデータセットを共有できるスレッドを作ってみませんか？
-
-いくつか役立つものを見つけました。
-
-- [https://huggingface.co/datasets/jtv199/Entity-deduction-arena-20-questions](https://huggingface.co/datasets/jtv199/Entity-deduction-arena-20-questions)
-- [https://huggingface.co/datasets/clips/20Q](https://huggingface.co/datasets/clips/20Q) 
-
+> **alekh** *2024年5月22日 01:58:55 JST* (4票)  
+> 20質問用の関連データセットを共有するスレッドを作れたらいいと思いました。  
+> いくつかの役に立ちそうなデータセットを見つけましたので、共有します：  
+> - [https://huggingface.co/datasets/jtv199/Entity-deduction-arena-20-questions](https://huggingface.co/datasets/jtv199/Entity-deduction-arena-20-questions)  
+> - [https://huggingface.co/datasets/clips/20Q](https://huggingface.co/datasets/clips/20Q)  

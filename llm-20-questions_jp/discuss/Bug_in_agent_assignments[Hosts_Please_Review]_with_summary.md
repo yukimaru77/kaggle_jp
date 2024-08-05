@@ -1,38 +1,27 @@
 # 要約 
-このディスカッションは、Kaggleの「LLM 20 Questions」コンペティションにおけるエージェント割り当てのバグに関するものです。
+**ディスカッション要約:**
 
-投稿者は、コンペティションのコード内で、`GUESSER`と`ANSWERER`の両方が"guesser"に設定されていることに気づきました。これは、回答者エージェントが質問者エージェントとして誤って割り当てられる可能性があることを意味します。
+クリス・スミスは、コンペのスクリプト関数にバグがある可能性を指摘しています。具体的には、`llm_20_questions.py`ファイル内で、`guess`と`answer`の両方に「guesser」が設定されてしまうという問題です。彼は他の参加者が指摘した内容を受けて、この問題がリーダーボード用のコードに影響を与えるか確認したいとしています。
 
-しかし、投稿者は、コードの後半でこれらの変数が適切な値に割り当てられているため、これはバグではない可能性があると指摘しています。
-
-投稿者は、ホストにこの問題を確認し、バグがコンペティションに影響を与えていないことを確認するよう求めています。
-
+彼は、スクリプトの後半で適切なエージェントに再割り当てされるため、最初の設定が問題ではないかもしれないと考えているものの、ホストに実際にこのバグが影響を与えていないか確認をお願いしています。関連するコードのリンクも示されています。
 
 ---
-# エージェント割り当てのバグについて [ホストへの確認依頼]
+# エージェントの割り当てに関するバグ[ホストの確認をお願いします]
+**クリス・スミス** *2024年5月20日 03:07:46 GMT+0900 (日本標準時)* (3票)
 
-**Kris Smith** *2024年5月20日 月曜日 03:07:46 GMT+0900 (日本標準時)* (3票)
-
-この件について、皆さんに確認していただきたく、新しいディスカッションスレッドを作成しました。
-
-[@robikscube](https://www.kaggle.com/robikscube) は別のスレッドでこの問題について言及していました。
-
-> llm_20_questions.py ファイルに、guesser と answerer の両方が "guesser" に設定されているバグがあるように見えます。これはリーダーボードで使用されているのと同じコードですか？
-> [https://github.com/Kaggle/kaggle-environments/blob/da684ac3cd41a43c8cf7e103989c98bba8d05a61/kaggle_environments/envs/llm_20_questions/llm_20_questions.py#L31](https://github.com/Kaggle/kaggle-environments/blob/da684ac3cd41a43c8cf7e103989c98bba8d05a61/kaggle_environments/envs/llm_20_questions/llm_20_questions.py#L31)
-> ```
-> GUESSER = "guesser"
-> ANSWERER = "guesser"
-> ```
-> 彼の投稿はこちらをご覧ください: [https://www.kaggle.com/competitions/llm-20-questions/discussion/503163#2821043](https://www.kaggle.com/competitions/llm-20-questions/discussion/503163#2821043)
-
-私もコード内で同じことに気づきましたが、後の方で同じスクリプト内でこれらの変数が上記で定義されたメソッドを使用して割り当てられているため、無視していました。
-
+この問題について多くの人に目を向けてもらうために新しいディスカッションスレッドを始めることにしました。
+[@robikscube](https://www.kaggle.com/robikscube)が別のスレッドで言及していたのですが、
+llm_20_questions.pyファイルにおいて、guessとanswerの両方が「guesser」と設定されるバグがあるようです。これはリーダーボードで使用されているコードと同じなのでしょうか？
+[こちらのリンク](https://github.com/Kaggle/kaggle-environments/blob/da684ac3cd41a43c8cf7e103989c98bba8d05a61/kaggle_environments/envs/llm_20_questions/llm_20_questions.py#L31)にご覧ください。
+```
+GUESSER = "guesser"
+ANSWERER = "guesser"
+```
+彼の投稿は[こちらで確認できます](https://www.kaggle.com/competitions/llm-20-questions/discussion/503163#2821043)。
+私も同様のことに気づきましたが、無視していました。その理由は、スクリプトの後半でそれらの変数が上で定義されたメソッドを使用して新たに割り当てられているからです：
 ```
 agents = {GUESSER: guesser_agent, ANSWERER: answerer_agent}
 ```
-[https://github.com/Kaggle/kaggle-environments/blob/da684ac3cd41a43c8cf7e103989c98bba8d05a61/kaggle_environments/envs/llm_20_questions/llm_20_questions.py#L87](https://github.com/Kaggle/kaggle-environments/blob/da684ac3cd41a43c8cf7e103989c98bba8d05a61/kaggle_environments/envs/llm_20_questions/llm_20_questions.py#L87)
-
-何か見落としているのでしょうか？コードの最初に同じ値が割り当てられているように見えるのはバグのようですが、後の方では適切な新しい値が割り当てられているようです。
-
-ホストの皆さん、これが問題を引き起こしていないことを確認していただけますか？
-
+[こちらのリンク](https://github.com/Kaggle/kaggle-environments/blob/da684ac3cd41a43c8cf7e103989c98bba8d05a61/kaggle_environments/envs/llm_20_questions/llm_20_questions.py#L87)にご覧ください。
+私は何か見落としているのでしょうか？最初に同じ値が割り当てられた後、さらに下の部分では適切な新しい値が割り当てられるように見えます。
+ホストの方々、この問題が実際に影響を及ぼしていないことを確認していただけますか？

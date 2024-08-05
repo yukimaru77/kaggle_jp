@@ -10,19 +10,19 @@
         {
             "author": "Chris Deotte",
             "content": "During submit, your zip will be uncompressed to folder \"/kaggle_simulations/agent/\", so you must add this to system path so that your code can find your models. Add the following code to the beginning of your main.py:\n\n```\nKAGGLE_AGENT_PATH = \"/kaggle_simulations/agent/\"\nif os.path.exists(KAGGLE_AGENT_PATH):\n    sys.path.insert(0, os.path.join(KAGGLE_AGENT_PATH, 'lib'))\nelse:\n    sys.path.insert(0, \"/kaggle/working/submission/lib\")\n\n```\n\n",
-            "date": "Posted 2 months ago  ·  637th in this Competition",
+            "date": "Posted 2 months ago  ·  625th in this Competition",
             "votes": "1",
             "reply": [
                 {
                     "author": "sakuraTopic Author",
                     "content": "Thanks for your reply! I know about this, and I indeed have code like this. Moreover, I can submit successfully with the Starter Notebook after I copy all of my main.py, paste it to the corresponding position in the Starter Notebook, and submit the notebook. But somehow when I'm uploading the zip file it doesn't work (and without error message).\n\n",
-                    "date": "Posted 2 months ago  ·  277th in this Competition",
+                    "date": "Posted 2 months ago  ·  302nd in this Competition",
                     "votes": "0",
                     "reply": [
                         {
                             "author": "Chris Deotte",
                             "content": "ok then maybe there is another error.\n\nIf your code fails the validation game (where your bot plays against your bot), there is a button to download logs. If you download logs, you will see the specific error message.\n\nAlso you can use print statements inside your main.py file and print debugging info. These print statements will show up in your logs.\n\n",
-                            "date": "Posted 2 months ago  ·  637th in this Competition",
+                            "date": "Posted 2 months ago  ·  625th in this Competition",
                             "votes": "0",
                             "reply": []
                         }
@@ -40,7 +40,7 @@
         {
             "author": "sakuraTopic Author",
             "content": "Update: this my structure use unzip command:\n\n```\nunzip -l example.zip | awk -F/ 'NF<=3'\n\n```\n\n",
-            "date": "Posted 2 months ago  ·  277th in this Competition",
+            "date": "Posted 2 months ago  ·  302nd in this Competition",
             "votes": "0",
             "reply": []
         }

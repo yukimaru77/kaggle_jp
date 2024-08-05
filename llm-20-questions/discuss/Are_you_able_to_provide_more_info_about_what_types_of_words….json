@@ -1,0 +1,64 @@
+{
+    "main_topic": {
+        "author": "Nicholas Broad",
+        "title": "Are you able to provide more info about what types of words can be keywords?",
+        "content": "It's common for animals and physical objects (e.g. pencil) to be keywords, but could concepts like \"justice\" or random verbs like \"jump\" be options for the keyword?\n\nedit: I see in your code you say, \"The keyword is a specific person, place, or thing.\"\n\nIs the list of keywords and categories in [keywords.py](https://www.kaggle.com/competitions/llm-20-questions/data) exhaustive?\n\nWhy are there keywords that are multiple words? \n\n```\n\"keyword\": \"washington dc\",\n\"alts\": [\"washington dc\"]\n\n```\n\n",
+        "date": "Thu May 16 2024 07:08:41 GMT+0900 (日本標準時)",
+        "votes": "8"
+    },
+    "comments": [
+        {
+            "author": "G John Rao",
+            "content": "I can answer the 2nd part. \n\nWhy are there keywords that are multiple words?\n\nI think the focus is, multiple words can mean one thing, one idea, one concept. A name of a country may have multiple words but it represents a single nation.\n\n",
+            "date": "Posted 3 months ago  ·  236th in this Competition",
+            "votes": "1",
+            "reply": [
+                {
+                    "author": "Nicholas BroadTopic Author",
+                    "content": "Sure, I just think the phrasing in the rules (“guess the secret word”) implies that it will be a single word. I’d prefer if it said “guess the secret word(s)”\n\n",
+                    "date": "Posted 3 months ago",
+                    "votes": "1",
+                    "reply": [
+                        {
+                            "author": "G John Rao",
+                            "content": "Yeahh, but the focus should be on, one word can also mean multiple things. For example, \"May\" could mean different things in the English language. This competition goes deeper, a lot deeper. \n\n",
+                            "date": "Posted 3 months ago  ·  236th in this Competition",
+                            "votes": "0",
+                            "reply": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "author": "Duke Silver",
+            "content": "wondering if just the main keyword is passed to the lmm and the others are just answers that are also acceptable, or are all of them given to the lmm?\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Chris Deotte",
+                    "content": "From EDA on the interface [here](https://www.kaggle.com/code/rturley/run-debug-llm-20-questions-in-a-notebook) (and my own local work), our answerer bot only gets the main keyword.\n\n",
+                    "date": "Posted 2 months ago  ·  625th in this Competition",
+                    "votes": "0",
+                    "reply": []
+                }
+            ]
+        },
+        {
+            "author": "Nicholas BroadTopic Author",
+            "content": "[@bovard](https://www.kaggle.com/bovard),\n\nAre you able to comment on this?\n\n",
+            "date": "Posted 2 months ago",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Bovard Doerschuk-Tiberi",
+                    "content": "Keywords will always be a person, place or thing. We are strongly considering adding more keywords / categories in keywords.py during the competition. After the submission deadline we'll use a new, unpublished keyword list that agents will not have access to.\n\nLet me know if you have other questions!\n\n",
+                    "date": "Posted 2 months ago",
+                    "votes": "5",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

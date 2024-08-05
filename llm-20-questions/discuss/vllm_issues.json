@@ -10,13 +10,13 @@
         {
             "author": "Chris Deotte",
             "content": "Here is a code example using vLLM on Kaggle. Even though vLLM is installed, we need to pip upgrade and change some files to make it work on Kaggle. [https://www.kaggle.com/code/cdeotte/infer-34b-with-vllm](https://www.kaggle.com/code/cdeotte/infer-34b-with-vllm)\n\n",
-            "date": "Posted 6 days ago  ·  638th in this Competition",
+            "date": "Posted 7 days ago  ·  625th in this Competition",
             "votes": "0",
             "reply": [
                 {
                     "author": "padeofTopic Author",
                     "content": "Thank you! I have read your post.  However, this method does not work at submission time.  Looks like the torch module is loaded before any change made to sys path in agent script.  Thus the binary of vllm and torch do not match\n\n",
-                    "date": "Posted 6 days ago  ·  141st in this Competition",
+                    "date": "Posted 7 days ago  ·  194th in this Competition",
                     "votes": "1",
                     "reply": []
                 }

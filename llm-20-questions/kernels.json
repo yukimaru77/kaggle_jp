@@ -1,5 +1,54 @@
 [
     {
+        "ref": "mayankchhavri/notebook8361bc9d6d",
+        "title": "notebook8361bc9d6d",
+        "author": "mayank",
+        "lastRunTime": "2024-08-04 17:39:36",
+        "totalVotes  ": 0
+    },
+    {
+        "ref": "muhammadehsan000/llm20-agent-alpha-notebook",
+        "title": "LLM20-agent-alpha-notebook",
+        "author": "Muhammad Ehsan",
+        "lastRunTime": "2024-08-04 12:22:44",
+        "totalVotes  ": 3
+    },
+    {
+        "ref": "muhammadehsan000/llm-20-questions-starter",
+        "title": "LLM 20 Questions Starter",
+        "author": "Muhammad Ehsan",
+        "lastRunTime": "2024-08-04 12:01:14",
+        "totalVotes  ": 2
+    },
+    {
+        "ref": "sambitmukherjee/llm-20-questions-offline-pip-install",
+        "title": "llm-20-questions-offline-pip-install",
+        "author": "Sadhaklal",
+        "lastRunTime": "2024-08-04 11:56:10",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "muhammadehsan000/run-llm-20-questions-in-a-notebook",
+        "title": "Run LLM 20 Questions in a Notebook",
+        "author": "Muhammad Ehsan",
+        "lastRunTime": "2024-08-04 12:03:28",
+        "totalVotes  ": 2
+    },
+    {
+        "ref": "babydriver1233/20-questions-for-llm",
+        "title": "20 Questions for LLM",
+        "author": "Mohsen Mostafa",
+        "lastRunTime": "2024-08-04 08:48:06",
+        "totalVotes  ": 1
+    },
+    {
+        "ref": "kolapoadedipe/llm-20-questions-starter-notebook",
+        "title": "LLM 20 Questions Starter Notebook",
+        "author": "KOLAPO ADEDIPE",
+        "lastRunTime": "2024-08-01 12:06:33",
+        "totalVotes  ": 0
+    },
+    {
         "ref": "denniswang07/submission-for-llm-20-questions",
         "title": "Submission For LLM 20 Questions",
         "author": "DennisWang07",
@@ -60,14 +109,14 @@
         "title": "LLM 20q : Starter Notebook 2.0",
         "author": "Matthew S Farmer",
         "lastRunTime": "2024-07-17 11:13:21",
-        "totalVotes  ": 31
+        "totalVotes  ": 33
     },
     {
         "ref": "cdeotte/starter-code-for-llama-8b-llm-lb-0-750",
         "title": "Starter Code for Llama 8B LLM - [LB 0.750+]",
         "author": "Chris Deotte",
         "lastRunTime": "2024-07-16 00:22:10",
-        "totalVotes  ": 67
+        "totalVotes  ": 70
     },
     {
         "ref": "pnmanh2123/try-install-torch2-3",
@@ -242,7 +291,7 @@
         "title": "llm20-agent-alpha",
         "author": "loh-maa",
         "lastRunTime": "2024-07-29 16:34:57",
-        "totalVotes  ": 18
+        "totalVotes  ": 19
     },
     {
         "ref": "matthewsfarmer/20q-gemma",
@@ -304,7 +353,7 @@
         "ref": "waechter/llm-20-questions-leaderbord-analyze-best-agents",
         "title": "[LLM 20 Questions] Leaderbord analyze best agents",
         "author": "waechter",
-        "lastRunTime": "2024-08-03 20:54:38",
+        "lastRunTime": "2024-08-04 20:50:43",
         "totalVotes  ": 24
     },
     {
@@ -354,7 +403,7 @@
         "title": "Intro to Rigging for LLM 20 Questions - llama3",
         "author": "Rob Mulla",
         "lastRunTime": "2024-06-18 20:08:44",
-        "totalVotes  ": 37
+        "totalVotes  ": 39
     },
     {
         "ref": "nicklanders/llm-20-questions-rigging-vllm-llama-3-8b",
@@ -367,8 +416,8 @@
         "ref": "waechter/llm-20-questions-games-dataset",
         "title": "LLM 20 Questions - Games dataset",
         "author": "waechter",
-        "lastRunTime": "2024-08-03 20:19:39",
-        "totalVotes  ": 32
+        "lastRunTime": "2024-08-04 20:20:43",
+        "totalVotes  ": 33
     },
     {
         "ref": "nicklanders/llm-20-questions-rigging-llama-3-8b",
@@ -424,13 +473,13 @@
         "title": "  Is it a Q20 Game? Gemma 2b_en",
         "author": "  Mar\\xc3\\xadlia Prata",
         "lastRunTime": "2024-05-16 02:17:09",
-        "totalVotes  ": 62
+        "totalVotes  ": 63
     },
     {
         "ref": "ryanholbrook/llm-20-questions-starter-notebook",
         "title": "LLM 20 Questions Starter Notebook",
         "author": "Ryan Holbrook",
         "lastRunTime": "2024-05-20 13:05:30",
-        "totalVotes  ": 187
+        "totalVotes  ": 188
     }
 ]

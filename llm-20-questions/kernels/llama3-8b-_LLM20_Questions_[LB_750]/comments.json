@@ -3,13 +3,13 @@
         {
             "author": "davide",
             "content": "Great work, thanks for sharing!\n\nJust a question: so, this code is not using the keyword.py file at all?\n\n",
-            "date": "Posted 25 days ago  ·  Posted on Version 4 of \n        4",
+            "date": "Posted a month ago  ·  Posted on Version 4 of \n        4",
             "votes": "1",
             "reply": [
                 {
                     "author": "kaoutarTopic Author",
                     "content": "[@davidemariani](https://www.kaggle.com/davidemariani) no\n\n",
-                    "date": "Posted 24 days ago  ·  Posted on Version 4 of \n        4",
+                    "date": "Posted a month ago  ·  Posted on Version 4 of \n        4",
                     "votes": "0",
                     "reply": []
                 }
@@ -84,34 +84,34 @@
         {
             "author": "古月方源",
             "content": "The local test was successful\n\n",
-            "date": "Posted 3 days ago  ·  Posted on Version 4 of \n        4",
+            "date": "Posted 5 days ago  ·  Posted on Version 4 of \n        4",
             "votes": "0",
             "reply": []
         },
         {
             "author": "古月方源",
             "content": "I successfully ran the latest 3.1, but kept getting errors after submitting\n\n",
-            "date": "Posted 3 days ago  ·  Posted on Version 4 of \n        4",
+            "date": "Posted 5 days ago  ·  Posted on Version 4 of \n        4",
             "votes": "0",
             "reply": []
         },
         {
             "author": "Sandeep Sharma",
             "content": "Thanks for the notebook. but when I try to test it it says 1 read positional arg 'cfg' is missing.\n\n",
-            "date": "Posted 19 days ago  ·  Posted on Version 4 of \n        4",
+            "date": "Posted 20 days ago  ·  Posted on Version 4 of \n        4",
             "votes": "0",
             "reply": []
         },
         {
             "author": "Toshi",
             "content": "great notebook.\n\nIf I test locally, which version of pytorch should I install?\n\n",
-            "date": "Posted 19 days ago  ·  Posted on Version 4 of \n        4",
+            "date": "Posted 21 days ago  ·  Posted on Version 4 of \n        4",
             "votes": "0",
             "reply": [
                 {
                     "author": "kaoutarTopic Author",
                     "content": "[@mst923](https://www.kaggle.com/mst923) by locally you mean your own computer? unless you have a good gpu, it's not gonna work\n\n",
-                    "date": "Posted 19 days ago  ·  Posted on Version 4 of \n        4",
+                    "date": "Posted 21 days ago  ·  Posted on Version 4 of \n        4",
                     "votes": "0",
                     "reply": []
                 }
@@ -120,13 +120,13 @@
         {
             "author": "kothiwsk28",
             "content": "Thanks for sharing! Is there any particular reason for keeping the three datasets in this notebook (digit recognizer, titanic and house prices)?\n\n",
-            "date": "Posted 23 days ago  ·  Posted on Version 4 of \n        4",
+            "date": "Posted 25 days ago  ·  Posted on Version 4 of \n        4",
             "votes": "0",
             "reply": [
                 {
                     "author": "kaoutarTopic Author",
                     "content": "no, better remove them, i added them to help the notebook reach beginners that often land on those competitions pages\n\n",
-                    "date": "Posted 22 days ago  ·  Posted on Version 4 of \n        4",
+                    "date": "Posted 24 days ago  ·  Posted on Version 4 of \n        4",
                     "votes": "0",
                     "reply": []
                 }
@@ -135,27 +135,27 @@
         {
             "author": "Mask",
             "content": "Helpful notebook.\n\nI’m new to Kaggle and when I copied/forked it, I can’t really find the submit bottom! And there are other competitions (digit recognizer and titanic) attached to your notebook. And when I tried to create an entire notebook using Llama and copied your code there, I received an error saying that the model path isn’t correct, although it’s correct!\n\nCan’t really understand what’s wrong!\n\nCan you please guide me on how to fork your notebook and submit it without such errors, to see how it works, since I’m new here?\n\nIt’s too strange that the submit bottom isn’t there, and the model directory is shown to be incorrect, although it’s not!\n\n",
-            "date": "Posted 24 days ago  ·  Posted on Version 4 of \n        4",
+            "date": "Posted a month ago  ·  Posted on Version 4 of \n        4",
             "votes": "0",
             "reply": [
                 {
                     "author": "Maoshenli",
                     "content": "I encountered the same issue. Have you resolved it?😀\n\n",
-                    "date": "Posted 24 days ago  ·  Posted on Version 4 of \n        4",
+                    "date": "Posted a month ago  ·  Posted on Version 4 of \n        4",
                     "votes": "0",
                     "reply": []
                 },
                 {
                     "author": "jehlum",
                     "content": "Did you add the model from input tab on the right?\n\n",
-                    "date": "Posted 24 days ago  ·  Posted on Version 4 of \n        4",
+                    "date": "Posted a month ago  ·  Posted on Version 4 of \n        4",
                     "votes": "0",
                     "reply": []
                 },
                 {
                     "author": "kaoutarTopic Author",
                     "content": "guys make sure you accept the conditions to use the llama model, and you've been granted the access to use it, once you solve this issue, and the notebook runs correctly, go to the 3 dots in the up right and click \"submit to competition\"\n\n",
-                    "date": "Posted 24 days ago  ·  Posted on Version 4 of \n        4",
+                    "date": "Posted a month ago  ·  Posted on Version 4 of \n        4",
                     "votes": "1",
                     "reply": []
                 }
@@ -164,13 +164,13 @@
         {
             "author": "Lucas",
             "content": "Thanks for your code. I submit but only get 600 on LB which used the pre-trained llama3 8b. May I ask how you get 750? Did you fine-tuned llama3 8b?\n\n",
-            "date": "Posted 25 days ago  ·  Posted on Version 4 of \n        4",
+            "date": "Posted a month ago  ·  Posted on Version 4 of \n        4",
             "votes": "0",
             "reply": [
                 {
                     "author": "Krens",
                     "content": "When we submitted the game, the initial score was 600 points. The score will change only after playing games with other contestants’ agents. In addition, the variance is relatively large and not very stable.\n\n",
-                    "date": "Posted 25 days ago  ·  Posted on Version 4 of \n        4",
+                    "date": "Posted a month ago  ·  Posted on Version 4 of \n        4",
                     "votes": "2",
                     "reply": []
                 }
@@ -215,7 +215,7 @@
                 {
                     "author": "kaoutarTopic Author",
                     "content": "yeah i was worried too, but it worked\n\n",
-                    "date": "Posted 24 days ago  ·  Posted on Version 4 of \n        4",
+                    "date": "Posted a month ago  ·  Posted on Version 4 of \n        4",
                     "votes": "0",
                     "reply": []
                 }

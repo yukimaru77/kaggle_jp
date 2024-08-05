@@ -10,19 +10,19 @@
         {
             "author": "Chris DeotteTopic Author",
             "content": "UPDATE. I notice the same thing happening on May 30th at 14:00 UTC. The new first place jumped up to LB 660 because their teammate had an error. This destabilizes the leaderboard because now the original top LB bots will play with and against these bots whose true score is under 600. \n\n## New 1st Place\n\n## New 5th Place\n\nand the new 5th jumped there because their teammate had an error:\n\n",
-            "date": "Posted 2 months ago  ·  637th in this Competition",
+            "date": "Posted 2 months ago  ·  625th in this Competition",
             "votes": "1",
             "reply": [
                 {
                     "author": "OminousDude",
                     "content": "The creators of this competition really need to fix this quickly.😑\n\n",
-                    "date": "Posted 2 months ago  ·  451st in this Competition",
+                    "date": "Posted 2 months ago  ·  488th in this Competition",
                     "votes": "1",
                     "reply": [
                         {
                             "author": "OminousDude",
                             "content": "I am looking through the top 25 LB and out of the top 25 11 of them are boosted by errors.\n\n",
-                            "date": "Posted 2 months ago  ·  451st in this Competition",
+                            "date": "Posted 2 months ago  ·  488th in this Competition",
                             "votes": "1",
                             "reply": []
                         }
@@ -33,26 +33,26 @@
         {
             "author": "OminousDude",
             "content": "Hi, the first place error bot is mine I have no idea why it is erroring I am fi I am finding out now thank you for alerting me to this. I had no intention of \"illegally\" giving top places points.\n\n",
-            "date": "Posted 2 months ago  ·  451st in this Competition",
+            "date": "Posted 2 months ago  ·  488th in this Competition",
             "votes": "1",
             "reply": [
                 {
                     "author": "OminousDude",
                     "content": "My bot is also 3rd 😭. I have decided to submit three of my older bots to overwrite the offending error bots. This is my temporary solution since I do not want to be contributing to an unfair leaderboard.\n\n",
-                    "date": "Posted 2 months ago  ·  451st in this Competition",
+                    "date": "Posted 2 months ago  ·  488th in this Competition",
                     "votes": "1",
                     "reply": []
                 },
                 {
                     "author": "Chris DeotteTopic Author",
                     "content": "Hi OminousDude. There is no need to apoligize. Everybody's bots will make errors from time to time as we develop solutions. Earlier versions of my bots had errors and each day I remove errors and improve my bots. So don't worry about submitting bots with errors. Continue to try new things and submit whatever you want.\n\nI think the competition metric should be updated so that bot errors do not help other bots.\n\n",
-                    "date": "Posted 2 months ago  ·  637th in this Competition",
+                    "date": "Posted 2 months ago  ·  625th in this Competition",
                     "votes": "3",
                     "reply": [
                         {
                             "author": "OminousDude",
                             "content": "Yes, that would be the optimal solution but again the temporary solution is for me to remove the bots until their errors are fixed. Thank you for informing me on the issues of my bots. Because it was very weird that my agent improves almost all the time more or less +10 each time it goes up against another bot; however, its score is still always low.\n\n",
-                            "date": "Posted 2 months ago  ·  451st in this Competition",
+                            "date": "Posted 2 months ago  ·  488th in this Competition",
                             "votes": "0",
                             "reply": []
                         }
@@ -86,14 +86,14 @@
         {
             "author": "Giba",
             "content": "I support what Chris says. I observed the same behaviour in LB, agent errors distribute free points to other agents.\n\n",
-            "date": "Posted 2 months ago  ·  5th in this Competition",
+            "date": "Posted 2 months ago  ·  3rd in this Competition",
             "votes": "2",
             "reply": []
         },
         {
             "author": "Chris DeotteTopic Author",
             "content": "[@bovard](https://www.kaggle.com/bovard) I noticed that Mohammad just received 130 points (on June 4th) when his teammate (me Chris) errored. Other teams on the LB need to successfully win 5+ games to get 130 points (which requires the difficult accomplishment of guessing 5+ words correctly versus the lucky result of teammate error). \n\nFYI, Kaggle said they fixed awarding points for teammates of error teams but this doesn't look fixed:\n\n",
-            "date": "Posted 2 months ago  ·  637th in this Competition",
+            "date": "Posted 2 months ago  ·  625th in this Competition",
             "votes": "0",
             "reply": [
                 {
@@ -108,19 +108,19 @@
         {
             "author": "Andres H. Zapke",
             "content": "Hello!\n\nOne question, where does the answerer even come from? Is this supposed to be a separate LLM that has to be trained independently? \n\nAnd did I get it right, that because the answerer is not answering correctly, the \"correct\" guesses aren't being graded accordingly?\n\n",
-            "date": "Posted 2 months ago  ·  638th in this Competition",
+            "date": "Posted 2 months ago  ·  664th in this Competition",
             "votes": "0",
             "reply": [
                 {
                     "author": "Chris DeotteTopic Author",
                     "content": "Each match has 4 Kaggle teams which are Questioner + Answerer versus Questioner + Answerer. So it is 2 vs. 2.\n\nEach Answerer knows the correct answer and responds to their teammate the Questioner.\n\n",
-                    "date": "Posted 2 months ago  ·  637th in this Competition",
+                    "date": "Posted 2 months ago  ·  625th in this Competition",
                     "votes": "0",
                     "reply": [
                         {
                             "author": "Andres H. Zapke",
                             "content": "Yes, but the Answerer cannot be a hard-coded bot, since it has to interpret the question correctly. I thought he is responsible for grading our \"Questioner LLMs\", so I think it should be universal to all games. \n\nQuestion: How and why does the Answerer respond to its teammate and not to the enemy Questioner?\n\n",
-                            "date": "Posted 2 months ago  ·  638th in this Competition",
+                            "date": "Posted 2 months ago  ·  664th in this Competition",
                             "votes": "0",
                             "reply": []
                         }

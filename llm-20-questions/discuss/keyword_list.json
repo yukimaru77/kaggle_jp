@@ -10,19 +10,19 @@
         {
             "author": "Chris Deotte",
             "content": "Where do you see the date July 7th?\n\nAugust 13, 2024 - Final Submission Deadline.\n\n  August 13, 2024- August 27, 2024 - Estimated range when final games are played.\n\n  August 28, 2024 - Winners announced.\n\nIt is the case that the keyword list will change on August 13th. Afterward, our bots will not have access to the list.\n\n",
-            "date": "Posted 2 months ago  ·  637th in this Competition",
+            "date": "Posted 2 months ago  ·  625th in this Competition",
             "votes": "0",
             "reply": [
                 {
                     "author": "AfordancjaTopic Author",
                     "content": "\nWhere do you see the date July 7th?\n\nahh sorry, I copy date from \"Merger & Entry\"\n\nAfterward, our bots will not have access to the list.\n\nhm…ok, so for what is the keyword list at the moment? with categories etc.\n\n",
-                    "date": "Posted 2 months ago  ·  364th in this Competition",
+                    "date": "Posted 2 months ago  ·  546th in this Competition",
                     "votes": "0",
                     "reply": [
                         {
                             "author": "Chris Deotte",
                             "content": "Current list is keyword.py on data page here: [https://www.kaggle.com/competitions/llm-20-questions/data](https://www.kaggle.com/competitions/llm-20-questions/data)\n\n",
-                            "date": "Posted 2 months ago  ·  637th in this Competition",
+                            "date": "Posted 2 months ago  ·  625th in this Competition",
                             "votes": "0",
                             "reply": []
                         }
@@ -31,7 +31,7 @@
                 {
                     "author": "JavaZero",
                     "content": "Does this mean that there is no way to fine-tune it to get a higher score? I'm currently using just prompt engineering to solve the problem. I'm considering the feasibility of fine-tune. For example, extracting quality dialogue from lb.\n\n",
-                    "date": "Posted 2 months ago  ·  345th in this Competition",
+                    "date": "Posted 2 months ago  ·  361st in this Competition",
                     "votes": "0",
                     "reply": []
                 }

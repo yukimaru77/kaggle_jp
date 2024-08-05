@@ -10,7 +10,7 @@
         {
             "author": "G John Rao",
             "content": "The phrase is, \"Through strategic questioning and answering\" - Think of it as a binary search algorithm. \n\n",
-            "date": "Posted 3 months ago  ·  168th in this Competition",
+            "date": "Posted 3 months ago  ·  237th in this Competition",
             "votes": "1",
             "reply": []
         },
@@ -23,7 +23,7 @@
                 {
                     "author": "VolodymyrBilyachat",
                     "content": "Could be a end game step, where questioner gets all questions and answers and make sure they are right\n\n",
-                    "date": "Posted 3 months ago  ·  214th in this Competition",
+                    "date": "Posted 3 months ago  ·  216th in this Competition",
                     "votes": "0",
                     "reply": []
                 }
@@ -32,7 +32,7 @@
         {
             "author": "Raki",
             "content": "I think \"correct\" is the most obvious and important part for the question answerer and it might help to have a knowledge base here, not just the knowledge embedded in the model weights. \n\nThe \"strategic\" can also mean sensible handling of ambiguous cases. \n\nEG if the keyword was \"Smaug\" (dragon from The Hobbit), the \"is reptile\" property might be ambiguous and it could depend on the situation if you should answer yes/no. \n\n",
-            "date": "Posted 2 months ago  ·  395th in this Competition",
+            "date": "Posted 2 months ago  ·  408th in this Competition",
             "votes": "0",
             "reply": []
         }

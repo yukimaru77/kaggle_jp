@@ -17,19 +17,19 @@
         {
             "author": "Guillaume Gilles",
             "content": "I believe keywords have been changed since the keywords.py file now includes: country, city, and landmark instead of the initial categories: person, place,  and thing.\n\nBelow, is an excerpt of the file:\n\n```\n\"\"\"List of keywords for 20 Questions.\"\"\"\n\nKEYWORDS_JSON = \"\"\"\n[\n  {\n    \"category\": \"country\",\n    \"words\": [\n      {\n        \"keyword\": \"afghanistan\",\n        \"alts\": []\n      },\n\n```\n\n",
-            "date": "Posted 2 months ago  ·  441st in this Competition",
+            "date": "Posted 2 months ago  ·  459th in this Competition",
             "votes": "-1",
             "reply": [
                 {
                     "author": "OminousDudeTopic Author",
                     "content": "Keywords were always country, city, and landmark and were never person, place, and thing. They were promising to add person and object soon.\n\n",
-                    "date": "Posted 2 months ago  ·  451st in this Competition",
+                    "date": "Posted 2 months ago  ·  488th in this Competition",
                     "votes": "1",
                     "reply": [
                         {
                             "author": "Guillaume Gilles",
                             "content": "Forgive me for my confusion.\n\nIf I understood correctly, categories are now: place and things.\n\n",
-                            "date": "Posted 2 months ago  ·  441st in this Competition",
+                            "date": "Posted 2 months ago  ·  459th in this Competition",
                             "votes": "0",
                             "reply": []
                         }

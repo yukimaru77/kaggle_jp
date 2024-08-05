@@ -10,13 +10,13 @@
         {
             "author": "RS Turley",
             "content": "Yes, the keyword is set once kaggle_environments loads the \"llm_20_questions\" module. The easiest way to set the keyword manually (or randomly) is to change this variable. You'll also want to change the alts and category variables. \n\nI put an example in my public notebook ([https://www.kaggle.com/code/rturley/run-debug-llm-20-questions-in-a-notebook](https://www.kaggle.com/code/rturley/run-debug-llm-20-questions-in-a-notebook)), and the relevant code would be:\n\n```\nimport kaggle_environments\nenv = kaggle_environments.make(environment=\"llm_20_questions\")\n\n# Set the new keyword to \"Duck\"\nkeyword = \"Duck\"\nalts = [\"The Duck\",\"A Duck\"]\nkaggle_environments.envs.llm_20_questions.llm_20_questions.category = \"Example\"\nkaggle_environments.envs.llm_20_questions.llm_20_questions.keyword_obj = {'keyword':keyword,'alts':alts}\nkaggle_environments.envs.llm_20_questions.llm_20_questions.keyword = keyword\nkaggle_environments.envs.llm_20_questions.llm_20_questions.alts = alts\n\n```\n\n",
-            "date": "Posted 2 months ago  ·  107th in this Competition",
+            "date": "Posted 2 months ago  ·  62nd in this Competition",
             "votes": "2",
             "reply": [
                 {
                     "author": "i_am_nothing",
                     "content": "Will our guesser (questioner) agent be able to look at all possible keywords in final submission by calling some function from the environment\n\n",
-                    "date": "Posted a month ago  ·  262nd in this Competition",
+                    "date": "Posted a month ago  ·  322nd in this Competition",
                     "votes": "0",
                     "reply": []
                 }

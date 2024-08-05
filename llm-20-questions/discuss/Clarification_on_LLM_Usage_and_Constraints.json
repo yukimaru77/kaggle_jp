@@ -10,13 +10,13 @@
         {
             "author": "Chris Deotte",
             "content": "Yes, we can use any model. However during submit we do not have access to internet, so we cannot use GPT-4 but rather must upload a model's saved weights for submission. Furthermore since we are limited to 16GB VRAM and 100GB disk, we can only submit small LLM models.\n\n",
-            "date": "Posted a month ago  ·  637th in this Competition",
+            "date": "Posted a month ago  ·  625th in this Competition",
             "votes": "3",
             "reply": [
                 {
                     "author": "Haolx0824Topic Author",
                     "content": "Thank you for the clarification!\n\n",
-                    "date": "Posted a month ago  ·  21st in this Competition",
+                    "date": "Posted a month ago  ·  9th in this Competition",
                     "votes": "0",
                     "reply": []
                 }

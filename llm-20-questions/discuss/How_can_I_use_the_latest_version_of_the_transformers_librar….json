@@ -1,0 +1,40 @@
+{
+    "main_topic": {
+        "author": "TomFuj",
+        "title": "How can I use the latest version of the transformers library in the production environment?",
+        "content": "Dear Kaggle Staff\n\nThe latest transformers library (ver 4.42.4) installed via pip in the Kaggle environment is being downgraded to ver 4.41.2 in the production environment and is not being reflected properly.\n\nCould you please advise on the best way to use the latest transformers library in the production environment ?\n\n",
+        "date": "Fri Jul 19 2024 01:04:06 GMT+0900 (日本標準時)",
+        "votes": "2"
+    },
+    "comments": [
+        {
+            "author": "Mitsutani",
+            "content": "I'm having the same issue. Following to see if anyone has suggestions\n\n",
+            "date": "Posted 17 days ago  ·  19th in this Competition",
+            "votes": "1",
+            "reply": []
+        },
+        {
+            "author": "JacobStein",
+            "content": "Our team is experiencing the same issue. The old version of the transformers library is taking precedence over the newer one we installed during the build.\n\n",
+            "date": "Posted 17 days ago  ·  19th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "Chris Deotte",
+            "content": "You can view my starter notebook to learn how to pip install packages to be used during submission [here](https://www.kaggle.com/code/cdeotte/starter-code-for-llama-8b-llm-lb-0-750)\n\n",
+            "date": "Posted 17 days ago  ·  625th in this Competition",
+            "votes": "0",
+            "reply": [
+                {
+                    "author": "Mitsutani",
+                    "content": "I've tried using this setup but I'm running Gemma 2. I followed the same steps as in the notebook (changing sys.path etc), but when importing transformers in the production environment I get the older version too so it can't load Gemma 2. I think your main doesn't need transformers 4.42.4 so it runs fine, but correct me if I'm wrong.\n\n",
+                    "date": "Posted 17 days ago  ·  19th in this Competition",
+                    "votes": "1",
+                    "reply": []
+                }
+            ]
+        }
+    ]
+}

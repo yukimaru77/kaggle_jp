@@ -10,13 +10,13 @@
         {
             "author": "Melinda",
             "content": "Did you already try doing gcloud auth configure-docker gcr.io first?\n\n",
-            "date": "Posted a month ago  ·  203rd in this Competition",
+            "date": "Posted 2 months ago  ·  214th in this Competition",
             "votes": "0",
             "reply": [
                 {
                     "author": "A. John Callegari Jr.Topic Author",
                     "content": "Yes, I had executed that command and the other google-cloud-cli formulas listed on the GCR website but I still ran into permission denied.  I did get the pull command to work after following the link to upgrade my Kaggle notebook to a google notebook and in the process creating a pay tier gcloud account (without spending any money on Google).  Google may require you to associate your gcloud account with a payment method (apart from your general gsuite payment method) in order for your account login to pass cli authentication to work for the docker pull\n\n",
-                    "date": "Posted a month ago",
+                    "date": "Posted 2 months ago",
                     "votes": "0",
                     "reply": []
                 }

@@ -10,26 +10,26 @@
         {
             "author": "Araik Tamazian",
             "content": "\"Err\" means that your code threw an exception during the game.\n\n",
-            "date": "Posted a month ago  ·  609th in this Competition",
+            "date": "Posted a month ago  ·  520th in this Competition",
             "votes": "1",
             "reply": []
         },
         {
             "author": "Krens",
             "content": "I also encountered the same Err, have you solved it?\n\n",
-            "date": "Posted 22 days ago  ·  475th in this Competition",
+            "date": "Posted 24 days ago  ·  56th in this Competition",
             "votes": "0",
             "reply": [
                 {
                     "author": "CchristoCTopic Author",
                     "content": "Check your agent logs, if its not timeout, and the agent gets an Err midgame (can do some successful turns beforehand) then its probably an out of memory issue. (If your teammate's agent give lengthy prompts then its probably true, either shorten your own prompt or truncate their prompt if too long, or other solutions like using smaller models)\n\n",
-                    "date": "Posted 22 days ago  ·  93rd in this Competition",
+                    "date": "Posted 24 days ago  ·  107th in this Competition",
                     "votes": "1",
                     "reply": [
                         {
                             "author": "Krens",
                             "content": "Thank you, I think it should be an out of memory issue. Because my Err agent is always the answerer, and I added historical information to the prompts, which are too long.\n\n",
-                            "date": "Posted 22 days ago  ·  475th in this Competition",
+                            "date": "Posted 24 days ago  ·  56th in this Competition",
                             "votes": "1",
                             "reply": []
                         }
@@ -40,7 +40,7 @@
         {
             "author": "CchristoCTopic Author",
             "content": "Turns out 3rd means the losing group\n\n",
-            "date": "Posted 25 days ago  ·  93rd in this Competition",
+            "date": "Posted a month ago  ·  107th in this Competition",
             "votes": "0",
             "reply": []
         }

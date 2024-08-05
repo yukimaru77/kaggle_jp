@@ -10,19 +10,19 @@
         {
             "author": "loh-maa",
             "content": "The current LB is not very meaningful, but in my opinion resetting would not make it better, or fix anything.\n\nI believe our hosts are watching closely and will adjust the ranking algorithm to ensure convergence in the final stage, which doesn't seem to be very robust at the moment. One particular issue appears to be a \"pit of dumbness\" down there around 600 and below (no offense to any cute agents always saying \"yes\"), and it's difficult to get out of there even if your agent is relatively smart (e.g. it can play reasonably against itself.)\n\nLet's understand the reluctance of the hosts to react, regarding any issue. Any intervention or unexpected change works against reliability and trust, and is potentially disrespectful to someone's effort already made, so the justification must be rock solid.\n\n",
-            "date": "Posted a month ago  ·  2nd in this Competition",
+            "date": "Posted a month ago  ·  1st in this Competition",
             "votes": "6",
             "reply": [
                 {
                     "author": "RS Turley",
                     "content": "I agree with you: the \"pit of dumbness\" is a big challenge. It is relatively difficult to win games when you are paired with a partner in the 600-range. The solution to that may fall on us, as a community of competitors, to get more intelligent bots in the competition!\n\nThat said, I really appreciate that a new submission gets a dozen or more matches during their first day, so there is a reasonable chance to escape that pit of dumbness with just one win.\n\n",
-                    "date": "Posted a month ago  ·  107th in this Competition",
+                    "date": "Posted a month ago  ·  62nd in this Competition",
                     "votes": "1",
                     "reply": [
                         {
                             "author": "OminousDudeTopic Author",
                             "content": "I have been stuck in this \"pit\" for my last 7 submissions. I doubt my model is the problem since it works very well against itself in validation but I hate the only yes/no bots.\n\n",
-                            "date": "Posted a month ago  ·  451st in this Competition",
+                            "date": "Posted a month ago  ·  504th in this Competition",
                             "votes": "0",
                             "reply": []
                         }
@@ -46,7 +46,7 @@
                 {
                     "author": "Melinda",
                     "content": "Nice! Previously my three very similar agents had vastly different scores (different by 200 points), but over the last few days they have converged to nearly the same score, so this change seems to be making a difference!\n\n",
-                    "date": "Posted a month ago  ·  203rd in this Competition",
+                    "date": "Posted a month ago  ·  214th in this Competition",
                     "votes": "0",
                     "reply": []
                 }
@@ -55,7 +55,7 @@
         {
             "author": "Matthew S Farmer",
             "content": "I second this request. \n\n",
-            "date": "Posted a month ago  ·  176th in this Competition",
+            "date": "Posted a month ago  ·  69th in this Competition",
             "votes": "1",
             "reply": []
         }

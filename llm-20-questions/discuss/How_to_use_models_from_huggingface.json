@@ -10,13 +10,13 @@
         {
             "author": "Chris Deotte",
             "content": "## Commit Code\n\nDuring commit, download and save the models to folder\n\n```\nfrom transformers import AutoTokenizer, AutoModelForCausalLM\nmodel = AutoModelForCausalLM.from_pretrained()\ntokenizer = AutoTokenizer.from_pretrained()\nmodel.save_pretrained(\"/tmp/submission/weights\")\ntokenizer.save_pretrained(\"/tmp/submission/weights\")\n\n```\n\nIf you have any pip installs then install into /tmp/submission/lib\n\n```\nos.system(\"pip install -U -t /tmp/submission/lib PACKAGE\")\n\n```\n\nThen zip up the entire /tmp/submissions folder to submission.tar.gz. See Kaggle starter code for zip commands.\n\n## Submit Code\n\nThen during submit inside your /tmp/submission/main.py file add the following (and all your pip installs and models will work):\n\n```\nimport os\nKAGGLE_AGENT_PATH = \"/kaggle_simulations/agent/\"\nif not os.path.exists(KAGGLE_AGENT_PATH):\n    KAGGLE_AGENT_PATH = \"/tmp/submission/\"\n\nimport sys\nfrom transformers import AutoTokenizer, AutoModelForCausalLM\nsys.path.insert(0, f\"{KAGGLE_AGENT_PATH}lib\")\nmodel = AutoModelForCausalLM.from_pretrained(\n    f\"{KAGGLE_AGENT_PATH}weights/\")\ntokenizer = AutoTokenizer.from_pretrained(\n    f\"{KAGGLE_AGENT_PATH}weights/\")\n\n```\n\n",
-            "date": "Posted a month ago  ·  637th in this Competition",
+            "date": "Posted a month ago  ·  625th in this Competition",
             "votes": "6",
             "reply": [
                 {
                     "author": "Parashuram ChavanTopic Author",
                     "content": "ohh thank you sir \n\n",
-                    "date": "Posted a month ago  ·  296th in this Competition",
+                    "date": "Posted a month ago  ·  343rd in this Competition",
                     "votes": "2",
                     "reply": []
                 }

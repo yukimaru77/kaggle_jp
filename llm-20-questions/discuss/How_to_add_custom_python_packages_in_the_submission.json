@@ -10,26 +10,26 @@
         {
             "author": "VolodymyrBilyachat",
             "content": "pip install -q -U -t /kaggle/working/submission/lib your package\n\nI was using this\n\n",
-            "date": "Posted 2 months ago  ·  214th in this Competition",
+            "date": "Posted 2 months ago  ·  215th in this Competition",
             "votes": "0",
             "reply": [
                 {
                     "author": "sakuraTopic Author",
                     "content": "Hi, thanks for your response! But if I need to submit a main.py file, where should I put this line in?😀\n\n",
-                    "date": "Posted 2 months ago  ·  277th in this Competition",
+                    "date": "Posted 2 months ago  ·  302nd in this Competition",
                     "votes": "0",
                     "reply": [
                         {
                             "author": "Chris Deotte",
                             "content": "Hi. Put your main.py file in /kaggle/working/submission/lib and pip install everything into /kaggle/working/submission/lib. Then finally tarball the entire folder /kaggle/working/submission/lib. Afterward submit the tarball to the competition.\n\nAlso note that inside your main.py file you will need to add to system path so that it can find your pip installs:\n\n```\nKAGGLE_AGENT_PATH = \"/kaggle_simulations/agent/\"\nif os.path.exists(KAGGLE_AGENT_PATH):\n    sys.path.insert(0, os.path.join(KAGGLE_AGENT_PATH, 'lib'))\nelse:\n    sys.path.insert(0, \"/kaggle/working/submission/lib\")\n\n```\n\nTo see an example of tarballing, see code cell #3 and #4 in starter notebook [here](https://www.kaggle.com/code/ryanholbrook/llm-20-questions-starter-notebook). Afterward we submit submission.tar.gz to the competition.\n\n",
-                            "date": "Posted 2 months ago  ·  637th in this Competition",
+                            "date": "Posted 2 months ago  ·  625th in this Competition",
                             "votes": "3",
                             "reply": []
                         },
                         {
                             "author": "sakuraTopic Author",
                             "content": "I understand now. Thanks a lot!\n\n",
-                            "date": "Posted 2 months ago  ·  277th in this Competition",
+                            "date": "Posted 2 months ago  ·  302nd in this Competition",
                             "votes": "1",
                             "reply": []
                         }

@@ -1,27 +1,13 @@
 # 要約 
-このディスカッションは、Kaggleの「LLM 20 Questions」コンペティションの参加者であるGODDiaoさんが、コンペティションのコード `llm_20_questions.py` にある `active` や `inactive` などのオブジェクトの説明が不明確であること、および `obs.turnType` や `obs.question` などのオブジェクトのメソッドがどこで見られるのかを質問したことから始まりました。
-
-Bovard Doerschuk-Tiberiさんは、GODDiaoさんの質問に対して、`print(dir(obs))` を追加してデバッグモードで実行すれば、オブジェクトに含まれるすべてのものが表示されると回答しました。 
-
+コンペのディスカッションでは、参加者のGODDiaoが、llm_20_questions.pyのコードにおいて「active」や「inactive」といったオブジェクトが十分に説明されていないことに気づき、obsオブジェクトのメソッド（obs.turnTypeやobs.questionなど）についての情報をどこで確認できるかを尋ねています。それに対して、Bovard Doerschuk-Tiberiが、デバッグモードで実行し、`print(dir(obs))`を使うことで利用できるオブジェクトの詳細を確認できると回答しています。
 
 ---
-# 観察に関するおかしな質問
-
-**GODDiao** *2024年6月2日 日曜日 16:32:43 JST* (1票)
-
-`llm_20_questions.py` のコードを読みました。`active` や `inactive` などのオブジェクトの説明が明確ではありませんでした。
-
-`obs.turnType` や `obs.question` などのオブジェクトのメソッドはどこで見ることができますか？
-
+# 観察に関するちょっとした質問
+**GODDiao** *2024年6月2日 16:32:43 JST* (1票)
+llm_20_questions.pyのコードを読んでみたところ、activeやinactiveといった多くのオブジェクトが明確に説明されていないことに気付きました。
+obsのようなオブジェクトのメソッド（obs.turnTypeやobs.questionなど）をどこで見ることができるのか、気になっています。
 ---
-
-# 他のユーザーからのコメント
-
+ ## ユーザーからのコメント
 > ## Bovard Doerschuk-Tiberi
 > 
-> `print(dir(obs))` を追加してデバッグモードで実行すると、そこに含まれるすべてのものが表示されます！
-> 
-> 
-> 
---- 
-
+> debugモードで実行し、print(dir(obs))を使えば、そこにあるすべてのものが表示されるはずですよ！

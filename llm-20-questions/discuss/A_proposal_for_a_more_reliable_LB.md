@@ -1,6 +1,6 @@
 # A proposal for a more reliable LB
 
-**c-number** *Wed Jul 31 2024 23:49:37 GMT+0900 (日本標準時)* (10 votes)
+**c-number** *Wed Jul 31 2024 23:49:37 GMT+0900 (日本標準時)* (11 votes)
 
 Many participants have pointed out that there's too much of a luck factor in the current LB because wins and losses are heavily dependent on teammates' abilities.
 
@@ -30,18 +30,6 @@ I hope the Kaggle staff will consider this proposal.
 
  # Comments from other users
 
-> ## Kha Vo
-> 
-> Your ideas are great indeed!
-> 
-> However, I prefer no other competition rule change. It's nearly the end and many of us don't want to deal with some major disruption via this critical time, including moving the submission deadline. (but extending post final evaluation period is a good idea)
-> 
-> 
-> 
-
-
----
-
 > ## gguillard
 > 
 > The simplest solution regarding teams pairing would be to pair all guessers against the same official answerer bot.
@@ -69,6 +57,18 @@ I hope the Kaggle staff will consider this proposal.
 > > > 
 > > > 
 > > > 
+
+
+---
+
+> ## Kha Vo
+> 
+> Your ideas are great indeed!
+> 
+> However, I prefer no other competition rule change. It's nearly the end and many of us don't want to deal with some major disruption via this critical time, including moving the submission deadline. (but extending post final evaluation period is a good idea)
+> 
+> 
+> 
 
 
 ---

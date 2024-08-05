@@ -10,13 +10,13 @@
         {
             "author": "Chris Deotte",
             "content": "My understanding is that we cannot change a submitted model. Once it is submitted, the weights are fixed.\n\nWe can however, download all the game history, train a new model locally to use past games, and then submit a new version of our model.\n\n",
-            "date": "Posted 2 months ago  ·  637th in this Competition",
+            "date": "Posted 2 months ago  ·  625th in this Competition",
             "votes": "1",
             "reply": [
                 {
                     "author": "AfordancjaTopic Author",
                     "content": "\nMy understanding is that we cannot change a submitted model. Once it is submitted, the weights are fixed.\n\nyes, we cant, but questions is that the model can do it byself.\n\n",
-                    "date": "Posted 2 months ago  ·  364th in this Competition",
+                    "date": "Posted 2 months ago  ·  546th in this Competition",
                     "votes": "1",
                     "reply": [
                         {
@@ -33,7 +33,7 @@
         {
             "author": "loh-maa",
             "content": "I think agents are called by the environment only to get responses, so any online training would have to take place during their turns/moves… on top of that, I don't think agents can have access to anything but their pre-loaded data, and their online experience, which probably would be too short to be useful..\n\n",
-            "date": "Posted 2 months ago  ·  2nd in this Competition",
+            "date": "Posted 2 months ago  ·  1st in this Competition",
             "votes": "0",
             "reply": []
         }

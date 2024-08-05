@@ -10,20 +10,20 @@
         {
             "author": "Chris Deotte",
             "content": "We cannot pick the 3 active agents. They are selected automatically as the most recent 3 submitted. (So to replace our current agents we need to submit new more recent agents).\n\n",
-            "date": "Posted 7 days ago  ·  638th in this Competition",
+            "date": "Posted 9 days ago  ·  625th in this Competition",
             "votes": "0",
             "reply": [
                 {
                     "author": "francesco fiamingoTopic Author",
                     "content": "Thanks, but i dont understand the logic, at least in testing phase\n\n",
-                    "date": "Posted 7 days ago  ·  324th in this Competition",
+                    "date": "Posted 9 days ago  ·  418th in this Competition",
                     "votes": "1",
                     "reply": [
                         {
                             "author": "Chris Deotte",
                             "content": "I don't understand the logic either. \n\nPerhaps Kaggle doesn't want us to be able to turn bots on and off. For example, when our bot achieves a high score, we can then disable our bot to prevent the score from decreasing. Then in the last 1 hour of the competition we can enable the bot and get 1st place public LB.\n\nI think our final position in public LB is our seed going into private LB, so maybe what I say above could be an advantage. There are probably other ways to exploit the LB by turning bots on and off whenever we like.\n\n",
-                            "date": "Posted 7 days ago  ·  638th in this Competition",
-                            "votes": "1",
+                            "date": "Posted 9 days ago  ·  625th in this Competition",
+                            "votes": "2",
                             "reply": []
                         }
                     ]

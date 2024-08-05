@@ -1,0 +1,112 @@
+# 要約 
+このディスカッションは、KaggleのLMSYS - Chatbot Arena Human Preference Predictionsコンペティションにおける、モデルサイズとパフォーマンスの関係について議論しています。
+
+トピック作成者のDylan Liuは、gemma2-27bモデルをトレーニングしたものの、9bモデルよりも良いスコアが出なかったと報告しています。
+
+コメント欄では、justin1357は、より大きなモデルは必ずしもより良い結果をもたらすとは限らず、poeのような他のプラットフォームでは異なる結果が得られる可能性があると指摘しています。
+
+ShelterWは、Dylan Liuがどのような方法でモデルをトレーニングしているのか質問し、Dylan LiuはSEQ_CLSを使用していると答えています。
+
+このディスカッションは、モデルサイズとパフォーマンスの関係は単純ではなく、モデルのアーキテクチャやトレーニング方法など、他の要因も重要な役割を果たすことを示唆しています。
+
+
+---
+
+
+<style>
+.column-left{
+  float: left;
+  width: 47.5%;
+  text-align: left;
+}
+.column-right{
+  float: right;
+  width: 47.5%;
+  text-align: left;
+}
+.column-one{
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+</style>
+
+
+<div class="column-left">
+
+# original
+
+# Larger model, better result?
+
+**Dylan Liu** *Fri Jul 26 2024 18:25:10 GMT+0900 (日本標準時)* (2 votes)
+
+I tried to train gemma2-27b but it's valid score is not better than that of 9b. What's your experience?
+
+
+
+---
+
+ # Comments from other users
+
+> ## justin1357
+> 
+> Better is greater.. You can compare them in poe, and then you will find they are totally different. Zero Shot.
+> 
+> 
+> 
+
+
+---
+
+> ## ShelterW
+> 
+> What method do you use？SEQ_CLS?
+> 
+> 
+> 
+> > ## Dylan LiuTopic Author
+> > 
+> > yes SEQ_CLS
+> > 
+> > 
+> > 
+
+
+---
+
+
+
+</div>
+<div class="column-right">
+
+# 日本語訳
+
+# より大きなモデル、より良い結果？
+**Dylan Liu** *2024年7月26日 金曜日 18:25:10 日本標準時* (2票)
+gemma2-27bをトレーニングしてみましたが、有効スコアは9bより良くありません。皆さんの経験はどうですか？
+---
+# 他のユーザーからのコメント
+> ## justin1357
+> 
+> より良いとは、より大きいという意味です。poeで比較すれば、全く異なることがわかるでしょう。ゼロショットです。
+> 
+> 
+> 
+---
+> ## ShelterW
+> 
+> どんな方法を使っていますか？SEQ_CLSですか？
+> 
+> 
+> 
+> > ## Dylan Liuトピック作成者
+> > 
+> > はい、SEQ_CLSです。
+> > 
+> > 
+> > 
+--- 
+
+
+
+</div>

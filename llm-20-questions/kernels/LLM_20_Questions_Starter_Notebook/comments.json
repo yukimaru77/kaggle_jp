@@ -9,7 +9,7 @@
                 {
                     "author": "Valentin Baltazar",
                     "content": "Check if you have the hardware for it…these LLM require a lot of computation and a powerful GPU to train and fine tune. I would use the cloud, much easier too.\n\n",
-                    "date": "Posted 24 days ago  ·  Posted on Version 2 of \n        2",
+                    "date": "Posted a month ago  ·  Posted on Version 2 of \n        2",
                     "votes": "-1",
                     "reply": []
                 }
@@ -39,13 +39,13 @@
                     "author": "Aryan Singh",
                     "content": "Add the model Gemma 7b-it-quant V2 using the Add Input function. \n\nMake sure to accept the license first from here: [https://www.kaggle.com/models/google/gemma](https://www.kaggle.com/models/google/gemma)\n\n",
                     "date": "Posted 2 months ago  ·  Posted on Version 2 of \n        2",
-                    "votes": "4",
+                    "votes": "5",
                     "reply": [
                         {
                             "author": "Talal Mufti",
                             "content": "after ensuring all files where in the path I still faced issues so I edit the bash commands slightly. personally, this worked better for me:\n\n!tar --use-compress-program='pigz --fast --recursive | pv' -f submission.tar.gz -c /kaggle/working/submission . -c /kaggle/input/gemma/pytorch/7b-it-quant/2\n\n",
-                            "date": "Posted 3 days ago  ·  Posted on Version 2 of \n        2",
-                            "votes": "0",
+                            "date": "Posted 5 days ago  ·  Posted on Version 2 of \n        2",
+                            "votes": "1",
                             "reply": []
                         }
                     ]
@@ -78,21 +78,21 @@
         {
             "author": "Ship of Theseus",
             "content": "Thank Ryan, greate work! Nice code to run on localhost and sharing to Kaggle Community\n\n",
-            "date": "Posted 2 days ago  ·  Posted on Version 2 of \n        2",
+            "date": "Posted 4 days ago  ·  Posted on Version 2 of \n        2",
             "votes": "0",
             "reply": []
         },
         {
             "author": "shiv_314",
             "content": "Hey folks! Need one help. I am facing an import error for gemma package.\n\nI have already added the correct system path for python, however I am still facing the same issue. Kindly help!\n\n",
-            "date": "Posted 6 days ago  ·  Posted on Version 2 of \n        2",
+            "date": "Posted 8 days ago  ·  Posted on Version 2 of \n        2",
             "votes": "0",
             "reply": []
         },
         {
             "author": "dedq",
             "content": "Thank Ryan, greate work! Nice code to run on localhost and sharing to Kaggle Community\n\n",
-            "date": "Posted 8 days ago  ·  Posted on Version 2 of \n        2",
+            "date": "Posted 10 days ago  ·  Posted on Version 2 of \n        2",
             "votes": "0",
             "reply": []
         },
@@ -105,7 +105,7 @@
                 {
                     "author": "Code Hacker",
                     "content": "I did'n agree model. Click red button as below…\n\n",
-                    "date": "Posted 25 days ago  ·  Posted on Version 2 of \n        2",
+                    "date": "Posted a month ago  ·  Posted on Version 2 of \n        2",
                     "votes": "0",
                     "reply": []
                 }
@@ -127,7 +127,7 @@
                 {
                     "author": "Kanchan Maurya",
                     "content": "Submitting the file after clicking on Submit agents does the work.It takes a while since the initial simulations are working\n\n",
-                    "date": "Posted 4 days ago  ·  Posted on Version 2 of \n        2",
+                    "date": "Posted 6 days ago  ·  Posted on Version 2 of \n        2",
                     "votes": "0",
                     "reply": []
                 }

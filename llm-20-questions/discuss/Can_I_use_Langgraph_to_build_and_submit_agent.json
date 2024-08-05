@@ -10,7 +10,7 @@
         {
             "author": "VolodymyrBilyachat",
             "content": "My understanding is you can use what ever you want as soon you are within\n\nTimeouts, Limits and Penalties.\n\nQuestions are limited to 2000 characters\n\nGuesses are limited to 100 characters\n\nTimeouts\n\nAgents are given 60 seconds per round to answer\n\nAgents have an additional 300 overage seconds to use throughout the game\n\nAny agent timing out will cause the game to end\n\nAny answering agent responding with anything other than yes or no will result in the game ending and them losing the match.\n\nTechnical Specifications\n\n100 GB of disk space\n\n16 GB of RAM\n\n1 T4 GPU\n\n",
-            "date": "Posted 2 months ago  ·  214th in this Competition",
+            "date": "Posted 2 months ago  ·  215th in this Competition",
             "votes": "1",
             "reply": []
         }

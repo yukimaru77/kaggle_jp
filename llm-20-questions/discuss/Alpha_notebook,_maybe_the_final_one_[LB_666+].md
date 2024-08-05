@@ -1,6 +1,6 @@
 # Alpha notebook, maybe the final one [LB 666+]
 
-**loh-maa** *Thu Jul 25 2024 01:00:13 GMT+0900 (日本標準時)* (4 votes)
+**loh-maa** *Thu Jul 25 2024 01:00:13 GMT+0900 (日本標準時)* (5 votes)
 
 In the spirit of Conan the Barbarian and his majesty Mad Max the second! I hereby share the partial solution based on [alphabetical search](https://www.kaggle.com/code/lohmaa/llm20-agent-alpha). I spent time to make it so simple and elegant, that I am even delighted. It is not a complete solution, and that's actually splendid because it leaves room for adaptation and improvement, especially regarding the way to finish a failed alpha search.
 

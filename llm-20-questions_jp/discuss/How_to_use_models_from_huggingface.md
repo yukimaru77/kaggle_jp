@@ -1,37 +1,36 @@
-# Hugging Face のモデルをどのように使用すればいいですか？
-**Parashuram Chavan** *金 6月 21 2024 21:42:16 GMT+0900 (日本標準時)* (0 票)
-または、Hugging Face のモデルを API を使って使用できますか？
+# Hugging Faceのモデルの使い方
+**Parashuram Chavan** *2024年6月21日 金曜日 21:42:16 (日本標準時)* (0票)
+Hugging FaceのモデルをAPIで使用することはできますか？
+
 ---
-# 他のユーザーからのコメント
+ # 他のユーザーからのコメント
 > ## Chris Deotte
 > 
 > ## コードのコミット
 > 
-> コミット時に、モデルをダウンロードしてフォルダに保存します。
+> コミット時にモデルをフォルダーにダウンロードして保存します。
 > 
-> ```
+> ```python
 > from transformers import AutoTokenizer, AutoModelForCausalLM
 > model = AutoModelForCausalLM.from_pretrained()
 > tokenizer = AutoTokenizer.from_pretrained()
 > model.save_pretrained("/tmp/submission/weights")
 > tokenizer.save_pretrained("/tmp/submission/weights")
-> 
 > ```
 > 
-> pip インストールがある場合は、`/tmp/submission/lib` にインストールします。
+> 必要なpipインストールがあれば、それを/tmp/submission/libにインストールします。
 > 
-> ```
+> ```python
 > os.system("pip install -U -t /tmp/submission/lib PACKAGE")
-> 
 > ```
 > 
-> 次に、`/tmp/submissions` フォルダ全体を `submission.tar.gz` に圧縮します。圧縮コマンドについては、Kaggle のスターターコードを参照してください。
+> 次に、/tmp/submissionsフォルダー全体をsubmission.tar.gzとして圧縮します。圧縮コマンドはKaggleのスターターコードを参照してください。
 > 
 > ## コードの提出
 > 
-> 次に、提出時に `/tmp/submission/main.py` ファイルに以下を追加します（すべての pip インストールとモデルが動作します）。
+> 提出時には、/tmp/submission/main.pyファイル内に次のように記述して、すべてのpipインストールとモデルが動作するようにします。
 > 
-> ```
+> ```python
 > import os
 > KAGGLE_AGENT_PATH = "/kaggle_simulations/agent/"
 > if not os.path.exists(KAGGLE_AGENT_PATH):
@@ -44,16 +43,11 @@
 >     f"{KAGGLE_AGENT_PATH}weights/")
 > tokenizer = AutoTokenizer.from_pretrained(
 >     f"{KAGGLE_AGENT_PATH}weights/")
-> 
 > ```
 > 
 > 
-> 
-> > ## Parashuram Chavanトピック作成者
+> > ## Parashuram Chavan トピック作成者
 > > 
-> > ありがとうございます！
+> > ありがとうございます！ 
 > > 
-> > 
-> > 
----
-
+> >

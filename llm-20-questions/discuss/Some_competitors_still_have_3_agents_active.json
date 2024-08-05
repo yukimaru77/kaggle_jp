@@ -1,0 +1,25 @@
+{
+    "main_topic": {
+        "author": "JK-Piece",
+        "title": "Some competitors still have 3 agents active.",
+        "content": "While most participants that are actively submitting have 2 agents active, older submissions still have 3 agents active (at least this is displayed on the leaderboard). Is this a bug?\n\n",
+        "date": "Sun Aug 04 2024 21:41:41 GMT+0900 (日本標準時)",
+        "votes": "0"
+    },
+    "comments": [
+        {
+            "author": "Songling",
+            "content": "It should be updated after the game. Now we have six agents\n\n",
+            "date": "Posted 13 hours ago  ·  110th in this Competition",
+            "votes": "0",
+            "reply": []
+        },
+        {
+            "author": "blackbun",
+            "content": "I guess the number of active agents changes once you submit a new agent after the rule update. \n\n",
+            "date": "Posted 13 hours ago  ·  59th in this Competition",
+            "votes": "0",
+            "reply": []
+        }
+    ]
+}
