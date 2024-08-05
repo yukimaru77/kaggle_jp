@@ -1,0 +1,129 @@
+# 要約 
+### 要約
+
+ユーザーtiod0611が、言語モデルを使用した「20の質問」コンペティションにおいて、同一のエージェントが異なるスコアを得る問題について提起しました。彼の考える理由として、キーワードの難易度の変動や、エージェントが[Err]を生成する他のエージェントと対戦することで得点に違いが出ることが挙げられています。
+
+提案された解決策は以下の通りです：
+
+1. **キーワード難易度のバランス**: Kaggleが各キーワードの正確度を把握し、高い正確度の単語と低い正確度の単語をエージェントに均等に割り当てることを提案。具体的には、キーワードを精度に基づいてグループ分けし、各エージェントが均等に様々な難易度の単語と対戦するような仕組みを設けることを提案しています。
+
+2. **[Err]の処理改善**: [Err]を生成したマッチはスコアにカウントせず、再試合を行うべきという提案。繰り返し[Err]を引き起こすエージェントは、今後のマッチから除外されるべきとしています。
+
+この問題が提起されている背景には、公平なプレイを確保するために、エージェントやそのパフォーマンスを継続的に改善していく必要があるとされています。また、改善策による迅速なフィードバックが求められています。
+
+---
+
+
+<style>
+.column-left{
+  float: left;
+  width: 47.5%;
+  text-align: left;
+}
+.column-right{
+  float: right;
+  width: 47.5%;
+  text-align: left;
+}
+.column-one{
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+</style>
+
+
+<div class="column-left">
+
+# original
+
+# Identical Agents, but Different Scores! I propose these improvements. What do you think?
+
+**tiod0611** *Sun Jul 07 2024 00:01:30 GMT+0900 (日本標準時)* (2 votes)
+
+Hello everyone. 
+
+I've noticed an issue in the current competition where agents, built with the same model and code, are receiving significantly different scores—sometimes differing by more than 100 points!
+
+Here are my thoughts on the potential reasons and some proposed solutions. I would like to share these with you for further discussion.
+
+## Issues
+
+Agents created from the same code are receiving different scores.
+
+The reasons for this could be:
+
+### Keyword Difficulty Variability:
+
+- Some words are difficult even for humans to guess, and large language models (LLMs) would also struggle with these words. Agents encountering easier words score higher, while those facing harder words tend to have more draws. This issue has been repeatedly raised:
+
+[https://www.kaggle.com/competitions/llm-20-questions/discussion/515751#2902081](https://www.kaggle.com/competitions/llm-20-questions/discussion/515751#2902081)
+
+[https://www.kaggle.com/competitions/llm-20-questions/discussion/509839](https://www.kaggle.com/competitions/llm-20-questions/discussion/509839)
+
+### [Err]-Generating Agents:
+
+- When an agent encounters an [Err]-generating agent, other agents gain higher scores effortlessly.
+
+Due to these factors, agents frequently encountering easy words and [Err] agents can score higher than others.
+
+## Proposed Solutions
+
+To address these issues, I propose the following improvements:
+
+### Balancing Keyword Difficulty:
+
+- Assuming Kaggle knows the accuracy rate of each keyword, agents should encounter a balanced mix of high and low accuracy rate words.
+
+- For instance, if keywords are divided into five groups based on accuracy rates, agents should compete in games that cover each group, ensuring fair play. This cycle should repeat continuously.
+
+- However, The first cycle after an agent is submitted should not take too long, ideally completed within a day, to provide participants with timely feedback on their model performance.
+
+- To prevent cheating, some matches could be conducted blind.
+
+### Improving [Err] Handling:
+
+- Matches resulting in [Err] should not count towards the score and should be immediately replayed.
+
+- If an agent repeatedly causes [Err], it should be excluded from further matches.
+
+Thank you for reading my suggestions. I look forward to a productive discussion.
+
+
+
+
+
+</div>
+<div class="column-right">
+
+# 日本語訳
+
+> # 同一エージェントなのに異なるスコア！改善案を提案します。皆さんはどう思いますか？
+> **tiod0611** *2024年7月7日（日）00:01:30 GMT+0900 (日本標準時)* (2票)
+> こんにちは、皆さん。
+> 現在のコンペティションにおいて、同じモデルとコードから作成されたエージェントが、100ポイント以上も異なるスコアを受け取るという問題に気付きました。
+> ここでは、考えうる理由といくつかの提案された解決策を共有し、皆さんと議論したいと思います。
+> ## 問題点
+> 同一のコードから作成されたエージェントが異なるスコアを受け取っています。
+> その理由として考えられるのは：
+> ### キーワードの難易度の変動：
+> - 一部の単語は人間にとっても推測が難しく、大規模言語モデル（LLM）も同様に苦労します。簡単な単語に遭遇するエージェントは高得点を得る一方で、難しい単語に直面するエージェントは引き分けが多くなります。この問題は繰り返し提起されています：
+> [https://www.kaggle.com/competitions/llm-20-questions/discussion/515751#2902081](https://www.kaggle.com/competitions/llm-20-questions/discussion/515751#2902081)
+> [https://www.kaggle.com/competitions/llm-20-questions/discussion/509839](https://www.kaggle.com/competitions/llm-20-questions/discussion/509839)
+> ### [Err]-生成エージェント：
+> - エージェントが[Err]を生成するエージェントに出会うと、他のエージェントは楽に高得点を得ることができます。
+> これらの要因により、簡単な単語や[Err]エージェントに頻繁に遭遇するエージェントが他のエージェントよりも高得点を得る傾向があります。
+> ## 提案された解決策
+> この問題に対処するため、以下の改善案を提案します。
+> ### キーワード難易度のバランス：
+> - Kaggleが各キーワードの正確度を把握していることを前提に、エージェントには高い正確度と低い正確度の単語がバランスよく割り当てられるべきです。
+> - 例えば、キーワードを精度に基づいて五つのグループに分け、エージェントが各グループをカバーするゲームで競うことで、公平なプレイを確保します。このサイクルは継続的に繰り返されるべきです。
+> - ただし、エージェントが提出されてからの最初のサイクルは、それほど時間がかからないように、理想的には1日以内に完了し、参加者にモデルのパフォーマンスに関する迅速なフィードバックを提供するべきです。
+> - 不正行為を防ぐため、一部のマッチはブラインドで実施されることが考えられます。
+> ### [Err]の処理改善：
+> - [Err]を生成したマッチはスコアにカウントされず、即座に再試合が行われるべきです。
+> - エージェントが繰り返し[Err]を引き起こす場合、そのエージェントは今後のマッチから除外されるべきです。
+> 提案をお読みいただきありがとうございます。生産的な議論を楽しみにしています。
+
+
+</div>
