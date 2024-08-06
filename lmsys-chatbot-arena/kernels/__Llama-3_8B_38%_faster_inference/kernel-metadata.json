@@ -1,0 +1,27 @@
+{
+  "id": "emiz6413/llama-3-8b-38-faster-inference",
+  "id_no": 61389395,
+  "title": "\ud83e\udd99Llama-3 8B 38% faster inference",
+  "code_file": "llama-3-8b-38-faster-inference.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "kishanvavdara/lmsys-model"
+  ],
+  "kernel_sources": [
+    "hotchpotch/llm-detect-pip"
+  ],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "metaresearch/llama-3/Transformers/8b-chat-hf/1"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "sambitmukherjee/llm-20-questions-offline-pip-install",
+  "id_no": 63407182,
+  "title": "llm-20-questions-offline-pip-install",
+  "code_file": "llm-20-questions-offline-pip-install.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

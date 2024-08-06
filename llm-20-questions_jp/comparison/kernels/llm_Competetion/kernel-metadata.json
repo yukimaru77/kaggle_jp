@@ -1,0 +1,19 @@
+{
+  "id": "muhammadrameez242/llm-competetion",
+  "id_no": 58491645,
+  "title": "llm_Competetion",
+  "code_file": "llm-competetion.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

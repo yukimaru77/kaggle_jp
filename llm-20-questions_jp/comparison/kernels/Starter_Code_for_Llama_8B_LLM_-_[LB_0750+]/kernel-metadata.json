@@ -1,0 +1,25 @@
+{
+  "id": "cdeotte/starter-code-for-llama-8b-llm-lb-0-750",
+  "id_no": 62247087,
+  "title": "Starter Code for Llama 8B LLM - [LB 0.750+]",
+  "code_file": "starter-code-for-llama-8b-llm-lb-0-750.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "cdeotte/updated-kaggle-keywords"
+  ],
+  "kernel_sources": [
+    "ryanholbrook/llm-20-questions-starter-notebook"
+  ],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

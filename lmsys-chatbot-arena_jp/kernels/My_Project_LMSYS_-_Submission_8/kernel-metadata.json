@@ -1,0 +1,21 @@
+{
+  "id": "barirahzainal/my-project-lmsys-submission-8",
+  "id_no": 61300854,
+  "title": "My Project LMSYS - Submission 8",
+  "code_file": "my-project-lmsys-submission-8.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

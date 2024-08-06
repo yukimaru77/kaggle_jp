@@ -1,0 +1,21 @@
+{
+  "id": "develuse/llm20q-gemma-2b-it-tpu",
+  "id_no": 58065351,
+  "title": "LLM20Q - Gemma 2b-it TPU",
+  "code_file": "llm20q-gemma-2b-it-tpu.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": true,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": [
+    "google/gemma/PyTorch/2b-it/2"
+  ]
+}

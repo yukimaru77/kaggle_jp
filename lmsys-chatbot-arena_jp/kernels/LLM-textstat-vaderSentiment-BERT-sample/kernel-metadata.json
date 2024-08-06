@@ -1,0 +1,19 @@
+{
+  "id": "sheilamarass/llm-textstat-vadersentiment-bert-sample",
+  "id_no": 62156309,
+  "title": "LLM-textstat-vaderSentiment-BERT-sample",
+  "code_file": "llm-textstat-vadersentiment-bert-sample.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "aneeshkb/mistral-k-bit",
+  "id_no": 61272978,
+  "title": "mistral_k_bit",
+  "code_file": "mistral-k-bit.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

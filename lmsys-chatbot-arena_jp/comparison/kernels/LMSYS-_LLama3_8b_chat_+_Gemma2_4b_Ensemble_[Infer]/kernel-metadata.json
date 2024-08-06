@@ -1,0 +1,31 @@
+{
+  "id": "siddhvr/lmsys-llama3-8b-chat-gemma2-4b-ensemble-infer",
+  "id_no": 61982175,
+  "title": "LMSYS- LLama3 8b chat + Gemma2 4b Ensemble [Infer]",
+  "code_file": "lmsys-llama3-8b-chat-gemma2-4b-ensemble-infer.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "emiz6413/73zap2gx",
+    "emiz6413/lmsys-wheel-files",
+    "kishanvavdara/lmsys-model",
+    "stochoshi/lsys-models-4"
+  ],
+  "kernel_sources": [
+    "hotchpotch/llm-detect-pip"
+  ],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "emiz6413/gemma-2/Transformers/gemma-2-9b-it-4bit/1",
+    "metaresearch/llama-3/Transformers/8b-chat-hf/1"
+  ]
+}

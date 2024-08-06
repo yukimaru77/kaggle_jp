@@ -1,0 +1,23 @@
+{
+  "id": "embeddedravi/gemma-instruct-2b-lmsys-training-tpu",
+  "id_no": 62647834,
+  "title": "Gemma instruct 2B LMSYS [Training TPU]",
+  "code_file": "gemma-instruct-2b-lmsys-training-tpu.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "tpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "keras/gemma/Keras/gemma_instruct_2b_en/2"
+  ]
+}

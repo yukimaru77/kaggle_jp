@@ -1,0 +1,21 @@
+{
+  "id": "emiz6413/training-gemma-2-9b-4-bit-qlora-fine-tuning",
+  "id_no": 61877705,
+  "title": "[Training] Gemma-2 9b 4-bit QLoRA fine-tuning",
+  "code_file": "training-gemma-2-9b-4-bit-qlora-fine-tuning.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

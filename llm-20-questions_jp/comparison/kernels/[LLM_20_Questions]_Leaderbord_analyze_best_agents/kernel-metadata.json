@@ -1,0 +1,25 @@
+{
+  "id": "waechter/llm-20-questions-leaderbord-analyze-best-agents",
+  "id_no": 58457773,
+  "title": "[LLM 20 Questions] Leaderbord analyze best agents",
+  "code_file": "llm-20-questions-leaderbord-analyze-best-agents.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "scheduled"
+  ],
+  "dataset_sources": [
+    "waechter/llm-20-questions-games"
+  ],
+  "kernel_sources": [
+    "waechter/llm-20-questions-games-dataset"
+  ],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "pnmanh2123/try-install-torch2-3",
+  "id_no": 62180903,
+  "title": "try install torch2.3",
+  "code_file": "try-install-torch2-3.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [
+    "pnmanh2123/torch-2-3-whl"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

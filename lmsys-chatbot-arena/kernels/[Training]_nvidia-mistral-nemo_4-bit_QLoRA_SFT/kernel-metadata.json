@@ -1,0 +1,19 @@
+{
+  "id": "somesh88/training-nvidia-mistral-nemo-4-bit-qlora-sft",
+  "id_no": 62583133,
+  "title": "[Training] nvidia-mistral-nemo 4-bit QLoRA SFT ",
+  "code_file": "training-nvidia-mistral-nemo-4-bit-qlora-sft.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

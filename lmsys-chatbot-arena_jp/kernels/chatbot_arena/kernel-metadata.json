@@ -1,0 +1,23 @@
+{
+  "id": "sudhanvahg/chatbot-arena",
+  "id_no": 62343336,
+  "title": "chatbot_arena",
+  "code_file": "chatbot-arena.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    ""
+  ]
+}

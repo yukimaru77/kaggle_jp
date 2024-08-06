@@ -1,0 +1,23 @@
+{
+  "id": "bhanupratapbiswas/chatbot-arena-human-preference-predictions",
+  "id_no": 62389946,
+  "title": "Chatbot Arena Human Preference Predictions",
+  "code_file": "chatbot-arena-human-preference-predictions.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "keras/deberta_v3/Keras/deberta_v3_extra_small_en/2"
+  ]
+}

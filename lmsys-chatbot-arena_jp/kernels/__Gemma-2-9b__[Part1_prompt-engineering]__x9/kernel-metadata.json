@@ -1,0 +1,23 @@
+{
+  "id": "palash97/gemma-2-9b-part1-prompt-engineering",
+  "id_no": 62127892,
+  "title": "Gemma-2-9b | [Part1: prompt-engineering] | \ud83d\udd25\ud83d\udd25\ud83d\udd25",
+  "code_file": "gemma-2-9b-part1-prompt-engineering.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "palash97/gemma-2-9b-it"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

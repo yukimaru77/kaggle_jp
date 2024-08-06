@@ -1,0 +1,25 @@
+{
+  "id": "takamichitoda/lmsys-zeroshot-prediction",
+  "id_no": 62258779,
+  "title": "LMSYS ZeroShot Prediction",
+  "code_file": "lmsys-zeroshot-prediction.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "nbroad/peft-main"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "metaresearch/llama-3/Transformers/8b-hf/1"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "vedkulkarni17/llama-3-8b-fast",
+  "id_no": 61460629,
+  "title": "llama-3-8B-fast",
+  "code_file": "llama-3-8b-fast.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [
+    "kishanvavdara/lmsys-model"
+  ],
+  "kernel_sources": [
+    "hotchpotch/llm-detect-pip"
+  ],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "metaresearch/llama-3/Transformers/8b-chat-hf/1"
+  ]
+}

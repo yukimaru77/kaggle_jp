@@ -1,0 +1,28 @@
+{
+  "id": "vjagannath786/faster-training-with-unsloth",
+  "id_no": 61556046,
+  "title": "Faster Training with unsloth",
+  "code_file": "faster-training-with-unsloth.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "",
+    "",
+    ""
+  ],
+  "kernel_sources": [
+    "hotchpotch/llm-detect-pip",
+    "assignmeai/easy-to-use-unslot-wheel"
+  ],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "yuangwu/saaaa2",
+  "id_no": 61674678,
+  "title": "SAAAA2",
+  "code_file": "saaaa2.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": [
+    "google/gemma/Transformers/7b-it/3",
+    "google/gemma/Transformers/2b-it/1",
+    "keras/gemma2/Keras/gemma2_instruct_9b_en/1",
+    "google/gemma-2/PyTorch/gemma-2-9b-pt/1"
+  ]
+}

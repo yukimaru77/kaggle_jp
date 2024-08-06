@@ -1,0 +1,19 @@
+{
+  "id": "krupalpatel07/llm-20-question-agent",
+  "id_no": 62594005,
+  "title": "LLM 20 Question Agent",
+  "code_file": "llm-20-question-agent.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

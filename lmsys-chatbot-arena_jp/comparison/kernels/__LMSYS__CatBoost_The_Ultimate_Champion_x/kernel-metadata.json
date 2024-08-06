@@ -1,0 +1,19 @@
+{
+  "id": "nabojyotipandey/lmsys-catboost-the-ultimate-champion",
+  "id_no": 61769872,
+  "title": "LMSYS | CatBoost: The Ultimate Champion \ud83e\udd47\ud83d\udc31",
+  "code_file": "lmsys-catboost-the-ultimate-champion.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

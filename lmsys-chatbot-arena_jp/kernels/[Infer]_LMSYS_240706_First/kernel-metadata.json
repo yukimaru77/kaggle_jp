@@ -1,0 +1,29 @@
+{
+  "id": "twinklewill/infer-lmsys-240706-first",
+  "id_no": 61801544,
+  "title": "[Infer] LMSYS 240706 First",
+  "code_file": "infer-lmsys-240706-first.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "",
+    "kishanvavdara/lmsys-model"
+  ],
+  "kernel_sources": [
+    "hotchpotch/llm-detect-pip",
+    "kishanvavdara/lmsys-llama-3-tpu-train"
+  ],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "metaresearch/llama-3/Transformers/8b-chat-hf/1"
+  ]
+}

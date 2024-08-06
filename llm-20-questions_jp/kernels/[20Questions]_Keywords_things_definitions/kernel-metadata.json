@@ -1,0 +1,22 @@
+{
+  "id": "waechter/20questions-keywords-things-definitions",
+  "id_no": 60524011,
+  "title": "[20Questions] Keywords things definitions",
+  "code_file": "20questions-keywords-things-definitions.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "waechter/20questions-keywords-things-definitions",
+    "waechter/llm-20-questions-games-dataset"
+  ],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

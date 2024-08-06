@@ -1,0 +1,25 @@
+{
+  "id": "cdeotte/infer-34b-with-vllm",
+  "id_no": 62328774,
+  "title": "Infer 34B with vLLM",
+  "code_file": "infer-34b-with-vllm.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "cdeotte/bagel-v3-343",
+    "abdurrafae/vllm-t4-fix",
+    "bsmit1659/vllm-whl"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "hugowjd/lmsys-qwen-2-qlora-inference-baseline",
+  "id_no": 62255286,
+  "title": "LMSYS Qwen-2 QLoRA Inference baseline",
+  "code_file": "lmsys-qwen-2-qlora-inference-baseline.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "hugowjd/lmsys-qwen2-1-5b-checkpoint",
+    "emiz6413/lmsys-wheel-files"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "marquis03/qwen2/Transformers/qwen2-1.5b-instruct/1"
+  ]
+}

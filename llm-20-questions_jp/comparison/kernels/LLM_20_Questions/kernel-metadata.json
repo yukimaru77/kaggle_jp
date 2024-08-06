@@ -1,0 +1,23 @@
+{
+  "id": "pavlobaranchuk/llm-20-questions",
+  "id_no": 58369153,
+  "title": "LLM 20 Questions",
+  "code_file": "llm-20-questions.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": [
+    "keras/gemma/Keras/gemma_2b_en/2"
+  ]
+}

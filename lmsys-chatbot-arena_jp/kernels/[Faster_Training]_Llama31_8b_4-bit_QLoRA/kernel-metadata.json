@@ -1,0 +1,23 @@
+{
+  "id": "mohamedkhamis/faster-training-llama3-1-8b-4-bit-qlora",
+  "id_no": 63018410,
+  "title": "[Faster Training] Llama3.1 8b 4-bit QLoRA",
+  "code_file": "faster-training-llama3-1-8b-4-bit-qlora.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [
+    "mohamedkhamis/llama3-1-dependencies"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "mohamedkhamis/unsloth-meta-llama-3.1-8b-bnb-4bit/Transformers/default/1"
+  ]
+}

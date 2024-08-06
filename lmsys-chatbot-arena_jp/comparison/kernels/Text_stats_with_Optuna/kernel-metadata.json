@@ -1,0 +1,21 @@
+{
+  "id": "bisili/text-stats-with-optuna",
+  "id_no": 61768715,
+  "title": "Text_stats_with_Optuna",
+  "code_file": "text-stats-with-optuna.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [
+    "anushasrikanth/textstat-pypi"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "bmezgebu/lmsys-llama-3-tpu-train",
+  "id_no": 61410217,
+  "title": "LMSYS - Llama-3 [TPU train]",
+  "code_file": "lmsys-llama-3-tpu-train.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [
+    "defdet/utils-xla"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "metaresearch/llama-3/Transformers/8b-chat-hf/1"
+  ]
+}

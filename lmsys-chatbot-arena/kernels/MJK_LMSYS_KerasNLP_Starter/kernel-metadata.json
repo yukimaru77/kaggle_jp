@@ -1,0 +1,23 @@
+{
+  "id": "miinjaekim/mjk-lmsys-kerasnlp-starter",
+  "id_no": 61451869,
+  "title": "MJK LMSYS: KerasNLP Starter",
+  "code_file": "mjk-lmsys-kerasnlp-starter.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "keras/deberta_v3/Keras/deberta_v3_extra_small_en/2"
+  ]
+}

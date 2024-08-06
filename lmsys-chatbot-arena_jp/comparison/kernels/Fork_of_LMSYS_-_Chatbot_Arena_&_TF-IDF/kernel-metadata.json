@@ -1,0 +1,21 @@
+{
+  "id": "dakunextdoor/fork-of-lmsys-chatbot-arena-tf-idf",
+  "id_no": 61492350,
+  "title": "Fork of LMSYS - Chatbot Arena & TF-IDF",
+  "code_file": "fork-of-lmsys-chatbot-arena-tf-idf.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [
+    "abdullahmeda/lmsys-additional-33k-labelled-conversations"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

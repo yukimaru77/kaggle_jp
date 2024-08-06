@@ -1,0 +1,30 @@
+{
+  "id": "susanketsarkar/gemma-2-train-on-tpu",
+  "id_no": 61851668,
+  "title": "Gemma 2 train on tpu",
+  "code_file": "gemma-2-train-on-tpu.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "nischaydnk/gemma-pytorch",
+    "kishanvavdara/gemma-2-9b-hf",
+    "nischaydnk/immutabledict",
+    "susanketsarkar/lmsys-chatbot-arena-additional-data-90k-columns"
+  ],
+  "kernel_sources": [
+    "hotchpotch/llm-detect-pip"
+  ],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "google/gemma-2/PyTorch/gemma-2-9b-it/1"
+  ]
+}

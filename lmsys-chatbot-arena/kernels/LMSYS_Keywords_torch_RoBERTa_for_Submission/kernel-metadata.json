@@ -1,0 +1,26 @@
+{
+  "id": "stpeteishii/lmsys-keywords-torch-roberta-for-submission",
+  "id_no": 62958982,
+  "title": "LMSYS Keywords torch RoBERTa for Submission",
+  "code_file": "lmsys-keywords-torch-roberta-for-submission.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [
+    "abhishek/roberta-base"
+  ],
+  "kernel_sources": [
+    "stpeteishii/download-keybert",
+    "stpeteishii/save-distilbert-base-nli-mean-tokens",
+    "stpeteishii/lmsys-prompt-response-words-keybert",
+    "stpeteishii/lmsys-keywords-torch-roberta"
+  ],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

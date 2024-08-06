@@ -1,0 +1,21 @@
+{
+  "id": "natu2003/lmsys-lstm-mix-cnn-gpu-train",
+  "id_no": 62089628,
+  "title": "LMSYS - LSTM mix CNN - [GPU train]",
+  "code_file": "lmsys-lstm-mix-cnn-gpu-train.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "tensorflow/bert/TensorFlow2/bert-en-uncased-l-10-h-128-a-2/2"
+  ]
+}

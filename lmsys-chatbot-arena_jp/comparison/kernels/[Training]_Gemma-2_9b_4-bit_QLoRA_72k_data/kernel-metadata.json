@@ -1,0 +1,24 @@
+{
+  "id": "qinhaoyang/training-gemma-2-9b-4-bit-qlora-72k-data",
+  "id_no": 62075603,
+  "title": "[Training] Gemma-2 9b 4-bit QLoRA_72k data",
+  "code_file": "training-gemma-2-9b-4-bit-qlora-72k-data.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "qinhaoyang/lmsys-72k-dataset",
+    "qinhaoyang/lmsys-gemma-checkpoint"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

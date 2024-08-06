@@ -1,0 +1,27 @@
+{
+  "id": "shelterw/new-good-feature-ifd-length-tf-idf",
+  "id_no": 61253866,
+  "title": "New Good Feature: IFD + Length + TF-IDF",
+  "code_file": "new-good-feature-ifd-length-tf-idf.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "",
+    "",
+    "",
+    "",
+    "debarshichanda/debertav3base"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "regisvargas/trying-to-understand-the-baseline-python-file",
+  "id_no": 58534249,
+  "title": "Trying to understand the baseline python file",
+  "code_file": "trying-to-understand-the-baseline-python-file.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": [
+    "google/flan-t5/PyTorch/large/3"
+  ]
+}

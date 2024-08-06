@@ -1,0 +1,25 @@
+{
+  "id": "cosheimil/deberta-train-classification",
+  "id_no": 62599411,
+  "title": "DeBerta train classification",
+  "code_file": "deberta-train-classification.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "",
+    "thedrcat/llm-human-preference-data-ultrafeedback",
+    "abdullahmeda/lmsys-additional-33k-labelled-conversations"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

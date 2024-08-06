@@ -1,0 +1,23 @@
+{
+  "id": "lucasoceanbreeze/finetune-llama3-using-qlora",
+  "id_no": 61646967,
+  "title": "Finetune Llama3 using QLoRA",
+  "code_file": "finetune-llama3-using-qlora.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [
+    "awsaf49/kaggle-docs"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "metaresearch/llama-3/Transformers/8b-chat-hf/1"
+  ]
+}

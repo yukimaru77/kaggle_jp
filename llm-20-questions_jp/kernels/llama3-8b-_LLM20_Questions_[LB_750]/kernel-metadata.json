@@ -1,0 +1,24 @@
+{
+  "id": "wouldyoujustfocus/llama3-8b-llm20-questions-lb-750",
+  "id_no": 60990185,
+  "title": "llama3-8b- LLM20 Questions [LB 750]",
+  "code_file": "llama3-8b-llm20-questions-lb-750.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "digit-recognizer",
+    "house-prices-advanced-regression-techniques",
+    "llm-20-questions",
+    "titanic"
+  ],
+  "model_sources": [
+    "metaresearch/llama-3/Transformers/8b-chat-hf/1"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "babydriver1233/20-questions-for-llm",
+  "id_no": 63393765,
+  "title": "20 Questions for LLM",
+  "code_file": "20-questions-for-llm.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "jazivxt/llm20q-gemma-2b-it",
+  "id_no": 57285342,
+  "title": "LLM20Q - Gemma 2b-it",
+  "code_file": "llm20q-gemma-2b-it.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": [
+    "google/gemma/PyTorch/2b-it/2"
+  ]
+}

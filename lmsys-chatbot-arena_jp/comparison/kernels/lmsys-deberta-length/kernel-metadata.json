@@ -1,0 +1,27 @@
+{
+  "id": "mingky11/lmsys-deberta-length",
+  "id_no": 61238200,
+  "title": "lmsys-deberta-length",
+  "code_file": "lmsys-deberta-length.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "",
+    "mingky11/lmsys-33k-deduplicated",
+    "mingky11/ultrachat-train"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "keras/deberta_v3/Keras/deberta_v3_extra_small_en/2"
+  ]
+}

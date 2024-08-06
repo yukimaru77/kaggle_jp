@@ -1,0 +1,23 @@
+{
+  "id": "muhammadehsan000/run-llm-20-questions-in-a-notebook",
+  "id_no": 63405983,
+  "title": "Run LLM 20 Questions in a Notebook",
+  "code_file": "run-llm-20-questions-in-a-notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "reinforcement learning",
+    "python",
+    "english"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

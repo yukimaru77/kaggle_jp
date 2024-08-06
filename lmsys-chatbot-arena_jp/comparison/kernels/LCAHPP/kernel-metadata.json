@@ -1,0 +1,21 @@
+{
+  "id": "mr0106/lcahpp",
+  "id_no": 62699124,
+  "title": "LCAHPP",
+  "code_file": "lcahpp.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "google/gemma-2/PyTorch/gemma-2-27b-pt/1"
+  ]
+}

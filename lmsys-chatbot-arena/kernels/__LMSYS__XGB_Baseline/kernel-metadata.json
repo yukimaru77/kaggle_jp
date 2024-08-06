@@ -1,0 +1,19 @@
+{
+  "id": "sercanyesiloz/lmsys-xgb-baseline",
+  "id_no": 61680899,
+  "title": "LMSYS | XGB Baseline",
+  "code_file": "lmsys-xgb-baseline.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

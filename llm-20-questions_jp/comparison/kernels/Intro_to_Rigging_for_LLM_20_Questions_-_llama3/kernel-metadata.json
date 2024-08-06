@@ -1,0 +1,21 @@
+{
+  "id": "robikscube/intro-to-rigging-for-llm-20-questions-llama3",
+  "id_no": 57844561,
+  "title": "Intro to Rigging for LLM 20 Questions - llama3",
+  "code_file": "intro-to-rigging-for-llm-20-questions-llama3.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "denniswang07/submission-for-llm-20-questions",
+  "id_no": 63135495,
+  "title": "Submission For LLM 20 Questions",
+  "code_file": "submission-for-llm-20-questions.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": [
+    "google/gemma/PyTorch/7b-it-quant/2"
+  ]
+}

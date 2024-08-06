@@ -1,0 +1,19 @@
+{
+  "id": "raja6242/lmsys-ai-chat-evaluator-enhancing-human-ai",
+  "id_no": 62084985,
+  "title": "\ud83e\udde0 LMSYS - AI Chat Evaluator: Enhancing Human-AI ",
+  "code_file": "lmsys-ai-chat-evaluator-enhancing-human-ai.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

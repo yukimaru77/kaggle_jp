@@ -1,0 +1,27 @@
+{
+  "id": "kishanvavdara/gemma-2-9b-part-2",
+  "id_no": 61307285,
+  "title": "Gemma 2 - 9b [Part-2]",
+  "code_file": "gemma-2-9b-part-2.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "kishanvavdara/gemma-2-9b-hf"
+  ],
+  "kernel_sources": [
+    "hotchpotch/llm-detect-pip",
+    "kishanvavdara/gemma-2-9b-part-1",
+    "kishanvavdara/libs-install"
+  ],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

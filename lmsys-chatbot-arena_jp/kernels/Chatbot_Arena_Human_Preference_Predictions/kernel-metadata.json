@@ -1,0 +1,21 @@
+{
+  "id": "guillaumegeorges/chatbot-arena-human-preference-predictions",
+  "id_no": 61354984,
+  "title": "Chatbot Arena Human Preference Predictions",
+  "code_file": "chatbot-arena-human-preference-predictions.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

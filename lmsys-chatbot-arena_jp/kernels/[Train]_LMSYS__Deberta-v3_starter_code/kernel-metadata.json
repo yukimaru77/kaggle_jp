@@ -1,0 +1,25 @@
+{
+  "id": "tonymarkchris/train-lmsys-deberta-v3-starter-code",
+  "id_no": 61690883,
+  "title": "[Train] LMSYS / Deberta-v3 starter code",
+  "code_file": "train-lmsys-deberta-v3-starter-code.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "verracodeguacas/huggingfacedebertav3variants"
+  ],
+  "kernel_sources": [
+    "piantic/lmsys-pip-wheels"
+  ],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

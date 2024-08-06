@@ -1,0 +1,25 @@
+{
+  "id": "docxian/llm-20-questions-keywords",
+  "id_no": 57347907,
+  "title": "\ud83d\udd11LLM 20 Questions - Keywords",
+  "code_file": "llm-20-questions-keywords.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "nlp",
+    "artificial intelligence",
+    "text",
+    "simulations",
+    "games"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

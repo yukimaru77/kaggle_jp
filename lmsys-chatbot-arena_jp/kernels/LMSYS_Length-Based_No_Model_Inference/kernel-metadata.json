@@ -1,0 +1,19 @@
+{
+  "id": "taikimori/lmsys-length-based-no-model-inference",
+  "id_no": 61484167,
+  "title": "LMSYS| Length-Based No Model Inference",
+  "code_file": "lmsys-length-based-no-model-inference.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "matthewsfarmer/quick-test-agent-without-game-environment",
+  "id_no": 60789603,
+  "title": "Quick Test agent without game environment",
+  "code_file": "quick-test-agent-without-game-environment.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": [
+    "google/gemma/PyTorch/7b-it-quant/2"
+  ]
+}

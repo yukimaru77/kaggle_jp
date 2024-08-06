@@ -1,0 +1,23 @@
+{
+  "id": "achievement/llama-3-8b-tpu-train",
+  "id_no": 62368797,
+  "title": "Llama-3 8b [TPU Train]\u00b6",
+  "code_file": "llama-3-8b-tpu-train.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [
+    "defdet/utils-xla"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "metaresearch/llama-3/Transformers/8b-chat-hf/1"
+  ]
+}

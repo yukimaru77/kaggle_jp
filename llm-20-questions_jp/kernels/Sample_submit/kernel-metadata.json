@@ -1,0 +1,21 @@
+{
+  "id": "grshankersai/sample-submit",
+  "id_no": 59166052,
+  "title": "Sample submit",
+  "code_file": "sample-submit.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": [
+    "google/gemma/Transformers/7b/2"
+  ]
+}

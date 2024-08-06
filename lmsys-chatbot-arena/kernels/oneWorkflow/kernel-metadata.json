@@ -1,0 +1,28 @@
+{
+  "id": "bmezgebu/oneworkflow",
+  "id_no": 61411310,
+  "title": "oneWorkflow",
+  "code_file": "oneworkflow.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "kishanvavdara/lmsys-model",
+    "stochoshi/lsys-models-4"
+  ],
+  "kernel_sources": [
+    "hotchpotch/llm-detect-pip"
+  ],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "metaresearch/llama-3/Transformers/8b-chat-hf/1"
+  ]
+}

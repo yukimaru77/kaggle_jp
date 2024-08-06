@@ -1,0 +1,29 @@
+{
+  "id": "mohamedkhamis/distributed-training-deberta-lora-keras-nlp",
+  "id_no": 62102559,
+  "title": "Distributed_Training+Deberta+LORA+Keras_NLP",
+  "code_file": "distributed-training-deberta-lora-keras-nlp.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "keras/deberta_v3/Keras/deberta_v3_large_en/2",
+    "keras/deberta_v3/Keras/deberta_v3_base_en/2",
+    "keras/deberta_v3/Keras/deberta_v3_extra_small_en/2",
+    "keras/deberta_v3/Keras/deberta_v3_small_en/2",
+    "google/gemma/Transformers/2b/2",
+    "google/gemma/Transformers/7b/2",
+    "keras/gemma/Keras/gemma_2b_en/2"
+  ]
+}

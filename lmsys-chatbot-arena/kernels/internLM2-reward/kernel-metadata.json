@@ -1,0 +1,31 @@
+{
+  "id": "huangshibao/internlm2-reward",
+  "id_no": 62739634,
+  "title": "internLM2-reward",
+  "code_file": "internlm2-reward.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "lewtun/einops-v0-8-0",
+    "emiz6413/lmsys-wheel-files"
+  ],
+  "kernel_sources": [
+    "ashrafulislamparan/4-bit-quantization-using-bitsandbytes"
+  ],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "",
+    "",
+    "",
+    ""
+  ]
+}

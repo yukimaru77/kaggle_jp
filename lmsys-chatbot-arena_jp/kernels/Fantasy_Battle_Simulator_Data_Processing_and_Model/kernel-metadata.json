@@ -1,0 +1,19 @@
+{
+  "id": "nithinreddy90/fantasy-battle-simulator-data-processing-and-model",
+  "id_no": 62254998,
+  "title": "Fantasy Battle Simulator Data Processing and Model",
+  "code_file": "fantasy-battle-simulator-data-processing-and-model.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

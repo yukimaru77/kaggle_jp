@@ -1,0 +1,31 @@
+{
+  "id": "architsinghai/lmsys-gemma2-lgb",
+  "id_no": 62166080,
+  "title": "lmsys-gemma2+lgb",
+  "code_file": "lmsys-gemma2-lgb.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "emiz6413/73zap2gx",
+    "emiz6413/lmsys-wheel-files",
+    "kishanvavdara/lmsys-model",
+    "stochoshi/lsys-models-4"
+  ],
+  "kernel_sources": [
+    "hotchpotch/llm-detect-pip",
+    "emiz6413/inference-gemma-2-9b-4-bit-qlora"
+  ],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "emiz6413/gemma-2/Transformers/gemma-2-9b-it-4bit/1"
+  ]
+}

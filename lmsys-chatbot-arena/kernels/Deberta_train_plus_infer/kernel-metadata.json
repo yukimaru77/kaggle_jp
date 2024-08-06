@@ -1,0 +1,36 @@
+{
+  "id": "roschildrui/deberta-train-plus-infer",
+  "id_no": 61536380,
+  "title": "Deberta_train_plus_infer",
+  "code_file": "deberta-train-plus-infer.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "roschildrui/lmsys-base3-0704",
+    "roschildrui/lmsys-base4-0704",
+    "roschildrui/lmsys-base5-0704",
+    "roschildrui/lmsys-base6-0706",
+    "roschildrui/lmsys-base8-0707",
+    "roschildrui/lmsys-base9-0707",
+    "roschildrui/lmsys-large10-0707",
+    "roschildrui/lmsys-large11-0708",
+    "roschildrui/lmsys-large12-0710",
+    "roschildrui/lmsys-large13-0711",
+    "roschildrui/lmsys-large14-0717",
+    "roschildrui/lmsys-large7-0706"
+  ],
+  "kernel_sources": [
+    "roschildrui/aes-whls"
+  ],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

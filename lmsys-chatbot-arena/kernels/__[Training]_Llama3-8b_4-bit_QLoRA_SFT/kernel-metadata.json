@@ -1,0 +1,23 @@
+{
+  "id": "tonnguynkhc/training-llama3-8b-4-bit-qlora-sft",
+  "id_no": 62590809,
+  "title": "[Training] Llama3-8b 4-bit QLoRA SFT ",
+  "code_file": "training-llama3-8b-4-bit-qlora-sft.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    ""
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

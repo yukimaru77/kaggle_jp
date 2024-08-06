@@ -1,0 +1,19 @@
+{
+  "id": "rturley/run-debug-llm-20-questions-in-a-notebook",
+  "id_no": 58144358,
+  "title": "Run/Debug LLM 20 Questions in a Notebook",
+  "code_file": "run-debug-llm-20-questions-in-a-notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

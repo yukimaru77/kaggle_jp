@@ -1,0 +1,22 @@
+{
+  "id": "mpwolke/is-it-a-q20-game-gemma-2b-en",
+  "id_no": 57281225,
+  "title": "Is it a Q20 Game? Gemma 2b_en",
+  "code_file": "is-it-a-q20-game-gemma-2b-en.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": [
+    "keras/gemma/Keras/gemma_instruct_2b_en/2",
+    "keras/gemma/Keras/gemma_2b_en/2"
+  ]
+}

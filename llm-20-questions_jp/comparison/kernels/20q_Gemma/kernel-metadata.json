@@ -1,0 +1,22 @@
+{
+  "id": "matthewsfarmer/20q-gemma",
+  "id_no": 59452167,
+  "title": "20q Gemma",
+  "code_file": "20q-gemma.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": [
+    "google/gemma/PyTorch/7b-it-quant/1",
+    "google/gemma/PyTorch/7b-it-quant/2"
+  ]
+}

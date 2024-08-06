@@ -1,0 +1,23 @@
+{
+  "id": "twinklewill/train-lmsys-240706-first",
+  "id_no": 61649831,
+  "title": "\u3010Train\u3011LMSYS 240706 First",
+  "code_file": "train-lmsys-240706-first.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "metaresearch/llama-3/Transformers/8b-chat-hf/1"
+  ]
+}

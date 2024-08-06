@@ -1,0 +1,26 @@
+{
+  "id": "johnsonhk88/lmsys-chatbot-arena-llm",
+  "id_no": 61137345,
+  "title": "LMSYS-Chatbot-ARENA-LLM",
+  "code_file": "lmsys-chatbot-arena-llm.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "johnsonhk88/universal-llm-install-package2"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "google/gemma/Transformers/7b-it/3",
+    "google/gemma/Transformers/2b-it/3"
+  ]
+}

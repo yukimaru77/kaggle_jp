@@ -1,0 +1,24 @@
+{
+  "id": "dlondmike/gemma-2-9b-train",
+  "id_no": 62008494,
+  "title": " Gemma-2 9b  TRAIN",
+  "code_file": "gemma-2-9b-train.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "",
+    ""
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "jatinsinghsagoi/lmsys-inference",
+  "id_no": 61667101,
+  "title": "LMSYS Inference",
+  "code_file": "lmsys-inference.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "raedmughaus/bitsandbytes-0-42-0-py3-none-any-whl"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "",
+    "metaresearch/llama-3/Transformers/8b-hf/1",
+    "jatinsinghsagoi/peft-wheel/PyTorch/version1/1"
+  ]
+}

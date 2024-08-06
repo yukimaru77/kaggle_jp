@@ -1,0 +1,21 @@
+{
+  "id": "kasafumi/gemma2-9b-it-llm20-questions",
+  "id_no": 61544294,
+  "title": "Gemma2-9b-it_LLM20 Questions",
+  "code_file": "gemma2-9b-it-llm20-questions.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

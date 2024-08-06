@@ -1,0 +1,23 @@
+{
+  "id": "argozero01/parallel-train-phi-3-mini-4k-instruct",
+  "id_no": 62853401,
+  "title": "[Parallel Train] Phi-3-mini-4k-instruct",
+  "code_file": "parallel-train-phi-3-mini-4k-instruct.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    ""
+  ]
+}

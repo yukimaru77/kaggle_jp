@@ -1,0 +1,25 @@
+{
+  "id": "argozero01/inference-phi-3-mini-4k-instruct",
+  "id_no": 62921185,
+  "title": "[Inference] Phi-3-mini-4k-instruct",
+  "code_file": "inference-phi-3-mini-4k-instruct.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "argozero01/checkpoint-phi3"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    ""
+  ]
+}

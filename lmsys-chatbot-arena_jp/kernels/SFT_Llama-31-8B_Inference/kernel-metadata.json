@@ -1,0 +1,33 @@
+{
+  "id": "zhoumichael/sft-llama-31-8b-inference",
+  "id_no": 62791067,
+  "title": "SFT Llama-31-8B Inference",
+  "code_file": "sft-llama-31-8b-inference.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "",
+    "",
+    "",
+    "",
+    "zhoumichael/llama-3-8b-instruct-bnb-4bit-origin",
+    "emiz6413/lmsys-wheel-files",
+    "zhoumichael/lmsys-transformers",
+    "zhoumichael/meta-llama-3-8b",
+    "zhoumichael/meta-llama-3-8b-instruct"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "metaresearch/llama-3.1/Transformers/8b-instruct/1"
+  ]
+}

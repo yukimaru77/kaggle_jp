@@ -1,0 +1,19 @@
+{
+  "id": "matthewsfarmer/llm-20q-starter-notebook-2-0",
+  "id_no": 62309371,
+  "title": "LLM 20q : Starter Notebook 2.0",
+  "code_file": "llm-20q-starter-notebook-2-0.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

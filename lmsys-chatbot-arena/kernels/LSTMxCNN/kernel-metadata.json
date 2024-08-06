@@ -1,0 +1,28 @@
+{
+  "id": "quochungchiem/lstmxcnn",
+  "id_no": 62976041,
+  "title": "LSTMxCNN",
+  "code_file": "lstmxcnn.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "",
+    "alexxxsem/deberta-v3/PyTorch/base/2",
+    "keras/deberta_v3/Keras/deberta_v3_large_en/2",
+    "keras/deberta_v3/Keras/deberta_v3_base_en/2",
+    "alexxxsem/deberta-v3/PyTorch/large/1",
+    "marquis03/qwen2/Transformers/qwen2-7b-instruct/1"
+  ]
+}

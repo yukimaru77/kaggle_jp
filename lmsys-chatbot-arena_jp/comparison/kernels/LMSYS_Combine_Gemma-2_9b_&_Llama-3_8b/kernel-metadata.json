@@ -1,0 +1,28 @@
+{
+  "id": "jaejohn/lmsys-combine-gemma-2-9b-llama-3-8b",
+  "id_no": 62803687,
+  "title": "LMSYS: Combine Gemma-2 9b & Llama-3 8b",
+  "code_file": "lmsys-combine-gemma-2-9b-llama-3-8b.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "emiz6413/73zap2gx",
+    "emiz6413/lmsys-wheel-files",
+    "kishanvavdara/lmsys-model"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "emiz6413/gemma-2/Transformers/gemma-2-9b-it-4bit/1",
+    "metaresearch/llama-3/Transformers/8b-chat-hf/1"
+  ]
+}

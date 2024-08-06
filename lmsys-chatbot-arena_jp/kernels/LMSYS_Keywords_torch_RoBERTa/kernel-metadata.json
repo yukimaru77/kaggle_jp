@@ -1,0 +1,23 @@
+{
+  "id": "stpeteishii/lmsys-keywords-torch-roberta",
+  "id_no": 62950556,
+  "title": "LMSYS Keywords torch RoBERTa",
+  "code_file": "lmsys-keywords-torch-roberta.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "stpeteishii/lmsys-prompt-response-words-keybert"
+  ],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "pawinchan/phi3-20-questions",
+  "id_no": 57501735,
+  "title": "Phi3-20 Questions",
+  "code_file": "phi3-20-questions.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

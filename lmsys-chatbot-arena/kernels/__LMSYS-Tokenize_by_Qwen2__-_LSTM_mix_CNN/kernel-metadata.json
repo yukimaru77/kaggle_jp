@@ -1,0 +1,26 @@
+{
+  "id": "natu2003/lmsys-tokenize-by-qwen2-lstm-mix-cnn",
+  "id_no": 62119479,
+  "title": "LMSYS-Tokenize by Qwen2  - LSTM mix CNN",
+  "code_file": "lmsys-tokenize-by-qwen2-lstm-mix-cnn.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "defdet/utils-xla"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": [
+    "metaresearch/llama-3/Transformers/8b-chat-hf/1",
+    "marquis03/qwen2/Transformers/qwen2-7b-instruct/1"
+  ]
+}

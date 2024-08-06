@@ -1,0 +1,23 @@
+{
+  "id": "wajahat1064/finally-got-it-through-tfbertmodel",
+  "id_no": 62980717,
+  "title": "Finally got it through TFBertModel!",
+  "code_file": "finally-got-it-through-tfbertmodel.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "xhlulu/huggingface-bert"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "lmsys-chatbot-arena"
+  ],
+  "model_sources": []
+}

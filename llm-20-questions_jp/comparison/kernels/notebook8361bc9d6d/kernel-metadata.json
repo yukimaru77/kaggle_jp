@@ -1,0 +1,23 @@
+{
+  "id": "mayankchhavri/notebook8361bc9d6d",
+  "id_no": 63423215,
+  "title": "notebook8361bc9d6d",
+  "code_file": "notebook8361bc9d6d.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": [
+    "google/gemma-2/PyTorch/gemma-2-2b-it/1"
+  ]
+}

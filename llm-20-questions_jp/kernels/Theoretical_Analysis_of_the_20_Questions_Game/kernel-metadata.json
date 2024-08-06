@@ -1,0 +1,19 @@
+{
+  "id": "isakatsuyoshi/theoretical-analysis-of-the-20-questions-game",
+  "id_no": 62115003,
+  "title": "Theoretical Analysis of the 20 Questions Game",
+  "code_file": "theoretical-analysis-of-the-20-questions-game.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

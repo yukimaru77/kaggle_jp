@@ -1,0 +1,19 @@
+{
+  "id": "makimakiai/llm-20-questions",
+  "id_no": 57942673,
+  "title": "LLM 20 Questions \u30b3\u30f3\u30da\u306e\u6982\u8981",
+  "code_file": "llm-20-questions.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}

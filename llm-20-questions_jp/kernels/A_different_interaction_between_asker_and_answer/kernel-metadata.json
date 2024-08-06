@@ -1,0 +1,19 @@
+{
+  "id": "gavinxgcao/a-different-interaction-between-asker-and-answer",
+  "id_no": 62127382,
+  "title": "A different interaction between asker and answer",
+  "code_file": "a-different-interaction-between-asker-and-answer.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "llm-20-questions"
+  ],
+  "model_sources": []
+}
